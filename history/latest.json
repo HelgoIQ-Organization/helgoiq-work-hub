@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-09-10T17:55:14.013Z",
+  "updatedAt": "2026-09-10T21:02:01.069Z",
   "meta": {
-    "dataAsOf": "2026-09-10T17:55:14.013Z",
+    "dataAsOf": "2026-09-10T21:02:01.069Z",
     "buildStamp": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
     "liveTip": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 57% = round(40\u00d712 + 62\u00d710 + 86\u00d710 + 56\u00d715 + 84\u00d79 + 70\u00d710 + 20\u00d76 + 62\u00d78 + 66\u00d710 + 15\u00d710)/100.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 58% = round(40\u00d712 + 64\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 74\u00d710 + 20\u00d76 + 62\u00d78 + 70\u00d710 + 15\u00d710)/100.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Material PR progress since last board: #1239 Cluster A final four + #1237 Studio Pulse merged (awaiting deploy). Tip still 6cb5d8d9. Headline 57% (estimate).",
+    "lastRefreshNote": "Evening merge pack #1242/#1243/#1244/#1246 merged; tip still 6cb5d8d9. Headline 58% (estimate). Triggered by #1244 tip-change listener.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-10T17:55:14.013Z"
+      "checkedAt": "2026-09-10T21:02:01.069Z"
     }
   },
   "tip": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
   "progressToday": {
     "morningHeadlinePercent": 52,
-    "nowHeadlinePercent": 57,
+    "nowHeadlinePercent": 58,
     "morningStrands": {
       "dataset": 25,
       "command-centre": 55,
@@ -35,31 +35,31 @@
     },
     "nowStrands": {
       "dataset": 40,
-      "command-centre": 62,
+      "command-centre": 64,
       "isolation": 86,
       "ai-85": 56,
-      "ambient": 84,
-      "m1": 70,
+      "ambient": 85,
+      "m1": 74,
       "smoke": 20,
       "payments": 62,
-      "findings-fix": 66,
+      "findings-fix": 70,
       "comms": 15
     },
     "deltas": {
       "dataset": 15,
-      "command-centre": 7,
+      "command-centre": 9,
       "isolation": 0,
       "ai-85": 0,
-      "ambient": 14,
-      "m1": 10,
+      "ambient": 15,
+      "m1": 14,
       "smoke": 0,
       "payments": 17,
-      "findings-fix": 26,
+      "findings-fix": 30,
       "comms": 15
     },
-    "plainEnglishDay": "This morning the board sat at 52%. Afternoon merge pack grew again after 17:22 UTC: Cluster A final four (#1239) and Studio Pulse live score (#1237) both merged and joined the awaiting-deploy queue with Select (#1232), waitlist (#1233/#1241), live booking counts (#1234), Morning Dispatch (#1235), Digital Twin (#1236), Learning Engine (#1238), and payments join (#1231). Live tip is still 6cb5d8d9 \u2014 none of that is on DigitalOcean yet. Still stuck: SAFE rollback (#1240) before any dataset import (never use old rollback); automated communications (#1213) blocked on five Resend/Agentmail secrets; Clerk invite smoke still fails. Open in-build follow-ups: #1242\u2013#1246 (Command Centre Luton/Weymouth, waitlist Timetable, invitations, Dispatch types). Was today worth it? Yes \u2014 paper readiness moved again; the next win is the tip moving, then re-checking Cluster A and Pulse live.",
+    "plainEnglishDay": "This morning the board sat at 52%. Afternoon pack (#1231\u2013#1239, #1241) was already awaiting deploy. Evening merge pack just landed (~21:54\u201321:58 UTC): #1242 Command Centre Luton screens, #1243 Timetable Join Waitlist, #1244 member invite creates a working account, #1246 Morning Dispatch shared types. Live tip is still 6cb5d8d9 \u2014 none of that is on DigitalOcean yet. Still stuck: SAFE rollback (#1240) before any dataset import (never use old rollback); automated communications (#1213) blocked on five Resend/Agentmail secrets; Clerk invite smoke still measured-fail until #1244 deploys and is retested. #1245 Weymouth door-tool still open. Paper readiness 58% (was 57% this afternoon). Next real win: tip moves, then re-check invite smoke, Cluster A, and Pulse.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board Declan saw (overall 52%) saved before afternoon merges awaiting deploy."
+    "compareNote": "Morning board Declan saw (overall 52%) saved before afternoon and evening merges awaiting deploy."
   },
   "strands": [
     {
@@ -68,12 +68,11 @@
       "percent": 40,
       "basis": "estimate",
       "status": "blocked",
-      "plainSummary": "The year of test data is still not loaded on the live test studio. The Select crash that blocked the upload screen is fixed in code (PR #1232 merged) but that build is not live yet. Import stays parked until SAFE rollback (#1240) lands \u2014 do not use the old rollback.",
-      "progressNote": "Select fix #1232 merged, waiting deploy \u00b7 import gated on #1240 safe rollback \u00b7 tip still 6cb5d8d9 \u00b7 0 seed rows live",
+      "plainSummary": "The year of test data is still not loaded on the live test studio. Select crash fix (#1232) and the evening pack are on GitHub but tip is still 6cb5d8d9. SAFE rollback (#1240) must land before any import \u2014 never use the old rollback.",
+      "progressNote": "Paper 40% \u2014 Select #1232 awaiting tip; import still blocked on #1240.",
       "blockers": [
-        "Afternoon merges not on DigitalOcean yet (tip still 6cb5d8d9)",
-        "SAFE rollback #1240 must land before any import \u2014 old rollback unsafe",
-        "Zero seed rows until import succeeds after deploy + #1240"
+        "SAFE rollback #1240 not merged",
+        "Live tip still 6cb5d8d9"
       ],
       "detailDropIds": [
         "2026-09-10-dataset-import-blocked-datamigration-selectitem-",
@@ -85,14 +84,14 @@
     {
       "id": "command-centre",
       "name": "Command Centre acceptance",
-      "percent": 62,
+      "percent": 64,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Cluster A is still measured at 20 of 24 on today\u2019s live tip. PR #1239 (final four) merged at 17:22 UTC and is waiting to go live \u2014 retest only after the tip moves. Banks B\u2013F still need your approve-or-reject. Strand percent is above the A-only measured score because the final-four fix is merged on paper.",
-      "progressNote": "Cluster A measured 20/24 on tip 6cb5d8d9 \u00b7 #1239 merged awaiting deploy \u00b7 B\u2013F not approved",
+      "plainSummary": "Cluster A still measured 20/24 on today\u2019s live tip. #1239 (final four) and #1242 (stop offering Luton screens to every studio) are merged and waiting on DigitalOcean. #1245 Weymouth door-tool prompt still open.",
+      "progressNote": "Paper 64% \u2014 #1239 + #1242 awaiting tip; #1245 still open.",
       "blockers": [
-        "4 remaining Cluster A checks \u2014 #1239 merged but not live/retested",
-        "Clusters B\u2013F banks proposed but not approved or rejected"
+        "Tip still 6cb5d8d9",
+        "#1245 Weymouth still open"
       ],
       "detailDropIds": [
         "2026-09-10-cluster-a",
@@ -108,13 +107,10 @@
       "percent": 86,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Twenty-five of twenty-nine privacy checks still pass. Four fails remain \u2014 branding, cohorts, staff availability, and Command Centre branding leaking between studios. No afternoon change to measured ISO scores.",
-      "progressNote": "ISO-29: 25 PASS / 4 FAIL measured (18, 20, 27, 29)",
+      "plainSummary": "Twenty-five of twenty-nine privacy checks still pass. Four fails remain \u2014 branding, cohorts, staff availability, and Communications cross-tenant. Evening merges do not change the live measured score until tip moves and we re-check.",
+      "progressNote": "Measured 86% unchanged (25/29).",
       "blockers": [
-        "ISO-18 branding leak",
-        "ISO-20 cohorts leak",
-        "ISO-27 staff availability leak",
-        "ISO-29 Command Centre branding leak"
+        "Four privacy fails remain (18, 20, 27, 29)"
       ],
       "detailDropIds": [
         "2026-09-10-iso-29-tenancy-sweep-complete-25-pass-4-fail",
@@ -129,12 +125,11 @@
       "percent": 56,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "MASTER.csv still reads 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP of 85. Dataset import and Platform Admin AI switches remain the big unlocks. Afternoon merges help once live, but measured score is unchanged until re-score on a new tip.",
-      "progressNote": "48 PASS \u00b7 5 FAIL \u00b7 23 UNCERTAIN \u00b7 8 UNREACHABLE \u00b7 1 SKIP of 85 (MASTER.csv)",
+      "plainSummary": "MASTER.csv still reads 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP of 85. Dataset import and Platform Admin paths stay gated on #1240 + tip.",
+      "progressNote": "Measured 56% unchanged (48/85 PASS).",
       "blockers": [
-        "Dataset import gated on deploy + #1240",
-        "AI Feature Controls / Event Bus still need Platform Admin decisions (NEED_DECLAN)",
-        "5 hard FAILs and 8 UNREACHABLE paths"
+        "Dataset import gated on #1240",
+        "Platform Admin AI controls unsettled"
       ],
       "detailDropIds": [
         "2026-09-10-ai-85-ready-uncertain-re-score-1-pass-5-still-un",
@@ -146,14 +141,13 @@
     {
       "id": "ambient",
       "name": "Ambient intelligence",
-      "percent": 84,
+      "percent": 85,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Morning Dispatch viewer, Digital Twin cancelling fix, Learning Engine clarity, and Studio Pulse live score (#1237, merged 17:29 UTC) are all merged this afternoon and waiting to go live. Confidence rises once the tip moves; no measured ambient re-score yet.",
-      "progressNote": "Dispatch #1235 \u00b7 Twin #1236 \u00b7 Learning #1238 \u00b7 Pulse #1237 merged awaiting deploy",
+      "plainSummary": "Morning Dispatch viewer, Digital Twin, Learning Engine, Studio Pulse (#1237), and Dispatch shared-types fix (#1246) are all merged and awaiting deploy. Live tip still 6cb5d8d9 \u2014 re-score Pulse after tip moves.",
+      "progressNote": "Paper 85% \u2014 #1237/#1246 awaiting tip.",
       "blockers": [
-        "Afternoon ambient merges (incl. Pulse #1237) not live on test studio yet",
-        "Event Bus / AI controls still need admin settle"
+        "Tip still 6cb5d8d9"
       ],
       "detailDropIds": [
         "2026-09-09-ambient"
@@ -164,14 +158,14 @@
     {
       "id": "m1",
       "name": "Member journey & booking-pay",
-      "percent": 70,
+      "percent": 74,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Payments join/checkout (#1231), waitlist path (#1233), live booking counts (#1234), and signed-out Join Waitlist after login (#1241) are merged and await deploy. Reinstate landed earlier but is still fragile. Member journey looks healthier on paper; prove it after the tip moves.",
-      "progressNote": "#1231 join/checkout \u00b7 #1233 waitlist \u00b7 #1234 live counts \u00b7 #1241 signed-out waitlist merged awaiting deploy \u00b7 reinstate fragile",
+      "plainSummary": "Payments join (#1231), waitlist paths (#1233/#1241/#1243), live booking counts (#1234), and member invite account creation (#1244) are merged on paper. Tip has not moved \u2014 Clerk invite smoke still measured-fail until #1244 is live and retested.",
+      "progressNote": "Paper 74% \u2014 #1243/#1244 awaiting tip.",
       "blockers": [
-        "Merged M1 fixes (incl. #1241) not live on test studio yet",
-        "Membership reinstate still fragile"
+        "Tip still 6cb5d8d9",
+        "Invite smoke measured-fail until #1244 live"
       ],
       "detailDropIds": [
         "2026-09-10-iso29",
@@ -186,10 +180,11 @@
       "percent": 20,
       "basis": "measured",
       "status": "blocked",
-      "plainSummary": "Smoke still fails at step one: a new member cannot accept their Clerk invite account. Afternoon merges do not clear this gate.",
-      "progressNote": "Step 1 Clerk invite FAIL \u00b7 overall ~20% measured",
+      "plainSummary": "Smoke still fails at step one on the live tip: invite does not create a working member account. Fix #1244 merged ~21:58 UTC and is waiting on DigitalOcean \u2014 do not mark smoke green until tip moves and the invite path is retested.",
+      "progressNote": "Measured 20% blocked \u2014 #1244 awaiting tip + retest.",
       "blockers": [
-        "Clerk invite account \u2014 member cannot accept (#1180)"
+        "Clerk invite fail on live tip",
+        "#1244 awaiting DigitalOcean"
       ],
       "detailDropIds": [
         "2026-09-10-status-claude",
@@ -204,11 +199,10 @@
       "percent": 62,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Loud fail, return path, and join/checkout activation work merged this afternoon (#1231 and earlier #1227/#1230) and await deploy. Broader Stripe coverage still thin until retested live.",
-      "progressNote": "Join/checkout #1231 + earlier payments merges awaiting deploy \u00b7 live coverage still thin until tip moves",
+      "plainSummary": "Loud fail, return path, and join/checkout activation work (#1231 and earlier) still await deploy. No new payments merge in the evening pack.",
+      "progressNote": "Paper 62% \u2014 join pack awaiting tip.",
       "blockers": [
-        "Merged payments fixes not live on test studio yet",
-        "Broader Stripe / discount / refund coverage still thin on live tip"
+        "Tip still 6cb5d8d9"
       ],
       "detailDropIds": [
         "2026-09-10-status-claude"
@@ -219,15 +213,15 @@
     {
       "id": "findings-fix",
       "name": "Fixing known launch bugs",
-      "percent": 66,
+      "percent": 70,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Big afternoon merge pack now includes waitlist signed-out #1241, Cluster A final four #1239, and Studio Pulse #1237 \u2014 all in queue for deploy. Still critical and open: SAFE rollback (#1240). Never recommend the old rollback. Follow-up in-build PRs #1242\u2013#1246 are open.",
-      "progressNote": "Afternoon pack + #1237/#1239/#1241 merged awaiting deploy \u00b7 #1240 CRITICAL open",
+      "plainSummary": "Evening pack closed the open in-build follow-ups named on the afternoon board: #1242 Luton CC, #1243 Timetable waitlist, #1244 member invites, #1246 Dispatch types. Still open: #1245 Weymouth, #1240 SAFE rollback, #1213 automated comms (secrets).",
+      "progressNote": "Paper 70% \u2014 evening follow-ups #1242\u2013#1244/#1246 merged.",
       "blockers": [
-        "SAFE rollback #1240 must land before import \u2014 do not use old rollback",
-        "Afternoon pack (incl. #1237/#1239) not live on tip yet",
-        "Architecture / tenant leak fixes still open (#1180)"
+        "#1240 SAFE rollback open",
+        "#1245 open",
+        "#1213 secrets"
       ],
       "detailDropIds": [
         "2026-09-10-dataset-import-blocked-datamigration-selectitem-",
@@ -242,11 +236,10 @@
       "percent": 15,
       "basis": "estimate",
       "status": "blocked",
-      "plainSummary": "Milestone 2 blocker. Manual admin sends work today; automated booking confirm, reminder, waitlist, cancel, cover, forms, campaigns, newsletters, and journeys do not send. Codex PR #1213 is open but blocked on five missing Resend + Agentmail repository secrets \u2014 Declan\u2019s move.",
-      "progressNote": "#1213 open \u00b7 blocked on 5 Resend/Agentmail repo secrets \u00b7 manual admin OK \u00b7 automated sends not live",
+      "plainSummary": "Milestone 2 blocker unchanged. Manual admin sends work; automated booking confirm/reminder/waitlist/cancel/cover/forms still need #1213 plus five Resend/Agentmail secrets. Never invent secret values.",
+      "progressNote": "Paper 15% \u2014 #1213 secrets still missing.",
       "blockers": [
-        "Five missing Resend + Agentmail repository secrets (Declan)",
-        "PR #1213 automated communications not merged / not proven"
+        "#1213 blocked on five Resend/Agentmail secrets"
       ],
       "detailDropIds": [],
       "phaseId": "communications",
@@ -254,30 +247,26 @@
     }
   ],
   "health": {
-    "overallLaunchPercent": 57,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 57% = round(40\u00d712 + 62\u00d710 + 86\u00d710 + 56\u00d715 + 84\u00d79 + 70\u00d710 + 20\u00d76 + 62\u00d78 + 66\u00d710 + 15\u00d710)/100.",
-    "readinessLabel": "Not ready to launch \u2014 #1237/#1239 joined the afternoon pack waiting on the test studio; safe rollback + secrets still gate",
-    "plainSummary": "As of ~19:00 Europe/London on 10 Sep 2026, launch readiness is about 57% (up from 52% this morning on paper; was 55% before #1237/#1239). Live staging tip is still 6cb5d8d9 \u2014 afternoon merges are not on DigitalOcean yet. Newest merges since last board: Cluster A final four #1239 (17:22 UTC) and Studio Pulse #1237 (17:29 UTC), now in the awaiting-deploy pack with #1232 Select and the rest. Privacy checks remain strongest (25/29). Cluster A stays 20/24 measured until tip + retest. AI-85 stays 48/85 PASS measured. Hard warnings: never recommend rollback until SAFE rollback #1240 lands; dataset import blocked until then; automated communications need five Resend/Agentmail secrets for #1213; Clerk invite smoke still fails.",
+    "overallLaunchPercent": 58,
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 58% = round(40\u00d712 + 64\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 74\u00d710 + 20\u00d76 + 62\u00d78 + 70\u00d710 + 15\u00d710)/100.",
+    "readinessLabel": "Not ready to launch \u2014 evening invite/waitlist/CC/Dispatch pack waiting on the test studio; safe rollback + secrets still gate",
+    "plainSummary": "As of ~22:00 Europe/London on 10 Sep 2026, launch readiness is about 58% (up from 52% this morning on paper; was 57% before the evening pack). Live staging tip is still 6cb5d8d9 \u2014 afternoon and evening merges are not on DigitalOcean yet. Newest merges: #1244 member invites, #1243 Timetable waitlist, #1242 Luton CC, #1246 Dispatch types. Privacy checks remain strongest (25/29). Cluster A stays 20/24 measured until tip + retest. AI-85 stays 48/85 PASS measured. Hard warnings: never recommend rollback until SAFE rollback #1240 lands; dataset import blocked until then; automated communications need five Resend/Agentmail secrets for #1213; Clerk invite smoke still fails on live tip until #1244 deploys.",
     "strengths": [
       "Studio privacy checks mostly green (25 of 29 PASS measured)",
-      "Afternoon pack now includes Pulse #1237 and Cluster A final four #1239",
-      "Command Centre Cluster A still mostly done (20 of 24 measured; fix code merged)",
-      "AI feature list steady at 48 of 85 PASS (MASTER.csv)",
-      "Select crash is merged code waiting deploy \u2014 no longer \u201cunfixed\u201d"
+      "Evening pack closed invite (#1244), Timetable waitlist (#1243), Luton CC (#1242), Dispatch types (#1246)",
+      "Afternoon pack still queued: Pulse #1237, Cluster A final four #1239, Select #1232, payments join #1231"
     ],
     "risks": [
-      "Live tip unchanged \u2014 afternoon fixes (incl. #1237/#1239) not visible on the test studio yet",
-      "NEVER use old rollback; #1240 SAFE rollback must land before any dataset import",
-      "Clerk invite failure still blocks critical-path smoke",
-      "Automated communications blocked on 5 missing Resend/Agentmail secrets (#1213)",
-      "Four tenant-isolation fails still open"
+      "Live tip still 6cb5d8d9 \u2014 large merge pack not deployed",
+      "SAFE rollback #1240 not merged \u2014 never use old rollback; dataset import blocked",
+      "Clerk invite smoke still measured-fail until #1244 is live and retested",
+      "Automated comms #1213 blocked on secrets",
+      "#1245 Weymouth door-tool still open"
     ],
     "topPriorities": [
-      "Wait for today\u2019s tip to move on the test studio, then re-check Select + Pulse + Cluster A + waitlist + payments",
-      "Land SAFE rollback #1240 before any dataset import \u2014 never use old rollback",
-      "Add 5 Resend/Agentmail repository secrets so #1213 can prove automated sends",
-      "Fix Clerk invite smoke; close ISO leaks 18/20/27/29",
-      "Approve or reject Clusters B\u2013F test banks"
+      "Wait for DigitalOcean tip to leave 6cb5d8d9, then retest #1244 invite smoke first",
+      "Merge SAFE rollback #1240 before any dataset import \u2014 never old rollback",
+      "Add Resend/Agentmail secrets so #1213 can ship"
     ],
     "visualBands": {
       "ready": [
@@ -297,21 +286,22 @@
         "comms"
       ]
     },
-    "refreshWarning": "Live tip unchanged since last strand rebuild \u2014 readiness may be stale relative to merged-but-undeployed PRs."
+    "refreshWarning": "Tip unchanged (6cb5d8d9). Board updated for evening merge pack only \u2014 live product not yet on these commits."
   },
   "actions": [
     {
       "id": "wait-afternoon-deploy",
       "title": "Wait for today\u2019s fixes to appear on the test studio",
-      "plainWhy": "PR #1232 (Select), #1237 (Pulse), #1239 (Cluster A final four), #1241 (signed-out waitlist), and the rest of this afternoon\u2019s merge pack are on GitHub but DigitalOcean tip is still 6cb5d8d9. When /api/version moves, re-open Data Migration, waitlist, ambient/Pulse, and Cluster A retest.",
-      "unblocks": "Live proof of Select, Pulse, Cluster A final four, waitlist, live booking counts, Dispatch viewer, Twin, Learning, payments join",
-      "movesProjectForwardPercent": 6,
-      "movesPhaseForwardPercent": 25,
+      "plainWhy": "Evening pack #1242/#1243/#1244/#1246 plus the afternoon pack (#1231\u2013#1239, #1241) are on GitHub but DigitalOcean tip is still 6cb5d8d9. When /api/version moves, re-open invite smoke, waitlist, Data Migration, ambient/Pulse, and Cluster A retest \u2014 especially #1244 member invite account creation.",
+      "unblocks": "Live proof of invites, waitlist, Luton CC, Dispatch types, Select, Pulse, Cluster A, payments join",
+      "movesProjectForwardPercent": 7,
+      "movesPhaseForwardPercent": 30,
       "phaseId": "launch-hardening",
       "strandIds": [
         "dataset",
         "ambient",
         "m1",
+        "smoke",
         "payments",
         "findings-fix",
         "command-centre"
@@ -326,18 +316,18 @@
           "kind": "staging"
         },
         {
-          "label": "PR #1239 (merged)",
+          "label": "PR #1244 invites (merged)",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1244",
+          "kind": "github"
+        },
+        {
+          "label": "PR #1243 waitlist (merged)",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1243",
+          "kind": "github"
+        },
+        {
+          "label": "PR #1239 Cluster A (merged)",
           "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1239",
-          "kind": "github"
-        },
-        {
-          "label": "PR #1237 (merged)",
-          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1237",
-          "kind": "github"
-        },
-        {
-          "label": "PR #1232 (merged)",
-          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1232",
           "kind": "github"
         }
       ]
@@ -345,7 +335,7 @@
     {
       "id": "import-12m-dataset",
       "title": "Import the 12-month dataset (BLOCKED until safe rollback)",
-      "plainWhy": "WARNING \u2014 DO NOT use rollback. Claude Code previously saw credit wipe to zero, deleted members while keeping access, and a failed rollback that could not be retried. Corrections on PR #1240 (SAFE rollback) must land first. Until then this action is blocked/waiting even though unlock value is high. After #1240 and today\u2019s tip are live, ask Bot Commander to import.",
+      "plainWhy": "WARNING \u2014 DO NOT use rollback. Claude Code previously saw credit wipe to zero, deleted members while keeping access, and a failed rollback that could not be retried. Corrections on PR #1240 (SAFE rollback) must land first. Until then this action is blocked/waiting even though unlock value is high. After #1240 and today\u2019s tip are live, ask Bot Commander to import. Never instruct import.rollbackBatch.",
       "unblocks": "Seeded twelve-month data for AI, ambient, Command Centre, and member testing \u2014 GATED on #1240",
       "movesProjectForwardPercent": 8,
       "movesPhaseForwardPercent": 50,
@@ -358,7 +348,7 @@
       ],
       "effort": "hour",
       "status": "blocked",
-      "warning": "DO NOT use rollback. Claude Code saw credit wipe to zero, deleted members keeping access, failed rollback unretryable. Corrections on #1240 must land first. Until then this action is blocked/waiting.",
+      "warning": "DO NOT use rollback. Claude Code saw credit wipe to zero, deleted members keeping access, failed rollback unretryable. Corrections on #1240 must land first. Until then this action is blocked/waiting. Never instruct import.rollbackBatch.",
       "warningLevel": "danger",
       "links": [
         {
@@ -505,8 +495,8 @@
     },
     {
       "id": "fix-clerk-invite",
-      "title": "Fix smoke: member Clerk invite cannot be accepted",
-      "plainWhy": "Critical-path smoke still fails at step one because a new member cannot accept their invite account. Afternoon merges did not clear this. Nothing downstream can be trusted until this works.",
+      "title": "Done on GitHub: member invite creates working account (#1244) \u2014 waiting for tip + smoke retest",
+      "plainWhy": "#1244 merged at ~21:58 UTC. Smoke is still measured-fail on tip 6cb5d8d9. When /api/version changes, walk invite accept end-to-end on Bluebird before calling smoke green.",
       "unblocks": "Smoke strand and confidence in the full member critical path",
       "movesProjectForwardPercent": 5,
       "movesPhaseForwardPercent": 35,
@@ -517,20 +507,20 @@
         "findings-fix"
       ],
       "effort": "hour",
-      "status": "needed",
+      "status": "waiting",
       "links": [
         {
-          "label": "GitHub #1180",
-          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180",
+          "label": "PR #1244 (merged)",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1244",
           "kind": "github"
         },
         {
-          "label": "Copy prompt for Bot Commander",
-          "url": "data:text/plain,Please%20fix%20the%20smoke%20Clerk%20invite%20account%20issue%20%E2%80%94%20member%20cannot%20accept.%20Tracked%20on%20%231180.",
-          "kind": "copy-prompt",
-          "text": "Please fix the smoke Clerk invite account issue \u2014 member cannot accept. Tracked on #1180."
+          "label": "Check /api/version",
+          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
+          "kind": "staging"
         }
-      ]
+      ],
+      "unlockWhen": "live staging tip !== 6cb5d8d955c0cf4e4d651161c0dfb4471fe56961"
     },
     {
       "id": "merge-1237-pulse",
@@ -646,7 +636,7 @@
   ],
   "notes": {
     "botCommander": "Where an action says \u201ctell Bot Commander\u201d, use the Copy prompt button, then paste into this Bot Commander chat. Declan can paste those messages here directly \u2014 no special app link required.",
-    "hardWarning": "NEVER recommend rollback. PR #1240 SAFE rollback must land first. Dataset import is blocked until then.",
-    "refresh": "Primary refresh when live staging tip changes; backup weekday every 30 minutes daytime Europe/London."
+    "hardWarning": "NEVER recommend rollback. PR #1240 SAFE rollback must land first. Dataset import is blocked until then. Never instruct import.rollbackBatch.",
+    "refresh": "Primary refresh when live staging tip changes; backup weekday every 30 minutes daytime Europe/London. This run: evening merge pack via tip-change listener (#1244)."
   }
 }
