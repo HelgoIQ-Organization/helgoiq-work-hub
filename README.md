@@ -20,6 +20,27 @@ Deep links: `#strand-dataset`, `#action-merge-1232`, `#drop-<id>`.
 
 Dashboard numbers live in [`dashboard.json`](./dashboard.json) (weighted from current testing state). Catalogue entries live in [`index.json`](./index.json).
 
+### Progress today + freshness
+
+- **Progress today** (above strands): morning vs now headline and per-strand deltas, plus a plain-English day note. Morning board for 10 Sep 2026 is kept at [`history/2026-09-10-morning.json`](./history/2026-09-10-morning.json); after each rebuild we also write [`history/latest.json`](./history/latest.json). Previous calendar day snapshots are kept for compare.
+- Hero always shows **Data as of {local Europe/London time} · build {shortSha}** beside readiness. **Never look confident when stale** — if the tip has not moved, merged PRs may still be waiting on the test studio.
+- Strand cards show a **Measured** vs **Estimate** badge (`basis` on each strand).
+
+### Refresh mechanism (chosen)
+
+1. **Primary** — regenerate the dashboard when the **live staging tip** changes (`GET /api/version` on DigitalOcean staging).
+2. **Backup** — weekday every **30 minutes** during daytime Europe/London.
+
+**Data sources:** live `/api/version`, `gh` merged/open PRs, `MASTER.csv`, Cluster A FINAL, #1180 themes.
+
+```bash
+# Stamp meta from live tip (does not invent strand scores)
+node scripts/refresh-dashboard.mjs
+# then Bot Commander fills strands / progressToday / health, commit + push
+```
+
+Hard rule: **never recommend rollback**; SAFE rollback (#1240) must land before dataset import. No secrets in this repo.
+
 ## What you get
 
 - Chronological feed of **drops** (newest first)
@@ -32,7 +53,7 @@ Dashboard numbers live in [`dashboard.json`](./dashboard.json) (weighted from cu
 
 ### `dashboard.json`
 
-`strands[]`, `health`, `actions[]`, `phases[]` — see the file for field shapes. Strand `projectWeightPercent` values sum to ~100; overall launch % is the weighted average.
+`meta` (`dataAsOf`, `buildStamp`, `headlineFormula`, `refreshMechanism`), `progressToday`, `strands[]` (incl. `basis`, `comms`), `health`, `actions[]`, `phases[]` — see the file for field shapes. Strand `projectWeightPercent` values sum to ~100; overall launch % is the weighted average stated in `health.headlineFormula` / `meta.headlineFormula`.
 
 ### `index.json`
 
@@ -59,7 +80,7 @@ Markdown artefacts live under `drops/YYYY-MM-DD-slug/`.
 
 ### Tag vocabulary
 
-`ambient` · `booking` · `payments` · `isolation` · `command-centre` · `dataset` · `smoke` · `ai-85` · `m1` · `census` · `findings` · `status` · `finance`
+`ambient` · `booking` · `payments` · `isolation` · `command-centre` · `dataset` · `smoke` · `ai-85` · `m1` · `census` · `findings` · `status` · `finance` · `comms`
 
 ### Types
 

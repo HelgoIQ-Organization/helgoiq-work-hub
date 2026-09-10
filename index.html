@@ -42,6 +42,7 @@
       </div>
       <div class="hero-copy">
         <p id="readinessLabel" class="readiness-pill">Loading…</p>
+        <p id="dataStamp" class="data-stamp" aria-live="polite">Data as of — · build —</p>
         <p id="healthSummary" class="hero-summary muted">Loading dashboard…</p>
         <div class="hero-lists">
           <div>
@@ -58,6 +59,28 @@
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- PROGRESS TODAY -->
+    <section id="progressToday" class="section progress-today" aria-label="Progress today">
+      <div class="section-head">
+        <h2>Progress today</h2>
+        <p class="muted" id="progressTodaySub">Morning board vs now — honest deltas while afternoon merges wait to go live.</p>
+      </div>
+      <div class="progress-today-headlines">
+        <div class="pt-headline">
+          <span class="pt-label">This morning</span>
+          <span id="morningHeadline" class="pt-pct">—</span>
+        </div>
+        <div class="pt-arrow" aria-hidden="true">→</div>
+        <div class="pt-headline now">
+          <span class="pt-label">Now</span>
+          <span id="nowHeadline" class="pt-pct">—</span>
+        </div>
+        <a id="morningSnapshotLink" class="btn ghost" href="history/2026-09-10-morning.json" target="_blank" rel="noopener">Morning snapshot JSON</a>
+      </div>
+      <div id="progressTodayBars" class="progress-today-bars"></div>
+      <p id="plainEnglishDay" class="plain-english-day"></p>
     </section>
 
     <!-- PHASES -->

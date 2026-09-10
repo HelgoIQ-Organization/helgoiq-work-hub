@@ -93,12 +93,29 @@
   }
 
   /* —— Dashboard render —— */
+  function shortSha(sha) {
+    return String(sha || "").slice(0, 8) || "—";
+  }
+
   function renderHero(dash) {
     const h = dash.health || {};
+    const meta = dash.meta || {};
     const pct = Math.round(h.overallLaunchPercent || 0);
     $("heroPercent").textContent = pct + "%";
     $("readinessLabel").textContent = h.readinessLabel || "";
     $("healthSummary").textContent = h.plainSummary || "";
+
+    const dataAsOf = meta.dataAsOf || dash.updatedAt || "";
+    const build = meta.buildStamp || dash.tip || "";
+    const stamp = $("dataStamp");
+    if (stamp) {
+      const local = dataAsOf ? formatDate(dataAsOf) : "unknown";
+      stamp.textContent = "Data as of " + local + " · build " + shortSha(build);
+      stamp.title = "Full tip: " + (build || "unknown") + " — never treat readiness as live-proven when this stamp is stale";
+      // Soft warn if tip looks old vs afternoon expectation is handled by copy; visual if missing
+      if (!dataAsOf || !build) stamp.classList.add("stale");
+      else stamp.classList.remove("stale");
+    }
 
     const circ = 2 * Math.PI * 52;
     const ring = $("heroRing");
@@ -108,7 +125,7 @@
     else if (pct < 70) ring.style.stroke = "var(--warn)";
     else ring.style.stroke = "var(--accent2)";
 
-    const fill = (el, items, ordered) => {
+    const fill = (el, items) => {
       el.innerHTML = "";
       (items || []).forEach((t) => {
         const li = document.createElement("li");
@@ -119,6 +136,56 @@
     fill($("strengthsList"), h.strengths);
     fill($("risksList"), h.risks);
     fill($("prioritiesList"), h.topPriorities);
+  }
+
+  function renderProgressToday(dash) {
+    const pt = dash.progressToday;
+    const section = $("progressToday");
+    if (!pt || !section) {
+      if (section) section.classList.add("hidden");
+      return;
+    }
+    section.classList.remove("hidden");
+    $("morningHeadline").textContent = Math.round(pt.morningHeadlinePercent || 0) + "%";
+    $("nowHeadline").textContent = Math.round(pt.nowHeadlinePercent || 0) + "%";
+    $("plainEnglishDay").textContent = pt.plainEnglishDay || "";
+    const link = $("morningSnapshotLink");
+    if (link && pt.keptMorningSnapshotPath) {
+      link.href = pt.keptMorningSnapshotPath;
+    }
+    const sub = $("progressTodaySub");
+    if (sub) {
+      const delta = Math.round((pt.nowHeadlinePercent || 0) - (pt.morningHeadlinePercent || 0));
+      const sign = delta > 0 ? "+" : "";
+      sub.textContent =
+        "Morning board vs now (" + sign + delta + " pts headline). Afternoon merges may still be waiting on the live tip — check the data stamp.";
+    }
+    const bars = $("progressTodayBars");
+    bars.innerHTML = "";
+    const morning = pt.morningStrands || {};
+    const now = pt.nowStrands || {};
+    const deltas = pt.deltas || {};
+    const order = (dash.strands || []).map((s) => s.id);
+    const ids = order.length ? order : Object.keys(now);
+    const nameById = {};
+    (dash.strands || []).forEach((s) => { nameById[s.id] = s.name; });
+    ids.forEach((id) => {
+      const m = morning[id] != null ? morning[id] : 0;
+      const n = now[id] != null ? now[id] : 0;
+      const d = deltas[id] != null ? deltas[id] : n - m;
+      const row = document.createElement("div");
+      row.className = "pt-row";
+      const dClass = d > 0 ? "up" : d < 0 ? "down" : "flat";
+      const dLabel = (d > 0 ? "+" : "") + d;
+      row.innerHTML =
+        '<div class="pt-name">' + escapeHtml(nameById[id] || id) + "</div>" +
+        '<div class="pt-dual">' +
+        '<div class="pt-bar-wrap"><span class="pt-cap">am ' + Math.round(m) + '%</span><div class="bar-track"><div class="bar-fill morning" style="width:' + Math.max(0, Math.min(100, m)) + '%"></div></div></div>' +
+        '<div class="pt-bar-wrap"><span class="pt-cap">now ' + Math.round(n) + '%</span><div class="bar-track"><div class="bar-fill now" style="width:' + Math.max(0, Math.min(100, n)) + '%"></div></div></div>' +
+        "</div>" +
+        '<div class="pt-delta ' + dClass + '">' + dLabel + "</div>";
+      bars.appendChild(row);
+    });
   }
 
   function renderPhases(dash) {
@@ -137,6 +204,13 @@
     });
   }
 
+  function basisLabel(basis) {
+    const b = (basis || "").toLowerCase();
+    if (b === "measured") return "Measured";
+    if (b === "estimate") return "Estimate";
+    return basis ? String(basis) : "Estimate";
+  }
+
   function renderStrands(dash) {
     const el = $("strandGrid");
     el.innerHTML = "";
@@ -145,8 +219,12 @@
       btn.type = "button";
       btn.className = "strand-card";
       btn.id = "strand-" + s.id;
+      const basis = (s.basis || "estimate").toLowerCase();
       btn.innerHTML =
+        '<div class="strand-badges">' +
         '<span class="status ' + statusClass(s.status) + '">' + escapeHtml(statusLabel(s.status)) + "</span>" +
+        '<span class="basis-badge basis-' + escapeHtml(basis) + '">' + escapeHtml(basisLabel(s.basis)) + "</span>" +
+        "</div>" +
         '<div class="pct">' + Math.round(s.percent || 0) + "%</div>" +
         '<div class="name">' + escapeHtml(s.name) + "</div>" +
         '<p class="note">' + escapeHtml(s.progressNote || "") + " · " +
@@ -190,8 +268,14 @@
         }
       });
 
+      const warn = a.warning
+        ? '<div class="action-warning ' + escapeHtml(a.warningLevel || "danger") + '" role="alert">' +
+          escapeHtml(a.warning) + "</div>"
+        : "";
+      card.className = "action-card" + (a.warning ? " has-warning" : "") + (a.status === "blocked" ? " is-blocked" : "");
       card.innerHTML =
         "<h3>" + escapeHtml(a.title) + "</h3>" +
+        warn +
         '<p class="action-why">' + escapeHtml(a.plainWhy || "") + "</p>" +
         '<p class="action-unlock"><strong>Unlocks:</strong> ' + escapeHtml(a.unblocks || "") + "</p>" +
         '<div class="action-moves">' +
@@ -216,7 +300,7 @@
     st.className = "status-pill " + statusClass(s.status);
     st.textContent = statusLabel(s.status);
     $("strandMeta").textContent =
-      Math.round(s.percent) + "% · " + s.projectWeightPercent + "% of project · phase " + (s.phaseId || "");
+      Math.round(s.percent) + "% · " + basisLabel(s.basis) + " · " + s.projectWeightPercent + "% of project · phase " + (s.phaseId || "");
     $("strandBar").style.width = (s.percent || 0) + "%";
     $("strandPct").textContent = Math.round(s.percent || 0) + "%";
     $("strandSummary").textContent = s.plainSummary || "";
@@ -564,11 +648,13 @@
       if (dashRes.ok) {
         state.dashboard = await dashRes.json();
         renderHero(state.dashboard);
+        renderProgressToday(state.dashboard);
         renderPhases(state.dashboard);
         renderStrands(state.dashboard);
         renderActions(state.dashboard);
-        if (state.dashboard.updatedAt) {
-          $("updatedAt").textContent = "Updated " + formatDate(state.dashboard.updatedAt);
+        const metaAsOf = (state.dashboard.meta && state.dashboard.meta.dataAsOf) || state.dashboard.updatedAt;
+        if (metaAsOf) {
+          $("updatedAt").textContent = "Updated " + formatDate(metaAsOf);
         } else if (updated) {
           $("updatedAt").textContent = "Updated " + formatDate(updated);
         }

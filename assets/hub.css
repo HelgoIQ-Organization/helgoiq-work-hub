@@ -428,3 +428,161 @@ a { color: var(--accent); }
   opacity: 0.45;
   pointer-events: none;
 }
+
+/* —— Data stamp beside readiness —— */
+.data-stamp {
+  display: inline-block;
+  margin: 0 0 0.75rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-family: var(--mono);
+  background: rgba(91, 159, 212, 0.12);
+  border: 1px solid rgba(91, 159, 212, 0.35);
+  color: var(--accent);
+}
+.data-stamp.stale {
+  background: rgba(224, 122, 122, 0.12);
+  border-color: rgba(224, 122, 122, 0.45);
+  color: var(--danger);
+}
+
+/* —— Progress today —— */
+.progress-today {
+  margin-top: 0.5rem;
+  padding: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: linear-gradient(180deg, #152033 0%, var(--surface) 100%);
+}
+.progress-today-headlines {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem 1rem;
+  margin-bottom: 1rem;
+}
+.pt-headline {
+  display: flex;
+  flex-direction: column;
+  padding: 0.55rem 0.9rem;
+  border-radius: 10px;
+  background: var(--surface2);
+  border: 1px solid var(--border);
+  min-width: 7rem;
+}
+.pt-headline.now {
+  border-color: rgba(125, 211, 167, 0.4);
+}
+.pt-label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--muted);
+}
+.pt-pct {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+.pt-arrow {
+  color: var(--muted);
+  font-size: 1.25rem;
+}
+.progress-today-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+.pt-row {
+  display: grid;
+  grid-template-columns: minmax(8rem, 12rem) 1fr auto;
+  gap: 0.65rem;
+  align-items: center;
+}
+@media (max-width: 720px) {
+  .pt-row { grid-template-columns: 1fr auto; }
+  .pt-name { grid-column: 1 / -1; }
+}
+.pt-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.pt-dual {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.45rem;
+}
+.pt-bar-wrap { display: flex; flex-direction: column; gap: 0.15rem; }
+.pt-cap { font-size: 0.68rem; color: var(--muted); font-family: var(--mono); }
+.bar-fill.morning { background: #5a6f8c; }
+.bar-fill.now { background: var(--accent2); }
+.pt-delta {
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 650;
+  min-width: 2.5rem;
+  text-align: right;
+}
+.pt-delta.up { color: var(--on-track); }
+.pt-delta.down { color: var(--danger); }
+.pt-delta.flat { color: var(--muted); }
+.plain-english-day {
+  margin: 1.1rem 0 0;
+  padding: 0.9rem 1rem;
+  border-left: 3px solid var(--accent);
+  background: rgba(91, 159, 212, 0.08);
+  border-radius: 0 10px 10px 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+/* —— Strand basis badge —— */
+.strand-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  align-items: center;
+}
+.basis-badge {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 650;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+}
+.basis-measured {
+  background: rgba(110, 198, 255, 0.15);
+  color: var(--done);
+  border: 1px solid rgba(110, 198, 255, 0.4);
+}
+.basis-estimate {
+  background: rgba(230, 195, 92, 0.12);
+  color: var(--warn);
+  border: 1px solid rgba(230, 195, 92, 0.35);
+}
+
+/* —— Action warnings —— */
+.action-card.has-warning {
+  border-color: rgba(224, 122, 122, 0.55);
+}
+.action-card.is-blocked {
+  opacity: 0.95;
+}
+.action-warning {
+  margin: 0.55rem 0 0.75rem;
+  padding: 0.65rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.action-warning.danger {
+  background: rgba(224, 122, 122, 0.16);
+  border: 1px solid rgba(224, 122, 122, 0.55);
+  color: #ffb4b4;
+}
+.move-chip.status-blocked { color: var(--blocked); }

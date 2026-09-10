@@ -1,0 +1,380 @@
+{
+  "updatedAt": "2026-09-10T15:28:00.000Z",
+  "tip": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
+  "strands": [
+    {
+      "id": "dataset",
+      "name": "Twelve-month test data",
+      "percent": 25,
+      "status": "blocked",
+      "plainSummary": "We need a full year of realistic studio data so every feature can be tested properly. The spreadsheet is ready and a recent import bug was fixed, but the screen that uploads the member list still crashes. Until that screen works, the database has zero seed rows.",
+      "progressNote": "CSV ready · import fix #1229 live · Data Migration UI blocked on #1232 · 0 seed rows",
+      "blockers": [
+        "Data Migration Select crash (#1232) — cannot upload member CSV",
+        "Zero seed rows until import succeeds after #1232 deploys"
+      ],
+      "detailDropIds": [
+        "2026-09-10-dataset-import-blocked-datamigration-selectitem-",
+        "2026-09-10-dataset"
+      ],
+      "phaseId": "data-foundation",
+      "projectWeightPercent": 15
+    },
+    {
+      "id": "command-centre",
+      "name": "Command Centre acceptance",
+      "percent": 55,
+      "status": "at-risk",
+      "plainSummary": "Command Centre is the studio control board. Cluster A (the first batch of acceptance checks) is mostly done at 20 of 24. Further test banks B–F are drafted but waiting for your approve-or-reject decision before work continues.",
+      "progressNote": "Cluster A 20/24 (~83% of A) · B–F banks proposed, not approved",
+      "blockers": [
+        "4 remaining Cluster A checks still open",
+        "Clusters B–F banks proposed but not approved or rejected"
+      ],
+      "detailDropIds": [
+        "2026-09-10-cluster-a",
+        "2026-09-10-cluster-bf"
+      ],
+      "phaseId": "studio-ops",
+      "projectWeightPercent": 12
+    },
+    {
+      "id": "isolation",
+      "name": "Studio privacy checks",
+      "percent": 86,
+      "status": "at-risk",
+      "plainSummary": "These checks make sure one studio cannot see another studio’s data. Twenty-five of twenty-nine privacy checks already pass. Four still fail — mostly branding, cohorts, and staff availability leaking between studios. Those four need an architecture fix before launch.",
+      "progressNote": "ISO-29 sweep: 25 PASS / 4 FAIL remaining (18, 20, 27, 29)",
+      "blockers": [
+        "ISO-18 branding leak",
+        "ISO-20 cohorts leak",
+        "ISO-27 staff availability leak",
+        "ISO-29 Command Centre branding leak"
+      ],
+      "detailDropIds": [
+        "2026-09-10-iso-29-tenancy-sweep-complete-25-pass-4-fail",
+        "2026-09-10-iso29"
+      ],
+      "phaseId": "studio-ops",
+      "projectWeightPercent": 12
+    },
+    {
+      "id": "ai-85",
+      "name": "AI features check",
+      "percent": 56,
+      "status": "at-risk",
+      "plainSummary": "Eighty-five AI feature checks are on the list. About half already pass (48). Twenty-three still need clearer answers, eight cannot be reached yet (often because test data is missing), and five fail outright. Importing the year of test data and settling AI feature switches will unlock a big re-score.",
+      "progressNote": "48 PASS · 23 UNCERTAIN · 8 UNREACHABLE · 5 FAIL of 85",
+      "blockers": [
+        "Dataset import blocked — many AI checks need real history",
+        "AI Feature Controls / Event Bus still need Platform Admin decisions (NEED_DECLAN)",
+        "5 hard FAILs and 8 UNREACHABLE paths"
+      ],
+      "detailDropIds": [
+        "2026-09-10-ai-85-ready-uncertain-re-score-1-pass-5-still-un",
+        "2026-09-09-ai85"
+      ],
+      "phaseId": "intelligence",
+      "projectWeightPercent": 18
+    },
+    {
+      "id": "ambient",
+      "name": "Ambient intelligence",
+      "percent": 70,
+      "status": "at-risk",
+      "plainSummary": "Ambient features (Pulse, Dispatch, Twin, Learn, Event Bus) have been walked through in depth. Roughly seventy percent of the surface has been probed. Known sticky issues include Pulse getting stuck and the Dispatch viewer. Launch-ready is lower than the probe score until those fail paths are fixed.",
+      "progressNote": "~70% probed · Pulse stuck · Dispatch viewer issues · launch-ready lower",
+      "blockers": [
+        "Pulse can get stuck",
+        "Dispatch viewer problems",
+        "Event Bus / AI controls still need admin settle"
+      ],
+      "detailDropIds": [
+        "2026-09-09-ambient"
+      ],
+      "phaseId": "intelligence",
+      "projectWeightPercent": 10
+    },
+    {
+      "id": "m1",
+      "name": "Member journey & booking-pay",
+      "percent": 60,
+      "status": "at-risk",
+      "plainSummary": "The core member path — join, book, pay — partly works. Reinstating a membership and cancelling are still blocked. Until those lifecycle edges work cleanly, member journey is not launch-safe.",
+      "progressNote": "Core paths partly PASS · reinstate / cancelling blocked",
+      "blockers": [
+        "Membership reinstate blocked",
+        "Cancelling flows blocked"
+      ],
+      "detailDropIds": [
+        "2026-09-10-iso29",
+        "2026-09-10-status-claude"
+      ],
+      "phaseId": "member-commerce",
+      "projectWeightPercent": 12
+    },
+    {
+      "id": "smoke",
+      "name": "Critical path smoke",
+      "percent": 20,
+      "status": "blocked",
+      "plainSummary": "Smoke tests are the quick “does the basics work?” check. Right now the first step fails: a new member cannot accept their Clerk invite account. That blocks the whole critical path.",
+      "progressNote": "Step 1 Clerk invite FAIL · overall ~20%",
+      "blockers": [
+        "Clerk invite account — member cannot accept (#1180)"
+      ],
+      "detailDropIds": [
+        "2026-09-10-status-claude",
+        "2026-09-10-cluster-a"
+      ],
+      "phaseId": "member-commerce",
+      "projectWeightPercent": 8
+    },
+    {
+      "id": "payments",
+      "name": "Payments & Stripe",
+      "percent": 45,
+      "status": "at-risk",
+      "plainSummary": "Stripe payment testing has one clear win: Member B discount path passes. Coverage beyond that is still thin, so payments confidence sits around halfway.",
+      "progressNote": "Member B discount PASS · broader Stripe coverage still thin",
+      "blockers": [
+        "Broader Stripe / discount / refund coverage still thin"
+      ],
+      "detailDropIds": [
+        "2026-09-10-status-claude"
+      ],
+      "phaseId": "member-commerce",
+      "projectWeightPercent": 8
+    },
+    {
+      "id": "findings-fix",
+      "name": "Fixing known launch bugs",
+      "percent": 40,
+      "status": "at-risk",
+      "plainSummary": "Known launch bugs are tracked and partly worked. Architecture review is open, and the Data Migration Select crash (#1232) is the hottest gate. Closing these findings unlocks several other strands.",
+      "progressNote": "Architecture review + #1232 open · ~40% of known launch bugs addressed",
+      "blockers": [
+        "PR #1232 Data Migration Select fix awaiting merge/approve",
+        "Architecture review / tenant leak fixes still open (#1180)"
+      ],
+      "detailDropIds": [
+        "2026-09-10-dataset-import-blocked-datamigration-selectitem-",
+        "2026-09-10-status-claude"
+      ],
+      "phaseId": "launch-hardening",
+      "projectWeightPercent": 5
+    }
+  ],
+  "health": {
+    "overallLaunchPercent": 52,
+    "readinessLabel": "Not ready to launch — strong progress, a few hard gates",
+    "plainSummary": "As of today’s software build (10 Sep 2026), HelgoIQ launch readiness sits around half. Privacy checks are the strongest area — most studio-isolation tests already pass. Command Centre Cluster A is nearly done, and AI and ambient features have been probed widely. The hard gates are clear: the Data Migration upload screen still crashes so the twelve-month test dataset cannot load; a new member cannot accept their invite (smoke fails at step one); four privacy leaks remain; and Platform Admin still needs to settle AI Feature Controls and the Event Bus. Approving PR #1232 and importing the dataset after it deploys is the single biggest unlock for data, AI re-scores, and confidence overall.",
+    "strengths": [
+      "Studio privacy checks mostly green (25 of 29 pass)",
+      "Command Centre Cluster A nearly complete (20 of 24)",
+      "AI feature list well underway (48 of 85 already pass)",
+      "Ambient intelligence deep-dive done with clear known fails",
+      "Twelve-month CSV prepared and earlier import fix already live"
+    ],
+    "risks": [
+      "Data Migration UI crash blocks all seed data (#1232)",
+      "Clerk invite failure blocks critical-path smoke",
+      "Four tenant-isolation fails still open",
+      "AI Feature Controls / Event Bus waiting on Platform Admin",
+      "Clusters B–F banks not yet approved or rejected"
+    ],
+    "topPriorities": [
+      "Merge and deploy PR #1232, then import the 12-month dataset",
+      "Fix Clerk invite so smoke step 1 passes",
+      "Close the four ISO tenant-leak fails",
+      "Settle AI Feature Controls and Event Bus in Platform Admin",
+      "Approve or reject Command Centre Clusters B–F"
+    ],
+    "visualBands": {
+      "ready": ["isolation"],
+      "nearly": ["ambient", "m1", "command-centre", "ai-85"],
+      "blocked": ["dataset", "smoke", "payments", "findings-fix"]
+    }
+  },
+  "actions": [
+    {
+      "id": "merge-1232",
+      "title": "Approve & merge the Data Migration fix (PR #1232)",
+      "plainWhy": "The screen that uploads the member spreadsheet crashes on an empty dropdown value. Until this pull request is merged and deployed, you cannot load the twelve-month test data.",
+      "unblocks": "CSV import UI, dataset strand, and many AI re-scores once data is loaded",
+      "movesProjectForwardPercent": 10,
+      "movesPhaseForwardPercent": 40,
+      "phaseId": "data-foundation",
+      "strandIds": ["dataset", "ai-85", "findings-fix"],
+      "effort": "minutes",
+      "status": "needed",
+      "links": [
+        {
+          "label": "Open PR #1232",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1232",
+          "kind": "github"
+        }
+      ]
+    },
+    {
+      "id": "import-12m-dataset",
+      "title": "After #1232 deploys: ask Bot Commander to import the dataset",
+      "plainWhy": "Once the upload screen works on staging, someone needs to run the import. Paste the prompt below into this Bot Commander chat — Grok will handle the import steps.",
+      "unblocks": "Seeded twelve-month data for AI, ambient, Command Centre, and member testing",
+      "movesProjectForwardPercent": 8,
+      "movesPhaseForwardPercent": 50,
+      "phaseId": "data-foundation",
+      "strandIds": ["dataset", "ai-85", "ambient", "command-centre"],
+      "effort": "hour",
+      "status": "waiting",
+      "links": [
+        {
+          "label": "Copy prompt for Bot Commander",
+          "url": "data:text/plain,import%20the%2012m%20dataset%20now",
+          "kind": "copy-prompt",
+          "text": "import the 12m dataset now"
+        }
+      ]
+    },
+    {
+      "id": "settle-ai-controls",
+      "title": "Platform Admin: settle AI Feature Controls & Event Bus",
+      "plainWhy": "Several AI checks are stuck waiting for you (NEED_DECLAN) to turn features on/off and confirm Event Bus settings in Platform Admin.",
+      "unblocks": "AI-008 / AI-009, flags-off paths, and Event Bus ambient checks",
+      "movesProjectForwardPercent": 5,
+      "movesPhaseForwardPercent": 20,
+      "phaseId": "intelligence",
+      "strandIds": ["ai-85", "ambient"],
+      "effort": "half-day",
+      "status": "needed",
+      "links": [
+        {
+          "label": "Open staging Platform Admin",
+          "url": "https://lobster-app-662c7.ondigitalocean.app",
+          "kind": "staging"
+        }
+      ]
+    },
+    {
+      "id": "approve-clusters-bf",
+      "title": "Approve or reject Clusters B–F test banks",
+      "plainWhy": "Further Command Centre acceptance banks are drafted. They stay locked until you say yes or no in Bot Commander.",
+      "unblocks": "Command Centre Clusters B–F work can start (or be dropped cleanly)",
+      "movesProjectForwardPercent": 4,
+      "movesPhaseForwardPercent": 25,
+      "phaseId": "studio-ops",
+      "strandIds": ["command-centre"],
+      "effort": "minutes",
+      "status": "needed",
+      "links": [
+        {
+          "label": "Copy reply for Bot Commander",
+          "url": "data:text/plain,Approve%20Clusters%20B%E2%80%93F%20acceptance%20banks%20as%20proposed.%20Please%20proceed.",
+          "kind": "copy-prompt",
+          "text": "Approve Clusters B–F acceptance banks as proposed. Please proceed."
+        },
+        {
+          "label": "Copy reject reply",
+          "url": "data:text/plain,Reject%20Clusters%20B%E2%80%93F%20as%20proposed%20%E2%80%94%20hold%20until%20Cluster%20A%20is%2024%2F24.",
+          "kind": "copy-prompt",
+          "text": "Reject Clusters B–F as proposed — hold until Cluster A is 24/24."
+        }
+      ]
+    },
+    {
+      "id": "fix-iso-leaks",
+      "title": "Architecture review: fix privacy fails 18, 20, 27, 29",
+      "plainWhy": "Four studio-isolation checks still fail — branding, cohorts, staff availability, and Command Centre branding can leak across studios. That is a launch blocker for multi-studio trust.",
+      "unblocks": "Isolation strand to near-done; safer multi-studio launch",
+      "movesProjectForwardPercent": 6,
+      "movesPhaseForwardPercent": 30,
+      "phaseId": "studio-ops",
+      "strandIds": ["isolation", "findings-fix"],
+      "effort": "half-day",
+      "status": "needed",
+      "links": [
+        {
+          "label": "GitHub #1180 running list",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180",
+          "kind": "github"
+        },
+        {
+          "label": "Copy prompt for Bot Commander",
+          "url": "data:text/plain,Please%20prioritise%20architecture%20review%20and%20fix%20ISO%20fails%2018%2C%2020%2C%2027%2C%2029%20(tenant%20leaks)%20tracked%20on%20%231180.",
+          "kind": "copy-prompt",
+          "text": "Please prioritise architecture review and fix ISO fails 18, 20, 27, 29 (tenant leaks) tracked on #1180."
+        }
+      ]
+    },
+    {
+      "id": "fix-clerk-invite",
+      "title": "Fix smoke: member Clerk invite cannot be accepted",
+      "plainWhy": "Critical-path smoke fails at step one because a new member cannot accept their invite account. Nothing downstream can be trusted until this works.",
+      "unblocks": "Smoke strand and confidence in the full member critical path",
+      "movesProjectForwardPercent": 5,
+      "movesPhaseForwardPercent": 35,
+      "phaseId": "member-commerce",
+      "strandIds": ["smoke", "m1", "findings-fix"],
+      "effort": "hour",
+      "status": "needed",
+      "links": [
+        {
+          "label": "GitHub #1180",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180",
+          "kind": "github"
+        },
+        {
+          "label": "Copy prompt for Bot Commander",
+          "url": "data:text/plain,Please%20fix%20the%20smoke%20Clerk%20invite%20account%20issue%20%E2%80%94%20member%20cannot%20accept.%20Tracked%20on%20%231180.",
+          "kind": "copy-prompt",
+          "text": "Please fix the smoke Clerk invite account issue — member cannot accept. Tracked on #1180."
+        }
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "phaseId": "data-foundation",
+      "name": "Test data foundation",
+      "projectWeightPercent": 15,
+      "strandIds": ["dataset"],
+      "plainSummary": "Get a full year of realistic studio data loaded so every other check has something real to run against.",
+      "percentComplete": 25
+    },
+    {
+      "phaseId": "studio-ops",
+      "name": "Studio ops & privacy",
+      "projectWeightPercent": 24,
+      "strandIds": ["command-centre", "isolation"],
+      "plainSummary": "Prove Command Centre acceptance and that studios cannot see each other’s data.",
+      "percentComplete": 71
+    },
+    {
+      "phaseId": "intelligence",
+      "name": "AI & ambient intelligence",
+      "projectWeightPercent": 28,
+      "strandIds": ["ai-85", "ambient"],
+      "plainSummary": "Score the AI feature list and ambient components; clear admin switches and known fail paths.",
+      "percentComplete": 61
+    },
+    {
+      "phaseId": "member-commerce",
+      "name": "Member journey & money",
+      "projectWeightPercent": 28,
+      "strandIds": ["m1", "payments", "smoke"],
+      "plainSummary": "Booking, pay, membership lifecycle, Stripe, and the critical-path smoke must all hold.",
+      "percentComplete": 44
+    },
+    {
+      "phaseId": "launch-hardening",
+      "name": "Launch bug fixes",
+      "projectWeightPercent": 5,
+      "strandIds": ["findings-fix"],
+      "plainSummary": "Close the known launch blockers so the other phases can finish.",
+      "percentComplete": 40
+    }
+  ],
+  "notes": {
+    "botCommander": "Where an action says “tell Bot Commander”, use the Copy prompt button, then paste into this Bot Commander chat. Declan can paste those messages here directly — no special app link required."
+  }
+}
