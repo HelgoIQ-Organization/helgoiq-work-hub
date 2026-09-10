@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HelgoIQ Work Hub</title>
-  <meta name="description" content="Searchable repository of Bot Commander / Grok work artefacts for HelgoIQ." />
+  <title>HelgoIQ Work Hub — Launch Dashboard</title>
+  <meta name="description" content="Plain-English launch dashboard and searchable work drops for HelgoIQ (Declan)." />
   <link rel="stylesheet" href="assets/hub.css" />
   <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer></script>
 </head>
@@ -14,43 +14,140 @@
       <div class="brand">
         <span class="logo" aria-hidden="true">◈</span>
         <div>
-          <h1>HelgoIQ Work Hub</h1>
-          <p class="tagline">Bot Commander · Grok artefacts · searchable drops</p>
+          <h1>HelgoIQ Launch Hub</h1>
+          <p class="tagline">Plain-English progress · your next moves · work drops</p>
         </div>
       </div>
       <div class="header-meta">
         <span id="updatedAt" class="muted"></span>
+        <a class="btn ghost" href="#dashboard">Dashboard</a>
+        <a class="btn ghost" href="#drops">Drops</a>
         <a class="btn ghost" href="https://github.com/HelgoIQ-Organization/helgoiq-work-hub" id="repoLink" target="_blank" rel="noopener">Repo</a>
       </div>
     </div>
   </header>
 
-  <main class="wrap layout">
-    <aside class="filters" aria-label="Filters">
-      <label class="search-label" for="search">Search</label>
-      <input id="search" type="search" placeholder="Title, summary, tags, path…" autocomplete="off" />
+  <main class="wrap">
+    <!-- HERO / HEALTH -->
+    <section id="dashboard" class="hero" aria-label="Launch readiness">
+      <div class="hero-ring-wrap">
+        <svg class="progress-ring" viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52" />
+          <circle id="heroRing" class="ring-fg" cx="60" cy="60" r="52" />
+        </svg>
+        <div class="ring-label">
+          <span id="heroPercent" class="ring-pct">—</span>
+          <span class="ring-sub">launch ready</span>
+        </div>
+      </div>
+      <div class="hero-copy">
+        <p id="readinessLabel" class="readiness-pill">Loading…</p>
+        <p id="healthSummary" class="hero-summary muted">Loading dashboard…</p>
+        <div class="hero-lists">
+          <div>
+            <h2>Going well</h2>
+            <ul id="strengthsList"></ul>
+          </div>
+          <div>
+            <h2>Watch-outs</h2>
+            <ul id="risksList"></ul>
+          </div>
+          <div>
+            <h2>Top priorities</h2>
+            <ol id="prioritiesList"></ol>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <div class="filter-block">
-        <h2>Types</h2>
-        <div id="typeChips" class="chips" role="group" aria-label="Filter by type"></div>
+    <!-- PHASES -->
+    <section class="section" aria-label="Phases">
+      <div class="section-head">
+        <h2>Phases of the launch programme</h2>
+        <p class="muted">Each phase is a share of the whole project. Click a strand below for detail.</p>
       </div>
-      <div class="filter-block">
-        <h2>Tags</h2>
-        <div id="tagChips" class="chips" role="group" aria-label="Filter by tag"></div>
-      </div>
-      <button type="button" id="clearFilters" class="btn ghost full">Clear filters</button>
-      <p id="resultCount" class="muted count"></p>
-    </aside>
+      <div id="phasesStrip" class="phases-strip"></div>
+    </section>
 
-    <section class="feed" aria-live="polite">
-      <div id="emptyState" class="empty hidden">
-        <h2>No drops match</h2>
-        <p>Try clearing filters or a broader search. New drops land via Bot Commander auto-post.</p>
+    <!-- STRANDS -->
+    <section class="section" aria-label="Work strands">
+      <div class="section-head">
+        <h2>Work strands</h2>
+        <p class="muted">Click any card for a plain-English deep dive, blockers, and linked drops.</p>
       </div>
-      <div id="feed" class="feed-list"></div>
+      <div id="strandGrid" class="strand-grid"></div>
+    </section>
+
+    <!-- ACTIONS -->
+    <section class="section" aria-label="Your moves">
+      <div class="section-head">
+        <h2>Your moves</h2>
+        <p class="muted" id="actionsNote">Things only you (Declan) can unblock — with how much each one moves the project forward.</p>
+      </div>
+      <div id="actionsGrid" class="actions-grid"></div>
+    </section>
+
+    <!-- DROPS (kept) -->
+    <section id="drops" class="section drops-section" aria-label="Work drops">
+      <div class="section-head">
+        <h2>Work drops</h2>
+        <p class="muted">Searchable notes from Bot Commander / Grok. Plain English first; technical detail inside.</p>
+      </div>
+      <div class="layout">
+        <aside class="filters" aria-label="Filters">
+          <label class="search-label" for="search">Search</label>
+          <input id="search" type="search" placeholder="Title, plain English, tags…" autocomplete="off" />
+
+          <div class="filter-block">
+            <h2>Types</h2>
+            <div id="typeChips" class="chips" role="group" aria-label="Filter by type"></div>
+          </div>
+          <div class="filter-block">
+            <h2>Tags</h2>
+            <div id="tagChips" class="chips" role="group" aria-label="Filter by tag"></div>
+          </div>
+          <button type="button" id="clearFilters" class="btn ghost full">Clear filters</button>
+          <p id="resultCount" class="muted count"></p>
+        </aside>
+
+        <section class="feed" aria-live="polite">
+          <div id="emptyState" class="empty hidden">
+            <h2>No drops match</h2>
+            <p>Try clearing filters or a broader search. New drops land via Bot Commander auto-post.</p>
+          </div>
+          <div id="feed" class="feed-list"></div>
+        </section>
+      </div>
     </section>
   </main>
 
+  <!-- Strand detail panel -->
+  <div id="strandPanel" class="viewer hidden" role="dialog" aria-modal="true" aria-labelledby="strandTitle">
+    <div class="viewer-panel strand-panel">
+      <header class="viewer-header">
+        <div>
+          <p id="strandStatus" class="status-pill">—</p>
+          <h2 id="strandTitle">Strand</h2>
+          <p id="strandMeta" class="muted"></p>
+        </div>
+        <button type="button" id="closeStrand" class="btn" aria-label="Close">Close</button>
+      </header>
+      <div class="strand-body">
+        <div class="strand-pct-row">
+          <div class="bar-track big"><div id="strandBar" class="bar-fill"></div></div>
+          <span id="strandPct" class="strand-pct-num">0%</span>
+        </div>
+        <p id="strandSummary" class="strand-summary"></p>
+        <p id="strandProgress" class="muted"></p>
+        <h3>Blockers</h3>
+        <ul id="strandBlockers"></ul>
+        <h3>Linked drops</h3>
+        <div id="strandDrops" class="strand-drops"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Drop markdown viewer -->
   <div id="viewer" class="viewer hidden" role="dialog" aria-modal="true" aria-labelledby="viewerTitle">
     <div class="viewer-panel">
       <header class="viewer-header">
@@ -69,7 +166,7 @@
   </div>
 
   <footer class="site-footer wrap">
-    <p>HelgoIQ Work Hub · vanilla static · no credentials · see <a href="CONTRIBUTING-BOT.md">CONTRIBUTING-BOT.md</a></p>
+    <p>HelgoIQ Work Hub · plain-English dashboard for Declan · vanilla static · see <a href="CONTRIBUTING-BOT.md">CONTRIBUTING-BOT.md</a></p>
   </footer>
 
   <script src="assets/hub.js" defer></script>

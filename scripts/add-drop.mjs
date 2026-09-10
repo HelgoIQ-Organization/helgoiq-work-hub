@@ -3,8 +3,9 @@
  * Add a drop to HelgoIQ Work Hub.
  * Usage:
  *   node scripts/add-drop.mjs --title=… --tags=a,b --type=report --file=path.md
- * Options: --date=YYYY-MM-DD --id=… --summary=… --project=… --tip=… --issue=url
+ * Options: --date=YYYY-MM-DD --id=… --summary=… --plain=… --project=… --tip=… --issue=url
  * Multiple --file= allowed.
+ * --plain= sets plainEnglish (studio-owner friendly). Defaults to --summary if omitted.
  */
 import fs from "fs";
 import path from "path";
@@ -64,7 +65,7 @@ function todayLondon() {
 const args = parseArgs(process.argv);
 if (!args.title || !args.type || !args.files.length) {
   console.error(
-    "Required: --title=… --type=… --file=path.md  (optional --tags=a,b --date --id --summary --project --tip --issue)"
+    "Required: --title=… --type=… --file=path.md  (optional --tags=a,b --date --id --summary --plain --project --tip --issue)"
   );
   process.exit(1);
 }
@@ -104,12 +105,16 @@ for (const f of args.files) {
   console.log("Copied", src, "→", dest);
 }
 
+const summary = args.summary || args.title;
+const plainEnglish = args.plain || summary;
+
 const index = JSON.parse(fs.readFileSync(INDEX, "utf8"));
 const drop = {
   id,
   title: args.title,
   date,
-  summary: args.summary || args.title,
+  summary,
+  plainEnglish,
   tags,
   type: args.type,
   project: args.project || "helgoiq-platform",

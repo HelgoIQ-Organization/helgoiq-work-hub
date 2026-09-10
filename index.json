@@ -1,6 +1,57 @@
 {
-  "updatedAt": "2026-09-10T13:42:00.000Z",
+  "updatedAt": "2026-09-10T15:29:26.816Z",
   "drops": [
+    {
+      "id": "2026-09-10-ai-85-ready-uncertain-re-score-1-pass-5-still-un",
+      "title": "AI-85 ready UNCERTAIN re-score — 1 PASS / 5 still UNCERTAIN",
+      "date": "2026-09-10",
+      "summary": "AI-017 PASS; 011/044/051/055/076 UNCERTAIN",
+      "tags": [
+        "ai-85",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-10-ai-85-ready-uncertain-re-score-1-pass-5-still-un/RESCORE-READY-NOW.md"
+      ],
+      "tip": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
+      "plainEnglish": "We re-checked six AI features that were previously unclear. One now clearly passes. Five are still uncertain and need another look once more test data or settings are in place. This is a small slice of the wider 85-item AI checklist."
+    },
+    {
+      "id": "2026-09-10-iso-29-tenancy-sweep-complete-25-pass-4-fail",
+      "title": "ISO-29 tenancy sweep complete — 25 PASS / 4 FAIL",
+      "date": "2026-09-10",
+      "summary": "Fails: ISO-18 branding, ISO-20 cohorts, ISO-27 staff availability, ISO-29 CC branding",
+      "tags": [
+        "isolation",
+        "findings"
+      ],
+      "type": "matrix",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-10-iso-29-tenancy-sweep-complete-25-pass-4-fail/ISO29-NOTES.md"
+      ],
+      "tip": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
+      "plainEnglish": "We finished the full studio-privacy checklist. Twenty-five checks pass — studios mostly cannot see each other’s data. Four still fail: branding, cohorts, staff availability, and Command Centre branding. Those four need an engineering fix before launch."
+    },
+    {
+      "id": "2026-09-10-dataset-import-blocked-datamigration-selectitem-",
+      "title": "Dataset import BLOCKED — DataMigration SelectItem empty value",
+      "date": "2026-09-10",
+      "summary": "Radix SelectItem value=\"\" crashes member CSV upload; 0 rows",
+      "tags": [
+        "dataset",
+        "findings"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-10-dataset-import-blocked-datamigration-selectitem-/PROGRESS.md"
+      ],
+      "tip": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
+      "plainEnglish": "Loading the year of test members is blocked. The upload screen crashes because a dropdown is set to an empty value. Pull request #1232 fixes that. Until it is merged and deployed, the database stays empty."
+    },
     {
       "id": "2026-09-10-status-claude",
       "title": "HelgoIQ status for Claude (10 Sep morning)",
@@ -17,11 +68,12 @@
       "paths": [
         "drops/2026-09-10-status-claude/STATUS-FOR-CLAUDE.md"
       ],
-      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180",
+      "plainEnglish": "Morning handoff snapshot for the team: where each work stream stands, what is open on the running bug list (#1180), and notes on seats and smoke testing. Useful context, not a final verdict."
     },
     {
       "id": "2026-09-10-cluster-a",
-      "title": "Cluster A \u2014 regression vs luck + tip 6cb5d8d9 FINAL ref",
+      "title": "Cluster A — regression vs luck + tip 6cb5d8d9 FINAL ref",
       "date": "2026-09-10",
       "summary": "MEM-X01 / ACS-F01 / TAG-C01 / TAG-A01: lucky prior pass vs behavioral regression; FINAL.json pointer for tip 6cb5d8d9.",
       "tags": [
@@ -35,13 +87,14 @@
       "paths": [
         "drops/2026-09-10-cluster-a/REGRESSION-VS-LUCK.md",
         "drops/2026-09-10-cluster-a/FINAL-6cb5d8d9-REF.md"
-      ]
+      ],
+      "plainEnglish": "Command Centre’s first acceptance batch (Cluster A) was checked carefully. Some earlier “passes” looked lucky rather than solid. This drop records what regressed versus what still holds on today’s software build."
     },
     {
       "id": "2026-09-10-cluster-bf",
-      "title": "Proposal: Clusters B\u2013F acceptance banks",
+      "title": "Proposal: Clusters B–F acceptance banks",
       "date": "2026-09-10",
-      "summary": "Locked until Cluster A is 24/24. Purpose, counts, launch-critical vs post-launch for B\u2013F banks.",
+      "summary": "Locked until Cluster A is 24/24. Purpose, counts, launch-critical vs post-launch for B–F banks.",
       "tags": [
         "command-centre",
         "findings"
@@ -52,7 +105,8 @@
       "paths": [
         "drops/2026-09-10-cluster-bf/CLUSTER-B-F-PROPOSAL.md"
       ],
-      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180",
+      "plainEnglish": "A proposal for the next Command Centre test banks (Clusters B through F). Work stays on hold until Cluster A is fully green and Declan approves or rejects this plan."
     },
     {
       "id": "2026-09-10-iso29",
@@ -68,11 +122,12 @@
       "project": "helgoiq-m1-lifecycle",
       "paths": [
         "drops/2026-09-10-iso29/ISO29-NOTES.md"
-      ]
+      ],
+      "plainEnglish": "Notes from the studio-privacy checklist while walking the member lifecycle. Compares two studios and records early isolation checks as report-only findings."
     },
     {
       "id": "2026-09-10-dataset",
-      "title": "Bluebird 12-month dataset \u2014 blocked / progress / plan",
+      "title": "Bluebird 12-month dataset — blocked / progress / plan",
       "date": "2026-09-10",
       "summary": "CSV import commit 500 (companyId); 0 seed rows; CREATE-PLAN + BLOCKED + PROGRESS pack.",
       "tags": [
@@ -87,7 +142,8 @@
         "drops/2026-09-10-dataset/BLOCKED.md",
         "drops/2026-09-10-dataset/PROGRESS.md",
         "drops/2026-09-10-dataset/CREATE-PLAN.md"
-      ]
+      ],
+      "plainEnglish": "Plan and progress for loading a full year of Bluebird studio data. Spreadsheets and import steps are ready, but seed rows are still zero until the upload screen is fixed."
     },
     {
       "id": "2026-09-09-ambient",
@@ -105,7 +161,8 @@
       "paths": [
         "drops/2026-09-09-ambient/PACK-SUMMARY.md",
         "drops/2026-09-09-ambient/PLAIN-ENGLISH.md"
-      ]
+      ],
+      "plainEnglish": "A plain walkthrough of ambient intelligence features — Pulse, Dispatch, Twin, Learn, and Event Bus — including what works and what already looks broken for a studio owner."
     },
     {
       "id": "2026-09-09-ai85",
@@ -123,7 +180,8 @@
         "drops/2026-09-09-ai85/MASTER-CSV-NOTE.md",
         "drops/2026-09-09-ai85/READY-AFTER-DATASET.md",
         "drops/2026-09-09-ai85/UNCERTAIN-RESCORE-CHECKLIST.md"
-      ]
+      ],
+      "plainEnglish": "How we are scoring the 85 AI feature checks: which ones can be re-checked now, which must wait for the twelve-month dataset, and which to skip."
     }
   ]
 }

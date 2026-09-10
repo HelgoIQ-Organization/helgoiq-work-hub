@@ -1,20 +1,40 @@
 # HelgoIQ Work Hub
 
-Static, searchable, tag-filterable repository of **Bot Commander / Grok** work artefacts for HelgoIQ.
+Plain-English **launch dashboard** for Declan, plus a searchable catalogue of Bot Commander / Grok work drops.
 
-Open `index.html` locally (or via GitHub Pages). No build step — vanilla HTML/CSS/JS + [marked.js](https://cdn.jsdelivr.net/npm/marked/) from CDN.
+Live (GitHub Pages): [helgoiq-organization.github.io/helgoiq-work-hub](https://helgoiq-organization.github.io/helgoiq-work-hub/)
+
+Open `index.html` locally (or via Pages). No build step — vanilla HTML/CSS/JS + [marked.js](https://cdn.jsdelivr.net/npm/marked/) from CDN.
+
+## For Declan (non-technical)
+
+The top of the site is a **visual dashboard**:
+
+- Big **launch %** ring and a plain readiness label
+- **Work strand** cards (click for blockers and linked notes)
+- **Your moves** — actions only you can unblock, with how much each one moves the project / phase forward
+- **Phases** strip — share of the whole launch programme
+- **Work drops** feed underneath — each card leads with friendly English; technical detail is secondary
+
+Deep links: `#strand-dataset`, `#action-merge-1232`, `#drop-<id>`.
+
+Dashboard numbers live in [`dashboard.json`](./dashboard.json) (weighted from current testing state). Catalogue entries live in [`index.json`](./index.json).
 
 ## What you get
 
 - Chronological feed of **drops** (newest first)
-- Search across title, summary, tags, paths
+- Search across title, plain English, summary, tags, paths
 - Multi-select filter chips for **tags** and **types**
 - In-page markdown viewer + raw file link
 - Mobile-friendly empty states
 
 ## Data
 
-All catalogue entries live in [`index.json`](./index.json):
+### `dashboard.json`
+
+`strands[]`, `health`, `actions[]`, `phases[]` — see the file for field shapes. Strand `projectWeightPercent` values sum to ~100; overall launch % is the weighted average.
+
+### `index.json`
 
 ```json
 {
@@ -23,7 +43,8 @@ All catalogue entries live in [`index.json`](./index.json):
     "id": "2026-09-10-ambient",
     "title": "…",
     "date": "2026-09-10",
-    "summary": "one line",
+    "plainEnglish": "2–4 sentences a studio owner understands",
+    "summary": "short technical line",
     "tags": ["ambient", "ai"],
     "type": "report",
     "project": "helgoiq-platform",
@@ -34,7 +55,7 @@ All catalogue entries live in [`index.json`](./index.json):
 }
 ```
 
-Markdown (and other artefacts) live under `drops/YYYY-MM-DD-slug/`.
+Markdown artefacts live under `drops/YYYY-MM-DD-slug/`.
 
 ### Tag vocabulary
 
@@ -52,18 +73,23 @@ node scripts/add-drop.mjs \
   --tags=findings,command-centre \
   --type=finding \
   --file=/path/to/notes.md \
+  --plain="Friendly 2–4 sentences for Declan…" \
   [--date=2026-09-10] \
   [--project=helgoiq-platform] \
   [--tip=abc123] \
-  [--summary="one line"] \
+  [--summary="one technical line"] \
   [--id=2026-09-10-my-finding]
 ```
+
+`--plain=` sets `plainEnglish`. If omitted, it defaults to `--summary` (or the title).
 
 Copies the file into `drops/…`, updates `index.json`, never stores credentials.
 
 ## Bot Commander auto-post
 
-See [`CONTRIBUTING-BOT.md`](./CONTRIBUTING-BOT.md). After a meaningful Bot Commander / Grok work pack lands on the box, the agent should add a drop (no passwords, no `README-SEATS.md`).
+See [`CONTRIBUTING-BOT.md`](./CONTRIBUTING-BOT.md). After a meaningful Bot Commander / Grok work pack lands on the box, the agent should add a drop with `--plain=` (no passwords, no `README-SEATS.md`).
+
+Where the dashboard asks Declan to “tell Bot Commander”, use the **Copy prompt** buttons and paste into this chat.
 
 ## Safety
 
@@ -79,12 +105,10 @@ python3 -m http.server 8765
 # open http://127.0.0.1:8765/
 ```
 
-Or open `index.html` directly (some browsers restrict `fetch` of `index.json` from `file://` — use a tiny static server if needed).
+Or open `index.html` directly (some browsers restrict `fetch` of JSON from `file://` — use a tiny static server if needed).
 
 ## Pages
 
-GitHub Pages serves from `main` (root). Live URL (when enabled):
+GitHub Pages serves from `main` (root). Live URL:
 
 `https://helgoiq-organization.github.io/helgoiq-work-hub/`
-
-(or user fork: `https://declaneryan71.github.io/helgoiq-work-hub/`)

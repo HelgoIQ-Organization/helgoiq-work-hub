@@ -9,6 +9,7 @@
 
   const state = {
     drops: [],
+    dashboard: null,
     selectedTags: new Set(),
     selectedTypes: new Set(),
     query: "",
@@ -17,6 +18,14 @@
   };
 
   const $ = (id) => document.getElementById(id);
+
+  function escapeHtml(s) {
+    return String(s)
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;");
+  }
 
   function formatDate(iso) {
     try {
@@ -30,6 +39,232 @@
     }
   }
 
+  function statusClass(status) {
+    const s = (status || "").toLowerCase();
+    if (s === "on-track" || s === "done") return "status-" + s;
+    if (s === "at-risk") return "status-at-risk";
+    if (s === "blocked") return "status-blocked";
+    return "status-at-risk";
+  }
+
+  function statusLabel(status) {
+    const map = {
+      "on-track": "On track",
+      blocked: "Blocked",
+      "at-risk": "At risk",
+      done: "Done",
+      needed: "Needed",
+      waiting: "Waiting",
+    };
+    return map[status] || status || "";
+  }
+
+  function setHash(hash) {
+    if (location.hash === hash) return;
+    history.replaceState(null, "", hash || location.pathname + location.search);
+  }
+
+  function showToast(msg) {
+    const t = document.createElement("div");
+    t.className = "toast";
+    t.textContent = msg;
+    document.body.appendChild(t);
+    setTimeout(() => t.remove(), 2200);
+  }
+
+  async function copyText(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      showToast("Copied — paste into Bot Commander chat");
+    } catch {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand("copy");
+        showToast("Copied — paste into Bot Commander chat");
+      } catch {
+        showToast("Could not copy — select the prompt manually");
+      }
+      ta.remove();
+    }
+  }
+
+  /* —— Dashboard render —— */
+  function renderHero(dash) {
+    const h = dash.health || {};
+    const pct = Math.round(h.overallLaunchPercent || 0);
+    $("heroPercent").textContent = pct + "%";
+    $("readinessLabel").textContent = h.readinessLabel || "";
+    $("healthSummary").textContent = h.plainSummary || "";
+
+    const circ = 2 * Math.PI * 52;
+    const ring = $("heroRing");
+    ring.style.strokeDasharray = String(circ);
+    ring.style.strokeDashoffset = String(circ * (1 - pct / 100));
+    if (pct < 40) ring.style.stroke = "var(--blocked)";
+    else if (pct < 70) ring.style.stroke = "var(--warn)";
+    else ring.style.stroke = "var(--accent2)";
+
+    const fill = (el, items, ordered) => {
+      el.innerHTML = "";
+      (items || []).forEach((t) => {
+        const li = document.createElement("li");
+        li.textContent = t;
+        el.appendChild(li);
+      });
+    };
+    fill($("strengthsList"), h.strengths);
+    fill($("risksList"), h.risks);
+    fill($("prioritiesList"), h.topPriorities);
+  }
+
+  function renderPhases(dash) {
+    const el = $("phasesStrip");
+    el.innerHTML = "";
+    (dash.phases || []).forEach((p) => {
+      const card = document.createElement("div");
+      card.className = "phase-card";
+      card.innerHTML =
+        "<h3>" + escapeHtml(p.name) + "</h3>" +
+        '<div class="phase-weight">' + escapeHtml(String(p.projectWeightPercent)) + "% of whole project</div>" +
+        '<div class="bar-track"><div class="bar-fill" style="width:' + (p.percentComplete || 0) + '%"></div></div>' +
+        '<div class="phase-pct">' + Math.round(p.percentComplete || 0) + "% complete</div>" +
+        "<p>" + escapeHtml(p.plainSummary || "") + "</p>";
+      el.appendChild(card);
+    });
+  }
+
+  function renderStrands(dash) {
+    const el = $("strandGrid");
+    el.innerHTML = "";
+    (dash.strands || []).forEach((s) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "strand-card";
+      btn.id = "strand-" + s.id;
+      btn.innerHTML =
+        '<span class="status ' + statusClass(s.status) + '">' + escapeHtml(statusLabel(s.status)) + "</span>" +
+        '<div class="pct">' + Math.round(s.percent || 0) + "%</div>" +
+        '<div class="name">' + escapeHtml(s.name) + "</div>" +
+        '<p class="note">' + escapeHtml(s.progressNote || "") + " · " +
+        escapeHtml(String(s.projectWeightPercent)) + "% of project</p>";
+      btn.addEventListener("click", () => openStrand(s.id));
+      el.appendChild(btn);
+    });
+  }
+
+  function renderActions(dash) {
+    const el = $("actionsGrid");
+    el.innerHTML = "";
+    if (dash.notes && dash.notes.botCommander) {
+      $("actionsNote").textContent =
+        "Things only you (Declan) can unblock — with how much each one moves the project forward. " +
+        dash.notes.botCommander;
+    }
+    (dash.actions || []).forEach((a) => {
+      const card = document.createElement("article");
+      card.className = "action-card";
+      card.id = "action-" + a.id;
+
+      const links = document.createElement("div");
+      links.className = "action-links";
+      (a.links || []).forEach((lnk) => {
+        if (lnk.kind === "copy-prompt") {
+          const b = document.createElement("button");
+          b.type = "button";
+          b.className = "btn copy";
+          b.textContent = lnk.label || "Copy prompt";
+          b.addEventListener("click", () => copyText(lnk.text || lnk.url || ""));
+          links.appendChild(b);
+        } else {
+          const b = document.createElement("a");
+          b.className = "btn" + (lnk.kind === "github" ? " primary" : "");
+          b.href = lnk.url;
+          b.target = "_blank";
+          b.rel = "noopener";
+          b.textContent = lnk.label || lnk.kind || "Open";
+          links.appendChild(b);
+        }
+      });
+
+      card.innerHTML =
+        "<h3>" + escapeHtml(a.title) + "</h3>" +
+        '<p class="action-why">' + escapeHtml(a.plainWhy || "") + "</p>" +
+        '<p class="action-unlock"><strong>Unlocks:</strong> ' + escapeHtml(a.unblocks || "") + "</p>" +
+        '<div class="action-moves">' +
+        '<span class="move-chip project">+' + escapeHtml(String(a.movesProjectForwardPercent)) + "% project</span>" +
+        '<span class="move-chip phase">+' + escapeHtml(String(a.movesPhaseForwardPercent)) + "% phase</span>" +
+        '<span class="move-chip effort">' + escapeHtml(a.effort || "") + "</span>" +
+        '<span class="move-chip status-' + escapeHtml(a.status || "") + '">' + escapeHtml(statusLabel(a.status)) + "</span>" +
+        "</div>";
+      card.appendChild(links);
+      el.appendChild(card);
+    });
+  }
+
+  function openStrand(id) {
+    const dash = state.dashboard;
+    if (!dash) return;
+    const s = (dash.strands || []).find((x) => x.id === id);
+    if (!s) return;
+    location.hash = "strand-" + id;
+    $("strandTitle").textContent = s.name;
+    const st = $("strandStatus");
+    st.className = "status-pill " + statusClass(s.status);
+    st.textContent = statusLabel(s.status);
+    $("strandMeta").textContent =
+      Math.round(s.percent) + "% · " + s.projectWeightPercent + "% of project · phase " + (s.phaseId || "");
+    $("strandBar").style.width = (s.percent || 0) + "%";
+    $("strandPct").textContent = Math.round(s.percent || 0) + "%";
+    $("strandSummary").textContent = s.plainSummary || "";
+    $("strandProgress").textContent = s.progressNote || "";
+    const ul = $("strandBlockers");
+    ul.innerHTML = "";
+    (s.blockers || []).forEach((b) => {
+      const li = document.createElement("li");
+      li.textContent = b;
+      ul.appendChild(li);
+    });
+    if (!(s.blockers || []).length) {
+      const li = document.createElement("li");
+      li.className = "muted";
+      li.textContent = "No open blockers listed.";
+      ul.appendChild(li);
+    }
+    const dropsEl = $("strandDrops");
+    dropsEl.innerHTML = "";
+    (s.detailDropIds || []).forEach((did) => {
+      const drop = state.drops.find((d) => d.id === did);
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = drop ? drop.title : did;
+      b.addEventListener("click", () => {
+        closeStrand(false);
+        if (drop) openDrop(drop, true);
+        else location.hash = "drop-" + did;
+      });
+      dropsEl.appendChild(b);
+    });
+    if (!(s.detailDropIds || []).length) {
+      dropsEl.innerHTML = '<p class="muted">No linked drops yet.</p>';
+    }
+    $("strandPanel").classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeStrand(clearHash) {
+    $("strandPanel").classList.add("hidden");
+    if (!$("viewer") || $("viewer").classList.contains("hidden")) {
+      document.body.style.overflow = "";
+    }
+    if (clearHash !== false && location.hash.indexOf("strand-") === 1) {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
+  }
+
+  /* —— Drops (existing + plainEnglish) —— */
   function chip(label, pressed, onToggle) {
     const b = document.createElement("button");
     b.type = "button";
@@ -47,8 +282,14 @@
       (d.tags || []).forEach((t) => tagsUsed.add(t));
       if (d.type) typesUsed.add(d.type);
     });
-    const tagOrder = [...TAG_VOCAB.filter((t) => tagsUsed.has(t)), ...[...tagsUsed].filter((t) => !TAG_VOCAB.includes(t)).sort()];
-    const typeOrder = [...TYPE_VOCAB.filter((t) => typesUsed.has(t)), ...[...typesUsed].filter((t) => !TYPE_VOCAB.includes(t)).sort()];
+    const tagOrder = [
+      ...TAG_VOCAB.filter((t) => tagsUsed.has(t)),
+      ...[...tagsUsed].filter((t) => !TAG_VOCAB.includes(t)).sort(),
+    ];
+    const typeOrder = [
+      ...TYPE_VOCAB.filter((t) => typesUsed.has(t)),
+      ...[...typesUsed].filter((t) => !TYPE_VOCAB.includes(t)).sort(),
+    ];
 
     const tagEl = $("tagChips");
     const typeEl = $("typeChips");
@@ -89,6 +330,7 @@
     const hay = [
       drop.title,
       drop.summary,
+      drop.plainEnglish || "",
       drop.id,
       drop.project,
       drop.type,
@@ -119,45 +361,41 @@
     list.forEach((drop) => {
       const card = document.createElement("article");
       card.className = "card";
+      card.id = "drop-" + drop.id;
       card.tabIndex = 0;
       card.setAttribute("role", "button");
       card.setAttribute("aria-label", "Open " + drop.title);
       const badges = [
-        `<span class="badge type">${escapeHtml(drop.type || "report")}</span>`,
-        ...(drop.tags || []).map((t) => `<span class="badge">${escapeHtml(t)}</span>`),
+        '<span class="badge type">' + escapeHtml(drop.type || "report") + "</span>",
+        ...(drop.tags || []).map((t) => '<span class="badge">' + escapeHtml(t) + "</span>"),
       ];
-      if (drop.tip) badges.push(`<span class="badge tip">${escapeHtml(String(drop.tip).slice(0, 8))}</span>`);
-      card.innerHTML = `
-        <div class="card-top">
-          <h3>${escapeHtml(drop.title)}</h3>
-          <span class="date">${escapeHtml(drop.date || "")}</span>
-        </div>
-        <p class="summary">${escapeHtml(drop.summary || "")}</p>
-        <div class="badges">${badges.join("")}</div>
-      `;
-      card.addEventListener("click", () => openDrop(drop));
+      if (drop.tip) badges.push('<span class="badge tip">' + escapeHtml(String(drop.tip).slice(0, 8)) + "</span>");
+      const plain = drop.plainEnglish || drop.summary || "";
+      const tech = drop.plainEnglish && drop.summary ? drop.summary : "";
+      card.innerHTML =
+        '<div class="card-top">' +
+        "<h3>" + escapeHtml(drop.title) + "</h3>" +
+        '<span class="date">' + escapeHtml(drop.date || "") + "</span>" +
+        "</div>" +
+        '<p class="plain-english">' + escapeHtml(plain) + "</p>" +
+        (tech ? '<p class="summary">' + escapeHtml(tech) + "</p>" : "") +
+        '<div class="badges">' + badges.join("") + "</div>";
+      card.addEventListener("click", () => openDrop(drop, true));
       card.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
-          openDrop(drop);
+          openDrop(drop, true);
         }
       });
       feed.appendChild(card);
     });
   }
 
-  function escapeHtml(s) {
-    return String(s)
-      .replace(/&/g, "&amp;")
-      .replace(/</g, "&lt;")
-      .replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;");
-  }
-
-  async function openDrop(drop) {
+  async function openDrop(drop, setHashFlag) {
     state.activeDrop = drop;
     const paths = drop.paths || [];
     state.activePath = paths[0] || null;
+    if (setHashFlag) location.hash = "drop-" + drop.id;
     $("viewerTitle").textContent = drop.title;
     $("viewerMeta").textContent = [drop.date, drop.type, (drop.tags || []).join(", "), drop.project]
       .filter(Boolean)
@@ -208,19 +446,51 @@
     }
   }
 
-  function closeViewer() {
+  function closeViewer(clearHash) {
     $("viewer").classList.add("hidden");
-    document.body.style.overflow = "";
+    if ($("strandPanel").classList.contains("hidden")) {
+      document.body.style.overflow = "";
+    }
     state.activeDrop = null;
+    if (clearHash !== false && location.hash.indexOf("drop-") === 1) {
+      history.replaceState(null, "", location.pathname + location.search);
+    }
+  }
+
+  function applyHash() {
+    const raw = (location.hash || "").replace(/^#/, "");
+    if (!raw) return;
+    if (raw.startsWith("strand-")) {
+      openStrand(raw.slice("strand-".length));
+    } else if (raw.startsWith("action-")) {
+      closeStrand(false);
+      closeViewer(false);
+      const el = document.getElementById(raw);
+      if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    } else if (raw.startsWith("drop-")) {
+      const id = raw.slice("drop-".length);
+      const d = state.drops.find((x) => x.id === id);
+      if (d) openDrop(d, false);
+    } else if (raw === "drops" || raw === "dashboard") {
+      const el = document.getElementById(raw);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    }
   }
 
   async function init() {
-    $("closeViewer").addEventListener("click", closeViewer);
+    $("closeViewer").addEventListener("click", () => closeViewer(true));
+    $("closeStrand").addEventListener("click", () => closeStrand(true));
     $("viewer").addEventListener("click", (e) => {
-      if (e.target === $("viewer")) closeViewer();
+      if (e.target === $("viewer")) closeViewer(true);
+    });
+    $("strandPanel").addEventListener("click", (e) => {
+      if (e.target === $("strandPanel")) closeStrand(true);
     });
     document.addEventListener("keydown", (e) => {
-      if (e.key === "Escape") closeViewer();
+      if (e.key === "Escape") {
+        if (!$("viewer").classList.contains("hidden")) closeViewer(true);
+        else if (!$("strandPanel").classList.contains("hidden")) closeStrand(true);
+      }
     });
     $("search").addEventListener("input", (e) => {
       state.query = e.target.value;
@@ -234,33 +504,48 @@
       renderChips();
       renderFeed();
     });
+    window.addEventListener("hashchange", applyHash);
 
     try {
-      const res = await fetch("index.json");
-      if (!res.ok) throw new Error("index.json " + res.status);
-      const data = await res.json();
+      const [idxRes, dashRes] = await Promise.all([
+        fetch("index.json"),
+        fetch("dashboard.json"),
+      ]);
+      if (!idxRes.ok) throw new Error("index.json " + idxRes.status);
+      const data = await idxRes.json();
       state.drops = data.drops || [];
-      if (data.updatedAt) $("updatedAt").textContent = "Updated " + formatDate(data.updatedAt);
-      // Fix repo link if under user account (Pages may rewrite later)
-      const host = location.hostname;
-      if (host.includes("github.io")) {
-        const parts = host.split(".");
-        // user.github.io/repo or org.github.io/repo
+      const updated = data.updatedAt;
+      if (dashRes.ok) {
+        state.dashboard = await dashRes.json();
+        renderHero(state.dashboard);
+        renderPhases(state.dashboard);
+        renderStrands(state.dashboard);
+        renderActions(state.dashboard);
+        if (state.dashboard.updatedAt) {
+          $("updatedAt").textContent = "Updated " + formatDate(state.dashboard.updatedAt);
+        } else if (updated) {
+          $("updatedAt").textContent = "Updated " + formatDate(updated);
+        }
+      } else if (updated) {
+        $("updatedAt").textContent = "Updated " + formatDate(updated);
+        $("healthSummary").textContent = "Dashboard data missing — drops still available below.";
       }
     } catch (err) {
       state.drops = [];
-      $("updatedAt").textContent = "Failed to load index.json";
+      $("updatedAt").textContent = "Failed to load data";
       console.error(err);
     }
     renderChips();
     renderFeed();
 
-    // Deep link ?drop=id
+    // Legacy ?drop=id
     const params = new URLSearchParams(location.search);
-    const id = params.get("drop");
-    if (id) {
-      const d = state.drops.find((x) => x.id === id);
-      if (d) openDrop(d);
+    const qid = params.get("drop");
+    if (qid && !location.hash) {
+      const d = state.drops.find((x) => x.id === qid);
+      if (d) openDrop(d, true);
+    } else {
+      applyHash();
     }
   }
 
