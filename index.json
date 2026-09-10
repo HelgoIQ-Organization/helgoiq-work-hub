@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-10T15:29:26.816Z",
+  "updatedAt": "2026-09-10T21:23:53.787Z",
   "drops": [
+    {
+      "id": "2026-09-10-tip-99e17af7-live",
+      "title": "Tip live 99e17af7 — Launch Hub 62%",
+      "date": "2026-09-10",
+      "summary": "Staging tip left 6cb5d8d9; afternoon+evening packs live. Headline 62% estimate. #1240 merged but not on tip — no import/rollback.",
+      "plainEnglish": "The test studio finally got today’s big batch of fixes. Launch readiness on paper is about 62%. Safe undo for data import is merged on GitHub but not on the live studio yet — do not import or roll back until it is.",
+      "tags": [
+        "status",
+        "findings",
+        "smoke",
+        "dataset",
+        "command-centre"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-10-tip-99e17af7-live/SUMMARY.md"
+      ],
+      "tip": "99e17af76b00f3d94158ea154e3417ab8cdd0cc0"
+    },
     {
       "id": "2026-09-10-ai-85-ready-uncertain-re-score-1-pass-5-still-un",
       "title": "AI-85 ready UNCERTAIN re-score — 1 PASS / 5 still UNCERTAIN",
