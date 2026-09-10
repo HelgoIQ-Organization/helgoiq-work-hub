@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-10T21:48:14.247Z",
+  "updatedAt": "2026-09-10T22:12:44.054Z",
   "drops": [
+    {
+      "id": "2026-09-10-cluster-a-20-24-tip-232659cf",
+      "title": "Cluster A Measured 20/24 on tip 232659cf — same 4 fails (no improvement)",
+      "date": "2026-09-10",
+      "summary": "Cluster A Measured 20/24 on tip 232659cf; same fails MEM-X01 ACS-F01 TAG-C01 TAG-A01; teacher MGR-10/ACS-X01 PASS; headline ~66%; rollback ban still active.",
+      "plainEnglish": "Command Centre Cluster A was re-run on the live studio tonight: 20 of 24 checks passed — the same score as before, with the same four stubborn fails. Teacher safety checks (refund and pay-rate) passed. Launch readiness on the board eases to about 66% because the optimistic estimate for those final-four fixes did not hold. Smoke is still a clean 6/6. Declan has still not cleared the rollback ban.",
+      "tags": [
+        "command-centre",
+        "status",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-10-cluster-a-20-24-tip-232659cf/SUMMARY.md"
+      ],
+      "tip": "232659cf05d22e5de920ee547925b37581cfb6d4"
+    },
     {
       "id": "2026-09-10-overnight-smoke-6-6-pass",
       "title": "Overnight smoke ALL PASS — 6/6 on tip 232659cf (membership reverse proven)",

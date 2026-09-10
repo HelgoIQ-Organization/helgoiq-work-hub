@@ -1,26 +1,26 @@
 {
-  "updatedAt": "2026-09-10T21:48:14.564Z",
+  "updatedAt": "2026-09-10T22:13:31.028Z",
   "meta": {
-    "dataAsOf": "2026-09-10T21:48:14.564Z",
+    "dataAsOf": "2026-09-10T22:13:31.028Z",
     "buildStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
     "liveTip": "232659cf05d22e5de920ee547925b37581cfb6d4",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 68% = round(52\u00d712 + 74\u00d710 + 86\u00d710 + 56\u00d715 + 88\u00d79 + 78\u00d710 + 100\u00d76 + 68\u00d78 + 82\u00d710 + 15\u00d710)/100.",
-    "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 66% = round(52×12 + 60×10 + 86×10 + 56×15 + 88×9 + 78×10 + 100×6 + 68×8 + 82×10 + 15×10)/100.",
+    "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Overnight six-step smoke ALL PASS on tip 232659cf \u2014 smoke strand Measured 100%; Cluster A / M1 / ISO / ambient / AI-85 still Estimate (not re-run tonight).",
+    "lastRefreshNote": "Cluster A Measured 20/24 on tip 232659cf — same 4 fails MEM-X01 ACS-F01 TAG-C01 TAG-A01 (no improvement); teacher MGR-10/ACS-X01 PASS; smoke stays Measured 6/6; M1/ISO/ambient/AI-85 not done tonight yet.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-10T21:48:14.564Z"
+      "checkedAt": "2026-09-10T22:13:31.028Z"
     }
   },
   "tip": "232659cf05d22e5de920ee547925b37581cfb6d4",
   "progressToday": {
     "morningHeadlinePercent": 52,
-    "nowHeadlinePercent": 68,
+    "nowHeadlinePercent": 66,
     "morningStrands": {
       "dataset": 25,
       "command-centre": 55,
@@ -35,7 +35,7 @@
     },
     "nowStrands": {
       "dataset": 52,
-      "command-centre": 74,
+      "command-centre": 60,
       "isolation": 86,
       "ai-85": 56,
       "ambient": 88,
@@ -47,7 +47,7 @@
     },
     "deltas": {
       "dataset": 27,
-      "command-centre": 19,
+      "command-centre": 5,
       "isolation": 0,
       "ai-85": 0,
       "ambient": 18,
@@ -57,9 +57,9 @@
       "findings-fix": 42,
       "comms": 15
     },
-    "plainEnglishDay": "This morning the board sat at 52%. Earlier tonight paper readiness on tip 232659cf was about 64% (estimate) before overnight smoke finished. Overnight six-step smoke is now ALL PASS on tip 232659cf \u2014 including step 5 membership reverse (Cancelling\u2192Active), the first proven reverse this programme. Account-not-found on invite is gone. Launch readiness is about 68% (smoke Measured; Cluster A / M1 / ISO / ambient / AI-85 still Estimate \u2014 not re-run tonight). Hard rule unchanged: Declan has NOT cleared the rollback ban \u2014 never use import.rollbackBatch even though #1240 is live. Automated communications still need five Resend/Agentmail secrets.",
+    "plainEnglishDay": "This morning the board sat at 52%. Overnight six-step smoke finished ALL PASS on tip 232659cf (including first proven membership reverse Cancelling→Active), lifting the board to about 68% with smoke Measured. Cluster A was then re-run on the same tip: Measured 20/24 — the same four fails as before (MEM-X01, ACS-F01, TAG-C01, TAG-A01); teacher MGR-10 and ACS-X01 PASS. Because those final-four fixes did not improve the score, Command Centre moves from optimistic estimate to Measured and launch readiness eases to about 66%. M1 / ISO / ambient / AI-85 still not done tonight. Hard rule unchanged: Declan has NOT cleared the rollback ban — never use import.rollbackBatch even though #1240 is live. Automated communications still need five Resend/Agentmail secrets.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board Declan saw (overall 52%) vs post-smoke board on tip 232659cf (68%; smoke Measured 6/6 PASS)."
+    "compareNote": "Morning board Declan saw (overall 52%) vs post–Cluster A board on tip 232659cf (66%; smoke Measured 6/6; Cluster A Measured 20/24 no improvement)."
   },
   "strands": [
     {
@@ -69,10 +69,10 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Select crash fix (#1232) and SAFE rollback code (#1240) are both on tip 232659cf. The year of test data is still not loaded. Overnight smoke did not import dataset. Declan has NOT cleared the rollback ban: never use import.rollbackBatch.",
-      "progressNote": "Estimate 52% \u2014 #1240 live; data not loaded; rollback ban still active.",
+      "progressNote": "Estimate 52% — #1240 live; data not loaded; rollback ban still active.",
       "blockers": [
         "12-month dataset not imported yet",
-        "Declan has NOT cleared rollback ban \u2014 no import.rollbackBatch even though #1240 is live"
+        "Declan has NOT cleared rollback ban — no import.rollbackBatch even though #1240 is live"
       ],
       "detailDropIds": [
         "2026-09-10-dataset-import-blocked-datamigration-selectitem-",
@@ -84,21 +84,23 @@
     {
       "id": "command-centre",
       "name": "Command Centre acceptance",
-      "percent": 74,
-      "basis": "estimate",
+      "percent": 60,
+      "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Luton screens fix (#1242), Cluster A final-four (#1239), and Weymouth door-tool (#1245) are on tip 232659cf. Cluster A was 20/24 on an older tip \u2014 Cluster A retest not run tonight; keep estimate.",
-      "progressNote": "Estimate 74% \u2014 #1245 on tip; Cluster A not re-run tonight.",
+      "plainSummary": "Cluster A re-run on tip 232659cf: Measured 20/24 — same four fails as prior tips (MEM-X01, ACS-F01, TAG-C01, TAG-A01). Teacher MGR-10 and ACS-X01 PASS. #1239/#1245 are on tip but did not clear the final four. Clusters B–F still need Declan’s approve/reject.",
+      "progressNote": "Measured 60% — Cluster A 20/24 (~83% of A bank) same fails; teacher MGR-10/ACS-X01 PASS; B–F unapproved.",
       "blockers": [
-        "Cluster A retest on tip 232659cf not done tonight"
+        "Cluster A final four still FAIL: MEM-X01, ACS-F01, TAG-C01, TAG-A01",
+        "Clusters B–F banks not approved/rejected by Declan"
       ],
       "detailDropIds": [
+        "2026-09-10-cluster-a-20-24-tip-232659cf",
         "2026-09-10-cluster-a",
         "2026-09-10-cluster-bf"
       ],
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
-      "measuredNote": "Prior Cluster A alone 20/24 \u2248 55% measured on older tip; strand overall estimate until overnight."
+      "measuredNote": "Cluster A on tip 232659cf: 20/24 PASS; fails MEM-X01 ACS-F01 TAG-C01 TAG-A01; teacher MGR-10/ACS-X01 PASS."
     },
     {
       "id": "isolation",
@@ -106,7 +108,7 @@
       "percent": 86,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Last measured privacy bank was 25 of 29 PASS. Tip is 232659cf \u2014 ISO-29 not re-run tonight. Four known leaks (18/20/27/29) still open until proven otherwise.",
+      "plainSummary": "Last measured privacy bank was 25 of 29 PASS. Tip is 232659cf — ISO-29 not re-run tonight. Four known leaks (18/20/27/29) still open until proven otherwise.",
       "progressNote": "Estimate 86% held from prior measure; ISO not re-run tonight.",
       "blockers": [
         "Known privacy fails 18, 20, 27, 29",
@@ -125,8 +127,8 @@
       "percent": 56,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "AI-85 bank still paper-held at prior 48/85 PASS rate. Not re-sampled tonight on tip 232659cf \u2014 treat as estimate.",
-      "progressNote": "Estimate 56% \u2014 AI-85 not re-run tonight.",
+      "plainSummary": "AI-85 bank still paper-held at prior 48/85 PASS rate. Not re-sampled tonight on tip 232659cf — treat as estimate.",
+      "progressNote": "Estimate 56% — AI-85 not re-run tonight.",
       "blockers": [
         "AI Feature Controls & Event Bus not settled",
         "No fresh AI-85 sample on tip 232659cf tonight"
@@ -144,8 +146,8 @@
       "percent": 88,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Pulse (#1237), Twin (#1236), Morning Dispatch (#1235/#1246), and Learning loop (#1238) are on tip. Ambient evidence not re-run tonight \u2014 keep estimate.",
-      "progressNote": "Estimate 88% \u2014 ambient pack live; Pulse/Dispatch/Twin not re-run tonight.",
+      "plainSummary": "Pulse (#1237), Twin (#1236), Morning Dispatch (#1235/#1246), and Learning loop (#1238) are on tip. Ambient evidence not re-run tonight — keep estimate.",
+      "progressNote": "Estimate 88% — ambient pack live; Pulse/Dispatch/Twin not re-run tonight.",
       "blockers": [
         "Pulse/Dispatch/Twin ambient evidence not re-run tonight"
       ],
@@ -161,8 +163,8 @@
       "percent": 78,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Waitlist (#1233/#1241/#1243) and invite account creation (#1244) are on tip. Full M1 lifecycle matrix not re-run tonight (overnight smoke covered invite\u2192pay\u2192book\u2192cancel\u2192membership reverse only). Keep estimate.",
-      "progressNote": "Estimate 78% \u2014 waitlist/invite live; full M1 lifecycle not re-run tonight.",
+      "plainSummary": "Waitlist (#1233/#1241/#1243) and invite account creation (#1244) are on tip. Full M1 lifecycle matrix not re-run tonight (overnight smoke covered invite→pay→book→cancel→membership reverse only). Keep estimate.",
+      "progressNote": "Estimate 78% — waitlist/invite live; full M1 lifecycle not re-run tonight.",
       "blockers": [
         "Full M1 lifecycle retest on tip 232659cf not done tonight"
       ],
@@ -179,8 +181,8 @@
       "percent": 100,
       "basis": "measured",
       "status": "ready",
-      "plainSummary": "Overnight six-step smoke ALL PASS on tip 232659cf: invite (account-not-found gone), discounted Stripe TEST checkout, booking, cancel+credit return, membership Cancelling\u2192Active reverse (first proven this programme), and evidence cleanup.",
-      "progressNote": "Measured 100% \u2014 6/6 PASS including first proven membership reverse (Cancelling\u2192Active).",
+      "plainSummary": "Overnight six-step smoke ALL PASS on tip 232659cf: invite (account-not-found gone), discounted Stripe TEST checkout, booking, cancel+credit return, membership Cancelling→Active reverse (first proven this programme), and evidence cleanup.",
+      "progressNote": "Measured 100% — 6/6 PASS including first proven membership reverse (Cancelling→Active).",
       "blockers": [],
       "detailDropIds": [
         "2026-09-10-overnight-smoke-6-6-pass",
@@ -188,7 +190,7 @@
       ],
       "phaseId": "member-commerce",
       "projectWeightPercent": 6,
-      "measuredNote": "Six-step smoke on tip 232659cf: steps 1\u20136 PASS; step 5 reverse proven live."
+      "measuredNote": "Six-step smoke on tip 232659cf: steps 1–6 PASS; step 5 reverse proven live."
     },
     {
       "id": "payments",
@@ -196,8 +198,8 @@
       "percent": 68,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Member join through checkout (#1231) is on tip. Overnight smoke completed one Stripe TEST discounted checkout (Bluebird 8 + HELGOBIRD) \u2014 still keep payments strand as estimate until a broader payments recheck.",
-      "progressNote": "Estimate 68% \u2014 one smoke Stripe TEST path passed; broader payments recheck pending.",
+      "plainSummary": "Member join through checkout (#1231) is on tip. Overnight smoke completed one Stripe TEST discounted checkout (Bluebird 8 + HELGOBIRD) — still keep payments strand as estimate until a broader payments recheck.",
+      "progressNote": "Estimate 68% — one smoke Stripe TEST path passed; broader payments recheck pending.",
       "blockers": [
         "Broader payments / Stripe recheck beyond overnight smoke step 2 not done"
       ],
@@ -213,13 +215,15 @@
       "percent": 82,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Afternoon + evening packs plus #1240 SAFE rollback and #1245 Weymouth are on tip 232659cf. Overnight smoke cleared prior invite account-not-found and proved membership reverse. Rollback ban still Declan\u2019s call.",
-      "progressNote": "Estimate 82% \u2014 #1240+#1245 on tip; smoke cleared account-not-found; other strand retests outstanding.",
+      "plainSummary": "Afternoon + evening packs plus #1240 SAFE rollback and #1245 Weymouth are on tip 232659cf. Overnight smoke cleared invite account-not-found and proved membership reverse. Cluster A retest Measured 20/24 with no improvement on the final four. Rollback ban still Declan’s call.",
+      "progressNote": "Estimate 82% — #1240+#1245 on tip; smoke cleared account-not-found; Cluster A Measured same 20/24; M1/ISO/ambient/AI-85 outstanding.",
       "blockers": [
-        "Cluster A / M1 / ISO / ambient / AI-85 retests outstanding",
+        "M1 / ISO / ambient / AI-85 retests outstanding",
+        "Cluster A final four still open (MEM-X01 ACS-F01 TAG-C01 TAG-A01)",
         "Declan has NOT cleared rollback ban despite #1240 live"
       ],
       "detailDropIds": [
+        "2026-09-10-cluster-a-20-24-tip-232659cf",
         "2026-09-10-dataset-import-blocked-datamigration-selectitem-",
         "2026-09-10-status-claude"
       ],
@@ -233,7 +237,7 @@
       "basis": "estimate",
       "status": "blocked",
       "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. Tip change does not unblock this strand.",
-      "progressNote": "Still 15% \u2014 secrets gate unchanged.",
+      "progressNote": "Still 15% — secrets gate unchanged.",
       "blockers": [
         "Five Resend/Agentmail repository secrets missing for #1213"
       ],
@@ -243,24 +247,26 @@
     }
   ],
   "health": {
-    "overallLaunchPercent": 68,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 68% = round(52\u00d712 + 74\u00d710 + 86\u00d710 + 56\u00d715 + 88\u00d79 + 78\u00d710 + 100\u00d76 + 68\u00d78 + 82\u00d710 + 15\u00d710)/100.",
-    "readinessLabel": "Not ready to launch \u2014 smoke Measured 6/6 PASS on tip 232659cf; Cluster A/M1/ISO/ambient/AI-85 + Declan rollback clear + secrets still gate",
-    "plainSummary": "As of ~22:46 Europe/London on 10 Sep 2026, launch readiness is about 68% (up from 52% this morning; was 64% estimate on this tip before smoke finished). Live staging tip remains 232659cf. Overnight six-step smoke ALL PASS \u2014 including first proven membership reverse (Cancelling\u2192Active); account-not-found gone. Cluster A / M1 / ISO / ambient / AI-85 not re-run tonight (still Estimate). Hard warnings: Declan has NOT cleared the rollback ban \u2014 never instruct import.rollbackBatch; TRY dataset import only if Select works; automated communications need five Resend/Agentmail secrets.",
+    "overallLaunchPercent": 66,
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 66% = round(52×12 + 60×10 + 86×10 + 56×15 + 88×9 + 78×10 + 100×6 + 68×8 + 82×10 + 15×10)/100.",
+    "readinessLabel": "Not ready to launch — smoke Measured 6/6 + Cluster A Measured 20/24 (no improvement) on tip 232659cf; M1/ISO/ambient/AI-85 + Declan rollback clear + secrets still gate",
+    "plainSummary": "As of ~23:15 Europe/London on 10 Sep 2026, launch readiness is about 66% (up from 52% this morning; was ~68% after smoke before Cluster A Measured). Live staging tip remains 232659cf. Overnight smoke ALL PASS (Measured 6/6). Cluster A Measured 20/24 — same fails MEM-X01 ACS-F01 TAG-C01 TAG-A01 (no improvement); teacher MGR-10/ACS-X01 PASS. M1 / ISO / ambient / AI-85 not done tonight yet (still Estimate). Hard warnings: Declan has NOT cleared the rollback ban — never instruct import.rollbackBatch; TRY dataset import only if Select works; automated communications need five Resend/Agentmail secrets.",
     "strengths": [
       "Overnight six-step smoke ALL PASS on tip 232659cf (Measured)",
-      "First proven membership reverse this programme (Cancelling\u2192Active)",
-      "Invite account-not-found gone; #1240 SAFE rollback + #1245 Weymouth live on tip"
+      "Cluster A Measured on tip 232659cf (20/24) with teacher MGR-10/ACS-X01 PASS",
+      "First proven membership reverse this programme (Cancelling→Active); #1240+#1245 live"
     ],
     "risks": [
-      "Declan has NOT cleared rollback ban \u2014 never import.rollbackBatch even though #1240 is live",
-      "Cluster A / M1 / ISO / ambient / AI-85 not re-run tonight",
+      "Declan has NOT cleared rollback ban — never import.rollbackBatch even though #1240 is live",
+      "Cluster A final four unchanged: MEM-X01 ACS-F01 TAG-C01 TAG-A01",
+      "M1 / ISO / ambient / AI-85 not done tonight yet",
       "12-month dataset still not imported",
       "Automated comms #1213 blocked on secrets"
     ],
     "topPriorities": [
-      "Continue overnight: Cluster A / M1 / ISO / ambient / AI-85 on tip 232659cf",
-      "TRY dataset import only if Select works \u2014 never rollback until Declan clears",
+      "Continue overnight: M1 / ISO / ambient / AI-85 on tip 232659cf",
+      "Fix Cluster A final four (MEM-X01 ACS-F01 TAG-C01 TAG-A01)",
+      "TRY dataset import only if Select works — never rollback until Declan clears",
       "Add Resend/Agentmail secrets so #1213 can ship"
     ],
     "visualBands": {
@@ -270,8 +276,8 @@
       "nearly": [
         "ambient",
         "m1",
-        "command-centre",
         "isolation",
+        "command-centre",
         "ai-85",
         "payments",
         "findings-fix"
@@ -289,8 +295,8 @@
     {
       "id": "overnight-smoke-6-6-pass",
       "title": "Overnight six-step smoke ALL PASS on tip 232659cf",
-      "plainWhy": "Measured: steps 1\u20136 PASS including membership reverse Cancelling\u2192Active (first proven this programme). Account-not-found on invite is gone. Tip stamped 232659cf at start and end.",
-      "unblocks": "Smoke strand Measured 100%; confidence on invite\u2192pay\u2192book\u2192cancel\u2192membership reverse path",
+      "plainWhy": "Measured: steps 1–6 PASS including membership reverse Cancelling→Active (first proven this programme). Account-not-found on invite is gone. Tip stamped 232659cf at start and end.",
+      "unblocks": "Smoke strand Measured 100%; confidence on invite→pay→book→cancel→membership reverse path",
       "movesProjectForwardPercent": 0,
       "movesPhaseForwardPercent": 0,
       "phaseId": "member-commerce",
@@ -314,15 +320,40 @@
       ]
     },
     {
+      "id": "cluster-a-20-24-measured",
+      "title": "Cluster A Measured 20/24 on tip 232659cf — no improvement",
+      "plainWhy": "Measured: 20 PASS / 4 FAIL on tip 232659cf. Same fails MEM-X01, ACS-F01, TAG-C01, TAG-A01. Teacher MGR-10 and ACS-X01 PASS. #1239/#1245 on tip did not clear the final four.",
+      "unblocks": "Command Centre strand Measured (not estimate); clarity that final four still need product work",
+      "movesProjectForwardPercent": 0,
+      "movesPhaseForwardPercent": 0,
+      "phaseId": "studio-ops",
+      "strandIds": [
+        "command-centre"
+      ],
+      "effort": "done",
+      "status": "done",
+      "links": [
+        {
+          "label": "Live tip /api/version",
+          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
+          "kind": "staging"
+        },
+        {
+          "label": "Cluster A drop",
+          "url": "#drop-2026-09-10-cluster-a-20-24-tip-232659cf",
+          "kind": "drop"
+        }
+      ]
+    },
+    {
       "id": "continue-overnight-retests",
-      "title": "Continue overnight: Cluster A / M1 / ISO / ambient / AI-85",
-      "plainWhy": "Smoke is done Measured. Cluster A, full M1 lifecycle, ISO-29, ambient Pulse/Dispatch/Twin, and AI-85 were not re-run tonight \u2014 those strands stay Estimate until evidence lands.",
-      "unblocks": "Measured scores for Command Centre, M1, isolation, ambient, AI-85",
+      "title": "Continue overnight: M1 / ISO / ambient / AI-85",
+      "plainWhy": "Smoke Measured 6/6 and Cluster A Measured 20/24 are done. Full M1 lifecycle, ISO-29, ambient Pulse/Dispatch/Twin, and AI-85 were not done tonight yet — those strands stay Estimate until evidence lands.",
+      "unblocks": "Measured scores for M1, isolation, ambient, AI-85",
       "movesProjectForwardPercent": 6,
       "movesPhaseForwardPercent": 30,
       "phaseId": "studio-ops",
       "strandIds": [
-        "command-centre",
         "m1",
         "isolation",
         "ambient",
@@ -333,32 +364,26 @@
       "links": [
         {
           "label": "Copy prompt",
-          "url": "data:text/plain,continue%20overnight%20retests%20on%20tip%20232659cf%20%E2%80%94%20Cluster%20A%2C%20M1%2C%20ISO-29%2C%20ambient%2C%20AI-85",
+          "url": "data:text/plain,continue%20overnight%20retests%20on%20tip%20232659cf%20%E2%80%94%20M1%2C%20ISO-29%2C%20ambient%2C%20AI-85%20%28Cluster%20A%20already%20Measured%2020%2F24%29",
           "kind": "copy-prompt",
-          "text": "continue overnight retests on tip 232659cf \u2014 Cluster A, M1, ISO-29, ambient, AI-85"
+          "text": "continue overnight retests on tip 232659cf — M1, ISO-29, ambient, AI-85 (Cluster A already Measured 20/24)"
         }
       ]
     },
     {
-      "id": "retest-cluster-a-ambient",
-      "title": "Retest Cluster A + Pulse/Dispatch on tip 232659cf",
-      "plainWhy": "Cluster A final four (#1239), Pulse (#1237), Dispatch (#1235/#1246), and Weymouth (#1245) are on tip. Not re-run tonight after smoke \u2014 keep Command Centre + ambient as estimates until results land.",
-      "unblocks": "Command Centre + ambient measured scores",
-      "movesProjectForwardPercent": 4,
-      "movesPhaseForwardPercent": 20,
+      "id": "retest-ambient-pulse-dispatch",
+      "title": "Retest Pulse/Dispatch/Twin ambient on tip 232659cf",
+      "plainWhy": "Cluster A is already Measured 20/24 (no improvement). Pulse (#1237), Dispatch (#1235/#1246), and Twin (#1236) are on tip but ambient evidence was not re-run tonight.",
+      "unblocks": "Ambient measured score",
+      "movesProjectForwardPercent": 2,
+      "movesPhaseForwardPercent": 15,
       "phaseId": "studio-ops",
       "strandIds": [
-        "command-centre",
         "ambient"
       ],
       "effort": "hour",
       "status": "needed",
       "links": [
-        {
-          "label": "PR #1239 Cluster A",
-          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1239",
-          "kind": "github"
-        },
         {
           "label": "PR #1237 Pulse",
           "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1237",
@@ -366,17 +391,17 @@
         },
         {
           "label": "Copy prompt",
-          "url": "data:text/plain,status%20of%20Cluster%20A%20and%20Pulse%2FDispatch%20on%20tip%20232659cf",
+          "url": "data:text/plain,retest%20Pulse%2FDispatch%2FTwin%20ambient%20on%20tip%20232659cf",
           "kind": "copy-prompt",
-          "text": "status of Cluster A and Pulse/Dispatch on tip 232659cf"
+          "text": "retest Pulse/Dispatch/Twin ambient on tip 232659cf"
         }
       ]
     },
     {
       "id": "declan-clear-rollback-ban",
-      "title": "Rollback ban still ACTIVE \u2014 Declan has NOT cleared it",
+      "title": "Rollback ban still ACTIVE — Declan has NOT cleared it",
       "plainWhy": "#1240 SAFE rollback code is LIVE on tip 232659cf, but Declan has not cleared the ban. Do NOT use import.rollbackBatch and do NOT roll back until he explicitly clears. Overnight may TRY a normal dataset import only if Select/import works.",
-      "unblocks": "Permission to use safe undo after a bad import \u2014 only after Declan clears",
+      "unblocks": "Permission to use safe undo after a bad import — only after Declan clears",
       "movesProjectForwardPercent": 2,
       "movesPhaseForwardPercent": 10,
       "phaseId": "data-foundation",
@@ -387,7 +412,7 @@
       "effort": "minutes",
       "status": "blocked",
       "unlockWhen": "Declan explicitly clears the rollback ban (not just #1240 on tip)",
-      "warning": "NEVER instruct import.rollbackBatch / never roll back until Declan clears \u2014 even though #1240 is live on /api/version.",
+      "warning": "NEVER instruct import.rollbackBatch / never roll back until Declan clears — even though #1240 is live on /api/version.",
       "warningLevel": "danger",
       "links": [
         {
@@ -404,9 +429,9 @@
     },
     {
       "id": "import-12m-dataset-try",
-      "title": "TRY 12-month dataset import only if Select works \u2014 still NO rollback",
-      "plainWhy": "#1240 is on tip 232659cf and Select (#1232) is live. TRY a normal import if the Data Migration Select/import path works. WARNING: Declan has NOT cleared the rollback ban \u2014 never use import.rollbackBatch / never roll back.",
-      "unblocks": "Seeded twelve-month data for AI, ambient, Command Centre, and member testing \u2014 TRY only; no rollback",
+      "title": "TRY 12-month dataset import only if Select works — still NO rollback",
+      "plainWhy": "#1240 is on tip 232659cf and Select (#1232) is live. TRY a normal import if the Data Migration Select/import path works. WARNING: Declan has NOT cleared the rollback ban — never use import.rollbackBatch / never roll back.",
+      "unblocks": "Seeded twelve-month data for AI, ambient, Command Centre, and member testing — TRY only; no rollback",
       "movesProjectForwardPercent": 8,
       "movesPhaseForwardPercent": 50,
       "phaseId": "data-foundation",
@@ -418,7 +443,7 @@
       ],
       "effort": "hour",
       "status": "needed",
-      "warning": "TRY import only if Select/import works. NEVER instruct import.rollbackBatch until Declan clears the ban \u2014 #1240 live does NOT clear it.",
+      "warning": "TRY import only if Select/import works. NEVER instruct import.rollbackBatch until Declan clears the ban — #1240 live does NOT clear it.",
       "warningLevel": "danger",
       "links": [
         {
@@ -430,7 +455,7 @@
           "label": "Copy prompt",
           "url": "data:text/plain,TRY%2012m%20dataset%20import%20on%20tip%20232659cf%20only%20if%20Select%2Fimport%20works%20%E2%80%94%20do%20NOT%20use%20import.rollbackBatch%20%28Declan%20has%20not%20cleared%20ban%29",
           "kind": "copy-prompt",
-          "text": "TRY 12m dataset import on tip 232659cf only if Select/import works \u2014 do NOT use import.rollbackBatch (Declan has not cleared ban)"
+          "text": "TRY 12m dataset import on tip 232659cf only if Select/import works — do NOT use import.rollbackBatch (Declan has not cleared ban)"
         }
       ]
     },
@@ -480,7 +505,7 @@
     },
     {
       "id": "approve-clusters-bf",
-      "title": "Approve or reject Clusters B\u2013F test banks",
+      "title": "Approve or reject Clusters B–F test banks",
       "plainWhy": "Banks still need your ruling so helpers stop parking on ambiguous rows.",
       "unblocks": "Broader Command Centre acceptance beyond Cluster A",
       "movesProjectForwardPercent": 2,
@@ -496,7 +521,7 @@
           "label": "Copy prompt",
           "url": "data:text/plain,show%20me%20Clusters%20B%E2%80%93F%20for%20approve%2Freject%20rulings",
           "kind": "copy-prompt",
-          "text": "show me Clusters B\u2013F for approve/reject rulings"
+          "text": "show me Clusters B–F for approve/reject rulings"
         }
       ]
     },
@@ -525,7 +550,7 @@
     {
       "id": "tip-1240-1245-live",
       "title": "#1240 + #1245 are LIVE on the test studio",
-      "plainWhy": "DigitalOcean tip is 232659cf (merge of #1240). #1245 Weymouth also on tip. Receipt only \u2014 rollback ban is still Declan\u2019s.",
+      "plainWhy": "DigitalOcean tip is 232659cf (merge of #1240). #1245 Weymouth also on tip. Receipt only — rollback ban is still Declan’s.",
       "unblocks": "TRY import path + Weymouth CC prompt fix for retests",
       "movesProjectForwardPercent": 0,
       "movesPhaseForwardPercent": 0,
@@ -557,7 +582,7 @@
     {
       "id": "deploy-done-afternoon",
       "title": "Afternoon + evening pack is LIVE on the test studio",
-      "plainWhy": "Earlier tip 99e17af7 already carried packs #1231\u2013#1239, #1241\u2013#1244, #1246. Tip 232659cf keeps those and adds #1240 + #1245.",
+      "plainWhy": "Earlier tip 99e17af7 already carried packs #1231–#1239, #1241–#1244, #1246. Tip 232659cf keeps those and adds #1240 + #1245.",
       "unblocks": "All retests listed above",
       "movesProjectForwardPercent": 0,
       "movesPhaseForwardPercent": 0,
@@ -584,7 +609,7 @@
       "strandIds": [
         "dataset"
       ],
-      "plainSummary": "#1240 is on tip; TRY import only if Select works \u2014 still no rollback until Declan clears.",
+      "plainSummary": "#1240 is on tip; TRY import only if Select works — still no rollback until Declan clears.",
       "percentComplete": 52
     },
     {
@@ -595,8 +620,8 @@
         "command-centre",
         "isolation"
       ],
-      "plainSummary": "#1245 on tip; Cluster A + ISO not re-run tonight.",
-      "percentComplete": 80
+      "plainSummary": "Cluster A Measured 20/24 (no improvement); ISO not re-run tonight; B–F still need rulings.",
+      "percentComplete": 73
     },
     {
       "phaseId": "intelligence",
@@ -628,7 +653,7 @@
       "strandIds": [
         "findings-fix"
       ],
-      "plainSummary": "#1240 + #1245 on the studio; other strand retests still open.",
+      "plainSummary": "#1240 + #1245 on the studio; Cluster A final four still open; other strand retests still open.",
       "percentComplete": 82
     },
     {
@@ -643,8 +668,8 @@
     }
   ],
   "notes": {
-    "botCommander": "Where an action says \u201ctell Bot Commander\u201d, use the Copy prompt button, then paste into this Bot Commander chat. Declan can paste those messages here directly \u2014 no special app link required.",
+    "botCommander": "Where an action says “tell Bot Commander”, use the Copy prompt button, then paste into this Bot Commander chat. Declan can paste those messages here directly — no special app link required.",
     "hardWarning": "NEVER say rollback is cleared. #1240 is LIVE on tip 232659cf but Declan has NOT cleared the ban. Never instruct import.rollbackBatch / never roll back until Declan clears. TRY dataset import only if Select/import works.",
-    "refresh": "Primary refresh when live staging tip changes; backup weekday every 30 minutes daytime Europe/London. This run: tip unchanged 232659cf; overnight smoke 6/6 PASS \u2192 smoke Measured; headline 64%\u219268%."
+    "refresh": "Primary refresh when live staging tip changes; backup weekday every 30 minutes daytime Europe/London. This run: tip unchanged 232659cf; Cluster A Measured 20/24 (no improvement) → command-centre Measured; headline 68%→66%."
   }
 }
