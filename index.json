@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-10T21:29:17.613Z",
+  "updatedAt": "2026-09-10T21:48:14.247Z",
   "drops": [
+    {
+      "id": "2026-09-10-overnight-smoke-6-6-pass",
+      "title": "Overnight smoke ALL PASS — 6/6 on tip 232659cf (membership reverse proven)",
+      "date": "2026-09-10",
+      "summary": "Smoke 6/6 PASS on tip 232659cf including Cancelling→Active reverse; account-not-found gone; headline 68%; rollback ban still active.",
+      "plainEnglish": "Overnight critical-path testing on the live studio finished clean: all six steps passed. Invite account-not-found is gone, and for the first time in this programme a membership cancel was reversed back to Active. Launch readiness on the board moves to about 68%. Other big checks (Command Centre Cluster A, privacy, AI, ambient) were not re-run tonight. Declan still has not cleared the rollback ban — helpers must not undo a data import.",
+      "tags": [
+        "smoke",
+        "status",
+        "findings",
+        "m1"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-10-overnight-smoke-6-6-pass/SUMMARY.md"
+      ],
+      "tip": "232659cf05d22e5de920ee547925b37581cfb6d4"
+    },
     {
       "id": "2026-09-10-tip-232659cf-live",
       "title": "Tip live 232659cf — #1240 on studio (64% estimate)",
