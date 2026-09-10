@@ -392,3 +392,39 @@ a { color: var(--accent); }
   color: var(--text); padding: 0.55rem 1rem; border-radius: 999px;
   font-size: 0.85rem; z-index: 100; box-shadow: 0 8px 24px rgba(0,0,0,0.4);
 }
+
+
+/* Per-file share actions on drop cards */
+.file-acts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border, #2a3344);
+}
+.file-act {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+.file-act .file-name {
+  flex: 1 1 8rem;
+  font-size: 0.82rem;
+  color: var(--muted, #9aa4b2);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.btn.mini {
+  padding: 0.2rem 0.55rem;
+  font-size: 0.75rem;
+  border-radius: 6px;
+}
+#copyMdBtn:disabled,
+#downloadLink.disabled {
+  opacity: 0.45;
+  pointer-events: none;
+}

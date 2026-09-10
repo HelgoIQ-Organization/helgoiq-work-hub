@@ -15,6 +15,7 @@
     query: "",
     activeDrop: null,
     activePath: null,
+    activeMarkdown: "",
   };
 
   const $ = (id) => document.getElementById(id);
@@ -75,7 +76,7 @@
   async function copyText(text) {
     try {
       await navigator.clipboard.writeText(text);
-      showToast("Copied — paste into Bot Commander chat");
+      showToast("Copied markdown — ready for Claude or Cursor");
     } catch {
       const ta = document.createElement("textarea");
       ta.value = text;
@@ -83,7 +84,7 @@
       ta.select();
       try {
         document.execCommand("copy");
-        showToast("Copied — paste into Bot Commander chat");
+        showToast("Copied markdown — ready for Claude or Cursor");
       } catch {
         showToast("Could not copy — select the prompt manually");
       }
@@ -372,6 +373,19 @@
       if (drop.tip) badges.push('<span class="badge tip">' + escapeHtml(String(drop.tip).slice(0, 8)) + "</span>");
       const plain = drop.plainEnglish || drop.summary || "";
       const tech = drop.plainEnglish && drop.summary ? drop.summary : "";
+      const paths = drop.paths || [];
+      const fileActs = paths
+        .map((fp) => {
+          const name = fp.split("/").pop();
+          return (
+            '<div class="file-act" data-path="' + escapeHtml(fp) + '">' +
+            '<span class="file-name">' + escapeHtml(name) + "</span>" +
+            '<button type="button" class="btn ghost mini copy-file">Copy</button>' +
+            '<a class="btn ghost mini download-file" href="' + escapeHtml(fp) + '" download="' + escapeHtml(name) + '">Download</a>' +
+            "</div>"
+          );
+        })
+        .join("");
       card.innerHTML =
         '<div class="card-top">' +
         "<h3>" + escapeHtml(drop.title) + "</h3>" +
@@ -379,13 +393,30 @@
         "</div>" +
         '<p class="plain-english">' + escapeHtml(plain) + "</p>" +
         (tech ? '<p class="summary">' + escapeHtml(tech) + "</p>" : "") +
-        '<div class="badges">' + badges.join("") + "</div>";
+        '<div class="badges">' + badges.join("") + "</div>" +
+        (fileActs ? '<div class="file-acts" onclick="event.stopPropagation()">' + fileActs + "</div>" : "");
       card.addEventListener("click", () => openDrop(drop, true));
       card.addEventListener("keydown", (e) => {
         if (e.key === "Enter" || e.key === " ") {
           e.preventDefault();
           openDrop(drop, true);
         }
+      });
+      card.querySelectorAll(".copy-file").forEach((btn) => {
+        btn.addEventListener("click", async (e) => {
+          e.stopPropagation();
+          const fp = btn.closest(".file-act").getAttribute("data-path");
+          try {
+            const res = await fetch(fp);
+            if (!res.ok) throw new Error("fetch failed");
+            await copyText(await res.text());
+          } catch {
+            showToast("Could not copy — open the file and try Copy inside");
+          }
+        });
+      });
+      card.querySelectorAll(".download-file").forEach((a) => {
+        a.addEventListener("click", (e) => e.stopPropagation());
       });
       feed.appendChild(card);
     });
@@ -422,19 +453,27 @@
   }
 
   async function loadMarkdown(path) {
+    const name = path.split("/").pop();
     $("rawLink").href = path;
-    $("rawLink").download = path.split("/").pop();
+    $("downloadLink").href = path;
+    $("downloadLink").setAttribute("download", name);
+    $("downloadLink").classList.remove("disabled");
+    $("copyMdBtn").disabled = false;
+    state.activeMarkdown = "";
     $("viewerBody").innerHTML = "<p class='muted'>Loading…</p>";
     try {
       const res = await fetch(path);
       if (!res.ok) throw new Error(res.status + " " + res.statusText);
       const text = await res.text();
+      state.activeMarkdown = text;
       if (typeof marked !== "undefined") {
         $("viewerBody").innerHTML = marked.parse(text);
       } else {
         $("viewerBody").innerHTML = "<pre>" + escapeHtml(text) + "</pre>";
       }
     } catch (err) {
+      state.activeMarkdown = "";
+      $("copyMdBtn").disabled = true;
       $("viewerBody").innerHTML =
         "<p>Could not load <code>" +
         escapeHtml(path) +
@@ -479,6 +518,13 @@
 
   async function init() {
     $("closeViewer").addEventListener("click", () => closeViewer(true));
+    $("copyMdBtn").addEventListener("click", () => {
+      if (!state.activeMarkdown) {
+        showToast("Nothing to copy yet");
+        return;
+      }
+      copyText(state.activeMarkdown);
+    });
     $("closeStrand").addEventListener("click", () => closeStrand(true));
     $("viewer").addEventListener("click", (e) => {
       if (e.target === $("viewer")) closeViewer(true);
