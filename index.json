@@ -1,0 +1,129 @@
+{
+  "updatedAt": "2026-09-10T13:42:00.000Z",
+  "drops": [
+    {
+      "id": "2026-09-10-status-claude",
+      "title": "HelgoIQ status for Claude (10 Sep morning)",
+      "date": "2026-09-10",
+      "summary": "Handoff snapshot for Claude: streams, tip ba88839d, #1180 running list, seat/smoke notes.",
+      "tags": [
+        "status",
+        "command-centre",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "tip": "ba88839d7121bfc00adcaaec358e92f40fa3fa0f",
+      "paths": [
+        "drops/2026-09-10-status-claude/STATUS-FOR-CLAUDE.md"
+      ],
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
+    {
+      "id": "2026-09-10-cluster-a",
+      "title": "Cluster A \u2014 regression vs luck + tip 6cb5d8d9 FINAL ref",
+      "date": "2026-09-10",
+      "summary": "MEM-X01 / ACS-F01 / TAG-C01 / TAG-A01: lucky prior pass vs behavioral regression; FINAL.json pointer for tip 6cb5d8d9.",
+      "tags": [
+        "command-centre",
+        "findings",
+        "smoke"
+      ],
+      "type": "finding",
+      "project": "helgoiq-command-centre",
+      "tip": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
+      "paths": [
+        "drops/2026-09-10-cluster-a/REGRESSION-VS-LUCK.md",
+        "drops/2026-09-10-cluster-a/FINAL-6cb5d8d9-REF.md"
+      ]
+    },
+    {
+      "id": "2026-09-10-cluster-bf",
+      "title": "Proposal: Clusters B\u2013F acceptance banks",
+      "date": "2026-09-10",
+      "summary": "Locked until Cluster A is 24/24. Purpose, counts, launch-critical vs post-launch for B\u2013F banks.",
+      "tags": [
+        "command-centre",
+        "findings"
+      ],
+      "type": "proposal",
+      "project": "helgoiq-command-centre",
+      "tip": "ba88839d7121bfc00adcaaec358e92f40fa3fa0f",
+      "paths": [
+        "drops/2026-09-10-cluster-bf/CLUSTER-B-F-PROPOSAL.md"
+      ],
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
+    {
+      "id": "2026-09-10-iso29",
+      "title": "ISO-29 isolation notes (M1 lifecycle)",
+      "date": "2026-09-10",
+      "summary": "29/29 isolation checklist notes; Bluebird vs Refrm; Batch 1 ISO-01..04 report-only.",
+      "tags": [
+        "isolation",
+        "m1",
+        "findings"
+      ],
+      "type": "matrix",
+      "project": "helgoiq-m1-lifecycle",
+      "paths": [
+        "drops/2026-09-10-iso29/ISO29-NOTES.md"
+      ]
+    },
+    {
+      "id": "2026-09-10-dataset",
+      "title": "Bluebird 12-month dataset \u2014 blocked / progress / plan",
+      "date": "2026-09-10",
+      "summary": "CSV import commit 500 (companyId); 0 seed rows; CREATE-PLAN + BLOCKED + PROGRESS pack.",
+      "tags": [
+        "dataset",
+        "census",
+        "booking"
+      ],
+      "type": "pack",
+      "project": "helgoiq-bluebird-12m-dataset",
+      "tip": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
+      "paths": [
+        "drops/2026-09-10-dataset/BLOCKED.md",
+        "drops/2026-09-10-dataset/PROGRESS.md",
+        "drops/2026-09-10-dataset/CREATE-PLAN.md"
+      ]
+    },
+    {
+      "id": "2026-09-09-ambient",
+      "title": "Ambient intelligence pack (Pulse, Dispatch, Twin, Learn, Event Bus)",
+      "date": "2026-09-09",
+      "summary": "Pack summary + plain-English owner narrative for ambient components on tip ba88839d.",
+      "tags": [
+        "ambient",
+        "findings",
+        "status"
+      ],
+      "type": "pack",
+      "project": "helgoiq-ambient",
+      "tip": "ba88839d7121bfc00adcaaec358e92f40fa3fa0f",
+      "paths": [
+        "drops/2026-09-09-ambient/PACK-SUMMARY.md",
+        "drops/2026-09-09-ambient/PLAIN-ENGLISH.md"
+      ]
+    },
+    {
+      "id": "2026-09-09-ai85",
+      "title": "AI-85 UNCERTAIN rescore + ready-after-dataset",
+      "date": "2026-09-09",
+      "summary": "MASTER.csv note; UNCERTAIN checklist; 8 ready-now / 15 wait-dataset / 1 skip.",
+      "tags": [
+        "ai-85",
+        "dataset",
+        "findings"
+      ],
+      "type": "checklist",
+      "project": "helgoiq-ai85",
+      "paths": [
+        "drops/2026-09-09-ai85/MASTER-CSV-NOTE.md",
+        "drops/2026-09-09-ai85/READY-AFTER-DATASET.md",
+        "drops/2026-09-09-ai85/UNCERTAIN-RESCORE-CHECKLIST.md"
+      ]
+    }
+  ]
+}

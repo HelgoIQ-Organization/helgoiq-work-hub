@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>HelgoIQ Work Hub</title>
+  <meta name="description" content="Searchable repository of Bot Commander / Grok work artefacts for HelgoIQ." />
+  <link rel="stylesheet" href="assets/hub.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <div class="brand">
+        <span class="logo" aria-hidden="true">◈</span>
+        <div>
+          <h1>HelgoIQ Work Hub</h1>
+          <p class="tagline">Bot Commander · Grok artefacts · searchable drops</p>
+        </div>
+      </div>
+      <div class="header-meta">
+        <span id="updatedAt" class="muted"></span>
+        <a class="btn ghost" href="https://github.com/HelgoIQ-Organization/helgoiq-work-hub" id="repoLink" target="_blank" rel="noopener">Repo</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap layout">
+    <aside class="filters" aria-label="Filters">
+      <label class="search-label" for="search">Search</label>
+      <input id="search" type="search" placeholder="Title, summary, tags, path…" autocomplete="off" />
+
+      <div class="filter-block">
+        <h2>Types</h2>
+        <div id="typeChips" class="chips" role="group" aria-label="Filter by type"></div>
+      </div>
+      <div class="filter-block">
+        <h2>Tags</h2>
+        <div id="tagChips" class="chips" role="group" aria-label="Filter by tag"></div>
+      </div>
+      <button type="button" id="clearFilters" class="btn ghost full">Clear filters</button>
+      <p id="resultCount" class="muted count"></p>
+    </aside>
+
+    <section class="feed" aria-live="polite">
+      <div id="emptyState" class="empty hidden">
+        <h2>No drops match</h2>
+        <p>Try clearing filters or a broader search. New drops land via Bot Commander auto-post.</p>
+      </div>
+      <div id="feed" class="feed-list"></div>
+    </section>
+  </main>
+
+  <div id="viewer" class="viewer hidden" role="dialog" aria-modal="true" aria-labelledby="viewerTitle">
+    <div class="viewer-panel">
+      <header class="viewer-header">
+        <div>
+          <h2 id="viewerTitle">Drop</h2>
+          <p id="viewerMeta" class="muted"></p>
+        </div>
+        <div class="viewer-actions">
+          <select id="fileSelect" class="file-select" aria-label="Choose file"></select>
+          <a id="rawLink" class="btn ghost" href="#" target="_blank" rel="noopener">Raw</a>
+          <button type="button" id="closeViewer" class="btn" aria-label="Close">Close</button>
+        </div>
+      </header>
+      <article id="viewerBody" class="markdown-body"></article>
+    </div>
+  </div>
+
+  <footer class="site-footer wrap">
+    <p>HelgoIQ Work Hub · vanilla static · no credentials · see <a href="CONTRIBUTING-BOT.md">CONTRIBUTING-BOT.md</a></p>
+  </footer>
+
+  <script src="assets/hub.js" defer></script>
+</body>
+</html>
