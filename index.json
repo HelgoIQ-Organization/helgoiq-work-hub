@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-10T21:23:53.787Z",
+  "updatedAt": "2026-09-10T21:29:17.613Z",
   "drops": [
+    {
+      "id": "2026-09-10-tip-232659cf-live",
+      "title": "Tip live 232659cf — #1240 on studio (64% estimate)",
+      "date": "2026-09-10",
+      "summary": "Staging tip 232659cf (#1240+#1245 live). Headline 64% estimate. Overnight smoke started. Rollback ban NOT cleared by Declan.",
+      "plainEnglish": "The test studio moved again tonight. Safe undo code for data import is now on the live tip, and overnight testing has just started. Launch readiness on paper is about 64%. Important: Declan has not cleared the rollback ban — helpers must not undo an import until he says so. A normal import try is only OK if Select works.",
+      "tags": [
+        "status",
+        "findings",
+        "smoke",
+        "dataset",
+        "command-centre"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-10-tip-232659cf-live/SUMMARY.md"
+      ],
+      "tip": "232659cf05d22e5de920ee547925b37581cfb6d4"
+    },
     {
       "id": "2026-09-10-tip-99e17af7-live",
       "title": "Tip live 99e17af7 — Launch Hub 62%",
