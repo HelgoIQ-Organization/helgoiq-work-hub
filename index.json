@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-10T22:12:44.054Z",
+  "updatedAt": "2026-09-10T22:35:34.352Z",
   "drops": [
+    {
+      "id": "2026-09-10-m1-wave1-partial-tip-232659cf",
+      "title": "M1 Wave1 partial — freeze PASS, unfreeze FAIL, cancel+reverse PASS",
+      "date": "2026-09-10",
+      "summary": "M1 wave1 tip 232659cf: Admin2 freeze PASS; unfreeze FAIL (provider; Smoke paused); cancel+reverse PASS (reverse fixed); upgrade/downgrade/MemberB/waitlist/Owner BLOCKED. Smoke 6/6 + Cluster A 20/24 unchanged. No import.rollbackBatch.",
+      "plainEnglish": "Admin2 freeze of BB Smoke passed, but resume failed at the payment provider so Smoke is still paused. Admin2 cancel then reverse for Member B both passed — reverse is fixed versus the earlier Keep-left-Cancelling bug. Upgrade, downgrade, Member B client, waitlist, and Owner paths were blocked this wave. Smoke stays 6/6 and Cluster A stays 20/24 on the same tip. Rollback ban still active — Declan has not cleared it.",
+      "tags": [
+        "m1",
+        "payments",
+        "smoke",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-10-m1-wave1-partial-tip-232659cf/m1-wave1-summary.md",
+        "drops/2026-09-10-m1-wave1-partial-tip-232659cf/WAVE1.md"
+      ],
+      "tip": "232659cf05d22e5de920ee547925b37581cfb6d4"
+    },
     {
       "id": "2026-09-10-cluster-a-20-24-tip-232659cf",
       "title": "Cluster A Measured 20/24 on tip 232659cf — same 4 fails (no improvement)",
