@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-10T23:09:35.656Z",
+  "updatedAt": "2026-09-10T23:09:35.324Z",
   "meta": {
-    "dataAsOf": "2026-09-10T23:09:35.656Z",
+    "dataAsOf": "2026-09-10T23:09:35.324Z",
     "buildStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
     "liveTip": "232659cf05d22e5de920ee547925b37581cfb6d4",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 61% = round(52×12 + 60×10 + 41×10 + 56×15 + 88×9 + 72×10 + 100×6 + 62×8 + 83×10 + 15×10)/100.",
@@ -14,7 +14,7 @@
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-10T23:09:35.656Z"
+      "checkedAt": "2026-09-10T23:09:35.324Z"
     }
   },
   "tip": "232659cf05d22e5de920ee547925b37581cfb6d4",

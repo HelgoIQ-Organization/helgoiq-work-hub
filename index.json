@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-10T22:35:34.352Z",
+  "updatedAt": "2026-09-10T23:09:05.226Z",
   "drops": [
+    {
+      "id": "2026-09-11-iso29-partial-tip-232659cf",
+      "title": "ISO-29 PARTIAL on tip 232659cf — 12 PASS / 4 FAIL / 16 NOT_RUN (not 25/4)",
+      "date": "2026-09-11",
+      "summary": "ISO-29 partial Measured tip 232659cf: 12 PASS / 4 FAIL (same ISO-18/20/27/29) / 16 NOT_RUN. Do NOT claim prior 25/4. Smoke 6/6 + Cluster A 20/24 + M1 partial unchanged. Rollback ban ACTIVE.",
+      "plainEnglish": "Privacy checks on tonight's tip are only partly done: twelve surfaces passed, the same four studio-data leaks still fail, and sixteen checks were not re-run. Do not treat this as the old full 25-pass result. Smoke stays six-of-six and Command Centre Cluster A stays twenty-of-twenty-four. Rollback ban still active — Declan has not cleared it.",
+      "tags": [
+        "isolation",
+        "findings",
+        "status"
+      ],
+      "type": "matrix",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-iso29-partial-tip-232659cf/ISO29-PARTIAL.md",
+        "drops/2026-09-11-iso29-partial-tip-232659cf/SUMMARY.md",
+        "drops/2026-09-11-iso29-partial-tip-232659cf/MATRIX.csv"
+      ],
+      "tip": "232659cf05d22e5de920ee547925b37581cfb6d4"
+    },
     {
       "id": "2026-09-10-m1-wave1-partial-tip-232659cf",
       "title": "M1 Wave1 partial — freeze PASS, unfreeze FAIL, cancel+reverse PASS",
