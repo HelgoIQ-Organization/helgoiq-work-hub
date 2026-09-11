@@ -586,3 +586,25 @@ a { color: var(--accent); }
   color: #ffb4b4;
 }
 .move-chip.status-blocked { color: var(--blocked); }
+
+.action-card .audience-chip {
+  display: inline-block;
+  margin: 0.35rem 0 0;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.action-card .audience-chip.audience-declan {
+  background: rgba(110, 198, 255, 0.14);
+  color: #9fd6ff;
+  border: 1px solid rgba(110, 198, 255, 0.4);
+}
+.action-card .audience-chip.audience-engineering {
+  background: rgba(140, 200, 140, 0.12);
+  color: #b7e0b7;
+  border: 1px solid rgba(140, 200, 140, 0.35);
+}
+.action-audience { margin: 0.15rem 0 0; }

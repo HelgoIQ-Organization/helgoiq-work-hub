@@ -234,59 +234,117 @@
     });
   }
 
-  function renderActions(dash) {
-    const el = $("actionsGrid");
+  function actionAudience(a) {
+    return String(a.audience || a.owner || "").toLowerCase();
+  }
+
+  function sortActionCards(list) {
+    return list.slice().sort((a, b) => {
+      const dangerRank = (x) => {
+        if (x.status === "blocked") return 0;
+        if ((x.warningLevel || "") === "danger" || x.warning) return 1;
+        if (x.status === "needed") return 2;
+        if (x.status === "done") return 4;
+        return 3;
+      };
+      const dr = dangerRank(a) - dangerRank(b);
+      if (dr !== 0) return dr;
+      return (Number(b.movesProjectForwardPercent) || 0) - (Number(a.movesProjectForwardPercent) || 0);
+    });
+  }
+
+  function buildActionCard(a) {
+    const card = document.createElement("article");
+    card.id = "action-" + a.id;
+
+    const links = document.createElement("div");
+    links.className = "action-links";
+    (a.links || []).forEach((lnk) => {
+      if (lnk.kind === "copy-prompt") {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.className = "btn copy";
+        b.textContent = lnk.label || "Copy prompt";
+        b.addEventListener("click", () => copyText(lnk.text || lnk.url || ""));
+        links.appendChild(b);
+      } else {
+        const b = document.createElement("a");
+        b.className = "btn" + (lnk.kind === "github" ? " primary" : "");
+        b.href = lnk.url;
+        b.target = "_blank";
+        b.rel = "noopener";
+        b.textContent = lnk.label || lnk.kind || "Open";
+        links.appendChild(b);
+      }
+    });
+
+    const audience = actionAudience(a);
+    const audienceChip = audience
+      ? '<span class="audience-chip audience-' + escapeHtml(audience) + '">' +
+        escapeHtml(audience === "declan" ? "Declan" : audience === "engineering" ? "Engineering" : audience) +
+        "</span>"
+      : "";
+    const warn = a.warning
+      ? '<div class="action-warning ' + escapeHtml(a.warningLevel || "danger") + '" role="alert">' +
+        escapeHtml(a.warning) + "</div>"
+      : "";
+    card.className =
+      "action-card" +
+      (a.warning ? " has-warning" : "") +
+      (a.status === "blocked" ? " is-blocked" : "") +
+      (audience ? " audience-" + audience : "");
+    card.innerHTML =
+      "<h3>" + escapeHtml(a.title) + "</h3>" +
+      (audienceChip ? '<div class="action-audience">' + audienceChip + "</div>" : "") +
+      warn +
+      '<p class="action-why">' + escapeHtml(a.plainWhy || "") + "</p>" +
+      '<p class="action-unlock"><strong>Unlocks:</strong> ' + escapeHtml(a.unblocks || "") + "</p>" +
+      '<div class="action-moves">' +
+      '<span class="move-chip project">+' + escapeHtml(String(a.movesProjectForwardPercent)) + "% project</span>" +
+      '<span class="move-chip phase">+' + escapeHtml(String(a.movesPhaseForwardPercent)) + "% phase</span>" +
+      '<span class="move-chip effort">' + escapeHtml(a.effort || "") + "</span>" +
+      '<span class="move-chip status-' + escapeHtml(a.status || "") + '">' + escapeHtml(statusLabel(a.status)) + "</span>" +
+      "</div>";
+    card.appendChild(links);
+    return card;
+  }
+
+  function fillActionGrid(el, list) {
+    if (!el) return;
     el.innerHTML = "";
-    if (dash.notes && dash.notes.botCommander) {
-      $("actionsNote").textContent =
-        "Things only you (Declan) can unblock — with how much each one moves the project forward. " +
+    sortActionCards(list).forEach((a) => el.appendChild(buildActionCard(a)));
+  }
+
+  function renderActions(dash) {
+    const declanEl = $("actionsGrid");
+    const engEl = $("engineeringGrid");
+    const note = $("actionsNote");
+    if (note) {
+      note.textContent =
+        "Only you can clear these. Each card says what it unlocks and how far it moves launch.";
+    }
+    const engNote = $("engineeringNote");
+    if (engNote && dash.notes && dash.notes.botCommander) {
+      engNote.textContent =
+        "Product/code fixes — not waiting on Declan. Cursor / Bot Commander track these. " +
         dash.notes.botCommander;
     }
-    (dash.actions || []).forEach((a) => {
-      const card = document.createElement("article");
-      card.className = "action-card";
-      card.id = "action-" + a.id;
 
-      const links = document.createElement("div");
-      links.className = "action-links";
-      (a.links || []).forEach((lnk) => {
-        if (lnk.kind === "copy-prompt") {
-          const b = document.createElement("button");
-          b.type = "button";
-          b.className = "btn copy";
-          b.textContent = lnk.label || "Copy prompt";
-          b.addEventListener("click", () => copyText(lnk.text || lnk.url || ""));
-          links.appendChild(b);
-        } else {
-          const b = document.createElement("a");
-          b.className = "btn" + (lnk.kind === "github" ? " primary" : "");
-          b.href = lnk.url;
-          b.target = "_blank";
-          b.rel = "noopener";
-          b.textContent = lnk.label || lnk.kind || "Open";
-          links.appendChild(b);
-        }
-      });
-
-      const warn = a.warning
-        ? '<div class="action-warning ' + escapeHtml(a.warningLevel || "danger") + '" role="alert">' +
-          escapeHtml(a.warning) + "</div>"
-        : "";
-      card.className = "action-card" + (a.warning ? " has-warning" : "") + (a.status === "blocked" ? " is-blocked" : "");
-      card.innerHTML =
-        "<h3>" + escapeHtml(a.title) + "</h3>" +
-        warn +
-        '<p class="action-why">' + escapeHtml(a.plainWhy || "") + "</p>" +
-        '<p class="action-unlock"><strong>Unlocks:</strong> ' + escapeHtml(a.unblocks || "") + "</p>" +
-        '<div class="action-moves">' +
-        '<span class="move-chip project">+' + escapeHtml(String(a.movesProjectForwardPercent)) + "% project</span>" +
-        '<span class="move-chip phase">+' + escapeHtml(String(a.movesPhaseForwardPercent)) + "% phase</span>" +
-        '<span class="move-chip effort">' + escapeHtml(a.effort || "") + "</span>" +
-        '<span class="move-chip status-' + escapeHtml(a.status || "") + '">' + escapeHtml(statusLabel(a.status)) + "</span>" +
-        "</div>";
-      card.appendChild(links);
-      el.appendChild(card);
+    const all = dash.actions || [];
+    const engFromField = dash.engineeringActions || [];
+    const declan = all.filter((a) => {
+      const aud = actionAudience(a);
+      if (aud === "declan") return true;
+      if (aud === "engineering") return false;
+      // Legacy cards without audience: keep only if explicitly Declan-owned ids
+      return false;
     });
+    const engineering = engFromField.length
+      ? engFromField
+      : all.filter((a) => actionAudience(a) === "engineering");
+
+    fillActionGrid(declanEl, declan);
+    fillActionGrid(engEl, engineering);
   }
 
   function openStrand(id) {

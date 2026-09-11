@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-09-11T00:32:36.401Z",
+  "updatedAt": "2026-09-11T05:30:00.000Z",
   "meta": {
-    "dataAsOf": "2026-09-11T00:32:36.401Z",
+    "dataAsOf": "2026-09-11T05:30:00.000Z",
     "buildStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
     "liveTip": "232659cf05d22e5de920ee547925b37581cfb6d4",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 65% = round(52\u00d712 + 60\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 72\u00d710 + 100\u00d76 + 62\u00d78 + 83\u00d710 + 15\u00d710)/100.",
-    "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 65% = round(52×12 + 60×10 + 86×10 + 56×15 + 85×9 + 72×10 + 100×6 + 62×8 + 83×10 + 15×10)/100.",
+    "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Tip confirmed 232659cf; final overnight breakfast + dataset canary Measured FAIL (Missing companyId on batchImport.upload 403; 0 members; no rollback). Other Measured strands kept. Rollback ban ACTIVE. Headline ~65%.",
+    "lastRefreshNote": "Morning 11 Sep: hub split Your Moves (Declan-only) vs Engineering queue. Tip confirmed 232659cf. Measured overnight facts kept. Rollback ban ACTIVE. Headline ~65%.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-11T00:32:36.401Z"
+      "checkedAt": "2026-09-11T05:30:00.000Z"
     }
   },
   "tip": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -57,9 +57,9 @@
       "findings-fix": 43,
       "comms": 15
     },
-    "plainEnglishDay": "This morning the board sat at 52%. Overnight on tip 232659cf closed with Measured smoke 6/6, Cluster A 20/24 (same four fails), M1 Wave1 partial (freeze PASS; unfreeze FAIL at payment provider; cancel+reverse PASS), ISO-29 COMPLETE 26/4/2 NOT_RUN (Weymouth/Luton), ambient evidence (Pulse OK; Dispatch viewer FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus gated), and AI-85 48/5/23/8/1 unchanged. Dataset canary Measured FAIL: Missing companyId on batchImport.upload (403); 0 members created; no rollback. Launch readiness about 65%. Hard rule unchanged: Declan has NOT cleared the rollback ban \u2014 never use import.rollbackBatch even though #1240 is live. Automated communications still need five Resend/Agentmail secrets.",
+    "plainEnglishDay": "Morning board update (11 Sep Europe/London): Launch Hub refreshed so Your Moves is Declan-only and Engineering queue is separate. Overnight Measured facts unchanged on tip 232659cf — smoke 6/6, Cluster A 20/24, M1 partial, ISO 26/4/2, ambient evidence, AI-85 48/5/23/8/1, dataset canary FAIL (Missing companyId 403). Headline still ~65%. Rollback ban ACTIVE until Declan clears.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board Declan saw (overall 52%) vs final overnight Measured board on tip 232659cf (65%; smoke 6/6; CCA 20/24; M1 partial ~72%; isolation complete ~86%; ambient ~85%; AI-85 Measured 56%; dataset canary Measured FAIL \u2014 upload Missing companyId)."
+    "compareNote": "Morning board Declan saw (overall 52%) vs final overnight Measured board on tip 232659cf (65%; smoke 6/6; CCA 20/24; M1 partial ~72%; isolation complete ~86%; ambient ~85%; AI-85 Measured 56%; dataset canary Measured FAIL — upload Missing companyId)."
   },
   "strands": [
     {
@@ -68,12 +68,12 @@
       "percent": 52,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Dataset canary Measured FAIL on tip 232659cf: UI mapped a 3-row CSV, then batchImport.upload returned Missing companyId (HTTP 403). Import Batches empty; 0 members created; full 12m not attempted. #1240 SAFE rollback is on tip but Declan has NOT cleared the ban \u2014 import.rollbackBatch was not used.",
-      "progressNote": "Measured 52% \u2014 canary FAIL at upload (Missing companyId 403); 0 created; rollback ban ACTIVE.",
+      "plainSummary": "Dataset canary Measured FAIL on tip 232659cf: UI mapped a 3-row CSV, then batchImport.upload returned Missing companyId (HTTP 403). Import Batches empty; 0 members created; full 12m not attempted. #1240 SAFE rollback is on tip but Declan has NOT cleared the ban — import.rollbackBatch was not used.",
+      "progressNote": "Measured 52% — canary FAIL at upload (Missing companyId 403); 0 created; rollback ban ACTIVE.",
       "blockers": [
         "Canary upload FAIL: Missing companyId on batchImport.upload (403)",
         "12-month dataset not imported (0 members from canary)",
-        "Declan has NOT cleared rollback ban \u2014 no import.rollbackBatch even though #1240 is live"
+        "Declan has NOT cleared rollback ban — no import.rollbackBatch even though #1240 is live"
       ],
       "detailDropIds": [
         "2026-09-11-dataset-canary-fail-tip-232659cf",
@@ -91,11 +91,11 @@
       "percent": 60,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Cluster A re-run on tip 232659cf: Measured 20/24 \u2014 same four fails as prior tips (MEM-X01, ACS-F01, TAG-C01, TAG-A01). Teacher MGR-10 and ACS-X01 PASS. #1239/#1245 are on tip but did not clear the final four. Clusters B\u2013F still need Declan\u2019s approve/reject.",
-      "progressNote": "Measured 60% \u2014 Cluster A 20/24 (~83% of A bank) same fails; teacher MGR-10/ACS-X01 PASS; B\u2013F unapproved.",
+      "plainSummary": "Cluster A re-run on tip 232659cf: Measured 20/24 — same four fails as prior tips (MEM-X01, ACS-F01, TAG-C01, TAG-A01). Teacher MGR-10 and ACS-X01 PASS. #1239/#1245 are on tip but did not clear the final four. Clusters B–F still need Declan’s approve/reject.",
+      "progressNote": "Measured 60% — Cluster A 20/24 (~83% of A bank) same fails; teacher MGR-10/ACS-X01 PASS; B–F unapproved.",
       "blockers": [
         "Cluster A final four still FAIL: MEM-X01, ACS-F01, TAG-C01, TAG-A01",
-        "Clusters B\u2013F banks not approved/rejected by Declan"
+        "Clusters B–F banks not approved/rejected by Declan"
       ],
       "detailDropIds": [
         "2026-09-10-cluster-a-20-24-tip-232659cf",
@@ -112,11 +112,11 @@
       "percent": 86,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "ISO-29 COMPLETE on tip 232659cf: Measured 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton only). Core ISO-01\u202629 = 25 PASS / 4 FAIL. Same four leaks still open (ISO-18, ISO-20, ISO-27, ISO-29). Supersedes earlier PARTIAL 12/4/16 on this tip.",
-      "progressNote": "Measured ~86% \u2014 25/29 core ISO PASS; same 4 fails; Weymouth/Luton extras NOT_RUN only.",
+      "plainSummary": "ISO-29 COMPLETE on tip 232659cf: Measured 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton only). Core ISO-01…29 = 25 PASS / 4 FAIL. Same four leaks still open (ISO-18, ISO-20, ISO-27, ISO-29). Supersedes earlier PARTIAL 12/4/16 on this tip.",
+      "progressNote": "Measured ~86% — 25/29 core ISO PASS; same 4 fails; Weymouth/Luton extras NOT_RUN only.",
       "blockers": [
         "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (still FAIL on this tip)",
-        "Weymouth #1245 and Luton #1242 extras NOT_RUN \u2014 no dedicated fixture/route"
+        "Weymouth #1245 and Luton #1242 extras NOT_RUN — no dedicated fixture/route"
       ],
       "detailDropIds": [
         "2026-09-11-iso29-complete-tip-232659cf",
@@ -134,8 +134,8 @@
       "percent": 56,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "AI-85 Measured on tip 232659cf: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP. Overnight rescore refreshed seven UNCERTAINs (AI-008/009/011/044/051/055/076) \u2014 all stayed UNCERTAIN. Counts unchanged vs prior hold.",
-      "progressNote": "Measured 56% (48/85 PASS) \u2014 overnight rescore; verdicts unchanged.",
+      "plainSummary": "AI-85 Measured on tip 232659cf: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP. Overnight rescore refreshed seven UNCERTAINs (AI-008/009/011/044/051/055/076) — all stayed UNCERTAIN. Counts unchanged vs prior hold.",
+      "progressNote": "Measured 56% (48/85 PASS) — overnight rescore; verdicts unchanged.",
       "blockers": [
         "23 UNCERTAIN remain (Platform Admin / empty AI panels / NEED_DECLAN)",
         "5 FAIL still open on the broken list",
@@ -156,11 +156,11 @@
       "percent": 85,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Ambient evidence Measured on tip 232659cf (evidence only \u2014 not a bank score): Pulse explainability OK (50/100 + why-score modal); Morning Dispatch viewer still FAIL after Generating; Twin Cancelling agrees with directory for Member A; Learning Engine one-tap Record Action works with 0 active lessons; Event Bus blocked by Platform-Admin gate. CC pairing: Pulse AGREE; Dispatch/improve-Pulse/at-risk MISMATCH.",
-      "progressNote": "Measured ~85% \u2014 Pulse OK; Dispatch viewer FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus gated.",
+      "plainSummary": "Ambient evidence Measured on tip 232659cf (evidence only — not a bank score): Pulse explainability OK (50/100 + why-score modal); Morning Dispatch viewer still FAIL after Generating; Twin Cancelling agrees with directory for Member A; Learning Engine one-tap Record Action works with 0 active lessons; Event Bus blocked by Platform-Admin gate. CC pairing: Pulse AGREE; Dispatch/improve-Pulse/at-risk MISMATCH.",
+      "progressNote": "Measured ~85% — Pulse OK; Dispatch viewer FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus gated.",
       "blockers": [
         "Morning Dispatch viewer still FAIL (Something went wrong after Generating)",
-        "Event Bus Platform-Admin gated \u2014 Declan escalation not attempted",
+        "Event Bus Platform-Admin gated — Declan escalation not attempted",
         "Learning Engine still 0 active lessons (one-tap action works)"
       ],
       "detailDropIds": [
@@ -177,13 +177,13 @@
       "percent": 72,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "M1 Wave1 partial Measured on tip 232659cf: Admin2 freeze PASS; unfreeze FAIL (payment provider \u2014 BB Smoke Sep8 still paused); Admin2 cancel+reverse PASS (reverse fixed vs prior Keep-left-Cancelling). Upgrade/downgrade/MemberB client/waitlist/Owner BLOCKED. Overnight smoke still Measured 6/6.",
-      "progressNote": "Measured ~72% \u2014 freeze/cancel/reverse PASS; unfreeze FAIL (Smoke paused); many paths still BLOCKED.",
+      "plainSummary": "M1 Wave1 partial Measured on tip 232659cf: Admin2 freeze PASS; unfreeze FAIL (payment provider — BB Smoke Sep8 still paused); Admin2 cancel+reverse PASS (reverse fixed vs prior Keep-left-Cancelling). Upgrade/downgrade/MemberB client/waitlist/Owner BLOCKED. Overnight smoke still Measured 6/6.",
+      "progressNote": "Measured ~72% — freeze/cancel/reverse PASS; unfreeze FAIL (Smoke paused); many paths still BLOCKED.",
       "blockers": [
-        "Admin2 unfreeze FAIL \u2014 payment provider; BB Smoke Sep8 still paused",
+        "Admin2 unfreeze FAIL — payment provider; BB Smoke Sep8 still paused",
         "Upgrade/downgrade BLOCKED (no selectable tiers)",
         "Member B authenticated client seat not run",
-        "Waitlist BLOCKED \u2014 no full class inventory",
+        "Waitlist BLOCKED — no full class inventory",
         "Owner seat not attempted after resume failure"
       ],
       "detailDropIds": [
@@ -202,8 +202,8 @@
       "percent": 100,
       "basis": "measured",
       "status": "ready",
-      "plainSummary": "Overnight six-step smoke ALL PASS on tip 232659cf (invite\u2192pay\u2192book\u2192cancel\u2192membership reverse). Later M1 Wave1 froze BB Smoke Sep8 then failed Resume at payment provider \u2014 that smoke membership is still paused (post-smoke residual; six-step bank remains Measured 6/6).",
-      "progressNote": "Measured 100% \u2014 6/6 PASS; residual: BB Smoke Sep8 still paused after M1 unfreeze FAIL.",
+      "plainSummary": "Overnight six-step smoke ALL PASS on tip 232659cf (invite→pay→book→cancel→membership reverse). Later M1 Wave1 froze BB Smoke Sep8 then failed Resume at payment provider — that smoke membership is still paused (post-smoke residual; six-step bank remains Measured 6/6).",
+      "progressNote": "Measured 100% — 6/6 PASS; residual: BB Smoke Sep8 still paused after M1 unfreeze FAIL.",
       "blockers": [],
       "detailDropIds": [
         "2026-09-10-overnight-smoke-6-6-pass",
@@ -212,7 +212,7 @@
       ],
       "phaseId": "member-commerce",
       "projectWeightPercent": 6,
-      "measuredNote": "Six-step smoke on tip 232659cf: steps 1\u20136 PASS; step 5 reverse proven live."
+      "measuredNote": "Six-step smoke on tip 232659cf: steps 1–6 PASS; step 5 reverse proven live."
     },
     {
       "id": "payments",
@@ -221,9 +221,9 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Overnight smoke completed one Stripe TEST discounted checkout, but M1 Wave1 Admin2 Resume failed at the payment provider and BB Smoke Sep8 remains paused. Broader payments recheck still needed.",
-      "progressNote": "Estimate 62% \u2014 smoke Stripe path passed earlier; Admin2 resume/unfreeze failed at provider (Smoke still paused).",
+      "progressNote": "Estimate 62% — smoke Stripe path passed earlier; Admin2 resume/unfreeze failed at provider (Smoke still paused).",
       "blockers": [
-        "Admin2 Resume/unfreeze FAIL \u2014 payment provider; Smoke membership still paused",
+        "Admin2 Resume/unfreeze FAIL — payment provider; Smoke membership still paused",
         "Broader payments / Stripe recheck beyond overnight smoke step 2 not done"
       ],
       "detailDropIds": [
@@ -240,12 +240,12 @@
       "percent": 83,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Afternoon + evening packs plus #1240 SAFE rollback and #1245 Weymouth are on tip 232659cf. Overnight smoke proved membership reverse; M1 Wave1 Admin2 reverse also PASS. ISO-29 COMPLETE re-proved the same four privacy leaks (18/20/27/29); Weymouth/Luton extras NOT_RUN. Ambient evidence Measured: Pulse OK; Dispatch viewer still FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus gated. AI-85 Measured 48/5/23/8/1 unchanged. Dataset canary Measured FAIL (Missing companyId on upload; 0 members; no rollback). New open: Admin2 unfreeze payment-provider FAIL leaves Smoke paused. Cluster A still 20/24. Rollback ban still Declan\u2019s call.",
-      "progressNote": "Estimate 83% \u2014 overnight closed Measured; dataset canary FAIL (companyId); Dispatch still FAIL; unfreeze provider fail; Cluster A same 20/24.",
+      "plainSummary": "Afternoon + evening packs plus #1240 SAFE rollback and #1245 Weymouth are on tip 232659cf. Overnight smoke proved membership reverse; M1 Wave1 Admin2 reverse also PASS. ISO-29 COMPLETE re-proved the same four privacy leaks (18/20/27/29); Weymouth/Luton extras NOT_RUN. Ambient evidence Measured: Pulse OK; Dispatch viewer still FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus gated. AI-85 Measured 48/5/23/8/1 unchanged. Dataset canary Measured FAIL (Missing companyId on upload; 0 members; no rollback). New open: Admin2 unfreeze payment-provider FAIL leaves Smoke paused. Cluster A still 20/24. Rollback ban still Declan’s call.",
+      "progressNote": "Estimate 83% — overnight closed Measured; dataset canary FAIL (companyId); Dispatch still FAIL; unfreeze provider fail; Cluster A same 20/24.",
       "blockers": [
         "ISO-18/20/27/29 still FAIL (bank complete; Weymouth/Luton extras NOT_RUN)",
-        "Dataset canary FAIL \u2014 Missing companyId on batchImport.upload (403); 0 members",
-        "Admin2 unfreeze FAIL \u2014 payment provider; Smoke still paused",
+        "Dataset canary FAIL — Missing companyId on batchImport.upload (403); 0 members",
+        "Admin2 unfreeze FAIL — payment provider; Smoke still paused",
         "Cluster A final four still open (MEM-X01 ACS-F01 TAG-C01 TAG-A01)",
         "Declan has NOT cleared rollback ban despite #1240 live"
       ],
@@ -268,7 +268,7 @@
       "basis": "estimate",
       "status": "blocked",
       "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. Tip change does not unblock this strand.",
-      "progressNote": "Still 15% \u2014 secrets gate unchanged.",
+      "progressNote": "Still 15% — secrets gate unchanged.",
       "blockers": [
         "Five Resend/Agentmail repository secrets missing for #1213"
       ],
@@ -279,36 +279,37 @@
   ],
   "health": {
     "overallLaunchPercent": 65,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 65% = round(52\u00d712 + 60\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 72\u00d710 + 100\u00d76 + 62\u00d78 + 83\u00d710 + 15\u00d710)/100.",
-    "readinessLabel": "Not ready to launch \u2014 smoke Measured 6/6 + Cluster A Measured 20/24 + M1 partial + ISO-29 COMPLETE (26/4/2 NOT_RUN Weymouth/Luton; same four leaks) + ambient evidence Measured (Pulse OK; Dispatch viewer FAIL) + AI-85 Measured 48/5/23/8/1 + dataset canary Measured FAIL (Missing companyId 403; 0 members; no rollback) on tip 232659cf; Declan rollback clear + secrets still gate",
-    "plainSummary": "As of ~01:30 Europe/London on 11 Sep 2026, launch readiness is about 65% (up from 52% this morning). Live staging tip confirmed 232659cf. Smoke Measured 6/6. Cluster A Measured 20/24 (same fails). M1 Wave1 partial Measured. ISO-29 COMPLETE Measured: 26 PASS / 4 FAIL (same ISO-18/20/27/29) / 2 NOT_RUN (Weymouth/Luton). Ambient evidence Measured (not bank score): Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus Platform-Admin gated. AI-85 overnight rescore Measured: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP \u2014 counts unchanged. Dataset canary Measured FAIL: Missing companyId on batchImport.upload (403); 0 members; no rollback. Hard warnings: Declan has NOT cleared the rollback ban \u2014 never instruct import.rollbackBatch; automated communications need five Resend/Agentmail secrets.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 65% = round(52×12 + 60×10 + 86×10 + 56×15 + 85×9 + 72×10 + 100×6 + 62×8 + 83×10 + 15×10)/100.",
+    "readinessLabel": "Not ready to launch — smoke Measured 6/6 + Cluster A Measured 20/24 + M1 partial + ISO-29 COMPLETE (26/4/2 NOT_RUN Weymouth/Luton; same four leaks) + ambient evidence Measured (Pulse OK; Dispatch viewer FAIL) + AI-85 Measured 48/5/23/8/1 + dataset canary Measured FAIL (Missing companyId 403; 0 members; no rollback) on tip 232659cf; Declan rollback clear + secrets still gate",
+    "plainSummary": "As of ~06:30 Europe/London on 11 Sep 2026, launch readiness is about 65%. Live staging tip confirmed 232659cf. Your Moves is now Declan-only; Engineering queue lists product/code fixes separately. Overnight Measured facts kept: smoke 6/6; Cluster A 20/24 (same fails); M1 Wave1 partial; ISO-29 COMPLETE 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton); ambient evidence (Pulse OK; Dispatch viewer FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus gated); AI-85 48/5/23/8/1 unchanged; dataset canary FAIL (Missing companyId on batchImport.upload 403; 0 members; no rollback). Hard warnings: Declan has NOT cleared the rollback ban — never instruct import.rollbackBatch; automated communications need five Resend/Agentmail secrets.",
     "strengths": [
       "Overnight six-step smoke ALL PASS on tip 232659cf (Measured)",
       "Cluster A Measured 20/24 with teacher MGR-10/ACS-X01 PASS",
-      "M1 Wave1 Admin2 cancel+reverse PASS \u2014 reverse fixed vs prior; freeze PASS",
-      "ISO-29 COMPLETE Measured 26 PASS / 4 FAIL / 2 NOT_RUN \u2014 core bank finished on this tip",
+      "M1 Wave1 Admin2 cancel+reverse PASS — reverse fixed vs prior; freeze PASS",
+      "ISO-29 COMPLETE Measured 26 PASS / 4 FAIL / 2 NOT_RUN — core bank finished on this tip",
       "Ambient Pulse explainability OK; Twin Cancelling agrees with directory; LE one-tap works",
-      "AI-85 overnight rescore Measured 48/5/23/8/1 on tip 232659cf \u2014 counts unchanged"
+      "AI-85 overnight rescore Measured 48/5/23/8/1 on tip 232659cf — counts unchanged"
     ],
     "risks": [
-      "Declan has NOT cleared rollback ban \u2014 never import.rollbackBatch even though #1240 is live",
-      "Dataset canary FAIL \u2014 Missing companyId on batchImport.upload (403); 0 members; 12m not loaded",
+      "DECLAN: Rollback ban still ACTIVE — never import.rollbackBatch even though #1240 is live",
+      "Dataset canary FAIL — Missing companyId on batchImport.upload (403); 0 members; 12m not loaded",
       "Same four privacy leaks still FAIL (ISO-18/20/27/29); Weymouth/Luton extras NOT_RUN",
       "Morning Dispatch viewer still FAIL on tip 232659cf",
-      "Admin2 unfreeze FAIL \u2014 payment provider; BB Smoke Sep8 still paused",
+      "Admin2 unfreeze FAIL — payment provider; BB Smoke Sep8 still paused",
       "Cluster A final four unchanged: MEM-X01 ACS-F01 TAG-C01 TAG-A01",
       "AI-85 Measured but 23 UNCERTAIN + 5 FAIL remain; Event Bus / Feature Controls still unsettled",
       "Automated comms #1213 blocked on secrets"
     ],
     "topPriorities": [
-      "Fix batchImport.upload Missing companyId (canary 403) before any 12m load",
-      "Architecture fix for privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (same four)",
-      "Fix Morning Dispatch viewer failure (still FAIL after Generating)",
-      "Unstick BB Smoke Sep8 pause / fix Admin2 Resume payment-provider path",
-      "Fix Cluster A final four (MEM-X01 ACS-F01 TAG-C01 TAG-A01)",
-      "Platform Admin: Event Bus reachability + settle AI Feature Controls (AI-85 Measured; UNCERTAINs still NEED_DECLAN)",
-      "Do not use import.rollbackBatch until Declan clears the ban",
-      "Add Resend/Agentmail secrets so #1213 can ship"
+      "DECLAN: Say yes to safe rollback (ban still ACTIVE — #1240 live ≠ cleared)",
+      "DECLAN: Add five Resend/Agentmail secrets for #1213",
+      "DECLAN: Platform Admin — Feature Controls + Event Bus (ask before toggles); unlocks AI-85 UNCERTAIN settle",
+      "DECLAN: Approve or reject Clusters B–F banks",
+      "ENGINEERING: Fix batchImport.upload Missing companyId (403) — blocks 12m dataset",
+      "ENGINEERING: Fix ISO-18, 20, 27, 29 privacy leaks",
+      "ENGINEERING: Fix Morning Dispatch viewer (Something went wrong)",
+      "ENGINEERING: Fix Admin2 Resume / unfreeze payment-provider path (Smoke paused)",
+      "ENGINEERING: Fix Cluster A MEM-X01, ACS-F01, TAG-C01, TAG-A01"
     ],
     "visualBands": {
       "ready": [
@@ -330,286 +331,14 @@
         "dataset"
       ]
     },
-    "refreshWarning": "Live tip confirmed 232659cf after final overnight breakfast \u2014 Measured strands kept; dataset canary Measured FAIL stamped."
+    "refreshWarning": "Live tip confirmed 232659cf — Measured strands kept; Your Moves Declan-only + Engineering queue split stamped morning 11 Sep."
   },
   "actions": [
     {
-      "id": "overnight-smoke-6-6-pass",
-      "title": "Overnight six-step smoke ALL PASS on tip 232659cf",
-      "plainWhy": "Measured: steps 1\u20136 PASS including membership reverse Cancelling\u2192Active (first proven this programme). Account-not-found on invite is gone. Tip stamped 232659cf at start and end.",
-      "unblocks": "Smoke strand Measured 100%; confidence on invite\u2192pay\u2192book\u2192cancel\u2192membership reverse path",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "member-commerce",
-      "strandIds": [
-        "smoke",
-        "m1"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
-        },
-        {
-          "label": "Smoke drop",
-          "url": "#drop-2026-09-10-overnight-smoke-6-6-pass",
-          "kind": "drop"
-        }
-      ]
-    },
-    {
-      "id": "cluster-a-20-24-measured",
-      "title": "Cluster A Measured 20/24 on tip 232659cf \u2014 no improvement",
-      "plainWhy": "Measured: 20 PASS / 4 FAIL on tip 232659cf. Same fails MEM-X01, ACS-F01, TAG-C01, TAG-A01. Teacher MGR-10 and ACS-X01 PASS. #1239/#1245 on tip did not clear the final four.",
-      "unblocks": "Command Centre strand Measured (not estimate); clarity that final four still need product work",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "studio-ops",
-      "strandIds": [
-        "command-centre"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
-        },
-        {
-          "label": "Cluster A drop",
-          "url": "#drop-2026-09-10-cluster-a-20-24-tip-232659cf",
-          "kind": "drop"
-        }
-      ]
-    },
-    {
-      "id": "m1-wave1-partial-measured",
-      "title": "M1 Wave1 partial Measured \u2014 freeze PASS, unfreeze FAIL, cancel+reverse PASS",
-      "plainWhy": "Admin2 freeze PASS; Resume/unfreeze FAIL at payment provider (BB Smoke Sep8 still paused); Admin2 cancel+reverse PASS \u2014 reverse fixed vs prior Keep-left-Cancelling. Upgrade/downgrade/MemberB client/waitlist/Owner BLOCKED. Tip stamped 232659cf start and end.",
-      "unblocks": "M1 strand partial Measured; clarity that reverse works and unfreeze provider path is broken",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "member-commerce",
-      "strandIds": [
-        "m1",
-        "payments"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
-        },
-        {
-          "label": "M1 Wave1 drop",
-          "url": "#drop-2026-09-10-m1-wave1-partial-tip-232659cf",
-          "kind": "drop"
-        }
-      ]
-    },
-    {
-      "id": "iso29-complete-measured",
-      "title": "ISO-29 COMPLETE Measured \u2014 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton)",
-      "plainWhy": "Measured complete on tip 232659cf: 26 PASS, same four fails ISO-18/20/27/29, only Weymouth #1245 and Luton #1242 NOT_RUN. Core ISO bank 25/29 (~86%). Supersedes prior hub PARTIAL 12/4/16 at 61%. Tip stamped 232659cf start and finish.",
-      "unblocks": "Isolation strand Measured complete (core bank finished); clarity that same four leaks remain",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "studio-ops",
-      "strandIds": [
-        "isolation",
-        "findings-fix"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
-        },
-        {
-          "label": "ISO-29 complete drop",
-          "url": "#drop-2026-09-11-iso29-complete-tip-232659cf",
-          "kind": "drop"
-        }
-      ]
-    },
-    {
-      "id": "ambient-evidence-measured",
-      "title": "Ambient evidence Measured on tip 232659cf \u2014 Pulse OK; Dispatch viewer FAIL",
-      "plainWhy": "Evidence only (not bank score) on tip 232659cf: Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees with directory; LE one-tap works with 0 lessons; Event Bus Platform-Admin gated. CC pairing mismatches on Dispatch/improve-Pulse/at-risk. Tip stamped start and end.",
-      "unblocks": "Ambient strand Measured; Dispatch viewer failure still open for product work",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "intelligence",
-      "strandIds": [
-        "ambient"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
-        },
-        {
-          "label": "Ambient evidence drop",
-          "url": "#drop-2026-09-11-ambient-evidence-tip-232659cf",
-          "kind": "drop"
-        }
-      ]
-    },
-    {
-      "id": "ai85-overnight-measured",
-      "title": "AI-85 overnight rescore Measured \u2014 48/5/23/8/1 unchanged on tip 232659cf",
-      "plainWhy": "Overnight live recheck on tip 232659cf: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP. Seven UNCERTAINs (AI-008/009/011/044/051/055/076) refreshed \u2014 all stayed UNCERTAIN. No Feature Controls toggles; no import/rollback.",
-      "unblocks": "AI-85 strand Measured on this tip",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "intelligence",
-      "strandIds": [
-        "ai-85"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
-        },
-        {
-          "label": "AI-85 overnight drop",
-          "url": "#drop-2026-09-11-ai85-overnight-rescore-tip-232659cf",
-          "kind": "drop"
-        }
-      ]
-    },
-    {
-      "id": "overnight-breakfast-final",
-      "title": "Final overnight breakfast published on tip 232659cf (~65%)",
-      "plainWhy": "Breakfast one-pager + Launch Hub final stamp: tip confirmed 232659cf; Measured strands kept; dataset canary FAIL (Missing companyId 403; 0 members; no rollback); rollback ban ACTIVE. Headline ~65% (morning 52%).",
-      "unblocks": "Morning briefing; honest Launch Hub closeout for 10\u219211 Sep overnight",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "launch-hardening",
-      "strandIds": [
-        "findings-fix",
-        "dataset",
-        "smoke"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Breakfast drop",
-          "url": "#drop-2026-09-11-overnight-breakfast-tip-232659cf",
-          "kind": "drop"
-        },
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
-        }
-      ]
-    },
-    {
-      "id": "dataset-canary-fail-measured",
-      "title": "Dataset canary Measured FAIL \u2014 Missing companyId on batchImport.upload",
-      "plainWhy": "Measured: 3-row canary preview/mapping OK; upload mutation FORBIDDEN 403 with Missing companyId on batchImport.upload. Import Batches empty; 0 members; full 12m not attempted. import.rollbackBatch NOT used; rollback ban ACTIVE.",
-      "unblocks": "Clarity that Select/mapping works but upload path is broken before any 12m load",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "data-foundation",
-      "strandIds": [
-        "dataset"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Canary drop",
-          "url": "#drop-2026-09-11-dataset-canary-fail-tip-232659cf",
-          "kind": "drop"
-        },
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
-        }
-      ]
-    },
-    {
-      "id": "continue-overnight-retests",
-      "title": "Overnight complete \u2014 breakfast published on tip 232659cf",
-      "plainWhy": "Final overnight roll-up: Measured strands kept (smoke/CCA/M1/ISO/ambient/AI-85); dataset canary Measured FAIL (Missing companyId 403; 0 members; no rollback). Hub ~65%. Breakfast drop published.",
-      "unblocks": "Morning briefing ready; Launch Hub stamped final overnight",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "studio-ops",
-      "strandIds": [
-        "ai-85",
-        "m1",
-        "payments"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Breakfast drop",
-          "url": "#drop-2026-09-11-overnight-breakfast-tip-232659cf",
-          "kind": "drop"
-        },
-        {
-          "label": "Canary drop",
-          "url": "#drop-2026-09-11-dataset-canary-fail-tip-232659cf",
-          "kind": "drop"
-        },
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
-        }
-      ]
-    },
-    {
-      "id": "retest-ambient-pulse-dispatch",
-      "title": "Ambient evidence Measured on tip 232659cf \u2014 Pulse OK; Dispatch viewer FAIL",
-      "plainWhy": "Evidence only (not bank score): Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees with directory; LE one-tap works with 0 lessons; Event Bus Platform-Admin gated. Tip stamped 232659cf start and end.",
-      "unblocks": "Ambient strand Measured (estimate superseded); clarity that Dispatch viewer still fails",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "studio-ops",
-      "strandIds": [
-        "ambient"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
-        },
-        {
-          "label": "Ambient evidence drop",
-          "url": "#drop-2026-09-11-ambient-evidence-tip-232659cf",
-          "kind": "drop"
-        }
-      ]
-    },
-    {
       "id": "declan-clear-rollback-ban",
-      "title": "Rollback ban still ACTIVE \u2014 Declan has NOT cleared it",
-      "plainWhy": "HARD WARNING unchanged after final overnight: #1240 SAFE rollback is LIVE on tip 232659cf, but Declan has NOT cleared the ban. Canary failed without rollback. Never instruct import.rollbackBatch until Declan clears.",
-      "unblocks": "Permission to use safe undo after a bad import \u2014 only after Declan clears",
+      "title": "Say yes to safe rollback (ban still on)",
+      "plainWhy": "HARD WARNING: #1240 SAFE rollback is LIVE on tip 232659cf, but Declan has NOT cleared the ban. Overnight canary failed without using rollback. Saying yes unlocks import.rollbackBatch after a bad import — #1240 live ≠ cleared.",
+      "unblocks": "Permission to use import.rollbackBatch after a bad import (only after Declan clears)",
       "movesProjectForwardPercent": 2,
       "movesPhaseForwardPercent": 10,
       "phaseId": "data-foundation",
@@ -619,8 +348,9 @@
       ],
       "effort": "minutes",
       "status": "blocked",
+      "audience": "declan",
       "unlockWhen": "Declan explicitly clears the rollback ban (not just #1240 on tip)",
-      "warning": "NEVER instruct import.rollbackBatch / never roll back until Declan clears \u2014 even though #1240 is live on /api/version.",
+      "warning": "NEVER instruct import.rollbackBatch / never roll back until Declan clears — even though #1240 is live on /api/version. #1240 live ≠ cleared.",
       "warningLevel": "danger",
       "links": [
         {
@@ -632,39 +362,11 @@
           "label": "Live /api/version",
           "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
           "kind": "staging"
-        }
-      ]
-    },
-    {
-      "id": "import-12m-dataset-try",
-      "title": "Dataset canary FAIL \u2014 fix Missing companyId before retry (still NO rollback)",
-      "plainWhy": "Measured canary on tip 232659cf: mapping/preview worked for 3 rows, then batchImport.upload returned Missing companyId (HTTP 403). 0 members created. Full 12m not attempted. Rollback ban still ACTIVE \u2014 never import.rollbackBatch.",
-      "unblocks": "Unblocks twelve-month test data load once companyId upload path works",
-      "movesProjectForwardPercent": 8,
-      "movesPhaseForwardPercent": 50,
-      "phaseId": "data-foundation",
-      "strandIds": [
-        "dataset"
-      ],
-      "effort": "M",
-      "status": "needed",
-      "warning": "TRY import only if Select/import works. NEVER instruct import.rollbackBatch until Declan clears the ban \u2014 #1240 live does NOT clear it.",
-      "warningLevel": "danger",
-      "links": [
-        {
-          "label": "Canary drop",
-          "url": "#drop-2026-09-11-dataset-canary-fail-tip-232659cf",
-          "kind": "drop"
         },
         {
-          "label": "Breakfast drop",
-          "url": "#drop-2026-09-11-overnight-breakfast-tip-232659cf",
-          "kind": "drop"
-        },
-        {
-          "label": "Live tip /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
+          "label": "Copy prompt",
+          "kind": "copy-prompt",
+          "text": "I clear the HelgoIQ SAFE rollback ban for tip 232659cf — bots may use import.rollbackBatch after a bad import. Confirm what that unlocks and any remaining guardrails."
         }
       ]
     },
@@ -681,10 +383,10 @@
       ],
       "effort": "minutes",
       "status": "needed",
+      "audience": "declan",
       "links": [
         {
           "label": "Copy prompt",
-          "url": "data:text/plain,walk%20me%20through%20adding%20the%20five%20Resend%2FAgentmail%20secrets%20for%20%231213",
           "kind": "copy-prompt",
           "text": "walk me through adding the five Resend/Agentmail secrets for #1213"
         }
@@ -692,9 +394,9 @@
     },
     {
       "id": "settle-ai-controls",
-      "title": "Platform Admin: settle AI Feature Controls & Event Bus",
-      "plainWhy": "AI-85 is now Measured on tip 232659cf (48/5/23/8/1), but Event Bus remains Platform-Admin gated and Feature Controls were not toggled overnight. Settling admin switches would clear many of the 23 UNCERTAIN rows for a cleaner re-sample.",
-      "unblocks": "Fewer AI-85 UNCERTAIN / NEED_DECLAN rows",
+      "title": "Platform Admin: Feature Controls + Event Bus",
+      "plainWhy": "Standing rule: ask Declan before Feature Controls toggles. AI-85 is Measured 48/5/23/8/1 on tip 232659cf but Event Bus stays Platform-Admin gated and Feature Controls were not toggled overnight. Settling admin switches unlocks AI-85 UNCERTAIN settle.",
+      "unblocks": "AI-85 UNCERTAIN settle / fewer NEED_DECLAN rows; Event Bus reachability",
       "movesProjectForwardPercent": 3,
       "movesPhaseForwardPercent": 15,
       "phaseId": "intelligence",
@@ -704,18 +406,18 @@
       ],
       "effort": "minutes",
       "status": "needed",
+      "audience": "declan",
       "links": [
         {
           "label": "Copy prompt",
-          "url": "data:text/plain,settle%20AI%20Feature%20Controls%20%26%20Event%20Bus%20on%20Bluebird%20(AI-85%20Measured%2048%2F5%2F23%2F8%2F1%20on%20tip%20232659cf%3B%20UNCERTAINs%20still%20NEED_DECLAN)",
           "kind": "copy-prompt",
-          "text": "settle AI Feature Controls & Event Bus on Bluebird (AI-85 Measured 48/5/23/8/1 on tip 232659cf; UNCERTAINs still NEED_DECLAN)"
+          "text": "settle AI Feature Controls & Event Bus on Bluebird (AI-85 Measured 48/5/23/8/1 on tip 232659cf; UNCERTAINs still NEED_DECLAN). Ask before any toggles."
         }
       ]
     },
     {
       "id": "approve-clusters-bf",
-      "title": "Approve or reject Clusters B\u2013F test banks",
+      "title": "Approve or reject Clusters B–F test banks",
       "plainWhy": "Banks still need your ruling so helpers stop parking on ambiguous rows.",
       "unblocks": "Broader Command Centre acceptance beyond Cluster A",
       "movesProjectForwardPercent": 2,
@@ -726,92 +428,46 @@
       ],
       "effort": "minutes",
       "status": "needed",
+      "audience": "declan",
       "links": [
         {
-          "label": "Copy prompt",
-          "url": "data:text/plain,show%20me%20Clusters%20B%E2%80%93F%20for%20approve%2Freject%20rulings",
-          "kind": "copy-prompt",
-          "text": "show me Clusters B\u2013F for approve/reject rulings"
-        }
-      ]
-    },
-    {
-      "id": "fix-iso-leaks",
-      "title": "Architecture review: fix privacy fails ISO-18, 20, 27, 29 (re-proved complete)",
-      "plainWhy": "ISO-29 COMPLETE on tip 232659cf re-proved the same four fails (18/20/27/29). Core bank finished; only Weymouth/Luton extras NOT_RUN. These four need an architecture pass.",
-      "unblocks": "Near-green privacy strand",
-      "movesProjectForwardPercent": 3,
-      "movesPhaseForwardPercent": 15,
-      "phaseId": "studio-ops",
-      "strandIds": [
-        "isolation"
-      ],
-      "effort": "hours",
-      "status": "needed",
-      "links": [
-        {
-          "label": "ISO complete drop",
-          "url": "#drop-2026-09-11-iso29-complete-tip-232659cf",
+          "label": "Cluster B–F drop",
+          "url": "#drop-2026-09-10-cluster-bf",
           "kind": "drop"
         },
         {
           "label": "Copy prompt",
-          "url": "data:text/plain,open%20architecture%20review%20for%20privacy%20fails%20ISO-18%2C%2020%2C%2027%2C%2029%20(re-proved%20COMPLETE%20on%20tip%20232659cf%3B%20Weymouth%2FLuton%20NOT_RUN)",
           "kind": "copy-prompt",
-          "text": "open architecture review for privacy fails ISO-18, 20, 27, 29 (re-proved COMPLETE on tip 232659cf; Weymouth/Luton NOT_RUN)"
+          "text": "show me Clusters B–F for approve/reject rulings"
         }
       ]
     },
     {
-      "id": "tip-1240-1245-live",
-      "title": "#1240 + #1245 are LIVE on the test studio",
-      "plainWhy": "DigitalOcean tip is 232659cf (merge of #1240). #1245 Weymouth also on tip. Receipt only \u2014 rollback ban is still Declan\u2019s.",
-      "unblocks": "TRY import path + Weymouth CC prompt fix for retests",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "launch-hardening",
+      "id": "declan-smoke-paused-review",
+      "title": "Decide: leave BB Smoke Sep8 paused, fix card, or ask Bot to retry after payment fix",
+      "plainWhy": "Soft decision: M1 Wave1 Admin2 Resume failed at payment provider after overnight smoke. BB Smoke Sep8 is still paused. You can leave it paused, ask for a fix card, or tell Bot to retry after the payment-provider path is fixed.",
+      "unblocks": "Clarity for Bot/Cursor on whether to retry Resume / unfreeze vs leave paused",
+      "movesProjectForwardPercent": 1,
+      "movesPhaseForwardPercent": 5,
+      "phaseId": "member-commerce",
       "strandIds": [
-        "findings-fix",
-        "dataset"
+        "m1",
+        "payments",
+        "smoke"
       ],
-      "effort": "done",
-      "status": "done",
+      "effort": "minutes",
+      "status": "needed",
+      "audience": "declan",
       "links": [
         {
-          "label": "Live /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
+          "label": "M1 Wave1 drop",
+          "url": "#drop-2026-09-10-m1-wave1-partial-tip-232659cf",
+          "kind": "drop"
         },
         {
-          "label": "PR #1240",
-          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1240",
-          "kind": "github"
-        },
-        {
-          "label": "PR #1245",
-          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1245",
-          "kind": "github"
-        }
-      ]
-    },
-    {
-      "id": "deploy-done-afternoon",
-      "title": "Afternoon + evening pack is LIVE on the test studio",
-      "plainWhy": "Earlier tip 99e17af7 already carried packs #1231\u2013#1239, #1241\u2013#1244, #1246. Tip 232659cf keeps those and adds #1240 + #1245.",
-      "unblocks": "All retests listed above",
-      "movesProjectForwardPercent": 0,
-      "movesPhaseForwardPercent": 0,
-      "phaseId": "launch-hardening",
-      "strandIds": [
-        "findings-fix"
-      ],
-      "effort": "done",
-      "status": "done",
-      "links": [
-        {
-          "label": "Live /api/version",
-          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
-          "kind": "staging"
+          "label": "Copy prompt",
+          "kind": "copy-prompt",
+          "text": "BB Smoke Sep8 still paused after Admin2 resume payment-provider FAIL — decide leave paused / fix card / ask Bot to retry after payment fix"
         }
       ]
     }
@@ -824,7 +480,7 @@
       "strandIds": [
         "dataset"
       ],
-      "plainSummary": "#1240 is on tip; TRY import only if Select works \u2014 still no rollback until Declan clears.",
+      "plainSummary": "#1240 is on tip; TRY import only if Select works — still no rollback until Declan clears.",
       "percentComplete": 52
     },
     {
@@ -835,7 +491,7 @@
         "command-centre",
         "isolation"
       ],
-      "plainSummary": "Cluster A Measured 20/24; ISO-29 COMPLETE Measured 26/4/2 NOT_RUN Weymouth/Luton (same four fails); B\u2013F still need rulings.",
+      "plainSummary": "Cluster A Measured 20/24; ISO-29 COMPLETE Measured 26/4/2 NOT_RUN Weymouth/Luton (same four fails); B–F still need rulings.",
       "percentComplete": 73
     },
     {
@@ -846,7 +502,7 @@
         "ai-85",
         "ambient"
       ],
-      "plainSummary": "Ambient evidence Measured ~85% (Pulse OK; Dispatch viewer FAIL). AI-85 overnight Measured 56% (48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP \u2014 counts unchanged; refreshed UNCERTAINs stayed UNCERTAIN).",
+      "plainSummary": "Ambient evidence Measured ~85% (Pulse OK; Dispatch viewer FAIL). AI-85 overnight Measured 56% (48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP — counts unchanged; refreshed UNCERTAINs stayed UNCERTAIN).",
       "percentComplete": 67
     },
     {
@@ -883,8 +539,176 @@
     }
   ],
   "notes": {
-    "botCommander": "Where an action says \u201ctell Bot Commander\u201d, use the Copy prompt button, then paste into this Bot Commander chat. Declan can paste those messages here directly \u2014 no special app link required.",
-    "hardWarning": "NEVER say rollback is cleared. #1240 is LIVE on tip 232659cf but Declan has NOT cleared the ban. Never instruct import.rollbackBatch / never roll back until Declan clears. Dataset canary Measured FAIL: Missing companyId on batchImport.upload (403); 0 members; no rollback used. ISO-29 COMPLETE on this tip is 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton) \u2014 same four leaks. Ambient evidence Measured: Dispatch viewer still FAIL; Event Bus Platform-Admin gated. AI-85 Measured 48/5/23/8/1 \u2014 refreshed UNCERTAINs stayed UNCERTAIN.",
-    "refresh": "Primary refresh when live staging tip changes; backup weekday every 30 minutes daytime Europe/London. This run: tip confirmed unchanged 232659cf; final overnight breakfast + dataset canary Measured FAIL; Measured strands kept; headline stays ~65%. Rollback ban ACTIVE."
-  }
+    "botCommander": "Where an action says “tell Bot Commander”, use the Copy prompt button, then paste into this Bot Commander chat. Declan can paste those messages here directly — no special app link required.",
+    "hardWarning": "NEVER say rollback is cleared. #1240 is LIVE on tip 232659cf but Declan has NOT cleared the ban. Never instruct import.rollbackBatch / never roll back until Declan clears. Your Moves is Declan-only; Engineering queue is separate product work. Dataset canary Measured FAIL: Missing companyId on batchImport.upload (403); 0 members; no rollback used. ISO-29 COMPLETE on this tip is 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton) — same four leaks. Ambient evidence Measured: Dispatch viewer still FAIL; Event Bus Platform-Admin gated. AI-85 Measured 48/5/23/8/1 — refreshed UNCERTAINs stayed UNCERTAIN.",
+    "refresh": "Primary refresh when live staging tip changes; backup weekday every 30 minutes daytime Europe/London. This run: tip confirmed unchanged 232659cf; morning hub UX split Declan blockers vs engineering queue; Measured overnight facts kept; headline stays ~65%. Rollback ban ACTIVE."
+  },
+  "engineeringActions": [
+    {
+      "id": "eng-fix-batchimport-companyid",
+      "title": "Fix batchImport.upload Missing companyId (403)",
+      "plainWhy": "Dataset canary Measured FAIL on tip 232659cf: mapping/preview OK for 3 rows, then batchImport.upload returned Missing companyId (HTTP 403). 0 members created; full 12m blocked.",
+      "unblocks": "Twelve-month dataset canary + full import path",
+      "movesProjectForwardPercent": 8,
+      "movesPhaseForwardPercent": 50,
+      "phaseId": "data-foundation",
+      "strandIds": [
+        "dataset"
+      ],
+      "effort": "hours",
+      "status": "needed",
+      "audience": "engineering",
+      "warning": "TRY import only after fix. NEVER instruct import.rollbackBatch until Declan clears the ban.",
+      "warningLevel": "danger",
+      "links": [
+        {
+          "label": "Canary drop",
+          "url": "#drop-2026-09-11-dataset-canary-fail-tip-232659cf",
+          "kind": "drop"
+        },
+        {
+          "label": "Copy prompt",
+          "kind": "copy-prompt",
+          "text": "Fix batchImport.upload Missing companyId (403) that blocks the 12m dataset canary on tip 232659cf. Do not use import.rollbackBatch — rollback ban ACTIVE."
+        }
+      ]
+    },
+    {
+      "id": "eng-fix-iso-privacy-leaks",
+      "title": "Fix ISO-18, 20, 27, 29 privacy leaks",
+      "plainWhy": "ISO-29 COMPLETE Measured 26 PASS / 4 FAIL / 2 NOT_RUN on tip 232659cf re-proved the same four privacy fails. Architecture/product fix needed.",
+      "unblocks": "Near-green isolation / privacy strand",
+      "movesProjectForwardPercent": 3,
+      "movesPhaseForwardPercent": 15,
+      "phaseId": "studio-ops",
+      "strandIds": [
+        "isolation",
+        "findings-fix"
+      ],
+      "effort": "hours",
+      "status": "needed",
+      "audience": "engineering",
+      "links": [
+        {
+          "label": "ISO complete drop",
+          "url": "#drop-2026-09-11-iso29-complete-tip-232659cf",
+          "kind": "drop"
+        },
+        {
+          "label": "Copy prompt",
+          "kind": "copy-prompt",
+          "text": "Fix privacy leaks ISO-18, ISO-20, ISO-27, ISO-29 (re-proved COMPLETE on tip 232659cf; Weymouth/Luton NOT_RUN)."
+        }
+      ]
+    },
+    {
+      "id": "eng-fix-morning-dispatch-viewer",
+      "title": "Fix Morning Dispatch viewer (Something went wrong)",
+      "plainWhy": "Ambient evidence Measured on tip 232659cf: Pulse OK, but Morning Dispatch viewer still FAIL after Generating (“Something went wrong”).",
+      "unblocks": "Ambient Dispatch path usable; clears ambient viewer FAIL",
+      "movesProjectForwardPercent": 2,
+      "movesPhaseForwardPercent": 10,
+      "phaseId": "intelligence",
+      "strandIds": [
+        "ambient"
+      ],
+      "effort": "hours",
+      "status": "needed",
+      "audience": "engineering",
+      "links": [
+        {
+          "label": "Ambient evidence drop",
+          "url": "#drop-2026-09-11-ambient-evidence-tip-232659cf",
+          "kind": "drop"
+        },
+        {
+          "label": "Copy prompt",
+          "kind": "copy-prompt",
+          "text": "Fix Morning Dispatch viewer failure (Something went wrong after Generating) on tip 232659cf."
+        }
+      ]
+    },
+    {
+      "id": "eng-fix-admin2-unfreeze-payment",
+      "title": "Fix Admin2 Resume / unfreeze payment-provider path",
+      "plainWhy": "M1 Wave1 partial Measured: Admin2 freeze PASS; Resume/unfreeze FAIL at payment provider; BB Smoke Sep8 still paused. Cancel+reverse PASS.",
+      "unblocks": "Unfreeze path; ability to resume paused smoke membership safely",
+      "movesProjectForwardPercent": 3,
+      "movesPhaseForwardPercent": 15,
+      "phaseId": "member-commerce",
+      "strandIds": [
+        "m1",
+        "payments"
+      ],
+      "effort": "hours",
+      "status": "needed",
+      "audience": "engineering",
+      "links": [
+        {
+          "label": "M1 Wave1 drop",
+          "url": "#drop-2026-09-10-m1-wave1-partial-tip-232659cf",
+          "kind": "drop"
+        },
+        {
+          "label": "Copy prompt",
+          "kind": "copy-prompt",
+          "text": "Fix Admin2 Resume / unfreeze payment-provider path that left BB Smoke Sep8 paused on tip 232659cf."
+        }
+      ]
+    },
+    {
+      "id": "eng-fix-cluster-a-final-four",
+      "title": "Fix Cluster A MEM-X01, ACS-F01, TAG-C01, TAG-A01",
+      "plainWhy": "Cluster A Measured 20/24 on tip 232659cf — same four fails. Teacher MGR-10 and ACS-X01 PASS. #1239/#1245 on tip did not clear the final four.",
+      "unblocks": "Cluster A full pass path; Command Centre strand progress",
+      "movesProjectForwardPercent": 2,
+      "movesPhaseForwardPercent": 12,
+      "phaseId": "studio-ops",
+      "strandIds": [
+        "command-centre"
+      ],
+      "effort": "hours",
+      "status": "needed",
+      "audience": "engineering",
+      "links": [
+        {
+          "label": "Cluster A drop",
+          "url": "#drop-2026-09-10-cluster-a-20-24-tip-232659cf",
+          "kind": "drop"
+        },
+        {
+          "label": "Copy prompt",
+          "kind": "copy-prompt",
+          "text": "Fix Cluster A final four: MEM-X01, ACS-F01, TAG-C01, TAG-A01 on tip 232659cf (Measured 20/24)."
+        }
+      ]
+    },
+    {
+      "id": "eng-weymouth-luton-fixture-coverage",
+      "title": "Optional: Weymouth/Luton fixture coverage (NOT_RUN)",
+      "plainWhy": "ISO-29 COMPLETE left only Weymouth (#1245) and Luton (#1242) extras NOT_RUN. Soft coverage work — not blocking the core ISO bank.",
+      "unblocks": "Full ISO extras coverage beyond core 29",
+      "movesProjectForwardPercent": 1,
+      "movesPhaseForwardPercent": 5,
+      "phaseId": "studio-ops",
+      "strandIds": [
+        "isolation"
+      ],
+      "effort": "hours",
+      "status": "needed",
+      "audience": "engineering",
+      "links": [
+        {
+          "label": "ISO complete drop",
+          "url": "#drop-2026-09-11-iso29-complete-tip-232659cf",
+          "kind": "drop"
+        },
+        {
+          "label": "Copy prompt",
+          "kind": "copy-prompt",
+          "text": "Run optional Weymouth/Luton fixture coverage (ISO extras currently NOT_RUN on tip 232659cf)."
+        }
+      ]
+    }
+  ]
 }
