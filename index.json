@@ -1,12 +1,50 @@
 {
-  "updatedAt": "2026-09-11T00:21:58.363Z",
+  "updatedAt": "2026-09-11T00:31:55.619Z",
   "drops": [
     {
-      "id": "2026-09-11-ai85-overnight-rescore-tip-232659cf",
-      "title": "AI-85 overnight rescore Measured — 48/5/23/8/1 unchanged on tip 232659cf",
+      "id": "2026-09-11-dataset-canary-fail-tip-232659cf",
+      "title": "Dataset canary FAIL \u2014 Missing companyId on batchImport.upload",
       "date": "2026-09-11",
-      "summary": "AI-85 Measured on tip 232659cf: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP — counts unchanged; seven refreshed UNCERTAINs stayed UNCERTAIN.",
-      "plainEnglish": "Overnight AI-85 recheck on the live tip finished with the same scorecard: 48 pass, 5 fail, 23 uncertain, 8 unreachable, 1 skip. Seven uncertain items were looked at again and every one stayed uncertain (mostly Platform Admin gates or empty AI panels). Launch readiness stays about 65%. Rollback ban is still active — do not undo imports.",
+      "summary": "Canary FAIL on tip 232659cf: Missing companyId on batchImport.upload 403; 0 members; no rollback; ban ACTIVE.",
+      "plainEnglish": "A three-row CSV import test reached the mapping screen but failed on upload with a missing companyId error (403). No members were created and nothing was rolled back. The year of test data is still not loaded. Declan has not cleared the rollback ban.",
+      "tags": [
+        "dataset",
+        "findings"
+      ],
+      "type": "finding",
+      "project": "helgoiq-overnight-2026-09-10-11",
+      "paths": [
+        "drops/2026-09-11-dataset-canary-fail-tip-232659cf/IMPORT.md",
+        "drops/2026-09-11-dataset-canary-fail-tip-232659cf/SUMMARY.md"
+      ],
+      "tip": "232659cf05d22e5de920ee547925b37581cfb6d4"
+    },
+    {
+      "id": "2026-09-11-overnight-breakfast-tip-232659cf",
+      "title": "Overnight breakfast \u2014 tip 232659cf final (~65%)",
+      "date": "2026-09-11",
+      "summary": "Final overnight breakfast on tip 232659cf: hub ~65% Measured; dataset canary FAIL (Missing companyId 403); rollback ban ACTIVE.",
+      "plainEnglish": "Overnight finished on the live tip. Launch readiness is about 65% (was 52% this morning). Smoke, Cluster A, ISO, ambient, and AI-85 stayed Measured. The small CSV import test failed with a missing companyId error \u2014 zero members created, and we did not roll anything back. The rollback ban is still active until Declan clears it.",
+      "tags": [
+        "status",
+        "findings",
+        "smoke",
+        "dataset"
+      ],
+      "type": "status",
+      "project": "helgoiq-overnight-2026-09-10-11",
+      "paths": [
+        "drops/2026-09-11-overnight-breakfast-tip-232659cf/BREAKFAST.md",
+        "drops/2026-09-11-overnight-breakfast-tip-232659cf/SUMMARY.md"
+      ],
+      "tip": "232659cf05d22e5de920ee547925b37581cfb6d4"
+    },
+    {
+      "id": "2026-09-11-ai85-overnight-rescore-tip-232659cf",
+      "title": "AI-85 overnight rescore Measured \u2014 48/5/23/8/1 unchanged on tip 232659cf",
+      "date": "2026-09-11",
+      "summary": "AI-85 Measured on tip 232659cf: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP \u2014 counts unchanged; seven refreshed UNCERTAINs stayed UNCERTAIN.",
+      "plainEnglish": "Overnight AI-85 recheck on the live tip finished with the same scorecard: 48 pass, 5 fail, 23 uncertain, 8 unreachable, 1 skip. Seven uncertain items were looked at again and every one stayed uncertain (mostly Platform Admin gates or empty AI panels). Launch readiness stays about 65%. Rollback ban is still active \u2014 do not undo imports.",
       "tags": [
         "ai-85",
         "status",
@@ -23,9 +61,9 @@
     },
     {
       "id": "2026-09-11-ambient-evidence-tip-232659cf",
-      "title": "Ambient evidence on tip 232659cf — Pulse OK; Dispatch viewer FAIL",
+      "title": "Ambient evidence on tip 232659cf \u2014 Pulse OK; Dispatch viewer FAIL",
       "date": "2026-09-11",
-      "summary": "Measured ambient evidence on tip 232659cf: Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees with directory; LE one-tap works with 0 lessons; Event Bus Platform-Admin gated. Evidence only — not a bank score.",
+      "summary": "Measured ambient evidence on tip 232659cf: Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees with directory; LE one-tap works with 0 lessons; Event Bus Platform-Admin gated. Evidence only \u2014 not a bank score.",
       "plainEnglish": "On the live tip we re-checked ambient intelligence (evidence only). Pulse explainability works. Morning Dispatch viewer still fails. Twin agrees Member A is Cancelling. Learning one-tap works but there are still no lessons. Event Bus needs Platform Admin. Smoke 6/6, Cluster A 20/24, ISO 26/4, and M1 partial stay as before. Rollback ban still ACTIVE.",
       "tags": [
         "ambient",
@@ -43,10 +81,10 @@
     },
     {
       "id": "2026-09-11-iso29-complete-tip-232659cf",
-      "title": "ISO-29 COMPLETE on tip 232659cf — 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton)",
+      "title": "ISO-29 COMPLETE on tip 232659cf \u2014 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton)",
       "date": "2026-09-11",
-      "summary": "ISO-29 COMPLETE Measured tip 232659cf: 26 PASS / 4 FAIL (same ISO-18/20/27/29) / 2 NOT_RUN (Weymouth/Luton). Core 25/29 → ~86%. Smoke 6/6 + Cluster A 20/24 + M1 partial unchanged. Rollback ban ACTIVE. Supersedes prior partial 12/4/16 @ 61%.",
-      "plainEnglish": "Privacy checks on tonight's tip are now finished for the main bank: twenty-six surfaces passed, the same four studio-data leaks still fail, and only Weymouth and Luton extras were not run. Smoke stays six-of-six and Command Centre Cluster A stays twenty-of-twenty-four. Rollback ban still active — Declan has not cleared it.",
+      "summary": "ISO-29 COMPLETE Measured tip 232659cf: 26 PASS / 4 FAIL (same ISO-18/20/27/29) / 2 NOT_RUN (Weymouth/Luton). Core 25/29 \u2192 ~86%. Smoke 6/6 + Cluster A 20/24 + M1 partial unchanged. Rollback ban ACTIVE. Supersedes prior partial 12/4/16 @ 61%.",
+      "plainEnglish": "Privacy checks on tonight's tip are now finished for the main bank: twenty-six surfaces passed, the same four studio-data leaks still fail, and only Weymouth and Luton extras were not run. Smoke stays six-of-six and Command Centre Cluster A stays twenty-of-twenty-four. Rollback ban still active \u2014 Declan has not cleared it.",
       "tags": [
         "isolation",
         "findings",
@@ -63,10 +101,10 @@
     },
     {
       "id": "2026-09-11-iso29-partial-tip-232659cf",
-      "title": "ISO-29 PARTIAL on tip 232659cf — 12 PASS / 4 FAIL / 16 NOT_RUN (not 25/4)",
+      "title": "ISO-29 PARTIAL on tip 232659cf \u2014 12 PASS / 4 FAIL / 16 NOT_RUN (not 25/4)",
       "date": "2026-09-11",
       "summary": "ISO-29 partial Measured tip 232659cf: 12 PASS / 4 FAIL (same ISO-18/20/27/29) / 16 NOT_RUN. Do NOT claim prior 25/4. Smoke 6/6 + Cluster A 20/24 + M1 partial unchanged. Rollback ban ACTIVE.",
-      "plainEnglish": "Privacy checks on tonight's tip are only partly done: twelve surfaces passed, the same four studio-data leaks still fail, and sixteen checks were not re-run. Do not treat this as the old full 25-pass result. Smoke stays six-of-six and Command Centre Cluster A stays twenty-of-twenty-four. Rollback ban still active — Declan has not cleared it.",
+      "plainEnglish": "Privacy checks on tonight's tip are only partly done: twelve surfaces passed, the same four studio-data leaks still fail, and sixteen checks were not re-run. Do not treat this as the old full 25-pass result. Smoke stays six-of-six and Command Centre Cluster A stays twenty-of-twenty-four. Rollback ban still active \u2014 Declan has not cleared it.",
       "tags": [
         "isolation",
         "findings",
@@ -83,10 +121,10 @@
     },
     {
       "id": "2026-09-10-m1-wave1-partial-tip-232659cf",
-      "title": "M1 Wave1 partial — freeze PASS, unfreeze FAIL, cancel+reverse PASS",
+      "title": "M1 Wave1 partial \u2014 freeze PASS, unfreeze FAIL, cancel+reverse PASS",
       "date": "2026-09-10",
       "summary": "M1 wave1 tip 232659cf: Admin2 freeze PASS; unfreeze FAIL (provider; Smoke paused); cancel+reverse PASS (reverse fixed); upgrade/downgrade/MemberB/waitlist/Owner BLOCKED. Smoke 6/6 + Cluster A 20/24 unchanged. No import.rollbackBatch.",
-      "plainEnglish": "Admin2 freeze of BB Smoke passed, but resume failed at the payment provider so Smoke is still paused. Admin2 cancel then reverse for Member B both passed — reverse is fixed versus the earlier Keep-left-Cancelling bug. Upgrade, downgrade, Member B client, waitlist, and Owner paths were blocked this wave. Smoke stays 6/6 and Cluster A stays 20/24 on the same tip. Rollback ban still active — Declan has not cleared it.",
+      "plainEnglish": "Admin2 freeze of BB Smoke passed, but resume failed at the payment provider so Smoke is still paused. Admin2 cancel then reverse for Member B both passed \u2014 reverse is fixed versus the earlier Keep-left-Cancelling bug. Upgrade, downgrade, Member B client, waitlist, and Owner paths were blocked this wave. Smoke stays 6/6 and Cluster A stays 20/24 on the same tip. Rollback ban still active \u2014 Declan has not cleared it.",
       "tags": [
         "m1",
         "payments",
@@ -103,10 +141,10 @@
     },
     {
       "id": "2026-09-10-cluster-a-20-24-tip-232659cf",
-      "title": "Cluster A Measured 20/24 on tip 232659cf — same 4 fails (no improvement)",
+      "title": "Cluster A Measured 20/24 on tip 232659cf \u2014 same 4 fails (no improvement)",
       "date": "2026-09-10",
       "summary": "Cluster A Measured 20/24 on tip 232659cf; same fails MEM-X01 ACS-F01 TAG-C01 TAG-A01; teacher MGR-10/ACS-X01 PASS; headline ~66%; rollback ban still active.",
-      "plainEnglish": "Command Centre Cluster A was re-run on the live studio tonight: 20 of 24 checks passed — the same score as before, with the same four stubborn fails. Teacher safety checks (refund and pay-rate) passed. Launch readiness on the board eases to about 66% because the optimistic estimate for those final-four fixes did not hold. Smoke is still a clean 6/6. Declan has still not cleared the rollback ban.",
+      "plainEnglish": "Command Centre Cluster A was re-run on the live studio tonight: 20 of 24 checks passed \u2014 the same score as before, with the same four stubborn fails. Teacher safety checks (refund and pay-rate) passed. Launch readiness on the board eases to about 66% because the optimistic estimate for those final-four fixes did not hold. Smoke is still a clean 6/6. Declan has still not cleared the rollback ban.",
       "tags": [
         "command-centre",
         "status",
@@ -121,10 +159,10 @@
     },
     {
       "id": "2026-09-10-overnight-smoke-6-6-pass",
-      "title": "Overnight smoke ALL PASS — 6/6 on tip 232659cf (membership reverse proven)",
+      "title": "Overnight smoke ALL PASS \u2014 6/6 on tip 232659cf (membership reverse proven)",
       "date": "2026-09-10",
-      "summary": "Smoke 6/6 PASS on tip 232659cf including Cancelling→Active reverse; account-not-found gone; headline 68%; rollback ban still active.",
-      "plainEnglish": "Overnight critical-path testing on the live studio finished clean: all six steps passed. Invite account-not-found is gone, and for the first time in this programme a membership cancel was reversed back to Active. Launch readiness on the board moves to about 68%. Other big checks (Command Centre Cluster A, privacy, AI, ambient) were not re-run tonight. Declan still has not cleared the rollback ban — helpers must not undo a data import.",
+      "summary": "Smoke 6/6 PASS on tip 232659cf including Cancelling\u2192Active reverse; account-not-found gone; headline 68%; rollback ban still active.",
+      "plainEnglish": "Overnight critical-path testing on the live studio finished clean: all six steps passed. Invite account-not-found is gone, and for the first time in this programme a membership cancel was reversed back to Active. Launch readiness on the board moves to about 68%. Other big checks (Command Centre Cluster A, privacy, AI, ambient) were not re-run tonight. Declan still has not cleared the rollback ban \u2014 helpers must not undo a data import.",
       "tags": [
         "smoke",
         "status",
@@ -140,10 +178,10 @@
     },
     {
       "id": "2026-09-10-tip-232659cf-live",
-      "title": "Tip live 232659cf — #1240 on studio (64% estimate)",
+      "title": "Tip live 232659cf \u2014 #1240 on studio (64% estimate)",
       "date": "2026-09-10",
       "summary": "Staging tip 232659cf (#1240+#1245 live). Headline 64% estimate. Overnight smoke started. Rollback ban NOT cleared by Declan.",
-      "plainEnglish": "The test studio moved again tonight. Safe undo code for data import is now on the live tip, and overnight testing has just started. Launch readiness on paper is about 64%. Important: Declan has not cleared the rollback ban — helpers must not undo an import until he says so. A normal import try is only OK if Select works.",
+      "plainEnglish": "The test studio moved again tonight. Safe undo code for data import is now on the live tip, and overnight testing has just started. Launch readiness on paper is about 64%. Important: Declan has not cleared the rollback ban \u2014 helpers must not undo an import until he says so. A normal import try is only OK if Select works.",
       "tags": [
         "status",
         "findings",
@@ -160,10 +198,10 @@
     },
     {
       "id": "2026-09-10-tip-99e17af7-live",
-      "title": "Tip live 99e17af7 — Launch Hub 62%",
+      "title": "Tip live 99e17af7 \u2014 Launch Hub 62%",
       "date": "2026-09-10",
-      "summary": "Staging tip left 6cb5d8d9; afternoon+evening packs live. Headline 62% estimate. #1240 merged but not on tip — no import/rollback.",
-      "plainEnglish": "The test studio finally got today’s big batch of fixes. Launch readiness on paper is about 62%. Safe undo for data import is merged on GitHub but not on the live studio yet — do not import or roll back until it is.",
+      "summary": "Staging tip left 6cb5d8d9; afternoon+evening packs live. Headline 62% estimate. #1240 merged but not on tip \u2014 no import/rollback.",
+      "plainEnglish": "The test studio finally got today\u2019s big batch of fixes. Launch readiness on paper is about 62%. Safe undo for data import is merged on GitHub but not on the live studio yet \u2014 do not import or roll back until it is.",
       "tags": [
         "status",
         "findings",
@@ -180,7 +218,7 @@
     },
     {
       "id": "2026-09-10-ai-85-ready-uncertain-re-score-1-pass-5-still-un",
-      "title": "AI-85 ready UNCERTAIN re-score — 1 PASS / 5 still UNCERTAIN",
+      "title": "AI-85 ready UNCERTAIN re-score \u2014 1 PASS / 5 still UNCERTAIN",
       "date": "2026-09-10",
       "summary": "AI-017 PASS; 011/044/051/055/076 UNCERTAIN",
       "tags": [
@@ -197,7 +235,7 @@
     },
     {
       "id": "2026-09-10-iso-29-tenancy-sweep-complete-25-pass-4-fail",
-      "title": "ISO-29 tenancy sweep complete — 25 PASS / 4 FAIL",
+      "title": "ISO-29 tenancy sweep complete \u2014 25 PASS / 4 FAIL",
       "date": "2026-09-10",
       "summary": "Fails: ISO-18 branding, ISO-20 cohorts, ISO-27 staff availability, ISO-29 CC branding",
       "tags": [
@@ -210,11 +248,11 @@
         "drops/2026-09-10-iso-29-tenancy-sweep-complete-25-pass-4-fail/ISO29-NOTES.md"
       ],
       "tip": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
-      "plainEnglish": "We finished the full studio-privacy checklist. Twenty-five checks pass — studios mostly cannot see each other’s data. Four still fail: branding, cohorts, staff availability, and Command Centre branding. Those four need an engineering fix before launch."
+      "plainEnglish": "We finished the full studio-privacy checklist. Twenty-five checks pass \u2014 studios mostly cannot see each other\u2019s data. Four still fail: branding, cohorts, staff availability, and Command Centre branding. Those four need an engineering fix before launch."
     },
     {
       "id": "2026-09-10-dataset-import-blocked-datamigration-selectitem-",
-      "title": "Dataset import BLOCKED — DataMigration SelectItem empty value",
+      "title": "Dataset import BLOCKED \u2014 DataMigration SelectItem empty value",
       "date": "2026-09-10",
       "summary": "Radix SelectItem value=\"\" crashes member CSV upload; 0 rows",
       "tags": [
@@ -250,7 +288,7 @@
     },
     {
       "id": "2026-09-10-cluster-a",
-      "title": "Cluster A — regression vs luck + tip 6cb5d8d9 FINAL ref",
+      "title": "Cluster A \u2014 regression vs luck + tip 6cb5d8d9 FINAL ref",
       "date": "2026-09-10",
       "summary": "MEM-X01 / ACS-F01 / TAG-C01 / TAG-A01: lucky prior pass vs behavioral regression; FINAL.json pointer for tip 6cb5d8d9.",
       "tags": [
@@ -265,13 +303,13 @@
         "drops/2026-09-10-cluster-a/REGRESSION-VS-LUCK.md",
         "drops/2026-09-10-cluster-a/FINAL-6cb5d8d9-REF.md"
       ],
-      "plainEnglish": "Command Centre’s first acceptance batch (Cluster A) was checked carefully. Some earlier “passes” looked lucky rather than solid. This drop records what regressed versus what still holds on today’s software build."
+      "plainEnglish": "Command Centre\u2019s first acceptance batch (Cluster A) was checked carefully. Some earlier \u201cpasses\u201d looked lucky rather than solid. This drop records what regressed versus what still holds on today\u2019s software build."
     },
     {
       "id": "2026-09-10-cluster-bf",
-      "title": "Proposal: Clusters B–F acceptance banks",
+      "title": "Proposal: Clusters B\u2013F acceptance banks",
       "date": "2026-09-10",
-      "summary": "Locked until Cluster A is 24/24. Purpose, counts, launch-critical vs post-launch for B–F banks.",
+      "summary": "Locked until Cluster A is 24/24. Purpose, counts, launch-critical vs post-launch for B\u2013F banks.",
       "tags": [
         "command-centre",
         "findings"
@@ -304,7 +342,7 @@
     },
     {
       "id": "2026-09-10-dataset",
-      "title": "Bluebird 12-month dataset — blocked / progress / plan",
+      "title": "Bluebird 12-month dataset \u2014 blocked / progress / plan",
       "date": "2026-09-10",
       "summary": "CSV import commit 500 (companyId); 0 seed rows; CREATE-PLAN + BLOCKED + PROGRESS pack.",
       "tags": [
@@ -339,7 +377,7 @@
         "drops/2026-09-09-ambient/PACK-SUMMARY.md",
         "drops/2026-09-09-ambient/PLAIN-ENGLISH.md"
       ],
-      "plainEnglish": "A plain walkthrough of ambient intelligence features — Pulse, Dispatch, Twin, Learn, and Event Bus — including what works and what already looks broken for a studio owner."
+      "plainEnglish": "A plain walkthrough of ambient intelligence features \u2014 Pulse, Dispatch, Twin, Learn, and Event Bus \u2014 including what works and what already looks broken for a studio owner."
     },
     {
       "id": "2026-09-09-ai85",
