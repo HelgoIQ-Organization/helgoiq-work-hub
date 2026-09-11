@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-11T00:04:34.481Z",
+  "updatedAt": "2026-09-11T00:22:33.739Z",
   "meta": {
-    "dataAsOf": "2026-09-11T00:04:34.481Z",
+    "dataAsOf": "2026-09-11T00:22:33.739Z",
     "buildStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
     "liveTip": "232659cf05d22e5de920ee547925b37581cfb6d4",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 65% = round(52×12 + 60×10 + 86×10 + 56×15 + 85×9 + 72×10 + 100×6 + 62×8 + 83×10 + 15×10)/100.",
@@ -9,12 +9,12 @@
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Tip unchanged (232659cf); stamps refreshed only — do not look more confident without new measured facts.",
+    "lastRefreshNote": "Tip confirmed 232659cf; AI-85 overnight rescore Measured (48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP unchanged; refreshed UNCERTAINs stayed UNCERTAIN). Other Measured strands kept. Rollback ban ACTIVE. Headline ~65%.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-11T00:04:34.481Z"
+      "checkedAt": "2026-09-11T00:22:33.739Z"
     }
   },
   "tip": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -57,9 +57,9 @@
       "findings-fix": 43,
       "comms": 15
     },
-    "plainEnglishDay": "This morning the board sat at 52%. Overnight smoke Measured 6/6 and Cluster A Measured 20/24 (same four fails) on tip 232659cf. M1 Wave1 scored partial Measured (freeze PASS; unfreeze FAIL at payment provider; cancel+reverse PASS). ISO-29 COMPLETE Measured: 26 PASS / 4 FAIL (same leaks 18/20/27/29) / 2 NOT_RUN (Weymouth/Luton). Ambient evidence then Measured on the same tip: Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees with directory; LE one-tap works with 0 lessons; Event Bus Platform-Admin gated (evidence only — not a bank score). Launch readiness about 65%. Hard rule unchanged: Declan has NOT cleared the rollback ban — never use import.rollbackBatch even though #1240 is live. Automated communications still need five Resend/Agentmail secrets.",
+    "plainEnglishDay": "This morning the board sat at 52%. Overnight smoke Measured 6/6 and Cluster A Measured 20/24 (same four fails) on tip 232659cf. M1 Wave1 scored partial Measured (freeze PASS; unfreeze FAIL at payment provider; cancel+reverse PASS). ISO-29 COMPLETE Measured: 26 PASS / 4 FAIL (same leaks 18/20/27/29) / 2 NOT_RUN (Weymouth/Luton). Ambient evidence Measured: Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus Platform-Admin gated. AI-85 overnight rescore Measured: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP — counts unchanged; seven refreshed UNCERTAINs stayed UNCERTAIN. Launch readiness about 65%. Hard rule unchanged: Declan has NOT cleared the rollback ban — never use import.rollbackBatch even though #1240 is live. Automated communications still need five Resend/Agentmail secrets.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board Declan saw (overall 52%) vs post–ambient-evidence board on tip 232659cf (65%; smoke Measured 6/6; Cluster A Measured 20/24; M1 partial Measured ~72%; isolation Measured complete ~86%; ambient Measured ~85% — prior ambient Estimate 88% superseded)."
+    "compareNote": "Morning board Declan saw (overall 52%) vs post–AI-85 overnight Measured board on tip 232659cf (65%; smoke 6/6; CCA 20/24; M1 partial ~72%; isolation complete ~86%; ambient ~85%; AI-85 Measured 56% — same PASS rate, now tip-stamped)."
   },
   "strands": [
     {
@@ -128,15 +128,18 @@
       "id": "ai-85",
       "name": "AI features check",
       "percent": 56,
-      "basis": "estimate",
+      "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "AI-85 bank still paper-held at prior 48/85 PASS rate. Not re-sampled tonight on tip 232659cf — treat as estimate.",
-      "progressNote": "Estimate 56% — AI-85 not re-run tonight.",
+      "plainSummary": "AI-85 Measured on tip 232659cf: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP. Overnight rescore refreshed seven UNCERTAINs (AI-008/009/011/044/051/055/076) — all stayed UNCERTAIN. Counts unchanged vs prior hold.",
+      "progressNote": "Measured 56% (48/85 PASS) — overnight rescore; verdicts unchanged.",
       "blockers": [
-        "AI Feature Controls & Event Bus not settled",
-        "No fresh AI-85 sample on tip 232659cf tonight"
+        "23 UNCERTAIN remain (Platform Admin / empty AI panels / NEED_DECLAN)",
+        "5 FAIL still open on the broken list",
+        "8 UNREACHABLE + 1 SKIP (CC bank)",
+        "Event Bus / Feature Controls still unsettled for cleaner re-sample"
       ],
       "detailDropIds": [
+        "2026-09-11-ai85-overnight-rescore-tip-232659cf",
         "2026-09-10-ai-85-ready-uncertain-re-score-1-pass-5-still-un",
         "2026-09-09-ai85"
       ],
@@ -270,14 +273,15 @@
   "health": {
     "overallLaunchPercent": 65,
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 65% = round(52×12 + 60×10 + 86×10 + 56×15 + 85×9 + 72×10 + 100×6 + 62×8 + 83×10 + 15×10)/100.",
-    "readinessLabel": "Not ready to launch — smoke Measured 6/6 + Cluster A Measured 20/24 + M1 partial + ISO-29 COMPLETE (26/4/2 NOT_RUN Weymouth/Luton; same four leaks) + ambient evidence Measured (Pulse OK; Dispatch viewer FAIL) on tip 232659cf; AI-85 + Declan rollback clear + secrets still gate",
-    "plainSummary": "As of ~01:05 Europe/London on 11 Sep 2026, launch readiness is about 65% (up from 52% this morning). Live staging tip remains 232659cf. Smoke Measured 6/6. Cluster A Measured 20/24 (same fails). M1 Wave1 partial Measured. ISO-29 COMPLETE Measured: 26 PASS / 4 FAIL (same ISO-18/20/27/29) / 2 NOT_RUN (Weymouth/Luton). Ambient evidence Measured (not bank score): Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus Platform-Admin gated. AI-85 still Estimate. Hard warnings: Declan has NOT cleared the rollback ban — never instruct import.rollbackBatch; TRY dataset import only if Select works; automated communications need five Resend/Agentmail secrets.",
+    "readinessLabel": "Not ready to launch — smoke Measured 6/6 + Cluster A Measured 20/24 + M1 partial + ISO-29 COMPLETE (26/4/2 NOT_RUN Weymouth/Luton; same four leaks) + ambient evidence Measured (Pulse OK; Dispatch viewer FAIL) + AI-85 Measured 48/5/23/8/1 on tip 232659cf; Declan rollback clear + secrets still gate",
+    "plainSummary": "As of ~01:20 Europe/London on 11 Sep 2026, launch readiness is about 65% (up from 52% this morning). Live staging tip remains 232659cf. Smoke Measured 6/6. Cluster A Measured 20/24 (same fails). M1 Wave1 partial Measured. ISO-29 COMPLETE Measured: 26 PASS / 4 FAIL (same ISO-18/20/27/29) / 2 NOT_RUN (Weymouth/Luton). Ambient evidence Measured (not bank score): Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus Platform-Admin gated. AI-85 overnight rescore Measured: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP — counts unchanged; seven refreshed UNCERTAINs stayed UNCERTAIN. Hard warnings: Declan has NOT cleared the rollback ban — never instruct import.rollbackBatch; TRY dataset import only if Select works; automated communications need five Resend/Agentmail secrets.",
     "strengths": [
       "Overnight six-step smoke ALL PASS on tip 232659cf (Measured)",
       "Cluster A Measured 20/24 with teacher MGR-10/ACS-X01 PASS",
       "M1 Wave1 Admin2 cancel+reverse PASS — reverse fixed vs prior; freeze PASS",
       "ISO-29 COMPLETE Measured 26 PASS / 4 FAIL / 2 NOT_RUN — core bank finished on this tip",
-      "Ambient Pulse explainability OK; Twin Cancelling agrees with directory; LE one-tap works"
+      "Ambient Pulse explainability OK; Twin Cancelling agrees with directory; LE one-tap works",
+      "AI-85 overnight rescore Measured 48/5/23/8/1 on tip 232659cf — counts unchanged; refreshed UNCERTAINs stayed UNCERTAIN"
     ],
     "risks": [
       "Declan has NOT cleared rollback ban — never import.rollbackBatch even though #1240 is live",
@@ -285,7 +289,7 @@
       "Morning Dispatch viewer still FAIL on tip 232659cf",
       "Admin2 unfreeze FAIL — payment provider; BB Smoke Sep8 still paused",
       "Cluster A final four unchanged: MEM-X01 ACS-F01 TAG-C01 TAG-A01",
-      "Event Bus Platform-Admin gated; AI-85 not re-sampled tonight",
+      "AI-85 Measured but 23 UNCERTAIN + 5 FAIL remain; Event Bus / Feature Controls still unsettled",
       "12-month dataset still not imported",
       "Automated comms #1213 blocked on secrets"
     ],
@@ -294,7 +298,7 @@
       "Fix Morning Dispatch viewer failure (still FAIL after Generating)",
       "Unstick BB Smoke Sep8 pause / fix Admin2 Resume payment-provider path",
       "Fix Cluster A final four (MEM-X01 ACS-F01 TAG-C01 TAG-A01)",
-      "Platform Admin: Event Bus reachability + settle AI Feature Controls; re-sample AI-85",
+      "Platform Admin: Event Bus reachability + settle AI Feature Controls (AI-85 Measured; UNCERTAINs still NEED_DECLAN)",
       "TRY dataset import only if Select works — never rollback until Declan clears",
       "Add Resend/Agentmail secrets so #1213 can ship"
     ],
@@ -455,26 +459,51 @@
       ]
     },
     {
+      "id": "ai85-overnight-measured",
+      "title": "AI-85 overnight rescore Measured — 48/5/23/8/1 unchanged on tip 232659cf",
+      "plainWhy": "Overnight live recheck on tip 232659cf: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP. Seven UNCERTAINs (AI-008/009/011/044/051/055/076) refreshed — all stayed UNCERTAIN. No Feature Controls toggles; no import/rollback.",
+      "unblocks": "AI-85 strand Measured on this tip",
+      "movesProjectForwardPercent": 0,
+      "movesPhaseForwardPercent": 0,
+      "phaseId": "intelligence",
+      "strandIds": [
+        "ai-85"
+      ],
+      "effort": "done",
+      "status": "done",
+      "links": [
+        {
+          "label": "Live tip /api/version",
+          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
+          "kind": "staging"
+        },
+        {
+          "label": "AI-85 overnight drop",
+          "url": "#drop-2026-09-11-ai85-overnight-rescore-tip-232659cf",
+          "kind": "drop"
+        }
+      ]
+    },
+    {
       "id": "continue-overnight-retests",
-      "title": "Continue overnight: AI-85 (ambient evidence done)",
-      "plainWhy": "Smoke Measured 6/6, Cluster A Measured 20/24, M1 Wave1 partial, ISO-29 COMPLETE (26/4/2), and ambient evidence Measured (Pulse OK; Dispatch viewer FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus gated) are done. AI-85 remains Estimate. Also unstick Smoke pause / Resume provider fail.",
-      "unblocks": "Measured AI-85",
-      "movesProjectForwardPercent": 6,
-      "movesPhaseForwardPercent": 30,
+      "title": "Continue overnight: AI-85 Measured (ambient + AI-85 done)",
+      "plainWhy": "Smoke Measured 6/6, Cluster A Measured 20/24, M1 Wave1 partial, ISO-29 COMPLETE (26/4/2), ambient evidence Measured, and AI-85 overnight Measured (48/5/23/8/1 unchanged; refreshed UNCERTAINs stayed UNCERTAIN) are done. Optional: unstick Smoke pause / Resume provider fail.",
+      "unblocks": "Overnight bank work complete on tip 232659cf",
+      "movesProjectForwardPercent": 0,
+      "movesPhaseForwardPercent": 0,
       "phaseId": "studio-ops",
       "strandIds": [
         "ai-85",
         "m1",
         "payments"
       ],
-      "effort": "hours",
-      "status": "needed",
+      "effort": "done",
+      "status": "done",
       "links": [
         {
-          "label": "Copy prompt",
-          "url": "data:text/plain,continue%20overnight%20on%20tip%20232659cf%20%E2%80%94%20AI-85%20(ambient%20evidence%20done%3A%20Pulse%20OK%3B%20Dispatch%20viewer%20FAIL%3B%20Twin%20Cancelling%20agrees%3B%20LE%20one-tap%2F0%20lessons%3B%20Event%20Bus%20gated)%3B%20unstick%20Smoke%20pause%20%2F%20Resume%20provider",
-          "kind": "copy-prompt",
-          "text": "continue overnight on tip 232659cf — AI-85 (ambient evidence done: Pulse OK; Dispatch viewer FAIL; Twin Cancelling agrees; LE one-tap/0 lessons; Event Bus gated); unstick Smoke pause / Resume provider"
+          "label": "AI-85 overnight drop",
+          "url": "#drop-2026-09-11-ai85-overnight-rescore-tip-232659cf",
+          "kind": "drop"
         }
       ]
     },
@@ -591,8 +620,8 @@
     {
       "id": "settle-ai-controls",
       "title": "Platform Admin: settle AI Feature Controls & Event Bus",
-      "plainWhy": "Ambient evidence confirmed Event Bus is Platform-Admin gated on tip 232659cf. AI-85 stays estimate until admin switches and Event Bus are settled, then overnight re-sample.",
-      "unblocks": "Cleaner AI-85 measured score",
+      "plainWhy": "AI-85 is now Measured on tip 232659cf (48/5/23/8/1), but Event Bus remains Platform-Admin gated and Feature Controls were not toggled overnight. Settling admin switches would clear many of the 23 UNCERTAIN rows for a cleaner re-sample.",
+      "unblocks": "Fewer AI-85 UNCERTAIN / NEED_DECLAN rows",
       "movesProjectForwardPercent": 3,
       "movesPhaseForwardPercent": 15,
       "phaseId": "intelligence",
@@ -605,9 +634,9 @@
       "links": [
         {
           "label": "Copy prompt",
-          "url": "data:text/plain,settle%20AI%20Feature%20Controls%20%26%20Event%20Bus%20on%20Bluebird%2C%20then%20re-sample%20AI-85%20on%20tip%20232659cf",
+          "url": "data:text/plain,settle%20AI%20Feature%20Controls%20%26%20Event%20Bus%20on%20Bluebird%20(AI-85%20Measured%2048%2F5%2F23%2F8%2F1%20on%20tip%20232659cf%3B%20UNCERTAINs%20still%20NEED_DECLAN)",
           "kind": "copy-prompt",
-          "text": "settle AI Feature Controls & Event Bus on Bluebird, then re-sample AI-85 on tip 232659cf"
+          "text": "settle AI Feature Controls & Event Bus on Bluebird (AI-85 Measured 48/5/23/8/1 on tip 232659cf; UNCERTAINs still NEED_DECLAN)"
         }
       ]
     },
@@ -744,7 +773,7 @@
         "ai-85",
         "ambient"
       ],
-      "plainSummary": "Ambient evidence Measured ~85% (Pulse OK; Dispatch viewer FAIL; Twin Cancelling agrees; LE one-tap / 0 lessons; Event Bus gated). AI-85 still Estimate — not re-sampled tonight.",
+      "plainSummary": "Ambient evidence Measured ~85% (Pulse OK; Dispatch viewer FAIL). AI-85 overnight Measured 56% (48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP — counts unchanged; refreshed UNCERTAINs stayed UNCERTAIN).",
       "percentComplete": 67
     },
     {
@@ -782,7 +811,7 @@
   ],
   "notes": {
     "botCommander": "Where an action says “tell Bot Commander”, use the Copy prompt button, then paste into this Bot Commander chat. Declan can paste those messages here directly — no special app link required.",
-    "hardWarning": "NEVER say rollback is cleared. #1240 is LIVE on tip 232659cf but Declan has NOT cleared the ban. Never instruct import.rollbackBatch / never roll back until Declan clears. TRY dataset import only if Select/import works. ISO-29 COMPLETE on this tip is 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton) — same four leaks. Ambient evidence Measured: Dispatch viewer still FAIL; Event Bus Platform-Admin gated.",
-    "refresh": "Primary refresh when live staging tip changes; backup weekday every 30 minutes daytime Europe/London. This run: tip unchanged 232659cf; ambient evidence Measured → ambient Estimate 88%→Measured 85%; headline stays ~65% (Smoke 6/6, CCA 20/24, ISO 26/4, M1 partial kept)."
+    "hardWarning": "NEVER say rollback is cleared. #1240 is LIVE on tip 232659cf but Declan has NOT cleared the ban. Never instruct import.rollbackBatch / never roll back until Declan clears. TRY dataset import only if Select/import works. ISO-29 COMPLETE on this tip is 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton) — same four leaks. Ambient evidence Measured: Dispatch viewer still FAIL; Event Bus Platform-Admin gated. AI-85 Measured 48/5/23/8/1 — refreshed UNCERTAINs stayed UNCERTAIN.",
+    "refresh": "Primary refresh when live staging tip changes; backup weekday every 30 minutes daytime Europe/London. This run: tip unchanged 232659cf; AI-85 Estimate 56% → Measured 56% (48/5/23/8/1 unchanged); headline stays ~65% (Smoke 6/6, CCA 20/24, ISO 26/4, M1 partial, ambient Measured kept). Rollback ban ACTIVE."
   }
 }
