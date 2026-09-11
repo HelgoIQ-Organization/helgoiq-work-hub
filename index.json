@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-11T20:09:49.744Z",
+  "updatedAt": "2026-09-11T20:24:30.870Z",
   "drops": [
+    {
+      "id": "2026-09-11-cluster-a-tip-a73ff70-teacher2-pass-23-24-acs-c0",
+      "title": "Cluster A tip a73ff70 — Teacher2 PASS, 23/24 ACS-C01 fail",
+      "date": "2026-09-11",
+      "summary": "Teacher2 MGR-10+ACS-X01 PASS; Cluster A 23/24 with ACS-C01 fail on tip a73ff70",
+      "plainEnglish": "Teacher2 MGR-10+ACS-X01 PASS; Cluster A 23/24 with ACS-C01 fail on tip a73ff70",
+      "tags": [
+        "command-centre",
+        "findings"
+      ],
+      "type": "finding",
+      "project": "helgoiq-afternoon-2026-09-11",
+      "paths": [
+        "drops/2026-09-11-cluster-a-tip-a73ff70-teacher2-pass-23-24-acs-c0/RESULTS.md",
+        "drops/2026-09-11-cluster-a-tip-a73ff70-teacher2-pass-23-24-acs-c0/CLUSTER-A-SCORE.md"
+      ],
+      "tip": "a73ff70b266057f226bb02c5f3112f72a92ad53d"
+    },
     {
       "id": "2026-09-11-payment-qr-checkout-fail-studio-waiver-no-tip-a7",
       "title": "Payment QR checkout FAIL + studio waiver NO tip a73ff70",
