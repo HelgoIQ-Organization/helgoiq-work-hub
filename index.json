@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-11T06:20:21.261Z",
+  "updatedAt": "2026-09-11T07:06:36.155Z",
   "drops": [
+    {
+      "id": "2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f",
+      "title": "Morning smoke tip a263c4ab — reverse PASS, credit FAIL",
+      "date": "2026-09-11",
+      "summary": "Seat smoke-2 overall FAIL on a263c4ab: invite/book/reverse PASS; HELGOBIRD missed; late-cancel left 7 credits not 8.",
+      "plainEnglish": "Morning smoke on the live tip failed overall: join and booking worked and membership reverse was proven, but the HELGOBIRD code was not used and a late cancel left 7 credits instead of returning to 8.",
+      "tags": [
+        "smoke",
+        "findings",
+        "status"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f/SMOKE-SUMMARY.md",
+        "drops/2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f/STEPS.md"
+      ],
+      "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4"
+    },
     {
       "id": "2026-09-11-rollback-ban-lifted-tip-a263c4ab",
       "title": "Rollback ban lifted — #1240 live on tip a263c4ab (~65%)",

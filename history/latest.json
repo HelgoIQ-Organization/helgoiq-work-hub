@@ -1,28 +1,27 @@
 {
-  "updatedAt": "2026-09-11T06:20:07.000Z",
+  "updatedAt": "2026-09-11T07:07:16.580Z",
   "meta": {
-    "dataAsOf": "2026-09-11T06:20:07.000Z",
+    "dataAsOf": "2026-09-11T07:07:16.580Z",
     "buildStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
     "liveTip": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 65% = round(52×12 + 60×10 + 86×10 + 56×15 + 85×9 + 72×10 + 100×6 + 62×8 + 87×10 + 15×10)/100.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 63% = round(52×12 + 60×10 + 86×10 + 56×15 + 85×9 + 72×10 + 67×6 + 62×8 + 87×10 + 15×10)/100.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Tip confirmed a263c4ab (was 232659cf). Six PRs live: #1250 demo seed, #1252 signed-out booking return, #1254 Business Insights server KPIs, #1253 Twin overview, #1247 invite bind, #1258 smoke invite fix (+ #1248 CI). Overnight Measured held from 232659cf; targeted retest pending on a263c4ab. Rollback ban LIFTED — #1240 live on tip (prefer not to need rollback; company-scoped batchId only). Dataset canary still FAIL companyId 403 (engineering). Headline ~65%.",
+    "lastRefreshNote": "Tip unchanged (a263c4ab); stamps refreshed only — do not look more confident without new measured facts.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-11T06:20:07.000Z",
-      "stagingTip": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
-      "priorTipMeasured": "232659cf05d22e5de920ee547925b37581cfb6d4"
-    }
+      "checkedAt": "2026-09-11T07:07:16.580Z"
+    },
+    "updatedAt": "2026-09-11T07:07:16.271Z"
   },
   "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
   "progressToday": {
     "morningHeadlinePercent": 52,
-    "nowHeadlinePercent": 65,
+    "nowHeadlinePercent": 63,
     "morningStrands": {
       "dataset": 25,
       "command-centre": 55,
@@ -42,7 +41,7 @@
       "ai-85": 56,
       "ambient": 85,
       "m1": 72,
-      "smoke": 100,
+      "smoke": 67,
       "payments": 62,
       "findings-fix": 87,
       "comms": 15
@@ -54,14 +53,14 @@
       "ai-85": 0,
       "ambient": 15,
       "m1": 12,
-      "smoke": 80,
+      "smoke": 47,
       "payments": 17,
       "findings-fix": 47,
       "comms": 15
     },
-    "plainEnglishDay": "Morning (11 Sep Europe/London): staging tip is a263c4ab (left 232659cf). Live packs: #1250 demo seed, #1252 signed-out booking return, #1254 Business Insights server KPIs, #1253 Twin overview, #1247 invite bind, #1258 smoke invite fix (+ #1248 CI). Overnight Measured board from 232659cf kept (smoke 6/6, CCA 20/24, ISO 26/4/2, ambient evidence, AI-85 48/5/23/8/1, dataset canary FAIL companyId 403) — targeted retest pending on new tip. Rollback ban LIFTED (#1240 on tip) — prefer not to need rollback; use company-scoped batchId only. Headline still ~65%.",
+    "plainEnglishDay": "Morning (11 Sep Europe/London): tip a263c4ab confirmed. Seat smoke-2 overall FAIL — reverse PROVEN PASS, but HELGOBIRD missed and late-cancel credit returned 7 not 8. Smoke strand now Measured 67% (4/6). Other overnight Measured still held pending retest. Headline ~63%.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board Declan saw (overall 52%) vs tip a263c4ab board (~65%): overnight Measured held from 232659cf; findings-fix Estimate 87% for morning merge pack; rollback ban lifted; retests pending."
+    "compareNote": "Morning board Declan saw (overall 52%) vs now (~63%): smoke re-measured FAIL on a263c4ab (67%, was held 100%); findings-fix Estimate 87% for morning merge pack; rollback ban lifted; other retests still pending."
   },
   "strands": [
     {
@@ -204,20 +203,23 @@
     {
       "id": "smoke",
       "name": "Critical path smoke",
-      "percent": 100,
+      "percent": 67,
       "basis": "measured",
-      "status": "ready",
-      "plainSummary": "Overnight six-step smoke ALL PASS on prior tip 232659cf. Tip is now a263c4ab with #1258 consumed-invite auth + #1247 invite autobind + #1252 booking login return — six-step smoke not re-run on the new tip yet. Residual: BB Smoke Sep8 still paused after M1 unfreeze FAIL.",
-      "progressNote": "Held Measured 100% (6/6) from 232659cf; re-smoke pending on a263c4ab.",
-      "blockers": [],
+      "status": "at-risk",
+      "plainSummary": "Morning seat smoke-2 on tip a263c4ab overall FAIL (Measured 4/6). Invite/OTP PASS; Bluebird 8 join Active via Stripe TEST but HELGOBIRD not entered; booking PASS; late-cancel credit FAIL (7 not 8); membership cancel+reverse PROVEN PASS; evidence PASS. Residual: BB Smoke Sep8 still paused after M1 unfreeze FAIL.",
+      "progressNote": "Measured 67% on a263c4ab morning smoke-2 — overall FAIL (HELGOBIRD missed; late-cancel credit 7≠8; reverse PASS).",
+      "blockers": [
+        "HELGOBIRD promo not entered on Bluebird 8 checkout (standard price used)",
+        "Late cancel left 7 credits (not 8) — credit-return-once FAIL"
+      ],
       "detailDropIds": [
+        "2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f",
         "2026-09-10-overnight-smoke-6-6-pass",
-        "2026-09-10-m1-wave1-partial-tip-232659cf",
         "2026-09-10-tip-232659cf-live"
       ],
       "phaseId": "member-commerce",
       "projectWeightPercent": 6,
-      "measuredNote": "Six-step on 232659cf: 6/6 PASS. New tip a263c4ab invite/booking packs await re-smoke."
+      "measuredNote": "Morning 2026-09-11 tip a263c4ab smoke-2: 4/6 PASS (invite, book, reverse, evidence); FAIL HELGOBIRD + late-cancel credit. Prior overnight 232659cf was 6/6."
     },
     {
       "id": "payments",
@@ -285,12 +287,12 @@
     }
   ],
   "health": {
-    "overallLaunchPercent": 65,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 65% = round(52×12 + 60×10 + 86×10 + 56×15 + 85×9 + 72×10 + 100×6 + 62×8 + 87×10 + 15×10)/100.",
-    "readinessLabel": "Not ready to launch — overnight Measured held from 232659cf (smoke 6/6, CCA 20/24, ISO 26/4/2, ambient evidence, AI-85 48/5/23/8/1, dataset canary FAIL) while tip is a263c4ab with morning invite/booking/Twin/Insights/isolation/CI packs awaiting retest; dataset companyId 403 + secrets still gate",
-    "plainSummary": "As of ~06:20 UTC on 11 Sep 2026 (~08:18 Europe/London), launch readiness is about 65%. Live staging tip confirmed a263c4ab (was 232659cf). Six PRs live: #1250/#1252/#1254/#1253/#1247/#1258 (+ #1248). Overnight Measured facts held pending targeted retest on a263c4ab. findings-fix Estimate 87%. Rollback ban LIFTED — #1240 live on tip; prefer not to need rollback; use company-scoped batchId only. Dataset canary still FAIL companyId 403 (engineering).",
+    "overallLaunchPercent": 63,
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 63% = round(52×12 + 60×10 + 86×10 + 56×15 + 85×9 + 72×10 + 67×6 + 62×8 + 87×10 + 15×10)/100.",
+    "readinessLabel": "Not ready to launch — morning smoke on a263c4ab Measured FAIL (67% 4/6: HELGOBIRD missed, late-cancel credit 7≠8; reverse PROVEN). Other overnight Measured held from 232659cf pending retest; dataset companyId 403 + secrets still gate",
+    "plainSummary": "As of 2026-09-11T07:07:16.271Z (Europe/London morning 11 Sep 2026), launch readiness is about 63%. Live tip a263c4ab. Morning smoke-2 overall FAIL — membership reverse proven, but HELGOBIRD not used and late cancel left 7 credits not 8 (smoke 67%). Other overnight Measured held pending retest. Rollback ban LIFTED (#1240). Dataset canary still FAIL companyId 403.",
     "strengths": [
-      "Overnight six-step smoke ALL PASS on prior tip 232659cf (Measured — re-smoke pending on a263c4ab)",
+      "Morning smoke: invite/OTP, booking, membership cancel+reverse PROVEN, evidence PASS on tip a263c4ab",
       "Cluster A Measured 20/24 with teacher MGR-10/ACS-X01 PASS (held)",
       "M1 Wave1 Admin2 cancel+reverse PASS; freeze PASS (held)",
       "ISO-29 COMPLETE Measured 26/4/2 on prior tip (held); #1250 capacity-stack Bluebird now live",
@@ -299,21 +301,23 @@
       "Rollback ban LIFTED — #1240 SAFE rollback live on tip (company-scoped batchId only if needed)"
     ],
     "risks": [
+      "Morning smoke FAIL on a263c4ab — HELGOBIRD not entered; late-cancel credit left 7 not 8",
       "Dataset canary FAIL — Missing companyId on batchImport.upload (403); 0 members; 12m not loaded (engineering)",
       "Same four privacy leaks still FAIL (ISO-18/20/27/29); Weymouth/Luton extras NOT_RUN",
       "Morning Dispatch viewer still FAIL (last Measured on prior tip)",
       "Admin2 unfreeze FAIL — payment provider; BB Smoke Sep8 still paused",
       "Cluster A final four unchanged: MEM-X01 ACS-F01 TAG-C01 TAG-A01",
-      "New tip a263c4ab packs not yet re-measured (invite/booking/Twin/Insights/isolation)",
+      "Other a263c4ab packs (CCA/ISO/ambient/AI/M1) not yet re-measured",
       "Automated comms #1213 blocked on secrets",
       "Prefer not to need rollback even though ban lifted — company-scoped batchId only"
     ],
     "topPriorities": [
+      "BOT/ENG: Fix HELGOBIRD checkout path + late-cancel credit return (smoke-2 FAIL on a263c4ab)",
       "DECLAN: Add five Resend/Agentmail secrets for #1213",
       "DECLAN: Platform Admin — Feature Controls + Event Bus (ask before toggles); unlocks AI-85 UNCERTAIN settle",
       "DECLAN: Approve or reject Clusters B–F banks",
+      "BOT/ENG: Targeted retest remaining morning packs on tip a263c4ab",
       "DECLAN: Decide leave BB Smoke Sep8 paused / fix card / retry after payment fix",
-      "BOT/ENG: Targeted retest morning packs on tip a263c4ab",
       "ENGINEERING: Fix batchImport.upload Missing companyId (403) — blocks 12m dataset",
       "ENGINEERING: Fix ISO-18, 20, 27, 29 privacy leaks",
       "ENGINEERING: Fix Morning Dispatch viewer (Something went wrong)",
@@ -321,9 +325,7 @@
       "ENGINEERING: Fix Cluster A MEM-X01, ACS-F01, TAG-C01, TAG-A01"
     ],
     "visualBands": {
-      "ready": [
-        "smoke"
-      ],
+      "ready": [],
       "nearly": [
         "ambient",
         "findings-fix",
@@ -331,7 +333,8 @@
         "m1",
         "ai-85",
         "payments",
-        "isolation"
+        "isolation",
+        "smoke"
       ],
       "blocked": [
         "comms"
@@ -340,7 +343,7 @@
         "dataset"
       ]
     },
-    "refreshWarning": "Tip confirmed a263c4ab; overnight Measured scores held from 232659cf until targeted retest — do not treat as freshly Measured on this tip. Rollback ban lifted."
+    "refreshWarning": "Live tip unchanged since last strand rebuild — readiness may be stale relative to merged-but-undeployed PRs."
   },
   "actions": [
     {
@@ -522,8 +525,8 @@
         "payments",
         "smoke"
       ],
-      "plainSummary": "Smoke/M1 held from 232659cf; #1247/#1252/#1258 on tip a263c4ab await re-smoke/M1 retest.",
-      "percentComplete": 78
+      "plainSummary": "Morning smoke Measured FAIL on a263c4ab (67% 4/6; reverse PASS, HELGOBIRD+credit FAIL). M1/payments still held from 232659cf pending retest.",
+      "percentComplete": 67
     },
     {
       "phaseId": "launch-hardening",
