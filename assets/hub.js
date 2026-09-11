@@ -10,7 +10,13 @@
   const PT_SNAPSHOTS_KEY = "helgoiq-launch-hub-pt-snapshots";
   const PT_SNAPSHOTS_MAX = 40;
 
-  const VIEWS = ["dashboard", "tracker", "drops"];
+  const VIEWS = ["dashboard", "coverage", "tracker", "drops"];
+  const COVERAGE_SUBS = {
+    admin: { hash: "coverage-admin", panel: "coverage-panel-admin", tab: "subtab-admin" },
+    owner: { hash: "coverage-owner", panel: "coverage-panel-owner", tab: "subtab-owner" },
+    teacher: { hash: "coverage-teacher", panel: "coverage-panel-teacher", tab: "subtab-teacher" },
+    client: { hash: "coverage-client", panel: "coverage-panel-client", tab: "subtab-client" },
+  };
   const AGE_BUCKETS = [
     { id: "today", label: "Today", maxDays: 0 },
     { id: "1-3d", label: "1–3 days", maxDays: 3 },
@@ -24,6 +30,11 @@
     dashboard: null,
     liveDashboard: null,
     coverage: null,
+    coveragePages: [],
+    coverageMeta: null,
+    coverageSub: "admin",
+    coverageQuery: "",
+    coverageStateFilter: new Set(),
     tracker: null,
     ptViewing: null,
     selectedTags: new Set(),
@@ -1383,10 +1394,337 @@
     }
   }
 
+  function coverageStateLabel(state) {
+    const map = {
+      fully_tested: "Fully tested and complete",
+      partially_tested: "Partially tested",
+      blocked: "Blocked",
+      failed: "Failed",
+      not_tested: "Not tested",
+    };
+    return map[state] || state || "Not tested";
+  }
+
+  function showCoverageSub(name) {
+    const next = COVERAGE_SUBS[name] ? name : "admin";
+    state.coverageSub = next;
+    Object.keys(COVERAGE_SUBS).forEach((key) => {
+      const spec = COVERAGE_SUBS[key];
+      const panel = $(spec.panel);
+      const tab = $(spec.tab);
+      const on = key === next;
+      if (panel) {
+        panel.classList.toggle("hidden", !on);
+        panel.hidden = !on;
+      }
+      if (tab) {
+        tab.setAttribute("aria-selected", on ? "true" : "false");
+        tab.classList.toggle("active", on);
+      }
+    });
+  }
+
+  function coveragePages() {
+    return state.coveragePages || [];
+  }
+
+  function filteredCoveragePages() {
+    const q = state.coverageQuery.trim().toLowerCase();
+    return coveragePages().filter((p) => {
+      if (state.coverageStateFilter.size && !state.coverageStateFilter.has(p.state || "not_tested")) {
+        return false;
+      }
+      if (!q) return true;
+      const hay = [p.route, p.title, p.breadcrumb, p.state, p.lastTestedStamp, p.reason, p.blockedBy]
+        .join(" ")
+        .toLowerCase();
+      return hay.includes(q);
+    });
+  }
+
+  function renderCoverageHeadlines() {
+    const meta = state.coverageMeta || {};
+    const counts = meta.counts || {};
+    const live = liveTipFrom(state.dashboard, state.coverage) || meta.liveTip;
+    const verify = $("coverageVerify");
+    if (verify) {
+      const stmt = meta.completenessStatement || "Completeness statement missing — regenerate with scripts/build-coverage-admin.mjs.";
+      const bundle = meta.bundle407 || {};
+      verify.innerHTML =
+        "<h3>How we verified completeness</h3>" +
+        "<p>" + escapeHtml(stmt) + "</p>" +
+        '<p class="muted">Live tip ' +
+        escapeHtml(shortSha(live)) +
+        (bundle.present
+          ? " · 407 admin subset loaded"
+          : " · 407 bundle file not in repo yet — router snapshot used") +
+        " · generated " +
+        escapeHtml(meta.generatedAt ? formatLondonStamp(meta.generatedAt) : "—") +
+        "</p>";
+    }
+
+    const headlines = $("coverageHeadlines");
+    if (headlines) {
+      const cells = [
+        ["Pages", counts.total || 0],
+        ["Matched", counts.matched || 0],
+        ["Hub-only", counts.hubOnly || 0],
+        ["Orphaned", counts.orphaned || 0],
+        ["Not tested", counts.notTested || 0],
+        ["Failed", counts.failed || 0],
+        ["Blocked", counts.blocked || 0],
+        ["Stale vs tip", counts.stale || 0],
+      ];
+      headlines.innerHTML = cells
+        .map(([l, n]) => {
+          const cls =
+            l === "Failed" || l === "Orphaned"
+              ? " danger"
+              : l === "Matched"
+                ? " ok"
+                : l === "Stale vs tip" || l === "Hub-only"
+                  ? " warn"
+                  : "";
+          return (
+            '<div class="coverage-stat' +
+            cls +
+            '"><span class="n">' +
+            escapeHtml(String(n)) +
+            '</span><span class="l">' +
+            escapeHtml(l) +
+            "</span></div>"
+          );
+        })
+        .join("");
+    }
+
+    const total = counts.total || 0;
+    const tested =
+      (counts.fullyTested || 0) +
+      (counts.partiallyTested || 0) +
+      (counts.failed || 0) +
+      (counts.blocked || 0);
+    const pct = total ? Math.round((tested / total) * 100) : 0;
+    const ring = $("coverageRing");
+    const pctEl = $("coverageChartPct");
+    if (pctEl) pctEl.textContent = pct + "%";
+    if (ring) {
+      const circ = 2 * Math.PI * 52;
+      ring.style.strokeDasharray = String(circ);
+      ring.style.strokeDashoffset = String(circ * (1 - pct / 100));
+      ring.style.stroke = pct === 0 ? "var(--muted)" : "var(--accent)";
+    }
+
+    const legend = $("coverageChartLegend");
+    if (legend) {
+      const segs = [
+        ["fully_tested", "Fully tested", counts.fullyTested || 0],
+        ["partially_tested", "Partial", counts.partiallyTested || 0],
+        ["failed", "Failed", counts.failed || 0],
+        ["blocked", "Blocked", counts.blocked || 0],
+        ["not_tested", "Not tested", counts.notTested || 0],
+      ];
+      legend.innerHTML = segs
+        .map(([k, l, n]) => {
+          const w = total ? Math.max(n ? 4 : 0, Math.round((n / total) * 100)) : 0;
+          return (
+            '<div class="cov-legend-row">' +
+            '<span class="cov-swatch state-' +
+            escapeHtml(k) +
+            '"></span>' +
+            "<span>" +
+            escapeHtml(l) +
+            " · " +
+            n +
+            "</span>" +
+            '<div class="bar-track"><div class="bar-fill state-' +
+            escapeHtml(k) +
+            '" style="width:' +
+            w +
+            '%"></div></div>' +
+            "</div>"
+          );
+        })
+        .join("");
+    }
+  }
+
+  function renderCoverageChips() {
+    const el = $("coverageStateChips");
+    if (!el) return;
+    const states = ["not_tested", "failed", "blocked", "partially_tested", "fully_tested"];
+    el.innerHTML = "";
+    states.forEach((s) => {
+      const n = coveragePages().filter((p) => (p.state || "not_tested") === s).length;
+      if (!n && s !== "not_tested") return;
+      el.appendChild(
+        chip(coverageStateLabel(s) + " (" + n + ")", state.coverageStateFilter.has(s), () => {
+          if (state.coverageStateFilter.has(s)) state.coverageStateFilter.delete(s);
+          else state.coverageStateFilter.add(s);
+          renderCoverageChips();
+          renderCoverageTable();
+        })
+      );
+    });
+  }
+
+  function renderCoverageTable() {
+    const body = $("coverageBody");
+    const count = $("coverageCount");
+    if (!body) return;
+    const list = filteredCoveragePages();
+    if (count) {
+      count.textContent = list.length + " page" + (list.length === 1 ? "" : "s");
+    }
+    body.innerHTML = "";
+    if (!list.length) {
+      const tr = document.createElement("tr");
+      tr.innerHTML = '<td colspan="5" class="muted">No admin pages match these filters.</td>';
+      body.appendChild(tr);
+      return;
+    }
+    const live = liveTipFrom(state.dashboard, state.coverage) || (state.coverageMeta && state.coverageMeta.liveTip);
+    list.forEach((p) => {
+      const tr = document.createElement("tr");
+      tr.id = p.id;
+      const st = p.state || "not_tested";
+      let stateHtml =
+        '<span class="cov-state state-' + escapeHtml(st) + '">' + escapeHtml(coverageStateLabel(st)) + "</span>";
+      if (st === "partially_tested") {
+        const pct = typeof p.percentPassed === "number" ? p.percentPassed : 0;
+        stateHtml +=
+          '<div class="cov-mini-bar" title="' +
+          pct +
+          '% passed"><div class="bar-track"><div class="bar-fill state-partially_tested" style="width:' +
+          Math.max(0, Math.min(100, pct)) +
+          '%"></div></div><span class="muted">' +
+          pct +
+          "% passed</span></div>";
+      }
+      if (st === "failed") {
+        const bits = [];
+        if (typeof p.percentFailed === "number") bits.push(p.percentFailed + "% failed");
+        if (p.reason) bits.push(p.reason);
+        if (bits.length) stateHtml += '<div class="muted cov-reason">' + escapeHtml(bits.join(" · ")) + "</div>";
+      }
+      if (st === "blocked" && p.blockedBy) {
+        stateHtml += '<div class="muted cov-reason">' + escapeHtml(p.blockedBy) + "</div>";
+      }
+
+      const crumb = p.orphaned || p.breadcrumb === "ORPHANED"
+        ? '<span class="cov-orphan">ORPHANED</span>'
+        : escapeHtml(p.breadcrumb || "—");
+
+      const stamp = p.lastTestedStamp
+        ? '<span class="cov-stamp ' +
+          (p.stale ? "stale" : "current") +
+          '">' +
+          escapeHtml(shortSha(p.lastTestedStamp)) +
+          (p.stale ? " · Stale" : "") +
+          "</span>"
+        : '<span class="muted">—</span>';
+      if (p.stale && live) {
+        /* already labelled Stale */
+      }
+
+      const links = [];
+      (p.evidence || []).forEach((ev) => {
+        if (ev.kind === "drop" && ev.id) {
+          links.push(
+            '<button type="button" class="btn mini ghost cov-ev" data-drop="' +
+              escapeHtml(ev.id) +
+              '">Drop</button>'
+          );
+        } else if (ev.href) {
+          links.push(
+            '<a class="btn mini ghost" href="' +
+              escapeHtml(ev.href) +
+              '" target="_blank" rel="noopener">' +
+              escapeHtml(ev.kind === "issue" ? "Issue" : ev.kind || "Link") +
+              "</a>"
+          );
+        }
+      });
+      if (p.prUrl) {
+        links.push('<a class="btn mini ghost" href="' + escapeHtml(p.prUrl) + '" target="_blank" rel="noopener">PR</a>');
+      }
+      if (p.issueUrl && !(p.evidence || []).some((e) => e.href === p.issueUrl)) {
+        links.push('<a class="btn mini ghost" href="' + escapeHtml(p.issueUrl) + '" target="_blank" rel="noopener">Issue</a>');
+      }
+      if (p.completeness) {
+        links.unshift('<span class="cov-comp ' + escapeHtml(p.completeness) + '">' + escapeHtml(String(p.completeness).replace(/_/g, "-")) + "</span>");
+      }
+
+      tr.innerHTML =
+        '<td class="cov-route"><code>' +
+        escapeHtml(p.route) +
+        "</code><div class=\"cov-title\">" +
+        escapeHtml(p.title || "") +
+        "</div></td>" +
+        "<td>" +
+        crumb +
+        "</td>" +
+        "<td>" +
+        stateHtml +
+        "</td>" +
+        "<td>" +
+        stamp +
+        "</td>" +
+        '<td class="cov-links">' +
+        (links.join(" ") || '<span class="muted">—</span>') +
+        "</td>";
+      tr.querySelectorAll("[data-drop]").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const id = btn.getAttribute("data-drop");
+          const drop = state.drops.find((d) => d.id === id);
+          if (drop) openDrop(drop, true);
+          else location.hash = "drop-" + id;
+        });
+      });
+      body.appendChild(tr);
+    });
+  }
+
+  function renderCoverage() {
+    renderCoverageHeadlines();
+    renderCoverageChips();
+    renderCoverageTable();
+  }
+
+  function wireCoverage() {
+    const search = $("coverageSearch");
+    if (search) {
+      search.addEventListener("input", (e) => {
+        state.coverageQuery = e.target.value;
+        renderCoverageTable();
+      });
+    }
+    const clear = $("coverageClear");
+    if (clear) {
+      clear.addEventListener("click", () => {
+        state.coverageQuery = "";
+        state.coverageStateFilter.clear();
+        if (search) search.value = "";
+        renderCoverageChips();
+        renderCoverageTable();
+      });
+    }
+  }
+
   function applyHash() {
     const raw = (location.hash || "").replace(/^#/, "");
     if (!raw) {
       showView("dashboard");
+      return;
+    }
+    if (raw === "coverage" || raw.startsWith("coverage-") || raw === "coverage-admin") {
+      showView("coverage");
+      let sub = "admin";
+      if (raw === "coverage-owner" || raw === "coverage-platform-owner") sub = "owner";
+      else if (raw === "coverage-teacher") sub = "teacher";
+      else if (raw === "coverage-client") sub = "client";
+      else sub = "admin";
+      showCoverageSub(sub);
       return;
     }
     if (raw === "tracker" || raw.startsWith("tracker-")) {
@@ -1427,6 +1765,7 @@
   async function init() {
     wirePtSnapshotControls();
     wireTracker();
+    wireCoverage();
     $("closeViewer").addEventListener("click", () => closeViewer(true));
     $("copyMdBtn").addEventListener("click", () => {
       if (!state.activeMarkdown) {
@@ -1463,11 +1802,13 @@
     window.addEventListener("hashchange", applyHash);
 
     try {
-      const [idxRes, dashRes, covRes, trkRes] = await Promise.all([
+      const [idxRes, dashRes, covRes, trkRes, adminPagesRes, adminMetaRes] = await Promise.all([
         fetch("index.json"),
         fetch("dashboard.json"),
         fetch("coverage.json"),
         fetch("tracker/items.json"),
+        fetch("coverage/admin-pages.json"),
+        fetch("coverage/meta.json"),
       ]);
       if (!idxRes.ok) throw new Error("index.json " + idxRes.status);
       const data = await idxRes.json();
@@ -1487,6 +1828,22 @@
           console.warn("tracker/items.json parse failed", err);
         }
       }
+      if (adminPagesRes && adminPagesRes.ok) {
+        try {
+          const pages = await adminPagesRes.json();
+          state.coveragePages = Array.isArray(pages) ? pages : pages.pages || [];
+        } catch (err) {
+          console.warn("coverage/admin-pages.json parse failed", err);
+        }
+      }
+      if (adminMetaRes && adminMetaRes.ok) {
+        try {
+          state.coverageMeta = await adminMetaRes.json();
+        } catch (err) {
+          console.warn("coverage/meta.json parse failed", err);
+        }
+      }
+      renderCoverage();
       renderTrackerChips();
       renderTracker();
       if (dashRes.ok) {

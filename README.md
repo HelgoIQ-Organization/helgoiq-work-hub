@@ -8,17 +8,18 @@ Open `index.html` locally (or via Pages). No build step — vanilla HTML/CSS/JS 
 
 ## For Declan (non-technical)
 
-The top of the site is a **visual dashboard** (plus two other tabs):
+The top of the site is a **visual dashboard** (plus Coverage, Tracker, and Drops):
 
 - Big **launch %** ring and a plain readiness label
 - **Work strand** cards (click for blockers and linked notes) — each card shows the **SHA it was last tested on**
 - **Page coverage stamps** — surfaces scanned from drops, marked **Stale vs live tip** when the last evidence SHA is not today’s staging tip
 - **Your moves** — actions only you can unblock, with how much each one moves the project / phase forward
 - **Phases** strip — share of the whole launch programme
-- **Tracker** tab (second top-level tab) — findings grouped by state / area / builder / age; expand a row for evidence. Live GitHub Projects sync is **blocked** until `read:project` + the findings-agent token rotate (outstanding since 3 Sep)
+- **Coverage** tab — Admin inventory of every sidebar menu path, reconciled against the router / 407-route orphan audit. Platform owner / Teacher / Client are labelled placeholders (“coming as protocol/testing runs”).
+- **Tracker** tab — findings grouped by state / area / builder / age; expand a row for evidence. Live GitHub Projects sync is **blocked** until `read:project` + the findings-agent token rotate (outstanding since 3 Sep)
 - **Work drops** feed — each card leads with friendly English; technical detail is secondary
 
-Deep links: `#dashboard`, `#tracker`, `#drops`, `#strand-dataset`, `#action-merge-1232`, `#drop-<id>`.
+Deep links: `#dashboard`, `#coverage`, `#coverage-admin`, `#tracker`, `#drops`, `#strand-dataset`, `#action-merge-1232`, `#drop-<id>`.
 
 Dashboard numbers live in [`dashboard.json`](./dashboard.json) (weighted from current testing state). Catalogue entries live in [`index.json`](./index.json).
 
@@ -53,6 +54,9 @@ node scripts/sync-coverage.mjs --dry-run
 node scripts/sync-coverage.mjs
 # Tracker board (prefers TRACKER_EXPORT.json; does not invent Projects cards)
 node scripts/sync-tracker.mjs --dry-run
+# Admin Coverage inventory (sidebar ∩ 407/router)
+node scripts/build-coverage-admin.mjs --dry-run
+node scripts/build-coverage-admin.mjs
 # then Bot Commander fills strands / progressToday / health, commit + push
 ```
 
@@ -69,7 +73,7 @@ When Bot Commander / cron can write this repo:
 ```bash
 node scripts/refresh-dashboard.mjs --with-coverage
 node scripts/sync-tracker.mjs          # no-op seed until export/gh is available
-git add dashboard.json coverage.json tracker/items.json history/
+git add dashboard.json coverage.json coverage/ tracker/items.json history/
 git commit -m "hub: refresh tip + coverage stamps" && git push origin main
 ```
 
@@ -110,6 +114,18 @@ Optional local import (preferred over inventing API secrets):
 ```
 
 Save as `TRACKER_EXPORT.json` (gitignored) and run `node scripts/sync-tracker.mjs`.
+
+### Admin Coverage (`coverage/`)
+
+- [`coverage/admin-pages.json`](./coverage/admin-pages.json) — one row per Admin menu path (plus orphaned router/407 routes). Fields: `route`, `breadcrumb` or `ORPHANED`, `state` (`not_tested` | `partially_tested` | `blocked` | `failed` | `fully_tested`), `lastTestedStamp`, `stale`, evidence links.
+- [`coverage/meta.json`](./coverage/meta.json) — `liveTip`, `generatedAt`, completeness statement, matched / hub-only / orphaned counts.
+- Sources live in [`coverage/sources/`](./coverage/sources/). Drop the Cursor **407-route** list as `_routes_from_bundle.txt` (or `routes-407.json` / `.csv`) and rerun:
+
+```bash
+node scripts/build-coverage-admin.mjs
+```
+
+Do **not** invent PASS rates. Default is `not_tested`. Platform owner / Teacher / Client sub-tabs are placeholders.
 
 ### `index.json`
 

@@ -15,13 +15,14 @@
         <span class="logo" aria-hidden="true">◈</span>
         <div>
           <h1>HelgoIQ Launch Hub</h1>
-          <p class="tagline">Plain-English progress · tracker · coverage stamps · work drops</p>
+          <p class="tagline">Plain-English progress · coverage · tracker · work drops</p>
         </div>
       </div>
       <div class="header-meta">
         <span id="updatedAt" class="muted"></span>
         <nav class="top-tabs" role="tablist" aria-label="Hub sections">
           <a class="tab-link active" role="tab" id="tab-dashboard" href="#dashboard" aria-controls="view-dashboard" aria-selected="true">Dashboard</a>
+          <a class="tab-link" role="tab" id="tab-coverage" href="#coverage" aria-controls="view-coverage" aria-selected="false">Coverage</a>
           <a class="tab-link" role="tab" id="tab-tracker" href="#tracker" aria-controls="view-tracker" aria-selected="false">Tracker</a>
           <a class="tab-link" role="tab" id="tab-drops" href="#drops" aria-controls="view-drops" aria-selected="false">Drops</a>
         </nav>
@@ -140,6 +141,80 @@
       </div>
       <div id="engineeringGrid" class="actions-grid"></div>
     </section>
+    </div>
+
+    <!-- COVERAGE -->
+    <div id="view-coverage" class="view hidden" role="tabpanel" aria-labelledby="tab-coverage" hidden>
+      <section id="coverage" class="section coverage-section" aria-label="Page coverage">
+        <div class="section-head">
+          <h2>Coverage</h2>
+          <p class="muted">Every Admin menu path, reconciled against the router / 407-route orphan audit. Platform owner, Teacher, and Client are coming as protocol/testing runs.</p>
+        </div>
+        <nav class="coverage-subtabs" role="tablist" aria-label="Coverage audiences">
+          <a class="subtab-link active" role="tab" id="subtab-admin" href="#coverage-admin" aria-controls="coverage-panel-admin" aria-selected="true">Admin</a>
+          <a class="subtab-link" role="tab" id="subtab-owner" href="#coverage-owner" aria-controls="coverage-panel-owner" aria-selected="false">Platform owner</a>
+          <a class="subtab-link" role="tab" id="subtab-teacher" href="#coverage-teacher" aria-controls="coverage-panel-teacher" aria-selected="false">Teacher</a>
+          <a class="subtab-link" role="tab" id="subtab-client" href="#coverage-client" aria-controls="coverage-panel-client" aria-selected="false">Client</a>
+        </nav>
+
+        <div id="coverage-panel-admin" class="coverage-panel" role="tabpanel" aria-labelledby="subtab-admin">
+          <div id="coverageVerify" class="coverage-verify" aria-label="How we verified completeness"></div>
+          <div class="coverage-headline-row">
+            <div id="coverageHeadlines" class="coverage-headlines"></div>
+            <div class="coverage-chart-wrap">
+              <svg id="coverageChart" class="coverage-chart" viewBox="0 0 120 120" aria-hidden="true">
+                <circle class="ring-bg" cx="60" cy="60" r="52" />
+                <circle id="coverageRing" class="ring-fg" cx="60" cy="60" r="52" />
+              </svg>
+              <div class="coverage-chart-label">
+                <span id="coverageChartPct" class="ring-pct">—</span>
+                <span class="ring-sub">tested</span>
+              </div>
+            </div>
+          </div>
+          <div id="coverageChartLegend" class="coverage-legend"></div>
+          <div class="coverage-toolbar">
+            <label class="search-label sr-only" for="coverageSearch">Search admin pages</label>
+            <input id="coverageSearch" type="search" placeholder="Search route, breadcrumb, title…" autocomplete="off" />
+            <div id="coverageStateChips" class="chips" role="group" aria-label="Filter by test state"></div>
+            <button type="button" id="coverageClear" class="btn ghost">Clear</button>
+          </div>
+          <p id="coverageCount" class="muted count"></p>
+          <div class="coverage-table-wrap">
+            <table class="coverage-table" id="coverageTable">
+              <thead>
+                <tr>
+                  <th>Route</th>
+                  <th>Breadcrumb</th>
+                  <th>State</th>
+                  <th>Stamp</th>
+                  <th>Evidence</th>
+                </tr>
+              </thead>
+              <tbody id="coverageBody"></tbody>
+            </table>
+          </div>
+        </div>
+
+        <div id="coverage-panel-owner" class="coverage-panel hidden" role="tabpanel" aria-labelledby="subtab-owner" hidden>
+          <div class="coverage-stub">
+            <h3>Platform owner</h3>
+            <p>Coming as protocol/testing runs. This shell is labelled so the tab is real — Admin is the first audience that ships.</p>
+          </div>
+        </div>
+        <div id="coverage-panel-teacher" class="coverage-panel hidden" role="tabpanel" aria-labelledby="subtab-teacher" hidden>
+          <div class="coverage-stub">
+            <h3>Teacher</h3>
+            <p>Coming as protocol/testing runs. Teacher surfaces will land here once the Admin inventory is the daily board.</p>
+          </div>
+        </div>
+        <div id="coverage-panel-client" class="coverage-panel hidden" role="tabpanel" aria-labelledby="subtab-client" hidden>
+          <div class="coverage-stub">
+            <h3>Client</h3>
+            <p>Coming as protocol/testing runs. Member/client shells stay a placeholder until Admin coverage is current.</p>
+          </div>
+        </div>
+      </section>
     </div>
 
     <!-- TRACKER -->
