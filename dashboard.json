@@ -161,9 +161,9 @@
       ],
       "phaseId": "intelligence",
       "projectWeightPercent": 15,
-      "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
-      "lastTestedVerdict": "UNREACHABLE",
-      "coverageFreshness": "stale"
+      "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+      "lastTestedVerdict": "BLOCKED",
+      "coverageFreshness": "current"
     },
     {
       "id": "ambient",

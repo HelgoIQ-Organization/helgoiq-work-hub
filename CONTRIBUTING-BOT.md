@@ -49,7 +49,7 @@ Chosen:
 2. **Coverage stamps** — `scripts/sync-coverage.mjs` writes `coverage.json` (`lastTestedStamp` vs live tip). Target lag **≤15 minutes** when wired.
 3. **Backup** — weekday every **30 minutes** during daytime (Europe/London).
 
-Sources to consult on each rebuild: live `/api/version`, `gh` merged/open PRs, drop `SUMMARY.md` + `index.json`, `MASTER.csv`, Cluster A FINAL, #1180 themes.
+Four verdict sources on each coverage rebuild: (1) live `/api/version` tip, (2) merged PRs, (3) #1180 + hub drops, (4) Claude Code PR review comments via `gh api`. Also `MASTER.csv` / Cluster A FINAL when present. `gh` failures are skipped — do not invent review rows or tracker tokens.
 
 ```bash
 node scripts/refresh-dashboard.mjs   # updates meta dataAsOf + buildStamp + history/latest.json

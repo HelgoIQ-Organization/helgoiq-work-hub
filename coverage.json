@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T14:59:27.712Z",
+  "updatedAt": "2026-09-11T19:00:06.557Z",
   "liveTip": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
   "liveTipShort": "a73ff70b",
   "refreshLag": {
@@ -12,16 +12,49 @@
     "versionError": null,
     "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
     "mergedPrsError": "skipped",
-    "dropsScanned": 37
+    "dropsScanned": 38,
+    "issue1180Error": "skipped",
+    "issue1180Comments": 0,
+    "claudeReviewError": null,
+    "claudeReviews": 0,
+    "sources": [
+      {
+        "id": 1,
+        "name": "live /api/version tip",
+        "ok": true
+      },
+      {
+        "id": 2,
+        "name": "merged PRs",
+        "ok": false,
+        "count": 0
+      },
+      {
+        "id": 3,
+        "name": "#1180 + hub drops",
+        "ok": true,
+        "dropsScanned": 38,
+        "issue1180": null
+      },
+      {
+        "id": 4,
+        "name": "Claude Code PR review comments",
+        "ok": false,
+        "skipped": true,
+        "count": 0
+      }
+    ]
   },
   "counts": {
     "strands": 10,
-    "strandsStaleVsLiveTip": 9,
-    "strandsCurrent": 0,
-    "pages": 80,
-    "pagesStaleVsLiveTip": 61
+    "strandsStaleVsLiveTip": 8,
+    "strandsCurrent": 1,
+    "pages": 81,
+    "pagesStaleVsLiveTip": 60,
+    "claudeReviews": 0
   },
   "recentMergedPrs": [],
+  "claudeReviews": [],
   "strands": [
     {
       "id": "dataset",
@@ -31,6 +64,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-dataset-canary-fail-tip-232659cf",
+      "claudeReviewCount": 0,
       "basis": "measured",
       "percent": 52
     },
@@ -42,6 +76,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-command-centre-cluster-a-tip-a263c4ab-22-24",
+      "claudeReviewCount": 0,
       "basis": "measured",
       "percent": 66
     },
@@ -53,17 +88,19 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-iso29-complete-tip-232659cf",
+      "claudeReviewCount": 0,
       "basis": "measured",
       "percent": 86
     },
     {
       "id": "ai-85",
       "name": "AI features check",
-      "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+      "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
       "lastTestedAt": "2026-09-11",
-      "verdict": "UNREACHABLE",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-11-twin-bi-demo-seed-unreachable-for-admin2-tip-a26",
+      "verdict": "BLOCKED",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c",
+      "claudeReviewCount": 0,
       "basis": "measured",
       "percent": 56
     },
@@ -75,6 +112,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-ambient-evidence-tip-232659cf",
+      "claudeReviewCount": 0,
       "basis": "measured",
       "percent": 85
     },
@@ -86,6 +124,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-m1-retest-1252-pass-unfreeze-fail",
+      "claudeReviewCount": 0,
       "basis": "measured",
       "percent": 72
     },
@@ -97,6 +136,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f",
+      "claudeReviewCount": 0,
       "basis": "measured",
       "percent": 67
     },
@@ -108,6 +148,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-10-m1-wave1-partial-tip-232659cf",
+      "claudeReviewCount": 0,
       "basis": "estimate",
       "percent": 62
     },
@@ -119,6 +160,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-forms-pass-qr-dest-fail-tip-a263c4ab",
+      "claudeReviewCount": 0,
       "basis": "estimate",
       "percent": 87
     },
@@ -130,11 +172,34 @@
       "verdict": "",
       "freshness": "untested",
       "evidenceDropId": "",
+      "claudeReviewCount": 0,
       "basis": "estimate",
       "percent": 15
     }
   ],
   "pages": [
+    {
+      "id": "route:/api/version",
+      "name": "/api/version",
+      "route": "/api/version",
+      "strandId": "ai-85",
+      "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+      "lastTestedAt": "2026-09-11",
+      "verdict": "BLOCKED",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c"
+    },
+    {
+      "id": "drop:2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c",
+      "name": "Owner Twin PASS BI PASS tip a73ff70 — data build Clerk-blocked",
+      "route": "",
+      "strandId": "ai-85",
+      "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+      "lastTestedAt": "2026-09-11",
+      "verdict": "BLOCKED",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c"
+    },
     {
       "id": "route:/workspace/helgoiq-iso-qa/_routes_from_bundle.txt",
       "name": "/workspace/helgoiq-iso-qa/_routes_from_bundle.txt",
@@ -277,17 +342,6 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-untested-16-surfaces-ranked-week-one-posted-1180"
-    },
-    {
-      "id": "route:/api/version",
-      "name": "/api/version",
-      "route": "/api/version",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
-      "lastTestedAt": "2026-09-11",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-11-forms-pass-qr-dest-fail-tip-a263c4ab"
     },
     {
       "id": "route:/admin/forms",
