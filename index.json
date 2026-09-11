@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-11T19:16:36.923Z",
+  "updatedAt": "2026-09-11T19:32:54.988Z",
   "drops": [
+    {
+      "id": "2026-09-11-forms-qr-matrix-partial-tip-a73ff70-8-19-qr-kind",
+      "title": "Forms QR matrix partial tip a73ff70 — 8/19 QR kinds",
+      "date": "2026-09-11",
+      "summary": "Forms+QR matrix on tip a73ff70: 8/19 QR kinds created/PASS; 11 not completed; physical phone scan blocked NEED_DECLAN.",
+      "plainEnglish": "Forms+QR matrix on tip a73ff70: 8/19 QR kinds created/PASS; 11 not completed; physical phone scan blocked NEED_DECLAN.",
+      "tags": [
+        "findings",
+        "status"
+      ],
+      "type": "checklist",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-forms-qr-matrix-partial-tip-a73ff70-8-19-qr-kind/MATRIX.md"
+      ],
+      "tip": "a73ff70b266057f226bb02c5f3112f72a92ad53d"
+    },
     {
       "id": "2026-09-11-acs-f01-pass-teacher-2-tip-a73ff70",
       "title": "ACS-F01 PASS Teacher 2 tip a73ff70",
