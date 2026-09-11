@@ -5,12 +5,16 @@
  * Build coverage.json so every strand / page card can show lastTestedStamp
  * and a Stale-vs-live-tip badge.
  *
- * 1. GET live staging /api/version for releaseSha (same hook as refresh-dashboard)
- * 2. `gh pr list` recent merged PRs on HelgoIQ-Organization/HelgoIQ-Platform
- * 3. Scan drops SUMMARY.md files (and sibling md) + index.json for verdicts/stamps
- * 4. Mark freshness stale when lastTestedStamp != live tip
+ * Four verdict sources (gh calls are optional; dry-run safe if gh fails):
+ *  1. Live staging GET /api/version — releaseSha / live tip
+ *  2. Recently merged PRs on HelgoIQ-Organization/HelgoIQ-Platform (`gh pr list`)
+ *  3. Hub drops (SUMMARY.md + index.json) plus running-list issue #1180 comments
+ *  4. Claude Code / automated review comments on those merged PRs
+ *     (`gh api` pull review comments + issue comments + review bodies).
+ *     Not limited to #1180 — Claude posts on Platform PRs generally.
  *
- * Does not invent strand scores. Does not store secrets.
+ * Does not invent strand scores, tracker tokens, or live Projects cards.
+ * Does not store secrets.
  *
  * Usage:
  *   node scripts/sync-coverage.mjs
@@ -32,6 +36,11 @@ const INDEX_PATH = join(ROOT, "index.json");
 const DROPS_DIR = join(ROOT, "drops");
 const DEFAULT_STAGING = process.env.STAGING_URL || process.env.STAGING || "";
 const PLATFORM_REPO = "HelgoIQ-Organization/HelgoIQ-Platform";
+const RUNNING_LIST_ISSUE = 1180;
+
+const CLAUDE_AUTHOR_RE = /claude/i;
+const CLAUDE_BODY_RE =
+  /claude\s*code|generated with\s*\[?claude|anthropic|automated (code )?review|claude\.ai\/code|claude\.com\/claude-code/i;
 
 const SHA_RE = /\b([a-f0-9]{7,40})\b/gi;
 const TIP_LINE_RE =
@@ -141,6 +150,112 @@ async function fetchVersion(base) {
   const res = await fetch(url, { headers: { Accept: "application/json" } });
   if (!res.ok) throw new Error(`/api/version ${res.status} ${res.statusText}`);
   return res.json();
+}
+
+function ghApi(path) {
+  const res = spawnSync("gh", ["api", path], { encoding: "utf8" });
+  if (res.status !== 0) {
+    return { ok: false, error: (res.stderr || res.stdout || "gh api failed").trim(), data: null };
+  }
+  try {
+    return { ok: true, data: JSON.parse(res.stdout || "null"), error: null };
+  } catch {
+    return { ok: false, error: "gh api returned non-JSON", data: null };
+  }
+}
+
+function commentAuthor(c) {
+  if (!c) return "";
+  if (typeof c.user === "string") return c.user;
+  if (c.user && c.user.login) return c.user.login;
+  if (c.author && c.author.login) return c.author.login;
+  return "";
+}
+
+function looksLikeClaudeReview(c) {
+  const login = commentAuthor(c);
+  const body = String((c && c.body) || "");
+  if (!body.trim()) return false;
+  if (CLAUDE_AUTHOR_RE.test(login)) return true;
+  if (CLAUDE_BODY_RE.test(body)) return true;
+  return false;
+}
+
+function inferStrandFromText(text) {
+  const hay = String(text || "").toLowerCase();
+  const key = Object.keys(TAG_TO_STRAND).find((k) => hay.includes(k));
+  return key ? TAG_TO_STRAND[key] : "";
+}
+
+function normalizeClaudeComment(c, pr) {
+  const body = String(c.body || "");
+  const verdicts = extractVerdicts(body);
+  if (/\bLGTM\b/i.test(body) && !verdicts.includes("PASS")) verdicts.push("PASS");
+  if (/request(?:ed)? changes|must fix|blocking/i.test(body) && !verdicts.includes("FAIL")) {
+    verdicts.push("FAIL");
+  }
+  const firstLine = body.split(/\r?\n/).map((l) => l.trim()).find((l) => l && !l.startsWith("<")) || "";
+  return {
+    id: "claude-pr-" + pr.number + "-" + (c.id || c.node_id || "review"),
+    pr: pr.number,
+    prTitle: pr.title || "",
+    prUrl: pr.url || "",
+    commentUrl: c.html_url || c.url || "",
+    author: commentAuthor(c),
+    createdAt: c.created_at || c.submitted_at || null,
+    mergeSha: pr.mergeSha || "",
+    path: c.path || "",
+    verdict: primaryVerdict(verdicts),
+    strandId: inferStrandFromText([c.path, pr.title, body].join(" ")),
+    excerpt: firstLine.slice(0, 180),
+    source: "claude-pr-review",
+  };
+}
+
+function collectClaudeReviews(repo, prs) {
+  const reviews = [];
+  const errors = [];
+  const seen = new Set();
+  for (const pr of (prs || []).slice(0, 20)) {
+    if (!pr || !pr.number) continue;
+    const paths = [
+      `repos/${repo}/pulls/${pr.number}/comments?per_page=50`,
+      `repos/${repo}/issues/${pr.number}/comments?per_page=50`,
+      `repos/${repo}/pulls/${pr.number}/reviews?per_page=30`,
+    ];
+    for (const path of paths) {
+      const r = ghApi(path);
+      if (!r.ok) {
+        errors.push({ pr: pr.number, error: r.error });
+        continue;
+      }
+      const rows = Array.isArray(r.data) ? r.data : [];
+      for (const c of rows) {
+        if (!looksLikeClaudeReview(c)) continue;
+        const mapped = normalizeClaudeComment(c, pr);
+        if (seen.has(mapped.id)) continue;
+        seen.add(mapped.id);
+        reviews.push(mapped);
+      }
+    }
+  }
+  return { reviews, errors };
+}
+
+function collectIssue1180(repo) {
+  const r = ghApi(`repos/${repo}/issues/${RUNNING_LIST_ISSUE}/comments?per_page=50`);
+  if (!r.ok) return { ok: false, error: r.error, comments: [] };
+  const rows = Array.isArray(r.data) ? r.data : [];
+  const comments = rows.map((c) => ({
+    id: c.id,
+    author: commentAuthor(c),
+    createdAt: c.created_at || null,
+    htmlUrl: c.html_url || "",
+    excerpt: String(c.body || "").split(/\r?\n/).find((l) => l.trim()) || "",
+    claude: looksLikeClaudeReview(c),
+    verdicts: extractVerdicts(c.body || ""),
+  }));
+  return { ok: true, error: null, comments };
 }
 
 function listMergedPrs(repo) {
@@ -408,12 +523,24 @@ async function main() {
   }
 
   let merged = { ok: false, prs: [], error: "skipped" };
+  let claude = { reviews: [], errors: [] };
+  let issue1180 = { ok: false, error: "skipped", comments: [] };
   if (!skipGh) {
     merged = listMergedPrs(repo);
     if (!merged.ok) console.warn("gh pr list skipped:", merged.error);
     else console.log("merged PRs:", merged.prs.length);
+    if (merged.ok && merged.prs.length) {
+      claude = collectClaudeReviews(repo, merged.prs);
+      console.log("Claude Code review comments:", claude.reviews.length);
+      if (claude.errors.length) console.warn("some gh api comment fetches failed:", claude.errors.length);
+    } else {
+      console.log("Claude reviews skipped — no merged PR list");
+    }
+    issue1180 = collectIssue1180(repo);
+    if (!issue1180.ok) console.warn("#1180 comments skipped:", issue1180.error);
+    else console.log("#1180 comments:", issue1180.comments.length);
   } else {
-    console.log("skip-gh — no merged PR list");
+    console.log("skip-gh — no merged PR list, #1180, or Claude reviews");
   }
 
   const scans = collectDropScans(index);
@@ -422,20 +549,39 @@ async function main() {
   const strandMeta = (dash.strands || []).map((s) => {
     const picked = pickLatestStamp(scans, s.id);
     const lastTestedStamp = (picked && picked.lastTestedStamp) || s.lastTestedStamp || "";
+    const claudeForStrand = claude.reviews.filter((r) => r.strandId === s.id);
+    const claudeHint = claudeForStrand[0] || null;
+    const stamp = lastTestedStamp || (claudeHint && claudeHint.mergeSha) || "";
     return {
       id: s.id,
       name: s.name,
-      lastTestedStamp,
-      lastTestedAt: (picked && picked.lastTestedAt) || null,
-      verdict: (picked && picked.verdict) || s.lastTestedVerdict || "",
-      freshness: freshness(lastTestedStamp, liveTip),
+      lastTestedStamp: stamp,
+      lastTestedAt: (picked && picked.lastTestedAt) || (claudeHint && claudeHint.createdAt) || null,
+      verdict: (picked && picked.verdict) || s.lastTestedVerdict || (claudeHint && claudeHint.verdict) || "",
+      freshness: freshness(stamp, liveTip),
       evidenceDropId: (picked && picked.evidenceDropId) || (s.detailDropIds && s.detailDropIds[0]) || "",
+      claudeReviewCount: claudeForStrand.length,
       basis: s.basis || "",
       percent: s.percent,
     };
   });
 
   const pages = pagesFromScans(scans, liveTip);
+  for (const r of claude.reviews) {
+    pages.push({
+      id: r.id,
+      name: r.excerpt || ("Claude review on #" + r.pr),
+      route: r.path || "",
+      strandId: r.strandId || "",
+      lastTestedStamp: r.mergeSha || "",
+      lastTestedAt: r.createdAt,
+      verdict: r.verdict || "",
+      freshness: freshness(r.mergeSha, liveTip),
+      evidenceDropId: "",
+      evidenceUrl: r.commentUrl || r.prUrl,
+      source: "claude-pr-review",
+    });
+  }
   const staleStrands = strandMeta.filter((s) => s.freshness === "stale").length;
   const currentStrands = strandMeta.filter((s) => s.freshness === "current").length;
   const stalePages = pages.filter((p) => p.freshness === "stale").length;
@@ -455,6 +601,28 @@ async function main() {
       platformRepo: repo,
       mergedPrsError: merged.ok ? null : merged.error,
       dropsScanned: scans.length,
+      issue1180Error: issue1180.ok ? null : issue1180.error,
+      issue1180Comments: issue1180.ok ? issue1180.comments.length : 0,
+      claudeReviewError: claude.errors.length ? claude.errors[0].error : null,
+      claudeReviews: claude.reviews.length,
+      sources: [
+        { id: 1, name: "live /api/version tip", ok: !versionError },
+        { id: 2, name: "merged PRs", ok: merged.ok, count: merged.prs.length },
+        {
+          id: 3,
+          name: "#1180 + hub drops",
+          ok: true,
+          dropsScanned: scans.length,
+          issue1180: issue1180.ok ? issue1180.comments.length : null,
+        },
+        {
+          id: 4,
+          name: "Claude Code PR review comments",
+          ok: !skipGh && (!claude.errors.length || claude.reviews.length > 0),
+          skipped: skipGh,
+          count: claude.reviews.length,
+        },
+      ],
     },
     counts: {
       strands: strandMeta.length,
@@ -462,8 +630,10 @@ async function main() {
       strandsCurrent: currentStrands,
       pages: pages.length,
       pagesStaleVsLiveTip: stalePages,
+      claudeReviews: claude.reviews.length,
     },
     recentMergedPrs: merged.prs,
+    claudeReviews: claude.reviews,
     strands: strandMeta,
     pages,
   };
@@ -474,6 +644,8 @@ async function main() {
     console.log("strands:", strandMeta.length, "stale:", staleStrands, "current:", currentStrands);
     console.log("pages:", pages.length, "stale:", stalePages);
     console.log("merged PRs:", merged.prs.length);
+    console.log("#1180 comments:", issue1180.ok ? issue1180.comments.length : "(skipped)");
+    console.log("Claude reviews:", claude.reviews.length);
     strandMeta.forEach((s) => {
       console.log(`  ${s.id.padEnd(16)} ${s.freshness.padEnd(8)} ${shortSha(s.lastTestedStamp) || "—"}  ${s.verdict || ""}`);
     });

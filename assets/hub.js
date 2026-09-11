@@ -758,7 +758,10 @@
         '<span class="coverage-chip current">' + current + " current</span>" +
         '<span class="coverage-chip stale">' + stale + " stale vs live tip</span>" +
         (none ? '<span class="coverage-chip">' + none + " unstamped</span>" : "") +
-        '<span class="coverage-chip">Coverage sync ≤15m when wired</span>';
+        '<span class="coverage-chip">Coverage sync ≤15m when wired</span>' +
+        (cov && cov.counts && cov.counts.claudeReviews
+          ? '<span class="coverage-chip">' + cov.counts.claudeReviews + " Claude reviews</span>"
+          : "");
     }
     if (!pageGrid) return;
     const pages = ((cov && cov.pages) || []).filter((p) => p.route || (p.verdict && p.lastTestedStamp));
