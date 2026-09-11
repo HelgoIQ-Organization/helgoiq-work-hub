@@ -2329,7 +2329,7 @@
     "in407": true,
     "completeness": "matched",
     "state": "partial",
-    "percentPassed": 40,
+    "percentPassed": 50,
     "percentFailed": null,
     "blockedBy": null,
     "reason": "FAIL",
@@ -2346,7 +2346,7 @@
     ],
     "prUrl": null,
     "issueUrl": null,
-    "progressNote": "Contact+custom waiver label only so far; studio waiver E2E (consent+signature+assign+client+export) in progress"
+    "progressNote": "Studio waiver NO (no signature field); consent+typed name OK; assign UI BLOCKED; submit+CSV PASS"
   },
   {
     "id": "admin-gdpr",
@@ -3669,7 +3669,7 @@
     ],
     "prUrl": null,
     "issueUrl": null,
-    "progressNote": "Public /q verification 11 PASS / 8 FAIL of 19 kinds; Payment form pending Stripe TEST; phone scan NEED_DECLAN",
+    "progressNote": "Public 11/19 PASS; Payment form public PASS, Stripe checkout FAIL (Preparing checkout); phone NEED_DECLAN",
     "coverageFreshness": "fresh"
   },
   {
@@ -6694,7 +6694,7 @@
     ],
     "prUrl": null,
     "issueUrl": null,
-    "progressNote": "Public /q verification 11 PASS / 8 FAIL of 19 kinds; Payment form pending Stripe TEST; phone scan NEED_DECLAN",
+    "progressNote": "Public 11/19 PASS; Payment form public PASS, Stripe checkout FAIL (Preparing checkout); phone NEED_DECLAN",
     "coverageFreshness": "fresh"
   },
   {
