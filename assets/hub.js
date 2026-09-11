@@ -7,9 +7,14 @@
     "report", "checklist", "matrix", "status", "proposal", "evidence", "finding", "pack"
   ];
 
+  const PT_SNAPSHOTS_KEY = "helgoiq-launch-hub-pt-snapshots";
+  const PT_SNAPSHOTS_MAX = 40;
+
   const state = {
     drops: [],
     dashboard: null,
+    liveDashboard: null,
+    ptViewing: null,
     selectedTags: new Set(),
     selectedTypes: new Set(),
     query: "",
@@ -138,21 +143,308 @@
     fill($("prioritiesList"), h.topPriorities);
   }
 
-  function renderProgressToday(dash) {
-    const pt = dash.progressToday;
+  function shortTip(tip) {
+    return String(tip || "").slice(0, 8) || "—";
+  }
+
+  function formatLondonStamp(iso) {
+    try {
+      return new Date(iso).toLocaleString("en-GB", {
+        timeZone: "Europe/London",
+        dateStyle: "medium",
+        timeStyle: "short",
+      });
+    } catch {
+      return iso || "—";
+    }
+  }
+
+  function readLocalPtSnapshots() {
+    try {
+      const raw = localStorage.getItem(PT_SNAPSHOTS_KEY);
+      const arr = raw ? JSON.parse(raw) : [];
+      return Array.isArray(arr) ? arr : [];
+    } catch {
+      return [];
+    }
+  }
+
+  function writeLocalPtSnapshots(arr) {
+    localStorage.setItem(PT_SNAPSHOTS_KEY, JSON.stringify(arr.slice(0, PT_SNAPSHOTS_MAX)));
+  }
+
+  function strandNameMap(dash, extra) {
+    const map = {};
+    if (extra && typeof extra === "object") {
+      Object.keys(extra).forEach((k) => { map[k] = extra[k]; });
+    }
+    (dash && dash.strands ? dash.strands : []).forEach((s) => {
+      if (s && s.id) map[s.id] = s.name || s.id;
+    });
+    return map;
+  }
+
+  function synthesizeProgressToday(dash) {
+    const nowStrands = {};
+    (dash.strands || []).forEach((s) => {
+      if (s && s.id) nowStrands[s.id] = typeof s.percent === "number" ? s.percent : 0;
+    });
+    const headline =
+      (dash.health && typeof dash.health.overallLaunchPercent === "number"
+        ? dash.health.overallLaunchPercent
+        : null) ??
+      (dash.progressToday && dash.progressToday.nowHeadlinePercent) ??
+      0;
+    const morningStrands = Object.assign({}, nowStrands);
+    const deltas = {};
+    Object.keys(nowStrands).forEach((id) => { deltas[id] = 0; });
+    return {
+      morningHeadlinePercent: headline,
+      nowHeadlinePercent: headline,
+      morningStrands,
+      nowStrands,
+      deltas,
+      plainEnglishDay:
+        (dash.health && dash.health.plainSummary) ||
+        "Historical board snapshot — Progress today was synthesized from strand scores in the file.",
+      keptMorningSnapshotPath:
+        (dash.meta && dash.meta.morningSnapshotPath) || null,
+      compareNote: "Synthesized from full dashboard strands (no progressToday block in file).",
+    };
+  }
+
+  function extractProgressToday(dash) {
+    const pt = dash && dash.progressToday;
+    if (pt && (pt.nowStrands || pt.morningStrands || pt.nowHeadlinePercent != null)) {
+      return pt;
+    }
+    return synthesizeProgressToday(dash || {});
+  }
+
+  function buildPtSnapshotPayload(dash) {
+    const pt = extractProgressToday(dash);
+    const names = strandNameMap(dash);
+    const tip = dash.tip || (dash.meta && dash.meta.buildStamp) || "";
+    const overall =
+      (dash.health && dash.health.overallLaunchPercent) ??
+      pt.nowHeadlinePercent ??
+      0;
+    const dataAsOf =
+      (dash.meta && dash.meta.dataAsOf) || dash.updatedAt || new Date().toISOString();
+    return {
+      savedAt: new Date().toISOString(),
+      tip,
+      overallLaunchPercent: overall,
+      dataAsOf,
+      strandNames: names,
+      progressToday: pt,
+    };
+  }
+
+  function localSnapshotLabel(snap) {
+    const when = formatLondonStamp(snap.savedAt || snap.dataAsOf);
+    const tip = shortTip(snap.tip);
+    const pct = Math.round(
+      (snap.progressToday && snap.progressToday.nowHeadlinePercent != null
+        ? snap.progressToday.nowHeadlinePercent
+        : snap.overallLaunchPercent) || 0
+    );
+    return when + " · " + tip + " · " + pct + "%";
+  }
+
+  function setPtViewingBanner(label) {
+    const banner = $("ptViewingBanner");
+    const lab = $("ptViewingLabel");
+    if (!banner || !lab) return;
+    if (label) {
+      lab.textContent = "Viewing a saved snapshot — not the live board — " + label;
+      banner.classList.remove("hidden");
+      state.ptViewing = { label };
+    } else {
+      lab.textContent = "Viewing a saved snapshot — not the live board";
+      banner.classList.add("hidden");
+      state.ptViewing = null;
+    }
+  }
+
+  function downloadPtJson(payload, filename) {
+    const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename || "progress-today-snapshot.json";
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1500);
+  }
+
+  function savePtSnapshot() {
+    const dash = state.liveDashboard || state.dashboard;
+    if (!dash) {
+      showToast("No live board to snapshot yet");
+      return;
+    }
+    const payload = buildPtSnapshotPayload(dash);
+    const arr = readLocalPtSnapshots();
+    arr.unshift(payload);
+    writeLocalPtSnapshots(arr);
+    populatePtSnapshotSelect();
+    showToast("Progress today snapshot saved");
+    if (window.confirm("Also download the JSON file?")) {
+      const stamp = (payload.savedAt || "").replace(/[:.]/g, "-");
+      downloadPtJson(payload, "helgoiq-pt-snapshot-" + stamp + ".json");
+    }
+  }
+
+  function applyPtOverlay(progressToday, strandNames, viewingLabel) {
+    const live = state.liveDashboard || state.dashboard;
+    if (!live) return;
+    const overlayDash = {
+      strands: live.strands,
+      progressToday,
+    };
+    renderProgressToday(overlayDash, {
+      progressToday,
+      strandNames,
+      viewingLabel,
+    });
+  }
+
+  async function onPtSnapshotSelect() {
+    const sel = $("ptSnapshotSelect");
+    if (!sel) return;
+    const val = sel.value;
+    if (!val) return;
+    if (val.startsWith("local:")) {
+      const idx = parseInt(val.slice(6), 10);
+      const arr = readLocalPtSnapshots();
+      const snap = arr[idx];
+      if (!snap || !snap.progressToday) {
+        showToast("That local snapshot is missing");
+        sel.value = "";
+        return;
+      }
+      const label = localSnapshotLabel(snap);
+      applyPtOverlay(snap.progressToday, snap.strandNames, label);
+      return;
+    }
+    if (val.startsWith("history:")) {
+      const path = val.slice("history:".length);
+      try {
+        const res = await fetch(path);
+        if (!res.ok) throw new Error("HTTP " + res.status);
+        const dash = await res.json();
+        const pt = extractProgressToday(dash);
+        const names = strandNameMap(dash);
+        const fileLabel = path.split("/").pop() || path;
+        applyPtOverlay(pt, names, fileLabel);
+      } catch (err) {
+        console.error(err);
+        showToast("Could not open that history file");
+        sel.value = "";
+      }
+    }
+  }
+
+  function backToLivePt() {
+    const live = state.liveDashboard || state.dashboard;
+    if (!live) return;
+    setPtViewingBanner(null);
+    const sel = $("ptSnapshotSelect");
+    if (sel) sel.value = "";
+    renderProgressToday(live);
+  }
+
+  async function populatePtSnapshotSelect() {
+    const sel = $("ptSnapshotSelect");
+    if (!sel) return;
+    const prev = sel.value;
+    sel.innerHTML = "";
+    const ph = document.createElement("option");
+    ph.value = "";
+    ph.textContent = "Open a saved snapshot…";
+    sel.appendChild(ph);
+
+    const local = readLocalPtSnapshots();
+    if (local.length) {
+      const group = document.createElement("optgroup");
+      group.label = "Your saved snapshots";
+      local.forEach((snap, i) => {
+        const opt = document.createElement("option");
+        opt.value = "local:" + i;
+        opt.textContent = localSnapshotLabel(snap);
+        group.appendChild(opt);
+      });
+      sel.appendChild(group);
+    }
+
+    try {
+      const res = await fetch("history/index.json");
+      if (res.ok) {
+        const idx = await res.json();
+        const files = (idx && idx.files) || [];
+        if (files.length) {
+          const group = document.createElement("optgroup");
+          group.label = "History files";
+          files.forEach((f) => {
+            const opt = document.createElement("option");
+            opt.value = "history:" + f.path;
+            opt.textContent = f.label || (f.path && f.path.split("/").pop()) || f.path;
+            group.appendChild(opt);
+          });
+          sel.appendChild(group);
+        }
+      }
+    } catch (err) {
+      console.warn("history/index.json not available", err);
+    }
+
+    if (prev && [...sel.options].some((o) => o.value === prev)) sel.value = prev;
+  }
+
+  function wirePtSnapshotControls() {
+    const saveBtn = $("ptSaveSnapshot");
+    if (saveBtn) saveBtn.addEventListener("click", savePtSnapshot);
+    const sel = $("ptSnapshotSelect");
+    if (sel) sel.addEventListener("change", onPtSnapshotSelect);
+    const back = $("ptBackToLive");
+    if (back) back.addEventListener("click", backToLivePt);
+  }
+
+  function renderProgressToday(dash, opts) {
+    opts = opts || {};
+    const pt = opts.progressToday || (dash && dash.progressToday);
     const section = $("progressToday");
     if (!pt || !section) {
       if (section) section.classList.add("hidden");
       return;
     }
     section.classList.remove("hidden");
+
+    if (opts.viewingLabel) setPtViewingBanner(opts.viewingLabel);
+    else if (!state.ptViewing) setPtViewingBanner(null);
+
     $("morningHeadline").textContent = Math.round(pt.morningHeadlinePercent || 0) + "%";
     $("nowHeadline").textContent = Math.round(pt.nowHeadlinePercent || 0) + "%";
     $("plainEnglishDay").textContent = pt.plainEnglishDay || "";
+
     const link = $("morningSnapshotLink");
-    if (link && pt.keptMorningSnapshotPath) {
-      link.href = pt.keptMorningSnapshotPath;
+    const morningPath =
+      pt.keptMorningSnapshotPath ||
+      (dash && dash.meta && dash.meta.morningSnapshotPath) ||
+      ((state.liveDashboard || state.dashboard) &&
+        (state.liveDashboard || state.dashboard).progressToday &&
+        (state.liveDashboard || state.dashboard).progressToday.keptMorningSnapshotPath);
+    if (link) {
+      if (morningPath) {
+        link.href = morningPath;
+        link.classList.remove("hidden");
+      } else {
+        link.classList.add("hidden");
+      }
     }
+
     const sub = $("progressTodaySub");
     if (sub) {
       const delta = Math.round((pt.nowHeadlinePercent || 0) - (pt.morningHeadlinePercent || 0));
@@ -160,15 +452,17 @@
       sub.textContent =
         "Morning board vs now (" + sign + delta + " pts headline). Afternoon merges may still be waiting on the live tip — check the data stamp.";
     }
+
     const bars = $("progressTodayBars");
     bars.innerHTML = "";
     const morning = pt.morningStrands || {};
     const now = pt.nowStrands || {};
     const deltas = pt.deltas || {};
+    const nameById = strandNameMap(dash, opts.strandNames);
     const order = (dash.strands || []).map((s) => s.id);
-    const ids = order.length ? order : Object.keys(now);
-    const nameById = {};
-    (dash.strands || []).forEach((s) => { nameById[s.id] = s.name; });
+    const ids = order.length
+      ? order
+      : Object.keys(Object.assign({}, morning, now, nameById));
     ids.forEach((id) => {
       const m = morning[id] != null ? morning[id] : 0;
       const n = now[id] != null ? now[id] : 0;
@@ -659,6 +953,7 @@
   }
 
   async function init() {
+    wirePtSnapshotControls();
     $("closeViewer").addEventListener("click", () => closeViewer(true));
     $("copyMdBtn").addEventListener("click", () => {
       if (!state.activeMarkdown) {
@@ -705,11 +1000,13 @@
       const updated = data.updatedAt;
       if (dashRes.ok) {
         state.dashboard = await dashRes.json();
+        state.liveDashboard = state.dashboard;
         renderHero(state.dashboard);
         renderProgressToday(state.dashboard);
         renderPhases(state.dashboard);
         renderStrands(state.dashboard);
         renderActions(state.dashboard);
+        populatePtSnapshotSelect();
         const metaAsOf = (state.dashboard.meta && state.dashboard.meta.dataAsOf) || state.dashboard.updatedAt;
         if (metaAsOf) {
           $("updatedAt").textContent = "Updated " + formatDate(metaAsOf);

@@ -59,6 +59,8 @@ git commit -m "…" && git push origin main
 
 ### Snapshot history
 
+- After adding or renaming `history/*.json`, rebuild the Progress today picker index:
+  `node scripts/build-history-index.mjs` (writes `history/index.json`; skips `latest.json`).
 - Keep `history/YYYY-MM-DD-morning.json` (or equivalent) when Declan saw a morning board.
 - Always write `history/latest.json` after a rebuild.
 - Keep the previous calendar day for compare.
