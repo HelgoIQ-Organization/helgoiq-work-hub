@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-11T19:12:10.100Z",
+  "updatedAt": "2026-09-11T19:16:36.923Z",
   "drops": [
+    {
+      "id": "2026-09-11-acs-f01-pass-teacher-2-tip-a73ff70",
+      "title": "ACS-F01 PASS Teacher 2 tip a73ff70",
+      "date": "2026-09-11",
+      "summary": "ACS-F01 PASS: Teacher 2 present on staff availability roster at tip a73ff70",
+      "plainEnglish": "ACS-F01 PASS: Teacher 2 present on staff availability roster at tip a73ff70",
+      "tags": [
+        "findings",
+        "command-centre"
+      ],
+      "type": "finding",
+      "project": "helgoiq-afternoon-2026-09-11",
+      "paths": [
+        "drops/2026-09-11-acs-f01-pass-teacher-2-tip-a73ff70/RESULTS.md"
+      ],
+      "tip": "a73ff70b266057f226bb02c5f3112f72a92ad53d"
+    },
     {
       "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
       "title": "Owner negative half 22P/5F tip a73ff70 (correct roadmap FAIL)",
