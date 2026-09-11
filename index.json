@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-11T05:32:02.174Z",
+  "updatedAt": "2026-09-11T06:14:02.080Z",
   "drops": [
+    {
+      "id": "2026-09-11-launch-hub-tip-a263c4ab-live-morning-merge-pack-",
+      "title": "Launch Hub tip a263c4ab live — morning merge pack (~65%)",
+      "date": "2026-09-11",
+      "summary": "Staging tip moved 232659cf→a263c4ab with invite/booking/Twin/Insights/isolation/CI packs; overnight Measured held; headline ~65%; rollback ban ACTIVE",
+      "plainEnglish": "Staging tip moved 232659cf→a263c4ab with invite/booking/Twin/Insights/isolation/CI packs; overnight Measured held; headline ~65%; rollback ban ACTIVE",
+      "tags": [
+        "status",
+        "findings",
+        "command-centre"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-launch-hub-tip-a263c4ab-live-morning-merge-pack-/SUMMARY.md"
+      ],
+      "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4"
+    },
     {
       "id": "2026-09-11-declan-blockers-clear",
       "title": "Declan blockers clear vs Engineering queue",
