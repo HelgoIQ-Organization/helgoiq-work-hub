@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-11T08:17:27.739Z",
+  "updatedAt": "2026-09-11T08:56:30.570Z",
   "drops": [
+    {
+      "id": "2026-09-11-m1-retest-1252-pass-unfreeze-fail",
+      "title": "M1 retest — #1252 PASS, unfreeze FAIL",
+      "date": "2026-09-11",
+      "summary": "M1 retest tip a263c4ab: #1252 signed-out booker return PASS; unfreeze FAIL (payment provider); waitlist/upgrade-downgrade BLOCKED; active member prep PASS. No passwords.",
+      "plainEnglish": "Retested M1 on tip a263c4ab. Returning to a class after login works (#1252). Unfreezing a paused membership still fails at the payment provider. Waitlist and upgrade/downgrade could not be rechecked.",
+      "tags": [
+        "m1",
+        "findings",
+        "booking"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-m1-retest-1252-pass-unfreeze-fail/M1-RETEST.md"
+      ],
+      "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4"
+    },
     {
       "id": "2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr",
       "title": "Morning invite E2E — consumed PASS, fresh invite create FAIL",
