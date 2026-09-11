@@ -83,7 +83,10 @@
       ],
       "phaseId": "data-foundation",
       "projectWeightPercent": 12,
-      "measuredNote": "Prior tip 232659cf canary: preview OK; upload Missing companyId 403; 0 members; no rollback used. New tip a263c4ab not re-canaried yet. Ban lifted — prefer avoid rollback; company-scoped batchId only."
+      "measuredNote": "Prior tip 232659cf canary: preview OK; upload Missing companyId 403; 0 members; no rollback used. New tip a263c4ab not re-canaried yet. Ban lifted — prefer avoid rollback; company-scoped batchId only.",
+      "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+      "lastTestedVerdict": "FAIL",
+      "coverageFreshness": "stale"
     },
     {
       "id": "command-centre",
@@ -105,7 +108,10 @@
       ],
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
-      "measuredNote": "Cluster A on a263c4ab: 22/24 PASS; fails ACS-F01 ACS-C01; Teacher2 MGR-10/ACS-X01 PASS; B–F locked."
+      "measuredNote": "Cluster A on a263c4ab: 22/24 PASS; fails ACS-F01 ACS-C01; Teacher2 MGR-10/ACS-X01 PASS; B–F locked.",
+      "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+      "coverageFreshness": "stale",
+      "lastTestedVerdict": "FAIL"
     },
     {
       "id": "isolation",
@@ -128,7 +134,10 @@
       ],
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
-      "measuredNote": "Prior tip 232659cf ISO-29 complete: 26/4/2. #1250 on a263c4ab not yet re-measured."
+      "measuredNote": "Prior tip 232659cf ISO-29 complete: 26/4/2. #1250 on a263c4ab not yet re-measured.",
+      "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+      "lastTestedVerdict": "FAIL",
+      "coverageFreshness": "stale"
     },
     {
       "id": "ai-85",
@@ -151,7 +160,10 @@
         "2026-09-09-ai85"
       ],
       "phaseId": "intelligence",
-      "projectWeightPercent": 15
+      "projectWeightPercent": 15,
+      "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+      "lastTestedVerdict": "UNREACHABLE",
+      "coverageFreshness": "stale"
     },
     {
       "id": "ambient",
@@ -173,7 +185,10 @@
       ],
       "phaseId": "intelligence",
       "projectWeightPercent": 9,
-      "measuredNote": "Prior tip 232659cf ambient evidence held. New tip a263c4ab Twin/Insights packs await re-evidence."
+      "measuredNote": "Prior tip 232659cf ambient evidence held. New tip a263c4ab Twin/Insights packs await re-evidence.",
+      "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+      "lastTestedVerdict": "FAIL",
+      "coverageFreshness": "stale"
     },
     {
       "id": "m1",
@@ -201,7 +216,10 @@
       ],
       "phaseId": "member-commerce",
       "projectWeightPercent": 10,
-      "measuredNote": "Wave1 on 232659cf held. Invite/booking fixes on a263c4ab not re-measured."
+      "measuredNote": "Wave1 on 232659cf held. Invite/booking fixes on a263c4ab not re-measured.",
+      "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+      "lastTestedVerdict": "FAIL",
+      "coverageFreshness": "stale"
     },
     {
       "id": "smoke",
@@ -222,7 +240,10 @@
       ],
       "phaseId": "member-commerce",
       "projectWeightPercent": 6,
-      "measuredNote": "Morning 2026-09-11 tip a263c4ab smoke-2: 4/6 PASS (invite, book, reverse, evidence); FAIL HELGOBIRD + late-cancel credit. Prior overnight 232659cf was 6/6."
+      "measuredNote": "Morning 2026-09-11 tip a263c4ab smoke-2: 4/6 PASS (invite, book, reverse, evidence); FAIL HELGOBIRD + late-cancel credit. Prior overnight 232659cf was 6/6.",
+      "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+      "lastTestedVerdict": "FAIL",
+      "coverageFreshness": "stale"
     },
     {
       "id": "payments",
@@ -242,7 +263,10 @@
         "2026-09-10-status-claude"
       ],
       "phaseId": "member-commerce",
-      "projectWeightPercent": 8
+      "projectWeightPercent": 8,
+      "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+      "lastTestedVerdict": "FAIL",
+      "coverageFreshness": "stale"
     },
     {
       "id": "findings-fix",
@@ -273,7 +297,10 @@
         "2026-09-10-cluster-a-20-24-tip-232659cf"
       ],
       "phaseId": "launch-hardening",
-      "projectWeightPercent": 10
+      "projectWeightPercent": 10,
+      "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+      "lastTestedVerdict": "FAIL",
+      "coverageFreshness": "stale"
     },
     {
       "id": "comms",
@@ -288,7 +315,9 @@
       ],
       "detailDropIds": [],
       "phaseId": "communications",
-      "projectWeightPercent": 10
+      "projectWeightPercent": 10,
+      "lastTestedStamp": "",
+      "coverageFreshness": "untested"
     }
   ],
   "health": {

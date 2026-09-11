@@ -10,14 +10,35 @@
   const PT_SNAPSHOTS_KEY = "helgoiq-launch-hub-pt-snapshots";
   const PT_SNAPSHOTS_MAX = 40;
 
+  const VIEWS = ["dashboard", "tracker", "drops"];
+  const AGE_BUCKETS = [
+    { id: "today", label: "Today", maxDays: 0 },
+    { id: "1-3d", label: "1–3 days", maxDays: 3 },
+    { id: "4-7d", label: "4–7 days", maxDays: 7 },
+    { id: "8-14d", label: "8–14 days", maxDays: 14 },
+    { id: "15d+", label: "15+ days", maxDays: Infinity },
+  ];
+
   const state = {
     drops: [],
     dashboard: null,
     liveDashboard: null,
+    coverage: null,
+    tracker: null,
     ptViewing: null,
     selectedTags: new Set(),
     selectedTypes: new Set(),
     query: "",
+    view: "dashboard",
+    trackerGroup: "state",
+    trackerQuery: "",
+    trackerOpenId: null,
+    trackerFilters: {
+      state: new Set(),
+      area: new Set(),
+      builder: new Set(),
+      age: new Set(),
+    },
     activeDrop: null,
     activePath: null,
     activeMarkdown: "",
@@ -100,6 +121,74 @@
   /* —— Dashboard render —— */
   function shortSha(sha) {
     return String(sha || "").slice(0, 8) || "—";
+  }
+
+  function normSha(sha) {
+    return String(sha || "").toLowerCase().replace(/[^a-f0-9]/g, "");
+  }
+
+  function shaMatch(a, b) {
+    const x = normSha(a);
+    const y = normSha(b);
+    if (!x || !y) return false;
+    const n = Math.min(x.length, y.length);
+    if (n < 7) return x === y;
+    return x.slice(0, n) === y.slice(0, n) || x.startsWith(y) || y.startsWith(x);
+  }
+
+  function liveTipFrom(dash, coverage) {
+    return (
+      (coverage && coverage.liveTip) ||
+      (dash && dash.tip) ||
+      (dash && dash.meta && (dash.meta.liveTip || dash.meta.buildStamp)) ||
+      ""
+    );
+  }
+
+  function strandCoverage(strand) {
+    const cov = state.coverage;
+    const live = liveTipFrom(state.dashboard, cov);
+    const fromCov = cov && (cov.strands || []).find((x) => x.id === strand.id);
+    const stamp =
+      (fromCov && fromCov.lastTestedStamp) ||
+      strand.lastTestedStamp ||
+      "";
+    const freshness =
+      (fromCov && fromCov.freshness) ||
+      strand.coverageFreshness ||
+      (stamp ? (shaMatch(stamp, live) ? "current" : "stale") : "untested");
+    return {
+      lastTestedStamp: stamp,
+      freshness,
+      verdict: (fromCov && fromCov.verdict) || strand.lastTestedVerdict || "",
+      evidenceDropId: (fromCov && fromCov.evidenceDropId) || "",
+    };
+  }
+
+  function covLabel(freshness, stamp) {
+    const sha = shortSha(stamp);
+    if (freshness === "current") return "Current · " + sha;
+    if (freshness === "stale") return "Stale vs live tip · " + sha;
+    if (freshness === "untested") return "No test stamp";
+    return stamp ? "Tested " + sha : "No test stamp";
+  }
+
+  function showView(name) {
+    const next = VIEWS.includes(name) ? name : "dashboard";
+    state.view = next;
+    VIEWS.forEach((v) => {
+      const el = $("view-" + v);
+      const tab = $("tab-" + v);
+      const on = v === next;
+      if (el) {
+        el.classList.toggle("hidden", !on);
+        el.hidden = !on;
+      }
+      if (tab) {
+        tab.setAttribute("aria-selected", on ? "true" : "false");
+        tab.classList.toggle("active", on);
+      }
+    });
   }
 
   function renderHero(dash) {
@@ -514,6 +603,7 @@
       btn.className = "strand-card";
       btn.id = "strand-" + s.id;
       const basis = (s.basis || "estimate").toLowerCase();
+      const cov = strandCoverage(s);
       btn.innerHTML =
         '<div class="strand-badges">' +
         '<span class="status ' + statusClass(s.status) + '">' + escapeHtml(statusLabel(s.status)) + "</span>" +
@@ -522,7 +612,11 @@
         '<div class="pct">' + Math.round(s.percent || 0) + "%</div>" +
         '<div class="name">' + escapeHtml(s.name) + "</div>" +
         '<p class="note">' + escapeHtml(s.progressNote || "") + " · " +
-        escapeHtml(String(s.projectWeightPercent)) + "% of project</p>";
+        escapeHtml(String(s.projectWeightPercent)) + "% of project</p>" +
+        '<div class="cov-stamp ' + escapeHtml(cov.freshness) + '" title="lastTestedStamp vs live tip">' +
+        escapeHtml(covLabel(cov.freshness, cov.lastTestedStamp)) +
+        (cov.verdict ? " · " + escapeHtml(cov.verdict) : "") +
+        "</div>";
       btn.addEventListener("click", () => openStrand(s.id));
       el.appendChild(btn);
     });
@@ -639,6 +733,64 @@
 
     fillActionGrid(declanEl, declan);
     fillActionGrid(engEl, engineering);
+    renderCoverage(dash);
+  }
+
+  function renderCoverage(dash) {
+    const strip = $("coverageStrip");
+    const pageGrid = $("pageGrid");
+    const cov = state.coverage;
+    const live = liveTipFrom(dash, cov);
+    if (strip) {
+      const strands = (dash && dash.strands) || [];
+      let stale = 0;
+      let current = 0;
+      let none = 0;
+      strands.forEach((s) => {
+        const f = strandCoverage(s).freshness;
+        if (f === "stale") stale += 1;
+        else if (f === "current") current += 1;
+        else none += 1;
+      });
+      strip.hidden = false;
+      strip.innerHTML =
+        '<span class="coverage-chip">Live tip ' + escapeHtml(shortSha(live)) + "</span>" +
+        '<span class="coverage-chip current">' + current + " current</span>" +
+        '<span class="coverage-chip stale">' + stale + " stale vs live tip</span>" +
+        (none ? '<span class="coverage-chip">' + none + " unstamped</span>" : "") +
+        '<span class="coverage-chip">Coverage sync ≤15m when wired</span>';
+    }
+    if (!pageGrid) return;
+    const pages = ((cov && cov.pages) || []).filter((p) => p.route || (p.verdict && p.lastTestedStamp));
+    const preferRoutes = pages.filter((p) => p.id && String(p.id).startsWith("route:"));
+    const list = (preferRoutes.length ? preferRoutes : pages).slice(0, 36);
+    pageGrid.innerHTML = "";
+    if (!list.length) {
+      pageGrid.innerHTML = '<p class="muted">No page stamps yet — run <code>node scripts/sync-coverage.mjs</code>.</p>';
+      return;
+    }
+    list.forEach((p) => {
+      const card = document.createElement("article");
+      card.className = "page-card " + (p.freshness || "");
+      card.innerHTML =
+        '<p class="page-name">' + escapeHtml(p.name || p.route || p.id) + "</p>" +
+        (p.route ? '<p class="page-route">' + escapeHtml(p.route) + "</p>" : "") +
+        '<div class="cov-stamp ' + escapeHtml(p.freshness || "") + '">' +
+        escapeHtml(covLabel(p.freshness, p.lastTestedStamp)) +
+        (p.verdict ? " · " + escapeHtml(p.verdict) : "") +
+        "</div>";
+      if (p.evidenceDropId) {
+        card.style.cursor = "pointer";
+        card.addEventListener("click", () => {
+          const drop = state.drops.find((d) => d.id === p.evidenceDropId);
+          if (drop) {
+            showView("drops");
+            openDrop(drop, true);
+          }
+        });
+      }
+      pageGrid.appendChild(card);
+    });
   }
 
   function openStrand(id) {
@@ -656,6 +808,20 @@
     $("strandBar").style.width = (s.percent || 0) + "%";
     $("strandPct").textContent = Math.round(s.percent || 0) + "%";
     $("strandSummary").textContent = s.plainSummary || "";
+    const stampEl = $("strandStamp");
+    if (stampEl) {
+      const cov = strandCoverage(s);
+      const live = shortSha(liveTipFrom(state.dashboard, state.coverage));
+      stampEl.textContent =
+        "Last tested " +
+        (shortSha(cov.lastTestedStamp) !== "—" ? shortSha(cov.lastTestedStamp) : "—") +
+        " · " +
+        covLabel(cov.freshness, cov.lastTestedStamp) +
+        " · live tip " +
+        live +
+        (cov.verdict ? " · " + cov.verdict : "");
+      stampEl.className = "strand-stamp cov-stamp " + cov.freshness;
+    }
     $("strandProgress").textContent = s.progressNote || "";
     const ul = $("strandBlockers");
     ul.innerHTML = "";
@@ -932,21 +1098,324 @@
     }
   }
 
+  function itemAgeDays(item) {
+    const iso = item.openedAt || item.updatedAt;
+    if (!iso) return 0;
+    const t = new Date(iso).getTime();
+    if (Number.isNaN(t)) return 0;
+    return Math.max(0, Math.floor((Date.now() - t) / 86400000));
+  }
+
+  function ageBucket(item) {
+    const days = itemAgeDays(item);
+    if (days <= 0) return AGE_BUCKETS[0];
+    return AGE_BUCKETS.find((b) => days <= b.maxDays) || AGE_BUCKETS[AGE_BUCKETS.length - 1];
+  }
+
+  function trackerItems() {
+    return (state.tracker && state.tracker.items) || [];
+  }
+
+  function matchesTracker(item) {
+    const f = state.trackerFilters;
+    if (f.state.size && !f.state.has(item.state)) return false;
+    if (f.area.size && !f.area.has(item.area)) return false;
+    if (f.builder.size && !f.builder.has(item.builder)) return false;
+    if (f.age.size && !f.age.has(ageBucket(item).id)) return false;
+    const q = state.trackerQuery.trim().toLowerCase();
+    if (!q) return true;
+    const hay = [item.title, item.summary, item.area, item.builder, item.state, item.id]
+      .join(" ")
+      .toLowerCase();
+    return hay.includes(q);
+  }
+
+  function groupKey(item) {
+    const g = state.trackerGroup;
+    if (g === "area") return item.area || "unspecified";
+    if (g === "builder") return item.builder || "unassigned";
+    if (g === "age") return ageBucket(item).label;
+    return item.state || "open";
+  }
+
+  function groupOrder() {
+    if (state.trackerGroup === "state") return ["blocked", "open", "in-progress", "done", "wontfix"];
+    if (state.trackerGroup === "age") return AGE_BUCKETS.map((b) => b.label);
+    return [];
+  }
+
+  function renderTrackerChips() {
+    const items = trackerItems();
+    const unique = (key) => [...new Set(items.map((i) => i[key]).filter(Boolean))].sort();
+    function fill(elId, values, filterKey, labels) {
+      const el = $(elId);
+      if (!el) return;
+      el.innerHTML = "";
+      values.forEach((v) => {
+        const label = (labels && labels[v]) || v;
+        el.appendChild(
+          chip(label, state.trackerFilters[filterKey].has(v), () => {
+            const set = state.trackerFilters[filterKey];
+            if (set.has(v)) set.delete(v);
+            else set.add(v);
+            renderTrackerChips();
+            renderTracker();
+          })
+        );
+        const last = el.lastChild;
+        if (last && label !== v) last.dataset.value = v;
+      });
+    }
+    fill("trackerStateChips", unique("state"), "state");
+    fill("trackerAreaChips", unique("area"), "area");
+    fill("trackerBuilderChips", unique("builder"), "builder");
+    fill(
+      "trackerAgeChips",
+      AGE_BUCKETS.map((b) => b.id),
+      "age",
+      Object.fromEntries(AGE_BUCKETS.map((b) => [b.id, b.label]))
+    );
+  }
+
+  function followEvidence(url) {
+    if (!url) return;
+    if (url.startsWith("#drop-")) {
+      const id = url.slice("#drop-".length);
+      const d = state.drops.find((x) => x.id === id);
+      showView("drops");
+      if (d) openDrop(d, true);
+      else location.hash = "drop-" + id;
+      return;
+    }
+    if (url.startsWith("#action-") || url.startsWith("#strand-")) {
+      showView("dashboard");
+      location.hash = url.slice(1);
+      applyHash();
+      return;
+    }
+    if (/^https?:\/\//i.test(url)) {
+      window.open(url, "_blank", "noopener");
+      return;
+    }
+    window.open(url, "_blank", "noopener");
+  }
+
+  function renderTracker() {
+    const banner = $("trackerBanner");
+    const stats = $("trackerStats");
+    const board = $("trackerBoard");
+    const count = $("trackerCount");
+    const data = state.tracker;
+    if (!board) return;
+
+    const bannerText = (data && (data.banner || (data.blocked && data.blocked.reason))) || "";
+    if (banner) {
+      if (bannerText) {
+        banner.hidden = false;
+        banner.textContent = bannerText;
+      } else {
+        banner.hidden = true;
+        banner.textContent = "";
+      }
+    }
+
+    const all = trackerItems();
+    const list = all.filter(matchesTracker);
+    const byState = {};
+    all.forEach((i) => {
+      byState[i.state] = (byState[i.state] || 0) + 1;
+    });
+    if (stats) {
+      const keys = ["blocked", "open", "in-progress", "done"];
+      stats.innerHTML = keys
+        .map((k) => {
+          return (
+            '<div class="tracker-stat"><span class="n">' +
+            (byState[k] || 0) +
+            '</span><span class="l">' +
+            escapeHtml(k) +
+            "</span></div>"
+          );
+        })
+        .join("");
+    }
+    if (count) {
+      count.textContent =
+        list.length +
+        " shown · " +
+        all.length +
+        " total" +
+        (data && data.source ? " · source " + data.source : "") +
+        (data && data.live === false ? " · seed / not live" : "");
+    }
+
+    const groups = new Map();
+    list.forEach((item) => {
+      const key = groupKey(item);
+      if (!groups.has(key)) groups.set(key, []);
+      groups.get(key).push(item);
+    });
+    const order = groupOrder();
+    const keys = [
+      ...order.filter((k) => groups.has(k)),
+      ...[...groups.keys()].filter((k) => !order.includes(k)).sort(),
+    ];
+
+    board.innerHTML = "";
+    if (!list.length) {
+      board.innerHTML = '<div class="tracker-empty">No tracker rows match these filters.</div>';
+      return;
+    }
+    keys.forEach((key) => {
+      const items = groups.get(key) || [];
+      const wrap = document.createElement("section");
+      wrap.className = "tracker-group";
+      wrap.innerHTML =
+        '<header class="tracker-group-head"><h3>' +
+        escapeHtml(key) +
+        '</h3><span class="n">' +
+        items.length +
+        "</span></header>";
+      items
+        .slice()
+        .sort((a, b) => String(b.updatedAt || "").localeCompare(String(a.updatedAt || "")))
+        .forEach((item) => {
+          const row = document.createElement("button");
+          row.type = "button";
+          row.className = "tracker-row" + (state.trackerOpenId === item.id ? " open" : "");
+          row.id = "tracker-" + item.id;
+          const days = itemAgeDays(item);
+          const evidence = item.evidence || [];
+          row.innerHTML =
+            "<div><p class='title'>" +
+            escapeHtml(item.title) +
+            "</p><p class='blurb'>" +
+            escapeHtml(item.summary || "") +
+            "</p></div>" +
+            '<div class="tracker-meta">' +
+            '<span class="trk-pill state-' +
+            escapeHtml(item.state || "") +
+            '">' +
+            escapeHtml(item.state || "") +
+            "</span>" +
+            '<span class="trk-pill">' +
+            escapeHtml(item.area || "") +
+            "</span>" +
+            '<span class="trk-pill">' +
+            escapeHtml(item.builder || "") +
+            "</span>" +
+            '<span class="trk-pill">' +
+            days +
+            "d</span>" +
+            (item.seed ? '<span class="trk-pill seed">seed</span>' : "") +
+            "</div>" +
+            '<div class="tracker-evidence"></div>';
+          const ev = row.querySelector(".tracker-evidence");
+          if (!evidence.length) {
+            const p = document.createElement("p");
+            p.className = "muted";
+            p.textContent = "No evidence links on this seed row.";
+            ev.appendChild(p);
+          } else {
+            evidence.forEach((e) => {
+              const a = document.createElement("button");
+              a.type = "button";
+              a.textContent = e.label || e.url;
+              a.addEventListener("click", (evt) => {
+                evt.stopPropagation();
+                followEvidence(e.url);
+              });
+              ev.appendChild(a);
+            });
+          }
+          if (item.githubIssue && !evidence.some((e) => e.url === item.githubIssue)) {
+            const a = document.createElement("button");
+            a.type = "button";
+            a.textContent = "GitHub issue";
+            a.addEventListener("click", (evt) => {
+              evt.stopPropagation();
+              followEvidence(item.githubIssue);
+            });
+            ev.appendChild(a);
+          }
+          row.addEventListener("click", () => {
+            state.trackerOpenId = state.trackerOpenId === item.id ? null : item.id;
+            renderTracker();
+          });
+          wrap.appendChild(row);
+        });
+      board.appendChild(wrap);
+    });
+  }
+
+  function wireTracker() {
+    document.querySelectorAll(".tracker-group-by [data-group]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        state.trackerGroup = btn.getAttribute("data-group") || "state";
+        document.querySelectorAll(".tracker-group-by [data-group]").forEach((b) => {
+          b.setAttribute("aria-pressed", b === btn ? "true" : "false");
+        });
+        renderTracker();
+      });
+    });
+    const search = $("trackerSearch");
+    if (search) {
+      search.addEventListener("input", (e) => {
+        state.trackerQuery = e.target.value;
+        renderTracker();
+      });
+    }
+    const clear = $("trackerClear");
+    if (clear) {
+      clear.addEventListener("click", () => {
+        state.trackerFilters.state.clear();
+        state.trackerFilters.area.clear();
+        state.trackerFilters.builder.clear();
+        state.trackerFilters.age.clear();
+        state.trackerQuery = "";
+        if (search) search.value = "";
+        renderTrackerChips();
+        renderTracker();
+      });
+    }
+  }
+
   function applyHash() {
     const raw = (location.hash || "").replace(/^#/, "");
-    if (!raw) return;
+    if (!raw) {
+      showView("dashboard");
+      return;
+    }
+    if (raw === "tracker" || raw.startsWith("tracker-")) {
+      showView("tracker");
+      if (raw.startsWith("tracker-")) {
+        state.trackerOpenId = raw.slice("tracker-".length);
+        renderTracker();
+        const el = document.getElementById(raw);
+        if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+      return;
+    }
     if (raw.startsWith("strand-")) {
+      showView("dashboard");
       openStrand(raw.slice("strand-".length));
     } else if (raw.startsWith("action-")) {
+      showView("dashboard");
       closeStrand(false);
       closeViewer(false);
       const el = document.getElementById(raw);
       if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
     } else if (raw.startsWith("drop-")) {
+      showView("drops");
       const id = raw.slice("drop-".length);
       const d = state.drops.find((x) => x.id === id);
       if (d) openDrop(d, false);
-    } else if (raw === "drops" || raw === "dashboard") {
+    } else if (raw === "drops") {
+      showView("drops");
+      const el = document.getElementById(raw);
+      if (el) el.scrollIntoView({ behavior: "smooth" });
+    } else if (raw === "dashboard" || raw === "pageCoverage") {
+      showView("dashboard");
       const el = document.getElementById(raw);
       if (el) el.scrollIntoView({ behavior: "smooth" });
     }
@@ -954,6 +1423,7 @@
 
   async function init() {
     wirePtSnapshotControls();
+    wireTracker();
     $("closeViewer").addEventListener("click", () => closeViewer(true));
     $("copyMdBtn").addEventListener("click", () => {
       if (!state.activeMarkdown) {
@@ -990,14 +1460,32 @@
     window.addEventListener("hashchange", applyHash);
 
     try {
-      const [idxRes, dashRes] = await Promise.all([
+      const [idxRes, dashRes, covRes, trkRes] = await Promise.all([
         fetch("index.json"),
         fetch("dashboard.json"),
+        fetch("coverage.json"),
+        fetch("tracker/items.json"),
       ]);
       if (!idxRes.ok) throw new Error("index.json " + idxRes.status);
       const data = await idxRes.json();
       state.drops = data.drops || [];
       const updated = data.updatedAt;
+      if (covRes.ok) {
+        try {
+          state.coverage = await covRes.json();
+        } catch (err) {
+          console.warn("coverage.json parse failed", err);
+        }
+      }
+      if (trkRes.ok) {
+        try {
+          state.tracker = await trkRes.json();
+        } catch (err) {
+          console.warn("tracker/items.json parse failed", err);
+        }
+      }
+      renderTrackerChips();
+      renderTracker();
       if (dashRes.ok) {
         state.dashboard = await dashRes.json();
         state.liveDashboard = state.dashboard;

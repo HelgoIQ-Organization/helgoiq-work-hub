@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "schema": {
+    "description": "HelgoIQ Work Hub tracker board. Static JSON consumed by the Tracker tab. Not a live GitHub Projects dump.",
+    "sourcePriority": [
+      "TRACKER_EXPORT.json (optional local export; preferred)",
+      "gh issues labeled tracker and/or findings (optional; no secrets in repo)",
+      "this seeded example set (default while live sync is blocked)"
+    ],
+    "itemFields": {
+      "id": "stable string id (trk-… or issue-N)",
+      "title": "short board title",
+      "state": "open | in-progress | blocked | done | wontfix",
+      "area": "isolation | dataset | command-centre | smoke | m1 | payments | ai-85 | ambient | comms | ops | findings-fix",
+      "builder": "engineering | declan | bot-commander | unassigned",
+      "openedAt": "ISO-8601 when first seen / filed",
+      "updatedAt": "ISO-8601 last movement",
+      "summary": "plain-English one-liner for Declan",
+      "seed": "true when this row is a schema example, not a live Projects card",
+      "githubIssue": "optional issue/PR URL",
+      "evidence": [
+        {
+          "label": "link label",
+          "url": "https://… or #drop-<id> or relative path",
+          "kind": "drop | github | staging | note"
+        }
+      ]
+    }
+  },
+  "updatedAt": "2026-09-11T15:00:00.000Z",
+  "source": "seed-example",
+  "live": false,
+  "blocked": {
+    "reason": "GitHub Projects needs read:project; in-app findings agent token rotate outstanding since 3 Sep (Declan).",
+    "since": "2026-09-03",
+    "needs": ["read:project", "findings-agent-token-rotate"]
+  },
+  "banner": "Live tracker blocked — GitHub Projects needs read:project; in-app findings agent token rotate outstanding since 3 Sep (Declan).",
+  "itemsNote": "Small seed/example set only. Rows are labelled seed:true and rest on already-published hub drops. scripts/sync-tracker.mjs will replace this when TRACKER_EXPORT.json or labelled issues are available — it does not invent live Projects cards or credentials.",
+  "items": [
+    {
+      "id": "trk-seed-live-sync",
+      "title": "Live tracker sync blocked (Projects scope + token rotate)",
+      "state": "blocked",
+      "area": "ops",
+      "builder": "declan",
+      "openedAt": "2026-09-03T09:00:00.000Z",
+      "updatedAt": "2026-09-11T15:00:00.000Z",
+      "summary": "This board cannot read GitHub Projects until read:project is granted and the in-app findings agent token is rotated (outstanding since 3 Sep).",
+      "seed": true,
+      "evidence": [
+        {
+          "label": "How to wire sync later (README)",
+          "url": "README.md#tracker-tab",
+          "kind": "note"
+        }
+      ]
+    },
+    {
+      "id": "trk-seed-dataset-companyid",
+      "title": "Dataset canary — Missing companyId on batchImport.upload (403)",
+      "state": "open",
+      "area": "dataset",
+      "builder": "engineering",
+      "openedAt": "2026-09-11T01:25:00.000Z",
+      "updatedAt": "2026-09-11T01:25:00.000Z",
+      "summary": "3-row canary mapped, then upload 403. Zero members. Seed example from published drop — not a live Projects card.",
+      "seed": true,
+      "evidence": [
+        {
+          "label": "Canary FAIL drop",
+          "url": "#drop-2026-09-11-dataset-canary-fail-tip-232659cf",
+          "kind": "drop"
+        }
+      ]
+    },
+    {
+      "id": "trk-seed-iso-18",
+      "title": "ISO-18 branding / account-chooser leak",
+      "state": "open",
+      "area": "isolation",
+      "builder": "engineering",
+      "openedAt": "2026-09-10T12:00:00.000Z",
+      "updatedAt": "2026-09-11T03:00:00.000Z",
+      "summary": "Same privacy fail on ISO-29 complete (tip 232659cf). Seed example pointing at the published matrix.",
+      "seed": true,
+      "evidence": [
+        {
+          "label": "ISO-29 complete drop",
+          "url": "#drop-2026-09-11-iso29-complete-tip-232659cf",
+          "kind": "drop"
+        }
+      ]
+    },
+    {
+      "id": "trk-seed-acs-f01",
+      "title": "Cluster A ACS-F01 staff availability still FAIL",
+      "state": "open",
+      "area": "command-centre",
+      "builder": "engineering",
+      "openedAt": "2026-09-10T18:00:00.000Z",
+      "updatedAt": "2026-09-11T08:30:00.000Z",
+      "summary": "Cluster A Measured 22/24 on a263c4ab; ACS-F01 and ACS-C01 remain. Seed example.",
+      "seed": true,
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180",
+      "evidence": [
+        {
+          "label": "Cluster A 22/24 drop",
+          "url": "#drop-2026-09-11-command-centre-cluster-a-tip-a263c4ab-22-24",
+          "kind": "drop"
+        },
+        {
+          "label": "Issue #1180",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180",
+          "kind": "github"
+        }
+      ]
+    },
+    {
+      "id": "trk-seed-invite-create",
+      "title": "Fresh member invite create FAIL",
+      "state": "open",
+      "area": "m1",
+      "builder": "engineering",
+      "openedAt": "2026-09-11T08:00:00.000Z",
+      "updatedAt": "2026-09-11T08:00:00.000Z",
+      "summary": "Consumed invite PASS (#1258); creating a new pending invite left the list unchanged. Seed example.",
+      "seed": true,
+      "evidence": [
+        {
+          "label": "Invite E2E drop",
+          "url": "#drop-2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr",
+          "kind": "drop"
+        }
+      ]
+    },
+    {
+      "id": "trk-seed-helgobird",
+      "title": "Morning smoke — HELGOBIRD missed + late-cancel credit 7≠8",
+      "state": "open",
+      "area": "smoke",
+      "builder": "engineering",
+      "openedAt": "2026-09-11T07:45:00.000Z",
+      "updatedAt": "2026-09-11T07:45:00.000Z",
+      "summary": "Smoke-2 FAIL 4/6 on a263c4ab. Reverse PASS. Seed example from the morning smoke drop.",
+      "seed": true,
+      "evidence": [
+        {
+          "label": "Morning smoke drop",
+          "url": "#drop-2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f",
+          "kind": "drop"
+        }
+      ]
+    },
+    {
+      "id": "trk-seed-comms-secrets",
+      "title": "Comms #1213 blocked on five Resend/Agentmail secrets",
+      "state": "blocked",
+      "area": "comms",
+      "builder": "declan",
+      "openedAt": "2026-09-09T09:00:00.000Z",
+      "updatedAt": "2026-09-11T08:00:00.000Z",
+      "summary": "Automated communications cannot ship until Declan adds the five repository secrets. Seed example.",
+      "seed": true,
+      "evidence": [
+        {
+          "label": "Your moves — secrets card",
+          "url": "#action-add-resend-agentmail-secrets",
+          "kind": "note"
+        }
+      ]
+    }
+  ]
+}

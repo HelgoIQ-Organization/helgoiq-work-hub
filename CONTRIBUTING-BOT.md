@@ -45,17 +45,22 @@ Pass `--file` once per call, or copy extra files into the new `drops/…/` folde
 
 Chosen:
 
-1. **Primary** — regenerate `dashboard.json` when the **live staging tip** changes (`/api/version`).
-2. **Backup** — weekday every **30 minutes** during daytime (Europe/London).
+1. **Primary** — regenerate `dashboard.json` when the **live staging tip** changes (`/api/version`) — **near-real-time**.
+2. **Coverage stamps** — `scripts/sync-coverage.mjs` writes `coverage.json` (`lastTestedStamp` vs live tip). Target lag **≤15 minutes** when wired.
+3. **Backup** — weekday every **30 minutes** during daytime (Europe/London).
 
-Sources to consult on each rebuild: live `/api/version`, `gh` merged/open PRs, `MASTER.csv`, Cluster A FINAL, #1180 themes.
+Sources to consult on each rebuild: live `/api/version`, `gh` merged/open PRs, drop `SUMMARY.md` + `index.json`, `MASTER.csv`, Cluster A FINAL, #1180 themes.
 
 ```bash
 node scripts/refresh-dashboard.mjs   # updates meta dataAsOf + buildStamp + history/latest.json
+node scripts/sync-coverage.mjs       # lastTestedStamp on strands/pages; stale vs live tip
+node scripts/sync-tracker.mjs        # prefers TRACKER_EXPORT.json; else keeps seed + blocked banner
 # Then Bot Commander rewrites strands / progressToday / health / actions honestly
-git add dashboard.json history/ assets/ index.html README.md CONTRIBUTING-BOT.md scripts/
+git add dashboard.json coverage.json tracker/items.json history/ assets/ index.html README.md CONTRIBUTING-BOT.md scripts/
 git commit -m "…" && git push origin main
 ```
+
+`refresh-dashboard.mjs --with-coverage` is the clean hook: tip meta first, then coverage stamps. Do **not** invent GitHub Projects cards or API secrets. Tracker live sync needs `read:project` + the findings-agent token rotate (outstanding since 3 Sep — Declan).
 
 ### Snapshot history
 

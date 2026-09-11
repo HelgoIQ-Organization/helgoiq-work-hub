@@ -15,19 +15,23 @@
         <span class="logo" aria-hidden="true">◈</span>
         <div>
           <h1>HelgoIQ Launch Hub</h1>
-          <p class="tagline">Plain-English progress · your next moves · work drops</p>
+          <p class="tagline">Plain-English progress · tracker · coverage stamps · work drops</p>
         </div>
       </div>
       <div class="header-meta">
         <span id="updatedAt" class="muted"></span>
-        <a class="btn ghost" href="#dashboard">Dashboard</a>
-        <a class="btn ghost" href="#drops">Drops</a>
+        <nav class="top-tabs" role="tablist" aria-label="Hub sections">
+          <a class="tab-link active" role="tab" id="tab-dashboard" href="#dashboard" aria-controls="view-dashboard" aria-selected="true">Dashboard</a>
+          <a class="tab-link" role="tab" id="tab-tracker" href="#tracker" aria-controls="view-tracker" aria-selected="false">Tracker</a>
+          <a class="tab-link" role="tab" id="tab-drops" href="#drops" aria-controls="view-drops" aria-selected="false">Drops</a>
+        </nav>
         <a class="btn ghost" href="https://github.com/HelgoIQ-Organization/helgoiq-work-hub" id="repoLink" target="_blank" rel="noopener">Repo</a>
       </div>
     </div>
   </header>
 
   <main class="wrap">
+    <div id="view-dashboard" class="view" role="tabpanel" aria-labelledby="tab-dashboard">
     <!-- HERO / HEALTH -->
     <section id="dashboard" class="hero" aria-label="Launch readiness">
       <div class="hero-ring-wrap">
@@ -106,9 +110,18 @@
     <section class="section" aria-label="Work strands">
       <div class="section-head">
         <h2>Work strands</h2>
-        <p class="muted">Click any card for a plain-English deep dive, blockers, and linked drops.</p>
+        <p class="muted">Click any card for a plain-English deep dive, blockers, and linked drops. Each card shows the SHA it was last tested on.</p>
       </div>
+      <div id="coverageStrip" class="coverage-strip" hidden></div>
       <div id="strandGrid" class="strand-grid"></div>
+    </section>
+
+    <section class="section" aria-label="Page coverage" id="pageCoverage">
+      <div class="section-head">
+        <h2>Page coverage stamps</h2>
+        <p class="muted" id="pageCoverageSub">Surfaces scanned from drops — lastTestedStamp vs the live tip. Stale means the last evidence SHA is not today’s staging tip.</p>
+      </div>
+      <div id="pageGrid" class="page-grid"></div>
     </section>
 
     <!-- ACTIONS -->
@@ -127,8 +140,54 @@
       </div>
       <div id="engineeringGrid" class="actions-grid"></div>
     </section>
+    </div>
+
+    <!-- TRACKER -->
+    <div id="view-tracker" class="view hidden" role="tabpanel" aria-labelledby="tab-tracker" hidden>
+      <section id="tracker" class="section tracker-section" aria-label="Findings tracker">
+        <div class="section-head">
+          <h2>Tracker</h2>
+          <p class="muted">Filter and group findings by state, area, builder, or age. Expand a row for evidence. Not a raw issue dump.</p>
+        </div>
+        <div id="trackerBanner" class="tracker-banner" role="status" hidden></div>
+        <div id="trackerStats" class="tracker-stats"></div>
+        <div class="tracker-toolbar">
+          <div class="tracker-group-by" role="group" aria-label="Group by">
+            <span class="toolbar-label">Group</span>
+            <button type="button" class="chip" data-group="state" aria-pressed="true">State</button>
+            <button type="button" class="chip" data-group="area" aria-pressed="false">Area</button>
+            <button type="button" class="chip" data-group="builder" aria-pressed="false">Builder</button>
+            <button type="button" class="chip" data-group="age" aria-pressed="false">Age</button>
+          </div>
+          <label class="search-label sr-only" for="trackerSearch">Search tracker</label>
+          <input id="trackerSearch" type="search" placeholder="Search title, area, builder…" autocomplete="off" />
+        </div>
+        <div class="tracker-filters">
+          <div class="filter-block">
+            <h2>State</h2>
+            <div id="trackerStateChips" class="chips" role="group" aria-label="Filter by state"></div>
+          </div>
+          <div class="filter-block">
+            <h2>Area</h2>
+            <div id="trackerAreaChips" class="chips" role="group" aria-label="Filter by area"></div>
+          </div>
+          <div class="filter-block">
+            <h2>Builder</h2>
+            <div id="trackerBuilderChips" class="chips" role="group" aria-label="Filter by builder"></div>
+          </div>
+          <div class="filter-block">
+            <h2>Age</h2>
+            <div id="trackerAgeChips" class="chips" role="group" aria-label="Filter by age"></div>
+          </div>
+          <button type="button" id="trackerClear" class="btn ghost">Clear filters</button>
+        </div>
+        <p id="trackerCount" class="muted count"></p>
+        <div id="trackerBoard" class="tracker-board"></div>
+      </section>
+    </div>
 
     <!-- DROPS (kept) -->
+    <div id="view-drops" class="view hidden" role="tabpanel" aria-labelledby="tab-drops" hidden>
     <section id="drops" class="section drops-section" aria-label="Work drops">
       <div class="section-head">
         <h2>Work drops</h2>
@@ -160,6 +219,7 @@
         </section>
       </div>
     </section>
+    </div>
   </main>
 
   <!-- Strand detail panel -->
@@ -179,6 +239,7 @@
           <span id="strandPct" class="strand-pct-num">0%</span>
         </div>
         <p id="strandSummary" class="strand-summary"></p>
+        <p id="strandStamp" class="strand-stamp"></p>
         <p id="strandProgress" class="muted"></p>
         <h3>Blockers</h3>
         <ul id="strandBlockers"></ul>

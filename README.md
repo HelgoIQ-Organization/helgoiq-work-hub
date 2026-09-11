@@ -8,15 +8,17 @@ Open `index.html` locally (or via Pages). No build step — vanilla HTML/CSS/JS 
 
 ## For Declan (non-technical)
 
-The top of the site is a **visual dashboard**:
+The top of the site is a **visual dashboard** (plus two other tabs):
 
 - Big **launch %** ring and a plain readiness label
-- **Work strand** cards (click for blockers and linked notes)
+- **Work strand** cards (click for blockers and linked notes) — each card shows the **SHA it was last tested on**
+- **Page coverage stamps** — surfaces scanned from drops, marked **Stale vs live tip** when the last evidence SHA is not today’s staging tip
 - **Your moves** — actions only you can unblock, with how much each one moves the project / phase forward
 - **Phases** strip — share of the whole launch programme
-- **Work drops** feed underneath — each card leads with friendly English; technical detail is secondary
+- **Tracker** tab (second top-level tab) — findings grouped by state / area / builder / age; expand a row for evidence. Live GitHub Projects sync is **blocked** until `read:project` + the findings-agent token rotate (outstanding since 3 Sep)
+- **Work drops** feed — each card leads with friendly English; technical detail is secondary
 
-Deep links: `#strand-dataset`, `#action-merge-1232`, `#drop-<id>`.
+Deep links: `#dashboard`, `#tracker`, `#drops`, `#strand-dataset`, `#action-merge-1232`, `#drop-<id>`.
 
 Dashboard numbers live in [`dashboard.json`](./dashboard.json) (weighted from current testing state). Catalogue entries live in [`index.json`](./index.json).
 
@@ -28,18 +30,47 @@ Dashboard numbers live in [`dashboard.json`](./dashboard.json) (weighted from cu
 
 ### Refresh mechanism (chosen)
 
-1. **Primary** — regenerate the dashboard when the **live staging tip** changes (`GET /api/version` on DigitalOcean staging).
-2. **Backup** — weekday every **30 minutes** during daytime Europe/London.
+| Signal | Lag |
+|---|---|
+| **Tip change** (`GET /api/version`) | Near-real-time via `scripts/refresh-dashboard.mjs` |
+| **Coverage stamps** (`coverage.json` lastTestedStamp vs live tip) | **≤15 minutes** when the 15-minute routine is wired |
+| **Dashboard backup** (strands / headline if tip is unchanged) | Weekday every **30 minutes** daytime Europe/London |
 
-**Data sources:** live `/api/version`, `gh` merged/open PRs, `MASTER.csv`, Cluster A FINAL, #1180 themes.
+**Data sources:** live `/api/version`, `gh` merged/open PRs, drop `SUMMARY.md` + `index.json`, `MASTER.csv`, Cluster A FINAL, #1180 themes.
 
 ```bash
 # Stamp meta from live tip (does not invent strand scores)
 node scripts/refresh-dashboard.mjs
+# Coverage stamps (SHA last tested vs live tip)
+node scripts/sync-coverage.mjs --dry-run
+node scripts/sync-coverage.mjs
+# Tracker board (prefers TRACKER_EXPORT.json; does not invent Projects cards)
+node scripts/sync-tracker.mjs --dry-run
 # then Bot Commander fills strands / progressToday / health, commit + push
 ```
 
+`refresh-dashboard.mjs` is the tip-meta hook — it copies `lastTestedStamp` from `coverage.json` onto strand cards when that file exists. Pass `--with-coverage` to run both in one go.
+
 Hard rule: **never recommend rollback**; SAFE rollback (#1240) must land before dataset import. No secrets in this repo.
+
+### Wire the 15-minute routine later
+
+When Bot Commander / cron can write this repo:
+
+1. **Every tip change** (and as a weekday 15-minute daytime job, Europe/London):
+
+```bash
+node scripts/refresh-dashboard.mjs --with-coverage
+node scripts/sync-tracker.mjs          # no-op seed until export/gh is available
+git add dashboard.json coverage.json tracker/items.json history/
+git commit -m "hub: refresh tip + coverage stamps" && git push origin main
+```
+
+2. **Optional live tracker** (do not invent credentials):
+   - Grant the findings-agent token `read:project` (rotate outstanding since 3 Sep — Declan).
+   - Either drop a local `TRACKER_EXPORT.json` at the repo root (gitignored), **or**
+   - Run `node scripts/sync-tracker.mjs --from-github` once `gh` can list issues labelled `tracker` / `findings`.
+3. Keep the **30-minute** dashboard backup as the honesty net if the 15-minute job misses.
 
 ## What you get
 
@@ -53,7 +84,23 @@ Hard rule: **never recommend rollback**; SAFE rollback (#1240) must land before 
 
 ### `dashboard.json`
 
-`meta` (`dataAsOf`, `buildStamp`, `headlineFormula`, `refreshMechanism`), `progressToday`, `strands[]` (incl. `basis`, `comms`), `health`, `actions[]`, `phases[]` — see the file for field shapes. Strand `projectWeightPercent` values sum to ~100; overall launch % is the weighted average stated in `health.headlineFormula` / `meta.headlineFormula`.
+`meta` (`dataAsOf`, `buildStamp`, `headlineFormula`, `refreshMechanism`), `progressToday`, `strands[]` (incl. `basis`, `lastTestedStamp`, `coverageFreshness`), `health`, `actions[]`, `phases[]` — see the file for field shapes. Strand `projectWeightPercent` values sum to ~100; overall launch % is the weighted average stated in `health.headlineFormula` / `meta.headlineFormula`.
+
+### `coverage.json`
+
+Generated by `scripts/sync-coverage.mjs`. Every strand and scanned page has `lastTestedStamp` (SHA) plus `freshness`: `current` | `stale` | `untested`. Stale means the last evidence SHA is not the live staging tip.
+
+### `tracker/items.json`
+
+Schema is documented on the file itself (`schema.itemFields`). Seed/example rows are marked `seed: true`. Live Projects data is **not** invented; the Tracker tab shows the blocked banner until an export or labelled-issue sync is wired.
+
+Optional local import (preferred over inventing API secrets):
+
+```json
+{ "items": [{ "id": "…", "title": "…", "state": "open", "area": "isolation", "builder": "engineering", "openedAt": "2026-09-11T00:00:00.000Z", "summary": "…", "evidence": [{ "label": "drop", "url": "#drop-…", "kind": "drop" }] }] }
+```
+
+Save as `TRACKER_EXPORT.json` (gitignored) and run `node scripts/sync-tracker.mjs`.
 
 ### `index.json`
 
