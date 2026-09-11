@@ -1,24 +1,24 @@
 {
-  "updatedAt": "2026-09-11T08:53:09.623Z",
+  "updatedAt": "2026-09-11T14:49:54.942Z",
   "meta": {
-    "dataAsOf": "2026-09-11T08:53:09.623Z",
-    "buildStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
-    "liveTip": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+    "dataAsOf": "2026-09-11T14:49:54.942Z",
+    "buildStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "liveTip": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52×12 + 66×10 + 86×10 + 56×15 + 85×9 + 72×10 + 67×6 + 62×8 + 87×10 + 15×10)/100.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Material Cluster A progress on unchanged tip a263c4ab: 22/24 Measured (was held 20/24). Command-centre 60→66; headline 63→64. Invite E2E notes folded in. Do not recommend import.rollbackBatch.",
+    "lastRefreshNote": "Tip moved a263c4ab → a73ff70 (live /api/version releaseSha a73ff70b…). Strand scores held from prior tip — headline hold / retest pending. Do not invent scores. Do not recommend import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-11T08:53:09.623Z"
+      "checkedAt": "2026-09-11T14:49:54.942Z"
     },
     "updatedAt": "2026-09-11T08:53:09.263Z"
   },
-  "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+  "tip": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 64,
@@ -58,9 +58,9 @@
       "findings-fix": 47,
       "comms": 15
     },
-    "plainEnglishDay": "Mid-morning (11 Sep Europe/London): tip a263c4ab unchanged. Cluster A re-measured 22/24 on tip (was held 20/24) — ACS-F01 + ACS-C01 remain; Teacher2 MGR-10/ACS-X01 PASS; B–F locked. Morning smoke-2 still Measured FAIL 4/6. Invite E2E: consumed PASS, fresh create FAIL. Headline ~64%.",
+    "plainEnglishDay": "Afternoon (11 Sep Europe/London): LIVE TIP MOVED a263c4ab → a73ff70. Headline held at ~64% pending retest on new tip — do not claim strand progress until re-measured. Prior Cluster A was 22/24 on a263c4ab; smoke FAIL 4/6; invite fresh create FAIL. UNTESTED 16 surfaces list posted (built on a263c4ab).",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board Declan saw (overall 52%) vs now (~64%): Cluster A Measured 22/24 on a263c4ab (CC 66%); smoke re-measured FAIL (67%); findings-fix Estimate 87%; other retests still pending."
+    "compareNote": "Morning board (overall 52%) vs last measured ~64% on a263c4ab. Tip now a73ff70 — scores held; retest pending."
   },
   "strands": [
     {
@@ -294,8 +294,8 @@
   "health": {
     "overallLaunchPercent": 64,
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52×12 + 66×10 + 86×10 + 56×15 + 85×9 + 72×10 + 67×6 + 62×8 + 87×10 + 15×10)/100.",
-    "readinessLabel": "Not ready to launch — Cluster A Measured 22/24 on a263c4ab (ACS-F01+ACS-C01 remain; B–F locked). Morning smoke FAIL (67% 4/6). Dataset companyId 403 + secrets still gate",
-    "plainSummary": "As of 2026-09-11T08:53:09.263Z (Europe/London 11 Sep 2026 ~10:41), launch readiness is about 64%. Live tip a263c4ab. Cluster A re-measured 22/24 on tip (cleared three prior fails; ACS-F01 + ACS-C01 remain). Morning smoke-2 still FAIL 4/6. Fresh member invite create FAIL. Comms secrets + dataset companyId still gate.",
+    "readinessLabel": "Not ready to launch — tip moved to a73ff70; prior Measured scores (Cluster A 22/24, smoke FAIL) are on a263c4ab and need retest. Headline held ~64%. Dataset companyId 403 + secrets still gate",
+    "plainSummary": "As of 2026-09-11T14:49:54.942Z (Europe/London 11 Sep 2026 ~15:49), launch readiness headline held at about 64%. Live tip moved a263c4ab → a73ff70. Strand percents NOT re-scored — retest pending on new tip. Prior: Cluster A 22/24 on a263c4ab; morning smoke FAIL 4/6.",
     "strengths": [
       "Cluster A Measured 22/24 on tip a263c4ab; Teacher2 MGR-10 + ACS-X01 PASS",
       "Morning smoke: invite/OTP, booking, membership cancel+reverse PROVEN, evidence PASS on tip a263c4ab",
@@ -350,7 +350,7 @@
         "dataset"
       ]
     },
-    "refreshWarning": "Tip unchanged; readiness refreshed for Measured Cluster A 22/24 + invite E2E on a263c4ab."
+    "refreshWarning": null
   },
   "actions": [
     {
@@ -556,11 +556,14 @@
       "percentComplete": 15
     }
   ],
-  "notes": {
-    "botCommander": "Where an action says “tell Bot Commander”, use the Copy prompt button, then paste into this Bot Commander chat. Declan can paste those messages here directly — no special app link required.",
-    "hardWarning": "Do not use import.rollbackBatch even though #1240 is live — prefer not to need rollback; if ever used, company-scoped batchId only. Dataset canary Measured FAIL on prior tip 232659cf (Missing companyId 403). Cluster A now Measured 22/24 on a263c4ab.",
-    "refresh": "Primary refresh when live staging tip changes; also on material Cluster A/AI-85/PR progress. Tip a263c4ab unchanged; Cluster A 22/24 Measured folded in 2026-09-11T08:53:09.263Z; headline ~64%."
-  },
+  "notes": [
+    {
+      "id": "tip-moved-a73ff70-2026-09-11",
+      "at": "2026-09-11T14:49:54.942Z",
+      "plain": "Staging tip moved a263c4ab → a73ff70. Launch Hub stamps updated; strand scores held (headline hold). Retest pending. UNTESTED 16 drop posted (list built on a263c4ab).",
+      "severity": "info"
+    }
+  ],
   "engineeringActions": [
     {
       "id": "eng-fix-batchimport-companyid",

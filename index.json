@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-11T09:17:58.799Z",
+  "updatedAt": "2026-09-11T14:49:54.606Z",
   "drops": [
+    {
+      "id": "2026-09-11-untested-16-surfaces-ranked-week-one-posted-1180",
+      "title": "UNTESTED 16 surfaces ranked week-one (posted #1180)",
+      "date": "2026-09-11",
+      "summary": "List built on tip a263c4ab; live tip now a73ff70b266057f226bb02c5f3112f72a92ad53d (curl /api/version). 16 UNTESTED of 407 — P0×5 week-one member shells + P1×11 admin/dynamic/Forms/QR. No surfaces tested this pass. Posted #1180.",
+      "plainEnglish": "Sixteen surfaces still untested for week-one. List was built on tip a263c4ab; staging tip has moved to a73ff70 — retest pending on the new tip. Top P0: guides, help, sign-in/out/up.",
+      "tags": [
+        "status",
+        "findings"
+      ],
+      "type": "checklist",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-untested-16-surfaces-ranked-week-one-posted-1180/UNTESTED.md",
+        "drops/2026-09-11-untested-16-surfaces-ranked-week-one-posted-1180/MATRIX.csv"
+      ],
+      "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/helgoiq-platform/issues/1180"
+    },
     {
       "id": "2026-09-11-forms-pass-qr-dest-fail-tip-a263c4ab",
       "title": "Forms PASS QR dest FAIL tip a263c4ab",

@@ -1,0 +1,17 @@
+route,title,audience,priority,ever_tested,notes
+/guides,Guides,member,P0,no,domain=Member app
+/help,Help,member,P0,no,domain=Member app
+/sign-in,Sign In,member,P0,no,domain=Member app
+/sign-out,Sign Out,member,P0,no,domain=Member app
+/sign-up,Sign Up,member,P0,no,domain=Member app
+/admin/academy/courses/:playbookId,Courses,owner,P1,no,dynamic/wildcard bundle route — no exact-path stamp
+/admin/academy/courses/:playbookId/edit,Edit,owner,P1,no,dynamic/wildcard bundle route — no exact-path stamp
+/admin/academy/quizzes/:quizId,Quizzes,owner,P1,no,dynamic/wildcard bundle route — no exact-path stamp
+/admin/forms,Forms,owner,P1,no,Forms/QR explicitly NEVER tested this week (override any older stamp); domain=Website Builder & Channels
+/admin/instructor-observations/:observationId,Instructor Observations,owner,P1,no,dynamic/wildcard bundle route — no exact-path stamp
+/admin/qr-generator,Qr Generator,owner,P1,no,Forms/QR explicitly NEVER tested this week (override any older stamp); domain=Website Builder & Channels
+/admin/qr-generator/new,New,owner,P1,no,Forms/QR explicitly NEVER tested this week (override any older stamp); domain=Website Builder & Channels
+/admin/retreats/*,Retreats,owner,P1,no,dynamic/wildcard bundle route — no exact-path stamp
+/sign-in/:rest*,Sign In,member,P1,no,dynamic/wildcard bundle route — no exact-path stamp
+/sign-up/:rest*,Sign Up,member,P1,no,dynamic/wildcard bundle route — no exact-path stamp
+/teacher/class/:id,Class,teacher,P1,no,dynamic/wildcard bundle route — no exact-path stamp
