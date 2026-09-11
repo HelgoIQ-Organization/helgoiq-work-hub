@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-11T08:56:30.570Z",
+  "updatedAt": "2026-09-11T09:03:50.784Z",
   "drops": [
+    {
+      "id": "2026-09-11-twin-bi-demo-seed-unreachable-for-admin2-tip-a26",
+      "title": "Twin BI Demo seed UNREACHABLE for Admin2 tip a263c4ab",
+      "date": "2026-09-11",
+      "summary": "Admin2: Twin overview, Business Insights, and Demo seed all Admin Access Required on tip a263c4ab; NEED_DECLAN for PA seat.",
+      "plainEnglish": "Admin2: Twin overview, Business Insights, and Demo seed all Admin Access Required on tip a263c4ab; NEED_DECLAN for PA seat.",
+      "tags": [
+        "ai-85",
+        "findings",
+        "status"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-twin-bi-demo-seed-unreachable-for-admin2-tip-a26/RESULTS.md"
+      ],
+      "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4"
+    },
     {
       "id": "2026-09-11-m1-retest-1252-pass-unfreeze-fail",
       "title": "M1 retest — #1252 PASS, unfreeze FAIL",
