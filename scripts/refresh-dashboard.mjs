@@ -13,9 +13,11 @@
  *  - updates dashboard.json meta.dataAsOf + meta.buildStamp + tip
  *  - writes history/latest.json
  *  - keeps previous-day history files; does not invent strand scores
+ *  - if coverage.json exists, copies lastTestedStamp onto strands (tip-meta hook)
  *
  * Strand / progressToday content is filled by Bot Commander after live facts
  * (gh PRs, MASTER.csv, Cluster A, #1180). Pass --embed-check to print tip only.
+ * Pass --with-coverage to also run scripts/sync-coverage.mjs after the tip stamp.
  *
  * Usage:
  *   node scripts/refresh-dashboard.mjs
@@ -28,6 +30,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync, readdirSync, copyFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { spawnSync } from "node:child_process";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -145,7 +148,25 @@ async function main() {
   dash.meta.liveTip = tip || prevTip;
   dash.meta.refreshMechanism =
     dash.meta.refreshMechanism ||
-    "Primary: regenerate when live staging /api/version tip changes. Backup: weekday every 30 minutes daytime Europe/London.";
+    "Primary: regenerate when live staging /api/version tip changes (near-real-time). Coverage sync ≤15m when wired. Backup: weekday every 30 minutes daytime Europe/London.";
+
+  // Tip-meta hook: copy lastTestedStamp from coverage.json onto strands when present.
+  const covPath = join(ROOT, "coverage.json");
+  if (existsSync(covPath)) {
+    try {
+      const cov = JSON.parse(readFileSync(covPath, "utf8"));
+      const byId = Object.fromEntries((cov.strands || []).map((s) => [s.id, s]));
+      for (const s of dash.strands || []) {
+        const row = byId[s.id];
+        if (!row) continue;
+        if (row.lastTestedStamp) s.lastTestedStamp = row.lastTestedStamp;
+        if (row.freshness) s.coverageFreshness = row.freshness;
+        if (row.verdict) s.lastTestedVerdict = row.verdict;
+      }
+    } catch (err) {
+      console.warn("coverage.json present but not applied:", err.message || err);
+    }
+  }
   dash.meta.lastRefreshNote = tipChanged
     ? `Tip changed ${String(prevTip).slice(0, 8)} → ${String(tip).slice(0, 8)}; Bot Commander should rescore strands.`
     : `Tip unchanged (${String(tip).slice(0, 8)}); stamps refreshed only — do not look more confident without new measured facts.`;
@@ -178,6 +199,15 @@ async function main() {
   console.log("dataAsOf", now);
   if (master) console.log("MASTER.csv summary", master);
   if (cluster) console.log("Cluster A file present", cluster.path);
+
+  if (process.argv.includes("--with-coverage")) {
+    const covScript = join(ROOT, "scripts", "sync-coverage.mjs");
+    console.log("running sync-coverage.mjs (--with-coverage)");
+    const extra = [];
+    if (staging && !String(staging).includes("[REDACTED]")) extra.push(`--staging=${staging}`);
+    const child = spawnSync(process.execPath, [covScript, ...extra], { stdio: "inherit" });
+    if (child.status !== 0) console.warn("sync-coverage exited", child.status);
+  }
 }
 
 main().catch((err) => {
