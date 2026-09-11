@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-11T19:32:54.988Z",
+  "updatedAt": "2026-09-11T19:51:18.390Z",
   "drops": [
+    {
+      "id": "2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai",
+      "title": "Forms QR matrix tip a73ff70 — public 11 PASS / 8 FAIL",
+      "date": "2026-09-11",
+      "summary": "Forms+QR public verification on tip a73ff70: 11 PASS / 8 FAIL; payment skipped; phone scan NEED_DECLAN.",
+      "plainEnglish": "Bluebird Forms and QR public pages were checked on today's tip. Eleven public QR destinations looked good; eight failed (blank or wrong content). Payment form was skipped. Physical phone scan still needs Declan.",
+      "tags": [
+        "findings",
+        "status"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai/MATRIX.md",
+        "drops/2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai/qr-public-verification.md"
+      ],
+      "tip": "a73ff70b266057f226bb02c5f3112f72a92ad53d"
+    },
     {
       "id": "2026-09-11-forms-qr-matrix-partial-tip-a73ff70-8-19-qr-kind",
       "title": "Forms QR matrix partial tip a73ff70 — 8/19 QR kinds",
