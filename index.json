@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-11T08:16:41.356Z",
+  "updatedAt": "2026-09-11T08:17:27.739Z",
   "drops": [
+    {
+      "id": "2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr",
+      "title": "Morning invite E2E — consumed PASS, fresh invite create FAIL",
+      "date": "2026-09-11",
+      "summary": "Invite E2E on tip a263c4ab: consumed invite #1258 PASS; fresh member invite create FAIL (pending list unchanged); staff route PASS screenshot-only.",
+      "plainEnglish": "Morning invite checks: already-used invite showed a clear message (good). Creating a new member invite failed — the form closed but nothing appeared in pending, so signup binding could not be tested. Staff invitations page opened fine.",
+      "tags": [
+        "findings",
+        "smoke",
+        "status"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr/INVITE-E2E.md"
+      ],
+      "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4"
+    },
     {
       "id": "2026-09-11-command-centre-cluster-a-tip-a263c4ab-22-24",
       "title": "Command Centre Cluster A tip a263c4ab — 22/24",
