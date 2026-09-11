@@ -1,0 +1,233 @@
+dashboard	Home	/admin
+command-centre	AI Command Centre	/admin/command-centre
+members	Members	/admin/members
+timetable	Timetable	/admin/timetable
+appointments-hub	Appointment Setup	/admin/appointments-hub
+crm-hub	CRM & Acquisition	/admin/crm-hub
+inbox	Inbox	/admin/inbox
+tasks	Tasks	/admin/tasks
+documents	Document Vault	/admin/documents
+automation	Automation Journeys	/admin/automation
+tag-hub	Tag Hub	/admin/tag-hub
+audience-hub	Audience Hub	/admin/audience-hub
+retention-hub	Retention & Loyalty	/admin/retention-hub
+revenue-intelligence	AI Revenue Intelligence	/admin/revenue-intelligence
+comm-management	Communication Management	/admin/comm-management
+comms-messaging-numbers	Messaging Numbers	/admin/comms/messaging-numbers
+comms-opt-outs	Opt-Out Management	/admin/comms/opt-outs
+comms-message-logs	Message Logs	/admin/comms/message-logs
+comms-wallet	Comms Wallet	/admin/comms/wallet
+comms-intelligence	Comms Intelligence	/admin/comms/intelligence
+comms-learning-registry	Learning Registry	/admin/comms/learning-registry
+financial-forecasting	AI Financial Forecasting	/admin/financial-forecasting
+predictive-cash-flow	AI Predictive Cash Flow	/admin/predictive-cash-flow
+anomaly-alerts	AI Anomaly Detection	/admin/anomaly-alerts
+finance-hub	Finance & Payments	/admin/finance-hub
+bookkeeping	Bookkeeping Inbox	/admin/bookkeeping
+open-banking	Open Banking	/admin/open-banking
+view-as-member	View as Member	/admin/view-as-member
+products	Products & Pricing	/admin/products
+pt-packages	PT Packages & Courses	/admin/pt-packages
+reports-hub	Reporting & Analytics	/admin/reports-hub
+custom-dashboards	Custom Dashboards	/admin/custom-dashboards
+recap-recordings	Recordings	/admin/recordings
+overview	Overview	/admin/overview
+data-migration	Data Migration	/admin/data-migration
+seed-data	Seed Data	/admin/seed-data
+staff-hub	Staff Hub	/admin/staff-hub
+roles	Roles & Access	/admin/staff-hub?tab=roles
+invite-staff	Invite Staff	/admin/staff-hub?tab=invitations
+team	Team Report	/admin/team
+team-holidays	Team Holidays	/admin/team-holidays
+staff-milestones	Staff Milestones	/admin/staff-milestones
+post-class-intelligence	Post-Class Intelligence	/admin/post-class-intelligence
+devices	Linked Devices	/admin/devices
+checkins	Check-Ins	/admin/checkins
+kiosk-config	Kiosk Config	/admin/kiosk-config
+pos-hub	POS Kiosk Hub	/admin/pos-hub
+door-access	Door Access Control	/admin/door-access
+safe-studio	Safe Studio	/admin/safe-studio
+wallet-passes	Wallet Passes	/admin/wallet-passes
+setup	Setup	/admin/setup
+setup-wizard	Setup Wizard	/admin/setup/wizard
+onboarding	Onboarding Wizard	/admin/onboarding
+booking-messages	Booking Messages	/admin/booking-messages
+splash-screens	Splash Screens	/admin/splash-screens
+personal-messages	Personal Messages	/admin/personal-messages
+member-feedback	Member Feedback	/admin/member-feedback
+segments	Customer Segments	/admin/segments
+campaigns	Campaigns	/admin/campaigns
+marketing	Acquisition	/admin/marketing
+news	News	/admin/news
+newsletter-hub	Newsletter	/admin/newsletter-hub
+newsletter-creator	Newsletter Creator	/admin/newsletter-hub?tab=create
+weekly-growth-brief	AI Weekly Growth Brief	/admin/weekly-growth-brief
+meta-hub	Meta Hub	/admin/meta-hub
+social-hub	Social & Reviews	/admin/social-hub
+social	Social Media Hub	/admin/social
+advocacy-queue	Review Identity Queue	/admin/social/advocacy-queue
+landing-pages	Landing Pages	/admin/marketing?tab=landing-pages
+qr-generator	QR Code Generator	/admin/qr-generator
+google-ads	Google Ads	/admin/social/google-ads
+integrations	Integrations	/admin/social/integrations
+visual-intelligence-showcase	Visual Intelligence	/admin/visual-intelligence-showcase
+audience-intelligence	AI Audience Intelligence	/admin/audience-intelligence
+business-insights	AI Business Insights	/admin/business-insights
+performance-intelligence	AI Performance Intelligence	/admin/performance-intelligence
+retreats	Retreats	/admin/retreats-hub
+recovery-hub	Recovery	/admin/recovery-hub
+training-hub	Training Hub	/admin/training-hub
+community	Community	/admin/community-hub
+gift-cards	Gift Cards	/admin/gift-cards
+discount-codes	Discount Codes	/admin/discount-codes
+birthdays	Birthdays	/admin/birthdays
+milestones	Milestones	/admin/milestones-hub
+challenges	Challenges	/admin/challenges
+badges	Badges	/admin/badges
+referral-hub	Referral Programme	/admin/referral-hub
+assets	Asset Library	/admin/assets
+website-hub	Website Hub	/admin/website-hub
+website-health	Website Health	/admin/website/health
+website	Website Management	/admin/website
+site-import	Bring my site	/admin/website/import
+ai-page-builder	AI Page Builder	/admin/website/ai-builder
+global-styles	Global Styles	/admin/website/styles
+navigation	Navigation	/admin/website/navigation
+blog-hub	Blog	/admin/blog-hub
+forms	Forms & Leads	/admin/forms
+popups	Pop-ups	/admin/popups
+banners	Banners	/admin/banners
+seo	SEO Controls	/admin/seo
+analytics	Website Analytics	/admin/analytics
+migration	Website Migration	/admin/migration
+roadmap	Product Roadmap	/admin/roadmap
+gdpr	GDPR Compliance	/admin/gdpr
+platform-plans	Platform Plans	/admin/platform-plans
+feature-management	Feature Management	/admin/feature-management
+feature-flags	Feature Flags	/admin/feature-flags
+tenant-management	Tenant Management	/admin/tenant-management
+live-support	Live Support	/admin/live-support
+platform-videos	Platform Videos	/admin/platform-videos
+platform-knowledge	Knowledge Library	/admin/platform-knowledge
+platform-issues	Live Issue Tracker	/admin/platform-issues
+video-guides	Platform Videos	/admin/video-guides
+sentry	Sentry Management	/admin/sentry
+tag-management	Tag Management	/admin/tag-management
+tag-intelligence	AI Tag Intelligence	/admin/tag-intelligence
+journey-orchestrator	AI Journey Orchestrator	/admin/journey-orchestrator
+sentiment-analysis	AI Sentiment Analysis	/admin/sentiment-analysis
+campaign-composer	AI Campaign Composer	/admin/campaign-composer
+event-bus	Event Bus	/admin/event-bus
+member-digital-twin	AI Member Digital Twin	/admin/member-digital-twin
+ai-management-hub	AI Management	/admin/ai-management-hub
+ai-operations-health	AI Operations Health	/admin/ai-operations/health
+ai-usage	AI Usage	/admin/ai-usage
+ai-governance	AI Governance	/admin/ai-governance
+ai-decision-audit	AI Decision Audit	/admin/ai-decision-audit
+member-health-score	Member Health Score	/admin/member-health-score
+customer-voice-synthesis	AI Customer Voice Synthesis	/admin/customer-voice-synthesis
+instructor-ai-agents	Instructor AI Agents	/admin/instructor-ai-agents
+studio-intelligence	Studio Intelligence	/admin/studio-intelligence
+morning-dispatch	Morning Dispatch	/admin/morning-dispatch
+studio-pulse	Studio Pulse	/admin/studio-pulse
+org-intelligence	Org Intelligence	/admin/org-intelligence
+workforce-intelligence	Workforce Intelligence	/admin/workforce-intelligence
+manager-intelligence	Manager Intelligence	/admin/intelligence/manager
+executive-briefing	Executive Briefing	/admin/intelligence/executive-briefing
+mrr-intelligence	MRR Intelligence	/admin/intelligence/mrr
+subscription-cohorts	Subscription Cohorts	/admin/intelligence/cohorts
+studio-state	Studio State Inspector	/admin/studio-state
+intelligence-centre	Intelligence Centre	/admin/intelligence-centre
+intelligence-impact	Intelligence Impact Centre	/admin/intelligence-impact
+action-effectiveness	Action Effectiveness Library	/admin/action-effectiveness
+decision-engine	Decision Engine	/admin/decision-engine
+daily-focus	Daily Focus	/admin/daily-focus
+decision-weights	Decision Engine Config	/admin/decision-weights
+growth-rewards	Growth Rewards Engine	/admin/growth-rewards
+learning-engine	Learning Engine	/admin/learning-engine
+academy	Learning Management System	/admin/academy
+academy-courses	Courses & Content	/admin/academy/courses
+academy-libraries	Content Libraries	/admin/academy/libraries
+academy-exercises	Exercises	/admin/academy/exercises
+academy-quizzes	Quizzes	/admin/academy/quizzes
+academy-resources	Resources	/admin/academy/resources
+academy-news	News	/admin/academy/news
+academy-course-groups	Course Groups	/admin/academy/course-groups
+academy-learners	Learners & Progress	/admin/academy/learners
+academy-users	Users	/admin/academy/users
+academy-invites	Invites	/admin/academy/invites
+academy-reflections	Reflections	/admin/academy/reflections
+academy-teachers	Teacher Tools	/admin/academy/teachers
+academy-assessments	Assessments	/admin/academy/assessments
+academy-certificates	Certificates	/admin/academy/certificates
+academy-community	Community	/admin/academy/community
+academy-communications	Communications	/admin/academy/communications
+academy-commerce	Commerce	/admin/academy/commerce
+academy-financials	Financials	/admin/academy/financials
+academy-pricing	Pricing	/admin/academy/pricing
+academy-discount-codes	Discount Codes	/admin/academy/discount-codes
+academy-contracts	Contracts	/admin/academy/contracts
+academy-terms	Terms & Conditions	/admin/academy/terms
+academy-automations	Automations	/admin/academy/automations
+academy-settings	Settings	/admin/academy/settings
+academy-ai-personality	AI Tutor Personality	/admin/academy/ai-tutor-personality
+academy-ai-analytics	AI Tutor Analytics	/admin/academy/ai-tutor-analytics
+academy-ai-settings	AI Feature Settings	/admin/academy/ai-settings
+academy-certificate-design	Certificate Design	/admin/academy/certificate-design
+academy-class-tags	Class Tags	/admin/academy/class-tags
+academy-cohort-tags	Cohort Tags	/admin/academy/cohort-tags
+academy-course-recordings	Course Recordings	/admin/academy/course-recordings
+academy-import	Import & Reconciliation	/admin/academy/import
+academy-import-content	Import Content	/admin/academy/import-content
+academy-import-students	Import Learners	/admin/academy/import-students
+academy-reports	Reports	/admin/academy/reports
+academy-insights	LMS Insights	/admin/academy/insights
+what-we-learned	What We've Learned	/admin/what-we-learned
+location-intelligence	Location Intelligence	/admin/location-intelligence
+weekly-digest	Weekly Learning Digest	/admin/weekly-digest
+monthly-review	Monthly Intelligence Review	/admin/monthly-review
+quarterly-review	Quarterly Business Review	/admin/quarterly-review
+progress-guides	Progress Guides	/admin/progress-guides
+resources	Resources	/admin/resources
+related-contacts	Related Contacts	/admin/related-contacts
+smart-folder-reports	Smart Folder Reports	/admin/smart-folder-reports
+instructor-roi	Instructor ROI Report	/admin/instructor-roi
+new-vs-returning	New vs Returning Clients	/admin/new-vs-returning
+instructor-teaching-insights	Instructor Teaching Insights	/admin/instructor-teaching-insights
+acquisition-intelligence	Acquisition Intelligence	/admin/acquisition-intelligence
+at-risk-revenue	At-Risk Revenue	/admin/at-risk-revenue
+security-hub	Security & Surveillance	/admin/security-hub
+cctv-hub	CCTV Hub	/admin/cctv-hub
+camio-live	Camio Live View	/admin/camio-live
+camio-settings	Camio Settings	/admin/camio-settings
+screens	Digital Signage	/admin/screens-hub
+screen-content	Screen Content	/admin/screen-content
+screen-playlists	Screen Playlists	/admin/screen-playlists
+screen-health	Screen Health	/admin/screen-health
+webhooks	Outbound Webhooks	/admin/webhooks
+white-label	White-Label & Domains	/admin/white-label
+stripe-connect	Stripe Connect	/admin/stripe-connect
+platform-billing	Platform Billing	/admin/billing
+dispute-hub	Disputes	/admin/dispute-hub
+system-health	System Health	/admin/system-health
+checkin-compliance	Check-In Compliance	/admin/checkin-compliance
+escalation-settings	Escalation Settings	/admin/escalation-settings
+system-blueprint	System Blueprint	/admin/system-blueprint
+software-guides	Software Guides	/admin/software-guides
+walkthrough-manager	Walkthrough Manager	/admin/walkthrough-manager
+whats-new-tours	What's New Tours	/admin/whats-new-tours
+platform-dashboard	Platform Dashboard	/admin/platform-dashboard
+platform-training-hub	Training Hub Adoption	/admin/platform-training-hub
+platform-scaling	Platform Scaling	/admin/platform-scaling
+studio-connections	Connections	/admin/connections
+platform-connections	Connections	/admin/platform-connections
+changelog	Platform Updates	/admin/changelog
+breach-process	Breach Process	/admin/breach-process
+implementation-checklist	Implementation Checklist	/admin/implementation-checklist
+team-comms-hub	Team Comms	/admin/team-comms-hub
+rota-builder	Rota Builder	/admin/rota-builder
+staff-employment	Staff Employment	/admin/staff-employment
+holiday-calendar	Holiday Calendar	/admin/holiday-calendar
+rota-hub	Rota & Scheduling	/admin/staff-hub?tab=rota
+staff-substitutions	Cover Requests	/admin/staff/substitutions
+export-templates	Export Templates	/admin/export-templates

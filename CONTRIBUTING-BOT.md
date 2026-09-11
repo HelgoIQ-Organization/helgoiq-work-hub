@@ -55,8 +55,9 @@ Sources to consult on each rebuild: live `/api/version`, `gh` merged/open PRs, d
 node scripts/refresh-dashboard.mjs   # updates meta dataAsOf + buildStamp + history/latest.json
 node scripts/sync-coverage.mjs       # lastTestedStamp on strands/pages; stale vs live tip
 node scripts/sync-tracker.mjs        # prefers TRACKER_EXPORT.json; else keeps seed + blocked banner
+node scripts/build-coverage-admin.mjs  # Admin Coverage rows from coverage/sources/
 # Then Bot Commander rewrites strands / progressToday / health / actions honestly
-git add dashboard.json coverage.json tracker/items.json history/ assets/ index.html README.md CONTRIBUTING-BOT.md scripts/
+git add dashboard.json coverage.json coverage/ tracker/items.json history/ assets/ index.html README.md CONTRIBUTING-BOT.md scripts/
 git commit -m "…" && git push origin main
 ```
 
