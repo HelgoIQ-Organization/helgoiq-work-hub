@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-11T07:06:36.155Z",
+  "updatedAt": "2026-09-11T08:16:41.356Z",
   "drops": [
+    {
+      "id": "2026-09-11-command-centre-cluster-a-tip-a263c4ab-22-24",
+      "title": "Command Centre Cluster A tip a263c4ab — 22/24",
+      "date": "2026-09-11",
+      "summary": "Cluster A 22/24 on tip a263c4ab; fails ACS-F01 ACS-C01; Teacher2 MGR-10+ACS-X01 PASS; B-F locked",
+      "plainEnglish": "Cluster A 22/24 on tip a263c4ab; fails ACS-F01 ACS-C01; Teacher2 MGR-10+ACS-X01 PASS; B-F locked",
+      "tags": [
+        "command-centre",
+        "status",
+        "ai-85"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-command-centre-cluster-a-tip-a263c4ab-22-24/SUMMARY-A.md"
+      ],
+      "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5631506376"
+    },
     {
       "id": "2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f",
       "title": "Morning smoke tip a263c4ab — reverse PASS, credit FAIL",

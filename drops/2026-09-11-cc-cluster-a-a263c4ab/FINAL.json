@@ -1,0 +1,29 @@
+{
+  "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+  "pass": 22,
+  "total": 24,
+  "admin_live": true,
+  "teacher_live": true,
+  "b_to_f": "locked",
+  "fails": [
+    "ACS-F01",
+    "ACS-C01"
+  ],
+  "fail_verbatim": {
+    "ACS-F01": {
+      "question": "Which teachers appear on Bluebird staff availability?",
+      "answer_verbatim": "No active company-bound teachers are eligible for staff availability.",
+      "score": "wrong"
+    },
+    "ACS-C01": {
+      "question": "Admin 2 vs BB Teacher: who should change Feature Control or Meta ads?",
+      "answer_verbatim": "BB Teacher should change neither Feature Controls nor Meta ads. The compared admin can change Meta ads; Feature Controls require a selected-company owner.",
+      "score": "partial"
+    }
+  },
+  "judgement": "Cluster A 22/24 on tip a263c4ab; B-F locked",
+  "teacher": {
+    "MGR-10": "teacher_refuse PASS",
+    "ACS-X01": "teacher_refuse PASS"
+  }
+}
