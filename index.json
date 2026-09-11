@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-11T14:49:54.606Z",
+  "updatedAt": "2026-09-11T14:57:26.585Z",
   "drops": [
+    {
+      "id": "2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c",
+      "title": "Owner Twin PASS BI PASS tip a73ff70 — data build Clerk-blocked",
+      "date": "2026-09-11",
+      "summary": "Owner Twin PASS BI PASS tip a73ff70 — data build Clerk-blocked",
+      "plainEnglish": "Owner Twin PASS BI PASS tip a73ff70 — data build Clerk-blocked",
+      "tags": [
+        "ai-85",
+        "findings",
+        "m1"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c/RESULTS.md"
+      ],
+      "tip": "a73ff70b266057f226bb02c5f3112f72a92ad53d"
+    },
     {
       "id": "2026-09-11-untested-16-surfaces-ranked-week-one-posted-1180",
       "title": "UNTESTED 16 surfaces ranked week-one (posted #1180)",
