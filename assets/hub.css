@@ -845,15 +845,18 @@ a { color: var(--accent); }
   font: inherit;
 }
 .tracker-filters {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 0.65rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.65rem 1.25rem;
   padding: 0.85rem 1rem;
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   margin-bottom: 0.75rem;
 }
+.tracker-filters .filter-block { flex: 1 1 9rem; min-width: 8rem; }
+.tracker-filters #trackerClear { align-self: flex-end; margin-top: 1.35rem; }
 .tracker-board {
   display: flex;
   flex-direction: column;
