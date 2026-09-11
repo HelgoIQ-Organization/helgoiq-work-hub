@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T19:07:15.812Z",
+  "generatedAt": "2026-09-11T19:30:50.300Z",
   "liveTip": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
   "liveTipPlaceholder": false,
   "liveTipShort": "a73ff70b",
@@ -7,31 +7,31 @@
   "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
   "platformMenuTip": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
   "bundle407": {
-    "present": false,
-    "source": null,
-    "adminRouteCount": 0,
+    "present": true,
+    "source": "coverage/sources/_routes_from_bundle.txt",
+    "adminRouteCount": 328,
     "expectedBundleCount": 407
   },
   "counts": {
-    "total": 290,
+    "total": 334,
     "menu": 233,
-    "matched": 83,
-    "hubOnly": 150,
-    "orphaned": 57,
+    "matched": 232,
+    "hubOnly": 1,
+    "orphaned": 101,
     "fullyTested": 0,
     "partiallyTested": 0,
     "blocked": 0,
-    "failed": 7,
-    "notTested": 283,
-    "stale": 5
+    "failed": 6,
+    "notTested": 328,
+    "stale": 4
   },
-  "completenessStatement": "How we verified completeness: intersection of the product sidebar map (HelgoIQ-Platform client/src/lib/adminMenuCatalog.ts + AdminNav adminMenuItems — 233 menu paths) vs the 407-route orphan audit admin subset is NOT in this repo yet — Bot Commander should drop `coverage/sources/_routes_from_bundle.txt` (or `routes-407.json` / `.csv`). Until then the router side is a best-effort AdminRoutes snapshot + extras from HelgoIQ-Platform @ a73ff70b. Counts: 83 matched (in sidebar and in the router/407 side), 150 hub-only (sidebar/menu path with no matching 407/router row), 57 orphaned (407/router path with no menu breadcrumb). SURFACES.md / full-census inventory was not in this hub repo; breadcrumbs use workspace › folder › title from the live AdminNav folder map. Most pages are not_tested — we do not invent PASS rates. Known FAIL/BLOCKED rows are stamped only when a hub drop already named that route.",
+  "completenessStatement": "How we verified completeness: intersection of the product sidebar map (HelgoIQ-Platform client/src/lib/adminMenuCatalog.ts + AdminNav adminMenuItems — 233 menu paths) vs the 407-route orphan audit admin subset (328 /admin paths from coverage/sources/_routes_from_bundle.txt). Counts: 232 matched (in sidebar and in the router/407 side), 1 hub-only (sidebar/menu path with no matching 407/router row), 101 orphaned (407/router path with no menu breadcrumb). SURFACES.md / full-census inventory was not in this hub repo; breadcrumbs use workspace › folder › title from the live AdminNav folder map. Most pages are not_tested — we do not invent PASS rates. Known FAIL/BLOCKED rows are stamped only when a hub drop already named that route.",
   "sourcesUsed": {
     "adminMenu": "coverage/sources/admin-menu.json",
     "folders": "coverage/sources/folders.json",
     "workspaces": "coverage/sources/workspaces.json",
     "routerExtras": true,
-    "routes407": null,
+    "routes407": "coverage/sources/_routes_from_bundle.txt",
     "coverageJson": true
   },
   "notes": [

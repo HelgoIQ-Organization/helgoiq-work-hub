@@ -1,0 +1,359 @@
+# HelgoIQ Staging — Tenant Isolation Surface Map (non-comms)
+Base: https://lobster-app-662c7.ondigitalocean.app
+Tenant param `?c=<companyId>` — decoy **150002 (Bluebird Pilates — TEST DATA)**, control **150001 (REFRM Dynamic Pilates)**.
+READ-ONLY map. Excludes surfaces already covered by Chat QA (/workspace/helgoiq-chat-qa) and Comms isolation QA (/workspace/helgoiq-comms-qa/SURFACES.md).
+Route source: admin sidebar walk under ?c=150002 + route table extracted from app bundle /assets/index-DBSLW-eV.js.
+Total surfaces: 345
+
+| Domain | Surface | Role | URL | Priority |
+|---|---|---|---|---|
+| Members & CRM | Audience Hub | Admin | /admin/audience-hub?c=150002 | P1 |
+| Members & CRM | Crm Hub | Admin | /admin/crm-hub?c=150002 | P1 |
+| Members & CRM | Members | Admin | /admin/members?c=150002 | P1 |
+| Members & CRM | Recovery Hub | Admin | /admin/recovery-hub?c=150002 | P1 |
+| Members & CRM | Retention Hub | Admin | /admin/retention-hub?c=150002 | P1 |
+| Members & CRM | Tag Hub | Admin | /admin/tag-hub?c=150002 | P1 |
+| Members & CRM | At Risk Revenue | Admin | /admin/at-risk-revenue?c=150002 | P1 |
+| Members & CRM | Audience Intelligence | Admin | /admin/audience-intelligence?c=150002 | P1 |
+| Members & CRM | Automation | Admin | /admin/automation?c=150002 | P1 |
+| Members & CRM | Calendar | Client | /profile/calendar?c=150002 | P1 |
+| Members & CRM | Churn Prevention | Admin | /admin/churn-prevention?c=150002 | P1 |
+| Members & CRM | Crm | Admin | /admin/crm?c=150002 | P1 |
+| Members & CRM | Escalation Settings | Admin | /admin/escalation-settings?c=150002 | P1 |
+| Members & CRM | Journey Analytics | Admin | /admin/journey-analytics?c=150002 | P1 |
+| Members & CRM | Journey Orchestrator | Admin | /admin/journey-orchestrator?c=150002 | P1 |
+| Members & CRM | Member Digital Twin | Admin | /admin/member-digital-twin?c=150002 | P1 |
+| Members & CRM | Member Health Score | Admin | /admin/member-health-score?c=150002 | P1 |
+| Members & CRM | New Vs Returning | Admin | /admin/new-vs-returning?c=150002 | P1 |
+| Members & CRM | Profile | Client | /profile?c=150002 | P1 |
+| Members & CRM | Profile | Teacher | /teacher/profile?c=150002 | P1 |
+| Members & CRM | Recovery | Client | /recovery?c=150002 | P1 |
+| Members & CRM | Related Contacts | Admin | /admin/related-contacts?c=150002 | P1 |
+| Members & CRM | Related Contacts | Client | /related-contacts?c=150002 | P1 |
+| Members & CRM | Retention Sequences | Admin | /admin/retention-sequences?c=150002 | P1 |
+| Members & CRM | Segments | Admin | /admin/segments?c=150002 | P1 |
+| Members & CRM | Sentiment Analysis | Admin | /admin/sentiment-analysis?c=150002 | P1 |
+| Members & CRM | Tag Intelligence | Admin | /admin/tag-intelligence?c=150002 | P1 |
+| Members & CRM | Tag Management | Admin | /admin/tag-management?c=150002 | P1 |
+| Members & CRM | Trial Conversion | Admin | /admin/trial-conversion?c=150002 | P1 |
+| Members & CRM | View As Member | Admin | /admin/view-as-member?c=150002 | P1 |
+| Payments & Finance | Billing | Admin | /admin/billing?c=150002 | P1 |
+| Payments & Finance | Dispute Hub | Admin | /admin/dispute-hub?c=150002 | P1 |
+| Payments & Finance | Finance Hub | Admin | /admin/finance-hub?c=150002 | P1 |
+| Payments & Finance | Finance Hub?Tab=Cash Dd | Admin | /admin/finance-hub?tab=cash-dd&c=150002 | P1 |
+| Payments & Finance | Finance Hub?Tab=Cash Payment | Admin | /admin/finance-hub?tab=cash-payment&c=150002 | P1 |
+| Payments & Finance | Finance Hub?Tab=Invoicing | Admin | /admin/finance-hub?tab=invoicing&c=150002 | P1 |
+| Payments & Finance | Finance Hub?Tab=Refunds | Admin | /admin/finance-hub?tab=refunds&c=150002 | P1 |
+| Payments & Finance | Payments | Client | /payments?c=150002 | P1 |
+| Payments & Finance | Pos Hub | Admin | /admin/pos-hub?c=150002 | P1 |
+| Payments & Finance | Products | Admin | /admin/products?c=150002 | P1 |
+| Payments & Finance | Bookkeeping | Admin | /admin/bookkeeping?c=150002 | P1 |
+| Payments & Finance | Bookkeeping | Teacher | /teacher/bookkeeping?c=150002 | P1 |
+| Payments & Finance | Card Expiry | Admin | /admin/card-expiry?c=150002 | P1 |
+| Payments & Finance | Cash Payment | Admin | /admin/cash-payment?c=150002 | P1 |
+| Payments & Finance | Cash Report | Admin | /admin/cash-report?c=150002 | P1 |
+| Payments & Finance | Credit Liability | Admin | /admin/credit-liability?c=150002 | P1 |
+| Payments & Finance | Discount Codes | Admin | /admin/discount-codes?c=150002 | P1 |
+| Payments & Finance | Gc Report | Admin | /admin/gc-report?c=150002 | P1 |
+| Payments & Finance | Gift Cards | Admin | /admin/gift-cards?c=150002 | P1 |
+| Payments & Finance | Gocardless | Admin | /admin/gocardless?c=150002 | P1 |
+| Payments & Finance | Invoicing | Admin | /admin/invoicing?c=150002 | P1 |
+| Payments & Finance | Open Banking | Admin | /admin/open-banking?c=150002 | P1 |
+| Payments & Finance | Pay | Teacher | /teacher/pay?c=150002 | P1 |
+| Payments & Finance | Pos | Teacher | /teacher/pos?c=150002 | P1 |
+| Payments & Finance | Predictive Cash Flow | Admin | /admin/predictive-cash-flow?c=150002 | P1 |
+| Payments & Finance | Pt Packages | Admin | /admin/pt-packages?c=150002 | P1 |
+| Payments & Finance | Purchase | Client | /purchase?c=150002 | P1 |
+| Payments & Finance | Refunds | Admin | /admin/refunds?c=150002 | P1 |
+| Payments & Finance | Wallet?Tab=Credits | Client | /wallet?tab=credits&c=150002 | P1 |
+| Bookings | Appointments Hub | Admin | /admin/appointments-hub?c=150002 | P1 |
+| Bookings | Bookings | Client | /bookings?c=150002 | P1 |
+| Bookings | Cancellation Reports | Admin | /admin/cancellation-reports?c=150002 | P1 |
+| Bookings | Checkin Compliance | Admin | /admin/checkin-compliance?c=150002 | P1 |
+| Bookings | Checkins | Admin | /admin/checkins?c=150002 | P1 |
+| Bookings | Class Filler | Admin | /admin/class-filler?c=150002 | P1 |
+| Bookings | My Appointments | Client | /my-appointments?c=150002 | P1 |
+| Bookings | Waitlist | Client | /waitlist?c=150002 | P1 |
+| Timetable & Schedule | Schedule | Client | /schedule?c=150002 | P1 |
+| Timetable & Schedule | Timetable | Admin | /admin/timetable?c=150002 | P1 |
+| Timetable & Schedule | Timetable | Client | /timetable?c=150002 | P1 |
+| Timetable & Schedule | Calendar | Teacher | /teacher/calendar?c=150002 | P1 |
+| Timetable & Schedule | Daily Focus | Admin | /admin/daily-focus?c=150002 | P1 |
+| Timetable & Schedule | Holiday Calendar | Admin | /admin/holiday-calendar?c=150002 | P1 |
+| Timetable & Schedule | Team Calendar | Admin | /admin/team-calendar?c=150002 | P1 |
+| Staff & Team | Invite Staff | Admin | /admin/invite-staff?c=150002 | P1 |
+| Staff & Team | Rota Hub | Admin | /admin/rota-hub?c=150002 | P1 |
+| Staff & Team | Staff Availability | Admin | /admin/staff-availability?c=150002 | P1 |
+| Staff & Team | Staff Employment | Admin | /admin/staff-employment?c=150002 | P1 |
+| Staff & Team | Staff Hub | Admin | /admin/staff-hub?c=150002 | P1 |
+| Staff & Team | Staff Hub?Tab=Invitations | Admin | /admin/staff-hub?tab=invitations&c=150002 | P1 |
+| Staff & Team | Staff Hub?Tab=Roles | Admin | /admin/staff-hub?tab=roles&c=150002 | P1 |
+| Staff & Team | Staff Hub?Tab=Rota | Admin | /admin/staff-hub?tab=rota&c=150002 | P1 |
+| Staff & Team | Team | Admin | /admin/team?c=150002 | P1 |
+| Staff & Team | Instructor Ai Agents | Admin | /admin/instructor-ai-agents?c=150002 | P1 |
+| Staff & Team | Instructor Observations | Admin | /admin/instructor-observations?c=150002 | P1 |
+| Staff & Team | Instructor Roi | Admin | /admin/instructor-roi?c=150002 | P1 |
+| Staff & Team | Instructor Teaching Insights | Admin | /admin/instructor-teaching-insights?c=150002 | P1 |
+| Staff & Team | Learning Engine | Admin | /admin/learning-engine?c=150002 | P1 |
+| Staff & Team | Performance | Teacher | /teacher/performance?c=150002 | P1 |
+| Staff & Team | Resources | Teacher | /teacher/resources?c=150002 | P1 |
+| Staff & Team | Roles | Admin | /admin/roles?c=150002 | P1 |
+| Staff & Team | Rota Builder | Admin | /admin/rota-builder?c=150002 | P1 |
+| Staff & Team | Rota Reporting | Admin | /admin/rota-reporting?c=150002 | P1 |
+| Staff & Team | Rota Reporting Legacy | Admin | /admin/rota-reporting-legacy?c=150002 | P1 |
+| Staff & Team | Rota Sharing | Admin | /admin/rota-sharing?c=150002 | P1 |
+| Staff & Team | Subs | Teacher | /teacher/subs?c=150002 | P1 |
+| Staff & Team | Substitutions | Admin | /admin/staff/substitutions?c=150002 | P1 |
+| Staff & Team | Teacher | Teacher | /teacher?c=150002 | P1 |
+| Staff & Team | Team Holidays | Admin | /admin/team-holidays?c=150002 | P1 |
+| Staff & Team | Walkthrough Manager | Admin | /admin/walkthrough-manager?c=150002 | P1 |
+| Staff & Team | What We Learned | Admin | /admin/what-we-learned?c=150002 | P1 |
+| Staff & Team | Workforce Intelligence | Admin | /admin/workforce-intelligence?c=150002 | P1 |
+| Academy/LMS | Courses | Admin | /admin/academy/courses?c=150002 | P1 |
+| Academy/LMS | Learners | Admin | /admin/academy/learners?c=150002 | P1 |
+| Academy/LMS | Training Hub | Admin | /admin/training-hub?c=150002 | P1 |
+| Academy/LMS | Training Hub?Tab=Insights | Admin | /admin/training-hub?tab=insights&c=150002 | P1 |
+| Academy/LMS | Academy | Admin | /admin/academy?c=150002 | P1 |
+| Academy/LMS | Academy | Teacher | /teacher/academy?c=150002 | P1 |
+| Academy/LMS | Acknowledgements | Admin | /admin/resources/acknowledgements?c=150002 | P1 |
+| Academy/LMS | Ai Settings | Admin | /admin/academy/ai-settings?c=150002 | P1 |
+| Academy/LMS | Ai Tutor Analytics | Admin | /admin/academy/ai-tutor-analytics?c=150002 | P1 |
+| Academy/LMS | Ai Tutor Personality | Admin | /admin/academy/ai-tutor-personality?c=150002 | P1 |
+| Academy/LMS | Assessments | Admin | /admin/academy/assessments?c=150002 | P1 |
+| Academy/LMS | Automations | Admin | /admin/academy/automations?c=150002 | P1 |
+| Academy/LMS | Certificate Design | Admin | /admin/academy/certificate-design?c=150002 | P1 |
+| Academy/LMS | Certificates | Admin | /admin/academy/certificates?c=150002 | P1 |
+| Academy/LMS | Class Tags | Admin | /admin/academy/class-tags?c=150002 | P1 |
+| Academy/LMS | Cohort Tags | Admin | /admin/academy/cohort-tags?c=150002 | P1 |
+| Academy/LMS | Commerce | Admin | /admin/academy/commerce?c=150002 | P1 |
+| Academy/LMS | Community | Admin | /admin/academy/community?c=150002 | P1 |
+| Academy/LMS | Contracts | Admin | /admin/academy/contracts?c=150002 | P1 |
+| Academy/LMS | Course Groups | Admin | /admin/academy/course-groups?c=150002 | P1 |
+| Academy/LMS | Course Recordings | Admin | /admin/academy/course-recordings?c=150002 | P1 |
+| Academy/LMS | Discount Codes | Admin | /admin/academy/discount-codes?c=150002 | P1 |
+| Academy/LMS | Exercises | Admin | /admin/academy/exercises?c=150002 | P1 |
+| Academy/LMS | Financials | Admin | /admin/academy/financials?c=150002 | P1 |
+| Academy/LMS | Import | Admin | /admin/academy/import?c=150002 | P1 |
+| Academy/LMS | Import Content | Admin | /admin/academy/import-content?c=150002 | P1 |
+| Academy/LMS | Import Students | Admin | /admin/academy/import-students?c=150002 | P1 |
+| Academy/LMS | Insights | Admin | /admin/academy/insights?c=150002 | P1 |
+| Academy/LMS | Invites | Admin | /admin/academy/invites?c=150002 | P1 |
+| Academy/LMS | Libraries | Admin | /admin/academy/libraries?c=150002 | P1 |
+| Academy/LMS | News | Admin | /admin/academy/news?c=150002 | P1 |
+| Academy/LMS | Pricing | Admin | /admin/academy/pricing?c=150002 | P1 |
+| Academy/LMS | Progress Guides | Admin | /admin/progress-guides?c=150002 | P1 |
+| Academy/LMS | Quizzes | Admin | /admin/academy/quizzes?c=150002 | P1 |
+| Academy/LMS | Reflections | Admin | /admin/academy/reflections?c=150002 | P1 |
+| Academy/LMS | Reports | Admin | /admin/academy/reports?c=150002 | P1 |
+| Academy/LMS | Resources | Admin | /admin/academy/resources?c=150002 | P1 |
+| Academy/LMS | Resources | Admin | /admin/resources?c=150002 | P1 |
+| Academy/LMS | Settings | Admin | /admin/academy/settings?c=150002 | P1 |
+| Academy/LMS | Software Guides | Admin | /admin/software-guides?c=150002 | P1 |
+| Academy/LMS | Teachers | Admin | /admin/academy/teachers?c=150002 | P1 |
+| Academy/LMS | Terms | Admin | /admin/academy/terms?c=150002 | P1 |
+| Academy/LMS | Training | Teacher | /teacher/training?c=150002 | P1 |
+| Academy/LMS | Training | Client | /training?c=150002 | P1 |
+| Academy/LMS | Users | Admin | /admin/academy/users?c=150002 | P1 |
+| Academy/LMS | Video Guides | Admin | /admin/video-guides?c=150002 | P1 |
+| Retreats & Experiences | Milestones Hub | Admin | /admin/milestones-hub?c=150002 | P1 |
+| Retreats & Experiences | My Retreats | Client | /my-retreats?c=150002 | P1 |
+| Retreats & Experiences | Referral Hub | Admin | /admin/referral-hub?c=150002 | P1 |
+| Retreats & Experiences | Retreat Bookings | Admin | /admin/retreat-bookings?c=150002 | P1 |
+| Retreats & Experiences | Retreats | Admin | /admin/retreats?c=150002 | P1 |
+| Retreats & Experiences | Retreats Hub | Admin | /admin/retreats-hub?c=150002 | P1 |
+| Retreats & Experiences | Staff Milestones | Admin | /admin/staff-milestones?c=150002 | P1 |
+| Retreats & Experiences | Badges | Admin | /admin/badges?c=150002 | P1 |
+| Retreats & Experiences | Birthdays | Admin | /admin/birthdays?c=150002 | P1 |
+| Retreats & Experiences | Challenges | Admin | /admin/challenges?c=150002 | P1 |
+| Retreats & Experiences | Growth Rewards | Admin | /admin/growth-rewards?c=150002 | P1 |
+| Retreats & Experiences | Lifetime | Client | /lifetime?c=150002 | P1 |
+| Retreats & Experiences | Local Perks | Client | /local-perks?c=150002 | P1 |
+| Retreats & Experiences | Milestone Club | Admin | /admin/milestone-club?c=150002 | P1 |
+| Retreats & Experiences | Milestones | Client | /milestones?c=150002 | P1 |
+| Retreats & Experiences | Referral Report | Admin | /admin/referral-report?c=150002 | P1 |
+| Retreats & Experiences | Referrals | Client | /referrals?c=150002 | P1 |
+| Retreats & Experiences | Retreat Enquiries | Admin | /admin/retreat-enquiries?c=150002 | P1 |
+| Retreats & Experiences | Retreat Financials | Admin | /admin/retreat-financials?c=150002 | P1 |
+| Retreats & Experiences | Retreat Venues | Admin | /admin/retreat-venues?c=150002 | P1 |
+| Safe Studio | Team | Admin | /admin/safe-studio/team?c=150002 | P1 |
+| Safe Studio | Compliance | Admin | /admin/safe-studio/compliance?c=150002 | P1 |
+| Safe Studio | Documents | Admin | /admin/safe-studio/documents?c=150002 | P1 |
+| Safe Studio | Governance | Admin | /admin/safe-studio/governance?c=150002 | P1 |
+| Safe Studio | Insights | Admin | /admin/safe-studio/insights?c=150002 | P1 |
+| Safe Studio | Inspections | Admin | /admin/safe-studio/inspections?c=150002 | P1 |
+| Safe Studio | Operations | Admin | /admin/safe-studio/operations?c=150002 | P1 |
+| Safe Studio | People | Admin | /admin/safe-studio/people?c=150002 | P1 |
+| Safe Studio | Reports | Admin | /admin/safe-studio/reports?c=150002 | P1 |
+| Safe Studio | Risk | Admin | /admin/safe-studio/risk?c=150002 | P1 |
+| Safe Studio | Safe Studio | Admin | /admin/safe-studio?c=150002 | P1 |
+| Safe Studio | Safe Studio | Teacher | /teacher/safe-studio?c=150002 | P1 |
+| Safe Studio | Settings | Admin | /admin/safe-studio/settings?c=150002 | P1 |
+| Payments & Finance | Stripe Connect | Platform Owner | /admin/stripe-connect?c=150002 | P2 |
+| Safe Studio | Safe Studio | Platform Owner | /admin/platform/safe-studio?c=150002 | P2 |
+| Safe Studio | Tenants | Platform Owner | /admin/platform/safe-studio/tenants?c=150002 | P2 |
+| Safe Studio | Users | Platform Owner | /admin/platform/safe-studio/users?c=150002 | P2 |
+| Facilities & Security | Cctv Hub | Admin | /admin/cctv-hub?c=150002 | P2 |
+| Facilities & Security | Cctv Hub?Tab=Connections | Admin | /admin/cctv-hub?tab=connections&c=150002 | P2 |
+| Facilities & Security | Cctv Hub?Tab=Gateways | Admin | /admin/cctv-hub?tab=gateways&c=150002 | P2 |
+| Facilities & Security | Cctv Hub?Tab=Staff | Admin | /admin/cctv-hub?tab=staff&c=150002 | P2 |
+| Facilities & Security | Cctv Hub?Tab=Storage | Admin | /admin/cctv-hub?tab=storage&c=150002 | P2 |
+| Facilities & Security | Security Hub | Admin | /admin/security-hub?c=150002 | P2 |
+| Reports & Analytics | Ai Management Hub | Admin | /admin/ai-management-hub?c=150002 | P2 |
+| Reports & Analytics | Ai Operations Hub | Admin | /admin/ai-operations-hub?c=150002 | P2 |
+| Reports & Analytics | Reports Hub | Admin | /admin/reports-hub?c=150002 | P2 |
+| Settings & Governance | Platform Training Hub | Platform Owner | /admin/platform-training-hub?c=150002 | P2 |
+| Signage & Screens | Screen Schedules | Admin | /admin/screen-schedules?c=150002 | P2 |
+| Signage & Screens | Screens Hub | Admin | /admin/screens-hub?c=150002 | P2 |
+| Signage & Screens | Screens Hub?Tab=Screens | Admin | /admin/screens-hub?tab=screens&c=150002 | P2 |
+| Signage & Screens | Screens Hub?Tab=Setup | Admin | /admin/screens-hub?tab=setup&c=150002 | P2 |
+| Website Builder & Channels | Approval Hub | Admin | /admin/website/approval-hub?c=150002 | P2 |
+| Website Builder & Channels | Blog Hub | Admin | /admin/blog-hub?c=150002 | P2 |
+| Website Builder & Channels | Meta Hub | Admin | /admin/meta-hub?c=150002 | P2 |
+| Website Builder & Channels | Meta Hub?Tab=Ads | Admin | /admin/meta-hub?tab=ads&c=150002 | P2 |
+| Website Builder & Channels | Meta Hub?Tab=Builder | Admin | /admin/meta-hub?tab=builder&c=150002 | P2 |
+| Website Builder & Channels | Meta Hub?Tab=Campaign Builder | Admin | /admin/meta-hub?tab=campaign-builder&c=150002 | P2 |
+| Website Builder & Channels | Meta Hub?Tab=Connection | Admin | /admin/meta-hub?tab=connection&c=150002 | P2 |
+| Website Builder & Channels | Social Hub | Admin | /admin/social-hub?c=150002 | P2 |
+| Website Builder & Channels | Social Hub?Tab=Competitors | Admin | /admin/social-hub?tab=competitors&c=150002 | P2 |
+| Website Builder & Channels | Social Hub?Tab=Planner | Admin | /admin/social-hub?tab=planner&c=150002 | P2 |
+| Website Builder & Channels | Website Hub | Admin | /admin/website-hub?c=150002 | P2 |
+| Facilities & Security | Access Pass | Client | /access-pass?c=150002 | P2 |
+| Facilities & Security | Alerts | Admin | /admin/door-access/alerts?c=150002 | P2 |
+| Facilities & Security | Camio Live | Admin | /admin/camio-live?c=150002 | P2 |
+| Facilities & Security | Camio Settings | Admin | /admin/camio-settings?c=150002 | P2 |
+| Facilities & Security | Cctv | Admin | /admin/cctv?c=150002 | P2 |
+| Facilities & Security | Cctv | Teacher | /staff/cctv?c=150002 | P2 |
+| Facilities & Security | Cctv Settings | Admin | /admin/cctv-settings?c=150002 | P2 |
+| Facilities & Security | Devices | Admin | /admin/devices?c=150002 | P2 |
+| Facilities & Security | Door Access | Admin | /admin/door-access?c=150002 | P2 |
+| Facilities & Security | Kiosk Config | Admin | /admin/kiosk-config?c=150002 | P2 |
+| Facilities & Security | Platform Devices | Platform Owner | /admin/platform-devices?c=150002 | P2 |
+| Facilities & Security | Report | Admin | /admin/door-access/report?c=150002 | P2 |
+| Facilities & Security | Security Alerts | Admin | /admin/security-alerts?c=150002 | P2 |
+| Facilities & Security | Wallet Passes | Admin | /admin/wallet-passes?c=150002 | P2 |
+| Other | Implementation Checklist | Platform Owner | /admin/implementation-checklist?c=150002 | P2 |
+| Reports & Analytics | Action Effectiveness | Admin | /admin/action-effectiveness?c=150002 | P2 |
+| Reports & Analytics | Ai Cost Dashboard | Admin | /admin/ai-cost-dashboard?c=150002 | P2 |
+| Reports & Analytics | Ai Decision Audit | Platform Owner | /admin/ai-decision-audit?c=150002 | P2 |
+| Reports & Analytics | Ai Feature Toggles | Admin | /admin/ai-feature-toggles?c=150002 | P2 |
+| Reports & Analytics | Ai Governance | Admin | /admin/ai-governance?c=150002 | P2 |
+| Reports & Analytics | Ai Usage | Admin | /admin/ai-usage?c=150002 | P2 |
+| Reports & Analytics | Analytics | Admin | /admin/analytics?c=150002 | P2 |
+| Reports & Analytics | Anomaly Alerts | Admin | /admin/anomaly-alerts?c=150002 | P2 |
+| Reports & Analytics | Business Insights | Admin | /admin/business-insights?c=150002 | P2 |
+| Reports & Analytics | Cohorts | Admin | /admin/intelligence/cohorts?c=150002 | P2 |
+| Reports & Analytics | Custom Dashboards | Admin | /admin/custom-dashboards?c=150002 | P2 |
+| Reports & Analytics | Dashboard | Admin | /admin/dashboard?c=150002 | P2 |
+| Reports & Analytics | Decision Engine | Admin | /admin/decision-engine?c=150002 | P2 |
+| Reports & Analytics | Decision Weights | Admin | /admin/decision-weights?c=150002 | P2 |
+| Reports & Analytics | Executive Briefing | Admin | /admin/intelligence/executive-briefing?c=150002 | P2 |
+| Reports & Analytics | Export Templates | Admin | /admin/export-templates?c=150002 | P2 |
+| Reports & Analytics | Financial Forecasting | Admin | /admin/financial-forecasting?c=150002 | P2 |
+| Reports & Analytics | Geo Heatmap | Admin | /admin/geo-heatmap?c=150002 | P2 |
+| Reports & Analytics | Health | Admin | /admin/ai-operations/health?c=150002 | P2 |
+| Reports & Analytics | Insights | Client | /insights?c=150002 | P2 |
+| Reports & Analytics | Intelligence Centre | Admin | /admin/intelligence-centre?c=150002 | P2 |
+| Reports & Analytics | Intelligence Impact | Admin | /admin/intelligence-impact?c=150002 | P2 |
+| Reports & Analytics | Location Intelligence | Admin | /admin/location-intelligence?c=150002 | P2 |
+| Reports & Analytics | Manager | Admin | /admin/intelligence/manager?c=150002 | P2 |
+| Reports & Analytics | Monthly Review | Admin | /admin/monthly-review?c=150002 | P2 |
+| Reports & Analytics | Mrr | Admin | /admin/intelligence/mrr?c=150002 | P2 |
+| Reports & Analytics | My Actions | Admin | /admin/intelligence/my-actions?c=150002 | P2 |
+| Reports & Analytics | My Actions | Admin | /admin/my-actions?c=150002 | P2 |
+| Reports & Analytics | Opportunities | Admin | /admin/intelligence/opportunities?c=150002 | P2 |
+| Reports & Analytics | Org Intelligence | Admin | /admin/org-intelligence?c=150002 | P2 |
+| Reports & Analytics | Overview | Admin | /admin/overview?c=150002 | P2 |
+| Reports & Analytics | Performance Intelligence | Admin | /admin/performance-intelligence?c=150002 | P2 |
+| Reports & Analytics | Platform Dashboard | Platform Owner | /admin/platform-dashboard?c=150002 | P2 |
+| Reports & Analytics | Post Class Intelligence | Admin | /admin/post-class-intelligence?c=150002 | P2 |
+| Reports & Analytics | Quarterly Review | Admin | /admin/quarterly-review?c=150002 | P2 |
+| Reports & Analytics | Recommendation Tracker | Admin | /admin/recommendation-tracker?c=150002 | P2 |
+| Reports & Analytics | Recordings | Admin | /admin/recordings?c=150002 | P2 |
+| Reports & Analytics | Revenue Intelligence | Admin | /admin/revenue-intelligence?c=150002 | P2 |
+| Reports & Analytics | Smart Folder Reports | Admin | /admin/smart-folder-reports?c=150002 | P2 |
+| Reports & Analytics | Studio Intelligence | Admin | /admin/studio-intelligence?c=150002 | P2 |
+| Reports & Analytics | Studio Pulse | Admin | /admin/studio-pulse?c=150002 | P2 |
+| Reports & Analytics | Studio State | Admin | /admin/studio-state?c=150002 | P2 |
+| Reports & Analytics | Visual Intelligence Showcase | Platform Owner | /admin/visual-intelligence-showcase?c=150002 | P2 |
+| Settings & Governance | Breach Process | Platform Owner | /admin/breach-process?c=150002 | P2 |
+| Settings & Governance | Changelog | Platform Owner | /admin/changelog?c=150002 | P2 |
+| Settings & Governance | Event Bus | Platform Owner | /admin/event-bus?c=150002 | P2 |
+| Settings & Governance | Feature Flags | Platform Owner | /admin/feature-flags?c=150002 | P2 |
+| Settings & Governance | Feature Management | Platform Owner | /admin/feature-management?c=150002 | P2 |
+| Settings & Governance | Platform Connections | Platform Owner | /admin/platform-connections?c=150002 | P2 |
+| Settings & Governance | Platform Issues | Platform Owner | /admin/platform-issues?c=150002 | P2 |
+| Settings & Governance | Platform Knowledge | Platform Owner | /admin/platform-knowledge?c=150002 | P2 |
+| Settings & Governance | Platform Plans | Platform Owner | /admin/platform-plans?c=150002 | P2 |
+| Settings & Governance | Platform Scaling | Platform Owner | /admin/platform-scaling?c=150002 | P2 |
+| Settings & Governance | Platform Videos | Platform Owner | /admin/platform-videos?c=150002 | P2 |
+| Settings & Governance | Roadmap | Platform Owner | /admin/roadmap?c=150002 | P2 |
+| Settings & Governance | Seed Data | Platform Owner | /admin/seed-data?c=150002 | P2 |
+| Settings & Governance | Sentry | Platform Owner | /admin/sentry?c=150002 | P2 |
+| Settings & Governance | System Blueprint | Platform Owner | /admin/system-blueprint?c=150002 | P2 |
+| Settings & Governance | System Health | Platform Owner | /admin/system-health?c=150002 | P2 |
+| Settings & Governance | Tenant Management | Platform Owner | /admin/tenant-management?c=150002 | P2 |
+| Signage & Screens | Builder | Admin | /admin/screen-content/builder?c=150002 | P2 |
+| Signage & Screens | Screen Ai | Admin | /admin/screen-ai?c=150002 | P2 |
+| Signage & Screens | Screen Content | Admin | /admin/screen-content?c=150002 | P2 |
+| Signage & Screens | Screen Health | Admin | /admin/screen-health?c=150002 | P2 |
+| Signage & Screens | Screen Integrations | Admin | /admin/screen-integrations?c=150002 | P2 |
+| Signage & Screens | Screen Playlists | Admin | /admin/screen-playlists?c=150002 | P2 |
+| Signage & Screens | Screen Reporting | Admin | /admin/screen-reporting?c=150002 | P2 |
+| Signage & Screens | Screen Templates | Admin | /admin/screen-templates?c=150002 | P2 |
+| Signage & Screens | Screens | Admin | /admin/screens?c=150002 | P2 |
+| Website Builder & Channels | Acquisition | Admin | /admin/acquisition?c=150002 | P2 |
+| Website Builder & Channels | Acquisition Intelligence | Admin | /admin/acquisition-intelligence?c=150002 | P2 |
+| Website Builder & Channels | Advocacy Queue | Admin | /admin/social/advocacy-queue?c=150002 | P2 |
+| Website Builder & Channels | Ai Builder | Admin | /admin/website/ai-builder?c=150002 | P2 |
+| Website Builder & Channels | Ai Writer | Admin | /admin/blog/ai-writer?c=150002 | P2 |
+| Website Builder & Channels | Assets | Admin | /admin/assets?c=150002 | P2 |
+| Website Builder & Channels | Blog | Admin | /admin/blog?c=150002 | P2 |
+| Website Builder & Channels | Categories | Admin | /admin/blog/categories?c=150002 | P2 |
+| Website Builder & Channels | Conversions | Admin | /admin/social/conversions?c=150002 | P2 |
+| Website Builder & Channels | Forms | Admin | /admin/forms?c=150002 | P2 |
+| Website Builder & Channels | Google Ads | Admin | /admin/social/google-ads?c=150002 | P2 |
+| Website Builder & Channels | Gtm | Admin | /admin/social/gtm?c=150002 | P2 |
+| Website Builder & Channels | Import | Admin | /admin/website/import?c=150002 | P2 |
+| Website Builder & Channels | Instagram | Admin | /admin/social/instagram?c=150002 | P2 |
+| Website Builder & Channels | Integrations | Admin | /admin/social/integrations?c=150002 | P2 |
+| Website Builder & Channels | Marketing | Admin | /admin/marketing?c=150002 | P2 |
+| Website Builder & Channels | Marketing?Tab=Landing Pages | Admin | /admin/marketing?tab=landing-pages&c=150002 | P2 |
+| Website Builder & Channels | Migration | Admin | /admin/migration?c=150002 | P2 |
+| Website Builder & Channels | Migration Dashboard | Admin | /admin/migration-dashboard?c=150002 | P2 |
+| Website Builder & Channels | Navigation | Admin | /admin/website/navigation?c=150002 | P2 |
+| Website Builder & Channels | New | Admin | /admin/qr-generator/new?c=150002 | P2 |
+| Website Builder & Channels | Planner | Admin | /admin/social/planner?c=150002 | P2 |
+| Website Builder & Channels | Qr Generator | Admin | /admin/qr-generator?c=150002 | P2 |
+| Website Builder & Channels | Reviews | Admin | /admin/social/reviews?c=150002 | P2 |
+| Website Builder & Channels | Seo | Admin | /admin/seo?c=150002 | P2 |
+| Website Builder & Channels | Social | Admin | /admin/social?c=150002 | P2 |
+| Website Builder & Channels | Styles | Admin | /admin/website/styles?c=150002 | P2 |
+| Website Builder & Channels | Website | Admin | /admin/website?c=150002 | P2 |
+| Settings & Governance | Compliance Hub | Admin | /admin/compliance-hub?c=150002 | P3 |
+| Settings & Governance | Setup Hub | Admin | /admin/setup-hub?c=150002 | P3 |
+| Other | Admin | Admin | /admin?c=150002 | P3 |
+| Other | Customer Voice Synthesis | Admin | /admin/customer-voice-synthesis?c=150002 | P3 |
+| Other | Weekly Growth Brief | Admin | /admin/weekly-growth-brief?c=150002 | P3 |
+| Settings & Governance | Audit Trail | Admin | /admin/audit-trail?c=150002 | P3 |
+| Settings & Governance | Changelog?From=Profile | Admin | /admin/changelog?from=profile&c=150002 | P3 |
+| Settings & Governance | Connections | Admin | /admin/connections?c=150002 | P3 |
+| Settings & Governance | Data Migration | Admin | /admin/data-migration?c=150002 | P3 |
+| Settings & Governance | Documents | Admin | /admin/documents?c=150002 | P3 |
+| Settings & Governance | Documents?Capture=1 | Admin | /admin/documents?capture=1&c=150002 | P3 |
+| Settings & Governance | Gdpr | Admin | /admin/gdpr?c=150002 | P3 |
+| Settings & Governance | Integrations | Admin | /admin/integrations?c=150002 | P3 |
+| Settings & Governance | Meeting Capture | Admin | /admin/meeting-capture?c=150002 | P3 |
+| Settings & Governance | Onboarding | Admin | /admin/onboarding?c=150002 | P3 |
+| Settings & Governance | Override Audit Log | Admin | /admin/override-audit-log?c=150002 | P3 |
+| Settings & Governance | Roadmap?From=Profile | Admin | /admin/roadmap?from=profile&c=150002 | P3 |
+| Settings & Governance | Setup | Admin | /admin/setup?c=150002 | P3 |
+| Settings & Governance | Tasks | Admin | /admin/tasks?c=150002 | P3 |
+| Settings & Governance | Webhooks | Admin | /admin/webhooks?c=150002 | P3 |
+| Settings & Governance | Whats New Tours | Admin | /admin/whats-new-tours?c=150002 | P3 |
+| Settings & Governance | White Label | Admin | /admin/white-label?c=150002 | P3 |
+| Settings & Governance | Wizard | Admin | /admin/setup/wizard?c=150002 | P3 |
+
+## Notes
+- Dynamic/detail routes (`:id` params) omitted; reach them from their list surface.
+- Client routes take `?c=` the same way; teacher routes verified via /teacher nav.
+- Known anomaly carried over: document title reads 'REFRM Dynamic Pilates' on every page even under c=150002.
