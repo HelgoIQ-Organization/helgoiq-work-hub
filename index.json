@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-11T14:57:26.585Z",
+  "updatedAt": "2026-09-11T19:12:10.100Z",
   "drops": [
+    {
+      "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
+      "title": "Owner negative half 22P/5F tip a73ff70 (correct roadmap FAIL)",
+      "date": "2026-09-11",
+      "summary": "table has 5 FAILs including roadmap; original summary said 4",
+      "plainEnglish": "table has 5 FAILs including roadmap; original summary said 4",
+      "tags": [
+        "findings",
+        "isolation",
+        "status"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md"
+      ],
+      "tip": "a73ff70b266057f226bb02c5f3112f72a92ad53d"
+    },
     {
       "id": "2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c",
       "title": "Owner Twin PASS BI PASS tip a73ff70 — data build Clerk-blocked",
