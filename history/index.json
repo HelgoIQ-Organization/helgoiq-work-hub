@@ -1,9 +1,15 @@
 {
-  "generatedAt": "2026-09-11T06:15:26.376Z",
+  "generatedAt": "2026-09-11T06:20:21.359Z",
   "files": [
     {
       "path": "history/2026-09-11-tip-a263c4ab.json",
       "label": "2026-09-11-tip-a263c4ab.json",
+      "tip": "a263c4ab",
+      "headline": 65
+    },
+    {
+      "path": "history/2026-09-11-rollback-ban-lifted.json",
+      "label": "2026-09-11-rollback-ban-lifted.json",
       "tip": "a263c4ab",
       "headline": 65
     },

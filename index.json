@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-11T06:14:02.080Z",
+  "updatedAt": "2026-09-11T06:20:21.261Z",
   "drops": [
+    {
+      "id": "2026-09-11-rollback-ban-lifted-tip-a263c4ab",
+      "title": "Rollback ban lifted — #1240 live on tip a263c4ab (~65%)",
+      "date": "2026-09-11",
+      "summary": "Declan cleared rollback ban on tip a263c4ab; #1240 live; Measured held from 232659cf; canary companyId 403 still FAIL (eng); headline ~65%",
+      "plainEnglish": "Rollback ban lifted on live tip a263c4ab. Overnight Measured scores kept from 232659cf; targeted retest pending. Dataset canary still FAIL (companyId 403) for engineering. Prefer not to need rollback — company-scoped batchId only.",
+      "tags": [
+        "status",
+        "findings",
+        "dataset"
+      ],
+      "type": "status",
+      "project": "helgoiq-launch-hub",
+      "paths": [
+        "drops/2026-09-11-rollback-ban-lifted-tip-a263c4ab/SUMMARY.md"
+      ],
+      "tip": "a263c4ab3e85e24d82f292268a2427907ae7eec4"
+    },
     {
       "id": "2026-09-11-launch-hub-tip-a263c4ab-live-morning-merge-pack-",
       "title": "Launch Hub tip a263c4ab live — morning merge pack (~65%)",
