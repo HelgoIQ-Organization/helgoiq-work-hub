@@ -73,7 +73,10 @@
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
     "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
     "updatedAt": "2026-09-12T07:40:10.030Z",
-    "coverageNote": "Coverage backfill 4.4%\u219230.3% tested_any (L1 55 / L2 47). Census L1 walks in flight."
+    "coverageNote": "Coverage backfill 4.4%\u219230.3% tested_any (L1 55 / L2 47). Census L1 walks in flight.",
+    "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
+    "smokeSixStep": "BLOCKED fixtures consumed",
+    "pulse1266": "PASS UI explain; explainStudioState RPC 500"
   },
   "strands": [
     {
@@ -242,7 +245,7 @@
       "percent": 67,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Morning seat smoke-2 on tip a263c4ab overall FAIL (Measured 4/6). Invite/OTP PASS; Bluebird 8 join Active via Stripe TEST but HELGOBIRD not entered; booking PASS; late-cancel credit FAIL (7 not 8); membership cancel+reverse PROVEN PASS; evidence PASS. Residual: BB Smoke Sep8 still paused after M1 unfreeze FAIL.",
+      "plainSummary": "Invite create #1267 PASS on 6486be87. Six-step smoke BLOCKED \u2014 fixtures seat already accepted. Morning seat smoke-2 on tip a263c4ab overall FAIL (Measured 4/6). Invite/OTP PASS; Bluebird 8 join Active via Stripe TEST but HELGOBIRD not entered; booking PASS; late-cancel credit FAIL (7 not 8); membership cancel+reverse PROVEN PASS; evidence PASS. Residual: BB Smoke Sep8 still paused after M1 unfreeze FAIL.",
       "progressNote": "Held 67% \u2014 tip now a3a0e207 with #1267 invite create LIVE; invite path retest pending (not re-measured).",
       "blockers": [
         "HELGOBIRD promo not entered on Bluebird 8 checkout (standard price used)",
@@ -258,7 +261,8 @@
       "measuredNote": "Morning 2026-09-11 tip a263c4ab smoke-2: 4/6 PASS (invite, book, reverse, evidence); FAIL HELGOBIRD + late-cancel credit. Prior overnight 232659cf was 6/6.",
       "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
       "lastTestedVerdict": "FAIL",
-      "coverageFreshness": "stale"
+      "coverageFreshness": "stale",
+      "lastNote": "6486be87 invite PASS; six-step fixtures stale"
     },
     {
       "id": "payments",
