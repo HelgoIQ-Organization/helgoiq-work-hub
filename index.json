@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-12T09:04:28.601Z",
+  "updatedAt": "2026-09-12T09:22:25.793Z",
   "drops": [
+    {
+      "id": "2026-09-12-coverage-l1-website-blog",
+      "title": "Coverage L1 — Website/Blog",
+      "date": "2026-09-12",
+      "summary": "25/25 Website+Blog routes L1 PASS on Admin2 tip 6486be87",
+      "plainEnglish": "25/25 Website+Blog routes L1 PASS on Admin2 tip 6486be87",
+      "tags": [
+        "census",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-coverage-l1-website-blog/SUMMARY.md"
+      ],
+      "tip": "6486be87",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644985344"
+    },
     {
       "id": "2026-09-12-coverage-backfill-4-4-to-30-3",
       "title": "Coverage backfill 4.4% to 30.3%",
