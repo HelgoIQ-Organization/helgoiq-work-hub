@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-09-12T09:22:25.793Z",
+  "updatedAt": "2026-09-12T12:00:15.847237Z",
   "drops": [
+    {
+      "id": "2026-09-12-l2-backfill-declan-criteria",
+      "title": "L2 coverage backfill — Declan criteria",
+      "date": "2026-09-12",
+      "summary": "L2 49→51. PARTIAL labels; 3 PASS / 36 PARTIAL / 12 FAIL. anomaly-alerts+meta-hub upgraded. No invented greens; mrr crash preserved.",
+      "plainEnglish": "Honest L2 backfill from existing strand evidence only (no new browser walks). Coverage tab now shows L2 partial vs works; daily-hub walks still next.",
+      "tags": [
+        "coverage",
+        "status",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-l2-backfill-declan-criteria/L2-BACKFILL-SUMMARY.md",
+        "drops/2026-09-12-l2-backfill-declan-criteria/L2-CRITERIA.md",
+        "drops/2026-09-12-l2-backfill-declan-criteria/RESULTS.md"
+      ],
+      "tip": "6486be87",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-12-coverage-l1-website-blog",
       "title": "Coverage L1 — Website/Blog",

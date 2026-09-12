@@ -1,0 +1,82 @@
+{
+  "recordedAt": "2026-09-12T11:59:19.847671Z",
+  "total": 413,
+  "byLevel": {
+    "0": 48,
+    "1": 314,
+    "2": 51,
+    "3": 0
+  },
+  "byState": {
+    "partially_tested": 338,
+    "failed": 26,
+    "blocked": 44,
+    "not_tested": 5
+  },
+  "l2Labels": {
+    "L2 partial": 36,
+    "L2 works": 15
+  },
+  "upgraded": [
+    "/admin/anomaly-alerts",
+    "/admin/meta-hub"
+  ],
+  "pass": [
+    "/admin/ai-feature-toggles",
+    "/admin/forms",
+    "/admin/forms/new"
+  ],
+  "partial": [
+    "/admin/anomaly-alerts",
+    "/admin/meta-hub",
+    "/admin/studio-pulse",
+    "/admin/performance-intelligence",
+    "/admin/learning-engine",
+    "/admin/member-health-score",
+    "/admin/member-digital-twin",
+    "/admin/business-insights",
+    "/admin/ai-management-hub",
+    "/admin/qr-generator",
+    "/admin/qr-generator/new",
+    "/admin/newsletter-hub",
+    "/admin/newsletter-hub?tab=create",
+    "/admin/blog-hub",
+    "/admin/inbox",
+    "/admin/communications-hub",
+    "/admin/intelligence/executive-briefing",
+    "/admin/command-centre/reporting",
+    "/admin/command-centre",
+    "/admin/members",
+    "/admin/studio-state",
+    "/admin",
+    "/admin/action-effectiveness",
+    "/admin/appointments-hub",
+    "/admin/campaigns",
+    "/admin/community-hub",
+    "/admin/instructor-roi",
+    "/admin/monthly-review",
+    "/admin/news",
+    "/admin/personal-messages",
+    "/admin/popups",
+    "/admin/quarterly-review",
+    "/admin/recordings",
+    "/admin/segments",
+    "/admin/team-comms-hub",
+    "/admin/visual-intelligence-showcase"
+  ],
+  "fail": [
+    "/admin/audience-intelligence",
+    "/admin/campaign-composer",
+    "/admin/tag-intelligence",
+    "/admin/sentiment-analysis",
+    "/admin/screen-ai",
+    "/admin/morning-dispatch",
+    "/admin/website",
+    "/admin/daily-focus",
+    "/admin/decision-engine",
+    "/admin/predictive-cash-flow",
+    "/admin/staff-availability",
+    "/admin/intelligence/cohorts"
+  ],
+  "relabeledCount": 49
+}

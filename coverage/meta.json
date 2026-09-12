@@ -19,9 +19,9 @@
     "hubOnly": 156,
     "orphaned": 30,
     "fullyTested": 0,
-    "partiallyTested": 344,
+    "partiallyTested": 338,
     "blocked": 44,
-    "failed": 20,
+    "failed": 26,
     "notTested": 5,
     "stale": 59,
     "byReachability": {
@@ -34,12 +34,13 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "2": 49,
-      "1": 316,
-      "0": 48
+      "0": 48,
+      "1": 314,
+      "2": 51,
+      "3": 0
     }
   },
-  "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
+  "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu∩destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
   "sourcesUsed": {
     "adminMenu": "coverage/sources/admin-menu.json",
     "folders": "coverage/sources/folders.json",
@@ -53,7 +54,8 @@
     "Admin ships first. Platform owner / Teacher / Client are placeholders.",
     "Feed coverage/sources/_routes_from_bundle.txt to reconcile against the Cursor 407 orphan list.",
     "Never invent greens. Prefer not_tested over a guessed PASS.",
-    "Coverage levels backfilled 2026-09-12 from menu-census walks, ISO-29, AI-85, forms/QR, ambient/twin/BI, cluster-A, owner-negative. Load-only=L1; no invented L2/L3."
+    "Coverage levels backfilled 2026-09-12 from menu-census walks, ISO-29, AI-85, forms/QR, ambient/twin/BI, cluster-A, owner-negative. Load-only=L1; no invented L2/L3.",
+    "L2 criteria backfill 2026-09-12 (Declan 5-point): PARTIAL vs PASS relabel; anomaly-alerts+meta-hub upgraded; AI/ISO exercise FAILs kept failed; load-only not raised."
   ],
   "reconciledAt": "2026-09-12T07:30:00Z",
   "reconcileIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1217",
@@ -81,5 +83,83 @@
       "ai",
       "longtail"
     ]
+  },
+  "lastL2Backfill": {
+    "at": "2026-09-12T11:59:19.847671Z",
+    "programme": "17-coverage-programme",
+    "upgraded": [
+      "/admin/anomaly-alerts",
+      "/admin/meta-hub"
+    ],
+    "relabeled": 49,
+    "pass": [
+      "/admin/ai-feature-toggles",
+      "/admin/forms",
+      "/admin/forms/new"
+    ],
+    "partial": [
+      "/admin/anomaly-alerts",
+      "/admin/meta-hub",
+      "/admin/studio-pulse",
+      "/admin/performance-intelligence",
+      "/admin/learning-engine",
+      "/admin/member-health-score",
+      "/admin/member-digital-twin",
+      "/admin/business-insights",
+      "/admin/ai-management-hub",
+      "/admin/qr-generator",
+      "/admin/qr-generator/new",
+      "/admin/newsletter-hub",
+      "/admin/newsletter-hub?tab=create",
+      "/admin/blog-hub",
+      "/admin/inbox",
+      "/admin/communications-hub",
+      "/admin/intelligence/executive-briefing",
+      "/admin/command-centre/reporting",
+      "/admin/command-centre",
+      "/admin/members",
+      "/admin/studio-state",
+      "/admin",
+      "/admin/action-effectiveness",
+      "/admin/appointments-hub",
+      "/admin/campaigns",
+      "/admin/community-hub",
+      "/admin/instructor-roi",
+      "/admin/monthly-review",
+      "/admin/news",
+      "/admin/personal-messages",
+      "/admin/popups",
+      "/admin/quarterly-review",
+      "/admin/recordings",
+      "/admin/segments",
+      "/admin/team-comms-hub",
+      "/admin/visual-intelligence-showcase"
+    ],
+    "fail": [
+      "/admin/audience-intelligence",
+      "/admin/campaign-composer",
+      "/admin/tag-intelligence",
+      "/admin/sentiment-analysis",
+      "/admin/screen-ai",
+      "/admin/morning-dispatch",
+      "/admin/website",
+      "/admin/daily-focus",
+      "/admin/decision-engine",
+      "/admin/predictive-cash-flow",
+      "/admin/staff-availability",
+      "/admin/intelligence/cohorts"
+    ],
+    "byLevel": {
+      "0": 48,
+      "1": 314,
+      "2": 51,
+      "3": 0
+    },
+    "l2Labels": {
+      "L2 partial": 36,
+      "L2 works": 15
+    },
+    "liveTipChecked": "6486be87a68821e383d36d5246f9da08a802ee59",
+    "note": "Evidence tips stamped from source drops; live tip confirmed via /api/version for reference only."
   }
 }
