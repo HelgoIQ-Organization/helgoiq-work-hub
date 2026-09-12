@@ -1,6 +1,43 @@
 {
-  "updatedAt": "2026-09-12T20:48:44.731Z",
+  "updatedAt": "2026-09-12T21:24:14.186Z",
   "drops": [
+    {
+      "id": "2026-09-12-coverage-l2-long-tail-chunk-4",
+      "title": "Coverage L2 long-tail next-15 (chunk 4)",
+      "date": "2026-09-12",
+      "summary": "Long-tail next-15: 4 PASS / 9 PARTIAL / 2 FAIL (credit-liability agreement; chart edit tenant). Stamp 6486be87.",
+      "plainEnglish": "Long-tail next-15: 4 PASS / 9 PARTIAL / 2 FAIL (credit-liability agreement; chart edit tenant). Stamp 6486be87.",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-coverage-l2-long-tail-chunk-4/census-longtail-l2-settings-CHUNK4-NEXT15-SUMMARY.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
+    },
+    {
+      "id": "2026-09-13-helgoiq-progress",
+      "title": "HelgoIQ progress 13 Sep (EEST)",
+      "date": "2026-09-12",
+      "summary": "Launch health 63%. Coverage L≥2 77%. CC Milestone 2 B–F 4/30. Longtail L2 still walking.",
+      "plainEnglish": "Launch health is 63%. Coverage of exercised pages is at 77%. Command Centre scored Milestone 2 at only 4 of 30 — Cluster A is still perfect. Biggest unlocks: Codex on those fails, dataset companyId fix, and Comms secrets when you are back.",
+      "tags": [
+        "status",
+        "findings",
+        "command-centre",
+        "census"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-13-helgoiq-progress/HELGOIQ-PROGRESS-2026-09-13.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
+    },
     {
       "id": "2026-09-12-coverage-l2-long-tail-chunk-3",
       "title": "Coverage L2 — Long-tail chunk 3",
