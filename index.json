@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-12T07:40:10.258Z",
+  "updatedAt": "2026-09-12T08:32:52.628Z",
   "drops": [
+    {
+      "id": "2026-09-12-retirement-safety-table-1217",
+      "title": "Retirement safety table #1217",
+      "date": "2026-09-12",
+      "summary": "Owner-proven SAFE TO RETIRE / WOULD LOSE table for Declan; no deletes",
+      "plainEnglish": "Owner-proven SAFE TO RETIRE / WOULD LOSE table for Declan; no deletes",
+      "tags": [
+        "command-centre",
+        "status",
+        "findings"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-retirement-safety-table-1217/RETIREMENT-RULING-TABLE.md"
+      ],
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1217"
+    },
     {
       "id": "2026-09-12-tip-refresh-a3a0e207-1267-invite-live-1266-lag",
       "title": "Tip refresh a3a0e207 — #1267 invite live, #1266 lag",
