@@ -21,8 +21,8 @@
     "fullyTested": 0,
     "partiallyTested": 313,
     "blocked": 44,
-    "failed": 52,
-    "notTested": 4,
+    "failed": 53,
+    "notTested": 3,
     "stale": 18,
     "byReachability": {
       "SIDEBAR": 218,
@@ -34,9 +34,9 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "2": 124,
-      "1": 242,
-      "0": 47
+      "2": 150,
+      "1": 217,
+      "0": 46
     }
   },
   "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
@@ -162,14 +162,13 @@
     "note": "Evidence tips stamped from source drops; live tip confirmed via /api/version for reference only."
   },
   "lastL2Merge": {
-    "bot": "Census Longtail",
-    "hub": "safe-studio+COMPLETE",
+    "bot": "Census Content",
+    "hub": "website",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "pass": 2,
-    "partial": 19,
-    "fail": 5,
-    "miss": 0,
-    "longtailL2Total": "2 PASS / 35 PARTIAL / 16 FAIL (53)"
+    "pass": 14,
+    "partial": 11,
+    "fail": 1,
+    "miss": 0
   },
   "dailyL2Wave": {
     "status": "complete",

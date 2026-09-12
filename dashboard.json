@@ -34,8 +34,8 @@
         "L2 works": 15
       }
     },
-    "coverageL1Pct": 88.6,
-    "coverageL2Pct": 30.0
+    "coverageL1Pct": 88.9,
+    "coverageL2Pct": 36.3
   },
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "progressToday": {
@@ -81,7 +81,7 @@
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
     "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
     "updatedAt": "2026-09-12T11:59:19.847671Z",
-    "coverageNote": "After Longtail Safe Studio L2: L\u22651=366 (89%); L\u22652=124 (30%)",
+    "coverageNote": "After Content L2 Website: L\u22651=367 (89%); L\u22652=150 (36%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED fixtures consumed",
     "pulse1266": "PASS UI explain; explainStudioState RPC 500",
@@ -114,7 +114,8 @@
     "scorePushWrap": "Done: tip refresh, Dispatch PASS (ambient 92), canary FAIL hold 52, AI-85 hold 56, Cluster A 24/24 (CC 80), ISO hold 86. Headline 66%. Need Declan: Comms secrets, smoke fixtures, PA seat.",
     "censusLongtailL2Staff": "0 PASS / 16 PARTIAL / 11 FAIL \u2014 onboarding tiles, rota KPIs, name/employment disagree",
     "censusLongtailL2SafeStudio": "2 PASS (cctv-hub, camio-live) / 19 PARTIAL / 5 FAIL",
-    "censusLongtailL2Complete": "53 routes: 2 PASS / 35 PARTIAL / 16 FAIL \u2014 daily L2 wave complete"
+    "censusLongtailL2Complete": "53 routes: 2 PASS / 35 PARTIAL / 16 FAIL \u2014 daily L2 wave complete",
+    "censusContentL2Website": "14 PASS / 11 PARTIAL / 1 FAIL (Website Health check)"
   },
   "strands": [
     {

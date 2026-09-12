@@ -6528,20 +6528,60 @@
     "inRouter": true,
     "in407": false,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "3 pages, 7 lifetime views, 2 leads, 0 sales, \u00a30 revenue. Create modal cancelled. Summary figures non-drillable.",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-11-landing-pages.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "reachability": "MENU_ONLY",
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 2,
+    "levelLabel": "L2 partial",
+    "senseCheck": {
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Good",
+      "buriedDaily": "Visible among Acquisition tabs.",
+      "duplicate": "No disagreement observed",
+      "proposedHome": "Keep under Marketing; consider Website Hub cross-link.",
+      "note": "3 pages, 7 lifetime views, 2 leads, 0 sales, \u00a30 revenue. Create modal cancelled. Summary figures non-drillable."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Landing Pages tab confirmation",
+        "New Landing Page open",
+        "Cancel"
+      ],
+      "controlsNotExercised": [
+        "Generate Meta pack",
+        "Create Page",
+        "Edit existing pages",
+        "View page",
+        "Copy link"
+      ],
+      "defects": [
+        {
+          "criterion": "figures",
+          "detail": "Pages/views/leads/sales/revenue figures non-interactive.",
+          "screenshot": "evidence/census-content-l2/web-11-landing-pages.png"
+        }
+      ]
+    }
   },
   {
     "id": "admin-member-digital-twin",
@@ -9189,7 +9229,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Preview control was not exposed in the library; empty/content states otherwise worked.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -9205,15 +9245,49 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/sgn-03-content-create-cancel.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Content Library renders"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Canonical signage content library",
+      "buriedDaily": "Not buried; direct Content tab",
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Digital Signage > Content",
+      "note": "Preview control was not exposed in the library; empty/content states otherwise worked."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Opened Add Content",
+        "Verified create form validation",
+        "Canceled create form",
+        "Opened existing content edit and canceled"
+      ],
+      "controlsNotExercised": [
+        "Create Content",
+        "Preview; no preview control was present",
+        "Publish"
+      ],
+      "defects": [
+        {
+          "criterion": "controls",
+          "detail": "No preview action on content card; only edit/delete.",
+          "screenshot": "evidence/census-content-l2/sgn-03-content-create-cancel.png"
+        }
+      ]
     }
   },
   {
@@ -9235,7 +9309,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Refresh worked; no devices for figure drill-down.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -9251,15 +9325,47 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/sgn-08-health-refresh.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Device Health renders (no silent redirect this tip)"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Canonical signage health monitoring",
+      "buriedDaily": "Not buried; direct Health tab",
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Digital Signage > Health",
+      "note": "Refresh worked; no devices for figure drill-down."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Verified Live status",
+        "Clicked refresh",
+        "Verified zero-device empty state"
+      ],
+      "controlsNotExercised": [
+        "Device filters; none rendered",
+        "Device drill-down"
+      ],
+      "defects": [
+        {
+          "criterion": "controls",
+          "detail": "No health filters rendered in zero-device state.",
+          "screenshot": "evidence/census-content-l2/sgn-08-health-refresh.png"
+        }
+      ]
     }
   },
   {
@@ -9281,7 +9387,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -9297,15 +9402,41 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/sgn-05-playlists-create-cancel.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Playlists renders"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Canonical signage playlist management",
+      "buriedDaily": "Not buried; direct Playlists tab",
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Digital Signage > Playlists",
+      "note": "Empty playlist state handled correctly."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Opened New Playlist",
+        "Verified name, description, transition, and duration controls",
+        "Canceled without creating"
+      ],
+      "controlsNotExercised": [
+        "Create Playlist",
+        "Upload/Add asset"
+      ],
+      "defects": []
     }
   },
   {
@@ -9327,7 +9458,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -9343,15 +9473,42 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/sgn-01-screens-hub.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Hub fit OK; Setup default vs Screens tab param"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Strong canonical signage hub",
+      "buriedDaily": "Not buried; top-level hub tabs",
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Digital Signage hub",
+      "note": "No Refrm, publish, go-live, or live sync used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Confirmed Admin 2 identity",
+        "Verified Setup/Screens/Playlists/Content/Builder/Templates/Schedules/Health/Reporting tabs",
+        "Viewed Setup and player URL"
+      ],
+      "controlsNotExercised": [
+        "Pairing",
+        "Save controls",
+        "Publish/live sync"
+      ],
+      "defects": []
     }
   },
   {
@@ -9655,7 +9812,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Average Score \u2014; Pages 0/1; Posts 0/1; Issues 0. Sitemap empty; Auto-Generate disabled until Base URL. Figures non-drillable.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -9671,15 +9828,48 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-09-seo-sitemap.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-content",
-      "note": "0/0 pages 0/1 posts; no Auto-Generate/GSC"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Good",
+      "buriedDaily": "SEO Scores default; Sitemap one tab away.",
+      "duplicate": "No disagreement observed",
+      "proposedHome": "Keep SEO Scores and Sitemap together.",
+      "note": "Average Score \u2014; Pages 0/1; Posts 0/1; Issues 0. Sitemap empty; Auto-Generate disabled until Base URL. Figures non-drillable."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "SEO Scores tab",
+        "Sitemap tab"
+      ],
+      "controlsNotExercised": [
+        "Audit buttons",
+        "Auto-Generate sitemap",
+        "Connect GSC (not present)",
+        "Redirects tab"
+      ],
+      "defects": [
+        {
+          "criterion": "figures",
+          "detail": "SEO summary figures non-drillable; no underlying-data view.",
+          "screenshot": "evidence/census-content-l2/web-09-seo-sitemap.png"
+        }
+      ]
     }
   },
   {
@@ -10127,7 +10317,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Active Welcome splash visible. New form opens; Cancel returns. Preview eye no visible state change.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -10139,18 +10329,47 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-10-splash-list.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "mismatch",
-      "buriedDaily": null,
-      "duplicate": null
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Partial",
+      "buriedDaily": "Setup-oriented; not in Website Hub.",
+      "duplicate": "No disagreement observed",
+      "proposedHome": "Consider Website Hub cross-link.",
+      "note": "Active Welcome splash visible. New form opens; Cancel returns. Preview eye no visible state change."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "New Splash Screen open",
+        "Cancel"
+      ],
+      "controlsNotExercised": [
+        "Edit",
+        "Delete",
+        "Save Splash Screen"
+      ],
+      "defects": [
+        {
+          "criterion": "controls",
+          "detail": "Preview eye produced no visible confirmation/preview state.",
+          "screenshot": "evidence/census-content-l2/web-10-splash-list.png"
+        }
+      ]
     }
   },
   {
@@ -11772,7 +11991,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Website hub loaded read-only. Blog is not a top-level tab in the hub snapshot; the Blog management entry is reachable separately.",
+    "reason": "Identity confirmed as Admin 2 / Bluebird Pilates. Readiness shows Must-haves 0/13 and Nice to have 1/9. No figures drilled.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -11792,15 +12011,56 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-01-identity.png"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-02-website-hub-tabs.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Hub loads; nothing-goes-live copy; no explicit breadcrumb chrome"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Good",
+      "buriedDaily": "Website Health and readiness are one tab away; some CTAs are below the fold.",
+      "duplicate": "No disagreement observed",
+      "proposedHome": "Keep Website Hub as the website entry point.",
+      "note": "Identity confirmed as Admin 2 / Bluebird Pilates. Readiness shows Must-haves 0/13 and Nice to have 1/9. No figures drilled."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Home tab",
+        "Website Health tab",
+        "Pages tab",
+        "Bring my site tab"
+      ],
+      "controlsNotExercised": [
+        "Start blank",
+        "New Page",
+        "Paste my site URL",
+        "Open page list",
+        "readiness CTAs",
+        "More tools"
+      ],
+      "defects": [
+        {
+          "criterion": "controls",
+          "detail": "Safe tabs worked, but write/create CTAs were intentionally not exercised.",
+          "screenshot": "evidence/census-content-l2/web-02-website-hub-tabs.png"
+        }
+      ]
     }
   },
   {
@@ -11822,7 +12082,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "A prompt preset immediately started Generating your page; Clear conversation returned empty. No approve/publish.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -11838,15 +12098,47 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-05-ai-builder-cancelled.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Generation form idle; no publish"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Good",
+      "buriedDaily": "Direct route and Pages card; generation is prominent.",
+      "duplicate": "No disagreement observed",
+      "proposedHome": "Keep draft-only AI Builder linked from Website Hub.",
+      "note": "A prompt preset immediately started Generating your page; Clear conversation returned empty. No approve/publish."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "AI Builder form observed",
+        "Clear conversation/cancel"
+      ],
+      "controlsNotExercised": [
+        "Free-text generation",
+        "Other prompt presets",
+        "Any page approval/publish"
+      ],
+      "defects": [
+        {
+          "criterion": "controls",
+          "detail": "Prompt preset behaves as immediate generation \u2014 risky under draft-only.",
+          "screenshot": "evidence/census-content-l2/web-05-ai-builder-cancelled.png"
+        }
+      ]
     }
   },
   {
@@ -11864,11 +12156,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Check ran without publishing but returned We couldn't check this site. Score remains \u2014, with no timestamp and no underlying results.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -11884,15 +12176,50 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-03-health-check.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Not checked yet; Website back-link"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Good",
+      "buriedDaily": "Visible near the top of the page.",
+      "duplicate": "No disagreement observed",
+      "proposedHome": "Keep in Website Hub and expose the last-check result clearly.",
+      "note": "Check ran without publishing but returned We couldn't check this site. Score remains \u2014, with no timestamp and no underlying results."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Check my site"
+      ],
+      "controlsNotExercised": [
+        "Prepare a fix (disabled)",
+        "Connect Google Search"
+      ],
+      "defects": [
+        {
+          "criterion": "controls",
+          "detail": "Primary Check my site control does not produce a score, timestamp, or actionable result.",
+          "screenshot": "evidence/census-content-l2/web-03-health-check.png"
+        },
+        {
+          "criterion": "figures",
+          "detail": "No score or result was available to drill into.",
+          "screenshot": "evidence/census-content-l2/web-03-health-check.png"
+        }
+      ]
     }
   },
   {
@@ -11914,7 +12241,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Import limitations and unpublished-draft messaging are clear. No migration was started.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -11930,15 +12257,46 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-04-import-observe.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Drafts unpublished copy present"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Good",
+      "buriedDaily": "Import form is below explanatory content.",
+      "duplicate": "No disagreement observed",
+      "proposedHome": "Keep under Website Hub / Bring my site.",
+      "note": "Import limitations and unpublished-draft messaging are clear. No migration was started."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Platform-cost option selector"
+      ],
+      "controlsNotExercised": [
+        "Look at this site (intentionally skipped \u2014 migration job risk)",
+        "Open Approval Hub",
+        "Copy sales sentence"
+      ],
+      "defects": [
+        {
+          "criterion": "controls",
+          "detail": "Primary import action intentionally not run due to migration-job risk.",
+          "screenshot": "evidence/census-content-l2/web-04-import-observe.png"
+        }
+      ]
     }
   },
   {
@@ -11960,7 +12318,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -11976,15 +12333,41 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-06-navigation-tabs.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-content",
-      "note": "No Save clicked; empty nav items"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Good",
+      "buriedDaily": "Tabs are visible immediately.",
+      "duplicate": "No disagreement observed",
+      "proposedHome": "Keep as Website Navigation.",
+      "note": "All three tabs switch correctly. Empty states sensible; no Save exposed."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Header Nav tab",
+        "Footer Nav tab",
+        "Mobile Nav tab"
+      ],
+      "controlsNotExercised": [
+        "Add Item",
+        "Add First Item"
+      ],
+      "defects": []
     }
   },
   {
@@ -12006,7 +12389,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Preview and controls render. Save Styles not used per guard.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -12022,15 +12405,45 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-07-styles-observe.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Save Styles visible untouched"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Good",
+      "buriedDaily": "Direct Website tool; Save is prominent.",
+      "duplicate": "No disagreement observed",
+      "proposedHome": "Keep under Website Hub / Global Styles.",
+      "note": "Preview and controls render. Save Styles not used per guard."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Styles form observed",
+        "Font/color/layout controls visible"
+      ],
+      "controlsNotExercised": [
+        "Save Styles"
+      ],
+      "defects": [
+        {
+          "criterion": "controls",
+          "detail": "Save Styles intentionally not exercised (persists).",
+          "screenshot": "evidence/census-content-l2/web-07-styles-observe.png"
+        }
+      ]
     }
   },
   {
@@ -13024,7 +13437,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -13049,15 +13461,47 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/blog-01-blog-list.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Redirects to /admin/blog-hub; Blog Management renders"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Canonical blog hub; /admin/blog redirects here",
+      "buriedDaily": "yes",
+      "duplicate": "false",
+      "proposedHome": "Marketing > Blog",
+      "note": "New Post open created draft id=3; no publish."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Posts list",
+        "tabs",
+        "status/category filters",
+        "New Post open path"
+      ],
+      "controlsNotExercised": [
+        "Publish"
+      ],
+      "defects": [
+        {
+          "criterion": "defect",
+          "detail": "New Post open auto-created an additional Untitled draft.",
+          "screenshot": "evidence/census-content-l2/blog-01-blog-list.png"
+        }
+      ]
     }
   },
   {
@@ -13079,7 +13523,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "New Post reached editor (not saved).",
+    "reason": "Draft persisted with status Draft; Publish never used. Orange Unsaved badge remains after Save Draft+reload.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -13108,15 +13552,47 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/blog-06-edit-id-2.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Opened draft id=2 Untitled Post; Publish unused"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Existing draft editor",
+      "buriedDaily": "yes",
+      "duplicate": "false",
+      "proposedHome": "Marketing > Blog > Posts > Edit Draft",
+      "note": "Draft persisted with status Draft; Publish never used. Orange Unsaved badge remains after Save Draft+reload."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Existing draft id=2 opened",
+        "title/excerpt edited",
+        "Save Draft",
+        "Draft status verified"
+      ],
+      "controlsNotExercised": [
+        "Publish"
+      ],
+      "defects": [
+        {
+          "criterion": "defect",
+          "detail": "Orange Unsaved badge remains after Save Draft and reload, despite persisted fields.",
+          "screenshot": "evidence/census-content-l2/blog-06-edit-id-2.png"
+        }
+      ]
     }
   },
   {
@@ -13138,7 +13614,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -13163,15 +13638,41 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/blog-04-ai-writer.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Generate disabled; idle"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Dedicated AI Writer surface",
+      "buriedDaily": "yes",
+      "duplicate": "false",
+      "proposedHome": "Marketing > Blog > AI Writer",
+      "note": "Observed only; no content generated."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "AI Writer form observed",
+        "tone/length controls",
+        "disabled Generate state"
+      ],
+      "controlsNotExercised": [
+        "Generate intentionally not clicked",
+        "Publish"
+      ],
+      "defects": []
     }
   },
   {
@@ -13193,7 +13694,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -13218,15 +13718,41 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/blog-03-categories.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Categories & Tags renders"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Dedicated categories surface",
+      "buriedDaily": "yes",
+      "duplicate": "false",
+      "proposedHome": "Marketing > Blog > Categories & Tags",
+      "note": "New Category dialog cancelled; no data changed."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Categories/tags tabs",
+        "New Category open",
+        "Cancel"
+      ],
+      "controlsNotExercised": [
+        "Create/delete",
+        "Publish"
+      ],
+      "defects": []
     }
   },
   {
@@ -13248,7 +13774,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Loaded as Owner; no posts were present. Categories/tags and AI-writer affordances were inspected without creating or changing content.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -13280,23 +13805,48 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/blog-02-management.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Marketing blog-management surface",
-      "buriedDaily": "medium",
-      "duplicate": "standalone Blog Management surface under Marketing",
-      "proposedHome": "Marketing > Blog Management",
-      "note": "Direct /admin/blog/management?c=150002 rendered; drafts observed only and no live publish or post mutation used.",
-      "breadcrumb": "Marketing > Blog Management",
-      "reachability": "ORPHANED",
-      "heading": "Blog Management"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Orphan duplicate of canonical blog management hub",
+      "buriedDaily": "yes",
+      "duplicate": "true \u2014 overlaps blog-hub",
+      "proposedHome": "Redirect to Marketing > Blog",
+      "note": "Surface loaded and controls worked."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Management list",
+        "filters",
+        "Categories & Tags",
+        "AI Writer",
+        "New Post"
+      ],
+      "controlsNotExercised": [
+        "Publish"
+      ],
+      "defects": [
+        {
+          "criterion": "defect",
+          "detail": "Duplicate/orphan management route.",
+          "screenshot": "evidence/census-content-l2/blog-02-management.png"
+        }
+      ]
     }
   },
   {
@@ -13318,7 +13868,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Loaded blank new-post editor as Owner. Save Draft and Publish are available but were not used.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -13346,23 +13895,47 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/blog-05-new-back.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Marketing Blog Management new-post surface",
-      "buriedDaily": "low",
-      "duplicate": "orphan route for Blog Management New Post",
-      "proposedHome": "Marketing > Blog Management > New Post",
-      "note": "Direct /admin/blog/new?c=150002 rendered a blank new-post editor; Publish was not used and no draft was created or changed.",
-      "breadcrumb": "Marketing > Blog Management > New Post",
-      "reachability": "ORPHANED",
-      "heading": "Edit Post"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Dedicated new-post editor",
+      "buriedDaily": "yes",
+      "duplicate": "false",
+      "proposedHome": "Marketing > Blog > New Post",
+      "note": "Back returned to hub without saving or publishing."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Blank editor opened",
+        "Draft status visible",
+        "Back without save"
+      ],
+      "controlsNotExercised": [
+        "Save Draft",
+        "Publish"
+      ],
+      "defects": [
+        {
+          "criterion": "defect",
+          "detail": "Blank /new editor is labelled Edit Post.",
+          "screenshot": "evidence/census-content-l2/blog-05-new-back.png"
+        }
+      ]
     }
   },
   {
@@ -20453,20 +21026,48 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/sgn-04-builder-abandon.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Content Builder loads on Choose Type with content cards and no content creation performed.",
-      "title": "Content Builder",
-      "breadcrumb": "Content Builder",
-      "reachability": "unknown"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Canonical signage builder",
+      "buriedDaily": "Not buried; direct Builder tab",
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Digital Signage > Builder",
+      "note": "Abandoned without saving or publishing. Cancel returned without the c parameter."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Selected Text/Message builder type",
+        "Opened Configure tab",
+        "Verified content fields",
+        "Canceled builder"
+      ],
+      "controlsNotExercised": [
+        "Save Content",
+        "Publish"
+      ],
+      "defects": [
+        {
+          "criterion": "tenant",
+          "detail": "Cancel navigation dropped ?c=150002 from the final URL.",
+          "screenshot": "evidence/census-content-l2/sgn-04-builder-abandon.png"
+        }
+      ]
     }
   },
   {
@@ -20487,7 +21088,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20499,23 +21099,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/sgn-10-integrations-observe.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio screen-integrations surface",
-      "buriedDaily": "medium",
-      "duplicate": "standalone Screen Integrations surface",
-      "proposedHome": "Studio > Screen Integrations",
-      "note": "Direct /admin/screen-integrations?c=150002 rendered for Bluebird Pilates TEST DATA; OBSERVE ONLY, no connect action and no toggles changed.",
-      "breadcrumb": "Studio > Screen Integrations",
-      "reachability": "SEARCH ONLY",
-      "heading": "Screen Integrations"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Canonical signage integrations",
+      "buriedDaily": "Not buried; direct Integrations tab",
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Digital Signage > Integrations",
+      "note": "Observe-only. No Save/Connect/publish/sync."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Observed integration cards and connected statuses",
+        "Observed signage automation switches and selectors"
+      ],
+      "controlsNotExercised": [
+        "All switches and selectors left unchanged",
+        "No Save or Connect action used"
+      ],
+      "defects": []
     }
   },
   {
@@ -20536,7 +21153,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20548,23 +21164,41 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/sgn-09-reporting-tabs-filters.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio screen-reporting surface",
-      "buriedDaily": "medium",
-      "duplicate": "standalone Screen Reporting surface",
-      "proposedHome": "Studio > Screen Reporting",
-      "note": "Direct /admin/screen-reporting?c=150002 rendered; reporting tabs and period selector observed only, no changes.",
-      "breadcrumb": "Studio > Screen Reporting",
-      "reachability": "SEARCH ONLY",
-      "heading": "Screen Reporting"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Canonical signage reporting",
+      "buriedDaily": "Not buried; direct Reporting tab",
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Digital Signage > Reporting",
+      "note": "Tabs and date filter worked; empty data accepted. No export control exposed."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Changed date filter from Last 7 days to Last 30 days",
+        "Opened Playback History, QR Scans, and Top Content tabs",
+        "Verified empty reporting states"
+      ],
+      "controlsNotExercised": [
+        "Export; no export control was present",
+        "Populated figure drill-down; no playback data existed"
+      ],
+      "defects": []
     }
   },
   {
@@ -20585,7 +21219,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Empty state valid; no list-level filters in empty state.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20597,23 +21231,48 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/sgn-07-schedules-filters.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio screen-schedules surface",
-      "buriedDaily": "medium",
-      "duplicate": "standalone Schedules surface",
-      "proposedHome": "Studio > Schedules",
-      "note": "Direct /admin/screen-schedules?c=150002 rendered; no schedule creation or activation used.",
-      "breadcrumb": "Studio > Schedules",
-      "reachability": "SEARCH ONLY",
-      "heading": "Schedules"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Canonical signage scheduling",
+      "buriedDaily": "Not buried; direct Schedules tab",
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Digital Signage > Schedules",
+      "note": "Empty state valid; no list-level filters in empty state."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Opened New Schedule",
+        "Verified playlist, screen, time, date, days, priority, and active controls",
+        "Canceled without creating or activating"
+      ],
+      "controlsNotExercised": [
+        "Create Schedule",
+        "Activate emergency broadcast",
+        "List filters; none rendered in empty state"
+      ],
+      "defects": [
+        {
+          "criterion": "controls",
+          "detail": "No schedule list filters rendered with zero schedules.",
+          "screenshot": "evidence/census-content-l2/sgn-07-schedules-filters.png"
+        }
+      ]
     }
   },
   {
@@ -20634,7 +21293,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20646,23 +21304,41 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/sgn-06-templates-create-cancel.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio screen-template surface",
-      "buriedDaily": "medium",
-      "duplicate": "standalone Template Gallery surface",
-      "proposedHome": "Studio > Template Gallery",
-      "note": "Direct /admin/screen-templates?c=150002 rendered; template cards observed only, no Create Template or Use action used and no content published.",
-      "breadcrumb": "Studio > Template Gallery",
-      "reachability": "SEARCH ONLY",
-      "heading": "Template Gallery"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Canonical signage template gallery",
+      "buriedDaily": "Not buried; direct Templates tab",
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Digital Signage > Templates",
+      "note": "No template was created or applied."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Opened Create Template",
+        "Verified category, orientation, HTML, and CSS controls",
+        "Canceled without creating"
+      ],
+      "controlsNotExercised": [
+        "Create",
+        "Use built-in template"
+      ],
+      "defects": []
     }
   },
   {
@@ -20683,7 +21359,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20695,23 +21370,41 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/sgn-02-screens-create-cancel.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio screen-management surface",
-      "buriedDaily": "medium",
-      "duplicate": "standalone Screen Management surface",
-      "proposedHome": "Studio > Screen Management",
-      "note": "Direct /admin/screens?c=150002 rendered; no pairing, settings toggle, save, publish or screen-content action used.",
-      "breadcrumb": "Studio > Screen Management",
-      "reachability": "SEARCH ONLY",
-      "heading": "Screen Management"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Functional legacy screen list",
+      "buriedDaily": "Direct route but duplicated in hub Screens tab",
+      "duplicate": "Yes; overlaps Digital Signage Screens tab",
+      "proposedHome": "Digital Signage > Screens",
+      "note": "Empty state handled correctly; no live sync."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Opened Pair New Screen",
+        "Verified pairing fields and disabled validation",
+        "Closed without pairing"
+      ],
+      "controlsNotExercised": [
+        "Pair Screen submission",
+        "Device pairing"
+      ],
+      "defects": []
     }
   },
   {
@@ -21956,7 +22649,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -21980,20 +22672,42 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-content-l2/web-08-approval-tabs.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l2-website"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Website Approval Hub loads with AI Recommendations, Drafts, and Discounts tabs and honest no-pending-recommendations state; no publish or approval action taken.",
-      "title": "Website Approval Hub",
-      "breadcrumb": "Website Approval Hub",
-      "reachability": "unknown"
+      "source": "census-content-l2",
+      "hub": "website",
+      "hubFit": "Strong",
+      "buriedDaily": "Clearly framed as the approval gate.",
+      "duplicate": "No disagreement observed",
+      "proposedHome": "Keep as the single website approval gate.",
+      "note": "All tabs work. Sensible empty states. No drafts to drill."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "AI Recommendations tab",
+        "Drafts tab",
+        "Discounts tab"
+      ],
+      "controlsNotExercised": [
+        "AI Page Builder",
+        "Open/edit any draft",
+        "Publish/go live"
+      ],
+      "defects": []
     }
   },
   {
