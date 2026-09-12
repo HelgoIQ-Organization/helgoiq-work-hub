@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-09-12T12:41:47.214Z",
   "meta": {
-    "dataAsOf": "2026-09-12T13:41:08.272Z",
+    "dataAsOf": "2026-09-12T13:43:00.543Z",
     "buildStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 66% = round((52\u00d712 + 80\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) half-up.",
@@ -109,7 +109,9 @@
     "ambientDispatch": "PASS on 6486be87 \u2014 viewer honest empty, no crash",
     "datasetCanary": "FAIL Missing companyId 403 \u2014 hold 52%",
     "ai85Rescore": "Hold 56% \u2014 25 retested; AI-018 FAIL\u2192PARTIAL only; 4 FAIL open",
-    "clusterA": "24/24 PASS on 6486be87 \u2014 ACS-F01 + ACS-C01 cleared"
+    "clusterA": "24/24 PASS on 6486be87 \u2014 ACS-F01 + ACS-C01 cleared",
+    "iso29": "Re-sweep 6486be87: 26P/4F/2NR \u2014 ISO-18/20/27/29 still FAIL; hold isolation 86%",
+    "scorePushWrap": "Done: tip refresh, Dispatch PASS (ambient 92), canary FAIL hold 52, AI-85 hold 56, Cluster A 24/24 (CC 80), ISO hold 86. Headline 66%. Need Declan: Comms secrets, smoke fixtures, PA seat."
   },
   "strands": [
     {
@@ -169,12 +171,11 @@
       "percent": 86,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "ISO-29 COMPLETE was Measured 26 PASS / 4 FAIL / 2 NOT_RUN on prior tip 232659cf (same leaks ISO-18/20/27/29). #1250 (capacity-stack demo seed restricted to Bluebird) is now on tip a263c4ab \u2014 isolation bank not re-swept yet.",
-      "progressNote": "Held Measured ~86% from 232659cf; #1250 landed on a263c4ab \u2014 ISO retest pending.",
+      "plainSummary": "ISO-29 re-sweep on tip 6486be87: same 26 PASS / 4 FAIL / 2 NOT_RUN as 232659cf. ISO-18/20/27/29 still FAIL (Refrm Helgo chooser Bluebird leak; cohorts identical; Staff Availability lists Bluebird teachers; CC ?c=150001 only offers Bluebird). Hold 86%.",
+      "progressNote": "ISO-29 re-sweep on tip 6486be87: same 26 PASS / 4 FAIL / 2 NOT_RUN as 232659cf. ISO-18/20/27/29 still FAIL (Refrm Helgo chooser Bluebird leak; cohorts identical; Staff Availability lists Bluebird teachers; CC ?c=150001 only offers Bluebird). Hold 86%.",
       "blockers": [
-        "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (last Measured on prior tip)",
-        "Weymouth #1245 and Luton #1242 extras NOT_RUN \u2014 no dedicated fixture/route",
-        "#1250 on tip a263c4ab \u2014 capacity-stack seed fix awaits isolation re-sweep"
+        "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (Measured on 6486be87)",
+        "Weymouth #1245 and Luton #1242 extras NOT_RUN \u2014 no dedicated fixture/route"
       ],
       "detailDropIds": [
         "2026-09-11-iso29-complete-tip-232659cf",
@@ -370,7 +371,7 @@
   "health": {
     "overallLaunchPercent": 66,
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 66% = round((52\u00d712 + 80\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) half-up.",
-    "readinessLabel": "Getting closer \u2014 tip 6486be87. Headline 66% after Cluster A 24/24 (Command Centre 80%) and Dispatch viewer PASS (ambient 92). Dataset canary still FAIL (companyId 403). ISO-29 retest still in flight. Comms secrets still blocked.",
+    "readinessLabel": "Not ready to launch \u2014 tip 6486be87. Headline 66% after score-push retests: Cluster A 24/24, Dispatch PASS, AI-85/dataset/ISO held. Biggest remaining: Comms secrets, dataset companyId 403, four ISO leaks, AI-85 FAILs.",
     "plainSummary": "As of 2026-09-12T07:08:35.782Z (Europe/London 12 Sep 2026 ~08:08), launch readiness headline held at about 64%. Live tip moved a73ff70b \u2192 88d622ea. On this tip: #1262 smoke invite sign-in, #1263 QR landing, #1264 Command Centre Admin 2 identity, #1249 public-bundle PII removal. Strand percents NOT re-scored \u2014 retest pending. #1267 (studio admin pending invite create) is on GitHub staging (a3a0e207) but not yet on live /api/version.",
     "strengths": [
       "Cluster A Measured 22/24 on tip a263c4ab; Teacher2 MGR-10 + ACS-X01 PASS",
