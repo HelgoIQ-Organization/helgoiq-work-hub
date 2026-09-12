@@ -1,7 +1,7 @@
 {
   "updatedAt": "2026-09-12T12:41:47.214Z",
   "meta": {
-    "dataAsOf": "2026-09-12T13:29:49.353Z",
+    "dataAsOf": "2026-09-12T13:30:45.460Z",
     "buildStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 65% = round((52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) with half-up.",
@@ -107,7 +107,8 @@
     "scorePushStarted": "2026-09-12: Cluster A + ISO-29 + AI-85 reachable + Dispatch + dataset canary on 6486be87 (no Declan)",
     "censusMoneyL2Finance": "0 PASS / 1 PARTIAL (stripe-connect) / 6 FAIL \u2014 KPI drills + invoicing alias",
     "ambientDispatch": "PASS on 6486be87 \u2014 viewer honest empty, no crash",
-    "datasetCanary": "FAIL Missing companyId 403 \u2014 hold 52%"
+    "datasetCanary": "FAIL Missing companyId 403 \u2014 hold 52%",
+    "ai85Rescore": "Hold 56% \u2014 25 retested; AI-018 FAIL\u2192PARTIAL only; 4 FAIL open"
   },
   "strands": [
     {
@@ -194,14 +195,12 @@
       "percent": 56,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "AI-85 was Measured 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP on prior tip 232659cf. #1254 Business Insights server KPIs and #1253 Twin overview contract are now on tip a263c4ab \u2014 AI-85 bank not re-scored yet.",
-      "progressNote": "Held Measured 56% from 232659cf; #1253/#1254 on a263c4ab \u2014 AI re-score pending.",
+      "plainSummary": "AI-85 Admin2 re-score on tip 6486be87: 25 surfaces (20 UNCERTAIN + 5 FAIL). PASS still 48/85 \u2192 hold 56%. Only change AI-018 FAIL\u2192PARTIAL (Dispatch honest empty). Open FAILs: AI-042 MRR crash, AI-025 Ask HelgoIQ, AI-037 Predictive Cash Flow, AI-021 What We\u2019ve Learned. PA-gated Hea",
+      "progressNote": "AI-85 Admin2 re-score on tip 6486be87: 25 surfaces (20 UNCERTAIN + 5 FAIL). PASS still 48/85 \u2192 hold 56%. Only change AI-018 FAIL\u2192PARTIAL (Dispatch honest empty). Open FAILs: AI-042 MRR crash, AI-025 Ask HelgoIQ, AI-037 Predictive Cash Flow, AI-021 What We\u2019ve Learned. PA-gated Health/Decision Audit/Event Bus skipped.",
       "blockers": [
-        "23 UNCERTAIN remain (Platform Admin / empty AI panels / NEED_DECLAN)",
-        "5 FAIL still open on the broken list",
-        "8 UNREACHABLE + 1 SKIP (CC bank)",
-        "Event Bus / Feature Controls still unsettled for cleaner re-sample",
-        "#1253/#1254 on tip a263c4ab \u2014 Twin/Insights re-check pending"
+        "23 UNCERTAIN remain (many empty AI / NEED_DECLAN)",
+        "4 FAIL: MRR crash, Ask HelgoIQ, Predictive Cash Flow, What We\u2019ve Learned launcher",
+        "8 UNREACHABLE + PA seats for Health/Decision Audit/Event Bus"
       ],
       "detailDropIds": [
         "2026-09-11-ai85-overnight-rescore-tip-232659cf",
