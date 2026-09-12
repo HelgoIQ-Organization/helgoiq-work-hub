@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-09-12T11:59:19.847671Z",
+  "updatedAt": "2026-09-12T12:41:47.214Z",
   "meta": {
-    "dataAsOf": "2026-09-12T07:40:10.030Z",
-    "buildStamp": "a3a0e20783530334e24ba3f64c0345a419e4179b",
-    "liveTip": "a3a0e20783530334e24ba3f64c0345a419e4179b",
+    "dataAsOf": "2026-09-12T12:41:47.214Z",
+    "buildStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+    "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Tip moved 88d622ea \u2192 a3a0e207 (live /api/version releaseSha a3a0e20783530334e24ba3f64c0345a419e4179b). Live on tip: #1267 invite-create fix (studio admins via company access). #1266 Pulse exact-data explain is merged to staging HEAD 6486be87 but NOT on live tip yet (deploy lag). Strand scores held at prior measured/estimate \u2014 headline hold 64% / retest pending. Do not invent scores. Do not recommend import.rollbackBatch.",
+    "lastRefreshNote": "Tip changed a3a0e207 \u2192 6486be87; Bot Commander should rescore strands.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-12T07:40:10.030Z"
+      "checkedAt": "2026-09-12T12:41:47.214Z"
     },
     "updatedAt": "2026-09-12T11:59:19.847671Z",
     "note": "Live tip a3a0e207: #1267 invite create. Staging ahead: #1266 Pulse (6486be87) not deployed. Cluster A last Measured 23/24 on a73ff70 (ACS-C01 fail).",
@@ -37,7 +37,7 @@
     "coverageL1Pct": 88.6,
     "coverageL2Pct": 16.2
   },
-  "tip": "a3a0e20783530334e24ba3f64c0345a419e4179b",
+  "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 64,
@@ -103,7 +103,8 @@
     "censusCoreL2Members": "3 PASS / 1 PARTIAL / 1 FAIL (crm-hub KPI vs empty Insights)",
     "censusCoreL2": "Members 3P/1Part/1F \u00b7 Timetable L2_FAIL (fill-rate + cover cost + cover copy)",
     "censusCommsL2Inbox": "1 PASS / 3 PARTIAL / 2 FAIL (intelligence NaN; learning-registry disagree)",
-    "censusAiL2Home": "1 FAIL overview Refrm visible \u00b7 3 PARTIAL agents/tasks/dashboard"
+    "censusAiL2Home": "1 FAIL overview Refrm visible \u00b7 3 PARTIAL agents/tasks/dashboard",
+    "scorePushStarted": "2026-09-12: Cluster A + ISO-29 + AI-85 reachable + Dispatch + dataset canary on 6486be87 (no Declan)"
   },
   "strands": [
     {
@@ -369,7 +370,7 @@
   "health": {
     "overallLaunchPercent": 64,
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
-    "readinessLabel": "Not ready to launch \u2014 tip moved to 88d622ea; prior Measured scores (Cluster A 22/24, smoke FAIL 4/6, invite fresh create FAIL) are on older tips and need retest. Headline held ~64%. #1267 invite-create fix merged to staging but not live yet.",
+    "readinessLabel": "Not ready to launch \u2014 live tip 6486be87. Headline held at 64% pending Measured retests (Cluster A, ISO-29, AI-85 reachable, Dispatch, dataset canary) now in flight. Invite create #1267 already PASS on this tip. Comms strand still blocked on Resend secrets.",
     "plainSummary": "As of 2026-09-12T07:08:35.782Z (Europe/London 12 Sep 2026 ~08:08), launch readiness headline held at about 64%. Live tip moved a73ff70b \u2192 88d622ea. On this tip: #1262 smoke invite sign-in, #1263 QR landing, #1264 Command Centre Admin 2 identity, #1249 public-bundle PII removal. Strand percents NOT re-scored \u2014 retest pending. #1267 (studio admin pending invite create) is on GitHub staging (a3a0e207) but not yet on live /api/version.",
     "strengths": [
       "Cluster A Measured 22/24 on tip a263c4ab; Teacher2 MGR-10 + ACS-X01 PASS",
