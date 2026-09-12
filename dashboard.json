@@ -4,12 +4,12 @@
     "dataAsOf": "2026-09-12T07:40:10.030Z",
     "buildStamp": "a3a0e20783530334e24ba3f64c0345a419e4179b",
     "liveTip": "a3a0e20783530334e24ba3f64c0345a419e4179b",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52×12 + 66×10 + 86×10 + 56×15 + 85×9 + 72×10 + 67×6 + 62×8 + 87×10 + 15×10)/100.",
-    "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
+    "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Tip moved 88d622ea → a3a0e207 (live /api/version releaseSha a3a0e20783530334e24ba3f64c0345a419e4179b). Live on tip: #1267 invite-create fix (studio admins via company access). #1266 Pulse exact-data explain is merged to staging HEAD 6486be87 but NOT on live tip yet (deploy lag). Strand scores held at prior measured/estimate — headline hold 64% / retest pending. Do not invent scores. Do not recommend import.rollbackBatch.",
+    "lastRefreshNote": "Tip moved 88d622ea \u2192 a3a0e207 (live /api/version releaseSha a3a0e20783530334e24ba3f64c0345a419e4179b). Live on tip: #1267 invite-create fix (studio admins via company access). #1266 Pulse exact-data explain is merged to staging HEAD 6486be87 but NOT on live tip yet (deploy lag). Strand scores held at prior measured/estimate \u2014 headline hold 64% / retest pending. Do not invent scores. Do not recommend import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
@@ -18,7 +18,7 @@
     },
     "updatedAt": "2026-09-12T11:59:19.847671Z",
     "note": "Live tip a3a0e207: #1267 invite create. Staging ahead: #1266 Pulse (6486be87) not deployed. Cluster A last Measured 23/24 on a73ff70 (ACS-C01 fail).",
-    "coveragePercentFormula": "Coverage tab: L≥1 (reachable+) = 365/413 ≈ 88.4%; L≥2 (exercised) = 51/413 ≈ 12.3%. tested_any (incl failed/blocked) = 408/413 ≈ 98.8%.",
+    "coveragePercentFormula": "Coverage tab: L\u22651 (reachable+) = 365/413 \u2248 88.4%; L\u22652 (exercised) = 51/413 \u2248 12.3%. tested_any (incl failed/blocked) = 408/413 \u2248 98.8%.",
     "headlineVsCoverage": "Headline ~64% = weighted strand average. Coverage L1%=88.4 / L2%=12.3. Different units; strand passes must stamp page rows.",
     "coverageAfterBackfill": {
       "pctTestedAny": 98.8,
@@ -33,7 +33,9 @@
         "L2 partial": 36,
         "L2 works": 15
       }
-    }
+    },
+    "coverageL1Pct": 88.6,
+    "coverageL2Pct": 13.6
   },
   "tip": "a3a0e20783530334e24ba3f64c0345a419e4179b",
   "progressToday": {
@@ -75,11 +77,11 @@
       "findings-fix": 47,
       "comms": 15
     },
-    "plainEnglishDay": "Saturday morning (12 Sep Europe/London): LIVE TIP MOVED 88d622ea → a3a0e207. Headline held at ~64% pending retest on new tip — do not claim strand progress until re-measured. Now live: #1267 (studio admin invite create). Still deploy-lagging: #1266 (Pulse saved-fact explain). Prior on tip chain: #1262/#1263/#1264/#1249. Your Move: retest fresh Admin 2 invite create now that #1267 is on tip. Never instruct import.rollbackBatch.",
+    "plainEnglishDay": "Saturday morning (12 Sep Europe/London): LIVE TIP MOVED 88d622ea \u2192 a3a0e207. Headline held at ~64% pending retest on new tip \u2014 do not claim strand progress until re-measured. Now live: #1267 (studio admin invite create). Still deploy-lagging: #1266 (Pulse saved-fact explain). Prior on tip chain: #1262/#1263/#1264/#1249. Your Move: retest fresh Admin 2 invite create now that #1267 is on tip. Never instruct import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea — scores held; retest pending. #1267 not live yet.",
+    "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
     "updatedAt": "2026-09-12T11:59:19.847671Z",
-    "coverageNote": "L2 backfill (Declan criteria): L≥1=365/413 (88.4%); L≥2=51/413 (12.3%); tested_any=408/413 (98.8%). L2 labels: {'L2 partial': 36, 'L2 works': 15}. Strands headline remains weighted launch health (~64%); coverage % is page levels.",
+    "coverageNote": "L2 walk: tested_any 409/413; L\u22651=366 (89%); L\u22652=56 (14%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED fixtures consumed",
     "pulse1266": "PASS UI explain; explainStudioState RPC 500",
@@ -91,13 +93,14 @@
     "censusLongtailTeamAcademy": "51 PASS / 6 FAIL (misroutes) / 1 BLOCKED; studio-access next",
     "censusLongtailStudioAccess": "30/30 PASS; Settings (15 observe-only) next",
     "censusLongtailSettings": "14 PASS / 1 BLOCKED (live-support PA); orphans (30) next",
-    "censusLongtailComplete": "133 routes: 124 PASS / 6 FAIL / 3 BLOCKED — Admin L1 wave complete",
+    "censusLongtailComplete": "133 routes: 124 PASS / 6 FAIL / 3 BLOCKED \u2014 Admin L1 wave complete",
     "coverageL1Plus": 365,
     "coverageL2Plus": 51,
     "coverageTotal": 413,
     "coveragePctL1Plus": 88.4,
     "coveragePctL2Plus": 12.3,
-    "l2BackfillAt": "2026-09-12T11:59:19.847671Z"
+    "l2BackfillAt": "2026-09-12T11:59:19.847671Z",
+    "censusCoreL2Members": "3 PASS / 1 PARTIAL / 1 FAIL (crm-hub KPI vs empty Insights)"
   },
   "strands": [
     {
@@ -106,10 +109,10 @@
       "percent": 52,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Dataset canary was Measured FAIL on prior tip 232659cf (UI mapped 3-row CSV; batchImport.upload Missing companyId HTTP 403; 0 members; Import Batches empty). Tip is now a263c4ab with morning packs live — canary NOT re-run yet (engineering). #1240 SAFE rollback is on tip and Declan has LIFTED the ban — prefer not to need rollback; if used, company-scoped batchId only.",
-      "progressNote": "Held Measured 52% from 232659cf — canary FAIL (companyId 403); not re-run on a263c4ab; rollback ban lifted.",
+      "plainSummary": "Dataset canary was Measured FAIL on prior tip 232659cf (UI mapped 3-row CSV; batchImport.upload Missing companyId HTTP 403; 0 members; Import Batches empty). Tip is now a263c4ab with morning packs live \u2014 canary NOT re-run yet (engineering). #1240 SAFE rollback is on tip and Declan has LIFTED the ban \u2014 prefer not to need rollback; if used, company-scoped batchId only.",
+      "progressNote": "Held Measured 52% from 232659cf \u2014 canary FAIL (companyId 403); not re-run on a263c4ab; rollback ban lifted.",
       "blockers": [
-        "Canary upload FAIL on prior tip: Missing companyId on batchImport.upload (403) — retest pending on a263c4ab (engineering)",
+        "Canary upload FAIL on prior tip: Missing companyId on batchImport.upload (403) \u2014 retest pending on a263c4ab (engineering)",
         "12-month dataset not imported (0 members from canary)"
       ],
       "detailDropIds": [
@@ -120,7 +123,7 @@
       ],
       "phaseId": "data-foundation",
       "projectWeightPercent": 12,
-      "measuredNote": "Prior tip 232659cf canary: preview OK; upload Missing companyId 403; 0 members; no rollback used. New tip a263c4ab not re-canaried yet. Ban lifted — prefer avoid rollback; company-scoped batchId only.",
+      "measuredNote": "Prior tip 232659cf canary: preview OK; upload Missing companyId 403; 0 members; no rollback used. New tip a263c4ab not re-canaried yet. Ban lifted \u2014 prefer avoid rollback; company-scoped batchId only.",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale"
@@ -131,11 +134,11 @@
       "percent": 66,
       "basis": "Measured",
       "status": "at-risk",
-      "plainSummary": "Cluster A Measured 22/24 on tip a263c4ab (was 20/24 on 232659cf). Fails now ACS-F01 + ACS-C01 only — MEM-X01, TAG-C01, TAG-A01 cleared. Teacher2 MGR-10 + ACS-X01 PASS. Clusters B–F still locked pending Declan’s approve/reject.",
-      "progressNote": "Measured 66% on a263c4ab — Cluster A 22/24; B–F still locked.",
+      "plainSummary": "Cluster A Measured 22/24 on tip a263c4ab (was 20/24 on 232659cf). Fails now ACS-F01 + ACS-C01 only \u2014 MEM-X01, TAG-C01, TAG-A01 cleared. Teacher2 MGR-10 + ACS-X01 PASS. Clusters B\u2013F still locked pending Declan\u2019s approve/reject.",
+      "progressNote": "Measured 66% on a263c4ab \u2014 Cluster A 22/24; B\u2013F still locked.",
       "blockers": [
         "Cluster A still FAIL: ACS-F01, ACS-C01",
-        "Clusters B–F banks not approved/rejected by Declan"
+        "Clusters B\u2013F banks not approved/rejected by Declan"
       ],
       "detailDropIds": [
         "2026-09-11-command-centre-cluster-a-tip-a263c4ab-22-24",
@@ -145,12 +148,12 @@
       ],
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
-      "measuredNote": "Cluster A on a263c4ab: 22/24 PASS; fails ACS-F01 ACS-C01; Teacher2 MGR-10/ACS-X01 PASS; B–F locked.",
+      "measuredNote": "Cluster A on a263c4ab: 22/24 PASS; fails ACS-F01 ACS-C01; Teacher2 MGR-10/ACS-X01 PASS; B\u2013F locked.",
       "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
       "coverageFreshness": "stale",
       "lastTestedVerdict": "FAIL",
       "measured": 95.83333333333334,
-      "blocker": "ACS-C01 fault (compared_person_not_found Admin 2); B–F locked"
+      "blocker": "ACS-C01 fault (compared_person_not_found Admin 2); B\u2013F locked"
     },
     {
       "id": "isolation",
@@ -158,12 +161,12 @@
       "percent": 86,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "ISO-29 COMPLETE was Measured 26 PASS / 4 FAIL / 2 NOT_RUN on prior tip 232659cf (same leaks ISO-18/20/27/29). #1250 (capacity-stack demo seed restricted to Bluebird) is now on tip a263c4ab — isolation bank not re-swept yet.",
-      "progressNote": "Held Measured ~86% from 232659cf; #1250 landed on a263c4ab — ISO retest pending.",
+      "plainSummary": "ISO-29 COMPLETE was Measured 26 PASS / 4 FAIL / 2 NOT_RUN on prior tip 232659cf (same leaks ISO-18/20/27/29). #1250 (capacity-stack demo seed restricted to Bluebird) is now on tip a263c4ab \u2014 isolation bank not re-swept yet.",
+      "progressNote": "Held Measured ~86% from 232659cf; #1250 landed on a263c4ab \u2014 ISO retest pending.",
       "blockers": [
         "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (last Measured on prior tip)",
-        "Weymouth #1245 and Luton #1242 extras NOT_RUN — no dedicated fixture/route",
-        "#1250 on tip a263c4ab — capacity-stack seed fix awaits isolation re-sweep"
+        "Weymouth #1245 and Luton #1242 extras NOT_RUN \u2014 no dedicated fixture/route",
+        "#1250 on tip a263c4ab \u2014 capacity-stack seed fix awaits isolation re-sweep"
       ],
       "detailDropIds": [
         "2026-09-11-iso29-complete-tip-232659cf",
@@ -184,14 +187,14 @@
       "percent": 56,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "AI-85 was Measured 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP on prior tip 232659cf. #1254 Business Insights server KPIs and #1253 Twin overview contract are now on tip a263c4ab — AI-85 bank not re-scored yet.",
-      "progressNote": "Held Measured 56% from 232659cf; #1253/#1254 on a263c4ab — AI re-score pending.",
+      "plainSummary": "AI-85 was Measured 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP on prior tip 232659cf. #1254 Business Insights server KPIs and #1253 Twin overview contract are now on tip a263c4ab \u2014 AI-85 bank not re-scored yet.",
+      "progressNote": "Held Measured 56% from 232659cf; #1253/#1254 on a263c4ab \u2014 AI re-score pending.",
       "blockers": [
         "23 UNCERTAIN remain (Platform Admin / empty AI panels / NEED_DECLAN)",
         "5 FAIL still open on the broken list",
         "8 UNREACHABLE + 1 SKIP (CC bank)",
         "Event Bus / Feature Controls still unsettled for cleaner re-sample",
-        "#1253/#1254 on tip a263c4ab — Twin/Insights re-check pending"
+        "#1253/#1254 on tip a263c4ab \u2014 Twin/Insights re-check pending"
       ],
       "detailDropIds": [
         "2026-09-11-ai85-overnight-rescore-tip-232659cf",
@@ -210,13 +213,13 @@
       "percent": 85,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Ambient evidence was Measured on prior tip 232659cf: Pulse explainability OK; Morning Dispatch viewer FAIL; Twin Cancelling agreed for Member A; Learning Engine one-tap / 0 lessons; Event Bus Platform-Admin gated. #1253 Twin overview + #1254 Insights server KPIs now on tip a263c4ab — ambient not re-evidenced yet.",
-      "progressNote": "Held Measured ~85% from 232659cf; Twin/Insights fixes on a263c4ab — re-evidence pending.",
+      "plainSummary": "Ambient evidence was Measured on prior tip 232659cf: Pulse explainability OK; Morning Dispatch viewer FAIL; Twin Cancelling agreed for Member A; Learning Engine one-tap / 0 lessons; Event Bus Platform-Admin gated. #1253 Twin overview + #1254 Insights server KPIs now on tip a263c4ab \u2014 ambient not re-evidenced yet.",
+      "progressNote": "Held Measured ~85% from 232659cf; Twin/Insights fixes on a263c4ab \u2014 re-evidence pending.",
       "blockers": [
         "Morning Dispatch viewer still FAIL (last Measured on prior tip)",
-        "Event Bus Platform-Admin gated — Declan escalation not attempted",
+        "Event Bus Platform-Admin gated \u2014 Declan escalation not attempted",
         "Learning Engine still 0 active lessons (one-tap action works)",
-        "#1253/#1254 on tip a263c4ab — Twin/Insights re-evidence pending"
+        "#1253/#1254 on tip a263c4ab \u2014 Twin/Insights re-evidence pending"
       ],
       "detailDropIds": [
         "2026-09-11-ambient-evidence-tip-232659cf",
@@ -235,16 +238,16 @@
       "percent": 72,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "M1 Wave1 partial was Measured on prior tip 232659cf: Admin2 freeze PASS; unfreeze FAIL (payment provider — BB Smoke Sep8 paused); cancel+reverse PASS. On tip a263c4ab: #1247/#1258/#1252 live; morning invite E2E consumed-invite PASS but fresh member invite create FAIL (pending list unchanged). M1 Wave1 full re-run still pending. Upgrade/downgrade/MemberB/waitlist/Owner still BLOCKED from prior board.",
-      "progressNote": "Held 72% — #1267 on tip a3a0e207; fresh invite create retest pending before claiming m1 progress.",
+      "plainSummary": "M1 Wave1 partial was Measured on prior tip 232659cf: Admin2 freeze PASS; unfreeze FAIL (payment provider \u2014 BB Smoke Sep8 paused); cancel+reverse PASS. On tip a263c4ab: #1247/#1258/#1252 live; morning invite E2E consumed-invite PASS but fresh member invite create FAIL (pending list unchanged). M1 Wave1 full re-run still pending. Upgrade/downgrade/MemberB/waitlist/Owner still BLOCKED from prior board.",
+      "progressNote": "Held 72% \u2014 #1267 on tip a3a0e207; fresh invite create retest pending before claiming m1 progress.",
       "blockers": [
         "Fresh member invite create FAIL on a263c4ab (form closed; pending list unchanged)",
-        "Admin2 unfreeze FAIL — payment provider; BB Smoke Sep8 still paused (prior tip)",
+        "Admin2 unfreeze FAIL \u2014 payment provider; BB Smoke Sep8 still paused (prior tip)",
         "Upgrade/downgrade BLOCKED (no selectable tiers)",
         "Member B authenticated client seat not run",
-        "Waitlist BLOCKED — no full class inventory",
+        "Waitlist BLOCKED \u2014 no full class inventory",
         "Owner seat not attempted after resume failure",
-        "#1247/#1252/#1258 on tip a263c4ab — invite/booking retest pending"
+        "#1247/#1252/#1258 on tip a263c4ab \u2014 invite/booking retest pending"
       ],
       "detailDropIds": [
         "2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr",
@@ -266,11 +269,11 @@
       "percent": 67,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Invite create #1267 PASS on 6486be87. Six-step smoke BLOCKED — fixtures seat already accepted. Morning seat smoke-2 on tip a263c4ab overall FAIL (Measured 4/6). Invite/OTP PASS; Bluebird 8 join Active via Stripe TEST but HELGOBIRD not entered; booking PASS; late-cancel credit FAIL (7 not 8); membership cancel+reverse PROVEN PASS; evidence PASS. Residual: BB Smoke Sep8 still paused after M1 unfreeze FAIL.",
-      "progressNote": "Held 67% — tip now a3a0e207 with #1267 invite create LIVE; invite path retest pending (not re-measured).",
+      "plainSummary": "Invite create #1267 PASS on 6486be87. Six-step smoke BLOCKED \u2014 fixtures seat already accepted. Morning seat smoke-2 on tip a263c4ab overall FAIL (Measured 4/6). Invite/OTP PASS; Bluebird 8 join Active via Stripe TEST but HELGOBIRD not entered; booking PASS; late-cancel credit FAIL (7 not 8); membership cancel+reverse PROVEN PASS; evidence PASS. Residual: BB Smoke Sep8 still paused after M1 unfreeze FAIL.",
+      "progressNote": "Held 67% \u2014 tip now a3a0e207 with #1267 invite create LIVE; invite path retest pending (not re-measured).",
       "blockers": [
         "HELGOBIRD promo not entered on Bluebird 8 checkout (standard price used)",
-        "Late cancel left 7 credits (not 8) — credit-return-once FAIL"
+        "Late cancel left 7 credits (not 8) \u2014 credit-return-once FAIL"
       ],
       "detailDropIds": [
         "2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f",
@@ -292,9 +295,9 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Overnight smoke completed one Stripe TEST discounted checkout on prior tip 232659cf, but M1 Admin2 Resume failed at the payment provider and BB Smoke Sep8 remains paused. Tip a263c4ab does not change that payments picture until retest.",
-      "progressNote": "Estimate 62% held — smoke Stripe path passed on 232659cf; resume/unfreeze still FAIL; tip a263c4ab not rechecked.",
+      "progressNote": "Estimate 62% held \u2014 smoke Stripe path passed on 232659cf; resume/unfreeze still FAIL; tip a263c4ab not rechecked.",
       "blockers": [
-        "Admin2 Resume/unfreeze FAIL — payment provider; Smoke membership still paused",
+        "Admin2 Resume/unfreeze FAIL \u2014 payment provider; Smoke membership still paused",
         "Broader payments / Stripe recheck beyond overnight smoke step 2 not done"
       ],
       "detailDropIds": [
@@ -314,12 +317,12 @@
       "percent": 87,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Six PRs live on tip a263c4ab: #1250 demo seed, #1252 signed-out booking return, #1254 Business Insights server KPIs, #1253 Twin overview, #1247 invite bind, #1258 smoke invite fix (+ #1248 CI). Cluster A re-measured 22/24 on tip (cleared MEM-X01/TAG-C01/TAG-A01; ACS-F01+ACS-C01 remain). Morning smoke FAIL (4/6). Invite E2E: consumed PASS, fresh member invite create FAIL. Overnight ISO/AI/ambient/dataset still held from 232659cf. Rollback ban LIFTED (#1240 on tip) — do not use import.rollbackBatch.",
-      "progressNote": "Held 87% — tip a3a0e207 (#1267 live). #1266 Pulse explain merged but not on tip yet.",
+      "plainSummary": "Six PRs live on tip a263c4ab: #1250 demo seed, #1252 signed-out booking return, #1254 Business Insights server KPIs, #1253 Twin overview, #1247 invite bind, #1258 smoke invite fix (+ #1248 CI). Cluster A re-measured 22/24 on tip (cleared MEM-X01/TAG-C01/TAG-A01; ACS-F01+ACS-C01 remain). Morning smoke FAIL (4/6). Invite E2E: consumed PASS, fresh member invite create FAIL. Overnight ISO/AI/ambient/dataset still held from 232659cf. Rollback ban LIFTED (#1240 on tip) \u2014 do not use import.rollbackBatch.",
+      "progressNote": "Held 87% \u2014 tip a3a0e207 (#1267 live). #1266 Pulse explain merged but not on tip yet.",
       "blockers": [
         "ISO-18/20/27/29 still FAIL (last Measured on prior tip; #1250 awaits re-sweep)",
-        "Dataset canary FAIL — Missing companyId on batchImport.upload (403); 0 members (engineering)",
-        "Admin2 unfreeze FAIL — payment provider; Smoke still paused",
+        "Dataset canary FAIL \u2014 Missing companyId on batchImport.upload (403); 0 members (engineering)",
+        "Admin2 unfreeze FAIL \u2014 payment provider; Smoke still paused",
         "Cluster A still FAIL: ACS-F01, ACS-C01 (22/24 measured on a263c4ab)",
         "Fresh member invite create FAIL on a263c4ab (consumed invite PASS)"
       ],
@@ -349,7 +352,7 @@
       "basis": "estimate",
       "status": "blocked",
       "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. Tip a3a0e207 does not unblock this strand.",
-      "progressNote": "Still 15% — secrets gate unchanged.",
+      "progressNote": "Still 15% \u2014 secrets gate unchanged.",
       "blockers": [
         "Five Resend/Agentmail repository secrets missing for #1213"
       ],
@@ -362,9 +365,9 @@
   ],
   "health": {
     "overallLaunchPercent": 64,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52×12 + 66×10 + 86×10 + 56×15 + 85×9 + 72×10 + 67×6 + 62×8 + 87×10 + 15×10)/100.",
-    "readinessLabel": "Not ready to launch — tip moved to 88d622ea; prior Measured scores (Cluster A 22/24, smoke FAIL 4/6, invite fresh create FAIL) are on older tips and need retest. Headline held ~64%. #1267 invite-create fix merged to staging but not live yet.",
-    "plainSummary": "As of 2026-09-12T07:08:35.782Z (Europe/London 12 Sep 2026 ~08:08), launch readiness headline held at about 64%. Live tip moved a73ff70b → 88d622ea. On this tip: #1262 smoke invite sign-in, #1263 QR landing, #1264 Command Centre Admin 2 identity, #1249 public-bundle PII removal. Strand percents NOT re-scored — retest pending. #1267 (studio admin pending invite create) is on GitHub staging (a3a0e207) but not yet on live /api/version.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
+    "readinessLabel": "Not ready to launch \u2014 tip moved to 88d622ea; prior Measured scores (Cluster A 22/24, smoke FAIL 4/6, invite fresh create FAIL) are on older tips and need retest. Headline held ~64%. #1267 invite-create fix merged to staging but not live yet.",
+    "plainSummary": "As of 2026-09-12T07:08:35.782Z (Europe/London 12 Sep 2026 ~08:08), launch readiness headline held at about 64%. Live tip moved a73ff70b \u2192 88d622ea. On this tip: #1262 smoke invite sign-in, #1263 QR landing, #1264 Command Centre Admin 2 identity, #1249 public-bundle PII removal. Strand percents NOT re-scored \u2014 retest pending. #1267 (studio admin pending invite create) is on GitHub staging (a3a0e207) but not yet on live /api/version.",
     "strengths": [
       "Cluster A Measured 22/24 on tip a263c4ab; Teacher2 MGR-10 + ACS-X01 PASS",
       "Morning smoke: invite/OTP, booking, membership cancel+reverse PROVEN, evidence PASS on tip a263c4ab",
@@ -373,16 +376,16 @@
       "ISO-29 COMPLETE Measured 26/4/2 on prior tip (held); #1250 capacity-stack Bluebird now live",
       "Ambient Pulse OK + Twin Cancelling agreed (held); #1253/#1254 Twin/Insights packs now live",
       "Morning invite/booking/CI packs (#1247/#1252/#1258/#1248) live on tip a263c4ab",
-      "Rollback ban LIFTED (#1240 on tip) — do not use import.rollbackBatch"
+      "Rollback ban LIFTED (#1240 on tip) \u2014 do not use import.rollbackBatch"
     ],
     "risks": [
-      "Cluster A still FAIL: ACS-F01, ACS-C01; Clusters B–F locked",
-      "Morning smoke FAIL on a263c4ab — HELGOBIRD not entered; late-cancel credit left 7 not 8",
+      "Cluster A still FAIL: ACS-F01, ACS-C01; Clusters B\u2013F locked",
+      "Morning smoke FAIL on a263c4ab \u2014 HELGOBIRD not entered; late-cancel credit left 7 not 8",
       "Fresh member invite create FAIL on a263c4ab",
-      "Dataset canary FAIL — Missing companyId on batchImport.upload (403); 0 members; 12m not loaded (engineering)",
+      "Dataset canary FAIL \u2014 Missing companyId on batchImport.upload (403); 0 members; 12m not loaded (engineering)",
       "Same four privacy leaks still FAIL (ISO-18/20/27/29); Weymouth/Luton extras NOT_RUN",
       "Morning Dispatch viewer still FAIL (last Measured on prior tip)",
-      "Admin2 unfreeze FAIL — payment provider; BB Smoke Sep8 still paused",
+      "Admin2 unfreeze FAIL \u2014 payment provider; BB Smoke Sep8 still paused",
       "AI-85 / ambient / ISO / dataset not fully re-measured on a263c4ab",
       "Automated comms #1213 blocked on secrets"
     ],
@@ -391,11 +394,11 @@
       "ENGINEERING: Fix Cluster A ACS-F01, ACS-C01",
       "BOT/ENG: Fix fresh member invite create (pending list unchanged)",
       "DECLAN: Add five Resend/Agentmail secrets for #1213",
-      "DECLAN: Platform Admin — Feature Controls + Event Bus (ask before toggles); unlocks AI-85 UNCERTAIN settle",
-      "DECLAN: Approve or reject Clusters B–F banks",
+      "DECLAN: Platform Admin \u2014 Feature Controls + Event Bus (ask before toggles); unlocks AI-85 UNCERTAIN settle",
+      "DECLAN: Approve or reject Clusters B\u2013F banks",
       "BOT/ENG: Targeted retest remaining morning packs on tip a263c4ab",
       "DECLAN: Decide leave BB Smoke Sep8 paused / fix card / retry after payment fix",
-      "ENGINEERING: Fix batchImport.upload Missing companyId (403) — blocks 12m dataset",
+      "ENGINEERING: Fix batchImport.upload Missing companyId (403) \u2014 blocks 12m dataset",
       "ENGINEERING: Fix ISO-18, 20, 27, 29 privacy leaks",
       "ENGINEERING: Fix Morning Dispatch viewer (Something went wrong)",
       "ENGINEERING: Fix Admin2 Resume / unfreeze payment-provider path (Smoke paused)"
@@ -424,9 +427,9 @@
   "actions": [
     {
       "id": "declan-clear-rollback-ban",
-      "title": "Rollback ban lifted — #1240 live on tip",
+      "title": "Rollback ban lifted \u2014 #1240 live on tip",
       "plainWhy": "#1240 SAFE rollback is LIVE on tip a263c4ab and Declan has cleared the ban. Do not use import.rollbackBatch. Prefer not to need rollback; company-scoped batchId only if a human overrides.",
-      "unblocks": "Rollback ban lifted on tip — still do not use import.rollbackBatch in bot workflows",
+      "unblocks": "Rollback ban lifted on tip \u2014 still do not use import.rollbackBatch in bot workflows",
       "movesProjectForwardPercent": 2,
       "movesPhaseForwardPercent": 10,
       "phaseId": "data-foundation",
@@ -487,8 +490,8 @@
     },
     {
       "id": "retest-invite-create-after-1267",
-      "title": "Retest fresh invite create — #1267 is LIVE on tip",
-      "plainWhy": "Fresh member invitation create was FAIL on a263c4ab (Admin 2 Send invitation closed with no pending row). #1267 is now LIVE on tip a3a0e207. Retest Admin 2 create → pending row → send-attempted path on Bluebird.",
+      "title": "Retest fresh invite create \u2014 #1267 is LIVE on tip",
+      "plainWhy": "Fresh member invitation create was FAIL on a263c4ab (Admin 2 Send invitation closed with no pending row). #1267 is now LIVE on tip a3a0e207. Retest Admin 2 create \u2192 pending row \u2192 send-attempted path on Bluebird.",
       "unblocks": "Smoke invite path + member onboarding confidence",
       "movesProjectForwardPercent": 2,
       "movesPhaseForwardPercent": 10,
@@ -566,7 +569,7 @@
     },
     {
       "id": "approve-clusters-bf",
-      "title": "Approve or reject Clusters B–F test banks",
+      "title": "Approve or reject Clusters B\u2013F test banks",
       "plainWhy": "Banks still need your ruling so helpers stop parking on ambiguous rows.",
       "unblocks": "Broader Command Centre acceptance beyond Cluster A",
       "movesProjectForwardPercent": 2,
@@ -580,14 +583,14 @@
       "audience": "declan",
       "links": [
         {
-          "label": "Cluster B–F drop",
+          "label": "Cluster B\u2013F drop",
           "url": "#drop-2026-09-10-cluster-bf",
           "kind": "drop"
         },
         {
           "label": "Copy prompt",
           "kind": "copy-prompt",
-          "text": "show me Clusters B–F for approve/reject rulings"
+          "text": "show me Clusters B\u2013F for approve/reject rulings"
         }
       ]
     },
@@ -616,7 +619,7 @@
         {
           "label": "Copy prompt",
           "kind": "copy-prompt",
-          "text": "BB Smoke Sep8 still paused after Admin2 resume payment-provider FAIL — decide leave paused / fix card / ask Bot to retry after payment fix"
+          "text": "BB Smoke Sep8 still paused after Admin2 resume payment-provider FAIL \u2014 decide leave paused / fix card / ask Bot to retry after payment fix"
         }
       ]
     }
@@ -629,7 +632,7 @@
       "strandIds": [
         "dataset"
       ],
-      "plainSummary": "#1240 on tip a263c4ab; rollback ban LIFTED — prefer not to need rollback; company-scoped batchId only. Canary FAIL (companyId 403) held from 232659cf — engineering.",
+      "plainSummary": "#1240 on tip a263c4ab; rollback ban LIFTED \u2014 prefer not to need rollback; company-scoped batchId only. Canary FAIL (companyId 403) held from 232659cf \u2014 engineering.",
       "percentComplete": 52
     },
     {
@@ -640,7 +643,7 @@
         "command-centre",
         "isolation"
       ],
-      "plainSummary": "Cluster A Measured 22/24 on tip a263c4ab (ACS-F01+ACS-C01 remain); ISO held 26/4/2; #1250 awaits re-sweep; B–F still need rulings.",
+      "plainSummary": "Cluster A Measured 22/24 on tip a263c4ab (ACS-F01+ACS-C01 remain); ISO held 26/4/2; #1250 awaits re-sweep; B\u2013F still need rulings.",
       "percentComplete": 66
     },
     {
@@ -691,13 +694,13 @@
     {
       "id": "tip-moved-88d622ea-2026-09-12",
       "at": "2026-09-12T07:08:35.782Z",
-      "plain": "Staging live tip moved a73ff70b → 88d622ea. Launch Hub stamps updated; strand scores held (headline hold ~64%). Retest pending. On tip: #1262 smoke invite route, #1263 QR, #1264 CC Admin2, #1249 PII. #1267 invite create merged to staging (a3a0e207) — waiting for DO deploy.",
+      "plain": "Staging live tip moved a73ff70b \u2192 88d622ea. Launch Hub stamps updated; strand scores held (headline hold ~64%). Retest pending. On tip: #1262 smoke invite route, #1263 QR, #1264 CC Admin2, #1249 PII. #1267 invite create merged to staging (a3a0e207) \u2014 waiting for DO deploy.",
       "severity": "info"
     },
     {
       "id": "tip-moved-a73ff70-2026-09-11",
       "at": "2026-09-11T14:49:54.942Z",
-      "plain": "Staging tip moved a263c4ab → a73ff70. Launch Hub stamps updated; strand scores held (headline hold). Retest pending. UNTESTED 16 drop posted (list built on a263c4ab).",
+      "plain": "Staging tip moved a263c4ab \u2192 a73ff70. Launch Hub stamps updated; strand scores held (headline hold). Retest pending. UNTESTED 16 drop posted (list built on a263c4ab).",
       "severity": "info"
     }
   ],
@@ -705,7 +708,7 @@
     {
       "id": "eng-fix-batchimport-companyid",
       "title": "Fix batchImport.upload Missing companyId (403)",
-      "plainWhy": "Dataset canary Measured FAIL on tip 232659cf: mapping/preview OK for 3 rows, then batchImport.upload returned Missing companyId (HTTP 403). 0 members created; full 12m blocked. Still FAIL / not re-run on tip a263c4ab — engineering ownership.",
+      "plainWhy": "Dataset canary Measured FAIL on tip 232659cf: mapping/preview OK for 3 rows, then batchImport.upload returned Missing companyId (HTTP 403). 0 members created; full 12m blocked. Still FAIL / not re-run on tip a263c4ab \u2014 engineering ownership.",
       "unblocks": "Twelve-month dataset canary + full import path",
       "movesProjectForwardPercent": 8,
       "movesPhaseForwardPercent": 50,
@@ -716,7 +719,7 @@
       "effort": "hours",
       "status": "needed",
       "audience": "engineering",
-      "warning": "TRY import only after fix. Rollback ban is lifted — prefer not to need rollback; if used, company-scoped batchId only.",
+      "warning": "TRY import only after fix. Rollback ban is lifted \u2014 prefer not to need rollback; if used, company-scoped batchId only.",
       "warningLevel": "warning",
       "links": [
         {
@@ -762,7 +765,7 @@
     {
       "id": "eng-fix-morning-dispatch-viewer",
       "title": "Fix Morning Dispatch viewer (Something went wrong)",
-      "plainWhy": "Ambient evidence Measured on tip 232659cf: Pulse OK, but Morning Dispatch viewer still FAIL after Generating (“Something went wrong”).",
+      "plainWhy": "Ambient evidence Measured on tip 232659cf: Pulse OK, but Morning Dispatch viewer still FAIL after Generating (\u201cSomething went wrong\u201d).",
       "unblocks": "Ambient Dispatch path usable; clears ambient viewer FAIL",
       "movesProjectForwardPercent": 2,
       "movesPhaseForwardPercent": 10,
@@ -817,7 +820,7 @@
     {
       "id": "eng-fix-cluster-a-final-four",
       "title": "Fix Cluster A ACS-F01, ACS-C01",
-      "plainWhy": "Cluster A Measured 22/24 on tip a263c4ab: ACS-F01 (staff availability teachers) FAIL wrong; ACS-C01 (Feature Control / Meta ads ownership) FAIL partial. MEM-X01/TAG-C01/TAG-A01 cleared vs prior 20/24. Teacher2 MGR-10/ACS-X01 PASS. B–F still locked.",
+      "plainWhy": "Cluster A Measured 22/24 on tip a263c4ab: ACS-F01 (staff availability teachers) FAIL wrong; ACS-C01 (Feature Control / Meta ads ownership) FAIL partial. MEM-X01/TAG-C01/TAG-A01 cleared vs prior 20/24. Teacher2 MGR-10/ACS-X01 PASS. B\u2013F still locked.",
       "unblocks": "Cluster A full pass path; Command Centre strand progress",
       "movesProjectForwardPercent": 2,
       "movesPhaseForwardPercent": 12,
@@ -844,7 +847,7 @@
     {
       "id": "eng-weymouth-luton-fixture-coverage",
       "title": "Optional: Weymouth/Luton fixture coverage (NOT_RUN)",
-      "plainWhy": "ISO-29 COMPLETE left only Weymouth (#1245) and Luton (#1242) extras NOT_RUN. Soft coverage work — not blocking the core ISO bank.",
+      "plainWhy": "ISO-29 COMPLETE left only Weymouth (#1245) and Luton (#1242) extras NOT_RUN. Soft coverage work \u2014 not blocking the core ISO bank.",
       "unblocks": "Full ISO extras coverage beyond core 29",
       "movesProjectForwardPercent": 1,
       "movesPhaseForwardPercent": 5,

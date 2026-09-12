@@ -21,8 +21,8 @@
     "fullyTested": 0,
     "partiallyTested": 338,
     "blocked": 44,
-    "failed": 26,
-    "notTested": 5,
+    "failed": 27,
+    "notTested": 4,
     "stale": 59,
     "byReachability": {
       "SIDEBAR": 218,
@@ -34,13 +34,12 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "0": 48,
-      "1": 314,
-      "2": 51,
-      "3": 0
+      "2": 56,
+      "1": 310,
+      "0": 47
     }
   },
-  "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu∩destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
+  "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
   "sourcesUsed": {
     "adminMenu": "coverage/sources/admin-menu.json",
     "folders": "coverage/sources/folders.json",
@@ -161,5 +160,14 @@
     },
     "liveTipChecked": "6486be87a68821e383d36d5246f9da08a802ee59",
     "note": "Evidence tips stamped from source drops; live tip confirmed via /api/version for reference only."
+  },
+  "lastL2Merge": {
+    "bot": "Census Core",
+    "hub": "members",
+    "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+    "pass": 3,
+    "partial": 1,
+    "fail": 1,
+    "miss": 0
   }
 }
