@@ -1152,19 +1152,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-action-effectiveness",
@@ -1447,21 +1463,36 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "ISO isolation exercised PASS. Bluebird Types pane showed no appointment types; Refrm Types pane remained Loading with no types rendered, and no Bluebird types exposed.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-assets",
@@ -1507,19 +1538,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-audience-hub",
@@ -1536,19 +1583,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-audience-intelligence",
@@ -1610,19 +1673,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Covers member communication journeys, not the Pipeline Automations seed defaults/activity log surface.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-badges",
@@ -1639,19 +1717,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-banners",
@@ -1726,19 +1820,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-blog-hub",
@@ -1793,19 +1903,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-bookkeeping",
@@ -2084,19 +2210,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-changelog",
@@ -2153,19 +2295,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-checkins",
@@ -2182,19 +2340,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-comm-management",
@@ -2477,9 +2651,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Local Community & Partners content loaded with empty partner board.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -2490,12 +2664,27 @@
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-studio-connections",
@@ -2551,19 +2740,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). CRM hub is the parent workspace; its Automations tab is the location of Pipeline Automations.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-customer-voice-synthesis",
@@ -2901,19 +3105,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-event-bus",
@@ -3016,21 +3236,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-feature-management",
@@ -3052,9 +3287,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Owner can reach the feature-management page. Feature switches and re-seed controls were not touched per instruction.",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -3065,12 +3300,27 @@
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-finance-hub",
@@ -3250,19 +3500,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "B4-10 load PASS programme disabled",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-holiday-calendar",
@@ -3681,19 +3946,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Does not expose the requested Pipeline Automations seed/new/activity-log controls; it is lifecycle/orchestration analytics.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-kiosk-config",
@@ -3902,9 +4182,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "B4-02 load Overview/Lookup (empty twins at census); later twin drop upgrades",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -3915,12 +4195,27 @@
         "id": "2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c",
         "path": "drops/2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c/RESULTS.md",
         "href": "#drop-2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-member-feedback",
@@ -3971,19 +4266,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "B4-06 Batch Recalculate PARTIAL (1 of 3 scored)",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-members",
@@ -4012,12 +4322,27 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644903188"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-meta-hub",
@@ -4102,19 +4427,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Named landing loaded; no mutation performed.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-monthly-review",
@@ -4492,21 +4832,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-platform-dashboard",
@@ -4564,21 +4919,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-platform-knowledge",
@@ -4600,21 +4970,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-platform-plans",
@@ -4636,21 +5021,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-platform-scaling",
@@ -4672,21 +5072,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-platform-training-hub",
@@ -4744,21 +5159,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "same_as /admin/video-guides",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-popups",
@@ -4941,19 +5371,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-pt-packages",
@@ -5113,19 +5559,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-referral-hub",
@@ -5142,19 +5604,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-related-contacts",
@@ -5171,19 +5649,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-reports-hub",
@@ -5268,19 +5762,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-retreats",
@@ -5297,19 +5807,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-revenue-intelligence",
@@ -5326,19 +5852,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-roadmap",
@@ -5360,9 +5902,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Owner receives roadmap content; no feature request or vote action was used.",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -5373,12 +5915,27 @@
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-rota-builder",
@@ -5608,21 +6165,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-segments",
@@ -5644,21 +6216,36 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "ISO isolation exercised PASS. Bluebird showed CENSUS MKT segments; Refrm showed No segments yet; no cross-tenant segment names/members.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-sentiment-analysis",
@@ -5680,19 +6267,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH2.md"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-sentry",
@@ -5714,21 +6316,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-seo",
@@ -6396,21 +7013,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-system-health",
@@ -6432,21 +7064,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-tag-hub",
@@ -6463,19 +7110,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-tag-intelligence",
@@ -6497,19 +7160,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH2.md"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-tag-management",
@@ -6526,19 +7204,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-team",
@@ -6654,21 +7348,36 @@
     "percentFailed": null,
     "blockedBy": "Owner: Platform/Admin Access Required (expected deny)",
     "reason": "Owner negative: correctly denied. **PASS** \u2014 Platform Admin Access Required",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r",
         "path": "drops/2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r/RESULTS.md",
         "href": "#drop-2026-09-11-owner-negative-half-22p-5f-tip-a73ff70-correct-r"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-timetable",
@@ -6690,7 +7399,7 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Clicked the Slow Flow class card. Detail opened in-place as a modal/drawer without a route change; this provides the /admin/class/:id-style inspection flow from Timetable, but is not a separate URL.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
@@ -6701,12 +7410,27 @@
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/gap3.json"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-training-hub",
@@ -6723,19 +7447,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-video-guides",
@@ -6781,19 +7521,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "no",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-visual-intelligence-showcase",
@@ -7426,19 +8182,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-admin-invite-staff",
@@ -7513,19 +8285,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-ai-credits",
@@ -7620,19 +8408,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-appointment-policies",
@@ -7736,19 +8540,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-blog",
@@ -7765,19 +8585,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-blog-id-edit",
@@ -7799,19 +8635,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "New Post reached editor (not saved).",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/gap3.json"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "same_as /admin/blog/new",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-blog-ai-writer",
@@ -7828,19 +8679,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-blog-categories",
@@ -7857,19 +8724,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-blog-management",
@@ -8074,19 +8957,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-cash-payment",
@@ -8103,19 +9002,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-cash-report",
@@ -8161,19 +9076,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "niche / security surface",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-cctv-settings",
@@ -8190,19 +9121,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "niche / security surface",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-churn-prevention",
@@ -8219,19 +9166,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-class-filler",
@@ -8248,19 +9211,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-class-filler-campaign-id",
@@ -8544,19 +9523,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-community-partner-id",
@@ -8573,19 +9568,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "parametric \u2014 no id",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-community-reporting",
@@ -8602,19 +9613,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-compliance-hub",
@@ -8631,19 +9658,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-credit-liability",
@@ -8660,19 +9703,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-crm",
@@ -8689,19 +9748,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-crm-automations",
@@ -8752,19 +9827,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-custom-dashboards",
@@ -8781,19 +9872,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-custom-dashboards-dashboardId",
@@ -8810,19 +9917,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "parametric \u2014 no id",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-custom-dashboards-dashboardId-charts-chartId-edit",
@@ -8839,19 +9962,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "parametric \u2014 no id",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "same_as /admin/custom-dashboards/:dashboardId/charts/new",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-custom-dashboards-dashboardId-charts-new",
@@ -8868,19 +10007,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "parametric \u2014 no id",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "same_as /admin/custom-dashboards/:dashboardId/charts/:chartId/edit",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-dashboard",
@@ -8902,19 +10057,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Different from /admin Home: this is the performance dashboard with Pulse/KPI analytics and date/location controls.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-disputes",
@@ -8960,19 +10130,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "parametric \u2014 no id",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-door-access-alerts",
@@ -9081,19 +10267,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "parametric \u2014 no id",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "same_as /admin/forms/new",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-forms-id-submissions",
@@ -9110,19 +10312,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "parametric \u2014 no id",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-forms-new",
@@ -9144,21 +10362,36 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "New Form screen exercised during matrix.",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai",
         "path": "drops/2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai/MATRIX.md",
         "href": "#drop-2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "same_as /admin/forms/:id/edit",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-gc-report",
@@ -9204,19 +10437,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-gocardless",
@@ -9233,19 +10482,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-google-hub-preview",
@@ -9262,19 +10527,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-helgo-community",
@@ -9291,19 +10572,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-home-cards-preview",
@@ -9320,19 +10617,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "same_as /admin/launcher-redesign-preview",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-instructor-observations",
@@ -10402,19 +11715,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-platform-sales-demos",
@@ -11208,19 +12537,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "ok",
+      "buriedDaily": "maybe \u2014 SEARCH ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-retreat-enquiries",
@@ -11353,19 +12698,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-retreats-id-edit",
@@ -11382,19 +12743,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l1",
+        "href": "#coverage-admin"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": "platform tooling \u2014 review fit for studio admin",
+      "buriedDaily": "maybe \u2014 LINK ONLY",
+      "duplicate": "no",
+      "source": "census-core"
+    }
   },
   {
     "id": "admin-roles",

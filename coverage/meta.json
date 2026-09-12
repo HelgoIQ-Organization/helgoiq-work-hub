@@ -19,10 +19,10 @@
     "hubOnly": 156,
     "orphaned": 30,
     "fullyTested": 0,
-    "partiallyTested": 89,
+    "partiallyTested": 141,
     "blocked": 23,
-    "failed": 13,
-    "notTested": 288,
+    "failed": 20,
+    "notTested": 229,
     "stale": 59,
     "byReachability": {
       "SIDEBAR": 218,
@@ -34,13 +34,12 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "0": 311,
-      "1": 55,
-      "2": 47,
-      "3": 0
+      "2": 49,
+      "0": 247,
+      "1": 117
     }
   },
-  "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu∩destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
+  "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
   "sourcesUsed": {
     "adminMenu": "coverage/sources/admin-menu.json",
     "folders": "coverage/sources/folders.json",
@@ -59,5 +58,12 @@
   "reconciledAt": "2026-09-12T07:30:00Z",
   "reconcileIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1217",
   "backfillAt": "2026-09-12T09:02:58.985826Z",
-  "backfillProgramme": "17-coverage-programme"
+  "backfillProgramme": "17-coverage-programme",
+  "lastCensusMerge": {
+    "bot": "Census Core",
+    "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+    "l1_pass": 80,
+    "l1_fail": 8,
+    "missing_routes": 0
+  }
 }
