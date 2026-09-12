@@ -34,8 +34,8 @@
         "L2 works": 15
       }
     },
-    "coverageL1Pct": 89.6,
-    "coverageL2Pct": 42.4
+    "coverageL1Pct": 90.1,
+    "coverageL2Pct": 51.3
   },
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "progressToday": {
@@ -81,7 +81,7 @@
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
     "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
     "updatedAt": "2026-09-12T11:59:19.847671Z",
-    "coverageNote": "After Comms L2 Marketing: L\u22651=370 (90%); L\u22652=175 (42%)",
+    "coverageNote": "After AI L2 Intel: L\u22651=372 (90%); L\u22652=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED fixtures consumed",
     "pulse1266": "PASS UI explain; explainStudioState RPC 500",
@@ -116,7 +116,8 @@
     "censusLongtailL2SafeStudio": "2 PASS (cctv-hub, camio-live) / 19 PARTIAL / 5 FAIL",
     "censusLongtailL2Complete": "53 routes: 2 PASS / 35 PARTIAL / 16 FAIL \u2014 daily L2 wave complete",
     "censusContentL2Website": "14 PASS / 11 PARTIAL / 1 FAIL (Website Health check)",
-    "censusCommsL2Marketing": "10 PASS / 14 PARTIAL / 1 FAIL (newsletter-analytics-legacy import error)"
+    "censusCommsL2Marketing": "10 PASS / 14 PARTIAL / 1 FAIL (newsletter-analytics-legacy import error)",
+    "censusAiL2Intel": "24 PASS / 6 PARTIAL / 7 FAIL \u2014 reports-hub Refrm heat-map leak; mrr crash confirmed"
   },
   "strands": [
     {

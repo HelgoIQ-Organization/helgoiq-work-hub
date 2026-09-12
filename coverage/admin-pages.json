@@ -176,7 +176,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -188,23 +187,32 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "Academy LMS analytics",
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Academy > AI Tutor Analytics",
       "buriedDaily": true,
-      "duplicate": "No duplicate observed",
-      "proposedHome": "Academy > Analytics / AI Tutor Analytics",
-      "note": "Rendered tenant-scoped zero state.",
-      "breadcrumb": "Learning Management System > AI Tutor Analytics",
-      "reachability": "SIDEBAR",
-      "heading": "AI Tutor Analytics"
+      "duplicate": false,
+      "proposedHome": "Academy > Insights or AI Tutor Analytics card",
+      "note": "Honest empty state; no route-specific filter/export/drill controls rendered."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [],
+      "controlsNotExercised": [],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -521,7 +529,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Wrong page: direct route misroutes to LMS settings, matching the warned class-tags failure mode. No settings changed.",
+    "reason": "Route misroute/duplicate observed. No role writes or feature-control toggles performed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -533,23 +541,39 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/cohort-tags-misroute.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "L1 fail",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "wrong destination within Academy/LMS",
-      "buriedDaily": "not applicable",
-      "duplicate": "Cohort Tags route appears in Recent but opens settings",
-      "proposedHome": "Academy > Cohort Tags",
-      "note": "Wrong page: direct route misroutes to LMS settings, matching the warned class-tags failure mode. No settings changed.",
-      "breadcrumb": "Learning Management System > LMS settings",
-      "reachability": "SIDEBAR",
-      "heading": "LMS settings"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "FAIL: /admin/academy/cohort-tags resolves to LMS settings, not Cohort Tags",
+      "buriedDaily": false,
+      "duplicate": true,
+      "proposedHome": "Academy > Settings if LMS settings is intended; restore Cohort Tags route otherwise",
+      "note": "Route misroute/duplicate observed. No role writes or feature-control toggles performed."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [],
+      "controlsNotExercised": [
+        "LMS role assignments (write)",
+        "Feature controls (guarded; no toggles)"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_FAIL"
     }
   },
   {
@@ -1218,7 +1242,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "AI-066 loaded (orientation guide)",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1234,23 +1257,37 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy insights hub",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Academy > Insights",
+      "buriedDaily": false,
+      "duplicate": false,
       "proposedHome": "Academy > Insights",
-      "note": "LMS Insights hub loaded. No assign-learning or video actions performed.",
-      "breadcrumb": "Learning Management System > LMS Insights",
-      "reachability": "SIDEBAR",
-      "heading": "Create, publish and improve learning with confidence"
+      "note": "Read-only walkthrough open/return verified; no write flow used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Opened Creating and Managing Courses walkthrough",
+        "Closed walkthrough and returned"
+      ],
+      "controlsNotExercised": [
+        "Assign learning write flow"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -1617,10 +1654,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "REAL ROUTE MISROUTE: Reports route served LMS Overview. Courses tab was observed only; no course/template writes performed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1632,23 +1669,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/academy-reports-misroute.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy reporting/inventory surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Reports",
-      "note": "Reports inventory rendered tenant-scoped; no assignments, edits, or other writes performed.",
-      "breadcrumb": "Learning Management System > Academy inventory",
-      "reachability": "DIRECT_URL",
-      "heading": "Academy inventory"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "FAIL: /admin/academy/reports resolves to Learning Management System Overview, not Reports",
+      "buriedDaily": false,
+      "duplicate": true,
+      "proposedHome": "Academy > Reports if intended; otherwise rename/remove reports route",
+      "note": "REAL ROUTE MISROUTE: Reports route served LMS Overview. Courses tab was observed only; no course/template writes performed."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Opened Courses tab exposed by resolved LMS page"
+      ],
+      "controlsNotExercised": [
+        "Reports controls unavailable; requested route resolved to LMS Overview"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_FAIL"
     }
   },
   {
@@ -1922,7 +1976,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1935,17 +1988,38 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "no",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Marketing > Acquisition Intelligence",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Marketing > Acquisition Intelligence",
+      "note": "Trend filter and CSV export exercised; no write controls used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Trend Lines tab",
+        "60d trend window",
+        "Export CSV"
+      ],
+      "controlsNotExercised": [
+        "Location/date filters left at current values"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -2270,7 +2344,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -2286,15 +2359,36 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-content",
-      "note": "0 funnels/events"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Marketing > Website Analytics",
+      "buriedDaily": true,
+      "duplicate": false,
+      "proposedHome": "Marketing > Website Analytics tab",
+      "note": "Read-only period filter verified; no funnel created."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Changed period from 30 to 90 days"
+      ],
+      "controlsNotExercised": [
+        "New funnel creation/write flow"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -4705,21 +4799,40 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Decision Engine configuration loads with presets, scoring sliders, thresholds, and save control.",
-      "title": "Decision Engine Configuration",
-      "breadcrumb": "Decision Engine Configuration",
-      "reachability": "unknown"
-    }
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Marketing > Decision Engine Configuration",
+      "buriedDaily": true,
+      "duplicate": false,
+      "proposedHome": "AI Command Centre > Decision Engine settings or Settings > Intelligence",
+      "note": "L2 partial: save/preset/sliders/switches intentionally not exercised under no-write/guard constraints."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [],
+      "controlsNotExercised": [
+        "Presets",
+        "Sliders",
+        "Threshold fields",
+        "Switches",
+        "Save Configuration"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PARTIAL"
+    },
+    "reason": "L2 partial: save/preset/sliders/switches intentionally not exercised under no-write/guard constraints."
   },
   {
     "id": "admin-devices",
@@ -5111,20 +5224,36 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Export Templates loads with honest no-templates state and create controls.",
-      "title": "Export Templates",
-      "breadcrumb": "Export Templates",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Settings > Export Templates",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Settings > Export Templates",
+      "note": "Read-only report-type filter exercised; no template or export write created."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Changed report type filter to Members Export"
+      ],
+      "controlsNotExercised": [
+        "New Template/Create Template (write flows)"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -5365,21 +5494,45 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/financial-forecasting-ai-insights-blank.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Financial forecasting loads with current revenue, next-month forecast, member metrics, and scenario tabs.",
-      "title": "AI Financial Forecasting",
-      "breadcrumb": "AI Financial Forecasting",
-      "reachability": "unknown"
-    }
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Finance > Revenue / Financial Forecasting",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Finance > Revenue / Financial Forecasting",
+      "note": "Overview and Scenarios rendered and returned; AI Insights tab opened to a blank panel with no honest empty-state message. No Run Forecast executed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Scenarios tab",
+        "AI Insights tab",
+        "Returned to Overview",
+        "Changed horizon to 6 Months"
+      ],
+      "controlsNotExercised": [
+        "Run Forecast"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PARTIAL"
+    },
+    "reason": "Overview and Scenarios rendered and returned; AI Insights tab opened to a blank panel with no honest empty-state message. No Run Forecast executed."
   },
   {
     "id": "admin-forms",
@@ -5927,7 +6080,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "AI-026 load DECORATION (0 objects; Seed Demo not run)",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -5943,20 +6095,37 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Intelligence Centre loads with tabs and honest zero-open-opportunities state.",
-      "title": "Intelligence Centre",
-      "breadcrumb": "Intelligence Centre",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "AI Command Centre > Intelligence Centre",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "AI Command Centre > Intelligence Centre",
+      "note": "Read-only tabs and drill-down exercised; no demo seeding used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Visited all nine intelligence tabs",
+        "Opened Action Effectiveness Library drill-down and returned"
+      ],
+      "controlsNotExercised": [
+        "Seed Demo (prohibited write/seed action)"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -5978,7 +6147,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "B4-12 load DECORATION zeros",
+    "reason": "Partial because the primary drill-down was not confirmed activated after overlay interception; no writes used.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -5994,20 +6163,36 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Impact Centre loads with zeroed impact metrics and honest no-action/no-outcome states.",
-      "title": "Measurable Business Impact",
-      "breadcrumb": "Measurable Business Impact",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "AI Command Centre > Intelligence Impact",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "AI Command Centre > Intelligence Impact",
+      "note": "Partial because the primary drill-down was not confirmed activated after overlay interception; no writes used."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Scrolled the drill-down into a clickable position"
+      ],
+      "controlsNotExercised": [
+        "Drill-down activation not confirmed after dock/overlay interception"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PARTIAL"
     }
   },
   {
@@ -6158,20 +6343,35 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Manager Intelligence loads with tabs and honest no-managers state.",
-      "title": "Manager Intelligence",
-      "breadcrumb": "Manager Intelligence",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Team > Manager Intelligence",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Team > Manager Intelligence",
+      "note": "Read-only tabs and drill-down exercised; no action writes used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Visited all four manager tabs",
+        "Opened My Actions drill-down"
+      ],
+      "controlsNotExercised": [],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -6193,7 +6393,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Route reaches an error boundary: Cannot read properties of undefined (reading 'length').",
+    "reason": "KNOWN CRASH observed once: Cannot read properties of undefined (reading 'length'). No retry/thrash performed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -6213,20 +6413,38 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/mrr-crash.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "L1 fail",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "crash",
-      "hubFit": "crash",
-      "note": "Route reaches an error boundary: Cannot read properties of undefined (reading 'length').",
-      "title": "This page couldn't load",
-      "breadcrumb": "This page couldn't load",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Finance / Revenue Intelligence",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Finance > Revenue / MRR Intelligence",
+      "note": "KNOWN CRASH observed once: Cannot read properties of undefined (reading 'length'). No retry/thrash performed."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [],
+      "controlsNotExercised": [
+        "Page controls unavailable after crash; no retry per special instruction"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_FAIL"
     }
   },
   {
@@ -6492,20 +6710,34 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Location Intelligence loads with tabs and honest no-location-lessons state.",
-      "title": "Location Intelligence",
-      "breadcrumb": "Location Intelligence",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Studio > Location Intelligence",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Studio > Location Intelligence",
+      "note": "All rendered read-only tabs exercised; no write controls used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Visited Overview, Cross-Location, and All Lessons tabs"
+      ],
+      "controlsNotExercised": [],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -7460,20 +7692,35 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Organisational Intelligence loads with management-attention and recognition empty states.",
-      "title": "Organisational Intelligence",
-      "breadcrumb": "Organisational Intelligence",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Team > Org Intelligence",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Team > Org Intelligence",
+      "note": "Both read-only drill-down destinations exercised; no writes used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Opened My Actions (accountability) drill-down",
+        "Opened Team Profiles drill-down to staff hub"
+      ],
+      "controlsNotExercised": [],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -8861,11 +9108,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Named hub loads and offers the consolidated Reporting & Analytics workspace; it is not the same content as the legacy /admin/reports directory.",
+    "reason": "REAL ISOLATION FAILURE: Geographic Heat Map visibly exposed checked Refrm studio controls (Refrm Stevenage, Refrm Luton, Refrm Weymouth, Refrm Letchworth) to the Bluebird Admin2 seat. No Refrm controls were changed. Evidence captured under the batch evidence directory.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -8881,20 +9128,44 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/reports-hub-refrm-visibility.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Reporting hub loads with overview metrics, tabs, location filter, and export control.",
-      "title": "Reporting & Analytics",
-      "breadcrumb": "Reporting & Analytics",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Reporting & Analytics",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Reports > Reporting & Analytics",
+      "note": "REAL ISOLATION FAILURE: Geographic Heat Map visibly exposed checked Refrm studio controls (Refrm Stevenage, Refrm Luton, Refrm Weymouth, Refrm Letchworth) to the Bluebird Admin2 seat. No Refrm controls were changed. Evidence captured under the batch evidence directory."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Selected Bluebird Central location filter",
+        "Opened Reports, Geographic Heat Map, Website Analytics, and Instructor ROI tabs"
+      ],
+      "controlsNotExercised": [
+        "Export",
+        "Geocode actions",
+        "Instructor ROI filters",
+        "Smart Folder Reports and Insights tabs"
+      ],
+      "isolation": "FAIL",
+      "defects": null,
+      "botVerdict": "L2_FAIL"
     }
   },
   {
@@ -9081,7 +9352,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -9094,17 +9364,35 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "no",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Finance > Revenue Intelligence",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Finance > Revenue Intelligence",
+      "note": "Date filters and revenue drill-down exercised; no write/execute controls used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Changed Last month, Last 90 days, and Custom date filters",
+        "Opened Bluebird Central revenue drill-down and transaction reconciliation panel"
+      ],
+      "controlsNotExercised": [],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -10084,21 +10372,40 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Smart Folder Reports loads with tabs, period filter, usage metrics, and most-used pages.",
-      "title": "Smart Folder Reports",
-      "breadcrumb": "Smart Folder Reports",
-      "reachability": "unknown"
-    }
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Settings / Admin Navigation > Smart Folder Reports",
+      "buriedDaily": true,
+      "duplicate": false,
+      "proposedHome": "Settings > Smart Folder Reports",
+      "note": "L2 partial because folder creation and AI insight generation were intentionally not exercised; no writes used."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Opened User Breakdown, Manage Folders, and AI Insights tabs",
+        "Changed time period 30 days to 90 days"
+      ],
+      "controlsNotExercised": [
+        "Create Folder",
+        "Generate AI Insights"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PARTIAL"
+    },
+    "reason": "L2 partial because folder creation and AI insight generation were intentionally not exercised; no writes used."
   },
   {
     "id": "admin-social",
@@ -11063,20 +11370,35 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Studio Intelligence overview loads with Pulse, Decision Engine, learning, signals, and location sections.",
-      "title": "Studio Intelligence",
-      "breadcrumb": "Studio Intelligence",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Studio > Studio Intelligence",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Studio > Studio Intelligence",
+      "note": "Read-only tabs and walkthrough modal exercised; no writes used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Visited Overview and Insights tabs",
+        "Opened Watch walkthrough video and closed modal"
+      ],
+      "controlsNotExercised": [],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -12846,7 +13168,7 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -12860,21 +13182,44 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/workforce-intelligence-generation-error.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Workforce Intelligence loads staff search/list and selection prompt without starting a review.",
-      "title": "Workforce Intelligence",
-      "breadcrumb": "Workforce Intelligence",
-      "reachability": "unknown"
-    }
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Team > Workforce Intelligence",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Team > Workforce Intelligence",
+      "note": "REAL FAILURE: generating the selected staff review returned 'That staff member is not in the selected studio.' No retry or write action performed."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Searched for BB Teacher",
+        "Selected BB Teacher",
+        "Clicked Generate Intelligence Review"
+      ],
+      "controlsNotExercised": [
+        "Review generation/output (rejected by app)"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_FAIL"
+    },
+    "reason": "REAL FAILURE: generating the selected staff review returned 'That staff member is not in the selected studio.' No retry or write action performed."
   },
   {
     "id": "admin-academy-courses-playbookId",
@@ -14334,7 +14679,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 partial: AI generation and cancellation-flow settings were observed but not activated under no-write guards.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -14346,18 +14691,38 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-money",
-      "hubFit": null,
-      "buriedDaily": null,
-      "duplicate": null,
-      "note": "Cancellation KPIs and populated requests table rendered."
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Members > Cancellation Reports",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Members > Cancellation Reports",
+      "note": "L2 partial: AI generation and cancellation-flow settings were observed but not activated under no-write guards."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Opened AI Insights, Flow Settings, and returned to Reports tabs"
+      ],
+      "controlsNotExercised": [
+        "Generate insights",
+        "Self-service cancellation toggle",
+        "Cancellation flow mode selector"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PARTIAL"
     }
   },
   {
@@ -14469,7 +14834,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -14481,18 +14845,34 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-money",
-      "hubFit": null,
-      "buriedDaily": null,
-      "duplicate": null,
-      "note": "Cash-payment KPIs and recent payments table rendered."
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Finance > Cash Payment Report",
+      "buriedDaily": true,
+      "duplicate": false,
+      "proposedHome": "Finance > Cash Payment Report",
+      "note": "Read-only report rendered with populated recent-payment list; no payment or export writes available/used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Viewed Cash Payment Report and recent payments list"
+      ],
+      "controlsNotExercised": [],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -15306,7 +15686,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -15319,17 +15698,37 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 LINK ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Experiences > Community Reporting",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Experiences > Community Reporting",
+      "note": "Read-only period/category filters exercised; honest no-data state remained after Wellness filter."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Changed period from Last 30 days to Last 90 days",
+        "Changed category from All Categories to Wellness"
+      ],
+      "controlsNotExercised": [
+        "Metric information buttons"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -16453,7 +16852,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -16465,18 +16863,34 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-money",
-      "hubFit": null,
-      "buriedDaily": null,
-      "duplicate": null,
-      "note": "GoCardless KPI cards and explicit no-payments state rendered."
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Finance > GoCardless Report",
+      "buriedDaily": true,
+      "duplicate": false,
+      "proposedHome": "Finance > GoCardless Report",
+      "note": "Honest empty report; it directs the operator to bulk import to populate data. No import or payment actions used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Viewed GoCardless report and empty payment history"
+      ],
+      "controlsNotExercised": [],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -16584,11 +16998,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "REAL ACCESS FAILURE: Admin2 reached the route but was denied platform-admin access. No re-login or retry performed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -16601,17 +17015,38 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/google-hub-preview-access.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 LINK ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "FAIL: Google Hub Preview is restricted to platform administrators/granted operators",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Platform Admin > Google Hub Preview",
+      "note": "REAL ACCESS FAILURE: Admin2 reached the route but was denied platform-admin access. No re-login or retry performed."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [],
+      "controlsNotExercised": [
+        "Google hub preview unavailable; platform-admin access required"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_FAIL"
     }
   },
   {
@@ -16674,11 +17109,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "REAL ACCESS FAILURE: Admin2 reached the route but was denied platform-admin access. No re-login or retry performed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -16691,17 +17126,38 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/home-cards-preview-access.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 LINK ONLY",
-      "duplicate": "same_as /admin/launcher-redesign-preview",
-      "source": "census-core"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "FAIL: Home Cards Preview is restricted to platform administrators/granted operators",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Platform Admin > Home Cards Preview",
+      "note": "REAL ACCESS FAILURE: Admin2 reached the route but was denied platform-admin access. No re-login or retry performed."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [],
+      "controlsNotExercised": [
+        "Home cards preview unavailable; platform-admin access required"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_FAIL"
     }
   },
   {
@@ -16881,7 +17337,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Twin confirmed: main content and empty state match /admin/my-actions. Twin confirmed L1 on both.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -16897,20 +17352,34 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "My Actions loads with the honest no-open-recommendations state and guidance sections.",
-      "title": "My Actions",
-      "breadcrumb": "My Actions",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "AI Command Centre > My Actions",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "AI Command Centre > My Actions",
+      "note": "Honest empty state; no action/write controls rendered."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Viewed My Actions empty state"
+      ],
+      "controlsNotExercised": [],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -16942,20 +17411,37 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Opportunities loads with filters and an honest no-opportunities state; Seed Demo was not used.",
-      "title": "Intelligence Opportunities",
-      "breadcrumb": "Intelligence Opportunities",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "AI Command Centre > Intelligence Opportunities",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "AI Command Centre > Intelligence Opportunities",
+      "note": "Read-only filters exercised; Seed Demo intentionally not used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Changed status filter to All",
+        "Changed category filter to Revenue"
+      ],
+      "controlsNotExercised": [
+        "Seed Demo (prohibited write/seed action)"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -17186,20 +17672,37 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Journey Analytics loads with journey metrics, health, retention/ROI proxies, and a journey row.",
-      "title": "Journey Analytics",
-      "breadcrumb": "Journey Analytics",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Journeys > Journey Analytics",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Journeys > Journey Analytics",
+      "note": "Read-only period filter and journey drill-down exercised; builder edit flow not opened."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Changed period from Last 30 days to Last 90 days",
+        "Expanded MKT-M1 Two-Step Test Journey Sep3 performance analytics"
+      ],
+      "controlsNotExercised": [
+        "Open in builder (edit-capable flow)"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -17752,7 +18255,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 partial because Manage Milestones was intentionally not opened for write coverage; Close to Next read-only tab exercised.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -17764,18 +18267,38 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-money",
-      "hubFit": null,
-      "buriedDaily": null,
-      "duplicate": null,
-      "note": "Milestone report KPI cards and milestone progress cards rendered."
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Experiences > Milestone Report",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Experiences > Milestone Report",
+      "note": "L2 partial because Manage Milestones was intentionally not opened for write coverage; Close to Next read-only tab exercised."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Opened Close to Next tab",
+        "Viewed milestone dashboard and close-to-next empty state"
+      ],
+      "controlsNotExercised": [
+        "Manage Milestones (write/manage flow)",
+        "Member search"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PARTIAL"
     }
   },
   {
@@ -18321,20 +18844,37 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Accountability loads with zero direct actions, manager items, escalations, and an empty manager effectiveness section.",
-      "title": "Intelligence Accountability",
-      "breadcrumb": "Intelligence Accountability",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Team > Org Intelligence > Accountability",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Team > Org Intelligence > Accountability",
+      "note": "Read-only refresh and Team View exercised; no action writes used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Refresh",
+        "Team View navigated to Organisational Intelligence"
+      ],
+      "controlsNotExercised": [
+        "View Manager Intelligence"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -19182,7 +19722,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19194,23 +19733,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Studio Timetable recovery reporting surface",
-      "buriedDaily": "medium",
-      "duplicate": "orphan route for the Recovery hub Reporting tab",
-      "proposedHome": "Studio > Timetable > Recovery > Reporting",
-      "note": "Direct route canonicalized to the Recovery hub Reporting tab; observed only, no setup or CRM action used.",
-      "breadcrumb": "Studio > Timetable > Recovery > Reporting",
-      "reachability": "ORPHANED",
-      "heading": "Recovery Reporting"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Studio > Recovery > Reporting",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Studio > Recovery > Reporting",
+      "note": "Redirect observed: requested /admin/recovery-reporting resolved to final URL https://lobster-app-662c7.ondigitalocean.app/admin/recovery-hub?tab=reporting&c=150002. Read-only period buttons exercised; no setup/write actions used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Confirmed route redirect and final Reporting tab",
+        "Changed period 30 days to 7 days and then 90 days"
+      ],
+      "controlsNotExercised": [
+        "Metric information buttons",
+        "Recovery Calendar tab"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -19291,20 +19845,44 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/referral-report-redirect.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Route redirects to the Referral Programme hub, which loads with Dashboard, Analytics, and Insights tabs.",
-      "title": "Referral Programme",
-      "breadcrumb": "Referral Programme",
-      "reachability": "redirect"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Marketing > Referral Programme",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Marketing > Referral Programme",
+      "note": "Requested route redirected to /admin/referral-hub?c=150002. Dashboard, Analytics, and Insights rendered read-only; no referral, reward, export, or video actions activated."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Viewed Dashboard tab",
+        "Opened Analytics tab",
+        "Opened Insights tab"
+      ],
+      "controlsNotExercised": [
+        "Export CSV",
+        "Date/status/search filters",
+        "Insights video play"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -19325,7 +19903,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19337,23 +19914,44 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/referral-report-legacy-redirect.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Experiences referral-programme surface",
-      "buriedDaily": "medium",
-      "duplicate": "legacy orphan route for the Referral Programme Dashboard",
-      "proposedHome": "Experiences > Referral Programme > Dashboard",
-      "note": "Direct legacy route canonicalized to the Referral Programme hub Dashboard; observed only, no referral or reward action used.",
-      "breadcrumb": "Experiences > Referral Programme > Dashboard",
-      "reachability": "ORPHANED",
-      "heading": "Referral Programme"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Marketing > Referral Programme (legacy alias)",
+      "buriedDaily": false,
+      "duplicate": true,
+      "proposedHome": "Marketing > Referral Programme",
+      "note": "Requested legacy route redirected to /admin/referral-hub?c=150002. Alias is functional but duplicate of the current referral hub; no writes or exports used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Observed redirect to referral hub",
+        "Viewed Dashboard tab",
+        "Opened Analytics and Insights tabs"
+      ],
+      "controlsNotExercised": [
+        "Export CSV",
+        "Date/status/search filters",
+        "Insights video play"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -19374,7 +19972,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19386,23 +19983,44 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/referral-report-old-redirect.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Experiences referral-programme surface",
-      "buriedDaily": "medium",
-      "duplicate": "legacy orphan route for the Referral Programme Dashboard",
-      "proposedHome": "Experiences > Referral Programme > Dashboard",
-      "note": "Direct old route canonicalized to the Referral Programme hub Dashboard; observed only, no referral or reward action used.",
-      "breadcrumb": "Experiences > Referral Programme > Dashboard",
-      "reachability": "ORPHANED",
-      "heading": "Referral Programme"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Marketing > Referral Programme (old alias)",
+      "buriedDaily": false,
+      "duplicate": true,
+      "proposedHome": "Marketing > Referral Programme",
+      "note": "Requested old route redirected to /admin/referral-hub?c=150002. Alias is functional but duplicate of the current referral hub; no writes or exports used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Observed redirect to referral hub",
+        "Viewed Dashboard tab",
+        "Opened Analytics and Insights tabs"
+      ],
+      "controlsNotExercised": [
+        "Export CSV",
+        "Date/status/search filters",
+        "Insights video play"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -19571,7 +20189,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Analytics page loaded with populated sample metrics.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19591,18 +20208,43 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/reporting.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-money",
-      "hubFit": null,
-      "buriedDaily": null,
-      "duplicate": null,
-      "note": "Studio analytics KPI cards, trend sections, revenue breakdown and top classes rendered."
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Reports > Reporting & Analytics",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Reports > Reporting & Analytics",
+      "note": "Reporting analytics rendered for c=150002. Location filter and Top Instructors read-only tab exercised; no export or writes used."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Changed location from All locations to Bluebird Central",
+        "Opened Top Instructors tab"
+      ],
+      "controlsNotExercised": [
+        "Export",
+        "Metric information buttons",
+        "Top Classes remained at initial view"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
@@ -19624,7 +20266,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Legacy/category report directory; all listed links were observed without opening report mutations.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19640,20 +20281,40 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2-intel//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-ai-l2-intel/reports.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-intel"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Reports index loads themed report groups with concrete report links.",
-      "title": "Reports",
-      "breadcrumb": "Reports",
-      "reachability": "unknown"
+      "source": "census-ai-l2-intel",
+      "hub": "intelligence",
+      "hubFit": "Reports > Reports index",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "Reports > Reports index",
+      "note": "Route rendered the Studio Intelligence Reports index for c=150002. No child report, export, or write action was opened."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Viewed the Reports index and all visible report groups"
+      ],
+      "controlsNotExercised": [
+        "Child report links were not opened"
+      ],
+      "isolation": "PASS",
+      "defects": null,
+      "botVerdict": "L2_PASS"
     }
   },
   {
