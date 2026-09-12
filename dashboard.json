@@ -18,7 +18,7 @@
     },
     "updatedAt": "2026-09-12T11:59:19.847671Z",
     "note": "Live tip a3a0e207: #1267 invite create. Staging ahead: #1266 Pulse (6486be87) not deployed. Cluster A last Measured 23/24 on a73ff70 (ACS-C01 fail).",
-    "coveragePercentFormula": "Coverage tab: L\u22651 = 380/413 \u2248 92.0%; L\u22652 = 334/413 \u2248 80.9%.",
+    "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 349/413 \u2248 84.5%.",
     "headlineVsCoverage": "Headline ~63% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
       "pctTestedAny": 98.8,
@@ -34,8 +34,8 @@
         "L2 works": 15
       }
     },
-    "coverageL1Pct": 92.0,
-    "coverageL2Pct": 80.9,
+    "coverageL1Pct": 92.7,
+    "coverageL2Pct": 84.5,
     "commandCentreNote": "48% = A 24/24 + B\u2013F 4/30 measured on 6486be87 (replaced A-only 80%)."
   },
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -96,11 +96,11 @@
     "censusLongtailStudioAccess": "30/30 PASS; Settings (15 observe-only) next",
     "censusLongtailSettings": "14 PASS / 1 BLOCKED (live-support PA); orphans (30) next",
     "censusLongtailComplete": "133 routes: 124 PASS / 6 FAIL / 3 BLOCKED \u2014 Admin L1 wave complete",
-    "coverageL1Plus": 380,
-    "coverageL2Plus": 334,
+    "coverageL1Plus": 383,
+    "coverageL2Plus": 349,
     "coverageTotal": 413,
-    "coveragePctL1Plus": 92.0,
-    "coveragePctL2Plus": 80.9,
+    "coveragePctL1Plus": 92.7,
+    "coveragePctL2Plus": 84.5,
     "l2BackfillAt": "2026-09-12T11:59:19.847671Z",
     "censusCoreL2Members": "3 PASS / 1 PARTIAL / 1 FAIL (crm-hub KPI vs empty Insights)",
     "censusCoreL2": "Members 3P/1Part/1F \u00b7 Timetable L2_FAIL (fill-rate + cover cost + cover copy)",
@@ -153,6 +153,14 @@
         "/admin/custom-dashboards/:dashboardId/charts/:chartId/edit"
       ],
       "at": "2026-09-12T21:24:14.069503+00:00"
+    },
+    "censusLongtailL2Chunk4b": {
+      "pass": 0,
+      "partial": 15,
+      "fail": 0,
+      "tip": "6486be87",
+      "routes": 15,
+      "at": "2026-09-12T21:32:43.152121+00:00"
     }
   },
   "strands": [

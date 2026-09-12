@@ -34,9 +34,9 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "2": 334,
-      "0": 33,
-      "1": 46
+      "2": 349,
+      "0": 30,
+      "1": 34
     }
   },
   "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
@@ -163,14 +163,14 @@
   },
   "lastL2Merge": {
     "bot": "Census Longtail",
-    "hub": "long-tail-chunk4-next15",
+    "hub": "long-tail-chunk4b",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "pass": 4,
-    "partial": 9,
-    "fail": 2,
+    "pass": 0,
+    "partial": 15,
+    "fail": 0,
     "blocked": 0,
     "miss": 0,
-    "note": "Merged from jsonl before formal CHUNK4 summary ping; range card-expiry\u2026charts/new"
+    "range": "/admin/disputes \u2026 /admin/multichannel"
   },
   "dailyL2Wave": {
     "status": "complete",
@@ -188,5 +188,5 @@
     "status": "complete",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
   },
-  "updatedAt": "2026-09-12T21:24:14.064118+00:00"
+  "updatedAt": "2026-09-12T21:32:43.146310+00:00"
 }

@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-12T21:24:14.186Z",
+  "updatedAt": "2026-09-12T21:32:12.662Z",
   "drops": [
+    {
+      "id": "2026-09-12-coverage-l2-long-tail-after-charts-new",
+      "title": "Coverage L2 — Long-tail after charts/new",
+      "date": "2026-09-12",
+      "summary": "15 new L2 rows after charts/new: 0 PASS / 15 PARTIAL / 0 FAIL. Aliases only. Do not double-count 4a.",
+      "plainEnglish": "15 new L2 rows after charts/new: 0 PASS / 15 PARTIAL / 0 FAIL. Aliases only. Do not double-count 4a.",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-coverage-l2-long-tail-after-charts-new/census-longtail-l2-settings-CHUNK4B-SUMMARY.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-12-coverage-l2-long-tail-chunk-4",
       "title": "Coverage L2 long-tail next-15 (chunk 4)",
