@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-09-12T07:08:35.782Z",
+  "updatedAt": "2026-09-12T07:40:10.030Z",
   "meta": {
-    "dataAsOf": "2026-09-12T07:08:35.782Z",
-    "buildStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
-    "liveTip": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "dataAsOf": "2026-09-12T07:40:10.030Z",
+    "buildStamp": "a3a0e20783530334e24ba3f64c0345a419e4179b",
+    "liveTip": "a3a0e20783530334e24ba3f64c0345a419e4179b",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Tip moved a73ff70b \u2192 88d622ea (live /api/version releaseSha 88d622ea28ab637f6753f8f6702fd9e50d51af01). Strand scores held from prior tip \u2014 headline hold / retest pending. Do not invent scores. Do not recommend import.rollbackBatch. GitHub staging HEAD is a3a0e207 (#1267 invite create) \u2014 not yet on live tip (deploy lag).",
+    "lastRefreshNote": "Tip moved 88d622ea \u2192 a3a0e207 (live /api/version releaseSha a3a0e20783530334e24ba3f64c0345a419e4179b). Live on tip: #1267 invite-create fix (studio admins via company access). #1266 Pulse exact-data explain is merged to staging HEAD 6486be87 but NOT on live tip yet (deploy lag). Strand scores held at prior measured/estimate \u2014 headline hold 64% / retest pending. Do not invent scores. Do not recommend import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-12T07:08:35.782Z"
+      "checkedAt": "2026-09-12T07:40:10.030Z"
     },
-    "updatedAt": "2026-09-12T07:08:35.782Z",
-    "note": "Cluster A 23/24 on a73ff70 (Teacher2 PASS; ACS-C01 fail)"
+    "updatedAt": "2026-09-12T07:40:10.030Z",
+    "note": "Live tip a3a0e207: #1267 invite create. Staging ahead: #1266 Pulse (6486be87) not deployed. Cluster A last Measured 23/24 on a73ff70 (ACS-C01 fail)."
   },
-  "tip": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+  "tip": "a3a0e20783530334e24ba3f64c0345a419e4179b",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 64,
@@ -59,9 +59,10 @@
       "findings-fix": 47,
       "comms": 15
     },
-    "plainEnglishDay": "Saturday morning (12 Sep Europe/London): LIVE TIP MOVED a73ff70b \u2192 88d622ea. Headline held at ~64% pending retest on new tip \u2014 do not claim strand progress until re-measured. Live on tip: #1262/#1263/#1264/#1249. #1267 invite-create fix merged to staging but deploy lag (not on live tip yet). Prior: Cluster A 22/24 on a263c4ab; smoke FAIL 4/6; invite fresh create FAIL.",
+    "plainEnglishDay": "Saturday morning (12 Sep Europe/London): LIVE TIP MOVED 88d622ea \u2192 a3a0e207. Headline held at ~64% pending retest on new tip \u2014 do not claim strand progress until re-measured. Now live: #1267 (studio admin invite create). Still deploy-lagging: #1266 (Pulse saved-fact explain). Prior on tip chain: #1262/#1263/#1264/#1249. Your Move: retest fresh Admin 2 invite create now that #1267 is on tip. Never instruct import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet."
+    "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
+    "updatedAt": "2026-09-12T07:40:10.030Z"
   },
   "strands": [
     {
@@ -200,7 +201,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "M1 Wave1 partial was Measured on prior tip 232659cf: Admin2 freeze PASS; unfreeze FAIL (payment provider \u2014 BB Smoke Sep8 paused); cancel+reverse PASS. On tip a263c4ab: #1247/#1258/#1252 live; morning invite E2E consumed-invite PASS but fresh member invite create FAIL (pending list unchanged). M1 Wave1 full re-run still pending. Upgrade/downgrade/MemberB/waitlist/Owner still BLOCKED from prior board.",
-      "progressNote": "Held Measured ~72% from 232659cf; invite consumed PASS / fresh create FAIL on a263c4ab \u2014 full M1 retest pending.",
+      "progressNote": "Held 72% \u2014 #1267 on tip a3a0e207; fresh invite create retest pending before claiming m1 progress.",
       "blockers": [
         "Fresh member invite create FAIL on a263c4ab (form closed; pending list unchanged)",
         "Admin2 unfreeze FAIL \u2014 payment provider; BB Smoke Sep8 still paused (prior tip)",
@@ -231,7 +232,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "Morning seat smoke-2 on tip a263c4ab overall FAIL (Measured 4/6). Invite/OTP PASS; Bluebird 8 join Active via Stripe TEST but HELGOBIRD not entered; booking PASS; late-cancel credit FAIL (7 not 8); membership cancel+reverse PROVEN PASS; evidence PASS. Residual: BB Smoke Sep8 still paused after M1 unfreeze FAIL.",
-      "progressNote": "Measured 67% on a263c4ab morning smoke-2 \u2014 overall FAIL (HELGOBIRD missed; late-cancel credit 7\u22608; reverse PASS).",
+      "progressNote": "Held 67% \u2014 tip now a3a0e207 with #1267 invite create LIVE; invite path retest pending (not re-measured).",
       "blockers": [
         "HELGOBIRD promo not entered on Bluebird 8 checkout (standard price used)",
         "Late cancel left 7 credits (not 8) \u2014 credit-return-once FAIL"
@@ -278,7 +279,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Six PRs live on tip a263c4ab: #1250 demo seed, #1252 signed-out booking return, #1254 Business Insights server KPIs, #1253 Twin overview, #1247 invite bind, #1258 smoke invite fix (+ #1248 CI). Cluster A re-measured 22/24 on tip (cleared MEM-X01/TAG-C01/TAG-A01; ACS-F01+ACS-C01 remain). Morning smoke FAIL (4/6). Invite E2E: consumed PASS, fresh member invite create FAIL. Overnight ISO/AI/ambient/dataset still held from 232659cf. Rollback ban LIFTED (#1240 on tip) \u2014 do not use import.rollbackBatch.",
-      "progressNote": "Estimate 87% \u2014 morning pack + Cluster A 22/24 measured on a263c4ab; ban lifted; other retests pending.",
+      "progressNote": "Held 87% \u2014 tip a3a0e207 (#1267 live). #1266 Pulse explain merged but not on tip yet.",
       "blockers": [
         "ISO-18/20/27/29 still FAIL (last Measured on prior tip; #1250 awaits re-sweep)",
         "Dataset canary FAIL \u2014 Missing companyId on batchImport.upload (403); 0 members (engineering)",
@@ -311,7 +312,7 @@
       "percent": 15,
       "basis": "estimate",
       "status": "blocked",
-      "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. Tip a263c4ab does not unblock this strand.",
+      "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. Tip a3a0e207 does not unblock this strand.",
       "progressNote": "Still 15% \u2014 secrets gate unchanged.",
       "blockers": [
         "Five Resend/Agentmail repository secrets missing for #1213"
@@ -421,9 +422,37 @@
       ]
     },
     {
+      "id": "await-1266-pulse-tip-then-retest",
+      "title": "Wait for #1266 Pulse tip, then re-check saved-fact explain",
+      "plainWhy": "#1266 (explain saved Pulse facts with exact data return) is merged to staging (6486be87) but live tip is still a3a0e207 (#1267). When /api/version moves past 6486be87, retest Pulse saved-fact explain on Bluebird.",
+      "unblocks": "Intelligence / Pulse explain accuracy",
+      "movesProjectForwardPercent": 1,
+      "movesPhaseForwardPercent": 5,
+      "phaseId": "intelligence",
+      "strandIds": [
+        "ai-85",
+        "findings-fix"
+      ],
+      "effort": "minutes",
+      "status": "needed",
+      "audience": "declan",
+      "links": [
+        {
+          "label": "PR #1266",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266",
+          "kind": "github"
+        },
+        {
+          "label": "Live /api/version",
+          "url": "https://lobster-app-662c7.ondigitalocean.app/api/version",
+          "kind": "staging"
+        }
+      ]
+    },
+    {
       "id": "retest-invite-create-after-1267",
-      "title": "Retest fresh invite create after #1267 deploys",
-      "plainWhy": "Fresh member invitation create was FAIL on a263c4ab (Admin 2 Send invitation closed with no pending row). #1267 is merged to staging but live tip is still 88d622ea \u2014 wait for /api/version to move, then retest Admin 2 create.",
+      "title": "Retest fresh invite create \u2014 #1267 is LIVE on tip",
+      "plainWhy": "Fresh member invitation create was FAIL on a263c4ab (Admin 2 Send invitation closed with no pending row). #1267 is now LIVE on tip a3a0e207. Retest Admin 2 create \u2192 pending row \u2192 send-attempted path on Bluebird.",
       "unblocks": "Smoke invite path + member onboarding confidence",
       "movesProjectForwardPercent": 2,
       "movesPhaseForwardPercent": 10,
@@ -438,7 +467,7 @@
       "audience": "declan",
       "links": [
         {
-          "label": "PR #1267",
+          "label": "PR #1267 (on tip)",
           "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1267",
           "kind": "github"
         },
@@ -450,7 +479,7 @@
         {
           "label": "Copy prompt",
           "kind": "copy-prompt",
-          "text": "When live tip includes #1267, retest Admin 2 fresh member invitation create on Bluebird (pending row + email)."
+          "text": "Retest Admin 2 fresh invite create on tip a3a0e207 (#1267 live). Confirm pending row appears and send is attempted. Bluebird only. No credentials in notes."
         }
       ]
     },

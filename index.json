@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-11T20:24:30.870Z",
+  "updatedAt": "2026-09-12T07:40:10.258Z",
   "drops": [
+    {
+      "id": "2026-09-12-tip-refresh-a3a0e207-1267-invite-live-1266-lag",
+      "title": "Tip refresh a3a0e207 — #1267 invite live, #1266 lag",
+      "date": "2026-09-12",
+      "summary": "Live tip a3a0e207 (#1267). Headline hold 64%. #1266 Pulse still deploy-lagging.",
+      "plainEnglish": "Live tip a3a0e207 (#1267). Headline hold 64%. #1266 Pulse still deploy-lagging.",
+      "tags": [
+        "status",
+        "command-centre",
+        "findings-fix"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-tip-refresh-a3a0e207-1267-invite-live-1266-lag/tip-refresh-a3a0e207.md"
+      ],
+      "tip": "a3a0e20783530334e24ba3f64c0345a419e4179b"
+    },
     {
       "id": "2026-09-11-cluster-a-tip-a73ff70-teacher2-pass-23-24-acs-c0",
       "title": "Cluster A tip a73ff70 — Teacher2 PASS, 23/24 ACS-C01 fail",

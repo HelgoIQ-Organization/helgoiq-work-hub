@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-12T07:09:07.911Z",
-  "liveTip": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
-  "liveTipShort": "88d622ea",
+  "updatedAt": "2026-09-12T07:39:15.704Z",
+  "liveTip": "a3a0e20783530334e24ba3f64c0345a419e4179b",
+  "liveTipShort": "a3a0e207",
   "refreshLag": {
     "tipChange": "near-real-time (refresh-dashboard.mjs when /api/version tip changes)",
     "coverageSync": "≤15m when the 15-minute routine is wired",
@@ -16,7 +16,7 @@
     "issue1180Error": null,
     "issue1180Comments": 50,
     "claudeReviewError": null,
-    "claudeReviews": 61,
+    "claudeReviews": 63,
     "sources": [
       {
         "id": 1,
@@ -41,7 +41,7 @@
         "name": "Claude Code PR review comments",
         "ok": true,
         "skipped": false,
-        "count": 61
+        "count": 63
       }
     ]
   },
@@ -49,9 +49,9 @@
     "strands": 10,
     "strandsStaleVsLiveTip": 9,
     "strandsCurrent": 0,
-    "pages": 167,
-    "pagesStaleVsLiveTip": 146,
-    "claudeReviews": 61
+    "pages": 169,
+    "pagesStaleVsLiveTip": 148,
+    "claudeReviews": 63
   },
   "recentMergedPrs": [
     {
@@ -60,6 +60,13 @@
       "mergedAt": "2026-09-12T07:07:16Z",
       "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1267",
       "mergeSha": "a3a0e20783530334e24ba3f64c0345a419e4179b"
+    },
+    {
+      "number": 1266,
+      "title": "fix(intelligence): explain saved Pulse facts with exact data return",
+      "mergedAt": "2026-09-12T07:38:01Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266",
+      "mergeSha": "6486be87a68821e383d36d5246f9da08a802ee59"
     },
     {
       "number": 1264,
@@ -186,13 +193,6 @@
       "mergedAt": "2026-09-10T20:58:16Z",
       "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1244",
       "mergeSha": "99e17af76b00f3d94158ea154e3417ab8cdd0cc0"
-    },
-    {
-      "number": 1243,
-      "title": "fix(waitlist): keep Timetable Join Waitlist on the class after login",
-      "mergedAt": "2026-09-10T20:58:13Z",
-      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1243",
-      "mergeSha": "6420c5337a780fdc888b9d1fa8d332d61b6ba22a"
     }
   ],
   "claudeReviews": [
@@ -209,6 +209,51 @@
       "verdict": "PASS",
       "strandId": "smoke",
       "excerpt": "🟢 **PASS may merge** — head `6123c47721f5dac4106bb00b6b64819dab34a20a` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1266-5643979020",
+      "pr": 1266,
+      "prTitle": "fix(intelligence): explain saved Pulse facts with exact data return",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266#issuecomment-5643979020",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-12T05:50:19Z",
+      "mergeSha": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "path": "",
+      "verdict": "",
+      "strandId": "",
+      "excerpt": "@claude (Claude Code): please review Stage 1B #1266 at exact head `c46e93e91cfafc8001ed4fbd363931708d44bafc`, against `a73ff70b266057f226bb02c5f3112f72a92ad53d`, and post your expl",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1266-5644253573",
+      "pr": 1266,
+      "prTitle": "fix(intelligence): explain saved Pulse facts with exact data return",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266#issuecomment-5644253573",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-12T06:40:51Z",
+      "mergeSha": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "isolation",
+      "excerpt": "🟢 **PASS may merge** — head `c46e93e91cfafc8001ed4fbd363931708d44bafc` (Claude Code, non-builder; builder Astra)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1266-5644498050",
+      "pr": 1266,
+      "prTitle": "fix(intelligence): explain saved Pulse facts with exact data return",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266#issuecomment-5644498050",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-12T07:35:46Z",
+      "mergeSha": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "**⚪ PROGRESS — nothing needed from Declan**",
       "source": "claude-pr-review"
     },
     {
@@ -1095,21 +1140,6 @@
       "strandId": "isolation",
       "excerpt": "🔴 **FAIL** — head `4cc1b59e2dffce6020c6cf8193e2fd2c966d3aa4` (Claude Code, non-builder; builder Cursor). **Real failure.** It is not the shared staging smoke gate and not a flake:",
       "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1243-5625386345",
-      "pr": 1243,
-      "prTitle": "fix(waitlist): keep Timetable Join Waitlist on the class after login",
-      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1243",
-      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1243#issuecomment-5625386345",
-      "author": "declaneryan71",
-      "createdAt": "2026-09-10T21:01:55Z",
-      "mergeSha": "6420c5337a780fdc888b9d1fa8d332d61b6ba22a",
-      "path": "",
-      "verdict": "FAIL",
-      "strandId": "",
-      "excerpt": "🟢 **PASS may merge** — head `effd4a8fcf156bc44fc8b1146dd9d6bddcda8bc8` (Claude Code, non-builder; builder Cursor)",
-      "source": "claude-pr-review"
     }
   ],
   "strands": [
@@ -1145,7 +1175,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-iso29-complete-tip-232659cf",
-      "claudeReviewCount": 12,
+      "claudeReviewCount": 13,
       "basis": "measured",
       "percent": 86
     },
@@ -2409,9 +2439,48 @@
       "lastTestedStamp": "a3a0e20783530334e24ba3f64c0345a419e4179b",
       "lastTestedAt": "2026-09-12T06:42:18Z",
       "verdict": "PASS",
-      "freshness": "stale",
+      "freshness": "current",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1267#issuecomment-5644260073",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1266-5643979020",
+      "name": "@claude (Claude Code): please review Stage 1B #1266 at exact head `c46e93e91cfafc8001ed4fbd363931708d44bafc`, against `a73ff70b266057f226bb02c5f3112f72a92ad53d`, and post your expl",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12T05:50:19Z",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266#issuecomment-5643979020",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1266-5644253573",
+      "name": "🟢 **PASS may merge** — head `c46e93e91cfafc8001ed4fbd363931708d44bafc` (Claude Code, non-builder; builder Astra)",
+      "route": "",
+      "strandId": "isolation",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12T06:40:51Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266#issuecomment-5644253573",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1266-5644498050",
+      "name": "**⚪ PROGRESS — nothing needed from Declan**",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12T07:35:46Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1266#issuecomment-5644498050",
       "source": "claude-pr-review"
     },
     {
@@ -2474,7 +2543,7 @@
       "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
       "lastTestedAt": "2026-09-12T05:46:15Z",
       "verdict": "PASS",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1262#issuecomment-5643941278",
       "source": "claude-pr-review"
@@ -3179,19 +3248,6 @@
       "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1244#issuecomment-5625357248",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1243-5625386345",
-      "name": "🟢 **PASS may merge** — head `effd4a8fcf156bc44fc8b1146dd9d6bddcda8bc8` (Claude Code, non-builder; builder Cursor)",
-      "route": "",
-      "strandId": "",
-      "lastTestedStamp": "6420c5337a780fdc888b9d1fa8d332d61b6ba22a",
-      "lastTestedAt": "2026-09-10T21:01:55Z",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "",
-      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1243#issuecomment-5625386345",
       "source": "claude-pr-review"
     }
   ]
