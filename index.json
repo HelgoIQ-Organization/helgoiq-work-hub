@@ -1,6 +1,80 @@
 {
-  "updatedAt": "2026-09-12T12:00:15.847237Z",
+  "updatedAt": "2026-09-12T14:53:43.527Z",
   "drops": [
+    {
+      "id": "2026-09-12-coverage-l2-safe-studio-hub",
+      "title": "Coverage L2 — Safe Studio hub",
+      "date": "2026-09-12",
+      "summary": "Safe Studio L2: 26 routes, 2 PASS / 19 PARTIAL / 5 FAIL. Overview 1+1 agrees with named QA fault/incident; KPI tiles on overview, security, and door access do not drill.",
+      "plainEnglish": "Safe Studio L2: 26 routes, 2 PASS / 19 PARTIAL / 5 FAIL. Overview 1+1 agrees with named QA fault/incident; KPI tiles on overview, security, and door access do not drill.",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-coverage-l2-safe-studio-hub/census-longtail-l2-safe-studio-SUMMARY.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
+    {
+      "id": "2026-09-12-coverage-l2-staff-hub",
+      "title": "Coverage L2 — Staff hub",
+      "date": "2026-09-12",
+      "summary": "Staff L2: 27 routes, 0 PASS / 16 PARTIAL / 11 FAIL. Five unique defects (onboarding tiles, rota KPIs, Unknown profile, empty employment list, AI agent conversation counts).",
+      "plainEnglish": "Staff L2: 27 routes, 0 PASS / 16 PARTIAL / 11 FAIL. Five unique defects (onboarding tiles, rota KPIs, Unknown profile, empty employment list, AI agent conversation counts).",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-coverage-l2-staff-hub/census-longtail-l2-staff-SUMMARY.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
+    {
+      "id": "2026-09-12-dataset-canary-fail-missing-companyid-tip-6486be",
+      "title": "Dataset canary FAIL Missing companyId tip 6486be87",
+      "date": "2026-09-12",
+      "summary": "Canary still FAIL batchImport.upload Missing companyId 403; 0 members; rollback not used. Hold dataset 52%.",
+      "plainEnglish": "Canary still FAIL batchImport.upload Missing companyId 403; 0 members; rollback not used. Hold dataset 52%.",
+      "tags": [
+        "dataset",
+        "findings",
+        "score-push"
+      ],
+      "type": "finding",
+      "project": "helgoiq-dataset",
+      "paths": [
+        "drops/2026-09-12-dataset-canary-fail-missing-companyid-tip-6486be/RESULTS.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
+    },
+    {
+      "id": "2026-09-12-ambient-morning-dispatch-viewer-pass-tip-6486be8",
+      "title": "Ambient Morning Dispatch viewer PASS tip 6486be87",
+      "date": "2026-09-12",
+      "summary": "Dispatch viewer PASS on tip 6486be87 — honest not-ready; prior Something went wrong cleared. Ambient SCORE suggest 85→92.",
+      "plainEnglish": "Dispatch viewer PASS on tip 6486be87 — honest not-ready; prior Something went wrong cleared. Ambient SCORE suggest 85→92.",
+      "tags": [
+        "ambient",
+        "findings",
+        "score-push"
+      ],
+      "type": "finding",
+      "project": "helgoiq-ambient",
+      "paths": [
+        "drops/2026-09-12-ambient-morning-dispatch-viewer-pass-tip-6486be8/RESULTS.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
+    },
     {
       "id": "2026-09-12-l2-backfill-declan-criteria",
       "title": "L2 coverage backfill — Declan criteria",
