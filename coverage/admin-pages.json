@@ -11242,19 +11242,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-invite-staff.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Team / Staff invitations surface",
+      "buriedDaily": "medium",
+      "duplicate": "orphan route for the Staff hub Invitations tab",
+      "proposedHome": "Team > Staff > Invitations",
+      "note": "Direct /admin/admin-invite-staff?c=150002 rendered and canonicalized to the Staff hub Invitations tab; observed only, no invitation or audit action used.",
+      "breadcrumb": "Team > Staff > Invitations",
+      "reachability": "ORPHANED",
+      "heading": "Staff"
+    }
   },
   {
     "id": "admin-admin-roles",
@@ -11271,19 +11291,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-roles.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Team / Staff roles surface",
+      "buriedDaily": "medium",
+      "duplicate": "orphan route for the Staff hub Roles tab",
+      "proposedHome": "Team > Staff > Roles",
+      "note": "Direct /admin/admin-roles?c=150002 rendered and canonicalized to the Staff hub Roles tab; observed only, no toggles, role creation or access changes used.",
+      "breadcrumb": "Team > Staff > Roles",
+      "reachability": "ORPHANED",
+      "heading": "Staff"
+    }
   },
   {
     "id": "admin-ai-cost-dashboard",
@@ -11361,19 +11401,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Loaded as Owner on Bluebird Pilates TEST DATA. Read-only inspection only; settings and package dialogs were opened but not saved.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch1.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/ai-credits.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Finance platform-wide AI credits surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone AI Credits & Usage surface",
+      "proposedHome": "Finance > AI Credits & Usage",
+      "note": "Direct /admin/ai-credits?c=150002 rendered for Admin 2; platform-wide surface observed only, no Platform Settings or Manage Packages action used.",
+      "breadcrumb": "Finance > AI Credits & Usage",
+      "reachability": "ORPHANED",
+      "heading": "AI Credits & Usage"
+    }
   },
   {
     "id": "admin-ai-feature-toggles",
@@ -11490,19 +11550,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/appointment-policies.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Timetable Appointment Setup policies surface",
+      "buriedDaily": "medium",
+      "duplicate": "orphan route for the Appointment Setup Policies tab",
+      "proposedHome": "Studio > Timetable > Appointment Setup > Policies",
+      "note": "Direct /admin/appointment-policies?c=150002 rendered and canonicalized to /admin/appointments-hub?tab=policies; observe only, no settings toggles or save used.",
+      "breadcrumb": "Studio > Timetable > Appointment Setup > Policies",
+      "reachability": "ORPHANED",
+      "heading": "Appointment Setup"
+    }
   },
   {
     "id": "admin-appointment-types",
@@ -11519,19 +11599,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/appointment-types.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Timetable Appointment Setup types surface",
+      "buriedDaily": "medium",
+      "duplicate": "orphan route for the Appointment Setup Types tab",
+      "proposedHome": "Studio > Timetable > Appointment Setup > Types",
+      "note": "Direct /admin/appointment-types?c=150002 rendered and canonicalized to /admin/appointments-hub?tab=types; honest empty state recorded, no type creation used.",
+      "breadcrumb": "Studio > Timetable > Appointment Setup > Types",
+      "reachability": "ORPHANED",
+      "heading": "Appointment Setup"
+    }
   },
   {
     "id": "admin-appointments",
@@ -11548,19 +11648,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/appointments.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Timetable Appointment Setup hub",
+      "buriedDaily": "high",
+      "duplicate": "orphan route for the Appointment Setup hub",
+      "proposedHome": "Studio > Timetable > Appointment Setup",
+      "note": "Direct /admin/appointments?c=150002 rendered the canonical Appointment Setup hub; no appointment type or other setup action used.",
+      "breadcrumb": "Studio > Timetable > Appointment Setup",
+      "reachability": "ORPHANED",
+      "heading": "Appointment Setup"
+    }
   },
   {
     "id": "admin-audit-trail",
@@ -11874,6 +11994,14 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/blog-management.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
       }
     ],
     "prUrl": null,
@@ -11881,8 +12009,16 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Orphan URL loads Blog Management"
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Marketing blog-management surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone Blog Management surface under Marketing",
+      "proposedHome": "Marketing > Blog Management",
+      "note": "Direct /admin/blog/management?c=150002 rendered; drafts observed only and no live publish or post mutation used.",
+      "breadcrumb": "Marketing > Blog Management",
+      "reachability": "ORPHANED",
+      "heading": "Blog Management"
     }
   },
   {
@@ -11924,6 +12060,14 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/blog-new.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
       }
     ],
     "prUrl": null,
@@ -11931,8 +12075,16 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Blank editor; Back without save/publish; Publish visible unused"
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Marketing Blog Management new-post surface",
+      "buriedDaily": "low",
+      "duplicate": "orphan route for Blog Management New Post",
+      "proposedHome": "Marketing > Blog Management > New Post",
+      "note": "Direct /admin/blog/new?c=150002 rendered a blank new-post editor; Publish was not used and no draft was created or changed.",
+      "breadcrumb": "Marketing > Blog Management > New Post",
+      "reachability": "ORPHANED",
+      "heading": "Edit Post"
     }
   },
   {
@@ -13054,19 +13206,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Loaded as Owner with zero automations and a Trial pipeline stage. Seed/create actions were not used.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch1.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/crm-automations.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Marketing CRM automation surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone orphan Pipeline Automations surface",
+      "proposedHome": "Marketing > CRM > Automations",
+      "note": "Direct /admin/crm/automations?c=150002 rendered; observed only, no automation seed, creation or send action used.",
+      "breadcrumb": "Marketing > CRM > Automations",
+      "reachability": "ORPHANED",
+      "heading": "Pipeline Automations"
+    }
   },
   {
     "id": "admin-crm-lead-id",
@@ -13368,19 +13540,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/disputes.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Finance dispute-management surface",
+      "buriedDaily": "medium",
+      "duplicate": "orphan route for the Dispute Manager surface",
+      "proposedHome": "Finance > Disputes",
+      "note": "Direct /admin/disputes?c=150002 canonicalized to /admin/dispute-hub; observe only, no refund or dispute mutation used.",
+      "breadcrumb": "Finance > Disputes",
+      "reachability": "ORPHANED",
+      "heading": "Disputes"
+    }
   },
   {
     "id": "admin-disputes-id",
@@ -13545,19 +13737,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Loaded as Owner. Daily brief was read and history viewed; Discuss was observed to route to Command Centre with generated brief context. Acknowledge, Archive, Generate now, and Generate strategic brief were not acti",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch1.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/executive-briefing.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Reports / Intelligence executive briefing surface",
+      "buriedDaily": "medium",
+      "duplicate": "orphan surface with related intelligence links",
+      "proposedHome": "Reports > Intelligence > Executive Briefing",
+      "note": "Direct /admin/executive-briefing?c=150002 rendered; no Generate, Discuss, Acknowledge or Archive action used.",
+      "breadcrumb": "Reports > Intelligence > Executive Briefing",
+      "reachability": "ORPHANED",
+      "heading": "Executive Intelligence Briefing"
+    }
   },
   {
     "id": "admin-forms-id-edit",
@@ -14267,19 +14479,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/invite-staff-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Team / Staff invitations surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for the Staff hub Invitations tab",
+      "proposedHome": "Team > Staff > Invitations",
+      "note": "First navigation showed a transient dynamic-module load error; one direct re-navigation loaded and canonicalized to the Staff hub Invitations tab. Observed only; no invite, resend or audit action used.",
+      "breadcrumb": "Team > Staff > Invitations",
+      "reachability": "ORPHANED",
+      "heading": "Staff"
+    }
   },
   {
     "id": "admin-invoicing",
@@ -14492,19 +14724,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/meta-autopilot.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Marketing Meta campaign-builder surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for Meta Hub Campaign Builder",
+      "proposedHome": "Marketing > Meta > Campaign Builder",
+      "note": "Direct /admin/meta-autopilot?c=150002 canonicalized to Meta Hub Campaign Builder; preview only, no Approve & Create, Generate campaign or remote Meta action used.",
+      "breadcrumb": "Marketing > Meta > Campaign Builder",
+      "reachability": "ORPHANED",
+      "heading": "Meta Hub"
+    }
   },
   {
     "id": "admin-meta-connection",
@@ -15244,19 +15496,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/newsletter-analytics-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Marketing Newsletter analytics surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for Newsletter Analytics tab",
+      "proposedHome": "Marketing > Newsletter > Analytics",
+      "note": "Direct /admin/newsletter-analytics-legacy?c=150002 canonicalized to Newsletter Analytics; no send or analytics mutation used.",
+      "breadcrumb": "Marketing > Newsletter > Analytics",
+      "reachability": "ORPHANED",
+      "heading": "Newsletter"
+    }
   },
   {
     "id": "admin-newsletter-creator",
@@ -15273,19 +15545,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/newsletter-creator.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Marketing Newsletter creation surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for Newsletter Create tab",
+      "proposedHome": "Marketing > Newsletter > Create",
+      "note": "Direct /admin/newsletter-creator?c=150002 canonicalized to Newsletter Create; observed only, no draft edit, publish or send action used.",
+      "breadcrumb": "Marketing > Newsletter > Create",
+      "reachability": "ORPHANED",
+      "heading": "Newsletter"
+    }
   },
   {
     "id": "admin-newsletter-creator-legacy",
@@ -15302,19 +15594,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/newsletter-creator-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Marketing Newsletter creation surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for Newsletter Create tab",
+      "proposedHome": "Marketing > Newsletter > Create",
+      "note": "Direct /admin/newsletter-creator-legacy?c=150002 canonicalized to Newsletter Create; observed only, no draft edit, publish or send action used.",
+      "breadcrumb": "Marketing > Newsletter > Create",
+      "reachability": "ORPHANED",
+      "heading": "Newsletter"
+    }
   },
   {
     "id": "admin-org-intelligence-accountability",
@@ -15767,21 +16079,41 @@
     "state": "blocked",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": "Platform Admin Access Required",
+    "blockedBy": "Direct route rendered the platform-admin guard for Admin 2; Access Required is BLOCKED, not FAIL. Observe only; no onboarding or charges used.",
     "reason": "Owner walk: page response \"Platform Admin Access Required\" (not content-reachable)",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/stripe-connect.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "blocked \u2014 PA seat",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good platform Stripe Connect surface but platform-admin guarded",
+      "buriedDaily": "low",
+      "duplicate": "standalone orphan Stripe Connect surface",
+      "proposedHome": "Finance > Stripe Connect",
+      "note": "Direct route rendered the platform-admin guard for Admin 2; Access Required is BLOCKED, not FAIL. Observe only; no onboarding or charges used.",
+      "breadcrumb": "Platform > Stripe Connect",
+      "reachability": "ORPHANED",
+      "heading": "Platform Admin Access Required"
+    }
   },
   {
     "id": "admin-progress-guides-id",
@@ -16090,19 +16422,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/recovery-calendar.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Studio Timetable recovery calendar surface",
+      "buriedDaily": "medium",
+      "duplicate": "orphan route for the Recovery hub Calendar tab",
+      "proposedHome": "Studio > Timetable > Recovery > Calendar",
+      "note": "Direct route canonicalized to the Recovery hub Calendar tab; observed only, no recovery booking, filter or setup action used.",
+      "breadcrumb": "Studio > Timetable > Recovery > Calendar",
+      "reachability": "ORPHANED",
+      "heading": "Recovery Calendar"
+    }
   },
   {
     "id": "admin-recovery-reporting",
@@ -16119,19 +16471,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/recovery-reporting.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Studio Timetable recovery reporting surface",
+      "buriedDaily": "medium",
+      "duplicate": "orphan route for the Recovery hub Reporting tab",
+      "proposedHome": "Studio > Timetable > Recovery > Reporting",
+      "note": "Direct route canonicalized to the Recovery hub Reporting tab; observed only, no setup or CRM action used.",
+      "breadcrumb": "Studio > Timetable > Recovery > Reporting",
+      "reachability": "ORPHANED",
+      "heading": "Recovery Reporting"
+    }
   },
   {
     "id": "admin-referral-dashboard",
@@ -16148,19 +16520,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/referral-dashboard.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Experiences referral-programme surface",
+      "buriedDaily": "medium",
+      "duplicate": "orphan route for the Referral Programme Dashboard",
+      "proposedHome": "Experiences > Referral Programme > Dashboard",
+      "note": "Direct route canonicalized to the Referral Programme hub; observed only, no referral or reward action used.",
+      "breadcrumb": "Experiences > Referral Programme > Dashboard",
+      "reachability": "ORPHANED",
+      "heading": "Referral Programme"
+    }
   },
   {
     "id": "admin-referral-report",
@@ -16222,19 +16614,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/referral-report-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Experiences referral-programme surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for the Referral Programme Dashboard",
+      "proposedHome": "Experiences > Referral Programme > Dashboard",
+      "note": "Direct legacy route canonicalized to the Referral Programme hub Dashboard; observed only, no referral or reward action used.",
+      "breadcrumb": "Experiences > Referral Programme > Dashboard",
+      "reachability": "ORPHANED",
+      "heading": "Referral Programme"
+    }
   },
   {
     "id": "admin-referral-report-old",
@@ -16251,19 +16663,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/referral-report-old.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Experiences referral-programme surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for the Referral Programme Dashboard",
+      "proposedHome": "Experiences > Referral Programme > Dashboard",
+      "note": "Direct old route canonicalized to the Referral Programme hub Dashboard; observed only, no referral or reward action used.",
+      "breadcrumb": "Experiences > Referral Programme > Dashboard",
+      "reachability": "ORPHANED",
+      "heading": "Referral Programme"
+    }
   },
   {
     "id": "admin-referrals",
@@ -17020,19 +17452,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/roles-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Team Staff roles surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for the Staff hub Roles tab",
+      "proposedHome": "Team > Staff > Roles",
+      "note": "Direct legacy route canonicalized to /admin/staff-hub?tab=roles; observed only, no role or permission mutation used.",
+      "breadcrumb": "Team > Staff > Roles",
+      "reachability": "ORPHANED",
+      "heading": "Roles & permissions"
+    }
   },
   {
     "id": "admin-rota-hub",
@@ -17229,19 +17681,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/rota-sharing-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good Team Staff rota-sharing surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for the Staff hub Rota Sharing tab",
+      "proposedHome": "Team > Staff > Rota > Sharing",
+      "note": "Direct legacy route canonicalized to the Staff hub Rota Sharing tab; observed only, no sharing rule or rota mutation used.",
+      "breadcrumb": "Team > Staff > Rota > Sharing",
+      "reachability": "ORPHANED",
+      "heading": "Rota Sharing"
+    }
   },
   {
     "id": "admin-safe-studio-compliance",
@@ -18200,19 +18672,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Owner content loaded; no recent alerts and no warnings.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/security-dashboard.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good studio security overview surface",
+      "buriedDaily": "medium",
+      "duplicate": "orphan route for the Security & Surveillance Dashboard",
+      "proposedHome": "Studio > Security & Surveillance > Dashboard",
+      "note": "Direct orphan route rendered the Security Dashboard; observed only, with no alerts, Camio, door-access or other security changes.",
+      "breadcrumb": "Studio > Security & Surveillance > Dashboard",
+      "reachability": "ORPHANED",
+      "heading": "Security Dashboard"
+    }
   },
   {
     "id": "admin-setup-hub",
@@ -18274,19 +18766,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/competitors.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good marketing social/competitor-analysis surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for the Social & Reviews Competitors tab",
+      "proposedHome": "Marketing > Social & Reviews > Competitors",
+      "note": "Direct legacy route canonicalized to the Social & Reviews Competitors tab; observed only, with no Meta connection or competitor added.",
+      "breadcrumb": "Marketing > Social & Reviews > Competitors",
+      "reachability": "ORPHANED",
+      "heading": "Competitor Analysis"
+    }
   },
   {
     "id": "admin-social-conversions",
@@ -18438,19 +18950,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/meta-ads.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good marketing Meta ads/reporting surface",
+      "buriedDaily": "medium",
+      "duplicate": "legacy orphan route for Meta Hub Ads & Reports",
+      "proposedHome": "Marketing > Meta > Ads & Reports",
+      "note": "Direct legacy route canonicalized to Meta Hub Ads & Reports; preview only. No Sync Now, Create Meta Campaign, Generate Insights, Approve & Create, or other Meta action used.",
+      "breadcrumb": "Marketing > Meta > Ads & Reports",
+      "reachability": "ORPHANED",
+      "heading": "Meta Hub"
+    }
   },
   {
     "id": "admin-social-planner",
@@ -18557,19 +19089,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/staff.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good team staff roster surface",
+      "buriedDaily": "low",
+      "duplicate": "legacy orphan route for the Staff hub Team tab",
+      "proposedHome": "Team > Staff",
+      "note": "Direct legacy route canonicalized to /admin/staff-hub; observed only, with no invite, role, clock-in, access or other staff change.",
+      "breadcrumb": "Team > Staff",
+      "reachability": "ORPHANED",
+      "heading": "Staff"
+    }
   },
   {
     "id": "admin-staff-availability",
@@ -18642,19 +19194,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/staff-team-report.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good team staff roster surface",
+      "buriedDaily": "low",
+      "duplicate": "legacy orphan route for the Staff hub Team tab",
+      "proposedHome": "Team > Staff",
+      "note": "Direct legacy route canonicalized to /admin/staff-hub; observed only, with no team, invite, role, clock-in, access or other staff change.",
+      "breadcrumb": "Team > Staff",
+      "reachability": "ORPHANED",
+      "heading": "Staff"
+    }
   },
   {
     "id": "admin-staff-userId",
@@ -18959,19 +19531,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/team-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-orphans-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "orphans",
+      "hubFit": "good team roster surface",
+      "buriedDaily": "low",
+      "duplicate": "legacy orphan route for the Staff hub Team tab",
+      "proposedHome": "Team > Staff",
+      "note": "Direct legacy route canonicalized to /admin/staff-hub?tab=team; observed only, with no team, invite, role, clock-in, access or other staff change.",
+      "breadcrumb": "Team > Staff > Team",
+      "reachability": "ORPHANED",
+      "heading": "Staff"
+    }
   },
   {
     "id": "admin-team-polls",
