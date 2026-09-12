@@ -1,6 +1,43 @@
 {
-  "updatedAt": "2026-09-12T18:39:39.748Z",
+  "updatedAt": "2026-09-12T19:37:13.166Z",
   "drops": [
+    {
+      "id": "2026-09-12-coverage-l2-academy-chunk1",
+      "title": "Coverage L2 Academy chunk 1",
+      "date": "2026-09-12",
+      "summary": "Academy long-tail L2 chunk1: 6 PASS / 16 PARTIAL / 8 FAIL (misroutes). Stamp 6486be87.",
+      "plainEnglish": "Academy long-tail L2 chunk1: 6 PASS / 16 PARTIAL / 8 FAIL (misroutes). Stamp 6486be87.",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-coverage-l2-academy-chunk1/census-longtail-l2-settings-ACADEMY-CHUNK1-SUMMARY.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
+    },
+    {
+      "id": "2026-09-12-coverage-l2-academy-chunk-1",
+      "title": "Coverage L2 — Academy chunk 1",
+      "date": "2026-09-12",
+      "summary": "Academy L2 chunk 1: 30 routes, 6 PASS / 16 PARTIAL / 8 FAIL. Eight Academy misroutes remain (tags/terms/news/invites/design/groups/recordings/exercises).",
+      "plainEnglish": "Academy L2 chunk 1: 30 routes, 6 PASS / 16 PARTIAL / 8 FAIL. Eight Academy misroutes remain (tags/terms/news/invites/design/groups/recordings/exercises).",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-coverage-l2-academy-chunk-1/census-longtail-l2-settings-ACADEMY-CHUNK1-SUMMARY.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-12-coverage-l2-settings-chunk",
       "title": "Coverage L2 — Settings chunk",

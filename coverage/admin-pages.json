@@ -78,7 +78,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "QA Overnight Course present. No writes. PARTIAL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -90,23 +90,41 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "strong",
-      "buriedDaily": false,
-      "duplicate": false,
-      "proposedHome": "team-academy",
-      "note": "Rendered in Bluebird Pilates TEST DATA; sidebar Academy expanded and Overview visible.",
-      "breadcrumb": "Academy > Overview > Overview",
-      "reachability": "SIDEBAR",
-      "heading": "Learning Management System"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "QA Overnight Course present. No writes. PARTIAL."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened Overview",
+        "observed LMS tabs"
+      ],
+      "controlsNotExercised": [
+        "create/publish"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -251,7 +269,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Observe-only. Save withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -263,23 +281,41 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-ai-tutor-personality.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "Academy LMS AI tutor configuration",
-      "buriedDaily": false,
-      "duplicate": "No duplicate observed",
-      "proposedHome": "Academy > Settings / AI Tutor Personality",
-      "note": "Observe-only; no save attempted.",
-      "breadcrumb": "Learning Management System > AI Tutor Personality",
-      "reachability": "SIDEBAR",
-      "heading": "AI Tutor Personality"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Observe-only. Save withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "Save",
+        "tone/name edits"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -300,7 +336,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Honest empty. Create withheld. No filters.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -312,23 +348,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-assessments.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "Academy LMS knowledge checks",
-      "buriedDaily": true,
-      "duplicate": "No duplicate observed",
-      "proposedHome": "Academy > Courses / Assessments",
-      "note": "No create action taken.",
-      "breadcrumb": "Learning Management System > Assessments",
-      "reachability": "SIDEBAR",
-      "heading": "Assessments"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Honest empty. Create withheld. No filters."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "Create assessment"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -349,7 +402,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "0 automations + empty list. Enable withheld. PARTIAL not FAIL (list is the data).",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -361,23 +414,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-automations.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "Academy LMS enrolment and communication rules",
-      "buriedDaily": true,
-      "duplicate": "No duplicate observed",
-      "proposedHome": "Academy > Commerce / Automations",
-      "note": "No automation write or import action taken.",
-      "breadcrumb": "Learning Management System > Automations",
-      "reachability": "SIDEBAR",
-      "heading": "Automations"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "0 automations + empty list. Enable withheld. PARTIAL not FAIL (list is the data)."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "enable automation"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -395,10 +465,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "MISROUTE/alias: lands certificate hub, no design editor. Same family as L1 Academy misroutes.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -410,23 +480,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-certificate-design.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "Academy LMS certification design",
-      "buriedDaily": true,
-      "duplicate": "Overlaps conceptually with Certificates hub",
-      "proposedHome": "Academy > Certificates / Design",
-      "note": "Create certificate and other write controls left untouched.",
-      "breadcrumb": "Learning Management System > Certificates and credentials",
-      "reachability": "SIDEBAR",
-      "heading": "Certificates and credentials"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "MISROUTE/alias: lands certificate hub, no design editor. Same family as L1 Academy misroutes."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "opened URL"
+      ],
+      "controlsNotExercised": [
+        "create/save design"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -447,7 +534,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "0/0/0 + honest empty. Create withheld. PARTIAL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -459,23 +546,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-certificates.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "Academy LMS certificates hub",
-      "buriedDaily": true,
-      "duplicate": "Duplicate rendered destination with certificate-design route",
-      "proposedHome": "Academy > Certificates",
-      "note": "Same rendered certificate hub content as certificate-design route; no writes.",
-      "breadcrumb": "Learning Management System > Certificates and credentials",
-      "reachability": "SIDEBAR",
-      "heading": "Certificates and credentials"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "0/0/0 + honest empty. Create withheld. PARTIAL."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "create certificate"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -497,7 +601,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "URL stayed /class-tags but rendered LMS settings, not class tags; settings observed only, no toggles changed. L1 FAIL: URL /class-tags rendered LMS settings, not class tags.",
+    "reason": "L1 misroute CONFIRMED: URL stays /class-tags but heading is LMS settings (roles).",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -509,23 +613,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-class-tags.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "L1 fail",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "Academy LMS settings content, but route/content mismatch",
-      "buriedDaily": false,
-      "duplicate": "Potential route alias/misroute to LMS settings",
-      "proposedHome": "Academy > Settings (verify class-tags destination)",
-      "note": "URL stayed /class-tags but rendered LMS settings, not class tags; settings observed only, no toggles changed. L1 FAIL: URL /class-tags rendered LMS settings, not class tags.",
-      "breadcrumb": "Learning Management System > LMS settings",
-      "reachability": "SIDEBAR",
-      "heading": "LMS settings"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "L1 misroute CONFIRMED: URL stays /class-tags but heading is LMS settings (roles)."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "opened /admin/academy/class-tags"
+      ],
+      "controlsNotExercised": [
+        "role assign"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -612,7 +733,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Zero figures + empty commerce. No Stripe. PARTIAL not FAIL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -624,23 +745,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-commerce.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy commerce hub",
-      "buriedDaily": "low; summary cards visible",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Commerce",
-      "note": "Commerce hub loaded; no Stripe interaction performed.",
-      "breadcrumb": "Learning Management System > Commerce",
-      "reachability": "SIDEBAR",
-      "heading": "Commerce"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Zero figures + empty commerce. No Stripe. PARTIAL not FAIL."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "Stripe/create"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -661,7 +799,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "0 + empty. Send withheld. PARTIAL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -673,23 +811,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-communications.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy communications hub",
-      "buriedDaily": "medium; reachable from Academy tabs",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Communications",
-      "note": "Communication history page loaded. No send action performed.",
-      "breadcrumb": "Learning Management System > Communications",
-      "reachability": "SIDEBAR",
-      "heading": "Communications"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "0 + empty. Send withheld. PARTIAL."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "send"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -711,7 +866,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Same-name pair differs: Academy Community is LMS channel information, not local partners/events.",
+    "reason": "Honest empty. Tabs observed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -727,23 +882,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-community.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy community hub",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Community",
-      "note": "Community page rendered with tenant/course/direct Academy channel description.",
-      "breadcrumb": "Learning Management System > Community",
-      "reachability": "SIDEBAR",
-      "heading": "Community"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Honest empty. Tabs observed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "LMS tabs"
+      ],
+      "controlsNotExercised": [
+        "community writes"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -764,7 +936,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "0 + empty. Publish withheld. PARTIAL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -776,23 +948,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-contracts.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy contracts hub",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Contracts",
-      "note": "Contracts page loaded with empty-state summary.",
-      "breadcrumb": "Learning Management System > Contracts",
-      "reachability": "SIDEBAR",
-      "heading": "Contracts"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "0 + empty. Publish withheld. PARTIAL."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "publish"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -810,10 +999,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "MISROUTE: lands LMS Overview, not Course Groups. Overview tab selected.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -825,23 +1014,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-course-groups.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "within Academy/LMS but not a dedicated groups surface",
-      "buriedDaily": "medium",
-      "duplicate": "overlaps Courses landing",
-      "proposedHome": "Academy > Courses > Course Groups",
-      "note": "Direct route rendered the Courses landing rather than a dedicated Course Groups view; no edits made.",
-      "breadcrumb": "Learning Management System > Courses",
-      "reachability": "SIDEBAR",
-      "heading": "Build learning people enjoy completing"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "MISROUTE: lands LMS Overview, not Course Groups. Overview tab selected."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "opened /course-groups"
+      ],
+      "controlsNotExercised": [
+        "create course/group"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -859,10 +1065,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "MISROUTE: lands Content libraries not Course Recordings. Search QA \u2192 no items.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -874,23 +1080,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-course-recordings.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "within Academy/LMS library content",
-      "buriedDaily": "medium",
-      "duplicate": "recordings appear folded into libraries",
-      "proposedHome": "Academy > Libraries > Recordings",
-      "note": "Direct route rendered the Content libraries surface; no recording-specific filter or data visible. No item added.",
-      "breadcrumb": "Learning Management System > Content libraries",
-      "reachability": "SIDEBAR",
-      "heading": "Content libraries"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "MISROUTE: lands Content libraries not Course Recordings. Search QA \u2192 no items."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "search QA"
+      ],
+      "controlsNotExercised": [
+        "add library item"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -911,7 +1134,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -923,23 +1145,43 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-courses.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy courses hub",
-      "buriedDaily": "low; primary course landing",
-      "duplicate": "course-groups route lands here too",
-      "proposedHome": "Academy > Courses",
-      "note": "QA Overnight Course found; numeric course/playbook id for later use is 36. Not edited or published.",
-      "breadcrumb": "Learning Management System > Courses",
-      "reachability": "SIDEBAR",
-      "heading": "Build learning people enjoy completing"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Opened QA Overnight Course read-only via Preview and returned. No publish."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Courses tab",
+        "Preview QA Overnight Course",
+        "return"
+      ],
+      "controlsNotExercised": [
+        "publish",
+        "edit save"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -961,7 +1203,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Same-name pair differs: Academy page is an LMS import/configuration summary with zero discounts, not the Studio discount-code manager.",
+    "reason": "0 + empty. Create withheld. PARTIAL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -977,23 +1219,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-discount-codes.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy commerce/import surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Discount Codes",
-      "note": "Discount-code surface loaded. No discount-code or commerce changes made.",
-      "breadcrumb": "Learning Management System > Discount codes",
-      "reachability": "SIDEBAR",
-      "heading": "Discount codes"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "0 + empty. Create withheld. PARTIAL."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "create code"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1011,10 +1270,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "MISROUTE: /exercises lands Content libraries.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1026,23 +1285,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-exercises.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "within Academy/LMS library content but not a dedicated exercises surface",
-      "buriedDaily": "medium",
-      "duplicate": "exercises route overlaps Content libraries",
-      "proposedHome": "Academy > Libraries > Exercises",
-      "note": "Direct exercises route resolves to Content libraries rather than a dedicated exercises view. No library item added.",
-      "breadcrumb": "Learning Management System > Content libraries",
-      "reachability": "SIDEBAR",
-      "heading": "Content libraries"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "MISROUTE: /exercises lands Content libraries."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "opened URL"
+      ],
+      "controlsNotExercised": [
+        "add library item"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1063,7 +1339,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1075,23 +1350,41 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-financials.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy financials hub",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Financials",
-      "note": "Financials summary loaded after one transient dynamic-module load error. No Stripe interaction performed.",
-      "breadcrumb": "Learning Management System > Financials",
-      "reachability": "SIDEBAR",
-      "heading": "Financials"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "All seven figures 0; honest empty. No Stripe. Observe-only PASS."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "opened Financials",
+        "observed seven 0 figures"
+      ],
+      "controlsNotExercised": [
+        "Stripe/charge"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1382,7 +1675,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Direct Invites route resolved to the Academy LMS overview rather than an invitations surface; no invite sent.",
+    "reason": "L1 misroute CONFIRMED: heading Teacher tools / 0 Reflections, not an invite list.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1394,23 +1687,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-invites.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "L1 fail",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "wrong destination within Academy/LMS",
-      "buriedDaily": "not applicable",
-      "duplicate": "Invites route aliases LMS overview",
-      "proposedHome": "Academy > Teacher Tools > Invites (verify route)",
-      "note": "Direct Invites route resolved to the Academy LMS overview rather than an invitations surface; no invite sent.",
-      "breadcrumb": "Learning Management System",
-      "reachability": "DIRECT_URL",
-      "heading": "Learning Management System"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "L1 misroute CONFIRMED: heading Teacher tools / 0 Reflections, not an invite list."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "opened /invites"
+      ],
+      "controlsNotExercised": [
+        "send invite"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1431,7 +1741,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Filters work. No learner rows to open. Assign withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1443,23 +1753,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-learners.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy learners hub",
-      "buriedDaily": "low; primary learner assignment surface",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Learners",
-      "note": "Learners page loaded. Member/staff picker was observed without selecting anyone; no enrolment or assignment performed.",
-      "breadcrumb": "Learning Management System > Learners & progress",
-      "reachability": "SIDEBAR",
-      "heading": "Learners & progress"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Filters work. No learner rows to open. Assign withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "course/search filters"
+      ],
+      "controlsNotExercised": [
+        "assign learner"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1480,7 +1807,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Search works. Add withheld. Honest empty.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1492,23 +1819,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-libraries.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "strong Academy LMS content library",
-      "buriedDaily": "low; primary library surface",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Libraries",
-      "note": "Libraries surface rendered for Bluebird Pilates TEST DATA; no library item added.",
-      "breadcrumb": "Learning Management System > Content libraries",
-      "reachability": "DIRECT_URL",
-      "heading": "Content libraries"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Search works. Add withheld. Honest empty."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search"
+      ],
+      "controlsNotExercised": [
+        "add library item"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1530,7 +1874,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Direct News route resolved to Content libraries rather than a News surface; no send or publish action performed.",
+    "reason": "L1 misroute CONFIRMED: /news lands Content libraries.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1546,23 +1890,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-news.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "L1 fail",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "wrong destination within Academy/LMS",
-      "buriedDaily": "not applicable",
-      "duplicate": "News route appears to alias Content libraries",
-      "proposedHome": "Academy > News (verify route)",
-      "note": "Direct News route resolved to Content libraries rather than a News surface; no send or publish action performed.",
-      "breadcrumb": "Learning Management System > Content libraries",
-      "reachability": "DIRECT_URL",
-      "heading": "Content libraries"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "L1 misroute CONFIRMED: /news lands Content libraries."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "opened /news"
+      ],
+      "controlsNotExercised": [
+        "add item"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1583,7 +1944,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1595,23 +1955,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-pricing.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy commerce/pricing surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Commerce > Pricing",
-      "note": "Pricing surface loaded; no Stripe interaction or commerce write performed.",
-      "breadcrumb": "Learning Management System > Pricing",
-      "reachability": "DIRECT_URL",
-      "heading": "Pricing"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Pricing/enrolment-link counts 0. No save. Observe-only PASS."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "opened Pricing"
+      ],
+      "controlsNotExercised": [
+        "save"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1632,7 +2009,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Lands Assessments (alias). Create withheld. Honest empty.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1644,23 +2021,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-quizzes.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy LMS knowledge-check surface",
-      "buriedDaily": "medium",
-      "duplicate": "Quizzes route aliases Assessments",
-      "proposedHome": "Academy > Courses > Assessments",
-      "note": "Quizzes route resolved to the Assessments surface. No assessment created or published.",
-      "breadcrumb": "Learning Management System > Assessments",
-      "reachability": "DIRECT_URL",
-      "heading": "Assessments"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Lands Assessments (alias). Create withheld. Honest empty."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened /quizzes"
+      ],
+      "controlsNotExercised": [
+        "create quiz"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1681,7 +2075,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1693,23 +2086,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-reflections.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy teacher-tools surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Academy > Teacher Tools > Reflections",
-      "note": "Reflections route rendered Teacher tools with zero reflections; no learner or teacher data changed.",
-      "breadcrumb": "Learning Management System > Teacher tools",
-      "reachability": "DIRECT_URL",
-      "heading": "Teacher tools"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Teacher tools / 0 Reflections. Honest empty. No extra writes."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "opened Reflections"
+      ],
+      "controlsNotExercised": [],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1797,7 +2205,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Same-name pair differs: Academy Resources is the LMS content-library view, not external Resources & Links.",
+    "reason": "Lands Content libraries (resources live there). Add withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1813,23 +2221,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-resources.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "within Academy/LMS library content",
-      "buriedDaily": "medium",
-      "duplicate": "Resources route aliases Content libraries",
-      "proposedHome": "Academy > Libraries > Resources",
-      "note": "Resources route resolved to the shared Content libraries surface; no resource added or published.",
-      "breadcrumb": "Learning Management System > Content libraries",
-      "reachability": "DIRECT_URL",
-      "heading": "Content libraries"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Lands Content libraries (resources live there). Add withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened /resources"
+      ],
+      "controlsNotExercised": [
+        "add item"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1930,23 +2355,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-teachers.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "L1 fail",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "wrong destination within Academy/LMS",
-      "buriedDaily": "not applicable",
-      "duplicate": "Teachers route aliases LMS overview",
-      "proposedHome": "Academy > Teacher Tools > Teachers (verify route)",
-      "note": "Direct Teachers route resolved to the Academy LMS overview rather than a teachers surface; no teacher data changed.",
-      "breadcrumb": "Learning Management System",
-      "reachability": "DIRECT_URL",
-      "heading": "Learning Management System"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Teachers tab + Teacher tools (not L1 overview). 0 Reflections. Assign withheld. PARTIAL not misroute."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened /teachers (Teachers tab)"
+      ],
+      "controlsNotExercised": [
+        "assign/invite"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -1968,7 +2410,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Direct Terms route resolved to LMS settings rather than a terms surface; settings observed only, no toggles clicked or save attempted.",
+    "reason": "L1 misroute CONFIRMED: /terms lands LMS settings (roles).",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -1980,23 +2422,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-terms.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "L1 fail",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "wrong destination within Academy/LMS",
-      "buriedDaily": "not applicable",
-      "duplicate": "Terms route aliases LMS settings",
-      "proposedHome": "Academy > Terms (verify route)",
-      "note": "Direct Terms route resolved to LMS settings rather than a terms surface; settings observed only, no toggles clicked or save attempted.",
-      "breadcrumb": "Learning Management System > LMS settings",
-      "reachability": "DIRECT_URL",
-      "heading": "LMS settings"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "L1 misroute CONFIRMED: /terms lands LMS settings (roles)."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "opened /terms"
+      ],
+      "controlsNotExercised": [
+        "role assign"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -2017,7 +2476,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Same Learners surface. Search works. No rows. Assign withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -2029,23 +2488,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/academy-users.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good Academy LMS learner-management surface",
-      "buriedDaily": "medium",
-      "duplicate": "Users route aliases Learners & progress",
-      "proposedHome": "Academy > Learners",
-      "note": "Users route resolved to the learner management surface; no learner assignment or other write performed.",
-      "breadcrumb": "Learning Management System > Learners & progress",
-      "reachability": "DIRECT_URL",
-      "heading": "Learners & progress"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Same Learners surface. Search works. No rows. Assign withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search"
+      ],
+      "controlsNotExercised": [
+        "assign"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -2235,20 +2711,45 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/ai-governance.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Governance page loads with zero-activity honest empty state.",
-      "title": "AI Governance",
-      "breadcrumb": "AI Governance",
-      "reachability": "unknown"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Tabs work. 0 pending. Export/switches withheld. Observe-only PASS."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Overview",
+        "AI Features",
+        "Approval Queue",
+        "Activity Log"
+      ],
+      "controlsNotExercised": [
+        "switches",
+        "Prepare export",
+        "Settings save"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {
@@ -2384,7 +2885,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Exact AI usage URL loaded for Owner. It is the usage-facing surface; /admin/ai-credits is the separate platform/admin management surface documented in batch1.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -2400,20 +2900,41 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/ai-usage.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-academy-chunk1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "duplicate",
-      "hubFit": "duplicate",
-      "note": "AI Usage alias loads with credit balance and usage tabs.",
-      "title": "AI Usage",
-      "breadcrumb": "AI Usage",
-      "reachability": "unknown"
+      "source": "census-longtail-l2-academy-chunk1",
+      "hub": "long-tail",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "0 credits / allowance exhausted / txn 0. Tabs work. No purchase."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Usage tab",
+        "transaction tab"
+      ],
+      "controlsNotExercised": [
+        "purchase credits"
+      ],
+      "defects": null,
+      "agreement": null,
+      "tenant_ok": true
     }
   },
   {

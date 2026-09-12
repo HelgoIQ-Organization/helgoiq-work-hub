@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T18:41:50.432Z",
+  "updatedAt": "2026-09-12T19:37:13.514Z",
   "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "liveTipShort": "6486be87",
   "refreshLag": {
@@ -8,11 +8,11 @@
     "dashboardBackup": "30m weekday daytime Europe/London"
   },
   "source": {
-    "versionUrl": null,
-    "versionError": "staging URL not configured (pass --staging= or STAGING_URL)",
+    "versionUrl": "(configured staging)/api/version",
+    "versionError": null,
     "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
     "mergedPrsError": "skipped",
-    "dropsScanned": 60,
+    "dropsScanned": 62,
     "issue1180Error": "skipped",
     "issue1180Comments": 0,
     "claudeReviewError": null,
@@ -21,7 +21,7 @@
       {
         "id": 1,
         "name": "live /api/version tip",
-        "ok": false
+        "ok": true
       },
       {
         "id": 2,
@@ -33,7 +33,7 @@
         "id": 3,
         "name": "#1180 + hub drops",
         "ok": true,
-        "dropsScanned": 60,
+        "dropsScanned": 62,
         "issue1180": null
       },
       {
@@ -49,7 +49,7 @@
     "strands": 10,
     "strandsStaleVsLiveTip": 7,
     "strandsCurrent": 2,
-    "pages": 176,
+    "pages": 189,
     "pagesStaleVsLiveTip": 84,
     "claudeReviews": 0
   },
@@ -178,6 +178,160 @@
     }
   ],
   "pages": [
+    {
+      "id": "route:/admin/academy/class-tags",
+      "name": "/admin/academy/class-tags",
+      "route": "/admin/academy/class-tags",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/academy/terms",
+      "name": "/admin/academy/terms",
+      "route": "/admin/academy/terms",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/academy/news",
+      "name": "/admin/academy/news",
+      "route": "/admin/academy/news",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/academy/invites",
+      "name": "/admin/academy/invites",
+      "route": "/admin/academy/invites",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/academy/certificate-design",
+      "name": "/admin/academy/certificate-design",
+      "route": "/admin/academy/certificate-design",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/academy/course-groups",
+      "name": "/admin/academy/course-groups",
+      "route": "/admin/academy/course-groups",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/academy/course-recordings",
+      "name": "/admin/academy/course-recordings",
+      "route": "/admin/academy/course-recordings",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/academy/exercises",
+      "name": "/admin/academy/exercises",
+      "route": "/admin/academy/exercises",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/academy/teachers",
+      "name": "/admin/academy/teachers",
+      "route": "/admin/academy/teachers",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/academy/courses",
+      "name": "/admin/academy/courses",
+      "route": "/admin/academy/courses",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/ai-governance",
+      "name": "/admin/ai-governance",
+      "route": "/admin/ai-governance",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "route:/admin/ai-usage",
+      "name": "/admin/ai-usage",
+      "route": "/admin/ai-usage",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "drop:2026-09-12-coverage-l2-academy-chunk1",
+      "name": "Coverage L2 Academy chunk 1",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
+    },
+    {
+      "id": "drop:2026-09-12-coverage-l2-academy-chunk-1",
+      "name": "Coverage L2 — Academy chunk 1",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk-1"
+    },
     {
       "id": "route:/admin/feature-management",
       "name": "/admin/feature-management",
@@ -787,17 +941,6 @@
       "id": "route:/admin/ai-credits",
       "name": "/admin/ai-credits",
       "route": "/admin/ai-credits",
-      "strandId": "command-centre",
-      "lastTestedStamp": "",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "",
-      "freshness": "untested",
-      "evidenceDropId": "2026-09-12-retirement-safety-table-1217"
-    },
-    {
-      "id": "route:/admin/ai-usage",
-      "name": "/admin/ai-usage",
-      "route": "/admin/ai-usage",
       "strandId": "command-centre",
       "lastTestedStamp": "",
       "lastTestedAt": "2026-09-12",
