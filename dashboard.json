@@ -18,8 +18,8 @@
     },
     "updatedAt": "2026-09-12T11:59:19.847671Z",
     "note": "Live tip a3a0e207: #1267 invite create. Staging ahead: #1266 Pulse (6486be87) not deployed. Cluster A last Measured 23/24 on a73ff70 (ACS-C01 fail).",
-    "coveragePercentFormula": "Coverage tab: L\u22651 (reachable+) = 365/413 \u2248 88.4%; L\u22652 (exercised) = 51/413 \u2248 12.3%. tested_any (incl failed/blocked) = 408/413 \u2248 98.8%.",
-    "headlineVsCoverage": "Headline ~64% = weighted strand average. Coverage L1%=88.4 / L2%=12.3. Different units; strand passes must stamp page rows.",
+    "coveragePercentFormula": "Coverage tab: L\u22651 (reachable+) = 376/413 \u2248 91.0%; L\u22652 (exercised) = 289/413 \u2248 70.0%.",
+    "headlineVsCoverage": "Headline ~63% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
       "pctTestedAny": 98.8,
       "pctL1Plus": 88.4,
@@ -34,8 +34,8 @@
         "L2 works": 15
       }
     },
-    "coverageL1Pct": 90.1,
-    "coverageL2Pct": 51.3,
+    "coverageL1Pct": 91.0,
+    "coverageL2Pct": 70.0,
     "commandCentreNote": "48% = A 24/24 + B\u2013F 4/30 measured on 6486be87 (replaced A-only 80%)."
   },
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -96,11 +96,11 @@
     "censusLongtailStudioAccess": "30/30 PASS; Settings (15 observe-only) next",
     "censusLongtailSettings": "14 PASS / 1 BLOCKED (live-support PA); orphans (30) next",
     "censusLongtailComplete": "133 routes: 124 PASS / 6 FAIL / 3 BLOCKED \u2014 Admin L1 wave complete",
-    "coverageL1Plus": 365,
-    "coverageL2Plus": 51,
+    "coverageL1Plus": 376,
+    "coverageL2Plus": 289,
     "coverageTotal": 413,
-    "coveragePctL1Plus": 88.4,
-    "coveragePctL2Plus": 12.3,
+    "coveragePctL1Plus": 91.0,
+    "coveragePctL2Plus": 70.0,
     "l2BackfillAt": "2026-09-12T11:59:19.847671Z",
     "censusCoreL2Members": "3 PASS / 1 PARTIAL / 1 FAIL (crm-hub KPI vs empty Insights)",
     "censusCoreL2": "Members 3P/1Part/1F \u00b7 Timetable L2_FAIL (fill-rate + cover cost + cover copy)",
@@ -127,6 +127,13 @@
       "fail": 26,
       "strandPercent": 48,
       "at": "2026-09-12T19:50:00Z"
+    },
+    "censusLongtailL2Chunk2": {
+      "pass": 3,
+      "partial": 27,
+      "fail": 0,
+      "tip": "6486be87",
+      "at": "2026-09-12T20:10:41.116861+00:00"
     }
   },
   "strands": [
@@ -178,8 +185,8 @@
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
       "measuredNote": "A 24/24 + B\u2013F 4/30 on 6486be87 \u2192 strand 48% (not A-only 80%).",
-      "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
-      "coverageFreshness": "stale",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "coverageFreshness": "current",
       "lastTestedVerdict": "FAIL",
       "measured": 95.83333333333334,
       "blocker": "ACS-C01 fault (compared_person_not_found Admin 2); B\u2013F locked"
