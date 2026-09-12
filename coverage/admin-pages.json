@@ -1400,14 +1400,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-anomaly-alerts",
@@ -1514,14 +1525,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-at-risk-revenue",
@@ -1870,7 +1892,7 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). New Post opened a New Post editor. No draft was saved or published.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
@@ -1881,12 +1903,22 @@
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-booking-messages",
@@ -4398,14 +4430,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-milestones",
@@ -6015,14 +6058,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-screen-health",
@@ -6044,14 +6098,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-screen-playlists",
@@ -6073,14 +6138,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-screens",
@@ -6102,14 +6178,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-security-hub",
@@ -6367,14 +6454,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-setup",
@@ -7704,19 +7802,29 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-website-hub",
@@ -7738,19 +7846,29 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Website hub loaded read-only. Blog is not a top-level tab in the hub snapshot; the Blog management entry is reachable separately.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-ai-page-builder",
@@ -7772,14 +7890,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-website-health",
@@ -7801,14 +7930,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-site-import",
@@ -7830,14 +7970,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-navigation",
@@ -7859,14 +8010,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-global-styles",
@@ -7888,14 +8050,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-weekly-digest",
@@ -8590,7 +8763,7 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
@@ -8602,6 +8775,10 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
       }
     ],
     "prUrl": null,
@@ -8609,10 +8786,10 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 SEARCH ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
     }
   },
   {
@@ -8635,7 +8812,7 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "New Post reached editor (not saved).",
-    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
@@ -8651,6 +8828,10 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
       }
     ],
     "prUrl": null,
@@ -8658,10 +8839,10 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 LINK ONLY",
-      "duplicate": "same_as /admin/blog/new",
-      "source": "census-core"
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
     }
   },
   {
@@ -8684,7 +8865,7 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
@@ -8696,6 +8877,10 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
       }
     ],
     "prUrl": null,
@@ -8703,10 +8888,10 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 SEARCH ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
     }
   },
   {
@@ -8729,7 +8914,7 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
@@ -8741,6 +8926,10 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
       }
     ],
     "prUrl": null,
@@ -8748,10 +8937,10 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 SEARCH ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
     }
   },
   {
@@ -8774,7 +8963,7 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Loaded as Owner; no posts were present. Categories/tags and AI-writer affordances were inspected without creating or changing content.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
@@ -8785,12 +8974,22 @@
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-blog-new",
@@ -8812,19 +9011,29 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Loaded blank new-post editor as Owner. Save Draft and Publish are available but were not used.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch1.json"
+      },
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-campaigns-id-edit",
@@ -14189,14 +14398,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-website-editor-id",
@@ -14218,14 +14438,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-website-preview-id",
@@ -14247,14 +14478,25 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-content-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "source": "census-content"
+    }
   },
   {
     "id": "admin-what-we-learned",

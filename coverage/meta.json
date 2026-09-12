@@ -60,10 +60,10 @@
   "backfillAt": "2026-09-12T09:02:58.985826Z",
   "backfillProgramme": "17-coverage-programme",
   "lastCensusMerge": {
-    "bot": "Census Core",
+    "bot": "Census Content",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "l1_pass": 80,
-    "l1_fail": 8,
+    "l1_pass": 0,
+    "l1_fail": 0,
     "missing_routes": 0
   }
 }
