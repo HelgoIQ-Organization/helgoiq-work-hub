@@ -1,10 +1,10 @@
 {
   "updatedAt": "2026-09-12T12:41:47.214Z",
   "meta": {
-    "dataAsOf": "2026-09-12T13:29:36.795Z",
+    "dataAsOf": "2026-09-12T13:29:49.353Z",
     "buildStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 65% = round((52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) with half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
@@ -40,7 +40,7 @@
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "progressToday": {
     "morningHeadlinePercent": 52,
-    "nowHeadlinePercent": 64,
+    "nowHeadlinePercent": 65,
     "morningStrands": {
       "dataset": 25,
       "command-centre": 55,
@@ -369,9 +369,9 @@
     }
   ],
   "health": {
-    "overallLaunchPercent": 64,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
-    "readinessLabel": "Not ready to launch \u2014 tip 6486be87. Headline now 64% after Morning Dispatch viewer PASS (ambient 92). Dataset canary still FAIL (companyId 403). Cluster A / ISO / AI-85 retests still in flight. Comms secrets still blocked.",
+    "overallLaunchPercent": 65,
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 65% = round((52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) with half-up.",
+    "readinessLabel": "Not ready to launch \u2014 tip 6486be87. Headline 65% after Morning Dispatch viewer PASS (ambient 85\u219292). Dataset canary still FAIL (companyId 403). Cluster A / ISO / AI-85 still in flight. Comms secrets still blocked.",
     "plainSummary": "As of 2026-09-12T07:08:35.782Z (Europe/London 12 Sep 2026 ~08:08), launch readiness headline held at about 64%. Live tip moved a73ff70b \u2192 88d622ea. On this tip: #1262 smoke invite sign-in, #1263 QR landing, #1264 Command Centre Admin 2 identity, #1249 public-bundle PII removal. Strand percents NOT re-scored \u2014 retest pending. #1267 (studio admin pending invite create) is on GitHub staging (a3a0e207) but not yet on live /api/version.",
     "strengths": [
       "Cluster A Measured 22/24 on tip a263c4ab; Teacher2 MGR-10 + ACS-X01 PASS",
