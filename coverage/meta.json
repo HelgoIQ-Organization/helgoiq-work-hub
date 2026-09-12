@@ -23,7 +23,7 @@
     "blocked": 45,
     "failed": 64,
     "notTested": 0,
-    "stale": 17,
+    "stale": 14,
     "byReachability": {
       "SIDEBAR": 218,
       "SIDEBAR, DOCK": 4,
@@ -34,9 +34,9 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "2": 289,
+      "2": 319,
       "0": 37,
-      "1": 87
+      "1": 57
     }
   },
   "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
@@ -163,14 +163,14 @@
   },
   "lastL2Merge": {
     "bot": "Census Longtail",
-    "hub": "long-tail-chunk2",
+    "hub": "long-tail-chunk3",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "pass": 3,
-    "partial": 27,
+    "pass": 1,
+    "partial": 29,
     "fail": 0,
     "blocked": 0,
     "miss": 0,
-    "range": "/admin/assets \u2026 /admin/resources"
+    "range": "/admin/retreats-hub \u2026 /admin/audit-trail"
   },
   "dailyL2Wave": {
     "status": "complete",
@@ -188,5 +188,5 @@
     "status": "complete",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
   },
-  "updatedAt": "2026-09-12T20:10:25.668648+00:00"
+  "updatedAt": "2026-09-12T20:49:45.032251+00:00"
 }

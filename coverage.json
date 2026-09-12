@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T20:10:26.024Z",
+  "updatedAt": "2026-09-12T20:49:45.455Z",
   "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "liveTipShort": "6486be87",
   "refreshLag": {
@@ -12,7 +12,7 @@
     "versionError": null,
     "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
     "mergedPrsError": "skipped",
-    "dropsScanned": 64,
+    "dropsScanned": 65,
     "issue1180Error": "skipped",
     "issue1180Comments": 0,
     "claudeReviewError": null,
@@ -33,7 +33,7 @@
         "id": 3,
         "name": "#1180 + hub drops",
         "ok": true,
-        "dropsScanned": 64,
+        "dropsScanned": 65,
         "issue1180": null
       },
       {
@@ -49,7 +49,7 @@
     "strands": 10,
     "strandsStaleVsLiveTip": 6,
     "strandsCurrent": 3,
-    "pages": 196,
+    "pages": 201,
     "pagesStaleVsLiveTip": 84,
     "claudeReviews": 0
   },
@@ -178,6 +178,72 @@
     }
   ],
   "pages": [
+    {
+      "id": "route:/admin/audit-trail",
+      "name": "/admin/audit-trail",
+      "route": "/admin/audit-trail",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
+    },
+    {
+      "id": "route:/admin/admin-invite-staff",
+      "name": "/admin/admin-invite-staff",
+      "route": "/admin/admin-invite-staff",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
+    },
+    {
+      "id": "route:/admin/admin-roles",
+      "name": "/admin/admin-roles",
+      "route": "/admin/admin-roles",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
+    },
+    {
+      "id": "route:/admin/appointment-policies",
+      "name": "/admin/appointment-policies",
+      "route": "/admin/appointment-policies",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
+    },
+    {
+      "id": "route:/admin/academy/courses/:playbookId",
+      "name": "/admin/academy/courses/:playbookId",
+      "route": "/admin/academy/courses/:playbookId",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
+    },
+    {
+      "id": "drop:2026-09-12-coverage-l2-long-tail-chunk-3",
+      "name": "Coverage L2 — Long-tail chunk 3",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
+    },
     {
       "id": "route:/admin/new-vs-returning",
       "name": "/admin/new-vs-returning",
@@ -1502,17 +1568,6 @@
       "id": "route:/*",
       "name": "/*",
       "route": "/*",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "",
-      "lastTestedAt": "2026-09-11",
-      "verdict": "UNTESTED",
-      "freshness": "untested",
-      "evidenceDropId": "2026-09-11-untested-16-surfaces-ranked-week-one-posted-1180"
-    },
-    {
-      "id": "route:/admin/academy/courses/:playbookId",
-      "name": "/admin/academy/courses/:playbookId",
-      "route": "/admin/academy/courses/:playbookId",
       "strandId": "findings-fix",
       "lastTestedStamp": "",
       "lastTestedAt": "2026-09-11",
