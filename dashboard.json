@@ -1,10 +1,10 @@
 {
   "updatedAt": "2026-09-12T12:41:47.214Z",
   "meta": {
-    "dataAsOf": "2026-09-12T13:30:45.460Z",
+    "dataAsOf": "2026-09-12T13:41:08.272Z",
     "buildStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 65% = round((52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) with half-up.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 66% = round((52\u00d712 + 80\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
@@ -40,7 +40,7 @@
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "progressToday": {
     "morningHeadlinePercent": 52,
-    "nowHeadlinePercent": 65,
+    "nowHeadlinePercent": 66,
     "morningStrands": {
       "dataset": 25,
       "command-centre": 55,
@@ -55,7 +55,7 @@
     },
     "nowStrands": {
       "dataset": 52,
-      "command-centre": 66,
+      "command-centre": 80,
       "isolation": 86,
       "ai-85": 56,
       "ambient": 92,
@@ -108,7 +108,8 @@
     "censusMoneyL2Finance": "0 PASS / 1 PARTIAL (stripe-connect) / 6 FAIL \u2014 KPI drills + invoicing alias",
     "ambientDispatch": "PASS on 6486be87 \u2014 viewer honest empty, no crash",
     "datasetCanary": "FAIL Missing companyId 403 \u2014 hold 52%",
-    "ai85Rescore": "Hold 56% \u2014 25 retested; AI-018 FAIL\u2192PARTIAL only; 4 FAIL open"
+    "ai85Rescore": "Hold 56% \u2014 25 retested; AI-018 FAIL\u2192PARTIAL only; 4 FAIL open",
+    "clusterA": "24/24 PASS on 6486be87 \u2014 ACS-F01 + ACS-C01 cleared"
   },
   "strands": [
     {
@@ -139,14 +140,13 @@
     {
       "id": "command-centre",
       "name": "Command Centre acceptance",
-      "percent": 66,
+      "percent": 80,
       "basis": "Measured",
-      "status": "at-risk",
-      "plainSummary": "Cluster A Measured 22/24 on tip a263c4ab (was 20/24 on 232659cf). Fails now ACS-F01 + ACS-C01 only \u2014 MEM-X01, TAG-C01, TAG-A01 cleared. Teacher2 MGR-10 + ACS-X01 PASS. Clusters B\u2013F still locked pending Declan\u2019s approve/reject.",
-      "progressNote": "Measured 66% on a263c4ab \u2014 Cluster A 22/24; B\u2013F still locked.",
+      "status": "on-track",
+      "plainSummary": "Cluster A Measured 24/24 on tip 6486be87 (was 22/24 on a263c4ab). ACS-F01 and ACS-C01 now PASS. Teacher2 MGR-10 + ACS-X01 PASS via Agentmail. Clusters B\u2013F banks still await Declan wording ruling before scoring.",
+      "progressNote": "Cluster A Measured 24/24 on tip 6486be87 (was 22/24 on a263c4ab). ACS-F01 and ACS-C01 now PASS. Teacher2 MGR-10 + ACS-X01 PASS via Agentmail. Clusters B\u2013F banks still await Declan wording ruling before scoring.",
       "blockers": [
-        "Cluster A still FAIL: ACS-F01, ACS-C01",
-        "Clusters B\u2013F banks not approved/rejected by Declan"
+        "Clusters B\u2013F banks not approved/rejected by Declan (wording)"
       ],
       "detailDropIds": [
         "2026-09-11-command-centre-cluster-a-tip-a263c4ab-22-24",
@@ -368,9 +368,9 @@
     }
   ],
   "health": {
-    "overallLaunchPercent": 65,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 65% = round((52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) with half-up.",
-    "readinessLabel": "Not ready to launch \u2014 tip 6486be87. Headline 65% after Morning Dispatch viewer PASS (ambient 85\u219292). Dataset canary still FAIL (companyId 403). Cluster A / ISO / AI-85 still in flight. Comms secrets still blocked.",
+    "overallLaunchPercent": 66,
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 66% = round((52\u00d712 + 80\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) half-up.",
+    "readinessLabel": "Getting closer \u2014 tip 6486be87. Headline 66% after Cluster A 24/24 (Command Centre 80%) and Dispatch viewer PASS (ambient 92). Dataset canary still FAIL (companyId 403). ISO-29 retest still in flight. Comms secrets still blocked.",
     "plainSummary": "As of 2026-09-12T07:08:35.782Z (Europe/London 12 Sep 2026 ~08:08), launch readiness headline held at about 64%. Live tip moved a73ff70b \u2192 88d622ea. On this tip: #1262 smoke invite sign-in, #1263 QR landing, #1264 Command Centre Admin 2 identity, #1249 public-bundle PII removal. Strand percents NOT re-scored \u2014 retest pending. #1267 (studio admin pending invite create) is on GitHub staging (a3a0e207) but not yet on live /api/version.",
     "strengths": [
       "Cluster A Measured 22/24 on tip a263c4ab; Teacher2 MGR-10 + ACS-X01 PASS",
