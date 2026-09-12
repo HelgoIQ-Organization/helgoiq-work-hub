@@ -1,0 +1,1630 @@
+[
+  {
+    "route": "/admin",
+    "page_name": "Home"
+  },
+  {
+    "route": "/admin/academy",
+    "page_name": "Learning Management System"
+  },
+  {
+    "route": "/admin/academy/ai-settings",
+    "page_name": "AI Feature Settings"
+  },
+  {
+    "route": "/admin/academy/ai-tutor-analytics",
+    "page_name": "AI Tutor Analytics"
+  },
+  {
+    "route": "/admin/academy/ai-tutor-personality",
+    "page_name": "AI Tutor Personality"
+  },
+  {
+    "route": "/admin/academy/assessments",
+    "page_name": "Academy Assessments"
+  },
+  {
+    "route": "/admin/academy/automations",
+    "page_name": "Academy Automations"
+  },
+  {
+    "route": "/admin/academy/certificate-design",
+    "page_name": "Certificate Design"
+  },
+  {
+    "route": "/admin/academy/certificates",
+    "page_name": "Academy Certificates"
+  },
+  {
+    "route": "/admin/academy/class-tags",
+    "page_name": "Class Tags"
+  },
+  {
+    "route": "/admin/academy/cohort-tags",
+    "page_name": "Cohort Tags"
+  },
+  {
+    "route": "/admin/academy/commerce",
+    "page_name": "Academy Commerce"
+  },
+  {
+    "route": "/admin/academy/communications",
+    "page_name": "Academy Communications"
+  },
+  {
+    "route": "/admin/academy/community",
+    "page_name": "Academy Community"
+  },
+  {
+    "route": "/admin/academy/contracts",
+    "page_name": "Contracts"
+  },
+  {
+    "route": "/admin/academy/course-groups",
+    "page_name": "Course Groups"
+  },
+  {
+    "route": "/admin/academy/course-recordings",
+    "page_name": "Course Recordings"
+  },
+  {
+    "route": "/admin/academy/courses",
+    "page_name": "Academy Courses & Content"
+  },
+  {
+    "route": "/admin/academy/courses/:playbookId",
+    "page_name": "Academy Course Review"
+  },
+  {
+    "route": "/admin/academy/courses/:playbookId/edit",
+    "page_name": "Course Builder"
+  },
+  {
+    "route": "/admin/academy/discount-codes",
+    "page_name": "Discount Codes"
+  },
+  {
+    "route": "/admin/academy/exercises",
+    "page_name": "Exercises"
+  },
+  {
+    "route": "/admin/academy/financials",
+    "page_name": "Financials"
+  },
+  {
+    "route": "/admin/academy/import",
+    "page_name": "Academy Import & Reconciliation"
+  },
+  {
+    "route": "/admin/academy/import-content",
+    "page_name": "Import Content"
+  },
+  {
+    "route": "/admin/academy/import-students",
+    "page_name": "Import Learners"
+  },
+  {
+    "route": "/admin/academy/insights",
+    "page_name": "LMS Insights"
+  },
+  {
+    "route": "/admin/academy/invites",
+    "page_name": "Invites"
+  },
+  {
+    "route": "/admin/academy/learners",
+    "page_name": "Academy Learners & Progress"
+  },
+  {
+    "route": "/admin/academy/libraries",
+    "page_name": "Academy Content Libraries"
+  },
+  {
+    "route": "/admin/academy/news",
+    "page_name": "News"
+  },
+  {
+    "route": "/admin/academy/pricing",
+    "page_name": "Pricing"
+  },
+  {
+    "route": "/admin/academy/quizzes",
+    "page_name": "Quizzes"
+  },
+  {
+    "route": "/admin/academy/quizzes/:quizId",
+    "page_name": "Academy Assessment Review"
+  },
+  {
+    "route": "/admin/academy/reflections",
+    "page_name": "Reflections"
+  },
+  {
+    "route": "/admin/academy/reports",
+    "page_name": "Academy Reports"
+  },
+  {
+    "route": "/admin/academy/resources",
+    "page_name": "Resources"
+  },
+  {
+    "route": "/admin/academy/settings",
+    "page_name": "Academy Settings"
+  },
+  {
+    "route": "/admin/academy/teachers",
+    "page_name": "Academy Teacher Tools"
+  },
+  {
+    "route": "/admin/academy/terms",
+    "page_name": "Terms & Conditions"
+  },
+  {
+    "route": "/admin/academy/users",
+    "page_name": "Users"
+  },
+  {
+    "route": "/admin/acquisition",
+    "page_name": "Acquisition"
+  },
+  {
+    "route": "/admin/acquisition-intelligence",
+    "page_name": "Acquisition Intelligence"
+  },
+  {
+    "route": "/admin/action-effectiveness",
+    "page_name": "Action Effectiveness"
+  },
+  {
+    "route": "/admin/admin-invite-staff",
+    "page_name": "(redirect \u2192 /admin/staff-hub?tab=invitations)"
+  },
+  {
+    "route": "/admin/admin-roles",
+    "page_name": "(redirect \u2192 /admin/staff-hub?tab=access)"
+  },
+  {
+    "route": "/admin/ai-cost-dashboard",
+    "page_name": "AI Cost Dashboard"
+  },
+  {
+    "route": "/admin/ai-credits",
+    "page_name": "AICredits"
+  },
+  {
+    "route": "/admin/ai-decision-audit",
+    "page_name": "AI Decision Audit"
+  },
+  {
+    "route": "/admin/ai-feature-toggles",
+    "page_name": "AI Feature Controls"
+  },
+  {
+    "route": "/admin/ai-governance",
+    "page_name": "AI Governance"
+  },
+  {
+    "route": "/admin/ai-management-hub",
+    "page_name": "AI Management"
+  },
+  {
+    "route": "/admin/ai-operations-hub",
+    "page_name": "AI Operations"
+  },
+  {
+    "route": "/admin/ai-operations/health",
+    "page_name": "AI Operations Health"
+  },
+  {
+    "route": "/admin/ai-usage",
+    "page_name": "AI Usage"
+  },
+  {
+    "route": "/admin/analytics",
+    "page_name": "Analytics Dashboard"
+  },
+  {
+    "route": "/admin/anomaly-alerts",
+    "page_name": "AI Anomaly Detection"
+  },
+  {
+    "route": "/admin/appointment-policies",
+    "page_name": "(redirect \u2192 /admin/appointments-hub?tab=policies)"
+  },
+  {
+    "route": "/admin/appointment-types",
+    "page_name": "(redirect \u2192 /admin/appointments-hub?tab=types)"
+  },
+  {
+    "route": "/admin/appointments",
+    "page_name": "(redirect \u2192 /admin/appointments-hub)"
+  },
+  {
+    "route": "/admin/appointments-hub",
+    "page_name": "Appointment Setup"
+  },
+  {
+    "route": "/admin/assets",
+    "page_name": "Asset Library"
+  },
+  {
+    "route": "/admin/at-risk-revenue",
+    "page_name": "At-Risk Revenue"
+  },
+  {
+    "route": "/admin/audience-hub",
+    "page_name": "Audience Hub"
+  },
+  {
+    "route": "/admin/audience-intelligence",
+    "page_name": "AI Audience Intelligence"
+  },
+  {
+    "route": "/admin/audit-trail",
+    "page_name": "Audit Trail"
+  },
+  {
+    "route": "/admin/automation",
+    "page_name": "Automation Journeys"
+  },
+  {
+    "route": "/admin/badges",
+    "page_name": "Badges"
+  },
+  {
+    "route": "/admin/banners",
+    "page_name": "Banners"
+  },
+  {
+    "route": "/admin/billing",
+    "page_name": "Platform Billing"
+  },
+  {
+    "route": "/admin/birthdays",
+    "page_name": "Birthdays"
+  },
+  {
+    "route": "/admin/blog",
+    "page_name": "Blog Management"
+  },
+  {
+    "route": "/admin/blog-hub",
+    "page_name": "Blog Hub"
+  },
+  {
+    "route": "/admin/blog/:id/edit",
+    "page_name": "Blog Post Editor"
+  },
+  {
+    "route": "/admin/blog/ai-writer",
+    "page_name": "AI Blog Writer"
+  },
+  {
+    "route": "/admin/blog/categories",
+    "page_name": "Blog Categories"
+  },
+  {
+    "route": "/admin/blog/management",
+    "page_name": "Blog Management"
+  },
+  {
+    "route": "/admin/blog/new",
+    "page_name": "Blog Post Editor"
+  },
+  {
+    "route": "/admin/booking-messages",
+    "page_name": "Booking Messages"
+  },
+  {
+    "route": "/admin/bookkeeping",
+    "page_name": "Bookkeeping Inbox"
+  },
+  {
+    "route": "/admin/breach-process",
+    "page_name": "Breach Process"
+  },
+  {
+    "route": "/admin/business-insights",
+    "page_name": "AI Business Insights"
+  },
+  {
+    "route": "/admin/camio-live",
+    "page_name": "Live View"
+  },
+  {
+    "route": "/admin/camio-settings",
+    "page_name": "Camio Cameras"
+  },
+  {
+    "route": "/admin/campaign-composer",
+    "page_name": "AI Campaign Composer"
+  },
+  {
+    "route": "/admin/campaigns",
+    "page_name": "Campaigns"
+  },
+  {
+    "route": "/admin/campaigns/:id/edit",
+    "page_name": "Campaign Editor"
+  },
+  {
+    "route": "/admin/campaigns/:id/report",
+    "page_name": "Campaign Report"
+  },
+  {
+    "route": "/admin/campaigns/new",
+    "page_name": "Campaign Editor"
+  },
+  {
+    "route": "/admin/cancellation-reports",
+    "page_name": "Cancellation Reports"
+  },
+  {
+    "route": "/admin/card-expiry",
+    "page_name": "Card Expiry Watch"
+  },
+  {
+    "route": "/admin/cash-payment",
+    "page_name": "Cash Payments"
+  },
+  {
+    "route": "/admin/cash-report",
+    "page_name": "Cash Report"
+  },
+  {
+    "route": "/admin/cctv",
+    "page_name": "Cctv Viewer"
+  },
+  {
+    "route": "/admin/cctv-hub",
+    "page_name": "CCTV Hub"
+  },
+  {
+    "route": "/admin/cctv-settings",
+    "page_name": "Cctv Settings"
+  },
+  {
+    "route": "/admin/challenges",
+    "page_name": "Challenges"
+  },
+  {
+    "route": "/admin/changelog",
+    "page_name": "Platform Updates"
+  },
+  {
+    "route": "/admin/checkin-compliance",
+    "page_name": "Check-in Compliance"
+  },
+  {
+    "route": "/admin/checkins",
+    "page_name": "Check-Ins"
+  },
+  {
+    "route": "/admin/churn-prevention",
+    "page_name": "AI Churn Prevention"
+  },
+  {
+    "route": "/admin/class-filler",
+    "page_name": "AI Class Filler"
+  },
+  {
+    "route": "/admin/class-filler/campaign/:id",
+    "page_name": "Class Filler Campaign Detail"
+  },
+  {
+    "route": "/admin/class/:id",
+    "page_name": "Class Detail"
+  },
+  {
+    "route": "/admin/comm-management",
+    "page_name": "Communication Management"
+  },
+  {
+    "route": "/admin/command-centre",
+    "page_name": "AI Command Centre"
+  },
+  {
+    "route": "/admin/command-centre/agents",
+    "page_name": "Command Centre Agents"
+  },
+  {
+    "route": "/admin/command-centre/reporting",
+    "page_name": "AI Command Reporting"
+  },
+  {
+    "route": "/admin/command-centre/tasks",
+    "page_name": "Command Centre Tasks"
+  },
+  {
+    "route": "/admin/command-history",
+    "page_name": "Command History"
+  },
+  {
+    "route": "/admin/comms/intelligence",
+    "page_name": "Comms Intelligence"
+  },
+  {
+    "route": "/admin/comms/learning-registry",
+    "page_name": "Learning Registry"
+  },
+  {
+    "route": "/admin/comms/message-logs",
+    "page_name": "Message Logs"
+  },
+  {
+    "route": "/admin/comms/messaging-numbers",
+    "page_name": "Messaging Numbers"
+  },
+  {
+    "route": "/admin/comms/opt-outs",
+    "page_name": "Opt-Outs"
+  },
+  {
+    "route": "/admin/comms/wallet",
+    "page_name": "Messaging Wallet"
+  },
+  {
+    "route": "/admin/communications-hub",
+    "page_name": "Communications Hub"
+  },
+  {
+    "route": "/admin/community",
+    "page_name": "Community"
+  },
+  {
+    "route": "/admin/community-hub",
+    "page_name": "Community Hub"
+  },
+  {
+    "route": "/admin/community/events",
+    "page_name": "Community Events"
+  },
+  {
+    "route": "/admin/community/partner/:id",
+    "page_name": "Community Partner"
+  },
+  {
+    "route": "/admin/community/reporting",
+    "page_name": "Community Reporting"
+  },
+  {
+    "route": "/admin/compliance-hub",
+    "page_name": "Compliance & Governance"
+  },
+  {
+    "route": "/admin/connections",
+    "page_name": "Connections"
+  },
+  {
+    "route": "/admin/credit-liability",
+    "page_name": "Credit Liability"
+  },
+  {
+    "route": "/admin/crm",
+    "page_name": "CRM Pipeline"
+  },
+  {
+    "route": "/admin/crm-hub",
+    "page_name": "CRM Hub"
+  },
+  {
+    "route": "/admin/crm/automations",
+    "page_name": "Pipeline Automations"
+  },
+  {
+    "route": "/admin/crm/lead/:id",
+    "page_name": "Lead Detail"
+  },
+  {
+    "route": "/admin/custom-dashboards",
+    "page_name": "Custom Dashboards"
+  },
+  {
+    "route": "/admin/custom-dashboards/:dashboardId",
+    "page_name": "Custom Dashboard Canvas"
+  },
+  {
+    "route": "/admin/custom-dashboards/:dashboardId/charts/:chartId/edit",
+    "page_name": "Custom Chart Builder"
+  },
+  {
+    "route": "/admin/custom-dashboards/:dashboardId/charts/new",
+    "page_name": "Custom Chart Builder"
+  },
+  {
+    "route": "/admin/customer-voice-synthesis",
+    "page_name": "AI Customer Voice Synthesis"
+  },
+  {
+    "route": "/admin/daily-focus",
+    "page_name": "Daily Focus"
+  },
+  {
+    "route": "/admin/dashboard",
+    "page_name": "Home"
+  },
+  {
+    "route": "/admin/data-migration",
+    "page_name": "Data Migration"
+  },
+  {
+    "route": "/admin/decision-engine",
+    "page_name": "Decision Engine"
+  },
+  {
+    "route": "/admin/decision-weights",
+    "page_name": "Decision Engine Config"
+  },
+  {
+    "route": "/admin/devices",
+    "page_name": "Linked Devices"
+  },
+  {
+    "route": "/admin/discount-codes",
+    "page_name": "Discount Codes"
+  },
+  {
+    "route": "/admin/dispute-hub",
+    "page_name": "Dispute Hub"
+  },
+  {
+    "route": "/admin/disputes",
+    "page_name": "(redirect \u2192 /admin/dispute-hub)"
+  },
+  {
+    "route": "/admin/disputes/:id",
+    "page_name": "Dispute Route"
+  },
+  {
+    "route": "/admin/documents",
+    "page_name": "Document Inbox & Vault"
+  },
+  {
+    "route": "/admin/door-access",
+    "page_name": "Door Access"
+  },
+  {
+    "route": "/admin/door-access/alerts",
+    "page_name": "Access Alerts"
+  },
+  {
+    "route": "/admin/door-access/report",
+    "page_name": "Access Report"
+  },
+  {
+    "route": "/admin/escalation-settings",
+    "page_name": "Escalation Settings"
+  },
+  {
+    "route": "/admin/event-bus",
+    "page_name": "Event Bus"
+  },
+  {
+    "route": "/admin/executive-briefing",
+    "page_name": "Executive Briefing"
+  },
+  {
+    "route": "/admin/export-templates",
+    "page_name": "Export Templates"
+  },
+  {
+    "route": "/admin/feature-flags",
+    "page_name": "Feature Flags"
+  },
+  {
+    "route": "/admin/feature-management",
+    "page_name": "Feature Management"
+  },
+  {
+    "route": "/admin/finance-hub",
+    "page_name": "Finance Hub"
+  },
+  {
+    "route": "/admin/financial-forecasting",
+    "page_name": "AI Financial Forecasting"
+  },
+  {
+    "route": "/admin/forms",
+    "page_name": "Forms & Leads"
+  },
+  {
+    "route": "/admin/forms/:id/edit",
+    "page_name": "Form Builder"
+  },
+  {
+    "route": "/admin/forms/:id/submissions",
+    "page_name": "Form Submissions"
+  },
+  {
+    "route": "/admin/forms/new",
+    "page_name": "Form Builder"
+  },
+  {
+    "route": "/admin/gc-report",
+    "page_name": "GoCardless Report"
+  },
+  {
+    "route": "/admin/gdpr",
+    "page_name": "GDPR"
+  },
+  {
+    "route": "/admin/geo-heatmap",
+    "page_name": "Geo Heatmap"
+  },
+  {
+    "route": "/admin/gift-cards",
+    "page_name": "Gift Cards"
+  },
+  {
+    "route": "/admin/gocardless",
+    "page_name": "GoCardless"
+  },
+  {
+    "route": "/admin/google-hub-preview",
+    "page_name": "Google Hub Preview"
+  },
+  {
+    "route": "/admin/growth-rewards",
+    "page_name": "Growth Rewards Engine"
+  },
+  {
+    "route": "/admin/helgo-community",
+    "page_name": "Helgo Community"
+  },
+  {
+    "route": "/admin/holiday-calendar",
+    "page_name": "Holiday Calendar"
+  },
+  {
+    "route": "/admin/home-cards-preview",
+    "page_name": "Home cards preview"
+  },
+  {
+    "route": "/admin/implementation-checklist",
+    "page_name": "Implementation Checklist"
+  },
+  {
+    "route": "/admin/inbox",
+    "page_name": "Inbox"
+  },
+  {
+    "route": "/admin/instructor-ai-agents",
+    "page_name": "Instructor AI Agents"
+  },
+  {
+    "route": "/admin/instructor-observations",
+    "page_name": "Instructor Observations"
+  },
+  {
+    "route": "/admin/instructor-observations/:observationId",
+    "page_name": "Instructor Observation Form"
+  },
+  {
+    "route": "/admin/instructor-roi",
+    "page_name": "Instructor ROI"
+  },
+  {
+    "route": "/admin/instructor-teaching-insights",
+    "page_name": "Instructor Teaching Insights"
+  },
+  {
+    "route": "/admin/integrations",
+    "page_name": "Social Integrations"
+  },
+  {
+    "route": "/admin/intelligence-centre",
+    "page_name": "Intelligence Centre"
+  },
+  {
+    "route": "/admin/intelligence-impact",
+    "page_name": "Intelligence Impact"
+  },
+  {
+    "route": "/admin/intelligence/cohorts",
+    "page_name": "Subscription Cohorts"
+  },
+  {
+    "route": "/admin/intelligence/executive-briefing",
+    "page_name": "Executive Briefing"
+  },
+  {
+    "route": "/admin/intelligence/manager",
+    "page_name": "Intelligence Manager"
+  },
+  {
+    "route": "/admin/intelligence/mrr",
+    "page_name": "MRR Intelligence"
+  },
+  {
+    "route": "/admin/intelligence/my-actions",
+    "page_name": "My Actions"
+  },
+  {
+    "route": "/admin/intelligence/opportunities",
+    "page_name": "Opportunities"
+  },
+  {
+    "route": "/admin/invite-staff",
+    "page_name": "Invite Staff"
+  },
+  {
+    "route": "/admin/invite-staff-legacy",
+    "page_name": "(redirect \u2192 /admin/staff-hub?tab=invitations)"
+  },
+  {
+    "route": "/admin/invoicing",
+    "page_name": "Invoicing"
+  },
+  {
+    "route": "/admin/journey-analytics",
+    "page_name": "Journey Analytics"
+  },
+  {
+    "route": "/admin/journey-orchestrator",
+    "page_name": "Journey Orchestrator"
+  },
+  {
+    "route": "/admin/kiosk-config",
+    "page_name": "Kiosk Config"
+  },
+  {
+    "route": "/admin/launcher-redesign-preview",
+    "page_name": "Launcher redesign preview"
+  },
+  {
+    "route": "/admin/learning-engine",
+    "page_name": "Learning Engine"
+  },
+  {
+    "route": "/admin/live-support",
+    "page_name": "Live Support"
+  },
+  {
+    "route": "/admin/location-intelligence",
+    "page_name": "Location Intelligence"
+  },
+  {
+    "route": "/admin/marketing",
+    "page_name": "Acquisition"
+  },
+  {
+    "route": "/admin/meeting-capture",
+    "page_name": "Meeting Capturer"
+  },
+  {
+    "route": "/admin/member-digital-twin",
+    "page_name": "AI Member Digital Twin"
+  },
+  {
+    "route": "/admin/member-feedback",
+    "page_name": "Member Feedback"
+  },
+  {
+    "route": "/admin/member-health-score",
+    "page_name": "Member Health Scores"
+  },
+  {
+    "route": "/admin/members",
+    "page_name": "Members"
+  },
+  {
+    "route": "/admin/meta-autopilot",
+    "page_name": "(redirect \u2192 /admin/meta-hub?tab=builder)"
+  },
+  {
+    "route": "/admin/meta-connection",
+    "page_name": "(redirect \u2192 /admin/meta-hub?tab=connection)"
+  },
+  {
+    "route": "/admin/meta-hub",
+    "page_name": "Meta Hub"
+  },
+  {
+    "route": "/admin/meta-hub-preview",
+    "page_name": "Meta Hub Preview"
+  },
+  {
+    "route": "/admin/migration",
+    "page_name": "Website Migration"
+  },
+  {
+    "route": "/admin/migration-dashboard",
+    "page_name": "Migration Dashboard"
+  },
+  {
+    "route": "/admin/migration/:id/import",
+    "page_name": "Migration Import Wizard Page"
+  },
+  {
+    "route": "/admin/migration/:id/mapping",
+    "page_name": "Migration Page Mapping"
+  },
+  {
+    "route": "/admin/migration/:id/pre-launch",
+    "page_name": "Migration Pre Launch"
+  },
+  {
+    "route": "/admin/migration/:id/redirects",
+    "page_name": "Migration Redirects"
+  },
+  {
+    "route": "/admin/milestone-club",
+    "page_name": "Milestone Club"
+  },
+  {
+    "route": "/admin/milestone-report",
+    "page_name": "Milestone Report"
+  },
+  {
+    "route": "/admin/milestones",
+    "page_name": "Milestone Management"
+  },
+  {
+    "route": "/admin/milestones-hub",
+    "page_name": "Milestones Hub"
+  },
+  {
+    "route": "/admin/monthly-review",
+    "page_name": "Monthly Review"
+  },
+  {
+    "route": "/admin/morning-dispatch",
+    "page_name": "Morning Dispatch"
+  },
+  {
+    "route": "/admin/multichannel",
+    "page_name": "Multi-channel"
+  },
+  {
+    "route": "/admin/my-actions",
+    "page_name": "My Actions"
+  },
+  {
+    "route": "/admin/navigation-preview",
+    "page_name": "Navigation Preview"
+  },
+  {
+    "route": "/admin/new-vs-returning",
+    "page_name": "New vs Returning Clients"
+  },
+  {
+    "route": "/admin/news",
+    "page_name": "News"
+  },
+  {
+    "route": "/admin/newsletter-analytics",
+    "page_name": "(redirect \u2192 /admin/newsletter-hub?tab=analytics)"
+  },
+  {
+    "route": "/admin/newsletter-analytics-legacy",
+    "page_name": "(redirect \u2192 /admin/newsletter-hub?tab=analytics)"
+  },
+  {
+    "route": "/admin/newsletter-creator",
+    "page_name": "(redirect \u2192 /admin/newsletter-hub?tab=create)"
+  },
+  {
+    "route": "/admin/newsletter-creator-legacy",
+    "page_name": "(redirect \u2192 /admin/newsletter-hub?tab=create)"
+  },
+  {
+    "route": "/admin/newsletter-hub",
+    "page_name": "Newsletter Hub"
+  },
+  {
+    "route": "/admin/onboarding",
+    "page_name": "Member Onboarding"
+  },
+  {
+    "route": "/admin/open-banking",
+    "page_name": "Open Banking"
+  },
+  {
+    "route": "/admin/org-intelligence",
+    "page_name": "Org Intelligence"
+  },
+  {
+    "route": "/admin/org-intelligence/accountability",
+    "page_name": "Org Accountability"
+  },
+  {
+    "route": "/admin/org-intelligence/staff/:staffId",
+    "page_name": "Org Intelligence Staff Profile"
+  },
+  {
+    "route": "/admin/override-audit-log",
+    "page_name": "Override Audit Log"
+  },
+  {
+    "route": "/admin/overview",
+    "page_name": "Studio Overview"
+  },
+  {
+    "route": "/admin/payroll",
+    "page_name": "Invoicing"
+  },
+  {
+    "route": "/admin/performance-intelligence",
+    "page_name": "Performance Intelligence"
+  },
+  {
+    "route": "/admin/personal-messages",
+    "page_name": "Personal Messages"
+  },
+  {
+    "route": "/admin/platform-connections",
+    "page_name": "Connections"
+  },
+  {
+    "route": "/admin/platform-dashboard",
+    "page_name": "Platform Overview"
+  },
+  {
+    "route": "/admin/platform-devices",
+    "page_name": "Devices"
+  },
+  {
+    "route": "/admin/platform-issues",
+    "page_name": "Live Issue Tracker"
+  },
+  {
+    "route": "/admin/platform-knowledge",
+    "page_name": "Knowledge Library"
+  },
+  {
+    "route": "/admin/platform-plans",
+    "page_name": "Platform Plans & Pricing"
+  },
+  {
+    "route": "/admin/platform-sales",
+    "page_name": "Platform Sales CRM"
+  },
+  {
+    "route": "/admin/platform-sales/demos",
+    "page_name": "Demo Calendar"
+  },
+  {
+    "route": "/admin/platform-scaling",
+    "page_name": "Platform Scaling"
+  },
+  {
+    "route": "/admin/platform-training-hub",
+    "page_name": "Training Hub Adoption"
+  },
+  {
+    "route": "/admin/platform-videos",
+    "page_name": "Platform Videos"
+  },
+  {
+    "route": "/admin/platform/safe-studio",
+    "page_name": "Safe Studio Platform Adoption"
+  },
+  {
+    "route": "/admin/platform/safe-studio/tenants",
+    "page_name": "Safe Studio Tenant Adoption"
+  },
+  {
+    "route": "/admin/platform/safe-studio/users",
+    "page_name": "Safe Studio User Adoption"
+  },
+  {
+    "route": "/admin/platform/stripe-connect",
+    "page_name": "Stripe Connect"
+  },
+  {
+    "route": "/admin/popups",
+    "page_name": "Pop-ups"
+  },
+  {
+    "route": "/admin/pos-hub",
+    "page_name": "POS Kiosk Hub"
+  },
+  {
+    "route": "/admin/post-class-intelligence",
+    "page_name": "Post-Class Intelligence"
+  },
+  {
+    "route": "/admin/predictive-cash-flow",
+    "page_name": "AI Predictive Cash Flow"
+  },
+  {
+    "route": "/admin/products",
+    "page_name": "Products & Pricing"
+  },
+  {
+    "route": "/admin/progress-guides",
+    "page_name": "Progress Guides"
+  },
+  {
+    "route": "/admin/progress-guides/:id",
+    "page_name": "Progress Guide Editor"
+  },
+  {
+    "route": "/admin/pt-packages",
+    "page_name": "PT Packages"
+  },
+  {
+    "route": "/admin/qr-generator",
+    "page_name": "QR Code Generator"
+  },
+  {
+    "route": "/admin/qr-generator/:id/analytics",
+    "page_name": "Qr Generator Analytics"
+  },
+  {
+    "route": "/admin/qr-generator/:id/customize",
+    "page_name": "Qr Generator Customize"
+  },
+  {
+    "route": "/admin/qr-generator/:id/edit",
+    "page_name": "Qr Generator Edit"
+  },
+  {
+    "route": "/admin/qr-generator/new",
+    "page_name": "Create QR Code"
+  },
+  {
+    "route": "/admin/quarterly-review",
+    "page_name": "Quarterly Review"
+  },
+  {
+    "route": "/admin/recommendation-tracker",
+    "page_name": "Recommendation Tracker"
+  },
+  {
+    "route": "/admin/recordings",
+    "page_name": "Recordings"
+  },
+  {
+    "route": "/admin/recovery-calendar",
+    "page_name": "(redirect \u2192 /admin/recovery-hub?tab=calendar)"
+  },
+  {
+    "route": "/admin/recovery-hub",
+    "page_name": "Recovery"
+  },
+  {
+    "route": "/admin/recovery-reporting",
+    "page_name": "(redirect \u2192 /admin/recovery-hub?tab=reporting)"
+  },
+  {
+    "route": "/admin/referral-dashboard",
+    "page_name": "(redirect \u2192 /admin/referral-hub)"
+  },
+  {
+    "route": "/admin/referral-hub",
+    "page_name": "Referral Programme"
+  },
+  {
+    "route": "/admin/referral-report",
+    "page_name": "Referral Analytics"
+  },
+  {
+    "route": "/admin/referral-report-legacy",
+    "page_name": "(redirect \u2192 /admin/referral-hub)"
+  },
+  {
+    "route": "/admin/referral-report-old",
+    "page_name": "(redirect \u2192 /admin/referral-hub)"
+  },
+  {
+    "route": "/admin/referrals",
+    "page_name": "(redirect \u2192 /admin/referral-hub)"
+  },
+  {
+    "route": "/admin/refunds",
+    "page_name": "Refunds"
+  },
+  {
+    "route": "/admin/related-contacts",
+    "page_name": "Related Contacts"
+  },
+  {
+    "route": "/admin/reporting",
+    "page_name": "Reporting"
+  },
+  {
+    "route": "/admin/reports",
+    "page_name": "Reports Hub"
+  },
+  {
+    "route": "/admin/reports-hub",
+    "page_name": "Reports Hub"
+  },
+  {
+    "route": "/admin/reports/:reportId",
+    "page_name": "Report Detail"
+  },
+  {
+    "route": "/admin/resources",
+    "page_name": "Resources"
+  },
+  {
+    "route": "/admin/resources/acknowledgements",
+    "page_name": "Acknowledgements"
+  },
+  {
+    "route": "/admin/retention",
+    "page_name": "Retention"
+  },
+  {
+    "route": "/admin/retention-hub",
+    "page_name": "Retention Hub"
+  },
+  {
+    "route": "/admin/retention-sequences",
+    "page_name": "Retention Sequences"
+  },
+  {
+    "route": "/admin/retreat-bookings",
+    "page_name": "Retreat Bookings"
+  },
+  {
+    "route": "/admin/retreat-enquiries",
+    "page_name": "Retreat Enquiries"
+  },
+  {
+    "route": "/admin/retreat-financials",
+    "page_name": "Retreat Financials"
+  },
+  {
+    "route": "/admin/retreat-venues",
+    "page_name": "Retreat Venues"
+  },
+  {
+    "route": "/admin/retreats",
+    "page_name": "Retreats"
+  },
+  {
+    "route": "/admin/retreats-hub",
+    "page_name": "Retreats Hub"
+  },
+  {
+    "route": "/admin/retreats/:id",
+    "page_name": "Retreat Route"
+  },
+  {
+    "route": "/admin/retreats/:id/edit",
+    "page_name": "Retreat Form"
+  },
+  {
+    "route": "/admin/revenue-intelligence",
+    "page_name": "AI Revenue Intelligence"
+  },
+  {
+    "route": "/admin/roadmap",
+    "page_name": "Product Roadmap"
+  },
+  {
+    "route": "/admin/roles",
+    "page_name": "Roles & Access"
+  },
+  {
+    "route": "/admin/roles-legacy",
+    "page_name": "(redirect \u2192 /admin/staff-hub?tab=access)"
+  },
+  {
+    "route": "/admin/rota-builder",
+    "page_name": "Rota Builder"
+  },
+  {
+    "route": "/admin/rota-hub",
+    "page_name": "(redirect \u2192 /admin/staff-hub?tab=rota)"
+  },
+  {
+    "route": "/admin/rota-reporting",
+    "page_name": "Rota Reporting"
+  },
+  {
+    "route": "/admin/rota-reporting-legacy",
+    "page_name": "Rota Reporting (Legacy)"
+  },
+  {
+    "route": "/admin/rota-sharing",
+    "page_name": "(redirect \u2192 /admin/staff-hub?tab=rota&rotaTab=sharing)"
+  },
+  {
+    "route": "/admin/rota-sharing-legacy",
+    "page_name": "(redirect \u2192 /admin/staff-hub?tab=rota&rotaTab=sharing)"
+  },
+  {
+    "route": "/admin/safe-studio",
+    "page_name": "Safe Studio"
+  },
+  {
+    "route": "/admin/safe-studio/compliance",
+    "page_name": "Safe Studio Checks & Compliance"
+  },
+  {
+    "route": "/admin/safe-studio/documents",
+    "page_name": "Safe Studio Documents"
+  },
+  {
+    "route": "/admin/safe-studio/governance",
+    "page_name": "Safe Studio Communications & Audit"
+  },
+  {
+    "route": "/admin/safe-studio/insights",
+    "page_name": "Safe Studio Insights"
+  },
+  {
+    "route": "/admin/safe-studio/inspections",
+    "page_name": "Safe Studio Inspection Setup"
+  },
+  {
+    "route": "/admin/safe-studio/operations",
+    "page_name": "Safe Studio Faults & Incidents"
+  },
+  {
+    "route": "/admin/safe-studio/people",
+    "page_name": "Safe Studio People & Suppliers"
+  },
+  {
+    "route": "/admin/safe-studio/reports",
+    "page_name": "Safe Studio Search & Reports"
+  },
+  {
+    "route": "/admin/safe-studio/risk",
+    "page_name": "Safe Studio Risk & Statutory Compliance"
+  },
+  {
+    "route": "/admin/safe-studio/settings",
+    "page_name": "Safe Studio Configuration"
+  },
+  {
+    "route": "/admin/safe-studio/team",
+    "page_name": "Safe Studio Team Activity"
+  },
+  {
+    "route": "/admin/screen-ai",
+    "page_name": "AI Screen Content"
+  },
+  {
+    "route": "/admin/screen-content",
+    "page_name": "Content Library"
+  },
+  {
+    "route": "/admin/screen-content/builder",
+    "page_name": "Content Builder"
+  },
+  {
+    "route": "/admin/screen-health",
+    "page_name": "Screen Health"
+  },
+  {
+    "route": "/admin/screen-integrations",
+    "page_name": "Screen Integrations"
+  },
+  {
+    "route": "/admin/screen-playlists",
+    "page_name": "Playlists"
+  },
+  {
+    "route": "/admin/screen-reporting",
+    "page_name": "Screen Reporting"
+  },
+  {
+    "route": "/admin/screen-schedules",
+    "page_name": "Screen Schedules"
+  },
+  {
+    "route": "/admin/screen-templates",
+    "page_name": "Screen Templates"
+  },
+  {
+    "route": "/admin/screens",
+    "page_name": "Screens (legacy)"
+  },
+  {
+    "route": "/admin/screens-hub",
+    "page_name": "Screens Hub"
+  },
+  {
+    "route": "/admin/security-alerts",
+    "page_name": "Security Alerts"
+  },
+  {
+    "route": "/admin/security-dashboard",
+    "page_name": "Security Dashboard"
+  },
+  {
+    "route": "/admin/security-hub",
+    "page_name": "Security Hub"
+  },
+  {
+    "route": "/admin/seed-data",
+    "page_name": "Seed Data"
+  },
+  {
+    "route": "/admin/segments",
+    "page_name": "Customer Segments"
+  },
+  {
+    "route": "/admin/sentiment-analysis",
+    "page_name": "AI Sentiment Analysis"
+  },
+  {
+    "route": "/admin/sentry",
+    "page_name": "Sentry"
+  },
+  {
+    "route": "/admin/seo",
+    "page_name": "SEO Controls"
+  },
+  {
+    "route": "/admin/setup",
+    "page_name": "Setup"
+  },
+  {
+    "route": "/admin/setup-hub",
+    "page_name": "Setup Hub"
+  },
+  {
+    "route": "/admin/setup/wizard",
+    "page_name": "Setup Wizard"
+  },
+  {
+    "route": "/admin/smart-folder-reports",
+    "page_name": "Smart Folder Reports"
+  },
+  {
+    "route": "/admin/social",
+    "page_name": "Social Media"
+  },
+  {
+    "route": "/admin/social-hub",
+    "page_name": "Social Hub"
+  },
+  {
+    "route": "/admin/social/advocacy-queue",
+    "page_name": "Review Identity Queue"
+  },
+  {
+    "route": "/admin/social/competitors",
+    "page_name": "(redirect \u2192 /admin/social-hub?tab=competitors)"
+  },
+  {
+    "route": "/admin/social/conversions",
+    "page_name": "Conversion Tracking"
+  },
+  {
+    "route": "/admin/social/google-ads",
+    "page_name": "Google Ads"
+  },
+  {
+    "route": "/admin/social/gtm",
+    "page_name": "GTM & Tracking"
+  },
+  {
+    "route": "/admin/social/instagram",
+    "page_name": "Instagram Insights"
+  },
+  {
+    "route": "/admin/social/integrations",
+    "page_name": "Integrations"
+  },
+  {
+    "route": "/admin/social/meta-ads",
+    "page_name": "(redirect \u2192 /admin/meta-hub?tab=ads)"
+  },
+  {
+    "route": "/admin/social/planner",
+    "page_name": "(redirect \u2192 /admin/social-hub?tab=planner)"
+  },
+  {
+    "route": "/admin/social/reviews",
+    "page_name": "Reviews"
+  },
+  {
+    "route": "/admin/software-guides",
+    "page_name": "Software Guides"
+  },
+  {
+    "route": "/admin/splash-screens",
+    "page_name": "Splash Screens"
+  },
+  {
+    "route": "/admin/staff",
+    "page_name": "(redirect \u2192 /admin/staff-hub)"
+  },
+  {
+    "route": "/admin/staff-availability",
+    "page_name": "Staff Availability"
+  },
+  {
+    "route": "/admin/staff-employment",
+    "page_name": "Staff Employment"
+  },
+  {
+    "route": "/admin/staff-hub",
+    "page_name": "Rota"
+  },
+  {
+    "route": "/admin/staff-milestones",
+    "page_name": "Staff Milestones"
+  },
+  {
+    "route": "/admin/staff-team-report",
+    "page_name": "(redirect \u2192 /admin/staff-hub)"
+  },
+  {
+    "route": "/admin/staff/:userId",
+    "page_name": "Staff Route"
+  },
+  {
+    "route": "/admin/staff/:userId/observations/new",
+    "page_name": "Instructor Observation Form"
+  },
+  {
+    "route": "/admin/stripe-connect",
+    "page_name": "Stripe Connect"
+  },
+  {
+    "route": "/admin/studio-intelligence",
+    "page_name": "Executive Intelligence Hub"
+  },
+  {
+    "route": "/admin/studio-pulse",
+    "page_name": "Studio Pulse"
+  },
+  {
+    "route": "/admin/studio-state",
+    "page_name": "Studio State"
+  },
+  {
+    "route": "/admin/system-blueprint",
+    "page_name": "System Blueprint"
+  },
+  {
+    "route": "/admin/system-health",
+    "page_name": "System Health"
+  },
+  {
+    "route": "/admin/tag-hub",
+    "page_name": "Tag Hub"
+  },
+  {
+    "route": "/admin/tag-intelligence",
+    "page_name": "AI Tag Intelligence"
+  },
+  {
+    "route": "/admin/tag-management",
+    "page_name": "Tag Management"
+  },
+  {
+    "route": "/admin/tasks",
+    "page_name": "Tasks"
+  },
+  {
+    "route": "/admin/team",
+    "page_name": "Team Report"
+  },
+  {
+    "route": "/admin/team-calendar",
+    "page_name": "Team Calendar"
+  },
+  {
+    "route": "/admin/team-chat",
+    "page_name": "Team Chat"
+  },
+  {
+    "route": "/admin/team-comms-hub",
+    "page_name": "Team Comms Hub"
+  },
+  {
+    "route": "/admin/team-holidays",
+    "page_name": "Team Holidays"
+  },
+  {
+    "route": "/admin/team-legacy",
+    "page_name": "(redirect \u2192 /admin/staff-hub?tab=team)"
+  },
+  {
+    "route": "/admin/team-polls",
+    "page_name": "Team Polls"
+  },
+  {
+    "route": "/admin/tenant-management",
+    "page_name": "Tenant Management"
+  },
+  {
+    "route": "/admin/timetable",
+    "page_name": "Timetable"
+  },
+  {
+    "route": "/admin/training-hub",
+    "page_name": "Training Hub"
+  },
+  {
+    "route": "/admin/trial-conversion",
+    "page_name": "AI Trial Conversion"
+  },
+  {
+    "route": "/admin/video-guides",
+    "page_name": "Platform Videos"
+  },
+  {
+    "route": "/admin/view-as-member",
+    "page_name": "View as Member"
+  },
+  {
+    "route": "/admin/visual-intelligence-showcase",
+    "page_name": "Visual Intelligence Showcase"
+  },
+  {
+    "route": "/admin/walkthrough-manager",
+    "page_name": "Walkthrough Manager"
+  },
+  {
+    "route": "/admin/wallet-passes",
+    "page_name": "Wallet Passes"
+  },
+  {
+    "route": "/admin/webhooks",
+    "page_name": "Webhooks"
+  },
+  {
+    "route": "/admin/website",
+    "page_name": "Website Management"
+  },
+  {
+    "route": "/admin/website-hub",
+    "page_name": "Website Hub"
+  },
+  {
+    "route": "/admin/website/ai-builder",
+    "page_name": "AI Page Builder"
+  },
+  {
+    "route": "/admin/website/approval-hub",
+    "page_name": "Approval Hub"
+  },
+  {
+    "route": "/admin/website/editor/:id",
+    "page_name": "Website Page Editor"
+  },
+  {
+    "route": "/admin/website/health",
+    "page_name": "Website Health"
+  },
+  {
+    "route": "/admin/website/import",
+    "page_name": "Bring my site"
+  },
+  {
+    "route": "/admin/website/navigation",
+    "page_name": "Navigation"
+  },
+  {
+    "route": "/admin/website/preview/:id",
+    "page_name": "Website Page Preview"
+  },
+  {
+    "route": "/admin/website/styles",
+    "page_name": "Global Styles"
+  },
+  {
+    "route": "/admin/weekly-digest",
+    "page_name": "Weekly Learning Digest"
+  },
+  {
+    "route": "/admin/weekly-growth-brief",
+    "page_name": "AI Weekly Growth Brief"
+  },
+  {
+    "route": "/admin/what-we-learned",
+    "page_name": "What We've Learned"
+  },
+  {
+    "route": "/admin/whats-new-tours",
+    "page_name": "What's New Tours"
+  },
+  {
+    "route": "/admin/white-label",
+    "page_name": "White Label"
+  },
+  {
+    "route": "/admin/workforce-intelligence",
+    "page_name": "Workforce Intelligence"
+  }
+]

@@ -1,42 +1,54 @@
 {
-  "generatedAt": "2026-09-11T19:30:50.300Z",
-  "liveTip": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+  "generatedAt": "2026-09-12T07:14:12.229Z",
+  "liveTip": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
   "liveTipPlaceholder": false,
-  "liveTipShort": "a73ff70b",
+  "liveTipShort": "88d622ea",
   "audience": "admin",
   "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
   "platformMenuTip": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
   "bundle407": {
     "present": true,
-    "source": "coverage/sources/_routes_from_bundle.txt",
-    "adminRouteCount": 328,
+    "source": "coverage/sources/cursor-census-admin.json (#1217 File 1)",
+    "adminRouteCount": 407,
     "expectedBundleCount": 407
   },
   "counts": {
-    "total": 334,
-    "menu": 233,
-    "matched": 232,
-    "hubOnly": 1,
-    "orphaned": 101,
+    "total": 413,
+    "menu": 228,
+    "matched": 227,
+    "hubOnly": 156,
+    "orphaned": 30,
     "fullyTested": 0,
     "partiallyTested": 0,
     "blocked": 0,
-    "failed": 6,
-    "notTested": 328,
-    "stale": 4
+    "failed": 18,
+    "notTested": 395,
+    "stale": 16,
+    "byReachability": {
+      "SIDEBAR": 218,
+      "SIDEBAR, DOCK": 4,
+      "MENU_ONLY": 5,
+      "PATH DEFECT": 1,
+      "SEARCH ONLY": 100,
+      "LINK ONLY": 55,
+      "ORPHANED": 30
+    }
   },
-  "completenessStatement": "How we verified completeness: intersection of the product sidebar map (HelgoIQ-Platform client/src/lib/adminMenuCatalog.ts + AdminNav adminMenuItems — 233 menu paths) vs the 407-route orphan audit admin subset (328 /admin paths from coverage/sources/_routes_from_bundle.txt). Counts: 232 matched (in sidebar and in the router/407 side), 1 hub-only (sidebar/menu path with no matching 407/router row), 101 orphaned (407/router path with no menu breadcrumb). SURFACES.md / full-census inventory was not in this hub repo; breadcrumbs use workspace › folder › title from the live AdminNav folder map. Most pages are not_tested — we do not invent PASS rates. Known FAIL/BLOCKED rows are stamped only when a hub drop already named that route.",
+  "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
   "sourcesUsed": {
     "adminMenu": "coverage/sources/admin-menu.json",
     "folders": "coverage/sources/folders.json",
     "workspaces": "coverage/sources/workspaces.json",
     "routerExtras": true,
     "routes407": "coverage/sources/_routes_from_bundle.txt",
-    "coverageJson": true
+    "coverageJson": true,
+    "cursorCensus": "coverage/sources/cursor-census-admin.json"
   },
   "notes": [
     "Admin ships first. Platform owner / Teacher / Client are placeholders.",
     "Feed coverage/sources/_routes_from_bundle.txt to reconcile against the Cursor 407 orphan list.",
     "Never invent greens. Prefer not_tested over a guessed PASS."
-  ]
+  ],
+  "reconciledAt": "2026-09-12T07:30:00Z",
+  "reconcileIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1217"
 }

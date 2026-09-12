@@ -1611,9 +1611,12 @@
         stateHtml += '<div class="muted cov-reason">' + escapeHtml(p.blockedBy) + "</div>";
       }
 
-      const crumb = p.orphaned || p.breadcrumb === "ORPHANED"
+      const reach = p.reachability
+        ? '<div class="cov-reach muted">' + escapeHtml(p.reachability) + "</div>"
+        : "";
+      const crumb = (p.orphaned || p.breadcrumb === "ORPHANED"
         ? '<span class="cov-orphan">ORPHANED</span>'
-        : escapeHtml(p.breadcrumb || "—");
+        : escapeHtml(p.breadcrumb || "—")) + reach;
 
       const stamp = p.lastTestedStamp
         ? '<span class="cov-stamp ' +

@@ -1,0 +1,4076 @@
+{
+  "sha": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+  "source": "#1217 File 1 comments",
+  "rows": [
+    {
+      "route": "/admin",
+      "page_name": "Home",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy",
+      "page_name": "Learning Management System",
+      "same_as": "/admin/academy/course-groups, /admin/academy/courses",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Overview \u203a Overview",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/ai-settings",
+      "page_name": "AI Feature Settings",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Lms Settings \u203a AI features",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/ai-tutor-analytics",
+      "page_name": "AI Tutor Analytics",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Lms Settings \u203a AI analytics",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/ai-tutor-personality",
+      "page_name": "AI Tutor Personality",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Lms Settings \u203a AI personality",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/assessments",
+      "page_name": "Academy Assessments",
+      "same_as": "/admin/academy/quizzes",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Teachers \u203a Assessments",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/automations",
+      "page_name": "Academy Automations",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Lms Automations \u203a Automations",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/certificate-design",
+      "page_name": "Certificate Design",
+      "same_as": "/admin/academy/certificates",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Certificates \u203a Design",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/certificates",
+      "page_name": "Academy Certificates",
+      "same_as": "/admin/academy/certificate-design",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Certificates \u203a Certificates",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/class-tags",
+      "page_name": "Class Tags",
+      "same_as": "/admin/academy/cohort-tags, /admin/academy/settings, /admin/academy/terms",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Courses \u203a Class tags",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/cohort-tags",
+      "page_name": "Cohort Tags",
+      "same_as": "/admin/academy/class-tags, /admin/academy/settings, /admin/academy/terms",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Courses \u203a Cohort tags",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/commerce",
+      "page_name": "Academy Commerce",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Commerce \u203a Commerce",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/communications",
+      "page_name": "Academy Communications",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Lms Communications \u203a Communications",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/community",
+      "page_name": "Academy Community",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Community \u203a Community",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/contracts",
+      "page_name": "Contracts",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Commerce \u203a Contracts",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/course-groups",
+      "page_name": "Course Groups",
+      "same_as": "/admin/academy, /admin/academy/courses",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Courses \u203a Groups",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/course-recordings",
+      "page_name": "Course Recordings",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Courses \u203a Recordings",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/courses",
+      "page_name": "Academy Courses & Content",
+      "same_as": "/admin/academy, /admin/academy/course-groups",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Courses \u203a Courses",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/courses/:playbookId",
+      "page_name": "Academy Course Review",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Academy Course Review",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/courses/:playbookId/edit",
+      "page_name": "Course Builder",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary, AcademyCourseBuilder",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/discount-codes",
+      "page_name": "Discount Codes",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Commerce \u203a Discounts",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/exercises",
+      "page_name": "Exercises",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Courses \u203a Exercises",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/financials",
+      "page_name": "Financials",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Commerce \u203a Financials",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/import",
+      "page_name": "Academy Import & Reconciliation",
+      "same_as": "/admin/academy/import-content, /admin/academy/import-students",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Lms Settings \u203a Import",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/import-content",
+      "page_name": "Import Content",
+      "same_as": "/admin/academy/import, /admin/academy/import-students",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Lms Settings \u203a Import content",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/import-students",
+      "page_name": "Import Learners",
+      "same_as": "/admin/academy/import, /admin/academy/import-content",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Learners \u203a Import",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/insights",
+      "page_name": "LMS Insights",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Lms Settings \u203a Insights",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/invites",
+      "page_name": "Invites",
+      "same_as": "/admin/academy/reflections, /admin/academy/teachers",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Learners \u203a Invites",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/learners",
+      "page_name": "Academy Learners & Progress",
+      "same_as": "/admin/academy/users",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Learners \u203a Progress",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/libraries",
+      "page_name": "Academy Content Libraries",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Libraries \u203a Libraries",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/news",
+      "page_name": "News",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Courses \u203a News",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/pricing",
+      "page_name": "Pricing",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Commerce \u203a Pricing",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/quizzes",
+      "page_name": "Quizzes",
+      "same_as": "/admin/academy/assessments",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Courses \u203a Quizzes",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/quizzes/:quizId",
+      "page_name": "Academy Assessment Review",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Academy Assessment Review",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/reflections",
+      "page_name": "Reflections",
+      "same_as": "/admin/academy/invites, /admin/academy/teachers",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Teachers \u203a Reflections",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/reports",
+      "page_name": "Academy Reports",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Lms Settings \u203a Reports",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/resources",
+      "page_name": "Resources",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Courses \u203a Resources",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/settings",
+      "page_name": "Academy Settings",
+      "same_as": "/admin/academy/class-tags, /admin/academy/cohort-tags, /admin/academy/terms",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Lms Settings \u203a Settings",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/teachers",
+      "page_name": "Academy Teacher Tools",
+      "same_as": "/admin/academy/invites, /admin/academy/reflections",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Teachers \u203a Tools",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/terms",
+      "page_name": "Terms & Conditions",
+      "same_as": "/admin/academy/class-tags, /admin/academy/cohort-tags, /admin/academy/settings",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Commerce \u203a Terms",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/academy/users",
+      "page_name": "Users",
+      "same_as": "/admin/academy/learners",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Academy \u203a Learners \u203a Users",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/acquisition",
+      "page_name": "Acquisition",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Acquisition",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/acquisition-intelligence",
+      "page_name": "Acquisition Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a CRM \u203a Acquisition intel",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/action-effectiveness",
+      "page_name": "Action Effectiveness",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Pulse \u203a Effectiveness",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/admin-invite-staff",
+      "page_name": "(redirect \u2192 /admin/staff-hub?tab=invitations)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/staff-hub?tab=invitations",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/admin-roles",
+      "page_name": "(redirect \u2192 /admin/staff-hub?tab=access)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/staff-hub?tab=access",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/ai-cost-dashboard",
+      "page_name": "AI Cost Dashboard",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a AI Cost Dashboard",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/ai-credits",
+      "page_name": "AICredits",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "(type the URL)",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/ai-decision-audit",
+      "page_name": "AI Decision Audit",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Governance \u203a Decision audit",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/ai-feature-toggles",
+      "page_name": "AI Feature Controls",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a AI Feature Controls",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/ai-governance",
+      "page_name": "AI Governance",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Ai \u203a Governance",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/ai-management-hub",
+      "page_name": "AI Management",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Ai \u203a Management",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/ai-operations-hub",
+      "page_name": "AI Operations",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a AI Operations",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/ai-operations/health",
+      "page_name": "AI Operations Health",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Ai \u203a Health",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/ai-usage",
+      "page_name": "AI Usage",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Ai \u203a Usage",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/analytics",
+      "page_name": "Analytics Dashboard",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Analytics",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/anomaly-alerts",
+      "page_name": "AI Anomaly Detection",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Reports \u203a Anomalies",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/appointment-policies",
+      "page_name": "(redirect \u2192 /admin/appointments-hub?tab=policies)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/appointments-hub?tab=policies",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/appointment-types",
+      "page_name": "(redirect \u2192 /admin/appointments-hub?tab=types)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/appointments-hub?tab=types",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/appointments",
+      "page_name": "(redirect \u2192 /admin/appointments-hub)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/appointments-hub",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/appointments-hub",
+      "page_name": "Appointment Setup",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Studio \u203a Timetable \u203a Appointments \u203a Types",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/assets",
+      "page_name": "Asset Library",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Assets",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/at-risk-revenue",
+      "page_name": "At-Risk Revenue",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Retention \u203a At-risk revenue",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/audience-hub",
+      "page_name": "Audience Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a CRM \u203a Audience",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/audience-intelligence",
+      "page_name": "AI Audience Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a CRM \u203a Audience \u203a Intelligence",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/audit-trail",
+      "page_name": "Audit Trail",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Audit Trail",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/automation",
+      "page_name": "Automation Journeys",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Journeys \u203a Automations",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/badges",
+      "page_name": "Badges",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Experiences \u203a Loyalty \u203a Badges",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/banners",
+      "page_name": "Banners",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a On-site \u203a Banners",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/billing",
+      "page_name": "Platform Billing",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Finance \u203a Helgo billing",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/birthdays",
+      "page_name": "Birthdays",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Experiences \u203a Loyalty \u203a Birthdays",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/blog",
+      "page_name": "Blog Management",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Blog Management",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/blog-hub",
+      "page_name": "Blog Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Blog",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/blog/:id/edit",
+      "page_name": "Blog Post Editor",
+      "same_as": "/admin/blog/new",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from adminNavigationBlueprint, BlogAIWriter, BlogManagement",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/blog/ai-writer",
+      "page_name": "AI Blog Writer",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a AI Blog Writer",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/blog/categories",
+      "page_name": "Blog Categories",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Blog Categories",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/blog/management",
+      "page_name": "Blog Management",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "(type the URL)",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/blog/new",
+      "page_name": "Blog Post Editor",
+      "same_as": "/admin/blog/:id/edit",
+      "reachability": "ORPHANED",
+      "breadcrumb": "(type the URL)",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/booking-messages",
+      "page_name": "Booking Messages",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a On-site \u203a Booking messages",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/bookkeeping",
+      "page_name": "Bookkeeping Inbox",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Finance \u203a Bookkeeping",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/breach-process",
+      "page_name": "Breach Process",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Compliance \u203a Breach",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/business-insights",
+      "page_name": "AI Business Insights",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a Business insights",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/camio-live",
+      "page_name": "Live View",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Facilities \u203a Cctv \u203a Camio live",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/camio-settings",
+      "page_name": "Camio Cameras",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Facilities \u203a Cctv \u203a Camio settings",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/campaign-composer",
+      "page_name": "AI Campaign Composer",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Campaigns \u203a Composer",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/campaigns",
+      "page_name": "Campaigns",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Campaigns \u203a Campaigns",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/campaigns/:id/edit",
+      "page_name": "Campaign Editor",
+      "same_as": "/admin/campaigns/new",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminCampaignEditor",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/campaigns/:id/report",
+      "page_name": "Campaign Report",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminCampaignReport",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/campaigns/new",
+      "page_name": "Campaign Editor",
+      "same_as": "/admin/campaigns/:id/edit",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminCampaignEditor, AdminCampaigns, AssetLibrary",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/cancellation-reports",
+      "page_name": "Cancellation Reports",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Cancellation Reports",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/card-expiry",
+      "page_name": "Card Expiry Watch",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Card Expiry Watch",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/cash-payment",
+      "page_name": "Cash Payments",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Cash Payments",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/cash-report",
+      "page_name": "Cash Report",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Cash Report",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/cctv",
+      "page_name": "Cctv Viewer",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/cctv-hub",
+      "page_name": "CCTV Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Facilities \u203a Cctv \u203a Viewer",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/cctv-settings",
+      "page_name": "Cctv Settings",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/challenges",
+      "page_name": "Challenges",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Experiences \u203a Loyalty \u203a Challenges",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/changelog",
+      "page_name": "Platform Updates",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Governance \u203a Updates",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/checkin-compliance",
+      "page_name": "Check-in Compliance",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Studio \u203a Timetable \u203a Check-ins \u203a Compliance",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/checkins",
+      "page_name": "Check-Ins",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Studio \u203a Timetable \u203a Check-ins",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/churn-prevention",
+      "page_name": "AI Churn Prevention",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a AI Churn Prevention",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/class-filler",
+      "page_name": "AI Class Filler",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a AI Class Filler",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/class-filler/campaign/:id",
+      "page_name": "Class Filler Campaign Detail",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from ClassFillerCampaignDetail",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/class/:id",
+      "page_name": "Class Detail",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from weeklyGrowthBrief.fixture, platformVideoLibrary, AdminClassFiller, ClassFillerCampaignDetail",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/comm-management",
+      "page_name": "Communication Management",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Inbox \u203a Templates & SMS",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/command-centre",
+      "page_name": "AI Command Centre",
+      "same_as": "",
+      "reachability": "SIDEBAR, DOCK",
+      "breadcrumb": "Home \u203a Command Centre",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/command-centre/agents",
+      "page_name": "Command Centre Agents",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Command Centre Agents",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/command-centre/reporting",
+      "page_name": "AI Command Reporting",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a AI Command Reporting",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/command-centre/tasks",
+      "page_name": "Command Centre Tasks",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Command Centre Tasks",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/command-history",
+      "page_name": "Command History",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Command History",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/comms/intelligence",
+      "page_name": "Comms Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Inbox \u203a Intelligence",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/comms/learning-registry",
+      "page_name": "Learning Registry",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Inbox \u203a Learning registry",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/comms/message-logs",
+      "page_name": "Message Logs",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Inbox \u203a Logs",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/comms/messaging-numbers",
+      "page_name": "Messaging Numbers",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Inbox \u203a Numbers",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/comms/opt-outs",
+      "page_name": "Opt-Outs",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Inbox \u203a Opt-outs",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/comms/wallet",
+      "page_name": "Messaging Wallet",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Inbox \u203a Wallet",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/communications-hub",
+      "page_name": "Communications Hub",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Communications Hub",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/community",
+      "page_name": "Community",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminCommunityEvents, AdminCommunityPartner, AdminCommunityReporting",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/community-hub",
+      "page_name": "Community Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Experiences \u203a Loyalty \u203a Community",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/community/events",
+      "page_name": "Community Events",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Community Events",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/community/partner/:id",
+      "page_name": "Community Partner",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminCommunity",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/community/reporting",
+      "page_name": "Community Reporting",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminCommunity",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/compliance-hub",
+      "page_name": "Compliance & Governance",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Compliance & Governance",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/connections",
+      "page_name": "Connections",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Connections \u203a Vault",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/credit-liability",
+      "page_name": "Credit Liability",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Credit Liability",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/crm",
+      "page_name": "CRM Pipeline",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a CRM Pipeline",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/crm-hub",
+      "page_name": "CRM Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a CRM \u203a Pipeline",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/crm/automations",
+      "page_name": "Pipeline Automations",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "(type the URL)",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/crm/lead/:id",
+      "page_name": "Lead Detail",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from CrmPipeline",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/custom-dashboards",
+      "page_name": "Custom Dashboards",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Home \u203a home \u203a My dashboards",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/custom-dashboards/:dashboardId",
+      "page_name": "Custom Dashboard Canvas",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from HomeBlockCards, PromoteToCustomDashboard, CustomChartBuilder, CustomDashboardCanvas, CustomDashboardsLibrary, CustomDashboardsShell",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/custom-dashboards/:dashboardId/charts/:chartId/edit",
+      "page_name": "Custom Chart Builder",
+      "same_as": "/admin/custom-dashboards/:dashboardId/charts/new",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from HomeBlockCards, PromoteToCustomDashboard, CustomChartBuilder, CustomDashboardCanvas, CustomDashboardsLibrary, CustomDashboardsShell",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/custom-dashboards/:dashboardId/charts/new",
+      "page_name": "Custom Chart Builder",
+      "same_as": "/admin/custom-dashboards/:dashboardId/charts/:chartId/edit",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from HomeBlockCards, PromoteToCustomDashboard, CustomChartBuilder, CustomDashboardCanvas, CustomDashboardsLibrary, CustomDashboardsShell",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/customer-voice-synthesis",
+      "page_name": "AI Customer Voice Synthesis",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Ai \u203a Voice",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/daily-focus",
+      "page_name": "Daily Focus",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Pulse \u203a Daily focus",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/dashboard",
+      "page_name": "Home",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Home",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/data-migration",
+      "page_name": "Data Migration",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Data \u203a Migration",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/decision-engine",
+      "page_name": "Decision Engine",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a Decision engine",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/decision-weights",
+      "page_name": "Decision Engine Config",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a Weights",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/devices",
+      "page_name": "Linked Devices",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Studio \u203a Access \u203a Devices",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/discount-codes",
+      "page_name": "Discount Codes",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Finance \u203a Discounts",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/dispute-hub",
+      "page_name": "Dispute Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Finance \u203a Disputes",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/disputes",
+      "page_name": "(redirect \u2192 /admin/dispute-hub)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/dispute-hub",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/disputes/:id",
+      "page_name": "Dispute Route",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminDisputeManager",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/documents",
+      "page_name": "Document Inbox & Vault",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Compliance \u203a Vault",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/door-access",
+      "page_name": "Door Access",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Studio \u203a Access \u203a Door access",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/door-access/alerts",
+      "page_name": "Access Alerts",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Access Alerts",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/door-access/report",
+      "page_name": "Access Report",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Access Report",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/escalation-settings",
+      "page_name": "Escalation Settings",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Retention \u203a Escalation",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/event-bus",
+      "page_name": "Event Bus",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Operations \u203a Event bus",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/executive-briefing",
+      "page_name": "Executive Briefing",
+      "same_as": "/admin/intelligence/executive-briefing",
+      "reachability": "ORPHANED",
+      "breadcrumb": "(type the URL)",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/export-templates",
+      "page_name": "Export Templates",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Reports \u203a Export templates",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/feature-flags",
+      "page_name": "Feature Flags",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Product \u203a Flags",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/feature-management",
+      "page_name": "Feature Management",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Product \u203a Features",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/finance-hub",
+      "page_name": "Finance Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Finance \u203a Overview",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/financial-forecasting",
+      "page_name": "AI Financial Forecasting",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a Forecasting",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/forms",
+      "page_name": "Forms & Leads",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Forms",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/forms/:id/edit",
+      "page_name": "Form Builder",
+      "same_as": "/admin/forms/new",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from FormBuilder",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/forms/:id/submissions",
+      "page_name": "Form Submissions",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from FormSubmissions",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/forms/new",
+      "page_name": "Form Builder",
+      "same_as": "/admin/forms/:id/edit",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from FormsManagement",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/gc-report",
+      "page_name": "GoCardless Report",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a GoCardless Report",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/gdpr",
+      "page_name": "GDPR",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Compliance \u203a GDPR",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/geo-heatmap",
+      "page_name": "Geo Heatmap",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Geo Heatmap",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/gift-cards",
+      "page_name": "Gift Cards",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Finance \u203a Gift cards",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/gocardless",
+      "page_name": "GoCardless",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a GoCardless",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/google-hub-preview",
+      "page_name": "Google Hub Preview",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminRouteShell, AdminGoogleHubPreview, AdminMetaHubPreview",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": "PROTOTYPE"
+    },
+    {
+      "route": "/admin/growth-rewards",
+      "page_name": "Growth Rewards Engine",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Journeys \u203a Growth rewards",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/helgo-community",
+      "page_name": "Helgo Community",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Helgo Community",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/holiday-calendar",
+      "page_name": "Holiday Calendar",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Staff \u203a Holidays",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/home-cards-preview",
+      "page_name": "Home cards preview",
+      "same_as": "/admin/launcher-redesign-preview",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminRouteShell, types",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": "DUPLICATE, PROTOTYPE"
+    },
+    {
+      "route": "/admin/implementation-checklist",
+      "page_name": "Implementation Checklist",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Governance \u203a Checklist",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/inbox",
+      "page_name": "Inbox",
+      "same_as": "",
+      "reachability": "SIDEBAR, DOCK",
+      "breadcrumb": "Marketing \u203a Inbox \u203a Inbox",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/instructor-ai-agents",
+      "page_name": "Instructor AI Agents",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Ai \u203a Instructor agents",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/instructor-observations",
+      "page_name": "Instructor Observations",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Instructor Observations",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/instructor-observations/:observationId",
+      "page_name": "Instructor Observation Form",
+      "same_as": "/admin/staff/:userId/observations/new",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary, InstructorObservationForm",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/instructor-roi",
+      "page_name": "Instructor ROI",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Reports \u203a Instructor ROI",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/instructor-teaching-insights",
+      "page_name": "Instructor Teaching Insights",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Learning \u203a Teaching insights",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/integrations",
+      "page_name": "Social Integrations",
+      "same_as": "/admin/social/integrations",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/intelligence-centre",
+      "page_name": "Intelligence Centre",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Pulse \u203a Centre",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/intelligence-impact",
+      "page_name": "Intelligence Impact",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Pulse \u203a Impact",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/intelligence/cohorts",
+      "page_name": "Subscription Cohorts",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a Cohorts",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/intelligence/executive-briefing",
+      "page_name": "Executive Briefing",
+      "same_as": "/admin/executive-briefing",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Pulse \u203a Briefing",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/intelligence/manager",
+      "page_name": "Intelligence Manager",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Pulse \u203a Manager",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/intelligence/mrr",
+      "page_name": "MRR Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a MRR",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/intelligence/my-actions",
+      "page_name": "My Actions",
+      "same_as": "/admin/my-actions",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a My Actions",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/intelligence/opportunities",
+      "page_name": "Opportunities",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Opportunities",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/invite-staff",
+      "page_name": "Invite Staff",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Invite Staff",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/invite-staff-legacy",
+      "page_name": "(redirect \u2192 /admin/staff-hub?tab=invitations)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/staff-hub?tab=invitations",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/invoicing",
+      "page_name": "Invoicing",
+      "same_as": "/admin/payroll",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Invoicing",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/journey-analytics",
+      "page_name": "Journey Analytics",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Journey Analytics",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/journey-orchestrator",
+      "page_name": "Journey Orchestrator",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Journeys \u203a Orchestrator",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/kiosk-config",
+      "page_name": "Kiosk Config",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Studio \u203a POS & kiosks \u203a Kiosk",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/launcher-redesign-preview",
+      "page_name": "Launcher redesign preview",
+      "same_as": "/admin/home-cards-preview",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminRouteShell, index",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": "DUPLICATE, PROTOTYPE"
+    },
+    {
+      "route": "/admin/learning-engine",
+      "page_name": "Learning Engine",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Learning \u203a Engine",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/live-support",
+      "page_name": "Live Support",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a More \u203a Live Support (studio click hits PlatformAdminGuard) / Platform \u203a Overview \u203a Live support",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/location-intelligence",
+      "page_name": "Location Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Pulse \u203a Location",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/marketing",
+      "page_name": "Acquisition",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Advertising \u203a Landing pages",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/meeting-capture",
+      "page_name": "Meeting Capturer",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Meeting Capturer",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/member-digital-twin",
+      "page_name": "AI Member Digital Twin",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Directory \u203a Digital twin",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/member-feedback",
+      "page_name": "Member Feedback",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Inbox \u203a Feedback",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/member-health-score",
+      "page_name": "Member Health Scores",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Directory \u203a Health scores",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/members",
+      "page_name": "Members",
+      "same_as": "",
+      "reachability": "SIDEBAR, DOCK",
+      "breadcrumb": "Members \u203a Directory \u203a All members",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/meta-autopilot",
+      "page_name": "(redirect \u2192 /admin/meta-hub?tab=builder)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/meta-hub?tab=builder",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/meta-connection",
+      "page_name": "(redirect \u2192 /admin/meta-hub?tab=connection)",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminSetup, StudioSetupWizard",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/meta-hub",
+      "page_name": "Meta Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Advertising \u203a Meta",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/meta-hub-preview",
+      "page_name": "Meta Hub Preview",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminRouteShell, AdminMetaHubPreview",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": "PROTOTYPE"
+    },
+    {
+      "route": "/admin/migration",
+      "page_name": "Website Migration",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Migration",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/migration-dashboard",
+      "page_name": "Migration Dashboard",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Migration Dashboard",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/migration/:id/import",
+      "page_name": "Migration Import Wizard Page",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary, AdminGoCardless, MigrationImportWizard, WebsiteMigration",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/migration/:id/mapping",
+      "page_name": "Migration Page Mapping",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary, AdminGoCardless, MigrationImportWizard, WebsiteMigration",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/migration/:id/pre-launch",
+      "page_name": "Migration Pre Launch",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary, AdminGoCardless, MigrationImportWizard, WebsiteMigration",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/migration/:id/redirects",
+      "page_name": "Migration Redirects",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary, AdminGoCardless, MigrationImportWizard, WebsiteMigration",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/milestone-club",
+      "page_name": "Milestone Club",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Milestone Club",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/milestone-report",
+      "page_name": "Milestone Report",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from drillThrough, MilestoneManagement, ReportsHub",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/milestones",
+      "page_name": "Milestone Management",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from MilestoneReport",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/milestones-hub",
+      "page_name": "Milestones Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Experiences \u203a Loyalty \u203a Milestones",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/monthly-review",
+      "page_name": "Monthly Review",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a Monthly review",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/morning-dispatch",
+      "page_name": "Morning Dispatch",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a intelligence \u203a pulse \u203a Dispatch",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/multichannel",
+      "page_name": "Multi-channel",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Multi-channel",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/my-actions",
+      "page_name": "My Actions",
+      "same_as": "/admin/intelligence/my-actions",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a My Actions",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/navigation-preview",
+      "page_name": "Navigation Preview",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminRouteShell",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": "PROTOTYPE"
+    },
+    {
+      "route": "/admin/new-vs-returning",
+      "page_name": "New vs Returning Clients",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Reports \u203a New vs returning",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/news",
+      "page_name": "News",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Campaigns \u203a News",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/newsletter-analytics",
+      "page_name": "(redirect \u2192 /admin/newsletter-hub?tab=analytics)",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from weeklyGrowthBrief.fixture",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/newsletter-analytics-legacy",
+      "page_name": "(redirect \u2192 /admin/newsletter-hub?tab=analytics)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/newsletter-hub?tab=analytics",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/newsletter-creator",
+      "page_name": "(redirect \u2192 /admin/newsletter-hub?tab=create)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/newsletter-hub?tab=create",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/newsletter-creator-legacy",
+      "page_name": "(redirect \u2192 /admin/newsletter-hub?tab=create)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/newsletter-hub?tab=create",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/newsletter-hub",
+      "page_name": "Newsletter Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Campaigns \u203a Newsletter \u203a Create",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/onboarding",
+      "page_name": "Member Onboarding",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Guides \u203a Member onboarding",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/open-banking",
+      "page_name": "Open Banking",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Finance \u203a Open banking",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/org-intelligence",
+      "page_name": "Org Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Pulse \u203a Org",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/org-intelligence/accountability",
+      "page_name": "Org Accountability",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Org Accountability",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/org-intelligence/staff/:staffId",
+      "page_name": "Org Intelligence Staff Profile",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from drillThrough, AdminOrgIntelligence, AdminOrgIntelligenceAccountability",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/override-audit-log",
+      "page_name": "Override Audit Log",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Override Audit Log",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/overview",
+      "page_name": "Studio Overview",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Studio overview",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/payroll",
+      "page_name": "Invoicing",
+      "same_as": "/admin/invoicing",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from StaffHubPayPanel",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/performance-intelligence",
+      "page_name": "Performance Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a Performance",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/personal-messages",
+      "page_name": "Personal Messages",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Inbox \u203a Personal messages",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/platform-connections",
+      "page_name": "Connections",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Overview \u203a Connections",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/platform-dashboard",
+      "page_name": "Platform Overview",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Overview \u203a Dashboard",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/platform-devices",
+      "page_name": "Devices",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Devices",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/platform-issues",
+      "page_name": "Live Issue Tracker",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Overview \u203a Issues",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/platform-knowledge",
+      "page_name": "Knowledge Library",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Overview \u203a Knowledge",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/platform-plans",
+      "page_name": "Platform Plans & Pricing",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Product \u203a Plans",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": "LEGACY"
+    },
+    {
+      "route": "/admin/platform-sales",
+      "page_name": "Platform Sales CRM",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Platform Sales CRM",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/platform-sales/demos",
+      "page_name": "Demo Calendar",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Demo Calendar",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/platform-scaling",
+      "page_name": "Platform Scaling",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Operations \u203a Scaling",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/platform-training-hub",
+      "page_name": "Training Hub Adoption",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Overview \u203a Training adoption",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/platform-videos",
+      "page_name": "Platform Videos",
+      "same_as": "/admin/video-guides",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Overview \u203a Videos",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": "DUPLICATE"
+    },
+    {
+      "route": "/admin/platform/safe-studio",
+      "page_name": "Safe Studio Platform Adoption",
+      "same_as": "/admin/platform/safe-studio/tenants, /admin/platform/safe-studio/users",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Platform Adoption",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": "DUPLICATE"
+    },
+    {
+      "route": "/admin/platform/safe-studio/tenants",
+      "page_name": "Safe Studio Tenant Adoption",
+      "same_as": "/admin/platform/safe-studio, /admin/platform/safe-studio/users",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Tenant Adoption",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": "DUPLICATE"
+    },
+    {
+      "route": "/admin/platform/safe-studio/users",
+      "page_name": "Safe Studio User Adoption",
+      "same_as": "/admin/platform/safe-studio, /admin/platform/safe-studio/tenants",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio User Adoption",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": "DUPLICATE"
+    },
+    {
+      "route": "/admin/platform/stripe-connect",
+      "page_name": "Stripe Connect",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "(type the URL)",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/popups",
+      "page_name": "Pop-ups",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a On-site \u203a Pop-ups",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/pos-hub",
+      "page_name": "POS Kiosk Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Studio \u203a POS & kiosks \u203a POS",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/post-class-intelligence",
+      "page_name": "Post-Class Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Staff \u203a Post-class intel",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/predictive-cash-flow",
+      "page_name": "AI Predictive Cash Flow",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a Cash flow",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/products",
+      "page_name": "Products & Pricing",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Finance \u203a Products",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/progress-guides",
+      "page_name": "Progress Guides",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Experiences \u203a Loyalty \u203a Progress guides",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/progress-guides/:id",
+      "page_name": "Progress Guide Editor",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminProgressGuideEditor",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/pt-packages",
+      "page_name": "PT Packages",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Finance \u203a PT packages",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/qr-generator",
+      "page_name": "QR Code Generator",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Advertising \u203a QR codes",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/qr-generator/:id/analytics",
+      "page_name": "Qr Generator Analytics",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminQrGeneratorAnalytics",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/qr-generator/:id/customize",
+      "page_name": "Qr Generator Customize",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminQrGeneratorCustomize",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/qr-generator/:id/edit",
+      "page_name": "Qr Generator Edit",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminQrGeneratorEdit",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/qr-generator/new",
+      "page_name": "Create QR Code",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Create QR Code",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/quarterly-review",
+      "page_name": "Quarterly Review",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a Quarterly review",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/recommendation-tracker",
+      "page_name": "Recommendation Tracker",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Recommendation Tracker",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/recordings",
+      "page_name": "Recordings",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Reports \u203a Recordings",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/recovery-calendar",
+      "page_name": "(redirect \u2192 /admin/recovery-hub?tab=calendar)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/recovery-hub?tab=calendar",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/recovery-hub",
+      "page_name": "Recovery",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Studio \u203a Timetable \u203a Recovery",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/recovery-reporting",
+      "page_name": "(redirect \u2192 /admin/recovery-hub?tab=reporting)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/recovery-hub?tab=reporting",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/referral-dashboard",
+      "page_name": "(redirect \u2192 /admin/referral-hub)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/referral-hub",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/referral-hub",
+      "page_name": "Referral Programme",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Experiences \u203a Loyalty \u203a Referrals",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/referral-report",
+      "page_name": "Referral Analytics",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Referral Analytics",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/referral-report-legacy",
+      "page_name": "(redirect \u2192 /admin/referral-hub)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/referral-hub",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/referral-report-old",
+      "page_name": "(redirect \u2192 /admin/referral-hub)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/referral-hub",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/referrals",
+      "page_name": "(redirect \u2192 /admin/referral-hub)",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminSetup",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/refunds",
+      "page_name": "Refunds",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Refunds",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/related-contacts",
+      "page_name": "Related Contacts",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Directory \u203a Related contacts",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/reporting",
+      "page_name": "Reporting",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from drillThrough, AdminDashboard, AdminReporting",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/reports",
+      "page_name": "Reports Hub",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from drillThrough, CommandCentre, DoorAccessReport, ReportDetail",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/reports-hub",
+      "page_name": "Reports Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Reports \u203a Hub",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/reports/:reportId",
+      "page_name": "Report Detail",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from CommandPalette, WorkspaceContext, adminNavigationBlueprint, platformVideoLibrary, AdminNavigationPreview, AdminPlatformSalesHub",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/resources",
+      "page_name": "Resources",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Learning \u203a Resources",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/resources/acknowledgements",
+      "page_name": "Acknowledgements",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Acknowledgements",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retention",
+      "page_name": "Retention",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from weeklyGrowthBrief.fixture, drillThrough, AdminChurnPrevention, AdminCommManagement, AdminRevenueIntelligence",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retention-hub",
+      "page_name": "Retention Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Retention \u203a Retention",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retention-sequences",
+      "page_name": "Retention Sequences",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Retention Sequences",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retreat-bookings",
+      "page_name": "Retreat Bookings",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Retreat Bookings",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retreat-enquiries",
+      "page_name": "Retreat Enquiries",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Retreat Enquiries",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retreat-financials",
+      "page_name": "Retreat Financials",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Retreat Financials",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retreat-venues",
+      "page_name": "Retreat Venues",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Retreat Venues",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retreats",
+      "page_name": "Retreats",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Retreats",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retreats-hub",
+      "page_name": "Retreats Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Experiences \u203a Retreats \u203a Hub",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retreats/:id",
+      "page_name": "Retreat Route",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from RetreatWorkspaceState, WorkspaceContext, adminNavigationBlueprint, platformVideoLibrary, AdminRetreatAiBuilder, AdminRetreatBookings",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/retreats/:id/edit",
+      "page_name": "Retreat Form",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from RetreatWorkspaceState, WorkspaceContext, adminNavigationBlueprint, platformVideoLibrary, AdminRetreatAiBuilder, AdminRetreatBookings",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/revenue-intelligence",
+      "page_name": "AI Revenue Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a CRM \u203a Revenue intel",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/roadmap",
+      "page_name": "Product Roadmap",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Governance \u203a Roadmap",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/roles",
+      "page_name": "Roles & Access",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Roles & Access",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/roles-legacy",
+      "page_name": "(redirect \u2192 /admin/staff-hub?tab=access)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/staff-hub?tab=access",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/rota-builder",
+      "page_name": "Rota Builder",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Staff \u203a Rota \u203a Builder",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/rota-hub",
+      "page_name": "(redirect \u2192 /admin/staff-hub?tab=rota)",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/rota-reporting",
+      "page_name": "Rota Reporting",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Rota Reporting",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/rota-reporting-legacy",
+      "page_name": "Rota Reporting (Legacy)",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Rota Reporting (Legacy)",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/rota-sharing",
+      "page_name": "(redirect \u2192 /admin/staff-hub?tab=rota&rotaTab=sharing)",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/rota-sharing-legacy",
+      "page_name": "(redirect \u2192 /admin/staff-hub?tab=rota&rotaTab=sharing)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/staff-hub?tab=rota&rotaTab=sharing",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/safe-studio",
+      "page_name": "Safe Studio",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Facilities \u203a Safe Studio \u203a Overview",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/compliance",
+      "page_name": "Safe Studio Checks & Compliance",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Checks & Compliance",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/documents",
+      "page_name": "Safe Studio Documents",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Documents",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/governance",
+      "page_name": "Safe Studio Communications & Audit",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Communications & Audit",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/insights",
+      "page_name": "Safe Studio Insights",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Insights",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/inspections",
+      "page_name": "Safe Studio Inspection Setup",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Inspection Setup",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/operations",
+      "page_name": "Safe Studio Faults & Incidents",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Faults & Incidents",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/people",
+      "page_name": "Safe Studio People & Suppliers",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio People & Suppliers",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/reports",
+      "page_name": "Safe Studio Search & Reports",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Search & Reports",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/risk",
+      "page_name": "Safe Studio Risk & Statutory Compliance",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Risk & Statutory Compliance",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/settings",
+      "page_name": "Safe Studio Configuration",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Configuration",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/safe-studio/team",
+      "page_name": "Safe Studio Team Activity",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Safe Studio Team Activity",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screen-ai",
+      "page_name": "AI Screen Content",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a AI Screen Content",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screen-content",
+      "page_name": "Content Library",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Signage \u203a Content",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screen-content/builder",
+      "page_name": "Content Builder",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Content Builder",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screen-health",
+      "page_name": "Screen Health",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Signage \u203a Health",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screen-integrations",
+      "page_name": "Screen Integrations",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Screen Integrations",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screen-playlists",
+      "page_name": "Playlists",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Signage \u203a Playlists",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screen-reporting",
+      "page_name": "Screen Reporting",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Screen Reporting",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screen-schedules",
+      "page_name": "Screen Schedules",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Screen Schedules",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screen-templates",
+      "page_name": "Screen Templates",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Screen Templates",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screens",
+      "page_name": "Screens (legacy)",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Screens (legacy)",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/screens-hub",
+      "page_name": "Screens Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Signage \u203a Screens",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/security-alerts",
+      "page_name": "Security Alerts",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Security Alerts",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/security-dashboard",
+      "page_name": "Security Dashboard",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "(type the URL)",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/security-hub",
+      "page_name": "Security Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Facilities \u203a Security \u203a Hub",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/seed-data",
+      "page_name": "Seed Data",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Operations \u203a Seed data",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/segments",
+      "page_name": "Customer Segments",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a CRM \u203a Segments",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/sentiment-analysis",
+      "page_name": "AI Sentiment Analysis",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Retention \u203a Sentiment",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/sentry",
+      "page_name": "Sentry",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Operations \u203a Sentry",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/seo",
+      "page_name": "SEO Controls",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a SEO",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/setup",
+      "page_name": "Setup",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Setup \u203a Business",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/setup-hub",
+      "page_name": "Setup Hub",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Setup Hub",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/setup/wizard",
+      "page_name": "Setup Wizard",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Setup \u203a Wizard",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/smart-folder-reports",
+      "page_name": "Smart Folder Reports",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Reports \u203a Smart folders",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/social",
+      "page_name": "Social Media",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Social \u203a Social media",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": "/admin/social-hub \u2192 Social Media; (tile itself) \u2192 tile"
+    },
+    {
+      "route": "/admin/social-hub",
+      "page_name": "Social Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Social \u203a Hub",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/social/advocacy-queue",
+      "page_name": "Review Identity Queue",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Social \u203a Review identity",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/social/competitors",
+      "page_name": "(redirect \u2192 /admin/social-hub?tab=competitors)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/social-hub?tab=competitors",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/social/conversions",
+      "page_name": "Conversion Tracking",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Conversion Tracking",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/social/google-ads",
+      "page_name": "Google Ads",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Advertising \u203a Google Ads",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/social/gtm",
+      "page_name": "GTM & Tracking",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a GTM & Tracking",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/social/instagram",
+      "page_name": "Instagram Insights",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Instagram Insights",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": "/admin/social-hub \u2192 Instagram; (tile itself) \u2192 tile"
+    },
+    {
+      "route": "/admin/social/integrations",
+      "page_name": "Integrations",
+      "same_as": "/admin/integrations",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Connections \u203a Integrations",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/social/meta-ads",
+      "page_name": "(redirect \u2192 /admin/meta-hub?tab=ads)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/meta-hub?tab=ads",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/social/planner",
+      "page_name": "(redirect \u2192 /admin/social-hub?tab=planner)",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from platformVideoLibrary",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/social/reviews",
+      "page_name": "Reviews",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Reviews",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/software-guides",
+      "page_name": "Software Guides",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Guides \u203a Software guides",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/splash-screens",
+      "page_name": "Splash Screens",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a On-site \u203a Splash screens",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/staff",
+      "page_name": "(redirect \u2192 /admin/staff-hub)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/staff-hub",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/staff-availability",
+      "page_name": "Staff Availability",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Staff Availability",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/staff-employment",
+      "page_name": "Staff Employment",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Staff \u203a Employment",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/staff-hub",
+      "page_name": "Rota",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Staff \u203a Rota",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/staff-milestones",
+      "page_name": "Staff Milestones",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Staff \u203a Milestones",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/staff-team-report",
+      "page_name": "(redirect \u2192 /admin/staff-hub)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/staff-hub",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/staff/:userId",
+      "page_name": "Staff Route",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from AdminStaffProfile",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/staff/:userId/observations/new",
+      "page_name": "Instructor Observation Form",
+      "same_as": "/admin/instructor-observations/:observationId",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from InstructorObservationForm",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/stripe-connect",
+      "page_name": "Stripe Connect",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Finance \u203a Stripe Connect",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/studio-intelligence",
+      "page_name": "Executive Intelligence Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Pulse \u203a Studio intelligence",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/studio-pulse",
+      "page_name": "Studio Pulse",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a intelligence \u203a pulse \u203a Pulse",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/studio-state",
+      "page_name": "Studio State",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Analytics \u203a Studio state",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/system-blueprint",
+      "page_name": "System Blueprint",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Operations \u203a Blueprint",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/system-health",
+      "page_name": "System Health",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Operations \u203a Health",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/tag-hub",
+      "page_name": "Tag Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a CRM \u203a Tags",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/tag-intelligence",
+      "page_name": "AI Tag Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a CRM \u203a Tags \u203a Intelligence",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/tag-management",
+      "page_name": "Tag Management",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a CRM \u203a Tags \u203a Library",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/tasks",
+      "page_name": "Tasks",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Home \u203a home \u203a Tasks",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/team",
+      "page_name": "Team Report",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Staff \u203a Team report",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/team-calendar",
+      "page_name": "Team Calendar",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Team Calendar",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/team-chat",
+      "page_name": "Team Chat",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Team Chat",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": "/admin/staff-hub \u2192 Team Chat; (tile itself) \u2192 tile"
+    },
+    {
+      "route": "/admin/team-comms-hub",
+      "page_name": "Team Comms Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Staff \u203a Team comms",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/team-holidays",
+      "page_name": "Team Holidays",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Staff \u203a Holidays \u203a Team report",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/team-legacy",
+      "page_name": "(redirect \u2192 /admin/staff-hub?tab=team)",
+      "same_as": "",
+      "reachability": "ORPHANED",
+      "breadcrumb": "Legacy URL \u2192 /admin/staff-hub?tab=team",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/team-polls",
+      "page_name": "Team Polls",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Team Polls",
+      "roles": "redirect; AdminLayout",
+      "flags": "LEGACY",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/tenant-management",
+      "page_name": "Tenant Management",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Overview \u203a Tenants",
+      "roles": "GUARD: platform_admin",
+      "flags": "canView",
+      "retired_tile": ""
+    },
+    {
+      "route": "/admin/timetable",
+      "page_name": "Timetable",
+      "same_as": "",
+      "reachability": "SIDEBAR, DOCK",
+      "breadcrumb": "Studio \u203a Timetable \u203a Classes",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/training-hub",
+      "page_name": "Training Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Training \u203a Overview",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/trial-conversion",
+      "page_name": "AI Trial Conversion",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a AI Trial Conversion",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/video-guides",
+      "page_name": "Platform Videos",
+      "same_as": "/admin/platform-videos",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Guides \u203a Videos",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/view-as-member",
+      "page_name": "View as Member",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Members \u203a Directory \u203a View as member",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/visual-intelligence-showcase",
+      "page_name": "Visual Intelligence Showcase",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Platform \u203a Operations \u203a Visual intelligence",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/walkthrough-manager",
+      "page_name": "Walkthrough Manager",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Guides \u203a Walkthroughs",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/wallet-passes",
+      "page_name": "Wallet Passes",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Studio \u203a Access \u203a Wallet passes",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/webhooks",
+      "page_name": "Webhooks",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Data \u203a Webhooks",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/website",
+      "page_name": "Website Management",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Pages",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/website-hub",
+      "page_name": "Website Hub",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Hub",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/website/ai-builder",
+      "page_name": "AI Page Builder",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a AI builder",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/website/approval-hub",
+      "page_name": "Approval Hub",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Approval Hub",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/website/editor/:id",
+      "page_name": "Website Page Editor",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from WebsitePageEditor",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/website/health",
+      "page_name": "Website Health",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Health",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/website/import",
+      "page_name": "Bring my site",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Import",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/website/navigation",
+      "page_name": "Navigation",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Navigation",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/website/preview/:id",
+      "page_name": "Website Page Preview",
+      "same_as": "",
+      "reachability": "LINK ONLY",
+      "breadcrumb": "Linked from WebsitePagePreview",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/website/styles",
+      "page_name": "Global Styles",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Website \u203a Styles",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/weekly-digest",
+      "page_name": "Weekly Learning Digest",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Team \u203a Learning \u203a Weekly digest",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/weekly-growth-brief",
+      "page_name": "AI Weekly Growth Brief",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Marketing \u203a Advertising \u203a Growth brief",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/what-we-learned",
+      "page_name": "What We've Learned",
+      "same_as": "",
+      "reachability": "SEARCH ONLY",
+      "breadcrumb": "Search \u203a Team \u203a Learning \u203a What we've learned",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/whats-new-tours",
+      "page_name": "What's New Tours",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Guides \u203a What's new",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/white-label",
+      "page_name": "White Label",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Settings \u203a Setup \u203a White-label",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    },
+    {
+      "route": "/admin/workforce-intelligence",
+      "page_name": "Workforce Intelligence",
+      "same_as": "",
+      "reachability": "SIDEBAR",
+      "breadcrumb": "Home \u203a Pulse \u203a Workforce",
+      "roles": "admin",
+      "flags": "owner",
+      "retired_tile": "manager"
+    }
+  ]
+}
