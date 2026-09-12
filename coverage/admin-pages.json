@@ -4034,32 +4034,11 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "CRM Hub L2 on Admin2/Bluebird. All 8 hub tabs switch URL ?tab= and render. Pipeline shows 10 leads in Trial (agrees with /admin/crm and Funnel '10 current leads'). Add Lead opens real modal (First/Last/Email/Phone/Source/Value/Stage/Location/Notes) \u2014 cancelled. No Refrm. DEFECT: AI Performance Intelligence KPI cards show Total Insights=10, New(Unread)=10, Critical=3 while main list shows empty sta",
+    "reason": "CRM Hub L2 on Admin2/Bluebird. All 8 hub tabs switch URL ?tab= and render. Pipeline shows 10 leads in Trial (agrees with /admin/crm and Funnel '10 current leads'). Add Lead opens real modal (First/Last/Email/Phone/Source/Value/Stage/Location/Notes) \u2014 cancelled. No Refrm. DEFECT: AI Performance Intelligence KPI cards show Total Insights=10, New(Unread)=10, Critical=3 while main list shows empty state 'No insights yet / Click Generate Insights\u2026'; after Refresh, insight cards appear (e.g. Zero Clas",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
-      {
-        "kind": "path",
-        "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
-      },
-      {
-        "kind": "issue",
-        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
-      },
-      {
-        "kind": "drop",
-        "id": "census-core-l1",
-        "href": "#coverage-admin"
-      },
-      {
-        "kind": "path",
-        "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-hub-01-load.webp"
-      },
-      {
-        "kind": "path",
-        "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-hub-tab-pipeline.webp"
-      },
       {
         "kind": "path",
         "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-hub-tab-funnel.webp"
@@ -4071,6 +4050,30 @@
       {
         "kind": "path",
         "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-hub-tab-automations.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l2-members"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-hub-01-load.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-hub-tab-pipeline.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-hub-tab-funnel.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-hub-funnel-01.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-hub-tab-automations.webp"
       },
       {
         "kind": "drop",
@@ -6213,14 +6216,6 @@
     "evidence": [
       {
         "kind": "path",
-        "path": "evidence/census-comms/admin_member-feedback.webp"
-      },
-      {
-        "kind": "drop",
-        "id": "census-comms-l1"
-      },
-      {
-        "kind": "path",
         "path": "evidence/census-core-l2/evidence/census-core-l2/members-member-feedback-01-load.webp"
       },
       {
@@ -6234,6 +6229,26 @@
       {
         "kind": "path",
         "path": "evidence/census-core-l2/evidence/census-core-l2/members-member-feedback-ctrl-suggest-feature.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l2-members"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-member-feedback-01-load.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-member-feedback-02-status-open.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-member-feedback-03-category-open.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-member-feedback-ctrl-suggest-feature.webp"
       },
       {
         "kind": "drop",
@@ -10416,11 +10431,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Clicked the Slow Flow class card. Detail opened in-place as a modal/drawer without a route change; this provides the /admin/class/:id-style inspection flow from Timetable, but is not a separate URL.",
+    "reason": "Timetable L2 on Admin2/Bluebird c=150002 stamp 6486be87. Classes week 7\u201313 Sep 2026: 15 classes. List day chips Mon4 Tue3 Wed4 Thu0 Fri4 Sat0 Sun0 = 15 and match calendar cards (Sat empty is honest). Occupancy 0/10 opens roster modal (Booked/Attended/Waitlist/Cancelled(6)/No-show(2)/Activity; 'No booked members') \u2014 Close returns. Edit Class modal cancelled. Add Class / Add Appointment / Add Recovery creates cancelled. Location North honest empty (0 classes, \u00a30, fill \u2014). Appointments tab zeros ma",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -10441,17 +10456,107 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/timetable-01-load.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/timetable-02-classes-scroll.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/timetable-view-list.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/timetable-view-calendar.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/timetable-list-fri-full.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l2-timetable"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
+      "source": "census-core-l2",
+      "hub": "timetable",
       "hubFit": "ok",
       "buriedDaily": "no",
-      "duplicate": "no",
-      "source": "census-core"
+      "duplicate": "Appointments \u203a Configure types overlaps /admin/appointments-hub; Add Recovery opens same Add Class modal",
+      "proposedHome": null,
+      "note": "Timetable L2 on Admin2/Bluebird c=150002 stamp 6486be87. Classes week 7\u201313 Sep 2026: 15 classes. List day chips Mon4 Tue3 Wed4 Thu0 Fri4 Sat0 Sun0 = 15 and match calendar cards (Sat empty is honest). Occupancy 0/10 opens roster modal (Booked/Attended/Waitlist/Cancelled(6)/No-show(2)/Activity; 'No booked members') \u2014 Close returns. Edit Class modal cancelled. Add Class / Add Appointment / Add Recove"
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "density:Full",
+        "density:Compact",
+        "density:Dense",
+        "tab:Classes",
+        "tab:Appointments",
+        "tab:Recovery",
+        "tab:All",
+        "view:List",
+        "view:Calendar",
+        "location:open",
+        "location:All Locations",
+        "location:Bluebird North",
+        "Today",
+        "week:nav",
+        "Filters:open",
+        "filter:Instructor",
+        "filter:Class Type",
+        "filter:Cover Status=Awaiting Cover",
+        "filter:Cover Status=Covered",
+        "Hide metrics",
+        "Show metrics",
+        "day-chip:Fri",
+        "day-chip:Sat",
+        "Add Class:open+cancel",
+        "Add Appointment:open+cancel",
+        "Add Recovery:open+cancel",
+        "Help:open",
+        "Suggest Feature:open+dismiss",
+        "Edit class:open+cancel",
+        "occupancy 0/10 \u2192 roster modal (Close)",
+        "Configure types & availability \u2192 /admin/appointments-hub?tab=types"
+      ],
+      "controlsNotExercised": [
+        "Assign instructor (withheld \u2014 writes teacher)",
+        "Mark Completed (withheld \u2014 writes class status)",
+        "Cancel class (withheld \u2014 destructive)",
+        "Help submenu: Full Guide / Listen / Video / Cheat Sheet / Quick Start",
+        "Add Class \u203a Recurring Series",
+        "Appointment KPI card drills",
+        "roster Add Client (withheld \u2014 write)",
+        "Edit class \u203a Bulk Change (withheld \u2014 write)"
+      ],
+      "defects": [
+        {
+          "criterion": "figures_agreement",
+          "detail": "Studio \u203a Timetable \u203a Classes: Avg Fill Rate KPI shows 7% with subtitle 'Confirmed bookings vs capacity'. Visible cards are 13\u00d70/10, 1\u00d70/1, 1\u00d71/1 \u2192 confirmed bookings=1, capacity=132, bookings/capacity\u22480.8%. 7% equals the unweighted mean of per-class fill % ((14\u00d70 + 100)/15). KPI cards are not clickable for a booking breakdown. Stamp 6486be87 Admin2 c=150002 week 7\u201313 Sep 2026 Bluebird Central.",
+          "screenshot": "evidence/census-core-l2/timetable-list-fri-full.webp"
+        },
+        {
+          "criterion": "figures_agreement",
+          "detail": "Studio \u203a Timetable \u203a Classes \u203a Filters \u203a Cover Status: Awaiting Cover yields '0 classes this week' and Classes This Week=0, but Weekly Programme Cost stays \u00a3196.00 (Regular \u00a3168 \u00b7 Sub \u00a328). Covered filter shows 2 classes / fill 0% while cost still \u00a3196. Same-page figures disagree once a filter is applied. Stamp 6486be87 Admin2 c=150002.",
+          "screenshot": "evidence/census-core-l2/timetable-filter-awaiting-cover.webp"
+        },
+        {
+          "criterion": "figures_agreement",
+          "detail": "Studio \u203a Timetable \u203a Classes: Open Cover Requests=0 with subtitle 'All classes covered', but Fri list shows Assign instructor on 09:00 Reformer Flow (0/10) and 16:00 Reformer Flow (0/1); calendar also has TBC teachers Mon/Wed/Fri. Cover Status 'Awaiting Cover' is likewise 0 \u2014 unassigned/TBC is not counted as a cover request \u2014 so the subtitle overclaims. Stamp 6486be87 Admin2 c=150002.",
+          "screenshot": "evidence/census-core-l2/timetable-list-fri-full.webp"
+        }
+      ]
     }
   },
   {
@@ -13550,23 +13655,6 @@
     "stale": false,
     "evidence": [
       {
-        "kind": "issue",
-        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
-      },
-      {
-        "kind": "drop",
-        "id": "census-core-l1",
-        "href": "#coverage-admin"
-      },
-      {
-        "kind": "path",
-        "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-pipeline-01-load.webp"
-      },
-      {
-        "kind": "path",
-        "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-pipeline-02-add-lead.webp"
-      },
-      {
         "kind": "path",
         "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-pipeline-03-help.webp"
       },
@@ -13577,6 +13665,30 @@
       {
         "kind": "path",
         "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-pipeline-05-search.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l2-members"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-pipeline-01-load.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-pipeline-02-add-lead.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-pipeline-03-help.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-pipeline-04-suggest.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-pipeline-05-search.webp"
       },
       {
         "kind": "drop",
@@ -13635,26 +13747,6 @@
     "evidence": [
       {
         "kind": "path",
-        "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch1.json"
-      },
-      {
-        "kind": "path",
-        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/crm-automations.png"
-      },
-      {
-        "kind": "drop",
-        "id": "census-longtail-orphans-l1"
-      },
-      {
-        "kind": "path",
-        "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-automations-01-load.webp"
-      },
-      {
-        "kind": "path",
-        "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-automations-02-activity.webp"
-      },
-      {
-        "kind": "path",
         "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-automations-03-new.webp"
       },
       {
@@ -13664,6 +13756,30 @@
       {
         "kind": "path",
         "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-automations-04-create-first.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l2-members"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-automations-01-load.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-automations-02-activity.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-automations-03-new.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-automations-03b-new-verify.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-automations-04-create-first.webp"
       },
       {
         "kind": "drop",
@@ -13722,23 +13838,6 @@
     "stale": false,
     "evidence": [
       {
-        "kind": "issue",
-        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
-      },
-      {
-        "kind": "drop",
-        "id": "census-core-l1",
-        "href": "#coverage-admin"
-      },
-      {
-        "kind": "path",
-        "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-lead-01-load.webp"
-      },
-      {
-        "kind": "path",
-        "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-lead-ctrl-suggest-feature.webp"
-      },
-      {
         "kind": "path",
         "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-lead-ctrl-trial.webp"
       },
@@ -13749,6 +13848,30 @@
       {
         "kind": "path",
         "path": "evidence/census-core-l2/evidence/census-core-l2/members-crm-lead-ctrl-log-call.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-core-l2-members"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-lead-01-load.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-lead-ctrl-suggest-feature.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-lead-ctrl-trial.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-lead-send-send-email.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-core-l2/members-crm-lead-ctrl-log-call.webp"
       },
       {
         "kind": "drop",

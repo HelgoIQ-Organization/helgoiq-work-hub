@@ -19,9 +19,9 @@
     "hubOnly": 156,
     "orphaned": 30,
     "fullyTested": 0,
-    "partiallyTested": 338,
+    "partiallyTested": 337,
     "blocked": 44,
-    "failed": 27,
+    "failed": 28,
     "notTested": 4,
     "stale": 59,
     "byReachability": {
@@ -34,8 +34,8 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "2": 56,
-      "1": 310,
+      "2": 57,
+      "1": 309,
       "0": 47
     }
   },
@@ -163,11 +163,12 @@
   },
   "lastL2Merge": {
     "bot": "Census Core",
-    "hub": "members",
+    "hub": "members+timetable",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
     "pass": 3,
     "partial": 1,
-    "fail": 1,
-    "miss": 0
+    "fail": 2,
+    "miss": 0,
+    "complete": true
   }
 }
