@@ -10,7 +10,7 @@
 | | Morning | Now | Δ |
 |---|---:|---:|---:|
 | **Launch health** | 52% | **63%** | +11 |
-| **Coverage L≥2** (controls exercised) | ~51% | **77%** (319/413) | +26 pts |
+| **Coverage L≥2** (controls exercised) | ~51% | **81%** (334/413) | +26 pts |
 | **Coverage L≥1** (reachable) | ~90% | **91%** (376/413) | +1 |
 
 Command Centre dropped this evening after Milestone 2 scoring — that is intentional honesty, not a tip regression.
@@ -56,9 +56,9 @@ Command Centre dropped this evening after Milestone 2 scoring — that is intent
 | Academy chunk 1 | 6P / 16Part / 8F (misroutes) | DONE |
 | Long-tail chunk 2 (assets…resources) | 3P / 27Part / 0F | DONE |
 | Long-tail chunk 3 (retreats…audit-trail) | 1P / 29Part / 0F | DONE |
-| Next 15 (card-expiry…charts/new) | walking / rows landing | IN FLIGHT (~34 left after) |
+| Next 15 (card-expiry…charts/new) | 4P / 9Part / 2F | MERGED (early from jsonl) |
 
-**L≥2 path:** 212 → 229 → 259 → 289 → **319 (77%)**
+**L≥2 path:** 212 → 229 → 259 → 289 → 319 → **334 (81%)**
 
 ### Notable product defects (still open)
 1. **Dataset** `batchImport.upload` Missing companyId → 403  
@@ -68,7 +68,9 @@ Command Centre dropped this evening after Milestone 2 scoring — that is intent
 5. `/admin/intelligence/mrr` crash (`undefined.length`)  
 6. `/admin/feature-management` — “Refrm Academy — Learning” visible on Bluebird  
 7. **Academy misroutes** (class-tags/terms → LMS settings; news/recordings/exercises → libraries; etc.)  
-8. **Command Centre** Milestone 2 (26 FAIL) — see #1180 verbatim pack  
+8. **Command Centre** Milestone 2 (26 FAIL) — see #1180 verbatim pack
+9. `/admin/credit-liability` agreement fail (tiles vs detail)
+10. Custom dashboard chart edit — tenant fail on preview/orders  
 
 ---
 
@@ -88,7 +90,7 @@ No action needed from you for Longtail L2 walking — observe-only, Agentmail se
 
 ## Still running / next
 
-1. **Longtail L2** — finish remaining ~34–49 routes (card-expiry … end); merge each chunk as it lands  
+1. **Longtail L2** — finish remaining ~34 routes after next-15; merge each chunk as it lands  
 2. Keep **tip-change** CC loop armed (A 24/24 → re-run frozen B–F 30)  
 3. Park NEED_DECLAN items; no Feature Control toggles without asking  
 

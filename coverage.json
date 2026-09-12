@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T20:49:45.455Z",
+  "updatedAt": "2026-09-12T21:24:14.538Z",
   "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "liveTipShort": "6486be87",
   "refreshLag": {
@@ -12,7 +12,7 @@
     "versionError": null,
     "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
     "mergedPrsError": "skipped",
-    "dropsScanned": 65,
+    "dropsScanned": 67,
     "issue1180Error": "skipped",
     "issue1180Comments": 0,
     "claudeReviewError": null,
@@ -33,7 +33,7 @@
         "id": 3,
         "name": "#1180 + hub drops",
         "ok": true,
-        "dropsScanned": 65,
+        "dropsScanned": 67,
         "issue1180": null
       },
       {
@@ -49,7 +49,7 @@
     "strands": 10,
     "strandsStaleVsLiveTip": 6,
     "strandsCurrent": 3,
-    "pages": 201,
+    "pages": 205,
     "pagesStaleVsLiveTip": 84,
     "claudeReviews": 0
   },
@@ -178,6 +178,94 @@
     }
   ],
   "pages": [
+    {
+      "id": "route:/admin/credit-liability",
+      "name": "/admin/credit-liability",
+      "route": "/admin/credit-liability",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-4"
+    },
+    {
+      "id": "route:/admin/custom-dashboards/:dashboardId/charts/:chartId/edit",
+      "name": "/admin/custom-dashboards/:dashboardId/charts/:chartId/edit",
+      "route": "/admin/custom-dashboards/:dashboardId/charts/:chartId/edit",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-4"
+    },
+    {
+      "id": "drop:2026-09-12-coverage-l2-long-tail-chunk-4",
+      "name": "Coverage L2 long-tail next-15 (chunk 4)",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-4"
+    },
+    {
+      "id": "route:/admin/reports-hub",
+      "name": "/admin/reports-hub",
+      "route": "/admin/reports-hub",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-helgoiq-progress"
+    },
+    {
+      "id": "route:/admin/overview",
+      "name": "/admin/overview",
+      "route": "/admin/overview",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-helgoiq-progress"
+    },
+    {
+      "id": "route:/admin/intelligence/mrr",
+      "name": "/admin/intelligence/mrr",
+      "route": "/admin/intelligence/mrr",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-helgoiq-progress"
+    },
+    {
+      "id": "route:/admin/feature-management",
+      "name": "/admin/feature-management",
+      "route": "/admin/feature-management",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-helgoiq-progress"
+    },
+    {
+      "id": "drop:2026-09-13-helgoiq-progress",
+      "name": "HelgoIQ progress 13 Sep (EEST)",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-helgoiq-progress"
+    },
     {
       "id": "route:/admin/audit-trail",
       "name": "/admin/audit-trail",
@@ -487,17 +575,6 @@
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk-1"
     },
     {
-      "id": "route:/admin/feature-management",
-      "name": "/admin/feature-management",
-      "route": "/admin/feature-management",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-coverage-l2-settings-chunk"
-    },
-    {
       "id": "route:/admin/platform-sales",
       "name": "/admin/platform-sales",
       "route": "/admin/platform-sales",
@@ -518,39 +595,6 @@
       "verdict": "FAIL",
       "freshness": "current",
       "evidenceDropId": "2026-09-12-coverage-l2-settings-chunk"
-    },
-    {
-      "id": "route:/admin/overview",
-      "name": "/admin/overview",
-      "route": "/admin/overview",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
-    },
-    {
-      "id": "route:/admin/reports-hub",
-      "name": "/admin/reports-hub",
-      "route": "/admin/reports-hub",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
-    },
-    {
-      "id": "route:/admin/intelligence/mrr",
-      "name": "/admin/intelligence/mrr",
-      "route": "/admin/intelligence/mrr",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
     },
     {
       "id": "route:/admin/newsletter-analytics-legacy",
