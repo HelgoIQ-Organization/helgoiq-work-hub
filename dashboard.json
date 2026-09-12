@@ -17,7 +17,17 @@
       "checkedAt": "2026-09-12T07:40:10.030Z"
     },
     "updatedAt": "2026-09-12T07:40:10.030Z",
-    "note": "Live tip a3a0e207: #1267 invite create. Staging ahead: #1266 Pulse (6486be87) not deployed. Cluster A last Measured 23/24 on a73ff70 (ACS-C01 fail)."
+    "note": "Live tip a3a0e207: #1267 invite create. Staging ahead: #1266 Pulse (6486be87) not deployed. Cluster A last Measured 23/24 on a73ff70 (ACS-C01 fail).",
+    "coveragePercentFormula": "Share of Coverage-tab page rows with level\u22651 (L1 reachable+sane). After backfill: 102/413 \u2248 24.7% at L1+ (55+47); tested_any including failed/blocked = 125/413 = 30.3%.",
+    "headlineVsCoverage": "Headline ~64% = weighted strand average. Coverage % = menu pages at Level \u22651. Different units; strand passes must stamp page rows or mapping is wrong.",
+    "coverageAfterBackfill": {
+      "pctTestedAny": 30.3,
+      "l1": 55,
+      "l2": 47,
+      "l3": 0,
+      "l0": 311,
+      "total": 413
+    }
   },
   "tip": "a3a0e20783530334e24ba3f64c0345a419e4179b",
   "progressToday": {
@@ -62,7 +72,8 @@
     "plainEnglishDay": "Saturday morning (12 Sep Europe/London): LIVE TIP MOVED 88d622ea \u2192 a3a0e207. Headline held at ~64% pending retest on new tip \u2014 do not claim strand progress until re-measured. Now live: #1267 (studio admin invite create). Still deploy-lagging: #1266 (Pulse saved-fact explain). Prior on tip chain: #1262/#1263/#1264/#1249. Your Move: retest fresh Admin 2 invite create now that #1267 is on tip. Never instruct import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
     "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
-    "updatedAt": "2026-09-12T07:40:10.030Z"
+    "updatedAt": "2026-09-12T07:40:10.030Z",
+    "coverageNote": "Coverage backfill 4.4%\u219230.3% tested_any (L1 55 / L2 47). Census L1 walks in flight."
   },
   "strands": [
     {
