@@ -5581,7 +5581,7 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -5595,21 +5595,42 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/instructor-ai-agents.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Instructor AI Agents loads with agent metrics and directory content.",
-      "title": "Team Command Centre Agents",
-      "breadcrumb": "Team Command Centre Agents",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Agreement FAIL: 536 vs 4940 conversations on Aster card. Metric tiles not drillable. Scoped studio view; no Refrm. No agent enable/create."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "opened page",
+        "observed 5 agent cards + 4 metric tiles"
+      ],
+      "controlsNotExercised": [
+        "per-agent open (no clear drill)",
+        "enable/create agent"
+      ],
+      "defects": null
+    },
+    "reason": "Agreement FAIL: 536 vs 4940 conversations on Aster card. Metric tiles not drillable. Scoped studio view; no Refrm. No agent enable/create."
   },
   {
     "id": "admin-instructor-roi",
@@ -5686,7 +5707,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Honest empty + boutique 80% fill-rate banner. Calculate Week withheld (generates data) \u2192 PARTIAL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -5698,23 +5719,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/instructor-teaching-insights.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good instructor coaching/insights surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Team > Instructor Teaching Insights",
-      "note": "Instructor Teaching Insights rendered; no calculation or data-generation action performed.",
-      "breadcrumb": "Instructor Teaching Insights",
-      "reachability": "DIRECT_URL",
-      "heading": "Instructor Teaching Insights"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Honest empty + boutique 80% fill-rate banner. Calculate Week withheld (generates data) \u2192 PARTIAL."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "Calculate Week"
+      ],
+      "defects": null
     }
   },
   {
@@ -8888,7 +8924,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Canonicalizes to staff-hub Rota Builder. Writes withheld \u2192 PARTIAL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -8900,23 +8936,42 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/rota-builder.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good rota-building surface",
-      "buriedDaily": "low",
-      "duplicate": "Rota Builder is nested under Staff > Rota",
-      "proposedHome": "Team > Rota > Rota Builder",
-      "note": "Direct route canonicalized to Staff hub Rota Builder (tab=rota, rotaTab=builder); no rota saved, copied, published, or otherwise changed.",
-      "breadcrumb": "Staff > Rota > Rota Builder",
-      "reachability": "DIRECT_URL",
-      "heading": "Rota Builder"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Canonicalizes to staff-hub Rota Builder. Writes withheld \u2192 PARTIAL."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "week next/back",
+        "location Bluebird Central \u2192 All locations"
+      ],
+      "controlsNotExercised": [
+        "Add shift",
+        "Save template",
+        "Copy to next week",
+        "Publish week"
+      ],
+      "defects": null
     }
   },
   {
@@ -9948,10 +10003,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Agreement FAIL: hub lists 14 staff; employment picker shows none. Cannot exercise staff select.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -9963,23 +10018,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/08-staff-employment.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good staff employment/contract surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Team > Staff Employment",
-      "note": "Employment surface rendered directly; no staff record opened or changed.",
-      "breadcrumb": "Staff Employment",
-      "reachability": "DIRECT_URL",
-      "heading": "Staff Employment"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Agreement FAIL: hub lists 14 staff; employment picker shows none. Cannot exercise staff select."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "opened page",
+        "observed empty Staff Members list"
+      ],
+      "controlsNotExercised": [
+        "select staff",
+        "edit contract/documents"
+      ],
+      "defects": null
     }
   },
   {
@@ -9997,63 +10069,83 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Staff > Invitations route opened (0 pending \u00b7 11 historical). Screenshot-only.",
+    "reason": "Final URL landed on rotaTab=reporting. KPI cards have no drill to underlying rows \u2192 L2 criterion 2 FAIL. Writes withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
-        "kind": "drop",
-        "id": "census-ai-l1"
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/staff-hub-pay.png"
       },
       {
         "kind": "drop",
-        "id": "census-ai-l1"
-      },
-      {
-        "kind": "drop",
-        "id": "census-ai-l1"
-      },
-      {
-        "kind": "drop",
-        "id": "census-ai-l1"
-      },
-      {
-        "kind": "drop",
-        "id": "census-ai-l1"
-      },
-      {
-        "kind": "drop",
-        "id": "census-ai-l1"
+        "id": "census-longtail-l2-staff"
       },
       {
         "kind": "path",
-        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/staff-hub.png"
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/staff-hub-invitations.png"
       },
       {
         "kind": "drop",
-        "id": "census-longtail-team-academy-l1"
+        "id": "census-longtail-l2-staff"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/staff-hub-roles.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/staff-hub-rota-builder.png"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/staff-hub-rota-sharing.png"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/staff-hub-rota-reporting.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good staff/team roster surface",
-      "buriedDaily": "low",
-      "duplicate": "none observed",
-      "proposedHome": "Team > Staff",
-      "note": "Staff hub rendered directly; no invite, role, clock-in, or staff changes performed. No staff userId was visible to note for a later detail route.",
-      "breadcrumb": "Staff > Team",
-      "reachability": "DIRECT_URL",
-      "heading": "Staff"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Final URL landed on rotaTab=reporting. KPI cards have no drill to underlying rows \u2192 L2 criterion 2 FAIL. Writes withheld."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Builder tab",
+        "Sharing tab",
+        "Reporting tab",
+        "location filter + restore"
+      ],
+      "controlsNotExercised": [
+        "save/copy/publish/add shift",
+        "new sharing rule",
+        "payroll generation"
+      ],
+      "defects": null
     }
   },
   {
@@ -10173,7 +10265,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Honest zero dashboard. Tabs and AI/award writes not exercised \u2192 PARTIAL. Award/AI withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -10185,23 +10277,41 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/09-staff-milestones.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good staff achievement surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Team > Staff Milestones",
-      "note": "Staff Milestones dashboard rendered; no configuration, award, or AI detection action performed.",
-      "breadcrumb": "Staff Milestones",
-      "reachability": "DIRECT_URL",
-      "heading": "Staff Milestones"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Honest zero dashboard. Tabs and AI/award writes not exercised \u2192 PARTIAL. Award/AI withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened Dashboard"
+      ],
+      "controlsNotExercised": [
+        "location filter",
+        "Configure/Rewards/History tabs",
+        "Manual Award",
+        "Run AI detection"
+      ],
+      "defects": null
     }
   },
   {
@@ -10229,22 +10339,45 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/07-staff-substitutions.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "reachability": "PATH DEFECT",
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Cover Requests loads with summary counts, filters, and an accepted substitution row.",
-      "title": "Cover Requests",
-      "breadcrumb": "Cover Requests",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "L1 PATH DEFECT is gone at L2 \u2014 /admin/staff/substitutions renders Cover Requests. Filters/KPI drills not fully exercised \u2192 PARTIAL. Date window 09/01\u201309/30/2026."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "page loaded",
+        "filters observed (09/01/2026\u201309/30/2026, All locations, All statuses)"
+      ],
+      "controlsNotExercised": [
+        "Refresh",
+        "date change",
+        "location/status filter apply",
+        "row actions"
+      ],
+      "defects": null
+    },
+    "reason": "L1 PATH DEFECT is gone at L2 \u2014 /admin/staff/substitutions renders Cover Requests. Filters/KPI drills not fully exercised \u2192 PARTIAL. Date window 09/01\u201309/30/2026."
   },
   {
     "id": "admin-stripe-connect",
@@ -10696,10 +10829,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Direct /admin/team?c=150002 canonicalizes to /admin/staff-hub?c=150002. Same surface and same figure defects.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -10711,23 +10844,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/admin-team.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good team roster surface",
-      "buriedDaily": "low",
-      "duplicate": "/admin/team aliases Staff hub Team tab",
-      "proposedHome": "Team > Staff",
-      "note": "Direct /admin/team resolved to the Staff hub Team tab, the team roster surface; no invite, role, or other write performed.",
-      "breadcrumb": "Staff > Team",
-      "reachability": "DIRECT_URL",
-      "heading": "Staff"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Direct /admin/team?c=150002 canonicalizes to /admin/staff-hub?c=150002. Same surface and same figure defects."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "direct URL canonicalized to staff-hub; hub tabs/filters/figure drills reused"
+      ],
+      "controlsNotExercised": [
+        "same guarded writes as staff-hub"
+      ],
+      "defects": null
     }
   },
   {
@@ -10808,7 +10956,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Calendar + staff filter work. Add holiday withheld \u2192 PARTIAL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -10820,23 +10968,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/team-holidays.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good team leave/availability surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Team > Holidays",
-      "note": "Team Holidays calendar rendered directly; no holiday request or entry created.",
-      "breadcrumb": "Team Holidays",
-      "reachability": "DIRECT_URL",
-      "heading": "Team Holidays"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Calendar + staff filter work. Add holiday withheld \u2192 PARTIAL."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "month next/back",
+        "All Staff \u2192 BB Teacher \u2192 All Staff"
+      ],
+      "controlsNotExercised": [
+        "Add holiday",
+        "List view"
+      ],
+      "defects": null
     }
   },
   {
@@ -15480,21 +15645,42 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/instructor-observations.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Instructor observations loads with start form, zero-count history, search, filter, and honest empty state.",
-      "title": "Instructor observations",
-      "breadcrumb": "Instructor observations",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Filters work. Create withheld. Counters match empty list (not a figure FAIL)."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search",
+        "status filter Drafts \u2192 All"
+      ],
+      "controlsNotExercised": [
+        "Start observation",
+        "select instructor"
+      ],
+      "defects": null
+    },
+    "reason": "Filters work. Create withheld. Counters match empty list (not a figure FAIL)."
   },
   {
     "id": "admin-instructor-observations-observationId",
@@ -17020,7 +17206,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "staffId=2160660. Honest empty intelligence. No tabs/figures. Identity thinner than /admin/staff/2160660.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -17032,18 +17218,37 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/org-intelligence-staff.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-money",
+      "source": "census-longtail-l2",
+      "hub": "staff",
       "hubFit": null,
       "buriedDaily": null,
       "duplicate": null,
-      "note": "Opened from Team Profiles row using staffId 2160660c; explicit no intelligence data yet empty state rendered."
+      "proposedHome": null,
+      "note": "staffId=2160660. Honest empty intelligence. No tabs/figures. Identity thinner than /admin/staff/2160660."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened staffId=2160660",
+        "Back visible"
+      ],
+      "controlsNotExercised": [],
+      "defects": null
     }
   },
   {
@@ -17110,7 +17315,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Loaded with one draft staff row (BB Teacher). No approval, generation or export action was activated.",
+    "reason": "Filters/tabs work. Generate/Approve withheld \u2192 PARTIAL. No Stripe charge.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -17126,23 +17331,44 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/payroll.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good finance/payroll surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Finance > Payroll",
-      "note": "Payroll rendered directly; Generate Invoices and Approve Payrun controls observed only; no payroll generation, approval, export, or payment action performed.",
-      "breadcrumb": "Payroll",
-      "reachability": "LINK ONLY",
-      "heading": "Payroll"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Filters/tabs work. Generate/Approve withheld \u2192 PARTIAL. No Stripe charge."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Payroll History tab + return",
+        "August \u2192 September",
+        "Central \u2192 All Locations",
+        "staff search"
+      ],
+      "controlsNotExercised": [
+        "Generate Invoices",
+        "Approve Payrun",
+        "Pay Rates edits",
+        "Expenses writes"
+      ],
+      "defects": null
     }
   },
   {
@@ -18904,21 +19130,44 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/01-rota-hub.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Route redirects to Staff Rota Builder, which loads with week controls, location filter, and zero shifts; no shift action taken.",
-      "title": "Rota Builder",
-      "breadcrumb": "Staff / Rota / Rota Builder",
-      "reachability": "redirect"
-    }
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Redirect lands on Rota Builder (not Reporting). Writes withheld. Reporting KPI no-drill FAIL lives on staff-hub?tab=rota."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "direct URL canonicalized to Rota Builder",
+        "observed week 6\u201312 Sept 2026"
+      ],
+      "controlsNotExercised": [
+        "Add shift",
+        "Save template",
+        "Copy to next week",
+        "Publish week"
+      ],
+      "defects": null
+    },
+    "reason": "Redirect lands on Rota Builder (not Reporting). Writes withheld. Reporting KPI no-drill FAIL lives on staff-hub?tab=rota."
   },
   {
     "id": "admin-rota-reporting",
@@ -18935,11 +19184,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Canonicalizes to hub reporting. All 7 KPI cards clicked \u2014 none drill. Confirms staff-hub?tab=rota FAIL. Date shown 09/14/2026, location Bluebird Central.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -18951,18 +19200,38 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/rota-reporting.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-money",
+      "source": "census-longtail-l2",
+      "hub": "staff",
       "hubFit": null,
       "buriedDaily": null,
       "duplicate": null,
-      "note": "Redirected to canonical staff-hub rota reporting tab; KPI cards and no-shift empty state rendered."
+      "proposedHome": null,
+      "note": "Canonicalizes to hub reporting. All 7 KPI cards clicked \u2014 none drill. Confirms staff-hub?tab=rota FAIL. Date shown 09/14/2026, location Bluebird Central."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "location",
+        "date",
+        "clicked all 7 KPI cards"
+      ],
+      "controlsNotExercised": [],
+      "defects": null
     }
   },
   {
@@ -18980,11 +19249,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Legacy alias of rota-reporting; inherits KPI no-drill FAIL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -18996,18 +19265,38 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/rota-reporting-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-money",
+      "source": "census-longtail-l2",
+      "hub": "staff",
       "hubFit": null,
       "buriedDaily": null,
       "duplicate": null,
-      "note": "Redirected to canonical staff-hub rota reporting tab; KPI cards and no-shift empty state rendered."
+      "proposedHome": null,
+      "note": "Legacy alias of rota-reporting; inherits KPI no-drill FAIL."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Bluebird North location",
+        "date",
+        "all KPI cards clicked"
+      ],
+      "controlsNotExercised": [],
+      "defects": null
     }
   },
   {
@@ -19039,21 +19328,40 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/02-rota-sharing.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Route redirects to Staff Rota Sharing, which loads with honest no-sharing-rules state; no rule created.",
-      "title": "Rota Sharing",
-      "breadcrumb": "Staff / Rota / Sharing",
-      "reachability": "redirect"
-    }
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Honest empty. New rule withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "direct URL \u2192 Sharing tab"
+      ],
+      "controlsNotExercised": [
+        "New rule"
+      ],
+      "defects": null
+    },
+    "reason": "Honest empty. New rule withheld."
   },
   {
     "id": "admin-rota-sharing-legacy",
@@ -19073,7 +19381,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Orphan alias of rota sharing. Same empty state.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19085,23 +19393,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/03-rota-sharing-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Team Staff rota-sharing surface",
-      "buriedDaily": "medium",
-      "duplicate": "legacy orphan route for the Staff hub Rota Sharing tab",
-      "proposedHome": "Team > Staff > Rota > Sharing",
-      "note": "Direct legacy route canonicalized to the Staff hub Rota Sharing tab; observed only, no sharing rule or rota mutation used.",
-      "breadcrumb": "Team > Staff > Rota > Sharing",
-      "reachability": "ORPHANED",
-      "heading": "Rota Sharing"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Orphan alias of rota sharing. Same empty state."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "direct URL \u2192 same Sharing surface"
+      ],
+      "controlsNotExercised": [
+        "New rule"
+      ],
+      "defects": null
     }
   },
   {
@@ -20486,10 +20809,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Orphan /admin/staff correctly redirects to canonical Staff Hub; same figure defects.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20501,23 +20824,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/admin-staff.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good team staff roster surface",
-      "buriedDaily": "low",
-      "duplicate": "legacy orphan route for the Staff hub Team tab",
-      "proposedHome": "Team > Staff",
-      "note": "Direct legacy route canonicalized to /admin/staff-hub; observed only, with no invite, role, clock-in, access or other staff change.",
-      "breadcrumb": "Team > Staff",
-      "reachability": "ORPHANED",
-      "heading": "Staff"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Orphan /admin/staff correctly redirects to canonical Staff Hub; same figure defects."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "direct URL canonicalized to staff-hub"
+      ],
+      "controlsNotExercised": [
+        "same guarded writes as staff-hub"
+      ],
+      "defects": null
     }
   },
   {
@@ -20595,10 +20933,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Orphan correctly redirects; inherits onboarding-tile figure FAIL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20610,23 +20948,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/04-staff-team-report.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good team staff roster surface",
-      "buriedDaily": "low",
-      "duplicate": "legacy orphan route for the Staff hub Team tab",
-      "proposedHome": "Team > Staff",
-      "note": "Direct legacy route canonicalized to /admin/staff-hub; observed only, with no team, invite, role, clock-in, access or other staff change.",
-      "breadcrumb": "Team > Staff",
-      "reachability": "ORPHANED",
-      "heading": "Staff"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Orphan correctly redirects; inherits onboarding-tile figure FAIL."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "direct URL canonicalized to staff-hub Team"
+      ],
+      "controlsNotExercised": [
+        "same guarded writes"
+      ],
+      "defects": null
     }
   },
   {
@@ -20644,10 +20997,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Display name Unknown on a known instructor is an agreement FAIL vs Team roster. userId=2160660. Writes withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20659,23 +21012,44 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/06-staff-2160660.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good staff detail/drill-in surface",
-      "buriedDaily": "medium",
-      "duplicate": "staff detail is row drill-in from Staff Team",
-      "proposedHome": "Team > Staff > detail",
-      "note": "Opened one clickable row from /admin/staff-hub; concrete URL /admin/staff/2160660?c=150002, so userId=2160660; detail observed only with no edit, message, observation, note, role, access, or employment write.",
-      "breadcrumb": "Staff > Staff Detail",
-      "reachability": "LINK ONLY",
-      "heading": "Unknown"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Display name Unknown on a known instructor is an agreement FAIL vs Team roster. userId=2160660. Writes withheld."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "opened /admin/staff/2160660",
+        "Overview",
+        "Observations section",
+        "Back to Staff Hub"
+      ],
+      "controlsNotExercised": [
+        "Message",
+        "Edit",
+        "New observation save",
+        "Schedule/Employment/Documents/Roles/Performance/Activity/Details full writes"
+      ],
+      "defects": null
     }
   },
   {
@@ -20864,21 +21238,44 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/team-calendar.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Route redirects to Team Communications Team Calendar, which loads with September 2026 calendar, sync controls, and honest no-events state; no event added.",
-      "title": "Team Calendar",
-      "breadcrumb": "Team Communications / Team Calendar",
-      "reachability": "redirect"
-    }
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Canonicalizes to team-comms-hub calendar. Add/export/sync toggles withheld. Week/list views not present."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "month navigation",
+        "landed on calendar tab"
+      ],
+      "controlsNotExercised": [
+        "Add Event",
+        "Export .ics",
+        "Sync Enabled",
+        "Class Schedule"
+      ],
+      "defects": null
+    },
+    "reason": "Canonicalizes to team-comms-hub calendar. Add/export/sync toggles withheld. Week/list views not present."
   },
   {
     "id": "admin-team-chat",
@@ -20909,21 +21306,43 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/team-chat.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Route redirects to Team Communications Team Chat, which loads with Instructor Circle, search, availability, and honest no-channels state; no channel created.",
-      "title": "Instructor Circle",
-      "breadcrumb": "Team Communications / Team Chat",
-      "reachability": "redirect"
-    }
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Canonicalizes to team-comms-hub chat. New Channel withheld. Search works (zzzzz \u2192 still empty)."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Availability menu inspect",
+        "search zzzzz (empty result)"
+      ],
+      "controlsNotExercised": [
+        "New Channel",
+        "send message",
+        "Morning digest toggle"
+      ],
+      "defects": null
+    },
+    "reason": "Canonicalizes to team-comms-hub chat. New Channel withheld. Search works (zzzzz \u2192 still empty)."
   },
   {
     "id": "admin-team-legacy",
@@ -20940,10 +21359,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Orphan correctly redirects to Team tab; inherits figure FAIL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20955,23 +21374,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/05-team-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good team roster surface",
-      "buriedDaily": "low",
-      "duplicate": "legacy orphan route for the Staff hub Team tab",
-      "proposedHome": "Team > Staff",
-      "note": "Direct legacy route canonicalized to /admin/staff-hub?tab=team; observed only, with no team, invite, role, clock-in, access or other staff change.",
-      "breadcrumb": "Team > Staff > Team",
-      "reachability": "ORPHANED",
-      "heading": "Staff"
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Orphan correctly redirects to Team tab; inherits figure FAIL."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "direct URL canonicalized to Team tab"
+      ],
+      "controlsNotExercised": [
+        "same guarded writes"
+      ],
+      "defects": null
     }
   },
   {
@@ -21003,21 +21437,40 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/team-polls.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-staff"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Route redirects to Team Communications Polls, which loads with honest no-polls state; no poll created.",
-      "title": "Team Polls",
-      "breadcrumb": "Team Communications / Polls",
-      "reachability": "redirect"
-    }
+      "source": "census-longtail-l2",
+      "hub": "staff",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Canonicalizes to team-comms-hub polls. Create withheld. Honest empty."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened polls tab"
+      ],
+      "controlsNotExercised": [
+        "Create Poll"
+      ],
+      "defects": null
+    },
+    "reason": "Canonicalizes to team-comms-hub polls. Create withheld. Honest empty."
   },
   {
     "id": "admin-trial-conversion",

@@ -35,7 +35,7 @@
       }
     },
     "coverageL1Pct": 88.6,
-    "coverageL2Pct": 17.9
+    "coverageL2Pct": 23.7
   },
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "progressToday": {
@@ -81,7 +81,7 @@
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
     "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
     "updatedAt": "2026-09-12T11:59:19.847671Z",
-    "coverageNote": "After Money L2 Finance: L\u22651=366 (89%); L\u22652=74 (18%)",
+    "coverageNote": "After Longtail Staff L2: L\u22651=366 (89%); L\u22652=98 (24%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED fixtures consumed",
     "pulse1266": "PASS UI explain; explainStudioState RPC 500",
@@ -111,7 +111,8 @@
     "ai85Rescore": "Hold 56% \u2014 25 retested; AI-018 FAIL\u2192PARTIAL only; 4 FAIL open",
     "clusterA": "24/24 PASS on 6486be87 \u2014 ACS-F01 + ACS-C01 cleared",
     "iso29": "Re-sweep 6486be87: 26P/4F/2NR \u2014 ISO-18/20/27/29 still FAIL; hold isolation 86%",
-    "scorePushWrap": "Done: tip refresh, Dispatch PASS (ambient 92), canary FAIL hold 52, AI-85 hold 56, Cluster A 24/24 (CC 80), ISO hold 86. Headline 66%. Need Declan: Comms secrets, smoke fixtures, PA seat."
+    "scorePushWrap": "Done: tip refresh, Dispatch PASS (ambient 92), canary FAIL hold 52, AI-85 hold 56, Cluster A 24/24 (CC 80), ISO hold 86. Headline 66%. Need Declan: Comms secrets, smoke fixtures, PA seat.",
+    "censusLongtailL2Staff": "0 PASS / 16 PARTIAL / 11 FAIL \u2014 onboarding tiles, rota KPIs, name/employment disagree"
   },
   "strands": [
     {
