@@ -73,12 +73,12 @@
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
     "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
     "updatedAt": "2026-09-12T07:40:10.030Z",
-    "coverageNote": "After Content merge: tested_any 184/413 (44.6%); L\u22651=166",
+    "coverageNote": "After Content+Core: tested_any 200/413 (48.4%); L\u22651=182",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED fixtures consumed",
     "pulse1266": "PASS UI explain; explainStudioState RPC 500",
     "censusCoreL1": "80/88 PASS tip 6486be87; Coverage merge done",
-    "censusContentL1": "25/25 PASS Website/Blog tip 6486be87"
+    "censusContentL1": "25/25 PASS Website/Blog tip 6486be87 MERGED"
   },
   "strands": [
     {
