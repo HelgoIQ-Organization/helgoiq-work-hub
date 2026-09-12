@@ -19,9 +19,9 @@
     "hubOnly": 156,
     "orphaned": 30,
     "fullyTested": 0,
-    "partiallyTested": 335,
+    "partiallyTested": 334,
     "blocked": 44,
-    "failed": 30,
+    "failed": 31,
     "notTested": 4,
     "stale": 59,
     "byReachability": {
@@ -34,8 +34,8 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "2": 63,
-      "1": 303,
+      "2": 67,
+      "1": 299,
       "0": 47
     }
   },
@@ -162,12 +162,13 @@
     "note": "Evidence tips stamped from source drops; live tip confirmed via /api/version for reference only."
   },
   "lastL2Merge": {
-    "bot": "Census Comms",
-    "hub": "inbox",
+    "bot": "Census AI",
+    "hub": "home-cc",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "pass": 1,
-    "partial": 3,
-    "fail": 2,
-    "miss": 0
+    "pass": 0,
+    "partial": 0,
+    "fail": 1,
+    "miss": 0,
+    "note": "overview scored L2_FAIL for Refrm tab/badge visible on Bluebird (bot said PARTIAL)"
   }
 }

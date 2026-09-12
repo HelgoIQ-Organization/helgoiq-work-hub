@@ -7122,7 +7122,7 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -7136,21 +7136,43 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2/studio-overview-refrm-isolation.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-home"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Overview loads with selected studio and location summary.",
-      "title": "Multi-Company Overview",
-      "breadcrumb": "Multi-Company Overview",
-      "reachability": "unknown"
-    }
+      "source": "census-ai-l2",
+      "hub": "home",
+      "hubFit": "PASS",
+      "buriedDaily": "n/a",
+      "duplicate": "n/a",
+      "proposedHome": "n/a",
+      "note": "Admin/Bluebird Pilates TEST DATA visible. 1 brand, 1 company, 2 locations, members aggregated \u2014. Refrm tab and badge are visibly present; not opened."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "All Companies tab",
+        "Brand metric information panel opened and closed"
+      ],
+      "controlsNotExercised": [
+        "Refrm tab (isolation guard)",
+        "Company, Locations, Members metric info"
+      ],
+      "defects": null,
+      "botVerdict": null
+    },
+    "reason": "Admin/Bluebird Pilates TEST DATA visible. 1 brand, 1 company, 2 locations, members aggregated \u2014. Refrm tab and badge are visibly present; not opened."
   },
   {
     "id": "admin-performance-intelligence",
@@ -13293,20 +13315,39 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-home"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
+    "level": 2,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Agents queue and daily operations load with empty state.",
-      "title": "Your operational AI team",
-      "breadcrumb": "AI Command Centre / Agents",
-      "reachability": "SIDEBAR"
+      "source": "census-ai-l2",
+      "hub": "home",
+      "hubFit": "PASS",
+      "buriedDaily": "PASS",
+      "duplicate": "PASS",
+      "proposedHome": "PASS",
+      "note": "Scoped c=150002; no Refrm/150001 data or controls. No agent state change or proposal execution."
+    },
+    "l2": {
+      "verdict": "",
+      "controlsExercised": [
+        "All, Approvals, Agent work, Tasks, Recommendations queue filters",
+        "returned to All",
+        "Refresh"
+      ],
+      "controlsNotExercised": [
+        "Start Observe pilot controls",
+        "disabled Pause agent",
+        "disabled Run a review now"
+      ],
+      "defects": null,
+      "botVerdict": null
     }
   },
   {
@@ -13403,20 +13444,40 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-home"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
+    "level": 2,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Tasks page loads with honest no-tasks state.",
-      "title": "Tasks",
-      "breadcrumb": "AI Command Centre / Tasks",
-      "reachability": "SIDEBAR"
+      "source": "census-ai-l2",
+      "hub": "home",
+      "hubFit": "PASS",
+      "buriedDaily": "PASS",
+      "duplicate": "n/a",
+      "proposedHome": "n/a",
+      "note": "All non-writing views and filters exercised; no task creation or Confirm&Execute."
+    },
+    "l2": {
+      "verdict": "",
+      "controlsExercised": [
+        "List, Priorities, Impact and returned List",
+        "How to use",
+        "temporary search and clear",
+        "Assigned to Me then All Staff",
+        "All, Pending, In Progress, Overdue, Completed and returned All"
+      ],
+      "controlsNotExercised": [
+        "New Task (write intentionally avoided)",
+        "row actions unavailable because empty"
+      ],
+      "defects": null,
+      "botVerdict": null
     }
   },
   {
@@ -14281,20 +14342,46 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-home"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
+    "level": 2,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "duplicate",
-      "hubFit": "duplicate",
-      "note": "Studio performance dashboard loads with metrics and actions.",
-      "title": "Dashboard",
-      "breadcrumb": "Dashboard",
-      "reachability": "unknown"
+      "source": "census-ai-l2",
+      "hub": "home",
+      "hubFit": "PASS",
+      "buriedDaily": "PASS",
+      "duplicate": "n/a",
+      "proposedHome": "PASS",
+      "note": "Admin/Bluebird TEST DATA visible. No crash/blank state; noninteractive KPI cards leave figures criterion partial. No Refrm/150001 controls observed."
+    },
+    "l2": {
+      "verdict": "",
+      "controlsExercised": [
+        "Customize opened/cancelled",
+        "All Locations to Bluebird Central and restored",
+        "start date picker opened/Escape",
+        "Studio Pulse drill-down/back",
+        "Upcoming Classes drill-down/back",
+        "Check-ins Today drill-down/back"
+      ],
+      "controlsNotExercised": [
+        "Recompute pulse",
+        "Save",
+        "Ask Pulse",
+        "Why no score",
+        "Take Snapshot",
+        "noninteractive KPI drill-downs",
+        "Mark No-Show, Approve Cover, Staff Rota"
+      ],
+      "defects": null,
+      "botVerdict": null
     }
   },
   {
