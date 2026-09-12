@@ -2526,7 +2526,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -2539,17 +2538,43 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/audience-hub-overview.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/audience-hub-segment.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "no",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Customer Segments tab",
+        "segment preview and close"
+      ],
+      "controlsNotExercised": [
+        "Persist new segment"
+      ],
+      "defects": []
     }
   },
   {
@@ -2705,11 +2730,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -2721,18 +2745,40 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/banners-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "buried",
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
       "buriedDaily": null,
-      "duplicate": null
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "New banner",
+        "form controls",
+        "Cancel"
+      ],
+      "controlsNotExercised": [
+        "Publish banner"
+      ],
+      "defects": []
     }
   },
   {
@@ -6481,7 +6527,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -6501,20 +6547,38 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/marketing-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Landing Pages tab loads with page, view, lead, sales, revenue, and landing-page records.",
-      "title": "Acquisition",
-      "breadcrumb": "Acquisition",
-      "reachability": "unknown"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "available tabs and non-destructive navigation"
+      ],
+      "controlsNotExercised": [
+        "Meta create/approve/connect (guarded)"
+      ],
+      "defects": []
     }
   },
   {
@@ -8906,7 +8970,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -8919,17 +8982,39 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/retention-hub-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "no",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "tabs",
+        "sequence creation modal open/close"
+      ],
+      "controlsNotExercised": [
+        "Activate sequence"
+      ],
+      "defects": []
     }
   },
   {
@@ -10034,7 +10119,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -10046,18 +10130,37 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/social-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "ok",
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
       "buriedDaily": null,
-      "duplicate": null
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "landed Social Hub surface",
+        "non-destructive navigation links"
+      ],
+      "controlsNotExercised": [],
+      "defects": []
     }
   },
   {
@@ -10079,7 +10182,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -10091,18 +10194,42 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/social-hub-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "ok",
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
       "buriedDaily": null,
-      "duplicate": null
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Google Reviews tab",
+        "Member Feedback tab",
+        "review filters observed"
+      ],
+      "controlsNotExercised": [
+        "Google Business Profile connection",
+        "Sync now",
+        "publishing replies"
+      ],
+      "defects": []
     }
   },
   {
@@ -10124,7 +10251,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -10136,18 +10262,40 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/advocacy-queue-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "buried",
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
       "buriedDaily": null,
-      "duplicate": null
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Accepted tab",
+        "Pending/empty queue observed"
+      ],
+      "controlsNotExercised": [
+        "Re-run unmatched",
+        "accept/reject review actions"
+      ],
+      "defects": []
     }
   },
   {
@@ -10169,7 +10317,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -10181,18 +10329,42 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/google-ads-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "ok",
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
       "buriedDaily": null,
-      "duplicate": null
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Performance surface",
+        "Campaigns tab",
+        "date/studio filters observed"
+      ],
+      "controlsNotExercised": [
+        "Connect Google Ads",
+        "New campaign",
+        "campaign builder/AI actions"
+      ],
+      "defects": []
     }
   },
   {
@@ -10214,7 +10386,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Loaded as the Settings navigation target for Connections; no integration was changed.",
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -10230,23 +10402,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-settings-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/integrations-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "settings",
-      "hubFit": "good settings integrations surface",
-      "buriedDaily": "medium",
-      "duplicate": "standalone Social Integrations surface under Settings",
-      "proposedHome": "Settings > Integrations",
-      "note": "Direct /admin/social/integrations?c=150002 rendered for Bluebird Pilates TEST DATA; OBSERVE ONLY, no connect, reveal, edit or settings action used.",
-      "breadcrumb": "Settings > Integrations",
-      "reachability": "SIDEBAR",
-      "heading": "Integrations"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Instagram tab",
+        "Tag Manager tab",
+        "integration status surfaces"
+      ],
+      "controlsNotExercised": [
+        "Google/Meta/Tag Manager connection flows"
+      ],
+      "defects": []
     }
   },
   {
@@ -13953,19 +14142,53 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "L2 partial",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/campaign-2-edit.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 2,
+    "levelLabel": "L2 partial",
+    "senseCheck": {
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "existing fields",
+        "HTML tab",
+        "Preview tab",
+        "audience controls"
+      ],
+      "controlsNotExercised": [
+        "Save Draft",
+        "Schedule",
+        "Send Campaign",
+        "Cancel campaign"
+      ],
+      "defects": []
+    }
   },
   {
     "id": "admin-campaigns-id-report",
@@ -13982,19 +14205,46 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/campaign-2-report.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 2,
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Recipients tab",
+        "Link Clicks tab",
+        "status filter surface"
+      ],
+      "controlsNotExercised": [],
+      "defects": []
+    }
   },
   {
     "id": "admin-campaigns-new",
@@ -14015,7 +14265,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -14027,18 +14277,42 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/campaigns-new.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "ok",
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
       "buriedDaily": null,
-      "duplicate": null
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "fields",
+        "channel and audience filters",
+        "editor tabs"
+      ],
+      "controlsNotExercised": [
+        "Save Draft",
+        "Schedule",
+        "Send Campaign"
+      ],
+      "defects": []
     }
   },
   {
@@ -17793,21 +18067,38 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/newsletter-analytics.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Newsletter analytics alias redirects to the Analytics tab and loads engagement metrics with an honest no-analytics state.",
-      "title": "Newsletter",
-      "breadcrumb": "Newsletter",
-      "reachability": "unknown"
-    }
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "landed analytics tab controls"
+      ],
+      "controlsNotExercised": [],
+      "defects": []
+    },
+    "reason": "L2 partial"
   },
   {
     "id": "admin-newsletter-analytics-legacy",
@@ -17824,10 +18115,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "L2 fail",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -17839,23 +18130,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/newsletter-analytics-legacy.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Marketing Newsletter analytics surface",
-      "buriedDaily": "medium",
-      "duplicate": "legacy orphan route for Newsletter Analytics tab",
-      "proposedHome": "Marketing > Newsletter > Analytics",
-      "note": "Direct /admin/newsletter-analytics-legacy?c=150002 canonicalized to Newsletter Analytics; no send or analytics mutation used.",
-      "breadcrumb": "Marketing > Newsletter > Analytics",
-      "reachability": "ORPHANED",
-      "heading": "Newsletter"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "available tabs and filters"
+      ],
+      "controlsNotExercised": [],
+      "defects": [
+        "Page failed to load: dynamic module import error"
+      ]
     }
   },
   {
@@ -17876,7 +18182,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -17888,23 +18194,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/newsletter-creator.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Marketing Newsletter creation surface",
-      "buriedDaily": "medium",
-      "duplicate": "legacy orphan route for Newsletter Create tab",
-      "proposedHome": "Marketing > Newsletter > Create",
-      "note": "Direct /admin/newsletter-creator?c=150002 canonicalized to Newsletter Create; observed only, no draft edit, publish or send action used.",
-      "breadcrumb": "Marketing > Newsletter > Create",
-      "reachability": "ORPHANED",
-      "heading": "Newsletter"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "fields and editor navigation"
+      ],
+      "controlsNotExercised": [
+        "Send/publish"
+      ],
+      "defects": []
     }
   },
   {
@@ -17925,7 +18246,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -17937,23 +18258,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/newsletter-creator-legacy.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Marketing Newsletter creation surface",
-      "buriedDaily": "medium",
-      "duplicate": "legacy orphan route for Newsletter Create tab",
-      "proposedHome": "Marketing > Newsletter > Create",
-      "note": "Direct /admin/newsletter-creator-legacy?c=150002 canonicalized to Newsletter Create; observed only, no draft edit, publish or send action used.",
-      "breadcrumb": "Marketing > Newsletter > Create",
-      "reachability": "ORPHANED",
-      "heading": "Newsletter"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "available editor controls"
+      ],
+      "controlsNotExercised": [
+        "Send/publish"
+      ],
+      "defects": []
     }
   },
   {
@@ -19431,7 +19767,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19443,18 +19778,39 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/retention.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-money",
-      "hubFit": null,
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
       "buriedDaily": null,
       "duplicate": null,
-      "note": "Retention KPI cards, risk distribution and highest-risk members rendered."
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "all four tabs",
+        "member search",
+        "level filter",
+        "trend filter"
+      ],
+      "controlsNotExercised": [],
+      "defects": []
     }
   },
   {
@@ -19486,20 +19842,40 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/retention-sequences.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Retention Sequences loads with governance gate notice and honest no-sequences state; no sequence created.",
-      "title": "Retention Sequences",
-      "breadcrumb": "Retention Sequences",
-      "reachability": "unknown"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Load Preset modal",
+        "preset modal close"
+      ],
+      "controlsNotExercised": [
+        "Apply preset",
+        "Activate sequence"
+      ],
+      "defects": []
     }
   },
   {
@@ -21602,7 +21978,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -21614,23 +21990,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/competitors-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good marketing social/competitor-analysis surface",
-      "buriedDaily": "medium",
-      "duplicate": "legacy orphan route for the Social & Reviews Competitors tab",
-      "proposedHome": "Marketing > Social & Reviews > Competitors",
-      "note": "Direct legacy route canonicalized to the Social & Reviews Competitors tab; observed only, with no Meta connection or competitor added.",
-      "breadcrumb": "Marketing > Social & Reviews > Competitors",
-      "reachability": "ORPHANED",
-      "heading": "Competitor Analysis"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "landed Competitors tab",
+        "empty list state"
+      ],
+      "controlsNotExercised": [
+        "Connect Meta",
+        "Add competitor"
+      ],
+      "defects": []
     }
   },
   {
@@ -21662,20 +22055,42 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/conversions-overview.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/conversions-trend.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Conversion Funnel loads with filters, lead/trial/client metrics, source table, and monthly trend tab.",
-      "title": "Conversion Funnel",
-      "breadcrumb": "Conversion Funnel",
-      "reachability": "unknown"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "By Source surface",
+        "Monthly Trend drill",
+        "location/source/date filters observed"
+      ],
+      "controlsNotExercised": [],
+      "defects": []
     }
   },
   {
@@ -21707,21 +22122,42 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/gtm-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Google measurement & ads loads with disconnected GTM empty state and zeroed metrics; no connection action taken.",
-      "title": "Google measurement & ads",
-      "breadcrumb": "Google measurement & ads",
-      "reachability": "unknown"
-    }
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Tag health surface",
+        "Conversion proof tab"
+      ],
+      "controlsNotExercised": [
+        "Connect container",
+        "Open GTM"
+      ],
+      "defects": []
+    },
+    "reason": "L2 partial"
   },
   {
     "id": "admin-social-instagram",
@@ -21742,7 +22178,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -21754,18 +22189,40 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/instagram-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-money",
-      "hubFit": null,
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
       "buriedDaily": null,
       "duplicate": null,
-      "note": "Redirected to Social Hub Instagram Insights tab; metrics rendered as explicit em-dash empty values."
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "Overview",
+        "All Posts",
+        "location/date filters observed"
+      ],
+      "controlsNotExercised": [
+        "Top Posts"
+      ],
+      "defects": []
     }
   },
   {
@@ -21786,7 +22243,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -21798,23 +22255,43 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/meta-ads-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good marketing Meta ads/reporting surface",
-      "buriedDaily": "medium",
-      "duplicate": "legacy orphan route for Meta Hub Ads & Reports",
-      "proposedHome": "Marketing > Meta > Ads & Reports",
-      "note": "Direct legacy route canonicalized to Meta Hub Ads & Reports; preview only. No Sync Now, Create Meta Campaign, Generate Insights, Approve & Create, or other Meta action used.",
-      "breadcrumb": "Marketing > Meta > Ads & Reports",
-      "reachability": "ORPHANED",
-      "heading": "Meta Hub"
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Ads & Reports surface",
+        "Insights tab",
+        "report filters observed"
+      ],
+      "controlsNotExercised": [
+        "Meta connection",
+        "Create Meta Campaign",
+        "Sync Now",
+        "Generate Insights"
+      ],
+      "defects": []
     }
   },
   {
@@ -21846,21 +22323,45 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/planner-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Route redirects to Social & Reviews Instagram Planner, which loads with the Connect Meta empty state and no posts; no draft or schedule action taken.",
-      "title": "Instagram Planner",
-      "breadcrumb": "Social & Reviews / Instagram Planner",
-      "reachability": "redirect"
-    }
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Next week navigation",
+        "format/account fields observed",
+        "week calendar"
+      ],
+      "controlsNotExercised": [
+        "Connect Meta",
+        "Open Connect Meta",
+        "Save draft",
+        "Schedule"
+      ],
+      "defects": []
+    },
+    "reason": "L2 partial"
   },
   {
     "id": "admin-social-reviews",
@@ -21891,21 +22392,43 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2-mkt/reviews-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-marketing"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Google reviews loads with disconnected Google Business Profile state, zero metrics, filters, and honest no-live-reviews state; no setup or sync action taken.",
-      "title": "Google reviews",
-      "breadcrumb": "Google reviews",
-      "reachability": "unknown"
-    }
+      "source": "census-comms-l2-mkt",
+      "hub": "marketing",
+      "hubFit": "PASS",
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "location/rating filters observed",
+        "no-live-reviews empty state"
+      ],
+      "controlsNotExercised": [
+        "Google Business Profile connection",
+        "Sync now",
+        "publishing replies"
+      ],
+      "defects": []
+    },
+    "reason": "L2 partial"
   },
   {
     "id": "admin-staff",
