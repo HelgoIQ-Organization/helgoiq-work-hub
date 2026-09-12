@@ -19,10 +19,10 @@
     "hubOnly": 156,
     "orphaned": 30,
     "fullyTested": 0,
-    "partiallyTested": 244,
-    "blocked": 42,
-    "failed": 14,
-    "notTested": 113,
+    "partiallyTested": 284,
+    "blocked": 43,
+    "failed": 20,
+    "notTested": 66,
     "stale": 59,
     "byReachability": {
       "SIDEBAR": 218,
@@ -35,8 +35,8 @@
     },
     "byLevel": {
       "2": 49,
-      "0": 149,
-      "1": 215
+      "1": 255,
+      "0": 109
     }
   },
   "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
@@ -60,13 +60,20 @@
   "backfillAt": "2026-09-12T09:02:58.985826Z",
   "backfillProgramme": "17-coverage-programme",
   "lastCensusMerge": {
-    "bot": "Census AI",
+    "bot": "Census Longtail",
+    "chunk": "team-academy",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "pass": 90,
-    "fail": 1,
-    "pa_gates": 5,
-    "needs_id": 13,
+    "pass": 51,
+    "fail": 6,
+    "blocked": 1,
     "miss": 0,
-    "topBlocker": "/admin/intelligence/mrr crash (undefined .length)"
+    "topFails": [
+      "class-tags",
+      "cohort-tags",
+      "terms\u2192LMS settings",
+      "news\u2192libraries",
+      "invites/teachers\u2192LMS overview"
+    ],
+    "assetStamp": "index-CE9GtULG.js"
   }
 }

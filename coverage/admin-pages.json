@@ -71,19 +71,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "strong",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": "team-academy",
+      "note": "Rendered in Bluebird Pilates TEST DATA; sidebar Academy expanded and Overview visible.",
+      "breadcrumb": "Academy > Overview > Overview",
+      "reachability": "SIDEBAR",
+      "heading": "Learning Management System"
+    }
   },
   {
     "id": "admin-academy-ai-settings",
@@ -100,19 +120,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-ai-settings.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "Academy LMS AI settings",
+      "buriedDaily": false,
+      "duplicate": "AI settings also appears in Recent navigation",
+      "proposedHome": "Academy > Settings / AI Feature Settings",
+      "note": "Rendered after wait; no toggles changed or save attempted.",
+      "breadcrumb": "Learning Management System > Academy AI Feature Settings",
+      "reachability": "SIDEBAR",
+      "heading": "Academy AI Feature Settings"
+    }
   },
   {
     "id": "admin-academy-ai-analytics",
@@ -129,19 +169,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-ai-tutor-analytics.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "Academy LMS analytics",
+      "buriedDaily": true,
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Academy > Analytics / AI Tutor Analytics",
+      "note": "Rendered tenant-scoped zero state.",
+      "breadcrumb": "Learning Management System > AI Tutor Analytics",
+      "reachability": "SIDEBAR",
+      "heading": "AI Tutor Analytics"
+    }
   },
   {
     "id": "admin-academy-ai-personality",
@@ -158,19 +218,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-ai-tutor-personality.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "Academy LMS AI tutor configuration",
+      "buriedDaily": false,
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Academy > Settings / AI Tutor Personality",
+      "note": "Observe-only; no save attempted.",
+      "breadcrumb": "Learning Management System > AI Tutor Personality",
+      "reachability": "SIDEBAR",
+      "heading": "AI Tutor Personality"
+    }
   },
   {
     "id": "admin-academy-assessments",
@@ -187,19 +267,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-assessments.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "Academy LMS knowledge checks",
+      "buriedDaily": true,
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Academy > Courses / Assessments",
+      "note": "No create action taken.",
+      "breadcrumb": "Learning Management System > Assessments",
+      "reachability": "SIDEBAR",
+      "heading": "Assessments"
+    }
   },
   {
     "id": "admin-academy-automations",
@@ -216,19 +316,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-automations.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "Academy LMS enrolment and communication rules",
+      "buriedDaily": true,
+      "duplicate": "No duplicate observed",
+      "proposedHome": "Academy > Commerce / Automations",
+      "note": "No automation write or import action taken.",
+      "breadcrumb": "Learning Management System > Automations",
+      "reachability": "SIDEBAR",
+      "heading": "Automations"
+    }
   },
   {
     "id": "admin-academy-certificate-design",
@@ -245,19 +365,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-certificate-design.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "Academy LMS certification design",
+      "buriedDaily": true,
+      "duplicate": "Overlaps conceptually with Certificates hub",
+      "proposedHome": "Academy > Certificates / Design",
+      "note": "Create certificate and other write controls left untouched.",
+      "breadcrumb": "Learning Management System > Certificates and credentials",
+      "reachability": "SIDEBAR",
+      "heading": "Certificates and credentials"
+    }
   },
   {
     "id": "admin-academy-certificates",
@@ -274,19 +414,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-certificates.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "Academy LMS certificates hub",
+      "buriedDaily": true,
+      "duplicate": "Duplicate rendered destination with certificate-design route",
+      "proposedHome": "Academy > Certificates",
+      "note": "Same rendered certificate hub content as certificate-design route; no writes.",
+      "breadcrumb": "Learning Management System > Certificates and credentials",
+      "reachability": "SIDEBAR",
+      "heading": "Certificates and credentials"
+    }
   },
   {
     "id": "admin-academy-class-tags",
@@ -303,19 +463,40 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "URL stayed /class-tags but rendered LMS settings, not class tags; settings observed only, no toggles changed. L1 FAIL: URL /class-tags rendered LMS settings, not class tags.",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-class-tags.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "L1 fail",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "Academy LMS settings content, but route/content mismatch",
+      "buriedDaily": false,
+      "duplicate": "Potential route alias/misroute to LMS settings",
+      "proposedHome": "Academy > Settings (verify class-tags destination)",
+      "note": "URL stayed /class-tags but rendered LMS settings, not class tags; settings observed only, no toggles changed. L1 FAIL: URL /class-tags rendered LMS settings, not class tags.",
+      "breadcrumb": "Learning Management System > LMS settings",
+      "reachability": "SIDEBAR",
+      "heading": "LMS settings"
+    }
   },
   {
     "id": "admin-academy-cohort-tags",
@@ -332,19 +513,40 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "Wrong page: direct route misroutes to LMS settings, matching the warned class-tags failure mode. No settings changed.",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-cohort-tags.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "L1 fail",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "wrong destination within Academy/LMS",
+      "buriedDaily": "not applicable",
+      "duplicate": "Cohort Tags route appears in Recent but opens settings",
+      "proposedHome": "Academy > Cohort Tags",
+      "note": "Wrong page: direct route misroutes to LMS settings, matching the warned class-tags failure mode. No settings changed.",
+      "breadcrumb": "Learning Management System > LMS settings",
+      "reachability": "SIDEBAR",
+      "heading": "LMS settings"
+    }
   },
   {
     "id": "admin-academy-commerce",
@@ -361,19 +563,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-commerce.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy commerce hub",
+      "buriedDaily": "low; summary cards visible",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Commerce",
+      "note": "Commerce hub loaded; no Stripe interaction performed.",
+      "breadcrumb": "Learning Management System > Commerce",
+      "reachability": "SIDEBAR",
+      "heading": "Commerce"
+    }
   },
   {
     "id": "admin-academy-communications",
@@ -390,19 +612,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-communications.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy communications hub",
+      "buriedDaily": "medium; reachable from Academy tabs",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Communications",
+      "note": "Communication history page loaded. No send action performed.",
+      "breadcrumb": "Learning Management System > Communications",
+      "reachability": "SIDEBAR",
+      "heading": "Communications"
+    }
   },
   {
     "id": "admin-academy-community",
@@ -424,19 +666,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Same-name pair differs: Academy Community is LMS channel information, not local partners/events.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-community.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy community hub",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Community",
+      "note": "Community page rendered with tenant/course/direct Academy channel description.",
+      "breadcrumb": "Learning Management System > Community",
+      "reachability": "SIDEBAR",
+      "heading": "Community"
+    }
   },
   {
     "id": "admin-academy-contracts",
@@ -453,19 +715,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-contracts.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy contracts hub",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Contracts",
+      "note": "Contracts page loaded with empty-state summary.",
+      "breadcrumb": "Learning Management System > Contracts",
+      "reachability": "SIDEBAR",
+      "heading": "Contracts"
+    }
   },
   {
     "id": "admin-academy-course-groups",
@@ -482,19 +764,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-course-groups.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "within Academy/LMS but not a dedicated groups surface",
+      "buriedDaily": "medium",
+      "duplicate": "overlaps Courses landing",
+      "proposedHome": "Academy > Courses > Course Groups",
+      "note": "Direct route rendered the Courses landing rather than a dedicated Course Groups view; no edits made.",
+      "breadcrumb": "Learning Management System > Courses",
+      "reachability": "SIDEBAR",
+      "heading": "Build learning people enjoy completing"
+    }
   },
   {
     "id": "admin-academy-course-recordings",
@@ -511,19 +813,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-course-recordings.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "within Academy/LMS library content",
+      "buriedDaily": "medium",
+      "duplicate": "recordings appear folded into libraries",
+      "proposedHome": "Academy > Libraries > Recordings",
+      "note": "Direct route rendered the Content libraries surface; no recording-specific filter or data visible. No item added.",
+      "breadcrumb": "Learning Management System > Content libraries",
+      "reachability": "SIDEBAR",
+      "heading": "Content libraries"
+    }
   },
   {
     "id": "admin-academy-courses",
@@ -540,19 +862,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-courses.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy courses hub",
+      "buriedDaily": "low; primary course landing",
+      "duplicate": "course-groups route lands here too",
+      "proposedHome": "Academy > Courses",
+      "note": "QA Overnight Course found; numeric course/playbook id for later use is 36. Not edited or published.",
+      "breadcrumb": "Learning Management System > Courses",
+      "reachability": "SIDEBAR",
+      "heading": "Build learning people enjoy completing"
+    }
   },
   {
     "id": "admin-academy-discount-codes",
@@ -574,19 +916,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Same-name pair differs: Academy page is an LMS import/configuration summary with zero discounts, not the Studio discount-code manager.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-discount-codes.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy commerce/import surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Discount Codes",
+      "note": "Discount-code surface loaded. No discount-code or commerce changes made.",
+      "breadcrumb": "Learning Management System > Discount codes",
+      "reachability": "SIDEBAR",
+      "heading": "Discount codes"
+    }
   },
   {
     "id": "admin-academy-exercises",
@@ -603,19 +965,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-exercises.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "within Academy/LMS library content but not a dedicated exercises surface",
+      "buriedDaily": "medium",
+      "duplicate": "exercises route overlaps Content libraries",
+      "proposedHome": "Academy > Libraries > Exercises",
+      "note": "Direct exercises route resolves to Content libraries rather than a dedicated exercises view. No library item added.",
+      "breadcrumb": "Learning Management System > Content libraries",
+      "reachability": "SIDEBAR",
+      "heading": "Content libraries"
+    }
   },
   {
     "id": "admin-academy-financials",
@@ -632,19 +1014,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-financials.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy financials hub",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Financials",
+      "note": "Financials summary loaded after one transient dynamic-module load error. No Stripe interaction performed.",
+      "breadcrumb": "Learning Management System > Financials",
+      "reachability": "SIDEBAR",
+      "heading": "Financials"
+    }
   },
   {
     "id": "admin-academy-import",
@@ -661,19 +1063,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-import.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy import/reconciliation hub",
+      "buriedDaily": "medium",
+      "duplicate": "import-content and import-students also resolve here",
+      "proposedHome": "Academy > Import & reconciliation",
+      "note": "Import/reconciliation page loaded. No import, upload, reconciliation, or other write action performed.",
+      "breadcrumb": "Learning Management System > Import & reconciliation",
+      "reachability": "SIDEBAR",
+      "heading": "Import & reconciliation"
+    }
   },
   {
     "id": "admin-academy-import-content",
@@ -690,19 +1112,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-import-content.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy import/reconciliation surface",
+      "buriedDaily": "medium",
+      "duplicate": "duplicates Import and Import Students destinations",
+      "proposedHome": "Academy > Import & reconciliation",
+      "note": "Direct import-content route resolves to the same reconciliation surface. No content import or write action performed.",
+      "breadcrumb": "Learning Management System > Import & reconciliation",
+      "reachability": "SIDEBAR",
+      "heading": "Import & reconciliation"
+    }
   },
   {
     "id": "admin-academy-import-students",
@@ -719,19 +1161,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-import-students.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy import/reconciliation surface",
+      "buriedDaily": "medium",
+      "duplicate": "duplicates Import and Import Content destinations",
+      "proposedHome": "Academy > Import & reconciliation",
+      "note": "Direct import-students route resolves to the same reconciliation surface. No student import, invite, enrolment, or write action performed.",
+      "breadcrumb": "Learning Management System > Import & reconciliation",
+      "reachability": "SIDEBAR",
+      "heading": "Import & reconciliation"
+    }
   },
   {
     "id": "admin-academy-insights",
@@ -753,19 +1215,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "AI-066 loaded (orientation guide)",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH3.md"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-insights.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy insights hub",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Insights",
+      "note": "LMS Insights hub loaded. No assign-learning or video actions performed.",
+      "breadcrumb": "Learning Management System > LMS Insights",
+      "reachability": "SIDEBAR",
+      "heading": "Create, publish and improve learning with confidence"
+    }
   },
   {
     "id": "admin-academy-invites",
@@ -782,19 +1264,40 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "Direct Invites route resolved to the Academy LMS overview rather than an invitations surface; no invite sent.",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/invites.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "L1 fail",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "wrong destination within Academy/LMS",
+      "buriedDaily": "not applicable",
+      "duplicate": "Invites route aliases LMS overview",
+      "proposedHome": "Academy > Teacher Tools > Invites (verify route)",
+      "note": "Direct Invites route resolved to the Academy LMS overview rather than an invitations surface; no invite sent.",
+      "breadcrumb": "Learning Management System",
+      "reachability": "DIRECT_URL",
+      "heading": "Learning Management System"
+    }
   },
   {
     "id": "admin-academy-learners",
@@ -811,19 +1314,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail/admin-academy-learners.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy learners hub",
+      "buriedDaily": "low; primary learner assignment surface",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Learners",
+      "note": "Learners page loaded. Member/staff picker was observed without selecting anyone; no enrolment or assignment performed.",
+      "breadcrumb": "Learning Management System > Learners & progress",
+      "reachability": "SIDEBAR",
+      "heading": "Learners & progress"
+    }
   },
   {
     "id": "admin-academy-libraries",
@@ -840,19 +1363,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-libraries.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "strong Academy LMS content library",
+      "buriedDaily": "low; primary library surface",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Libraries",
+      "note": "Libraries surface rendered for Bluebird Pilates TEST DATA; no library item added.",
+      "breadcrumb": "Learning Management System > Content libraries",
+      "reachability": "DIRECT_URL",
+      "heading": "Content libraries"
+    }
   },
   {
     "id": "admin-academy-news",
@@ -869,24 +1412,44 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Same-name pair differs: /academy/news resolves to the LMS/content-libraries landing, not Studio News Management; no news list.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "reason": "Direct News route resolved to Content libraries rather than a News surface; no send or publish action performed.",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-news.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable"
+    "level": 0,
+    "levelLabel": "L1 fail",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "wrong destination within Academy/LMS",
+      "buriedDaily": "not applicable",
+      "duplicate": "News route appears to alias Content libraries",
+      "proposedHome": "Academy > News (verify route)",
+      "note": "Direct News route resolved to Content libraries rather than a News surface; no send or publish action performed.",
+      "breadcrumb": "Learning Management System > Content libraries",
+      "reachability": "DIRECT_URL",
+      "heading": "Content libraries"
+    }
   },
   {
     "id": "admin-academy-pricing",
@@ -903,19 +1466,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-pricing.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy commerce/pricing surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Commerce > Pricing",
+      "note": "Pricing surface loaded; no Stripe interaction or commerce write performed.",
+      "breadcrumb": "Learning Management System > Pricing",
+      "reachability": "DIRECT_URL",
+      "heading": "Pricing"
+    }
   },
   {
     "id": "admin-academy-quizzes",
@@ -932,19 +1515,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-quizzes.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy LMS knowledge-check surface",
+      "buriedDaily": "medium",
+      "duplicate": "Quizzes route aliases Assessments",
+      "proposedHome": "Academy > Courses > Assessments",
+      "note": "Quizzes route resolved to the Assessments surface. No assessment created or published.",
+      "breadcrumb": "Learning Management System > Assessments",
+      "reachability": "DIRECT_URL",
+      "heading": "Assessments"
+    }
   },
   {
     "id": "admin-academy-reflections",
@@ -961,19 +1564,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-reflections.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy teacher-tools surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Teacher Tools > Reflections",
+      "note": "Reflections route rendered Teacher tools with zero reflections; no learner or teacher data changed.",
+      "breadcrumb": "Learning Management System > Teacher tools",
+      "reachability": "DIRECT_URL",
+      "heading": "Teacher tools"
+    }
   },
   {
     "id": "admin-academy-reports",
@@ -990,19 +1613,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-reports.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy reporting/inventory surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Reports",
+      "note": "Reports inventory rendered tenant-scoped; no assignments, edits, or other writes performed.",
+      "breadcrumb": "Learning Management System > Academy inventory",
+      "reachability": "DIRECT_URL",
+      "heading": "Academy inventory"
+    }
   },
   {
     "id": "admin-academy-resources",
@@ -1024,19 +1667,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Same-name pair differs: Academy Resources is the LMS content-library view, not external Resources & Links.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-resources.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "within Academy/LMS library content",
+      "buriedDaily": "medium",
+      "duplicate": "Resources route aliases Content libraries",
+      "proposedHome": "Academy > Libraries > Resources",
+      "note": "Resources route resolved to the shared Content libraries surface; no resource added or published.",
+      "breadcrumb": "Learning Management System > Content libraries",
+      "reachability": "DIRECT_URL",
+      "heading": "Content libraries"
+    }
   },
   {
     "id": "admin-academy-settings",
@@ -1053,19 +1716,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/admin-academy-settings.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy LMS settings surface",
+      "buriedDaily": false,
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Settings",
+      "note": "OBSERVE ONLY: settings and feature states viewed; no toggles clicked and no save attempted.",
+      "breadcrumb": "Learning Management System > LMS settings",
+      "reachability": "DIRECT_URL",
+      "heading": "LMS settings"
+    }
   },
   {
     "id": "admin-academy-teachers",
@@ -1082,19 +1765,40 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "Direct Teachers route resolved to the Academy LMS overview rather than a teachers surface; no teacher data changed.",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/teachers.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "L1 fail",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "wrong destination within Academy/LMS",
+      "buriedDaily": "not applicable",
+      "duplicate": "Teachers route aliases LMS overview",
+      "proposedHome": "Academy > Teacher Tools > Teachers (verify route)",
+      "note": "Direct Teachers route resolved to the Academy LMS overview rather than a teachers surface; no teacher data changed.",
+      "breadcrumb": "Learning Management System",
+      "reachability": "DIRECT_URL",
+      "heading": "Learning Management System"
+    }
   },
   {
     "id": "admin-academy-terms",
@@ -1111,19 +1815,40 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
-    "lastTestedStamp": "",
+    "reason": "Direct Terms route resolved to LMS settings rather than a terms surface; settings observed only, no toggles clicked or save attempted.",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/terms.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "L1 fail",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "wrong destination within Academy/LMS",
+      "buriedDaily": "not applicable",
+      "duplicate": "Terms route aliases LMS settings",
+      "proposedHome": "Academy > Terms (verify route)",
+      "note": "Direct Terms route resolved to LMS settings rather than a terms surface; settings observed only, no toggles clicked or save attempted.",
+      "breadcrumb": "Learning Management System > LMS settings",
+      "reachability": "DIRECT_URL",
+      "heading": "LMS settings"
+    }
   },
   {
     "id": "admin-academy-users",
@@ -1140,19 +1865,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/users.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy LMS learner-management surface",
+      "buriedDaily": "medium",
+      "duplicate": "Users route aliases Learners & progress",
+      "proposedHome": "Academy > Learners",
+      "note": "Users route resolved to the learner management surface; no learner assignment or other write performed.",
+      "breadcrumb": "Learning Management System > Learners & progress",
+      "reachability": "DIRECT_URL",
+      "heading": "Learners & progress"
+    }
   },
   {
     "id": "admin-acquisition-intelligence",
@@ -4101,19 +4846,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/holiday-calendar.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good team availability and leave surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Holiday Calendar",
+      "note": "Holiday Calendar rendered for Bluebird Pilates TEST DATA; no request created.",
+      "breadcrumb": "Holiday Calendar",
+      "reachability": "DIRECT_URL",
+      "heading": "Holiday Calendar"
+    }
   },
   {
     "id": "admin-implementation-checklist",
@@ -4317,19 +5082,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/instructor-teaching-insights.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good instructor coaching/insights surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Instructor Teaching Insights",
+      "note": "Instructor Teaching Insights rendered; no calculation or data-generation action performed.",
+      "breadcrumb": "Instructor Teaching Insights",
+      "reachability": "DIRECT_URL",
+      "heading": "Instructor Teaching Insights"
+    }
   },
   {
     "id": "admin-intelligence-centre",
@@ -4753,9 +5538,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "AI-023/022 load + Refresh PARTIAL; ambient also Record Action",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -4766,12 +5551,32 @@
         "id": "2026-09-11-ambient-evidence-tip-232659cf",
         "path": "drops/2026-09-11-ambient-evidence-tip-232659cf/EVIDENCE.md",
         "href": "#drop-2026-09-11-ambient-evidence-tip-232659cf"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/learning-engine.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good team learning/feedback surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Learning Engine",
+      "note": "Learning Engine rendered with 20 active signals; no signal expanded, actioned, dismissed, or otherwise changed.",
+      "breadcrumb": "Learning Engine",
+      "reachability": "DIRECT_URL",
+      "heading": "Learning Engine"
+    }
   },
   {
     "id": "admin-live-support",
@@ -6281,19 +7086,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/post-class-intelligence.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good post-class follow-up intelligence surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Post-Class Intelligence",
+      "note": "Post-Class Intelligence rendered with zero follow-up sessions in period; no tabs or configuration changed.",
+      "breadcrumb": "Post-Class Intelligence",
+      "reachability": "DIRECT_URL",
+      "heading": "Post-Class Intelligence"
+    }
   },
   {
     "id": "admin-predictive-cash-flow",
@@ -6833,19 +7658,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Studio resources page is empty.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/resources.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good resource-management surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Resources",
+      "note": "Resources surface rendered directly for Bluebird Pilates TEST DATA; no resource added.",
+      "breadcrumb": "Resources & Links",
+      "reachability": "DIRECT_URL",
+      "heading": "Resources & Links"
+    }
   },
   {
     "id": "admin-retention-hub",
@@ -7052,19 +7897,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/rota-builder.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good rota-building surface",
+      "buriedDaily": "low",
+      "duplicate": "Rota Builder is nested under Staff > Rota",
+      "proposedHome": "Team > Rota > Rota Builder",
+      "note": "Direct route canonicalized to Staff hub Rota Builder (tab=rota, rotaTab=builder); no rota saved, copied, published, or otherwise changed.",
+      "breadcrumb": "Staff > Rota > Rota Builder",
+      "reachability": "DIRECT_URL",
+      "heading": "Rota Builder"
+    }
   },
   {
     "id": "admin-safe-studio",
@@ -7967,19 +8832,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/staff-employment.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good staff employment/contract surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Staff Employment",
+      "note": "Employment surface rendered directly; no staff record opened or changed.",
+      "breadcrumb": "Staff Employment",
+      "reachability": "DIRECT_URL",
+      "heading": "Staff Employment"
+    }
   },
   {
     "id": "admin-staff-hub",
@@ -8007,12 +8892,6 @@
     "evidence": [
       {
         "kind": "drop",
-        "id": "2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr",
-        "path": "drops/2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr/INVITE-E2E.md",
-        "href": "#drop-2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr"
-      },
-      {
-        "kind": "drop",
         "id": "census-ai-l1"
       },
       {
@@ -8034,6 +8913,14 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/staff-hub.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
@@ -8041,13 +8928,16 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Staff Rota tab loads with rota builder, week controls, filters, and shift actions.",
-      "title": "Staff",
-      "breadcrumb": "Staff / Rota",
-      "reachability": "unknown"
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good staff/team roster surface",
+      "buriedDaily": "low",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Staff",
+      "note": "Staff hub rendered directly; no invite, role, clock-in, or staff changes performed. No staff userId was visible to note for a later detail route.",
+      "breadcrumb": "Staff > Team",
+      "reachability": "DIRECT_URL",
+      "heading": "Staff"
     }
   },
   {
@@ -8164,19 +9054,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/staff-milestones.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good staff achievement surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Staff Milestones",
+      "note": "Staff Milestones dashboard rendered; no configuration, award, or AI detection action performed.",
+      "breadcrumb": "Staff Milestones",
+      "reachability": "DIRECT_URL",
+      "heading": "Staff Milestones"
+    }
   },
   {
     "id": "admin-staff-substitutions",
@@ -8612,19 +9522,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/team.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good team roster surface",
+      "buriedDaily": "low",
+      "duplicate": "/admin/team aliases Staff hub Team tab",
+      "proposedHome": "Team > Staff",
+      "note": "Direct /admin/team resolved to the Staff hub Team tab, the team roster surface; no invite, role, or other write performed.",
+      "breadcrumb": "Staff > Team",
+      "reachability": "DIRECT_URL",
+      "heading": "Staff"
+    }
   },
   {
     "id": "admin-team-comms-hub",
@@ -8646,21 +9576,41 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "ISO isolation exercised PASS. Bluebird Team Communications showed no channels yet; Refrm showed no channels yet; no cross-tenant content.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/team-comms-hub.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good internal team communications surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Team Communications",
+      "note": "Team communications hub rendered; no channel, poll, message, calendar, group, or digest change performed.",
+      "breadcrumb": "Team Communications",
+      "reachability": "DIRECT_URL",
+      "heading": "Team Communications"
+    }
   },
   {
     "id": "admin-team-holidays",
@@ -8677,19 +9627,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/team-holidays.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good team leave/availability surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Holidays",
+      "note": "Team Holidays calendar rendered directly; no holiday request or entry created.",
+      "breadcrumb": "Team Holidays",
+      "reachability": "DIRECT_URL",
+      "heading": "Team Holidays"
+    }
   },
   {
     "id": "admin-tenant-management",
@@ -9392,19 +10362,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/weekly-digest.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good learning/feedback surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > Weekly Learning Digest",
+      "note": "Weekly Learning Digest rendered directly for Bluebird Pilates TEST DATA; no switches or learning actions changed.",
+      "breadcrumb": "Weekly Learning Digest",
+      "reachability": "SIDEBAR",
+      "heading": "Weekly Learning Digest"
+    }
   },
   {
     "id": "admin-weekly-growth-brief",
@@ -9573,12 +10563,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": "2026-09-11",
     "stale": false,
     "evidence": [
@@ -9591,12 +10580,32 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/helgoiq-platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/academy-courses-36.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": "https://github.com/HelgoIQ-Organization/helgoiq-platform/issues/1180",
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy course-detail surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Academy > Courses",
+      "note": "Concrete playbookId=36; direct /admin/academy/courses/36?c=150002 rendered QA Overnight Course; no course edit or publish performed.",
+      "breadcrumb": "Learning Management System > QA Overnight Course",
+      "reachability": "SEARCH ONLY",
+      "heading": "QA Overnight Course"
+    }
   },
   {
     "id": "admin-academy-courses-playbookId-edit",
@@ -9613,12 +10622,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": "2026-09-11",
     "stale": false,
     "evidence": [
@@ -9631,12 +10639,32 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/helgoiq-platform/issues/1180"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/academy-courses-36-edit.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": "https://github.com/HelgoIQ-Organization/helgoiq-platform/issues/1180",
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good Academy course-edit surface",
+      "buriedDaily": "medium",
+      "duplicate": "edit surface is nested under course detail",
+      "proposedHome": "Academy > Courses > QA Overnight Course",
+      "note": "Concrete playbookId=36; direct /admin/academy/courses/36/edit?c=150002 observed only; no fields changed, save, publish, restore, archive, or other course write performed.",
+      "breadcrumb": "Learning Management System > Courses > QA Overnight Course > Edit",
+      "reachability": "LINK ONLY",
+      "heading": "Learning Management System"
+    }
   },
   {
     "id": "admin-academy-quizzes-quizId",
@@ -9653,12 +10681,12 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "blocked",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
+    "blockedBy": "BLOCKED no instance \u2014 not a session-loss. Quizzes list L1 PASS with 0 quizzes.",
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": "2026-09-11",
     "stale": false,
     "evidence": [
@@ -9671,12 +10699,28 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/helgoiq-platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": "https://github.com/HelgoIQ-Organization/helgoiq-platform/issues/1180",
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "blocked",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "Academy assessments",
+      "buriedDaily": true,
+      "duplicate": "nested under quizzes/assessments",
+      "proposedHome": "Academy > Teachers > Assessments",
+      "note": "BLOCKED no instance \u2014 not a session-loss. Quizzes list L1 PASS with 0 quizzes.",
+      "breadcrumb": "Search \u203a Academy Assessment Review",
+      "reachability": "SEARCH ONLY",
+      "heading": ""
+    }
   },
   {
     "id": "admin-acquisition",
@@ -12674,19 +13718,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/invite-staff.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good staff invitation surface",
+      "buriedDaily": "medium",
+      "duplicate": "invite-staff aliases Staff Invitations",
+      "proposedHome": "Team > Staff > Invitations",
+      "note": "Direct /admin/invite-staff?c=150002 canonicalized to /admin/staff-hub?tab=invitations&c=150002; invitations observed only and no invite sent.",
+      "breadcrumb": "Staff > Invitations",
+      "reachability": "SEARCH ONLY",
+      "heading": "Staff"
+    }
   },
   {
     "id": "admin-invite-staff-legacy",
@@ -13887,19 +14951,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Loaded with one draft staff row (BB Teacher). No approval, generation or export action was activated.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/payroll.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good finance/payroll surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Finance > Payroll",
+      "note": "Payroll rendered directly; Generate Invoices and Approve Payrun controls observed only; no payroll generation, approval, export, or payment action performed.",
+      "breadcrumb": "Payroll",
+      "reachability": "LINK ONLY",
+      "heading": "Payroll"
+    }
   },
   {
     "id": "admin-platform-devices",
@@ -16607,21 +17691,41 @@
     "percentFailed": 100,
     "blockedBy": null,
     "reason": "ISO isolation FAIL",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/staff-availability.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good appointment availability surface",
+      "buriedDaily": "medium",
+      "duplicate": "staff-availability aliases Appointment Setup availability tab",
+      "proposedHome": "Studio > Appointment Setup > Staff Availability",
+      "note": "Direct /admin/staff-availability?c=150002 canonicalized to /admin/appointments-hub?tab=availability&c=150002; availability observed only; no slots added or removed.",
+      "breadcrumb": "Appointment Setup > Staff Availability",
+      "reachability": "SEARCH ONLY",
+      "heading": "Appointment Setup"
+    }
   },
   {
     "id": "admin-staff-team-report",
@@ -16667,19 +17771,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/staff-2160660.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good staff detail/drill-in surface",
+      "buriedDaily": "medium",
+      "duplicate": "staff detail is row drill-in from Staff Team",
+      "proposedHome": "Team > Staff > detail",
+      "note": "Opened one clickable row from /admin/staff-hub; concrete URL /admin/staff/2160660?c=150002, so userId=2160660; detail observed only with no edit, message, observation, note, role, access, or employment write.",
+      "breadcrumb": "Staff > Staff Detail",
+      "reachability": "LINK ONLY",
+      "heading": "Unknown"
+    }
   },
   {
     "id": "admin-staff-userId-observations-new",
@@ -17231,18 +18355,38 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/what-we-learned.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-team-academy-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "team-academy",
+      "hubFit": "good learning library surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Team > What We've Learned",
+      "note": "What We've Learned rendered directly; no location filter, lesson, action, or outcome changed.",
+      "breadcrumb": "What We've Learned",
+      "reachability": "SEARCH ONLY",
+      "heading": "What We've Learned"
+    }
   }
 ]

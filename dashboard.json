@@ -73,7 +73,7 @@
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
     "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
     "updatedAt": "2026-09-12T07:40:10.030Z",
-    "coverageNote": "After AI: tested_any 300/413 (72.6%); L\u22651=264; top blocker /admin/intelligence/mrr crash",
+    "coverageNote": "After Longtail Team/Academy: tested_any 347/413 (84.0%); L\u22651=304",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED fixtures consumed",
     "pulse1266": "PASS UI explain; explainStudioState RPC 500",
@@ -81,7 +81,8 @@
     "censusContentL1": "25/25 PASS Website/Blog tip 6486be87 MERGED",
     "censusCommsL1": "23 PASS / 5 orphaned / 1 blocked tip 6486be87",
     "censusMoneyL1": "23/23 PASS Finance/Reports tip 6486be87",
-    "censusAiL1": "90 PASS / 6 FAIL (1 crash mrr + 5 PA gates) / 13 NEEDS-ID"
+    "censusAiL1": "90 PASS / 6 FAIL (1 crash mrr + 5 PA gates) / 13 NEEDS-ID",
+    "censusLongtailTeamAcademy": "51 PASS / 6 FAIL (misroutes) / 1 BLOCKED; studio-access next"
   },
   "strands": [
     {
