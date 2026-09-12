@@ -19,9 +19,9 @@
     "hubOnly": 156,
     "orphaned": 30,
     "fullyTested": 0,
-    "partiallyTested": 337,
+    "partiallyTested": 335,
     "blocked": 44,
-    "failed": 28,
+    "failed": 30,
     "notTested": 4,
     "stale": 59,
     "byReachability": {
@@ -34,8 +34,8 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "2": 57,
-      "1": 309,
+      "2": 63,
+      "1": 303,
       "0": 47
     }
   },
@@ -162,13 +162,12 @@
     "note": "Evidence tips stamped from source drops; live tip confirmed via /api/version for reference only."
   },
   "lastL2Merge": {
-    "bot": "Census Core",
-    "hub": "members+timetable",
+    "bot": "Census Comms",
+    "hub": "inbox",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "pass": 3,
-    "partial": 1,
+    "pass": 1,
+    "partial": 3,
     "fail": 2,
-    "miss": 0,
-    "complete": true
+    "miss": 0
   }
 }

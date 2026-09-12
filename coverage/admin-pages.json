@@ -3647,11 +3647,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 fail",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3663,18 +3663,53 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2/intelligence-overview.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2/intelligence-drill.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-inbox"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "duplicate",
-      "buriedDaily": null,
-      "duplicate": null
+      "source": "census-comms-l2",
+      "hub": "inbox",
+      "hubFit": "ok",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "date range (Last 7 days)",
+        "Owner tab",
+        "Platform tab"
+      ],
+      "controlsNotExercised": [
+        "Try again"
+      ],
+      "defects": [
+        {
+          "summary": "Platform wallet metrics render NaN",
+          "evidence": "intelligence-drill.webp shows Wallet Balance NaN credits and Messages Sent NaN."
+        },
+        {
+          "summary": "Owner attribution panel reports unavailable data",
+          "evidence": "Owner tab shows Communications retention impact is unavailable."
+        }
+      ]
     }
   },
   {
@@ -3692,11 +3727,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 fail",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3708,18 +3743,54 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2/learning-registry-overview.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2/learning-registry-drill.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-inbox"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "duplicate",
-      "buriedDaily": null,
-      "duplicate": null
+      "source": "census-comms-l2",
+      "hub": "inbox",
+      "hubFit": "ok",
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Recommendations tab",
+        "Action Effectiveness tab"
+      ],
+      "controlsNotExercised": [
+        "stage filter",
+        "Accept",
+        "Reject (would mutate registry state)"
+      ],
+      "defects": [
+        {
+          "summary": "Recommendation count contradicts visible cards",
+          "evidence": "learning-registry-overview.webp shows 0 recommendations plus visible unknown recommendation cards."
+        },
+        {
+          "summary": "Learning Registry data fields are invalid/blank",
+          "evidence": "Cards show Generated Invalid Date; learning-registry-drill.webp shows blank table fields and % only."
+        }
+      ]
     }
   },
   {
@@ -3741,7 +3812,6 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3753,18 +3823,42 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2/message-logs-overview.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2/message-logs-control.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-inbox"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
+      "source": "census-comms-l2",
+      "hub": "inbox",
       "hubFit": "ok",
-      "buriedDaily": null,
-      "duplicate": null
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "search (none)",
+        "channel filter (WhatsApp)",
+        "status filter (All Statuses)"
+      ],
+      "controlsNotExercised": [],
+      "defects": []
     }
   },
   {
@@ -3786,7 +3880,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3798,18 +3892,36 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2/messaging-numbers-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-inbox"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
+      "source": "census-comms-l2",
+      "hub": "inbox",
       "hubFit": "ok",
-      "buriedDaily": null,
-      "duplicate": null
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [],
+      "controlsNotExercised": [
+        "Reconnect phone service (guard: observe only)"
+      ],
+      "defects": []
     }
   },
   {
@@ -3831,7 +3943,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3843,18 +3955,39 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2/opt-outs-control.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-inbox"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
+      "source": "census-comms-l2",
+      "hub": "inbox",
       "hubFit": "ok",
-      "buriedDaily": null,
-      "duplicate": null
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search (none)",
+        "channel filter (WhatsApp)"
+      ],
+      "controlsNotExercised": [
+        "Manual Opt-Out (prefer reversible filter exercise)"
+      ],
+      "defects": []
     }
   },
   {
@@ -3876,7 +4009,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "L2 partial",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3888,18 +4021,36 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms-l2/wallet-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l2-inbox"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
+      "source": "census-comms-l2",
+      "hub": "inbox",
       "hubFit": "ok",
-      "buriedDaily": null,
-      "duplicate": null
+      "buriedDaily": false,
+      "duplicate": false,
+      "proposedHome": null,
+      "note": ""
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [],
+      "controlsNotExercised": [
+        "Top Up (guard: observe only; do not pay)"
+      ],
+      "defects": []
     }
   },
   {
