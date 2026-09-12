@@ -3136,7 +3136,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3148,23 +3147,39 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/camio-live.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio security/live-surveillance surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Studio > Security > Camio Live View",
-      "note": "Direct /admin/camio-live?c=150002 rendered for Bluebird Pilates TEST DATA; Camio/CCTV observed only and no connection or settings changed.",
-      "breadcrumb": "Camio Live View > Live Surveillance",
-      "reachability": "SIDEBAR",
-      "heading": "Live Surveillance"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Read-only tabs/filters work. Honest unconfigured state. No camera config changed."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "all five tabs",
+        "reception search",
+        "date/refresh",
+        "Central/all location"
+      ],
+      "controlsNotExercised": [],
+      "defects": null
     }
   },
   {
@@ -3185,7 +3200,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Tabs exercised. Integration switch withheld (security config).",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3197,23 +3212,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/camio-settings.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio security integration-settings surface",
-      "buriedDaily": "high",
-      "duplicate": "Camio controls also linked from Live Surveillance",
-      "proposedHome": "Studio > Security > Camio Settings",
-      "note": "Direct /admin/camio-settings?c=150002 rendered; configuration observed only, switch not toggled, and no save/connect action performed.",
-      "breadcrumb": "Camio Security > Config",
-      "reachability": "SIDEBAR",
-      "heading": "Camio Security"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Tabs exercised. Integration switch withheld (security config)."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "all tabs",
+        "Central/global selector"
+      ],
+      "controlsNotExercised": [
+        "integration switch",
+        "any save"
+      ],
+      "defects": null
     }
   },
   {
@@ -3342,7 +3374,6 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3354,23 +3385,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/cctv-hub.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio CCTV/access surface",
-      "buriedDaily": "high",
-      "duplicate": "Camio live view is a separate analytics surface",
-      "proposedHome": "Studio > Security > CCTV Hub",
-      "note": "Direct /admin/cctv-hub?c=150002 rendered; CCTV viewer and connection surfaces observed only with no camera or gateway connection changes.",
-      "breadcrumb": "CCTV Hub > Viewer",
-      "reachability": "SIDEBAR",
-      "heading": "CCTV Hub"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "All tabs exercised. Honest empty viewer. No figures. No config saves."
+    },
+    "l2": {
+      "verdict": "L2_PASS",
+      "controlsExercised": [
+        "all six tabs"
+      ],
+      "controlsNotExercised": [
+        "camera/config saves (none required)"
+      ],
+      "defects": null
     }
   },
   {
@@ -3477,7 +3523,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Tabs/date work. Timing/Process withheld (settings-like). Metrics are em dash not drillable numbers.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3490,17 +3536,40 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/checkin-compliance.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "no",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Tabs/date work. Timing/Process withheld (settings-like). Metrics are em dash not drillable numbers."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Last 30 days then reset Last 7 days",
+        "all four tabs"
+      ],
+      "controlsNotExercised": [
+        "Timing",
+        "Process"
+      ],
+      "defects": null
     }
   },
   {
@@ -3522,7 +3591,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Tiles match empty list (not a figure FAIL). Manual Check-In withheld \u2192 PARTIAL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -3535,17 +3604,39 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/checkins.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "no",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Tiles match empty list (not a figure FAIL). Manual Check-In withheld \u2192 PARTIAL."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page",
+        "tile click attempts"
+      ],
+      "controlsNotExercised": [
+        "Manual Check-In"
+      ],
+      "defects": null
     }
   },
   {
@@ -4791,11 +4882,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Named hub loads. All state-changing switches/fields were observed only, not changed.",
+    "reason": "Access-log KPI cards do not drill. No unlock/lockdown/save. Export disabled.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -4811,23 +4902,41 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/door-access.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio door-access surface",
-      "buriedDaily": "medium",
-      "duplicate": "Linked Devices is the device-pairing surface",
-      "proposedHome": "Studio > Access > Door Access Control",
-      "note": "Direct /admin/door-access?c=150002 rendered; door-access settings observed only, with no switches, fields, schedules, connections or other access controls changed.",
-      "breadcrumb": "Studio > Door Access Control > Settings",
-      "reachability": "SIDEBAR",
-      "heading": "Door Access Control"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Access-log KPI cards do not drill. No unlock/lockdown/save. Export disabled."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "visible tabs",
+        "Central then All Locations"
+      ],
+      "controlsNotExercised": [
+        "unlock/lockdown",
+        "Export CSV (disabled)",
+        "settings save"
+      ],
+      "defects": null
     }
   },
   {
@@ -6142,7 +6251,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Create/register withheld. Honest empty + setup guide.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -6154,18 +6263,40 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/kiosk-config.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-money",
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
       "hubFit": null,
       "buriedDaily": null,
       "duplicate": null,
-      "note": "Kiosk setup guide and explicit no configurations empty state rendered."
+      "proposedHome": null,
+      "note": "Create/register withheld. Honest empty + setup guide."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page",
+        "read setup guide"
+      ],
+      "controlsNotExercised": [
+        "New Kiosk Config",
+        "register/pair/save"
+      ],
+      "defects": null
     }
   },
   {
@@ -8989,10 +9120,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Overview tiles do not drill. Purple Safe Studio chrome (company-scoped). No Refrm. TEST DATA banner present.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -9004,23 +9135,39 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/safe-studio.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio safety/compliance surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Studio > Safe Studio",
-      "note": "Direct /admin/safe-studio?c=150002 rendered; safety overview observed only, no location selected for a write and no records or settings changed.",
-      "breadcrumb": "Safe Studio > Company overview",
-      "reachability": "SIDEBAR",
-      "heading": "Safe Studio overview"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Overview tiles do not drill. Purple Safe Studio chrome (company-scoped). No Refrm. TEST DATA banner present."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "location Central / all permitted",
+        "clicked Checks/Equipment/Open faults/Open incidents tiles"
+      ],
+      "controlsNotExercised": [
+        "write/config actions"
+      ],
+      "defects": null
     }
   },
   {
@@ -9222,11 +9369,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Member Warnings was not shown on the hub dashboard.",
+    "reason": "KPI cards lack drill-through. Score 100 Excellent with 0 cameras is a posture default, not a contradiction.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -9242,23 +9389,41 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/security-hub.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio security overview surface",
-      "buriedDaily": "medium",
-      "duplicate": "CCTV and Camio provide deeper camera surfaces",
-      "proposedHome": "Studio > Security & Surveillance",
-      "note": "Direct /admin/security-hub?c=150002 rendered; dashboard and quick-action links observed only, with no alerts, Camio, door-access or other security changes.",
-      "breadcrumb": "Security & Surveillance > Dashboard",
-      "reachability": "SIDEBAR",
-      "heading": "Security Dashboard"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "KPI cards lack drill-through. Score 100 Excellent with 0 cameras is a posture default, not a contradiction."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Dashboard",
+        "Check-In Compliance tab",
+        "date range",
+        "location Central/all"
+      ],
+      "controlsNotExercised": [
+        "Security Alerts tab (own route later)"
+      ],
+      "defects": null
     }
   },
   {
@@ -13502,7 +13667,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Thinner viewer twin of cctv-hub. Honest empty. No config save.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -13515,17 +13680,37 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/cctv.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "hubFit": "niche / security surface",
-      "buriedDaily": "maybe \u2014 LINK ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Thinner viewer twin of cctv-hub. Honest empty. No config save."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page",
+        "All locations shown"
+      ],
+      "controlsNotExercised": [],
+      "defects": null
     }
   },
   {
@@ -13547,7 +13732,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "No save attempted. Viewer-only empty settings surface.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -13560,17 +13745,38 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/cctv-settings.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "hubFit": "niche / security surface",
-      "buriedDaily": "maybe \u2014 LINK ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "No save attempted. Viewer-only empty settings surface."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "save (unavailable / withheld)"
+      ],
+      "defects": null
     }
   },
   {
@@ -15067,7 +15273,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Tabs work. Create withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -15079,23 +15285,41 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/door-access-alerts.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio door-access alerts surface",
-      "buriedDaily": "medium",
-      "duplicate": "Door Access Control links to alert management",
-      "proposedHome": "Studio > Access > Door Alert Management",
-      "note": "Direct /admin/door-access/alerts?c=150002 rendered for Bluebird Pilates TEST DATA; observed only, no alert rule or contact changes.",
-      "breadcrumb": "Door Access > Alert Management",
-      "reachability": "SEARCH ONLY",
-      "heading": "Door Alert Management"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Tabs work. Create withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Alert Rules",
+        "Security Contacts",
+        "Alert History"
+      ],
+      "controlsNotExercised": [
+        "New Rule",
+        "Add Contact"
+      ],
+      "defects": null
     }
   },
   {
@@ -15113,10 +15337,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "KPI cards do not drill. Filters work. Same figure-FAIL family as door-access logs.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -15128,23 +15352,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/door-access-report.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio door-access analytics surface",
-      "buriedDaily": "medium",
-      "duplicate": "Door Access Control links to analytics report",
-      "proposedHome": "Studio > Access > Door Access Analytics",
-      "note": "Direct /admin/door-access/report?c=150002 rendered; analytics observed only and no filters or data changed.",
-      "breadcrumb": "Reports > Door Access Analytics",
-      "reachability": "SEARCH ONLY",
-      "heading": "Door Access Analytics"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "KPI cards do not drill. Filters work. Same figure-FAIL family as door-access logs."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Bluebird Central",
+        "Last 7 days",
+        "metric click attempts"
+      ],
+      "controlsNotExercised": [
+        "export"
+      ],
+      "defects": null
     }
   },
   {
@@ -19445,7 +19686,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Scan withheld. Display metrics not drillable. Agreement OK. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19457,23 +19698,34 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio compliance surface",
-      "buriedDaily": "medium",
-      "duplicate": "Safe Studio overview links to compliance",
-      "proposedHome": "Safe Studio > Checks & compliance",
-      "note": "Direct /admin/safe-studio/compliance?c=150002 rendered; Safe Studio compliance observed only with no location selected and no writes.",
-      "breadcrumb": "Safe Studio > Checks & compliance",
-      "reachability": "SEARCH ONLY",
-      "heading": "Choose a location to review compliance"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Scan withheld. Display metrics not drillable. Agreement OK. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "location filter"
+      ],
+      "controlsNotExercised": [
+        "Run compliance scan"
+      ],
+      "defects": null
     }
   },
   {
@@ -19494,7 +19746,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Search works. Writes/downloads withheld. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19506,23 +19758,36 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio document-library surface",
-      "buriedDaily": "medium",
-      "duplicate": "Safe Studio navigation contains the same Documents surface",
-      "proposedHome": "Safe Studio > Documents",
-      "note": "Direct /admin/safe-studio/documents?c=150002 rendered; documents observed only and no document uploaded or changed.",
-      "breadcrumb": "Safe Studio > Documents",
-      "reachability": "SEARCH ONLY",
-      "heading": "Choose a location to open its private document library"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Search works. Writes/downloads withheld. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search BatchA then clear"
+      ],
+      "controlsNotExercised": [
+        "add",
+        "edit",
+        "download"
+      ],
+      "defects": null
     }
   },
   {
@@ -19543,7 +19808,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Tabs work. Publish withheld. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19555,23 +19820,36 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio governance/audit surface",
-      "buriedDaily": "medium",
-      "duplicate": "Safe Studio navigation contains the same governance surface",
-      "proposedHome": "Safe Studio > Communications & audit",
-      "note": "Direct /admin/safe-studio/governance?c=150002 rendered; governance observed only with no location selected and no settings or governance writes.",
-      "breadcrumb": "Safe Studio > Communications & audit",
-      "reachability": "SEARCH ONLY",
-      "heading": "Choose a location for communications and audit"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Tabs work. Publish withheld. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Audit trail",
+        "Administrator guide",
+        "Platform authorities"
+      ],
+      "controlsNotExercised": [
+        "Publish update"
+      ],
+      "defects": null
     }
   },
   {
@@ -19593,7 +19871,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "AI-066 loaded (mislabelled video guide, not AI)",
+    "reason": "Walkthrough not opened (over-cautious guard). No figures. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19609,23 +19887,34 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio insights/education surface",
-      "buriedDaily": "low",
-      "duplicate": "Safe Studio overview links to Insights",
-      "proposedHome": "Safe Studio > Insights",
-      "note": "Direct /admin/safe-studio/insights?c=150002 rendered; insights observed only and no videos played or settings changed.",
-      "breadcrumb": "Safe Studio > Insights",
-      "reachability": "SEARCH ONLY",
-      "heading": "Learn the complete Safe Studio operating routine"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Walkthrough not opened (over-cautious guard). No figures. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "walkthrough play"
+      ],
+      "defects": null
     }
   },
   {
@@ -19646,7 +19935,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Tabs work. Writes withheld. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19658,23 +19947,40 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio inspection-setup surface",
-      "buriedDaily": "medium",
-      "duplicate": "Safe Studio navigation contains the same Inspection setup surface",
-      "proposedHome": "Safe Studio > Inspection setup",
-      "note": "Direct /admin/safe-studio/inspections?c=150002 rendered for Bluebird Pilates TEST DATA; observed only, no inspection or settings changes.",
-      "breadcrumb": "Safe Studio > Inspection setup",
-      "reachability": "SEARCH ONLY",
-      "heading": "Choose a location to manage inspections"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Tabs work. Writes withheld. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Floor plan",
+        "First aid",
+        "Fire safety",
+        "Fire doors"
+      ],
+      "controlsNotExercised": [
+        "add equipment",
+        "kits",
+        "assets",
+        "spaces"
+      ],
+      "defects": null
     }
   },
   {
@@ -19695,7 +20001,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Highest-value agreement: overview 1+1 confirmed on this page with named records. New-issue withheld. Overview tiles still FAIL (no drill from overview). walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19707,23 +20013,35 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio faults-and-incidents surface",
-      "buriedDaily": "medium",
-      "duplicate": "Safe Studio navigation contains the same Faults & incidents surface",
-      "proposedHome": "Safe Studio > Faults & incidents",
-      "note": "Direct /admin/safe-studio/operations?c=150002 rendered; faults and incidents observed only, no safety-critical write submitted.",
-      "breadcrumb": "Safe Studio > Faults & incidents",
-      "reachability": "SEARCH ONLY",
-      "heading": "Choose the building whose records you are managing"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Highest-value agreement: overview 1+1 confirmed on this page with named records. New-issue withheld. Overview tiles still FAIL (no drill from overview). walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Faults figure/tab drill+return",
+        "Incidents figure/tab drill+return"
+      ],
+      "controlsNotExercised": [
+        "report new issue"
+      ],
+      "defects": null
     }
   },
   {
@@ -19744,7 +20062,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Tabs work. Writes withheld. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19756,23 +20074,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio people-and-suppliers surface",
-      "buriedDaily": "medium",
-      "duplicate": "Safe Studio navigation contains the same People & suppliers surface",
-      "proposedHome": "Safe Studio > People & suppliers",
-      "note": "Direct /admin/safe-studio/people?c=150002 rendered; people and suppliers observed only, no records changed.",
-      "breadcrumb": "Safe Studio > People & suppliers",
-      "reachability": "SEARCH ONLY",
-      "heading": "Choose a location to manage people and suppliers"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Tabs work. Writes withheld. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Training",
+        "Staff credentials"
+      ],
+      "controlsNotExercised": [
+        "add",
+        "upload",
+        "publish",
+        "record"
+      ],
+      "defects": null
     }
   },
   {
@@ -19793,7 +20126,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Search/filters work. Export unexercised \u2192 PARTIAL not PASS. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19805,23 +20138,36 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio search-and-reports surface",
-      "buriedDaily": "medium",
-      "duplicate": "Safe Studio navigation contains the same Search & reports surface",
-      "proposedHome": "Safe Studio > Search & reports",
-      "note": "Direct /admin/safe-studio/reports?c=150002 rendered; search and reporting surface observed only, no export or data changes.",
-      "breadcrumb": "Safe Studio > Search & reports",
-      "reachability": "SEARCH ONLY",
-      "heading": "Choose a location to search or report"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Search/filters work. Export unexercised \u2192 PARTIAL not PASS. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search fault",
+        "Check history",
+        "This month filter"
+      ],
+      "controlsNotExercised": [
+        "exports"
+      ],
+      "defects": null
     }
   },
   {
@@ -19842,7 +20188,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Tabs work. Writes withheld. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19854,23 +20200,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio risk-and-statutory surface",
-      "buriedDaily": "medium",
-      "duplicate": "Safe Studio navigation contains the same Risk & statutory surface",
-      "proposedHome": "Safe Studio > Risk & statutory",
-      "note": "Direct /admin/safe-studio/risk?c=150002 rendered; risk register observed only, no risk or statutory records changed.",
-      "breadcrumb": "Safe Studio > Risk & statutory",
-      "reachability": "SEARCH ONLY",
-      "heading": "Choose a location to manage its risk register"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Tabs work. Writes withheld. walker completed; PNG not copied to evidence dir (computerUse assets only). Re-capture on last batch if needed."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Water & asbestos",
+        "Compliance calendar"
+      ],
+      "controlsNotExercised": [
+        "new assessment",
+        "legionella check",
+        "asbestos register",
+        "recurring dates"
+      ],
+      "defects": null
     }
   },
   {
@@ -19891,7 +20252,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Company roll-up has no save controls. Location not picked (would open config). No settings saved.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19903,23 +20264,39 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/safe-studio-settings.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio configuration surface",
-      "buriedDaily": "low",
-      "duplicate": "Safe Studio navigation contains the same Configuration surface",
-      "proposedHome": "Safe Studio > Configuration",
-      "note": "Direct /admin/safe-studio/settings?c=150002 rendered; OBSERVE ONLY. No toggles changed and no save, publish or settings action used.",
-      "breadcrumb": "Safe Studio > Configuration",
-      "reachability": "SEARCH ONLY",
-      "heading": "Choose a location to configure Safe Studio"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Company roll-up has no save controls. Location not picked (would open config). No settings saved."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened roll-up scope"
+      ],
+      "controlsNotExercised": [
+        "location selector",
+        "save (unavailable at roll-up)"
+      ],
+      "defects": null
     }
   },
   {
@@ -19940,7 +20317,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Filters work. Summary cards do not drill; roster already shows the zeros. Declan Ryan + BB Teacher visible.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -19952,23 +20329,37 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/safe-studio-team.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good Safe Studio team-activity surface",
-      "buriedDaily": "medium",
-      "duplicate": "Safe Studio navigation contains the same Team activity surface",
-      "proposedHome": "Safe Studio > Team activity",
-      "note": "Direct /admin/safe-studio/team?c=150002 rendered; team safety activity observed only, no membership or activity changes.",
-      "breadcrumb": "Safe Studio > Team activity",
-      "reachability": "SEARCH ONLY",
-      "heading": "Choose a location to review its safety activity"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Filters work. Summary cards do not drill; roster already shows the zeros. Declan Ryan + BB Teacher visible."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Bluebird Central",
+        "This month"
+      ],
+      "controlsNotExercised": [],
+      "defects": null
     }
   },
   {
@@ -20341,7 +20732,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Filters work. Zeros match empty list (not filed as figure FAIL).",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20353,23 +20744,37 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/security-alerts.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio security-alerts surface",
-      "buriedDaily": "medium",
-      "duplicate": "standalone Security Alerts surface",
-      "proposedHome": "Studio > Security Alerts",
-      "note": "Direct /admin/security-alerts?c=150002 rendered; status and type filters observed only, no alert actions.",
-      "breadcrumb": "Studio > Security Alerts",
-      "reachability": "SEARCH ONLY",
-      "heading": "Security Alerts"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Filters work. Zeros match empty list (not filed as figure FAIL)."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "New",
+        "Incident filters"
+      ],
+      "controlsNotExercised": [],
+      "defects": null
     }
   },
   {
@@ -20387,11 +20792,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "orphaned",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Owner content loaded; no recent alerts and no warnings.",
+    "reason": "Orphan twin of security-hub. KPI cards do not drill. Inherits hub figure FAIL.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20407,23 +20812,38 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2/security-dashboard.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-l2-safe-studio"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good studio security overview surface",
-      "buriedDaily": "medium",
-      "duplicate": "orphan route for the Security & Surveillance Dashboard",
-      "proposedHome": "Studio > Security & Surveillance > Dashboard",
-      "note": "Direct orphan route rendered the Security Dashboard; observed only, with no alerts, Camio, door-access or other security changes.",
-      "breadcrumb": "Studio > Security & Surveillance > Dashboard",
-      "reachability": "ORPHANED",
-      "heading": "Security Dashboard"
+      "source": "census-longtail-l2",
+      "hub": "safe-studio",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Orphan twin of security-hub. KPI cards do not drill. Inherits hub figure FAIL."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Bluebird Central location"
+      ],
+      "controlsNotExercised": [
+        "quick actions (links only, not followed as writes)"
+      ],
+      "defects": null
     }
   },
   {
