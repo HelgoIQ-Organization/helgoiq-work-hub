@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-12T19:37:13.166Z",
+  "updatedAt": "2026-09-12T19:55:08.465Z",
   "drops": [
+    {
+      "id": "2026-09-12-milestone-2-bf-4-30",
+      "title": "Milestone 2 Clusters B-F 4/30",
+      "date": "2026-09-12",
+      "summary": "Milestone 2 B–F frozen bank scored 4/30 on tip 6486be87. A still 24/24. CC strand 48%. 26 FAIL for Codex on #1180.",
+      "plainEnglish": "Command Centre passed only 4 of 30 Milestone 2 questions. Cluster A is still perfect (24/24). Failures are mostly invented how-to paths and missing named refuse reasons — engineering has the list on #1180.",
+      "tags": [
+        "command-centre",
+        "findings",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-milestone-2-bf-4-30/RESULTS.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5648302578"
+    },
     {
       "id": "2026-09-12-coverage-l2-academy-chunk1",
       "title": "Coverage L2 Academy chunk 1",
