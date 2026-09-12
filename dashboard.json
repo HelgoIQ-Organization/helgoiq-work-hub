@@ -35,7 +35,7 @@
       }
     },
     "coverageL1Pct": 88.6,
-    "coverageL2Pct": 16.2
+    "coverageL2Pct": 17.9
   },
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "progressToday": {
@@ -81,7 +81,7 @@
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
     "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
     "updatedAt": "2026-09-12T11:59:19.847671Z",
-    "coverageNote": "After AI L2 Home: L\u22651=366 (89%); L\u22652=67 (16%)",
+    "coverageNote": "After Money L2 Finance: L\u22651=366 (89%); L\u22652=74 (18%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED fixtures consumed",
     "pulse1266": "PASS UI explain; explainStudioState RPC 500",
@@ -104,7 +104,8 @@
     "censusCoreL2": "Members 3P/1Part/1F \u00b7 Timetable L2_FAIL (fill-rate + cover cost + cover copy)",
     "censusCommsL2Inbox": "1 PASS / 3 PARTIAL / 2 FAIL (intelligence NaN; learning-registry disagree)",
     "censusAiL2Home": "1 FAIL overview Refrm visible \u00b7 3 PARTIAL agents/tasks/dashboard",
-    "scorePushStarted": "2026-09-12: Cluster A + ISO-29 + AI-85 reachable + Dispatch + dataset canary on 6486be87 (no Declan)"
+    "scorePushStarted": "2026-09-12: Cluster A + ISO-29 + AI-85 reachable + Dispatch + dataset canary on 6486be87 (no Declan)",
+    "censusMoneyL2Finance": "0 PASS / 1 PARTIAL (stripe-connect) / 6 FAIL \u2014 KPI drills + invoicing alias"
   },
   "strands": [
     {

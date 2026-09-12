@@ -2750,11 +2750,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Plan and card figures render as static/non-drillable content; no underlying invoice, payment-method, or plan data opened. No payment or subscription change made.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -2766,18 +2766,58 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money-l2/billing-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-money-l2-finance"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-money",
+      "source": "census-money-l2",
+      "hub": "finance",
       "hubFit": null,
       "buriedDaily": null,
       "duplicate": null,
-      "note": "Billing plan and subscription cards rendered; no error."
+      "proposedHome": null,
+      "note": "Plan and card figures render as static/non-drillable content; no underlying invoice, payment-method, or plan data opened. No payment or subscription change made."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Clicked View Invoices card (no navigation/state change)"
+      ],
+      "controlsNotExercised": [
+        "Open Billing Portal (Stripe portal)",
+        "Payment Methods card",
+        "Upgrade Plan card"
+      ],
+      "figures": {
+        "drilled": [],
+        "failed": [
+          "Current Plan Enterprise / \u00a3149 month"
+        ],
+        "notes": "Plan and card figures render as static/non-drillable content; no underlying invoice, payment-method, or plan data opened. No payment or subscription change made."
+      },
+      "agreement": {
+        "ok": true,
+        "conflicts": []
+      },
+      "isolation": null,
+      "defects": [
+        {
+          "control": "View Invoices / Payment Methods / Upgrade Plan cards",
+          "why": "Cards are non-actionable in the rendered page; click on View Invoices produced no underlying view.",
+          "shot": "evidence/census-money-l2/billing-overview.webp"
+        }
+      ]
     }
   },
   {
@@ -5053,11 +5093,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Payroll KPIs are static/non-drillable; August filter produced a clear No payroll for August 2026 empty state. Values agree with the payroll alias on /admin/invoicing.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -5069,18 +5109,76 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money-l2/finance-overview.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money-l2/finance-empty.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money-l2/finance-expenses.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-money-l2-finance"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-money",
+      "source": "census-money-l2",
+      "hub": "finance",
       "hubFit": null,
       "buriedDaily": null,
       "duplicate": null,
-      "note": "Payroll overview and KPI/table data rendered."
+      "proposedHome": null,
+      "note": "Payroll KPIs are static/non-drillable; August filter produced a clear No payroll for August 2026 empty state. Values agree with the payroll alias on /admin/invoicing."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Run Payroll tab",
+        "Payroll History tab",
+        "Pay Rates tab",
+        "Expenses tab",
+        "Payroll month filter August then reset to September",
+        "Pay Rates Edit modal opened and Cancelled",
+        "Payroll History View details returned to payroll view"
+      ],
+      "controlsNotExercised": [
+        "Generate Invoices (draft creation not invoked)",
+        "Approve Payrun (guarded)",
+        "Export Payroll"
+      ],
+      "figures": {
+        "drilled": [],
+        "failed": [
+          "Total Payroll \u00a328.00",
+          "Staff Members 1",
+          "Pending Review 1",
+          "Approved 0",
+          "Paid 0"
+        ],
+        "notes": "Payroll KPIs are static/non-drillable; August filter produced a clear No payroll for August 2026 empty state. Values agree with the payroll alias on /admin/invoicing."
+      },
+      "agreement": {
+        "ok": true,
+        "conflicts": []
+      },
+      "isolation": null,
+      "defects": [
+        {
+          "control": "Payroll KPI cards",
+          "why": "Figures do not expose an underlying-data drill action.",
+          "shot": "evidence/census-money-l2/finance-overview.webp"
+        }
+      ]
     }
   },
   {
@@ -7785,11 +7883,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Named hub loads. New till sale was not activated.",
+    "reason": "Overview KPI cards have no underlying-data drill. Orders showed three paid \u00a320 orders while Overview showed Paid orders 0 (today scope not exposed); initial overview also showed Stock-outs 1 while a later reload showed 0 and Stock showed one 0-available SKU.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -7805,18 +7903,88 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money-l2/pos-overview.webp"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money-l2/pos-sale-cancelled.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-money-l2-finance"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-money",
+      "source": "census-money-l2",
+      "hub": "finance",
       "hubFit": null,
       "buriedDaily": null,
       "duplicate": null,
-      "note": "POS dashboard KPI cards rendered with zero-sales state."
+      "proposedHome": null,
+      "note": "Overview KPI cards have no underlying-data drill. Orders showed three paid \u00a320 orders while Overview showed Paid orders 0 (today scope not exposed); initial overview also showed Stock-outs 1 while a later reload showed 0 and Stock showed one 0-available SKU."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "New till sale opened; returned to Till with empty basket without payment",
+        "Till tab",
+        "Overview tab",
+        "Products tab",
+        "Bundles & Offers tab",
+        "Stock tab",
+        "Orders tab",
+        "Reports tab",
+        "Devices tab",
+        "Settings tab",
+        "Insights tab",
+        "Sale location observed as Bluebird Central"
+      ],
+      "controlsNotExercised": [
+        "Continue to card payment (disabled and intentionally not used)",
+        "Card/Cash tender",
+        "Add product",
+        "New bundle",
+        "New offer",
+        "Stock Adjust",
+        "Refund",
+        "Export product sales CSV",
+        "Save shop company"
+      ],
+      "figures": {
+        "drilled": [],
+        "failed": [
+          "Overview KPI cards: Today\u2019s sales \u00a30.00, Paid orders 0, Average basket \u00a30.00, Discounts \u00a30.00, Items sold 0, Refunds \u00a30.00",
+          "Reports figures: gross \u00a360.00, net \u00a350.01, canonical revenue \u00a360.00"
+        ],
+        "notes": "Overview KPI cards have no underlying-data drill. Orders showed three paid \u00a320 orders while Overview showed Paid orders 0 (today scope not exposed); initial overview also showed Stock-outs 1 while a later reload showed 0 and Stock showed one 0-available SKU."
+      },
+      "agreement": {
+        "ok": false,
+        "conflicts": [
+          "Overview Paid orders 0 vs Orders tab 3 paid rows; date scope is not exposed",
+          "Overview Stock-outs changed from 1 to 0 across reload; Stock tab shows a 0-available SKU"
+        ]
+      },
+      "isolation": null,
+      "defects": [
+        {
+          "control": "Overview KPI cards",
+          "why": "KPI figures are not drillable to orders or stock data.",
+          "shot": "evidence/census-money-l2/pos-overview.webp"
+        },
+        {
+          "control": "Overview Paid orders / Stock-outs",
+          "why": "Displayed facts diverge from Orders/Stock views or change after reload without an exposed scope explanation.",
+          "shot": "evidence/census-money-l2/pos-overview.webp"
+        }
+      ]
     }
   },
   {
@@ -7834,10 +8002,10 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Completion report is a sensible empty state, but KPI cards do not drill. Member messaging displays an explicit Teacher communication report is unavailable error and assumes neither zero nor empty.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -7849,23 +8017,73 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money-l2/post-class-completion.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-money-l2-finance"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good post-class follow-up intelligence surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Team > Post-Class Intelligence",
-      "note": "Post-Class Intelligence rendered with zero follow-up sessions in period; no tabs or configuration changed.",
-      "breadcrumb": "Post-Class Intelligence",
-      "reachability": "DIRECT_URL",
-      "heading": "Post-Class Intelligence"
+      "source": "census-money-l2",
+      "hub": "finance",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Completion report is a sensible empty state, but KPI cards do not drill. Member messaging displays an explicit Teacher communication report is unavailable error and assumes neither zero nor empty."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Completion report tab",
+        "Patterns tab",
+        "Teacher adoption tab",
+        "Member messaging tab",
+        "Quick chips tab",
+        "7d filter",
+        "90d filter"
+      ],
+      "controlsNotExercised": [
+        "Seed demo observations (write)",
+        "Teacher member messaging toggle/chips",
+        "Try again"
+      ],
+      "figures": {
+        "drilled": [],
+        "failed": [
+          "Sessions completed 0",
+          "Marked all done 0",
+          "Notes captured 0",
+          "Unresolved pain 0",
+          "Flagged sentiment 0"
+        ],
+        "notes": "Completion report is a sensible empty state, but KPI cards do not drill. Member messaging displays an explicit Teacher communication report is unavailable error and assumes neither zero nor empty."
+      },
+      "agreement": {
+        "ok": true,
+        "conflicts": []
+      },
+      "isolation": null,
+      "defects": [
+        {
+          "control": "Teacher communication report",
+          "why": "Report unavailable: information could not be loaded; no zero or empty result is assumed.",
+          "shot": "evidence/census-money-l2/post-class-completion.webp"
+        },
+        {
+          "control": "Completion KPI cards",
+          "why": "Figures are static and do not open underlying sessions/notes.",
+          "shot": "evidence/census-money-l2/post-class-completion.webp"
+        }
+      ]
     }
   },
   {
@@ -10047,10 +10265,10 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). This is the studio Stripe Connect page. Open Stripe points to the external Stripe dashboard. No platform path or mutation was used; Disconnect was not clicked.",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "reason": "Tenant Stripe Connect status is visibly connected and sandbox/test-oriented; no onboarding, disconnect, or external Stripe action was submitted.",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": "2026-09-11",
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
@@ -10061,12 +10279,54 @@
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/gap3.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money-l2/stripe-connect.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-money-l2-finance"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable"
+    "level": 2,
+    "levelLabel": "L2 partial",
+    "senseCheck": {
+      "source": "census-money-l2",
+      "hub": "finance",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Tenant Stripe Connect status is visibly connected and sandbox/test-oriented; no onboarding, disconnect, or external Stripe action was submitted."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Observed Connected and ready status",
+        "Observed Safe Studio sandbox status"
+      ],
+      "controlsNotExercised": [
+        "Open Stripe",
+        "Disconnect",
+        "Connect/onboarding submit"
+      ],
+      "figures": {
+        "drilled": [],
+        "failed": [
+          "Connected and ready; Safe Studio sandbox"
+        ],
+        "notes": "Tenant Stripe Connect status is visibly connected and sandbox/test-oriented; no onboarding, disconnect, or external Stripe action was submitted."
+      },
+      "agreement": {
+        "ok": true,
+        "conflicts": []
+      },
+      "isolation": null,
+      "defects": []
+    }
   },
   {
     "id": "admin-studio-intelligence",
@@ -15537,11 +15797,11 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Confirmed twin: /admin/invoicing rendered the same Payroll page/content rather than a distinct invoicing surface. Twin confirmed L1 on both.",
+    "reason": "Route is a payroll alias: it renders the same Payroll view/data as Finance & Payments rather than an invoicing workspace. KPI figures are static/non-drillable.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -15557,20 +15817,70 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money-l2/finance-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-money-l2-finance"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Payroll loads with pay-period controls, summary metrics, and the staff payroll table.",
-      "title": "Payroll",
-      "breadcrumb": "Payroll",
-      "reachability": "unknown"
+      "source": "census-money-l2",
+      "hub": "finance",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "Route is a payroll alias: it renders the same Payroll view/data as Finance & Payments rather than an invoicing workspace. KPI figures are static/non-drillable."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "Payroll History tab"
+      ],
+      "controlsNotExercised": [
+        "Run Payroll tab",
+        "Pay Rates tab",
+        "Expenses tab",
+        "Generate Invoices",
+        "Approve Payrun",
+        "Export Payroll"
+      ],
+      "figures": {
+        "drilled": [],
+        "failed": [
+          "Total Payroll \u00a328.00",
+          "Staff Members 1",
+          "Pending Review 1",
+          "Approved 0",
+          "Paid 0"
+        ],
+        "notes": "Route is a payroll alias: it renders the same Payroll view/data as Finance & Payments rather than an invoicing workspace. KPI figures are static/non-drillable."
+      },
+      "agreement": {
+        "ok": true,
+        "conflicts": []
+      },
+      "isolation": null,
+      "defects": [
+        {
+          "control": "Invoicing route content",
+          "why": "/admin/invoicing lands on Payroll and exposes no invoice list/generate-invoice workspace beyond the payroll alias.",
+          "shot": "evidence/census-money-l2/finance-overview.webp"
+        },
+        {
+          "control": "Payroll KPI cards",
+          "why": "Figures do not expose underlying payroll rows when tapped.",
+          "shot": "evidence/census-money-l2/finance-overview.webp"
+        }
+      ]
     }
   },
   {
@@ -17779,7 +18089,7 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -17793,21 +18103,78 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money-l2/refunds-overview.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-money-l2-finance"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Refund Management loads with metrics, refund table, filters, and approval/configuration tabs; no refund action taken.",
-      "title": "Refund Management",
-      "breadcrumb": "Refund Management",
-      "reachability": "unknown"
-    }
+      "source": "census-money-l2",
+      "hub": "finance",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "proposedHome": null,
+      "note": "KPI cards have no underlying-data drill. Refund #5 detail opens a modal containing only the title and Close, with no underlying refund fields; no Stripe refund was processed or approved."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "All Refunds tab",
+        "Approval Queue tab",
+        "AI Insights tab",
+        "Pending Approval status filter then reset",
+        "Stripe method filter then reset",
+        "Refund #5 row detail opened and closed"
+      ],
+      "controlsNotExercised": [
+        "Approve",
+        "Reject",
+        "Process",
+        "New Refund",
+        "Generate Insights",
+        "Configuration controls"
+      ],
+      "figures": {
+        "drilled": [],
+        "failed": [
+          "Total Requests 3",
+          "Refunded Amount \u00a330.00",
+          "Pending 2",
+          "Completed 1",
+          "Rejected 0",
+          "Failed 0"
+        ],
+        "notes": "KPI cards have no underlying-data drill. Refund #5 detail opens a modal containing only the title and Close, with no underlying refund fields; no Stripe refund was processed or approved."
+      },
+      "agreement": {
+        "ok": true,
+        "conflicts": []
+      },
+      "isolation": null,
+      "defects": [
+        {
+          "control": "Refund KPI cards",
+          "why": "Metrics are static/non-drillable.",
+          "shot": "evidence/census-money-l2/refunds-overview.webp"
+        },
+        {
+          "control": "Refund #5 detail",
+          "why": "Detail modal showed only \u201cRefund #5\u201d and Close, with no underlying data.",
+          "shot": "evidence/census-money-l2/refunds-overview.webp"
+        }
+      ]
+    },
+    "reason": "KPI cards have no underlying-data drill. Refund #5 detail opens a modal containing only the title and Close, with no underlying refund fields; no Stripe refund was processed or approved."
   },
   {
     "id": "admin-reporting",

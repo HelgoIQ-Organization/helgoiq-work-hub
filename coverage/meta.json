@@ -19,9 +19,9 @@
     "hubOnly": 156,
     "orphaned": 30,
     "fullyTested": 0,
-    "partiallyTested": 334,
+    "partiallyTested": 328,
     "blocked": 44,
-    "failed": 31,
+    "failed": 37,
     "notTested": 4,
     "stale": 59,
     "byReachability": {
@@ -34,8 +34,8 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "2": 67,
-      "1": 299,
+      "2": 74,
+      "1": 292,
       "0": 47
     }
   },
@@ -162,12 +162,12 @@
     "note": "Evidence tips stamped from source drops; live tip confirmed via /api/version for reference only."
   },
   "lastL2Merge": {
-    "bot": "Census AI",
-    "hub": "home-cc",
+    "bot": "Census Money",
+    "hub": "finance",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
     "pass": 0,
-    "partial": 3,
-    "fail": 1,
-    "note": "overview L2_FAIL Refrm visible; 3 PARTIAL"
+    "partial": 1,
+    "fail": 6,
+    "miss": 0
   }
 }
