@@ -160,7 +160,7 @@
         <div id="coverage-panel-admin" class="coverage-panel" role="tabpanel" aria-labelledby="subtab-admin">
           <div id="coverageVerify" class="coverage-verify" aria-label="How we verified completeness"></div>
           <div class="coverage-headline-row">
-            <div id="coverageHeadlines" class="coverage-headlines"></div>
+            <div id="coverageHeadlines" class="coverage-headlines" role="group" aria-label="Coverage summary filters"></div>
             <div class="coverage-chart-wrap">
               <svg id="coverageChart" class="coverage-chart" viewBox="0 0 120 120" aria-hidden="true">
                 <circle class="ring-bg" cx="60" cy="60" r="52" />
@@ -172,7 +172,7 @@
               </div>
             </div>
           </div>
-          <div id="coverageChartLegend" class="coverage-legend"></div>
+          <div id="coverageChartLegend" class="coverage-legend" role="group" aria-label="Coverage chart filters"></div>
           <div class="coverage-toolbar">
             <label class="search-label sr-only" for="coverageSearch">Search admin pages</label>
             <input id="coverageSearch" type="search" placeholder="Search route, breadcrumb, title…" autocomplete="off" />
@@ -180,7 +180,7 @@
             <button type="button" id="coverageClear" class="btn ghost">Clear</button>
           </div>
           <p id="coverageCount" class="muted count"></p>
-          <div class="coverage-table-wrap">
+          <div class="coverage-table-wrap" id="coverageTableWrap">
             <table class="coverage-table" id="coverageTable">
               <thead>
                 <tr>
