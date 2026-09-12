@@ -3912,19 +3912,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Named landing loaded; no connection was changed.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/connections.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings connections surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone Connections surface under Settings",
+      "proposedHome": "Settings > Connections",
+      "note": "Direct /admin/connections?c=150002 rendered for Bluebird Pilates TEST DATA; OBSERVE ONLY, no connect, reveal, edit or settings action used.",
+      "breadcrumb": "Settings > Connections",
+      "reachability": "SIDEBAR",
+      "heading": "Connections"
+    }
   },
   {
     "id": "admin-crm-hub",
@@ -4094,19 +4114,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/data-migration.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings data-migration surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone Data Migration surface under Settings",
+      "proposedHome": "Settings > Data Migration",
+      "note": "Direct /admin/data-migration?c=150002 rendered; migration workflow observed only, no CSV uploaded and no migration run.",
+      "breadcrumb": "Settings > Data Migration",
+      "reachability": "SIDEBAR",
+      "heading": "Data Migration"
+    }
   },
   {
     "id": "admin-decision-engine",
@@ -4360,19 +4400,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/documents.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings document-governance surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone Document Inbox & Vault surface under Settings",
+      "proposedHome": "Settings > Document Inbox & Vault",
+      "note": "Direct /admin/documents?c=150002 rendered; document inbox observed only, no upload or scan action used.",
+      "breadcrumb": "Settings > Document Inbox & Vault",
+      "reachability": "SIDEBAR",
+      "heading": "Document Inbox & Vault"
+    }
   },
   {
     "id": "admin-door-access",
@@ -4823,19 +4883,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/gdpr.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings GDPR-compliance surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone GDPR Compliance surface under Settings",
+      "proposedHome": "Settings > GDPR Compliance",
+      "note": "Direct /admin/gdpr?c=150002 rendered; GDPR requests and export controls observed only, no export, deletion, purge or new request action used.",
+      "breadcrumb": "Settings > GDPR Compliance",
+      "reachability": "SIDEBAR",
+      "heading": "GDPR Compliance"
+    }
   },
   {
     "id": "admin-gift-cards",
@@ -5693,24 +5773,44 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "partially_tested",
+    "state": "blocked",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
+    "blockedBy": "Direct /admin/live-support?c=150002 rendered an access-restricted page for Admin 2; treated as BLOCKED (platform admin access required), no escalation or action attempted.",
     "reason": "AI-066 loaded (marketing video)",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH3.md"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/live-support.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings live-support surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone Live Support surface under Settings",
+      "proposedHome": "Settings > Live Support",
+      "note": "Direct /admin/live-support?c=150002 rendered an access-restricted page for Admin 2; treated as BLOCKED (platform admin access required), no escalation or action attempted.",
+      "breadcrumb": "Settings > Live Support",
+      "reachability": "SIDEBAR",
+      "heading": "Platform Admin Access Required"
+    }
   },
   {
     "id": "admin-location-intelligence",
@@ -6438,19 +6538,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/onboarding.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings onboarding surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone Onboarding Wizard surface under Settings",
+      "proposedHome": "Settings > Onboarding Wizard",
+      "note": "Direct /admin/onboarding?c=150002 rendered; onboarding configuration observed only, no config created or changed.",
+      "breadcrumb": "Settings > Onboarding Wizard",
+      "reachability": "SIDEBAR",
+      "heading": "Onboarding Wizard"
+    }
   },
   {
     "id": "admin-open-banking",
@@ -8581,19 +8701,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/setup.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings studio-setup surface",
+      "buriedDaily": "high",
+      "duplicate": "standalone Studio Setup surface under Settings",
+      "proposedHome": "Settings > Studio Setup",
+      "note": "Direct /admin/setup?c=150002 rendered; all setup controls observed only, no toggles changed and no Save, Apply or other write action used.",
+      "breadcrumb": "Settings > Studio Setup",
+      "reachability": "SIDEBAR",
+      "heading": "Studio Setup"
+    }
   },
   {
     "id": "admin-setup-wizard",
@@ -8610,19 +8750,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/setup-wizard.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings business-setup-wizard surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone Business Setup wizard under Settings",
+      "proposedHome": "Settings > Business Setup Wizard",
+      "note": "Direct /admin/setup/wizard?c=150002 rendered; wizard observed only, not started, advanced or completed; no setup writes made.",
+      "breadcrumb": "Settings > Business Setup Wizard",
+      "reachability": "SIDEBAR",
+      "heading": "Welcome to HelgoIQ Setup"
+    }
   },
   {
     "id": "admin-smart-folder-reports",
@@ -8869,19 +9029,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Loaded as the Settings navigation target for Connections; no integration was changed.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/social-integrations.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings integrations surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone Social Integrations surface under Settings",
+      "proposedHome": "Settings > Integrations",
+      "note": "Direct /admin/social/integrations?c=150002 rendered for Bluebird Pilates TEST DATA; OBSERVE ONLY, no connect, reveal, edit or settings action used.",
+      "breadcrumb": "Settings > Integrations",
+      "reachability": "SIDEBAR",
+      "heading": "Integrations"
+    }
   },
   {
     "id": "admin-software-guides",
@@ -8898,19 +9078,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/software-guides.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings software-guides surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone Software Guides surface under Settings",
+      "proposedHome": "Settings > Software Guides",
+      "note": "Direct /admin/software-guides?c=150002 rendered; guides observed only, no guide workflow or settings action used.",
+      "breadcrumb": "Settings > Software Guides",
+      "reachability": "SIDEBAR",
+      "heading": "Software Guides"
+    }
   },
   {
     "id": "admin-splash-screens",
@@ -9965,19 +10165,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/video-guides.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings platform-videos surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone Platform Videos surface under Settings",
+      "proposedHome": "Settings > Platform Videos",
+      "note": "Direct /admin/video-guides?c=150002 rendered; video library observed only, no playback or configuration action used.",
+      "breadcrumb": "Settings > Platform Videos",
+      "reachability": "SIDEBAR",
+      "heading": "Platform Videos"
+    }
   },
   {
     "id": "admin-view-as-member",
@@ -10085,19 +10305,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/walkthrough-manager.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings walkthrough-manager surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone Walkthrough Manager surface under Settings",
+      "proposedHome": "Settings > Walkthrough Manager",
+      "note": "Direct /admin/walkthrough-manager?c=150002 rendered; walkthrough steps and analytics observed only, no tour publish, seed, add or edit action used.",
+      "breadcrumb": "Settings > Walkthrough Manager",
+      "reachability": "SIDEBAR",
+      "heading": "Walkthrough Manager"
+    }
   },
   {
     "id": "admin-wallet-passes",
@@ -10163,19 +10403,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/webhooks.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings outbound-webhooks surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone Outbound Webhooks surface under Settings",
+      "proposedHome": "Settings > Outbound Webhooks",
+      "note": "Direct /admin/webhooks?c=150002 rendered; webhook configuration observed only, no endpoint created.",
+      "breadcrumb": "Settings > Outbound Webhooks",
+      "reachability": "SIDEBAR",
+      "heading": "Outbound Webhooks"
+    }
   },
   {
     "id": "admin-website",
@@ -10620,19 +10880,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/whats-new-tours.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings what's-new-tours surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone What's New Tours surface under Settings",
+      "proposedHome": "Settings > What's New Tours",
+      "note": "Direct /admin/whats-new-tours?c=150002 rendered after one transient dynamic-module load error and retry; tour creation observed only, no tour created or published.",
+      "breadcrumb": "Settings > What's New Tours",
+      "reachability": "SIDEBAR",
+      "heading": "What's New Tours"
+    }
   },
   {
     "id": "admin-white-label",
@@ -10649,19 +10929,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/white-label.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-settings-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "settings",
+      "hubFit": "good settings white-label surface",
+      "buriedDaily": "low",
+      "duplicate": "standalone White-Label & Custom Domains surface under Settings",
+      "proposedHome": "Settings > White-Label & Custom Domains",
+      "note": "Direct /admin/white-label?c=150002 rendered; OBSERVE ONLY, no domain, branding, email, PWA or save action used.",
+      "breadcrumb": "Settings > White-Label & Custom Domains",
+      "reachability": "SIDEBAR",
+      "heading": "White-Label & Custom Domains"
+    }
   },
   {
     "id": "admin-workforce-intelligence",

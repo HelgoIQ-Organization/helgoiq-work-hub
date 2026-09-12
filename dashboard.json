@@ -73,7 +73,7 @@
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
     "compareNote": "Morning board (overall 52%) vs last measured ~64% on older tips. Tip now 88d622ea \u2014 scores held; retest pending. #1267 not live yet.",
     "updatedAt": "2026-09-12T07:40:10.030Z",
-    "coverageNote": "After Longtail studio-access: tested_any 373/413 (90.3%); L\u22651=330",
+    "coverageNote": "After Longtail Settings: tested_any 385/413 (93.2%); L\u22651=342",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED fixtures consumed",
     "pulse1266": "PASS UI explain; explainStudioState RPC 500",
@@ -83,7 +83,8 @@
     "censusMoneyL1": "23/23 PASS Finance/Reports tip 6486be87",
     "censusAiL1": "90 PASS / 6 FAIL (1 crash mrr + 5 PA gates) / 13 NEEDS-ID",
     "censusLongtailTeamAcademy": "51 PASS / 6 FAIL (misroutes) / 1 BLOCKED; studio-access next",
-    "censusLongtailStudioAccess": "30/30 PASS; Settings (15 observe-only) next"
+    "censusLongtailStudioAccess": "30/30 PASS; Settings (15 observe-only) next",
+    "censusLongtailSettings": "14 PASS / 1 BLOCKED (live-support PA); orphans (30) next"
   },
   "strands": [
     {
