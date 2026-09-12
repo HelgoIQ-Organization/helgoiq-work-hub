@@ -1,0 +1,48 @@
+{
+  "total": 413,
+  "not_tested": 395,
+  "partially_tested": 0,
+  "fully_tested": 0,
+  "failed": 18,
+  "blocked": 0,
+  "tested_any": 18,
+  "pct_tested": 4.4,
+  "with_stamp": 16,
+  "sidebar_reachable": 222,
+  "byLevel": {
+    "0": 413,
+    "1": 0,
+    "2": 0,
+    "3": 0
+  },
+  "byState": {
+    "not_tested": 395,
+    "failed": 18
+  },
+  "metaCounts": {
+    "total": 413,
+    "menu": 228,
+    "matched": 227,
+    "hubOnly": 156,
+    "orphaned": 30,
+    "fullyTested": 0,
+    "partiallyTested": 0,
+    "blocked": 0,
+    "failed": 18,
+    "notTested": 395,
+    "stale": 16,
+    "byReachability": {
+      "SIDEBAR": 218,
+      "SIDEBAR, DOCK": 4,
+      "MENU_ONLY": 5,
+      "PATH DEFECT": 1,
+      "SEARCH ONLY": 100,
+      "LINK ONLY": 55,
+      "ORPHANED": 30
+    }
+  },
+  "liveTip": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+  "generatedAt": "2026-09-12T07:14:12.229Z",
+  "recordedAt": "2026-09-12T09:02:58.973676Z",
+  "source": "coverage/admin-pages.json + coverage/meta.json pre-backfill"
+}

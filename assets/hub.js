@@ -1401,8 +1401,35 @@
       blocked: "Blocked",
       failed: "Failed",
       not_tested: "Not tested",
+      level_1: "L1 reachable",
     };
     return map[state] || state || "Not tested";
+  }
+
+  function coverageLevelLabel(p) {
+    if (!p) return "";
+    if (p.levelLabel) return String(p.levelLabel);
+    const lv = typeof p.level === "number" ? p.level : parseInt(p.level, 10);
+    if (lv === 3) return "L3 complete";
+    if (lv === 2) return "L2 works";
+    if (lv === 1) return "L1 reachable";
+    return "untested";
+  }
+
+  function coverageLevelBadge(p) {
+    const lv = typeof p.level === "number" ? p.level : parseInt(p.level, 10);
+    if (!lv || lv < 1) return "";
+    const label = lv === 3 ? "L3" : lv === 2 ? "L2" : "L1";
+    const title = escapeHtml(coverageLevelLabel(p));
+    return (
+      '<span class="cov-level cov-level-' +
+      lv +
+      '" title="' +
+      title +
+      '">' +
+      label +
+      "</span> "
+    );
   }
 
   function showCoverageSub(name) {
@@ -1589,17 +1616,25 @@
       tr.id = p.id;
       const st = p.state || "not_tested";
       let stateHtml =
+        coverageLevelBadge(p) +
         '<span class="cov-state state-' + escapeHtml(st) + '">' + escapeHtml(coverageStateLabel(st)) + "</span>";
       if (st === "partially_tested") {
-        const pct = typeof p.percentPassed === "number" ? p.percentPassed : 0;
-        stateHtml +=
-          '<div class="cov-mini-bar" title="' +
-          pct +
-          '% passed"><div class="bar-track"><div class="bar-fill state-partially_tested" style="width:' +
-          Math.max(0, Math.min(100, pct)) +
-          '%"></div></div><span class="muted">' +
-          pct +
-          "% passed</span></div>";
+        const lv = typeof p.level === "number" ? p.level : parseInt(p.level, 10);
+        if (lv === 1) {
+          stateHtml += '<div class="muted cov-reason">L1 reachable — loaded only</div>';
+        } else if (typeof p.percentPassed === "number") {
+          const pct = p.percentPassed;
+          stateHtml +=
+            '<div class="cov-mini-bar" title="' +
+            pct +
+            '% passed"><div class="bar-track"><div class="bar-fill state-partially_tested" style="width:' +
+            Math.max(0, Math.min(100, pct)) +
+            '%"></div></div><span class="muted">' +
+            pct +
+            "% passed</span></div>";
+        } else if (lv === 2) {
+          stateHtml += '<div class="muted cov-reason">L2 exercised</div>';
+        }
       }
       if (st === "failed") {
         const bits = [];

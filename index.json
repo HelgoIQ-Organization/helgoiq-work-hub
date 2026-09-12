@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-12T08:32:52.628Z",
+  "updatedAt": "2026-09-12T09:04:28.601Z",
   "drops": [
+    {
+      "id": "2026-09-12-coverage-backfill-4-4-to-30-3",
+      "title": "Coverage backfill 4.4% to 30.3%",
+      "date": "2026-09-12",
+      "summary": "Before 4.4% tested → after 30.3% (L1 55, L2 47). No invented greens.",
+      "plainEnglish": "Before 4.4% tested → after 30.3% (L1 55, L2 47). No invented greens.",
+      "tags": [
+        "status",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-coverage-backfill-4-4-to-30-3/BACKFILL-SUMMARY.md"
+      ],
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-12-retirement-safety-table-1217",
       "title": "Retirement safety table #1217",

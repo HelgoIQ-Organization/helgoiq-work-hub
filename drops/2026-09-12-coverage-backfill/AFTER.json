@@ -1,0 +1,105 @@
+{
+  "total": 413,
+  "not_tested": 288,
+  "partially_tested": 89,
+  "fully_tested": 0,
+  "failed": 13,
+  "blocked": 23,
+  "tested_any": 125,
+  "pct_tested": 30.3,
+  "with_stamp": 97,
+  "sidebar_reachable": 222,
+  "byLevel": {
+    "0": 311,
+    "1": 55,
+    "2": 47,
+    "3": 0
+  },
+  "byState": {
+    "partially_tested": 89,
+    "not_tested": 288,
+    "blocked": 23,
+    "failed": 13
+  },
+  "metaCounts": {
+    "total": 413,
+    "menu": 228,
+    "matched": 227,
+    "hubOnly": 156,
+    "orphaned": 30,
+    "fullyTested": 0,
+    "partiallyTested": 87,
+    "blocked": 23,
+    "failed": 15,
+    "notTested": 288,
+    "stale": 59,
+    "byReachability": {
+      "SIDEBAR": 218,
+      "SIDEBAR, DOCK": 4,
+      "MENU_ONLY": 5,
+      "PATH DEFECT": 1,
+      "SEARCH ONLY": 100,
+      "LINK ONLY": 55,
+      "ORPHANED": 30
+    },
+    "byLevel": {
+      "0": 311,
+      "1": 55,
+      "2": 47,
+      "3": 0
+    }
+  },
+  "liveTip": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+  "generatedAt": "2026-09-12T07:14:12.229Z",
+  "recordedAt": "2026-09-12T09:02:58.985826Z",
+  "programmes": [
+    [
+      "ai-85-census",
+      39
+    ],
+    [
+      "menu-census-batch2",
+      38
+    ],
+    [
+      "owner-negative",
+      27
+    ],
+    [
+      "iso29-complete",
+      19
+    ],
+    [
+      "menu-census-batch1",
+      7
+    ],
+    [
+      "menu-census-gap3",
+      6
+    ],
+    [
+      "ambient-evidence",
+      4
+    ],
+    [
+      "invite-e2e",
+      4
+    ],
+    [
+      "forms-qr-matrix",
+      4
+    ],
+    [
+      "owner-twin-bi",
+      2
+    ],
+    [
+      "ai-85-overnight-rescore",
+      1
+    ],
+    [
+      "cluster-a",
+      1
+    ]
+  ]
+}

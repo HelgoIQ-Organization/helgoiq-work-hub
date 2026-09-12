@@ -19,11 +19,11 @@
     "hubOnly": 156,
     "orphaned": 30,
     "fullyTested": 0,
-    "partiallyTested": 0,
-    "blocked": 0,
-    "failed": 18,
-    "notTested": 395,
-    "stale": 16,
+    "partiallyTested": 89,
+    "blocked": 23,
+    "failed": 13,
+    "notTested": 288,
+    "stale": 59,
     "byReachability": {
       "SIDEBAR": 218,
       "SIDEBAR, DOCK": 4,
@@ -32,9 +32,15 @@
       "SEARCH ONLY": 100,
       "LINK ONLY": 55,
       "ORPHANED": 30
+    },
+    "byLevel": {
+      "0": 311,
+      "1": 55,
+      "2": 47,
+      "3": 0
     }
   },
-  "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
+  "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu∩destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
   "sourcesUsed": {
     "adminMenu": "coverage/sources/admin-menu.json",
     "folders": "coverage/sources/folders.json",
@@ -47,8 +53,11 @@
   "notes": [
     "Admin ships first. Platform owner / Teacher / Client are placeholders.",
     "Feed coverage/sources/_routes_from_bundle.txt to reconcile against the Cursor 407 orphan list.",
-    "Never invent greens. Prefer not_tested over a guessed PASS."
+    "Never invent greens. Prefer not_tested over a guessed PASS.",
+    "Coverage levels backfilled 2026-09-12 from menu-census walks, ISO-29, AI-85, forms/QR, ambient/twin/BI, cluster-A, owner-negative. Load-only=L1; no invented L2/L3."
   ],
   "reconciledAt": "2026-09-12T07:30:00Z",
-  "reconcileIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1217"
+  "reconcileIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1217",
+  "backfillAt": "2026-09-12T09:02:58.985826Z",
+  "backfillProgramme": "17-coverage-programme"
 }

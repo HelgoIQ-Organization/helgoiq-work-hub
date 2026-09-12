@@ -1167,3 +1167,19 @@ a { color: var(--accent); }
 }
 .coverage-stub h3 { margin: 0 0 0.4rem; }
 .coverage-stub p { margin: 0; color: var(--muted); max-width: 62ch; }
+
+/* Coverage level badges (L1/L2/L3) */
+.cov-level {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+  margin-right: 0.25rem;
+  vertical-align: middle;
+  border: 1px solid var(--border, #333);
+}
+.cov-level-1 { background: #3b4558; color: #c8d2e4; }
+.cov-level-2 { background: #2a4a3a; color: #9fd4b0; }
+.cov-level-3 { background: #1e4d2b; color: #b6f0c4; }
