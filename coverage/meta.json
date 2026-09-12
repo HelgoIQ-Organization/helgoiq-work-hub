@@ -19,10 +19,10 @@
     "hubOnly": 156,
     "orphaned": 30,
     "fullyTested": 0,
-    "partiallyTested": 172,
+    "partiallyTested": 192,
     "blocked": 24,
     "failed": 19,
-    "notTested": 198,
+    "notTested": 178,
     "stale": 59,
     "byReachability": {
       "SIDEBAR": 218,
@@ -35,8 +35,8 @@
     },
     "byLevel": {
       "2": 49,
-      "0": 217,
-      "1": 147
+      "0": 197,
+      "1": 167
     }
   },
   "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
@@ -60,12 +60,10 @@
   "backfillAt": "2026-09-12T09:02:58.985826Z",
   "backfillProgramme": "17-coverage-programme",
   "lastCensusMerge": {
-    "bot": "Census Comms",
+    "bot": "Census Money",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "pass": 20,
-    "fail": 0,
-    "blocked": 1,
-    "orphaned": 5,
-    "miss": 3
+    "l1_pass": 23,
+    "l1_fail": 0,
+    "miss": 0
   }
 }

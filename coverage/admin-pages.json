@@ -1841,19 +1841,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-billing.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Billing plan and subscription cards rendered; no error."
+    }
   },
   {
     "id": "admin-birthdays",
@@ -2014,19 +2030,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-bookkeeping.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Bookkeeping KPIs and empty document queue rendered; connections shown not connected."
+    }
   },
   {
     "id": "admin-breach-process",
@@ -3192,19 +3224,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Studio commerce list has one active code. No toggle/edit/create action was used.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-discount-codes.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Discount KPI cards and one active code rendered."
+    }
   },
   {
     "id": "admin-dispute-hub",
@@ -3221,19 +3268,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-dispute-hub.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Dispute KPI cards and explicit no active disputes state rendered."
+    }
   },
   {
     "id": "admin-documents",
@@ -3545,19 +3608,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-finance-hub.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Payroll overview and KPI/table data rendered."
+    }
   },
   {
     "id": "admin-financial-forecasting",
@@ -3674,19 +3753,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-gift-cards.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Gift-card KPIs and populated report rows rendered."
+    }
   },
   {
     "id": "admin-growth-rewards",
@@ -4213,19 +4308,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-kiosk-config.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Kiosk setup guide and explicit no configurations empty state rendered."
+    }
   },
   {
     "id": "admin-learning-engine",
@@ -4987,19 +5098,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-open-banking.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Supported-bank guidance and no connected accounts empty state rendered."
+    }
   },
   {
     "id": "admin-org-intelligence",
@@ -5597,19 +5724,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Named hub loads. New till sale was not activated.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-pos-hub.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "POS dashboard KPI cards rendered with zero-sales state."
+    }
   },
   {
     "id": "admin-post-class-intelligence",
@@ -5689,19 +5831,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-products.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Stripe test-mode notice and populated credit-pack cards rendered; no purchase action taken."
+    }
   },
   {
     "id": "admin-progress-guides",
@@ -5763,19 +5921,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-pt-packages.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "PT Packages page rendered with explicit no packages empty state."
+    }
   },
   {
     "id": "admin-qr-generator",
@@ -9660,19 +9834,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-cancellation-reports.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Cancellation KPIs and populated requests table rendered."
+    }
   },
   {
     "id": "admin-card-expiry",
@@ -9779,19 +9969,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-cash-report.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Cash-payment KPIs and recent payments table rendered."
+    }
   },
   {
     "id": "admin-cctv",
@@ -10242,19 +10448,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-community.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Community dashboard rendered with zero-partner empty lanes."
+    }
   },
   {
     "id": "admin-community-events",
@@ -11156,19 +11378,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-gc-report.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "GoCardless KPI cards and explicit no-payments state rendered."
+    }
   },
   {
     "id": "admin-geo-heatmap",
@@ -12000,19 +12238,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-milestone-report.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Milestone report KPI cards and milestone progress cards rendered."
+    }
   },
   {
     "id": "admin-milestones",
@@ -12029,19 +12283,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-milestones.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Milestone management KPI cards and seven milestone rows rendered."
+    }
   },
   {
     "id": "admin-morning-dispatch",
@@ -12335,19 +12605,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-org-intelligence-staff-2160660c.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Opened from Team Profiles row using staffId 2160660c; explicit no intelligence data yet empty state rendered."
+    }
   },
   {
     "id": "admin-override-audit-log",
@@ -13102,7 +13388,7 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Analytics page loaded with populated sample metrics.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
@@ -13113,12 +13399,27 @@
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/gap3.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-reporting.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Studio analytics KPI cards, trend sections, revenue breakdown and top classes rendered."
+    }
   },
   {
     "id": "admin-reports",
@@ -13227,19 +13528,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-retention.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Retention KPI cards, risk distribution and highest-risk members rendered."
+    }
   },
   {
     "id": "admin-retention-sequences",
@@ -13623,19 +13940,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-rota-reporting.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Redirected to canonical staff-hub rota reporting tab; KPI cards and no-shift empty state rendered."
+    }
   },
   {
     "id": "admin-rota-reporting-legacy",
@@ -13652,19 +13985,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-rota-reporting-legacy.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Redirected to canonical staff-hub rota reporting tab; KPI cards and no-shift empty state rendered."
+    }
   },
   {
     "id": "admin-rota-sharing",
@@ -14450,19 +14799,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-money/admin-social-instagram.webp"
+      },
+      {
+        "kind": "issue",
+        "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644998082"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-money",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Redirected to Social Hub Instagram Insights tab; metrics rendered as explicit em-dash empty values."
+    }
   },
   {
     "id": "admin-social-meta-ads",
