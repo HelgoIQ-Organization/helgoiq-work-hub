@@ -35,6 +35,7 @@
     coverageSub: "admin",
     coverageQuery: "",
     coverageStateFilter: new Set(),
+    coverageFacetFilter: "",
     tracker: null,
     ptViewing: null,
     selectedTags: new Set(),
@@ -1451,8 +1452,25 @@
     });
   }
 
+  const COVERAGE_STATE_KEYS = ["not_tested", "failed", "blocked", "partially_tested", "fully_tested"];
+  const COVERAGE_FACET_KEYS = ["matched", "hub_only", "orphaned", "stale"];
+
   function coveragePages() {
     return state.coveragePages || [];
+  }
+
+  function coverageFiltersActive() {
+    return state.coverageStateFilter.size > 0 || !!state.coverageFacetFilter;
+  }
+
+  function pageMatchesCoverageFacet(p) {
+    const facet = state.coverageFacetFilter;
+    if (!facet) return true;
+    if (facet === "matched") return p.completeness === "matched";
+    if (facet === "hub_only") return p.completeness === "hub_only";
+    if (facet === "orphaned") return p.orphaned === true || p.completeness === "orphaned";
+    if (facet === "stale") return p.stale === true;
+    return true;
   }
 
   function filteredCoveragePages() {
@@ -1461,12 +1479,102 @@
       if (state.coverageStateFilter.size && !state.coverageStateFilter.has(p.state || "not_tested")) {
         return false;
       }
+      if (!pageMatchesCoverageFacet(p)) return false;
       if (!q) return true;
       const hay = [p.route, p.title, p.breadcrumb, p.state, p.lastTestedStamp, p.reason, p.blockedBy]
         .join(" ")
         .toLowerCase();
       return hay.includes(q);
     });
+  }
+
+  function isCoverageHeadlineActive(kind, key) {
+    if (kind === "all") return !coverageFiltersActive();
+    if (kind === "state") {
+      return !state.coverageFacetFilter && state.coverageStateFilter.size === 1 && state.coverageStateFilter.has(key);
+    }
+    if (kind === "facet") {
+      return state.coverageFacetFilter === key && state.coverageStateFilter.size === 0;
+    }
+    return false;
+  }
+
+  function isCoverageLegendActive(key) {
+    return state.coverageStateFilter.has(key);
+  }
+
+  function clearCoverageFilters() {
+    state.coverageStateFilter.clear();
+    state.coverageFacetFilter = "";
+  }
+
+  function toggleCoverageHeadline(kind, key) {
+    if (kind === "all") {
+      clearCoverageFilters();
+      return;
+    }
+    if (isCoverageHeadlineActive(kind, key)) {
+      clearCoverageFilters();
+      return;
+    }
+    clearCoverageFilters();
+    if (kind === "state" && COVERAGE_STATE_KEYS.includes(key)) {
+      state.coverageStateFilter.add(key);
+    } else if (kind === "facet" && COVERAGE_FACET_KEYS.includes(key)) {
+      state.coverageFacetFilter = key;
+    }
+  }
+
+  function toggleCoverageStateLikeChip(key) {
+    if (!COVERAGE_STATE_KEYS.includes(key)) return;
+    if (state.coverageStateFilter.has(key)) state.coverageStateFilter.delete(key);
+    else state.coverageStateFilter.add(key);
+  }
+
+  function coverageFilterHashKey() {
+    if (state.coverageFacetFilter && !state.coverageStateFilter.size) return state.coverageFacetFilter;
+    if (!state.coverageFacetFilter && state.coverageStateFilter.size === 1) {
+      return [...state.coverageStateFilter][0];
+    }
+    return "";
+  }
+
+  function syncCoverageFilterHash() {
+    if (state.view !== "coverage") return;
+    const spec = COVERAGE_SUBS[state.coverageSub] || COVERAGE_SUBS.admin;
+    const key = coverageFilterHashKey();
+    setHash("#" + spec.hash + (key ? "/" + key : ""));
+  }
+
+  function applyCoverageHashFilter(key) {
+    if (!key) return false;
+    if (COVERAGE_STATE_KEYS.includes(key)) {
+      state.coverageStateFilter = new Set([key]);
+      state.coverageFacetFilter = "";
+      return true;
+    }
+    if (COVERAGE_FACET_KEYS.includes(key)) {
+      state.coverageStateFilter.clear();
+      state.coverageFacetFilter = key;
+      return true;
+    }
+    return false;
+  }
+
+  function scrollCoverageTableIntoView() {
+    const el = $("coverageTableWrap") || $("coverageTable") || $("coverageCount");
+    if (el && typeof el.scrollIntoView === "function") {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
+  function refreshCoverageList(opts) {
+    const options = opts || {};
+    renderCoverageHeadlines();
+    renderCoverageChips();
+    renderCoverageTable();
+    if (options.syncHash) syncCoverageFilterHash();
+    if (options.scroll) scrollCoverageTableIntoView();
   }
 
   function renderCoverageHeadlines() {
@@ -1493,33 +1601,39 @@
     const headlines = $("coverageHeadlines");
     if (headlines) {
       const cells = [
-        ["Pages", counts.total || 0],
-        ["Matched", counts.matched || 0],
-        ["Hub-only", counts.hubOnly || 0],
-        ["Orphaned", counts.orphaned || 0],
-        ["Not tested", counts.notTested || 0],
-        ["Failed", counts.failed || 0],
-        ["Blocked", counts.blocked || 0],
-        ["Stale vs tip", counts.stale || 0],
+        { label: "Pages", n: counts.total || 0, kind: "all", key: "all", tone: "" },
+        { label: "Matched", n: counts.matched || 0, kind: "facet", key: "matched", tone: " ok" },
+        { label: "Hub-only", n: counts.hubOnly || 0, kind: "facet", key: "hub_only", tone: " warn" },
+        { label: "Orphaned", n: counts.orphaned || 0, kind: "facet", key: "orphaned", tone: " danger" },
+        { label: "Not tested", n: counts.notTested || 0, kind: "state", key: "not_tested", tone: "" },
+        { label: "Failed", n: counts.failed || 0, kind: "state", key: "failed", tone: " danger" },
+        { label: "Blocked", n: counts.blocked || 0, kind: "state", key: "blocked", tone: "" },
+        { label: "Stale vs tip", n: counts.stale || 0, kind: "facet", key: "stale", tone: " warn" },
       ];
       headlines.innerHTML = cells
-        .map(([l, n]) => {
-          const cls =
-            l === "Failed" || l === "Orphaned"
-              ? " danger"
-              : l === "Matched"
-                ? " ok"
-                : l === "Stale vs tip" || l === "Hub-only"
-                  ? " warn"
-                  : "";
+        .map((c) => {
+          const active = isCoverageHeadlineActive(c.kind, c.key);
+          const action =
+            c.kind === "all"
+              ? "Show all pages"
+              : "Filter to " + c.label + " (" + c.n + ")";
           return (
-            '<div class="coverage-stat' +
-            cls +
+            '<button type="button" class="coverage-stat' +
+            c.tone +
+            (active ? " active" : "") +
+            '" data-coverage-kind="' +
+            escapeHtml(c.kind) +
+            '" data-coverage-key="' +
+            escapeHtml(c.key) +
+            '" aria-pressed="' +
+            (active ? "true" : "false") +
+            '" aria-label="' +
+            escapeHtml(action) +
             '"><span class="n">' +
-            escapeHtml(String(n)) +
+            escapeHtml(String(c.n)) +
             '</span><span class="l">' +
-            escapeHtml(l) +
-            "</span></div>"
+            escapeHtml(c.label) +
+            "</span></button>"
           );
         })
         .join("");
@@ -1554,8 +1668,17 @@
       legend.innerHTML = segs
         .map(([k, l, n]) => {
           const w = total ? Math.max(n ? 4 : 0, Math.round((n / total) * 100)) : 0;
+          const active = isCoverageLegendActive(k);
           return (
-            '<div class="cov-legend-row">' +
+            '<button type="button" class="cov-legend-row' +
+            (active ? " active" : "") +
+            '" data-coverage-kind="state" data-coverage-key="' +
+            escapeHtml(k) +
+            '" aria-pressed="' +
+            (active ? "true" : "false") +
+            '" aria-label="' +
+            escapeHtml("Filter to " + l + " (" + n + ")") +
+            '">' +
             '<span class="cov-swatch state-' +
             escapeHtml(k) +
             '"></span>' +
@@ -1569,7 +1692,7 @@
             '" style="width:' +
             w +
             '%"></div></div>' +
-            "</div>"
+            "</button>"
           );
         })
         .join("");
@@ -1586,10 +1709,8 @@
       if (!n && s !== "not_tested") return;
       el.appendChild(
         chip(coverageStateLabel(s) + " (" + n + ")", state.coverageStateFilter.has(s), () => {
-          if (state.coverageStateFilter.has(s)) state.coverageStateFilter.delete(s);
-          else state.coverageStateFilter.add(s);
-          renderCoverageChips();
-          renderCoverageTable();
+          toggleCoverageStateLikeChip(s);
+          refreshCoverageList({ syncHash: true });
         })
       );
     });
@@ -1741,10 +1862,34 @@
     if (clear) {
       clear.addEventListener("click", () => {
         state.coverageQuery = "";
-        state.coverageStateFilter.clear();
+        clearCoverageFilters();
         if (search) search.value = "";
-        renderCoverageChips();
-        renderCoverageTable();
+        refreshCoverageList({ syncHash: true });
+      });
+    }
+    const onFilterActivate = (el, exclusive) => {
+      if (!el) return;
+      const kind = el.getAttribute("data-coverage-kind");
+      const key = el.getAttribute("data-coverage-key");
+      if (!kind || !key) return;
+      if (exclusive) toggleCoverageHeadline(kind, key);
+      else toggleCoverageStateLikeChip(key);
+      refreshCoverageList({ syncHash: true, scroll: true });
+    };
+    const headlines = $("coverageHeadlines");
+    if (headlines) {
+      headlines.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-coverage-key]");
+        if (!btn || !headlines.contains(btn)) return;
+        onFilterActivate(btn, true);
+      });
+    }
+    const legend = $("coverageChartLegend");
+    if (legend) {
+      legend.addEventListener("click", (e) => {
+        const btn = e.target.closest("[data-coverage-key]");
+        if (!btn || !legend.contains(btn)) return;
+        onFilterActivate(btn, true);
       });
     }
   }
@@ -1755,14 +1900,25 @@
       showView("dashboard");
       return;
     }
-    if (raw === "coverage" || raw.startsWith("coverage-") || raw === "coverage-admin") {
+    if (
+      raw === "coverage" ||
+      raw.startsWith("coverage-") ||
+      raw.startsWith("coverage/") ||
+      raw === "coverage-admin"
+    ) {
       showView("coverage");
+      const parts = raw.split("/");
+      const head = parts[0];
+      const filterKey = parts[1] || "";
       let sub = "admin";
-      if (raw === "coverage-owner" || raw === "coverage-platform-owner") sub = "owner";
-      else if (raw === "coverage-teacher") sub = "teacher";
-      else if (raw === "coverage-client") sub = "client";
+      if (head === "coverage-owner" || head === "coverage-platform-owner") sub = "owner";
+      else if (head === "coverage-teacher") sub = "teacher";
+      else if (head === "coverage-client") sub = "client";
       else sub = "admin";
       showCoverageSub(sub);
+      if (applyCoverageHashFilter(filterKey)) {
+        renderCoverage();
+      }
       return;
     }
     if (raw === "tracker" || raw.startsWith("tracker-")) {
