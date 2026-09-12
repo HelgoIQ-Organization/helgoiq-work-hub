@@ -1801,14 +1801,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_banners.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "buried",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-platform-billing",
@@ -2166,19 +2182,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH2.md"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_campaign-composer.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "duplicate",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-campaigns",
@@ -2200,21 +2231,36 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "ISO isolation exercised PASS. Bluebird Campaigns showed 3 email campaigns and 0 sent; Refrm showed 0 campaigns/0 sent; no Bluebird campaign data leaked.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_campaigns.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-cctv-hub",
@@ -2435,19 +2481,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_comm-management.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-command-centre",
@@ -2522,19 +2584,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_comms_intelligence.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "duplicate",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-comms-learning-registry",
@@ -2551,19 +2629,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_comms_learning-registry.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "duplicate",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-comms-message-logs",
@@ -2580,19 +2674,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_comms_message-logs.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-comms-messaging-numbers",
@@ -2609,19 +2719,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_comms_messaging-numbers.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-comms-opt-outs",
@@ -2638,19 +2764,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_comms_opt-outs.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-comms-wallet",
@@ -2667,19 +2809,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_comms_wallet.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-community",
@@ -3668,19 +3826,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "B4-13 Inbox AI settings / overview exercised",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_inbox.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-instructor-ai-agents",
@@ -4172,19 +4345,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_marketing.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-landing-pages",
@@ -4287,14 +4476,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_member-feedback.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "mismatch",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-member-health-score",
@@ -4414,19 +4619,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "B4-08 Campaign Builder walked; Generate withheld",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_meta-hub.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "duplicate",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-migration",
@@ -4608,9 +4828,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Studio news page has one listed article and no empty state.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -4621,12 +4841,27 @@
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_news.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "mismatch",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-newsletter-hub",
@@ -4648,19 +4883,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "B4-07 Create with AI PASS draft (not published)",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_newsletter-hub.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "duplicate",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-newsletter-creator",
@@ -4863,21 +5113,36 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "ISO isolation exercised PASS. Bluebird Personal Messages showed no messages; Refrm showed no messages; no cross-tenant content.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_personal-messages.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "buried",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-platform-connections",
@@ -5277,9 +5542,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Named landing loads with empty state. Create actions were not used.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -5290,12 +5555,27 @@
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_popups.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "buried",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-pos-hub",
@@ -6630,19 +6910,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_social.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-social-hub",
@@ -6659,19 +6955,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_social-hub.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-advocacy-queue",
@@ -6688,19 +7000,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_social_advocacy-queue.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "buried",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-google-ads",
@@ -6717,19 +7045,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_social_google-ads.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-integrations",
@@ -6809,19 +7153,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_splash-screens.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "mismatch",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-staff-employment",
@@ -8215,19 +8575,34 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "B2-06 page loaded with figures; AI Summary unverified (driver crash)",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH2.md"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_weekly-growth-brief.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-whats-new-tours",
@@ -9240,19 +9615,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_campaigns_new.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-cancellation-reports",
@@ -9597,19 +9988,35 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "blocked",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
+    "blockedBy": "L1 blocked",
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-comms/admin_class-filler_campaign_BLOCKED.webp"
+      },
+      {
+        "kind": "drop",
+        "id": "census-comms-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-comms",
+      "note": null,
+      "hubFit": "ok",
+      "buriedDaily": null,
+      "duplicate": null
+    }
   },
   {
     "id": "admin-class-id",
