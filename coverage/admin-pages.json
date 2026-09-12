@@ -3040,19 +3040,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/camio-live.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio security/live-surveillance surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Studio > Security > Camio Live View",
+      "note": "Direct /admin/camio-live?c=150002 rendered for Bluebird Pilates TEST DATA; Camio/CCTV observed only and no connection or settings changed.",
+      "breadcrumb": "Camio Live View > Live Surveillance",
+      "reachability": "SIDEBAR",
+      "heading": "Live Surveillance"
+    }
   },
   {
     "id": "admin-camio-settings",
@@ -3069,19 +3089,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/camio-settings.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio security integration-settings surface",
+      "buriedDaily": "high",
+      "duplicate": "Camio controls also linked from Live Surveillance",
+      "proposedHome": "Studio > Security > Camio Settings",
+      "note": "Direct /admin/camio-settings?c=150002 rendered; configuration observed only, switch not toggled, and no save/connect action performed.",
+      "breadcrumb": "Camio Security > Config",
+      "reachability": "SIDEBAR",
+      "heading": "Camio Security"
+    }
   },
   {
     "id": "admin-campaign-composer",
@@ -3198,19 +3238,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/cctv-hub.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio CCTV/access surface",
+      "buriedDaily": "high",
+      "duplicate": "Camio live view is a separate analytics surface",
+      "proposedHome": "Studio > Security > CCTV Hub",
+      "note": "Direct /admin/cctv-hub?c=150002 rendered; CCTV viewer and connection surfaces observed only with no camera or gateway connection changes.",
+      "breadcrumb": "CCTV Hub > Viewer",
+      "reachability": "SIDEBAR",
+      "heading": "CCTV Hub"
+    }
   },
   {
     "id": "admin-challenges",
@@ -4157,19 +4217,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/devices.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio access/device surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Studio > Access > Linked Devices",
+      "note": "Direct /admin/devices?c=150002 rendered; device pairing/add controls observed only and no device was added or changed.",
+      "breadcrumb": "Studio > Linked Devices",
+      "reachability": "SIDEBAR",
+      "heading": "Linked Devices"
+    }
   },
   {
     "id": "admin-discount-codes",
@@ -4314,19 +4394,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Named hub loads. All state-changing switches/fields were observed only, not changed.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/door-access.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio door-access surface",
+      "buriedDaily": "medium",
+      "duplicate": "Linked Devices is the device-pairing surface",
+      "proposedHome": "Studio > Access > Door Access Control",
+      "note": "Direct /admin/door-access?c=150002 rendered; door-access settings observed only, with no switches, fields, schedules, connections or other access controls changed.",
+      "breadcrumb": "Studio > Door Access Control > Settings",
+      "reachability": "SIDEBAR",
+      "heading": "Door Access Control"
+    }
   },
   {
     "id": "admin-escalation-settings",
@@ -7946,19 +8046,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/safe-studio.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio safety/compliance surface",
+      "buriedDaily": "medium",
+      "duplicate": "none observed",
+      "proposedHome": "Studio > Safe Studio",
+      "note": "Direct /admin/safe-studio?c=150002 rendered; safety overview observed only, no location selected for a write and no records or settings changed.",
+      "breadcrumb": "Safe Studio > Company overview",
+      "reachability": "SIDEBAR",
+      "heading": "Safe Studio overview"
+    }
   },
   {
     "id": "admin-screen-content",
@@ -8164,19 +8284,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Member Warnings was not shown on the hub dashboard.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/gap3.json"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/security-hub.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio security overview surface",
+      "buriedDaily": "medium",
+      "duplicate": "CCTV and Camio provide deeper camera surfaces",
+      "proposedHome": "Studio > Security & Surveillance",
+      "note": "Direct /admin/security-hub?c=150002 rendered; dashboard and quick-action links observed only, with no alerts, Camio, door-access or other security changes.",
+      "breadcrumb": "Security & Surveillance > Dashboard",
+      "reachability": "SIDEBAR",
+      "heading": "Security Dashboard"
+    }
   },
   {
     "id": "admin-seed-data",
@@ -9974,19 +10114,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "matched",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/wallet-passes.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio access/wallet surface",
+      "buriedDaily": "high",
+      "duplicate": "Wallet & NFC is also a Door Access tab",
+      "proposedHome": "Studio > Access > Mobile Wallet Passes",
+      "note": "Direct /admin/wallet-passes?c=150002 rendered; wallet configuration and Stripe-related prompt observed only, with no pass creation, registration, save or other write performed.",
+      "breadcrumb": "Mobile Wallet Passes > Settings",
+      "reachability": "SIDEBAR",
+      "heading": "Mobile Wallet Passes"
+    }
   },
   {
     "id": "admin-webhooks",
@@ -12982,19 +13142,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/alerts.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio door-access alerts surface",
+      "buriedDaily": "medium",
+      "duplicate": "Door Access Control links to alert management",
+      "proposedHome": "Studio > Access > Door Alert Management",
+      "note": "Direct /admin/door-access/alerts?c=150002 rendered for Bluebird Pilates TEST DATA; observed only, no alert rule or contact changes.",
+      "breadcrumb": "Door Access > Alert Management",
+      "reachability": "SEARCH ONLY",
+      "heading": "Door Alert Management"
+    }
   },
   {
     "id": "admin-door-access-report",
@@ -13011,19 +13191,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/report.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio door-access analytics surface",
+      "buriedDaily": "medium",
+      "duplicate": "Door Access Control links to analytics report",
+      "proposedHome": "Studio > Access > Door Access Analytics",
+      "note": "Direct /admin/door-access/report?c=150002 rendered; analytics observed only and no filters or data changed.",
+      "breadcrumb": "Reports > Door Access Analytics",
+      "reachability": "SEARCH ONLY",
+      "heading": "Door Access Analytics"
+    }
   },
   {
     "id": "admin-executive-briefing",
@@ -14021,19 +14221,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/meta-connection.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio marketing/Meta connection surface",
+      "buriedDaily": "medium",
+      "duplicate": "Meta Hub is canonical connection surface",
+      "proposedHome": "Marketing > Meta Hub > Connection",
+      "note": "Direct /admin/meta-connection?c=150002 resolved to canonical /admin/meta-hub?c=150002&tab=connection; observed only, no Meta create/connect action.",
+      "breadcrumb": "Meta Hub > Connection",
+      "reachability": "LINK ONLY",
+      "heading": "Meta Hub"
+    }
   },
   {
     "id": "admin-meta-hub-preview",
@@ -16451,19 +16671,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/roles.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio staff governance surface",
+      "buriedDaily": "high",
+      "duplicate": "Staff hub contains the canonical Roles tab",
+      "proposedHome": "Team > Staff > Roles",
+      "note": "Direct /admin/roles?c=150002 resolved to canonical /admin/staff-hub?tab=roles&c=150002; roles observed only, no role, permission or access changes.",
+      "breadcrumb": "Staff > Roles",
+      "reachability": "SEARCH ONLY",
+      "heading": "Staff"
+    }
   },
   {
     "id": "admin-roles-legacy",
@@ -16718,19 +16958,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/compliance.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio compliance surface",
+      "buriedDaily": "medium",
+      "duplicate": "Safe Studio overview links to compliance",
+      "proposedHome": "Safe Studio > Checks & compliance",
+      "note": "Direct /admin/safe-studio/compliance?c=150002 rendered; Safe Studio compliance observed only with no location selected and no writes.",
+      "breadcrumb": "Safe Studio > Checks & compliance",
+      "reachability": "SEARCH ONLY",
+      "heading": "Choose a location to review compliance"
+    }
   },
   {
     "id": "admin-safe-studio-documents",
@@ -16747,19 +17007,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/documents.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio document-library surface",
+      "buriedDaily": "medium",
+      "duplicate": "Safe Studio navigation contains the same Documents surface",
+      "proposedHome": "Safe Studio > Documents",
+      "note": "Direct /admin/safe-studio/documents?c=150002 rendered; documents observed only and no document uploaded or changed.",
+      "breadcrumb": "Safe Studio > Documents",
+      "reachability": "SEARCH ONLY",
+      "heading": "Choose a location to open its private document library"
+    }
   },
   {
     "id": "admin-safe-studio-governance",
@@ -16776,19 +17056,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/governance.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio governance/audit surface",
+      "buriedDaily": "medium",
+      "duplicate": "Safe Studio navigation contains the same governance surface",
+      "proposedHome": "Safe Studio > Communications & audit",
+      "note": "Direct /admin/safe-studio/governance?c=150002 rendered; governance observed only with no location selected and no settings or governance writes.",
+      "breadcrumb": "Safe Studio > Communications & audit",
+      "reachability": "SEARCH ONLY",
+      "heading": "Choose a location for communications and audit"
+    }
   },
   {
     "id": "admin-safe-studio-insights",
@@ -16810,19 +17110,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "AI-066 loaded (mislabelled video guide, not AI)",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH3.md"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/insights.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio insights/education surface",
+      "buriedDaily": "low",
+      "duplicate": "Safe Studio overview links to Insights",
+      "proposedHome": "Safe Studio > Insights",
+      "note": "Direct /admin/safe-studio/insights?c=150002 rendered; insights observed only and no videos played or settings changed.",
+      "breadcrumb": "Safe Studio > Insights",
+      "reachability": "SEARCH ONLY",
+      "heading": "Learn the complete Safe Studio operating routine"
+    }
   },
   {
     "id": "admin-safe-studio-inspections",
@@ -16839,19 +17159,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/inspections.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio inspection-setup surface",
+      "buriedDaily": "medium",
+      "duplicate": "Safe Studio navigation contains the same Inspection setup surface",
+      "proposedHome": "Safe Studio > Inspection setup",
+      "note": "Direct /admin/safe-studio/inspections?c=150002 rendered for Bluebird Pilates TEST DATA; observed only, no inspection or settings changes.",
+      "breadcrumb": "Safe Studio > Inspection setup",
+      "reachability": "SEARCH ONLY",
+      "heading": "Choose a location to manage inspections"
+    }
   },
   {
     "id": "admin-safe-studio-operations",
@@ -16868,19 +17208,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/operations.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio faults-and-incidents surface",
+      "buriedDaily": "medium",
+      "duplicate": "Safe Studio navigation contains the same Faults & incidents surface",
+      "proposedHome": "Safe Studio > Faults & incidents",
+      "note": "Direct /admin/safe-studio/operations?c=150002 rendered; faults and incidents observed only, no safety-critical write submitted.",
+      "breadcrumb": "Safe Studio > Faults & incidents",
+      "reachability": "SEARCH ONLY",
+      "heading": "Choose the building whose records you are managing"
+    }
   },
   {
     "id": "admin-safe-studio-people",
@@ -16897,19 +17257,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/people.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio people-and-suppliers surface",
+      "buriedDaily": "medium",
+      "duplicate": "Safe Studio navigation contains the same People & suppliers surface",
+      "proposedHome": "Safe Studio > People & suppliers",
+      "note": "Direct /admin/safe-studio/people?c=150002 rendered; people and suppliers observed only, no records changed.",
+      "breadcrumb": "Safe Studio > People & suppliers",
+      "reachability": "SEARCH ONLY",
+      "heading": "Choose a location to manage people and suppliers"
+    }
   },
   {
     "id": "admin-safe-studio-reports",
@@ -16926,19 +17306,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/reports.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio search-and-reports surface",
+      "buriedDaily": "medium",
+      "duplicate": "Safe Studio navigation contains the same Search & reports surface",
+      "proposedHome": "Safe Studio > Search & reports",
+      "note": "Direct /admin/safe-studio/reports?c=150002 rendered; search and reporting surface observed only, no export or data changes.",
+      "breadcrumb": "Safe Studio > Search & reports",
+      "reachability": "SEARCH ONLY",
+      "heading": "Choose a location to search or report"
+    }
   },
   {
     "id": "admin-safe-studio-risk",
@@ -16955,19 +17355,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/risk.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio risk-and-statutory surface",
+      "buriedDaily": "medium",
+      "duplicate": "Safe Studio navigation contains the same Risk & statutory surface",
+      "proposedHome": "Safe Studio > Risk & statutory",
+      "note": "Direct /admin/safe-studio/risk?c=150002 rendered; risk register observed only, no risk or statutory records changed.",
+      "breadcrumb": "Safe Studio > Risk & statutory",
+      "reachability": "SEARCH ONLY",
+      "heading": "Choose a location to manage its risk register"
+    }
   },
   {
     "id": "admin-safe-studio-settings",
@@ -16984,19 +17404,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/settings.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio configuration surface",
+      "buriedDaily": "low",
+      "duplicate": "Safe Studio navigation contains the same Configuration surface",
+      "proposedHome": "Safe Studio > Configuration",
+      "note": "Direct /admin/safe-studio/settings?c=150002 rendered; OBSERVE ONLY. No toggles changed and no save, publish or settings action used.",
+      "breadcrumb": "Safe Studio > Configuration",
+      "reachability": "SEARCH ONLY",
+      "heading": "Choose a location to configure Safe Studio"
+    }
   },
   {
     "id": "admin-safe-studio-team",
@@ -17013,19 +17453,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/team.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good Safe Studio team-activity surface",
+      "buriedDaily": "medium",
+      "duplicate": "Safe Studio navigation contains the same Team activity surface",
+      "proposedHome": "Safe Studio > Team activity",
+      "note": "Direct /admin/safe-studio/team?c=150002 rendered; team safety activity observed only, no membership or activity changes.",
+      "breadcrumb": "Safe Studio > Team activity",
+      "reachability": "SEARCH ONLY",
+      "heading": "Choose a location to review its safety activity"
+    }
   },
   {
     "id": "admin-screen-ai",
@@ -17047,19 +17507,39 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/screen-ai.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio Screen AI surface",
+      "buriedDaily": "low",
+      "duplicate": "Screen AI is a standalone admin surface",
+      "proposedHome": "Studio > Screen AI",
+      "note": "Direct /admin/screen-ai?c=150002 rendered for Bluebird Pilates TEST DATA; observed only, no insight generated, applied or dismissed.",
+      "breadcrumb": "Screen AI",
+      "reachability": "SEARCH ONLY",
+      "heading": "Screen AI"
+    }
   },
   {
     "id": "admin-screen-content-builder",
@@ -17121,19 +17601,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/screen-integrations.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio screen-integrations surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone Screen Integrations surface",
+      "proposedHome": "Studio > Screen Integrations",
+      "note": "Direct /admin/screen-integrations?c=150002 rendered for Bluebird Pilates TEST DATA; OBSERVE ONLY, no connect action and no toggles changed.",
+      "breadcrumb": "Studio > Screen Integrations",
+      "reachability": "SEARCH ONLY",
+      "heading": "Screen Integrations"
+    }
   },
   {
     "id": "admin-screen-reporting",
@@ -17150,19 +17650,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/screen-reporting.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio screen-reporting surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone Screen Reporting surface",
+      "proposedHome": "Studio > Screen Reporting",
+      "note": "Direct /admin/screen-reporting?c=150002 rendered; reporting tabs and period selector observed only, no changes.",
+      "breadcrumb": "Studio > Screen Reporting",
+      "reachability": "SEARCH ONLY",
+      "heading": "Screen Reporting"
+    }
   },
   {
     "id": "admin-screen-schedules",
@@ -17179,19 +17699,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/screen-schedules.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio screen-schedules surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone Schedules surface",
+      "proposedHome": "Studio > Schedules",
+      "note": "Direct /admin/screen-schedules?c=150002 rendered; no schedule creation or activation used.",
+      "breadcrumb": "Studio > Schedules",
+      "reachability": "SEARCH ONLY",
+      "heading": "Schedules"
+    }
   },
   {
     "id": "admin-screen-templates",
@@ -17208,19 +17748,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/screen-templates.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio screen-template surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone Template Gallery surface",
+      "proposedHome": "Studio > Template Gallery",
+      "note": "Direct /admin/screen-templates?c=150002 rendered; template cards observed only, no Create Template or Use action used and no content published.",
+      "breadcrumb": "Studio > Template Gallery",
+      "reachability": "SEARCH ONLY",
+      "heading": "Template Gallery"
+    }
   },
   {
     "id": "admin-screens",
@@ -17237,19 +17797,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/screens.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio screen-management surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone Screen Management surface",
+      "proposedHome": "Studio > Screen Management",
+      "note": "Direct /admin/screens?c=150002 rendered; no pairing, settings toggle, save, publish or screen-content action used.",
+      "breadcrumb": "Studio > Screen Management",
+      "reachability": "SEARCH ONLY",
+      "heading": "Screen Management"
+    }
   },
   {
     "id": "admin-security-alerts",
@@ -17266,19 +17846,39 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "not_tested",
+    "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail/security-alerts.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-longtail-studio-access-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 0,
-    "levelLabel": "untested"
+    "level": 1,
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-longtail",
+      "hub": "studio-access",
+      "hubFit": "good studio security-alerts surface",
+      "buriedDaily": "medium",
+      "duplicate": "standalone Security Alerts surface",
+      "proposedHome": "Studio > Security Alerts",
+      "note": "Direct /admin/security-alerts?c=150002 rendered; status and type filters observed only, no alert actions.",
+      "breadcrumb": "Studio > Security Alerts",
+      "reachability": "SEARCH ONLY",
+      "heading": "Security Alerts"
+    }
   },
   {
     "id": "admin-security-dashboard",
