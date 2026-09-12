@@ -1,10 +1,10 @@
 {
   "updatedAt": "2026-09-12T12:41:47.214Z",
   "meta": {
-    "dataAsOf": "2026-09-12T12:41:47.214Z",
+    "dataAsOf": "2026-09-12T13:29:36.795Z",
     "buildStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
@@ -58,7 +58,7 @@
       "command-centre": 66,
       "isolation": 86,
       "ai-85": 56,
-      "ambient": 85,
+      "ambient": 92,
       "m1": 72,
       "smoke": 67,
       "payments": 62,
@@ -105,7 +105,9 @@
     "censusCommsL2Inbox": "1 PASS / 3 PARTIAL / 2 FAIL (intelligence NaN; learning-registry disagree)",
     "censusAiL2Home": "1 FAIL overview Refrm visible \u00b7 3 PARTIAL agents/tasks/dashboard",
     "scorePushStarted": "2026-09-12: Cluster A + ISO-29 + AI-85 reachable + Dispatch + dataset canary on 6486be87 (no Declan)",
-    "censusMoneyL2Finance": "0 PASS / 1 PARTIAL (stripe-connect) / 6 FAIL \u2014 KPI drills + invoicing alias"
+    "censusMoneyL2Finance": "0 PASS / 1 PARTIAL (stripe-connect) / 6 FAIL \u2014 KPI drills + invoicing alias",
+    "ambientDispatch": "PASS on 6486be87 \u2014 viewer honest empty, no crash",
+    "datasetCanary": "FAIL Missing companyId 403 \u2014 hold 52%"
   },
   "strands": [
     {
@@ -114,10 +116,10 @@
       "percent": 52,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Dataset canary was Measured FAIL on prior tip 232659cf (UI mapped 3-row CSV; batchImport.upload Missing companyId HTTP 403; 0 members; Import Batches empty). Tip is now a263c4ab with morning packs live \u2014 canary NOT re-run yet (engineering). #1240 SAFE rollback is on tip and Declan has LIFTED the ban \u2014 prefer not to need rollback; if used, company-scoped batchId only.",
-      "progressNote": "Held Measured 52% from 232659cf \u2014 canary FAIL (companyId 403); not re-run on a263c4ab; rollback ban lifted.",
+      "plainSummary": "Dataset canary FAIL again on tip 6486be87: batchImport.upload Missing companyId HTTP 403; Import Batches empty; 0 members. Same as 232659cf. Engineering fix required. No rollback used.",
+      "progressNote": "Dataset canary FAIL again on tip 6486be87: batchImport.upload Missing companyId HTTP 403; Import Batches empty; 0 members. Same as 232659cf. Engineering fix required. No rollback used.",
       "blockers": [
-        "Canary upload FAIL on prior tip: Missing companyId on batchImport.upload (403) \u2014 retest pending on a263c4ab (engineering)",
+        "Canary upload FAIL: Missing companyId on batchImport.upload (403) \u2014 engineering",
         "12-month dataset not imported (0 members from canary)"
       ],
       "detailDropIds": [
@@ -215,16 +217,14 @@
     {
       "id": "ambient",
       "name": "Ambient intelligence",
-      "percent": 85,
+      "percent": 92,
       "basis": "measured",
-      "status": "at-risk",
-      "plainSummary": "Ambient evidence was Measured on prior tip 232659cf: Pulse explainability OK; Morning Dispatch viewer FAIL; Twin Cancelling agreed for Member A; Learning Engine one-tap / 0 lessons; Event Bus Platform-Admin gated. #1253 Twin overview + #1254 Insights server KPIs now on tip a263c4ab \u2014 ambient not re-evidenced yet.",
-      "progressNote": "Held Measured ~85% from 232659cf; Twin/Insights fixes on a263c4ab \u2014 re-evidence pending.",
+      "status": "on-track",
+      "plainSummary": "Morning Dispatch viewer PASS on tip 6486be87 (Admin2): /dispatch honest empty, no crash; Generate/Preview present on admin page. Prior viewer FAIL cleared. Pulse/Event Bus/Learning Engine blockers unchanged.",
+      "progressNote": "Morning Dispatch viewer PASS on tip 6486be87 (Admin2): /dispatch honest empty, no crash; Generate/Preview present on admin page. Prior viewer FAIL cleared. Pulse/Event Bus/Learning Engine blockers unchanged.",
       "blockers": [
-        "Morning Dispatch viewer still FAIL (last Measured on prior tip)",
         "Event Bus Platform-Admin gated \u2014 Declan escalation not attempted",
-        "Learning Engine still 0 active lessons (one-tap action works)",
-        "#1253/#1254 on tip a263c4ab \u2014 Twin/Insights re-evidence pending"
+        "Learning Engine still 0 active lessons (one-tap action works)"
       ],
       "detailDropIds": [
         "2026-09-11-ambient-evidence-tip-232659cf",
@@ -370,8 +370,8 @@
   ],
   "health": {
     "overallLaunchPercent": 64,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent (dataset 12%, command-centre 10%, isolation 10%, ai-85 15%, ambient 9%, m1 10%, smoke 6%, payments 8%, findings-fix 10%, comms 10%). Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 85\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
-    "readinessLabel": "Not ready to launch \u2014 live tip 6486be87. Headline held at 64% pending Measured retests (Cluster A, ISO-29, AI-85 reachable, Dispatch, dataset canary) now in flight. Invite create #1267 already PASS on this tip. Comms strand still blocked on Resend secrets.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 64% = round(52\u00d712 + 66\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100.",
+    "readinessLabel": "Not ready to launch \u2014 tip 6486be87. Headline now 64% after Morning Dispatch viewer PASS (ambient 92). Dataset canary still FAIL (companyId 403). Cluster A / ISO / AI-85 retests still in flight. Comms secrets still blocked.",
     "plainSummary": "As of 2026-09-12T07:08:35.782Z (Europe/London 12 Sep 2026 ~08:08), launch readiness headline held at about 64%. Live tip moved a73ff70b \u2192 88d622ea. On this tip: #1262 smoke invite sign-in, #1263 QR landing, #1264 Command Centre Admin 2 identity, #1249 public-bundle PII removal. Strand percents NOT re-scored \u2014 retest pending. #1267 (studio admin pending invite create) is on GitHub staging (a3a0e207) but not yet on live /api/version.",
     "strengths": [
       "Cluster A Measured 22/24 on tip a263c4ab; Teacher2 MGR-10 + ACS-X01 PASS",
