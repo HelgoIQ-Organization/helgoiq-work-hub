@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-09-12T14:53:43.527Z",
+  "updatedAt": "2026-09-12T18:11:17.253Z",
   "drops": [
+    {
+      "id": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s",
+      "title": "HelgoIQ progress & unblock handoff for Claude (12 Sep)",
+      "date": "2026-09-12",
+      "summary": "Launch 66%. Coverage L2 ~51%. Cluster A 24/24. Unblocks: companyId 403, ISO fours, reports-hub Refrm, MRR crash, Comms secrets, smoke fixtures.",
+      "plainEnglish": "Launch 66%. Coverage L2 ~51%. Cluster A 24/24. Unblocks: companyId 403, ISO fours, reports-hub Refrm, MRR crash, Comms secrets, smoke fixtures.",
+      "tags": [
+        "status",
+        "findings",
+        "census",
+        "isolation",
+        "command-centre",
+        "dataset",
+        "ai-85",
+        "smoke"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s/HELGOIQ-PROGRESS-UNBLOCK-2026-09-12.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
+    },
     {
       "id": "2026-09-12-coverage-l2-safe-studio-hub",
       "title": "Coverage L2 — Safe Studio hub",
