@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-12T19:37:13.514Z",
+  "updatedAt": "2026-09-12T20:10:26.024Z",
   "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "liveTipShort": "6486be87",
   "refreshLag": {
@@ -12,7 +12,7 @@
     "versionError": null,
     "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
     "mergedPrsError": "skipped",
-    "dropsScanned": 62,
+    "dropsScanned": 64,
     "issue1180Error": "skipped",
     "issue1180Comments": 0,
     "claudeReviewError": null,
@@ -33,7 +33,7 @@
         "id": 3,
         "name": "#1180 + hub drops",
         "ok": true,
-        "dropsScanned": 62,
+        "dropsScanned": 64,
         "issue1180": null
       },
       {
@@ -47,9 +47,9 @@
   },
   "counts": {
     "strands": 10,
-    "strandsStaleVsLiveTip": 7,
-    "strandsCurrent": 2,
-    "pages": 189,
+    "strandsStaleVsLiveTip": 6,
+    "strandsCurrent": 3,
+    "pages": 196,
     "pagesStaleVsLiveTip": 84,
     "claudeReviews": 0
   },
@@ -71,14 +71,14 @@
     {
       "id": "command-centre",
       "name": "Command Centre acceptance",
-      "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
-      "lastTestedAt": "2026-09-11",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-11-cluster-a-tip-a73ff70-teacher2-pass-23-24-acs-c0",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-milestone-2-bf-4-30",
       "claudeReviewCount": 0,
       "basis": "Measured",
-      "percent": 80
+      "percent": 48
     },
     {
       "id": "isolation",
@@ -178,6 +178,94 @@
     }
   ],
   "pages": [
+    {
+      "id": "route:/admin/new-vs-returning",
+      "name": "/admin/new-vs-returning",
+      "route": "/admin/new-vs-returning",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-2"
+    },
+    {
+      "id": "route:/admin/progress-guides",
+      "name": "/admin/progress-guides",
+      "route": "/admin/progress-guides",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-2"
+    },
+    {
+      "id": "route:/admin/recovery-hub",
+      "name": "/admin/recovery-hub",
+      "route": "/admin/recovery-hub",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-2"
+    },
+    {
+      "id": "drop:2026-09-12-coverage-l2-long-tail-chunk-2",
+      "name": "Coverage L2 — Long-tail chunk 2",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-2"
+    },
+    {
+      "id": "route:/api/version",
+      "name": "/api/version",
+      "route": "/api/version",
+      "strandId": "command-centre",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-milestone-2-bf-4-30"
+    },
+    {
+      "id": "route:/workspace/helgoiq-command-centre/cc_run_cluster_bf_6486be87.js",
+      "name": "/workspace/helgoiq-command-centre/cc_run_cluster_bf_6486be87.js",
+      "route": "/workspace/helgoiq-command-centre/cc_run_cluster_bf_6486be87.js",
+      "strandId": "command-centre",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-milestone-2-bf-4-30"
+    },
+    {
+      "id": "route:/workspace/helgoiq-command-centre/ACCEPTANCE-MILESTONE-2-30-SLOTS.json",
+      "name": "/workspace/helgoiq-command-centre/ACCEPTANCE-MILESTONE-2-30-SLOTS.json",
+      "route": "/workspace/helgoiq-command-centre/ACCEPTANCE-MILESTONE-2-30-SLOTS.json",
+      "strandId": "command-centre",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-milestone-2-bf-4-30"
+    },
+    {
+      "id": "drop:2026-09-12-milestone-2-bf-4-30",
+      "name": "Milestone 2 Clusters B-F 4/30",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-12-milestone-2-bf-4-30"
+    },
     {
       "id": "route:/admin/academy/class-tags",
       "name": "/admin/academy/class-tags",
@@ -328,7 +416,7 @@
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
+      "verdict": "",
       "freshness": "current",
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk-1"
     },
@@ -738,17 +826,6 @@
       "verdict": "FAIL",
       "freshness": "current",
       "evidenceDropId": "2026-09-12-dataset-canary-fail-missing-companyid-tip-6486be"
-    },
-    {
-      "id": "route:/api/version",
-      "name": "/api/version",
-      "route": "/api/version",
-      "strandId": "ambient",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-ambient-morning-dispatch-viewer-pass-tip-6486be8"
     },
     {
       "id": "route:/admin/morning-dispatch",

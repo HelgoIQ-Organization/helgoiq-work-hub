@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-12T19:55:08.465Z",
+  "updatedAt": "2026-09-12T20:09:53.510Z",
   "drops": [
+    {
+      "id": "2026-09-12-coverage-l2-long-tail-chunk-2",
+      "title": "Coverage L2 — Long-tail chunk 2",
+      "date": "2026-09-12",
+      "summary": "Long-tail L2 chunk 2: 30 routes, 3 PASS / 27 PARTIAL / 0 FAIL. Writes withheld. Gift cards 5 issued / £125 / £100 outstanding.",
+      "plainEnglish": "Long-tail L2 chunk 2: 30 routes, 3 PASS / 27 PARTIAL / 0 FAIL. Writes withheld. Gift cards 5 issued / £125 / £100 outstanding.",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-12-coverage-l2-long-tail-chunk-2/census-longtail-l2-settings-CHUNK2-SUMMARY.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-12-milestone-2-bf-4-30",
       "title": "Milestone 2 Clusters B-F 4/30",
