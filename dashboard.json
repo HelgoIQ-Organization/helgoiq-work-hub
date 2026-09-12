@@ -103,7 +103,7 @@
     "censusCoreL2Members": "3 PASS / 1 PARTIAL / 1 FAIL (crm-hub KPI vs empty Insights)",
     "censusCoreL2": "Members 3P/1Part/1F \u00b7 Timetable L2_FAIL (fill-rate + cover cost + cover copy)",
     "censusCommsL2Inbox": "1 PASS / 3 PARTIAL / 2 FAIL (intelligence NaN; learning-registry disagree)",
-    "censusAiL2Home": "1 FAIL overview Refrm tab visible \u00b7 3 PARTIAL (agents/tasks/dashboard)"
+    "censusAiL2Home": "1 FAIL overview Refrm visible \u00b7 3 PARTIAL agents/tasks/dashboard"
   },
   "strands": [
     {

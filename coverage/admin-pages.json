@@ -7144,6 +7144,14 @@
       {
         "kind": "drop",
         "id": "census-ai-l2-home"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-ai-l2/studio-overview-refrm-isolation.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-home"
       }
     ],
     "prUrl": null,
@@ -7161,6 +7169,11 @@
     },
     "l2": {
       "verdict": "L2_FAIL",
+      "controlsPresent": [
+        "All Companies/Refrm tabs",
+        "four metric info buttons",
+        "sidebar navigation"
+      ],
       "controlsExercised": [
         "All Companies tab",
         "Brand metric information panel opened and closed"
@@ -7169,8 +7182,36 @@
         "Refrm tab (isolation guard)",
         "Company, Locations, Members metric info"
       ],
-      "defects": null,
-      "botVerdict": null
+      "figures": [
+        {
+          "name": "Brand",
+          "opened": false,
+          "returned": true,
+          "notes": "Explainer only; no underlying data."
+        },
+        {
+          "name": "Company",
+          "opened": false,
+          "returned": true,
+          "notes": "No drill-down."
+        },
+        {
+          "name": "Locations",
+          "opened": false,
+          "returned": true,
+          "notes": "No drill-down."
+        },
+        {
+          "name": "Members aggregated",
+          "opened": false,
+          "returned": true,
+          "notes": "Displayed as \u2014; no drill-down."
+        }
+      ],
+      "agreement": [],
+      "isolation": "FAIL",
+      "emptyState": "n/a",
+      "botVerdict": "L2_PARTIAL"
     },
     "reason": "Admin/Bluebird Pilates TEST DATA visible. 1 brand, 1 company, 2 locations, members aggregated \u2014. Refrm tab and badge are visibly present; not opened."
   },
@@ -13295,7 +13336,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Owner receives full Agentic Operations content, not an Admin Access Required gate. Observe/review controls were not activated.",
+    "reason": "Scoped c=150002; no Refrm/150001 data or controls. No agent state change or proposal execution.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -13319,12 +13360,16 @@
       {
         "kind": "drop",
         "id": "census-ai-l2-home"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-home"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L1 reachable",
+    "levelLabel": "L2 partial",
     "senseCheck": {
       "source": "census-ai-l2",
       "hub": "home",
@@ -13335,7 +13380,13 @@
       "note": "Scoped c=150002; no Refrm/150001 data or controls. No agent state change or proposal execution."
     },
     "l2": {
-      "verdict": "",
+      "verdict": "L2_PARTIAL",
+      "controlsPresent": [
+        "Refresh",
+        "All/Approvals/Agent work/Tasks/Recommendations queue filters",
+        "Start Observe pilot per agent",
+        "disabled Pause/Run review"
+      ],
       "controlsExercised": [
         "All, Approvals, Agent work, Tasks, Recommendations queue filters",
         "returned to All",
@@ -13346,8 +13397,30 @@
         "disabled Pause agent",
         "disabled Run a review now"
       ],
-      "defects": null,
-      "botVerdict": null
+      "figures": [
+        {
+          "name": "Queue counts",
+          "opened": false,
+          "returned": true,
+          "notes": "All 0; honest empty queue, no row."
+        },
+        {
+          "name": "Daily operations counters",
+          "opened": false,
+          "returned": true,
+          "notes": "All 0; no drill-down affordance."
+        },
+        {
+          "name": "Agent outcome counters",
+          "opened": false,
+          "returned": true,
+          "notes": "Not run/0 evidence; no drill-down."
+        }
+      ],
+      "agreement": [],
+      "isolation": "PASS",
+      "emptyState": "ok",
+      "botVerdict": "L2_PARTIAL"
     }
   },
   {
@@ -13428,7 +13501,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "AI-015 tasks shell PASS honest empty",
+    "reason": "All non-writing views and filters exercised; no task creation or Confirm&Execute.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -13448,12 +13521,16 @@
       {
         "kind": "drop",
         "id": "census-ai-l2-home"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-home"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L1 reachable",
+    "levelLabel": "L2 partial",
     "senseCheck": {
       "source": "census-ai-l2",
       "hub": "home",
@@ -13464,7 +13541,15 @@
       "note": "All non-writing views and filters exercised; no task creation or Confirm&Execute."
     },
     "l2": {
-      "verdict": "",
+      "verdict": "L2_PARTIAL",
+      "controlsPresent": [
+        "List/Priorities/Impact views",
+        "How to use",
+        "New Task",
+        "Search tasks",
+        "All Staff filter",
+        "All/Pending/In Progress/Overdue/Completed tabs"
+      ],
       "controlsExercised": [
         "List, Priorities, Impact and returned List",
         "How to use",
@@ -13476,8 +13561,24 @@
         "New Task (write intentionally avoided)",
         "row actions unavailable because empty"
       ],
-      "defects": null,
-      "botVerdict": null
+      "figures": [
+        {
+          "name": "Pending/in-progress counts",
+          "opened": false,
+          "returned": true,
+          "notes": "0 pending, 0 in progress; no data."
+        },
+        {
+          "name": "Task list",
+          "opened": false,
+          "returned": true,
+          "notes": "Honest No tasks yet / no matching tasks."
+        }
+      ],
+      "agreement": [],
+      "isolation": "PASS",
+      "emptyState": "ok",
+      "botVerdict": "L2_PARTIAL"
     }
   },
   {
@@ -14317,7 +14418,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Different from /admin Home: this is the performance dashboard with Pulse/KPI analytics and date/location controls.",
+    "reason": "Admin/Bluebird TEST DATA visible. No crash/blank state; noninteractive KPI cards leave figures criterion partial. No Refrm/150001 controls observed.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -14346,12 +14447,16 @@
       {
         "kind": "drop",
         "id": "census-ai-l2-home"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l2-home"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L1 reachable",
+    "levelLabel": "L2 partial",
     "senseCheck": {
       "source": "census-ai-l2",
       "hub": "home",
@@ -14362,7 +14467,20 @@
       "note": "Admin/Bluebird TEST DATA visible. No crash/blank state; noninteractive KPI cards leave figures criterion partial. No Refrm/150001 controls observed."
     },
     "l2": {
-      "verdict": "",
+      "verdict": "L2_PARTIAL",
+      "controlsPresent": [
+        "Customize",
+        "Recompute pulse",
+        "Open Studio Pulse",
+        "Save/Ask/Why no score",
+        "All Locations",
+        "start/end dates",
+        "Take Snapshot",
+        "KPI cards",
+        "Upcoming Classes and Check-ins details",
+        "Requires Attention actions",
+        "bottom nav"
+      ],
       "controlsExercised": [
         "Customize opened/cancelled",
         "All Locations to Bluebird Central and restored",
@@ -14380,8 +14498,36 @@
         "noninteractive KPI drill-downs",
         "Mark No-Show, Approve Cover, Staff Rota"
       ],
-      "defects": null,
-      "botVerdict": null
+      "figures": [
+        {
+          "name": "Studio Pulse",
+          "opened": true,
+          "returned": true,
+          "notes": "Opened low-confidence Insufficient data view and returned."
+        },
+        {
+          "name": "Upcoming Classes 15",
+          "opened": true,
+          "returned": true,
+          "notes": "Details opened and back returned dashboard."
+        },
+        {
+          "name": "Check-ins Today 0",
+          "opened": true,
+          "returned": true,
+          "notes": "Check-Ins page showed honest No Check-Ins Yet; back returned dashboard."
+        },
+        {
+          "name": "Other KPI cards",
+          "opened": false,
+          "returned": true,
+          "notes": "Show Rate 0%, No-Shows 2, Cover 0, Today's Classes 0, Active 9, Subscription 3, Pack 6, Monthly Revenue \u00a31,065.96, Total Revenue \u00a31,189.41, Bookings 30, Total Classes 39, Client Mix 0% returning had no clickable underlying-data affordance."
+        }
+      ],
+      "agreement": [],
+      "isolation": "PASS",
+      "emptyState": "ok",
+      "botVerdict": "L2_PARTIAL"
     }
   },
   {

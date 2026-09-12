@@ -166,9 +166,8 @@
     "hub": "home-cc",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
     "pass": 0,
-    "partial": 0,
+    "partial": 3,
     "fail": 1,
-    "miss": 0,
-    "note": "overview scored L2_FAIL for Refrm tab/badge visible on Bluebird (bot said PARTIAL)"
+    "note": "overview L2_FAIL Refrm visible; 3 PARTIAL"
   }
 }
