@@ -19,9 +19,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Different from /admin/dashboard: operational Home landing with dispatch, classes, milestones, week and tasks.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -32,12 +32,23 @@
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Home hub loads with honest empty-state metrics and tenant bar."
+    }
   },
   {
     "id": "admin-academy",
@@ -1202,21 +1213,32 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "ISO isolation exercised PASS. Both tenants showed No action effectiveness data yet; no cross-tenant intelligence and no Seed Demo.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Action effectiveness page loads with honest no-data state and filters."
+    }
   },
   {
     "id": "admin-ai-decision-audit",
@@ -1274,14 +1296,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Governance page loads with zero-activity honest empty state."
+    }
   },
   {
     "id": "admin-ai-management-hub",
@@ -1303,19 +1337,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "AI-003 hub tabs PASS; Feature Controls exercised in batch3",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH3.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "AI management hub loads on AI Usage tab with credits empty state."
+    }
   },
   {
     "id": "admin-ai-operations-health",
@@ -1337,14 +1382,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "14-ai-operations-health.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route resolves to access-denied dead end for Admin2."
+    }
   },
   {
     "id": "admin-ai-usage",
@@ -1366,19 +1427,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Exact AI usage URL loaded for Owner. It is the usage-facing surface; /admin/ai-credits is the separate platform/admin management surface documented in batch1.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "AI Usage alias loads with credit balance and usage tabs."
+    }
   },
   {
     "id": "admin-analytics",
@@ -1446,19 +1518,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "B4-01 load+Refresh PASS honest empty",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Anomaly detection loads with zero-alert honest empty state and metric filters."
+    }
   },
   {
     "id": "admin-appointments-hub",
@@ -2116,9 +2199,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner Twin/BI retest PASS \u2014 Month\u2192Quarter filter recomputed KPIs (supersedes earlier B4-05 empty-KPI fail on older tip).",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -2129,12 +2212,23 @@
         "id": "2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c",
         "path": "drops/2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c/RESULTS.md",
         "href": "#drop-2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Business insights dashboard loads with KPI, booking, member, attendance, financial, and forecast content."
+    }
   },
   {
     "id": "admin-camio-live",
@@ -2563,9 +2657,9 @@
     "percentFailed": 100,
     "blockedBy": null,
     "reason": "Cluster A 23/24 PASS (a73ff70). Remaining: ACS fails; ISO-29 isolation FAIL; AI-008 ask historically FAIL / Admin2 gate UNCERTAIN.",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
@@ -2594,12 +2688,23 @@
         "id": "2026-09-11-cc-cluster-a-a263c4ab",
         "path": "drops/2026-09-11-cc-cluster-a-a263c4ab/FINAL.json",
         "href": "#drop-2026-09-11-cc-cluster-a-a263c4ab"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Private AI workbench loads with chat workspace and empty operational counters."
+    }
   },
   {
     "id": "admin-comms-intelligence",
@@ -3029,19 +3134,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route loads an honest temporary-unavailable state with retry; no crash or blank dead end."
+    }
   },
   {
     "id": "admin-daily-focus",
@@ -3063,9 +3179,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
@@ -3076,12 +3192,23 @@
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH3.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Daily Focus loads with honest empty state."
+    }
   },
   {
     "id": "admin-data-migration",
@@ -3132,19 +3259,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH3.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Decision Engine loads with zero-score honest empty state, tabs, and filters."
+    }
   },
   {
     "id": "admin-decision-weights",
@@ -3166,14 +3304,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Decision Engine configuration loads with presets, scoring sliders, thresholds, and save control."
+    }
   },
   {
     "id": "admin-devices",
@@ -3478,14 +3628,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Export Templates loads with honest no-templates state and create controls."
+    }
   },
   {
     "id": "admin-feature-flags",
@@ -3658,14 +3820,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Financial forecasting loads with current revenue, next-month forecast, member metrics, and scenario tabs."
+    }
   },
   {
     "id": "admin-forms",
@@ -3970,14 +4144,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Instructor AI Agents loads with agent metrics and directory content."
+    }
   },
   {
     "id": "admin-instructor-roi",
@@ -3999,21 +4185,32 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "ISO isolation exercised PASS. Both tenants showed No instructor data found; no Bluebird instructor/revenue data under Refrm.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Instructor ROI loads with honest no-instructor-data state and period controls."
+    }
   },
   {
     "id": "admin-instructor-teaching-insights",
@@ -4064,19 +4261,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "AI-026 load DECORATION (0 objects; Seed Demo not run)",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH3.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Intelligence Centre loads with tabs and honest zero-open-opportunities state."
+    }
   },
   {
     "id": "admin-intelligence-impact",
@@ -4098,19 +4306,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "B4-12 load DECORATION zeros",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Impact Centre loads with zeroed impact metrics and honest no-action/no-outcome states."
+    }
   },
   {
     "id": "admin-subscription-cohorts",
@@ -4132,21 +4351,32 @@
     "percentFailed": 100,
     "blockedBy": null,
     "reason": "ISO isolation FAIL",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Cohort intelligence loads with retention metrics and cohort table content."
+    }
   },
   {
     "id": "admin-executive-briefing",
@@ -4168,7 +4398,7 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Twin comparison: main content, generated brief data, controls, and alternative-surface links match /admin/executive-briefing. Navigation chrome differs: this route exposes a Recent Executive Briefing self-link and ",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
@@ -4179,12 +4409,23 @@
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Executive briefing loads with daily/monthly briefs, honest awaiting-first-run states, and controls."
+    }
   },
   {
     "id": "admin-manager-intelligence",
@@ -4206,14 +4447,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Manager Intelligence loads with tabs and honest no-managers state."
+    }
   },
   {
     "id": "admin-mrr-intelligence",
@@ -4235,14 +4488,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "16-intelligence-mrr.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route reaches an error boundary: Cannot read properties of undefined (reading 'length')."
+    }
   },
   {
     "id": "admin-journey-orchestrator",
@@ -4432,14 +4701,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Location Intelligence loads with tabs and honest no-location-lessons state."
+    }
   },
   {
     "id": "admin-marketing",
@@ -4472,6 +4753,10 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
@@ -4479,11 +4764,11 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "ok",
+      "source": "census-ai",
+      "hubFit": null,
       "buriedDaily": null,
-      "duplicate": null
+      "duplicate": null,
+      "note": "Landing Pages tab loads with page, view, lead, sales, revenue, and landing-page records."
     }
   },
   {
@@ -4874,21 +5159,32 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "ISO isolation exercised PASS. Bluebird monthly review showed September 2026 brief; Refrm remained on route with scheduled/latest brief checks and no Bluebird figures.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Monthly review loads with September 2026 brief and honest unavailable/ready-to-review content."
+    }
   },
   {
     "id": "admin-new-vs-returning",
@@ -4910,14 +5206,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "New vs Returning loads with client-mix metrics, trend, and location table."
+    }
   },
   {
     "id": "admin-news",
@@ -5009,6 +5317,10 @@
       {
         "kind": "drop",
         "id": "census-comms-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
@@ -5016,11 +5328,11 @@
     "level": 2,
     "levelLabel": "L2 works",
     "senseCheck": {
-      "source": "census-comms",
-      "note": null,
-      "hubFit": "duplicate",
+      "source": "census-ai",
+      "hubFit": null,
       "buriedDaily": null,
-      "duplicate": null
+      "duplicate": null,
+      "note": "Create tab loads with newsletter studio, draft list, and honest metrics; no crash or dead end."
     }
   },
   {
@@ -5148,14 +5460,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Organisational Intelligence loads with management-attention and recognition empty states."
+    }
   },
   {
     "id": "admin-overview",
@@ -5177,14 +5501,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Overview loads with selected studio and location summary."
+    }
   },
   {
     "id": "admin-performance-intelligence",
@@ -5206,19 +5542,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "AI-047 / B4-04 Generate Insights PASS with substance",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Performance intelligence loads with insight metrics, filters, and actionable insight cards."
+    }
   },
   {
     "id": "admin-personal-messages",
@@ -5802,19 +6149,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH2.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Predictive cash flow loads with honest no-forecast-yet state and unconfigured Phase 2 notice."
+    }
   },
   {
     "id": "admin-products",
@@ -6013,21 +6371,32 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "ISO isolation exercised PASS. Bluebird quarterly review showed no scheduled executive brief; Refrm remained honest-empty/checking with no Bluebird figures.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Quarterly review loads with honest awaiting-scheduled-run state, cadence, and generate control."
+    }
   },
   {
     "id": "admin-recap-recordings",
@@ -6049,21 +6418,32 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "ISO isolation exercised PASS. Both tenants showed Screen recording is not switched on for this studio yet.",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-iso29-complete-tip-232659cf",
         "path": "drops/2026-09-11-iso29-complete-tip-232659cf/MATRIX.csv",
         "href": "#drop-2026-09-11-iso29-complete-tip-232659cf"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Recordings page loads with honest feature-not-enabled state; no crash or blank dead end."
+    }
   },
   {
     "id": "admin-recovery-hub",
@@ -6220,19 +6600,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Named hub loads and offers the consolidated Reporting & Analytics workspace; it is not the same content as the legacy /admin/reports directory.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Reporting hub loads with overview metrics, tabs, location filter, and export control."
+    }
   },
   {
     "id": "admin-resources",
@@ -7060,14 +7451,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Smart Folder Reports loads with tabs, period filter, usage metrics, and most-used pages."
+    }
   },
   {
     "id": "admin-social",
@@ -7406,21 +7809,40 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Staff > Invitations route opened (0 pending \u00b7 11 historical). Screenshot-only.",
-    "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr",
         "path": "drops/2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr/INVITE-E2E.md",
         "href": "#drop-2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Staff Rota tab loads with rota builder, week controls, filters, and shift actions."
+    }
   },
   {
     "id": "admin-invite-staff",
@@ -7566,15 +7988,27 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "reachability": "PATH DEFECT",
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Cover Requests loads with summary counts, filters, and an accepted substitution row."
+    }
   },
   {
     "id": "admin-stripe-connect",
@@ -7636,14 +8070,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Studio Intelligence overview loads with Pulse, Decision Engine, learning, signals, and location sections."
+    }
   },
   {
     "id": "admin-studio-state",
@@ -7672,12 +8118,23 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5644903188"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Studio State Inspector loads Health view with saved Pulse facts and honest insufficient-input states."
+    }
   },
   {
     "id": "admin-system-blueprint",
@@ -8856,14 +9313,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Workforce Intelligence loads staff search/list and selection prompt without starting a review."
+    }
   },
   {
     "id": "admin-academy-courses-playbookId",
@@ -9120,6 +9589,10 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
@@ -9127,10 +9600,11 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 SEARCH ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Cost dashboard loads with period cost, calls, and feature table."
     }
   },
   {
@@ -9243,6 +9717,10 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
@@ -9250,10 +9728,11 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 SEARCH ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "AI Operations hub loads with tool cards and active status."
     }
   },
   {
@@ -10278,7 +10757,7 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Owner receives full Agentic Operations content, not an Admin Access Required gate. Observe/review controls were not activated.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
@@ -10289,12 +10768,23 @@
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH3.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Agents queue and daily operations load with empty state."
+    }
   },
   {
     "id": "admin-command-centre-reporting",
@@ -10316,19 +10806,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "AI-016 reporting PASS with telemetry",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH3.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Analytics loads after settling with usage metrics."
+    }
   },
   {
     "id": "admin-command-centre-tasks",
@@ -10350,19 +10851,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "AI-015 tasks shell PASS honest empty",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH3.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Tasks page loads with honest no-tasks state."
+    }
   },
   {
     "id": "admin-command-history",
@@ -10384,14 +10896,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Command history loads with searchable entries and pagination."
+    }
   },
   {
     "id": "admin-communications-hub",
@@ -11043,6 +11567,10 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
@@ -11050,10 +11578,11 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 SEARCH ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Studio performance dashboard loads with metrics and actions."
     }
   },
   {
@@ -11653,14 +12182,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Instructor observations loads with start form, zero-count history, search, filter, and honest empty state."
+    }
   },
   {
     "id": "admin-instructor-observations-observationId",
@@ -11682,14 +12223,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-integrations",
@@ -11711,14 +12264,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Integrations loads provider tabs and a not-connected Google Reviews connection state without entering setup."
+    }
   },
   {
     "id": "admin-intelligence-my-actions",
@@ -11740,19 +12305,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Twin confirmed: main content and empty state match /admin/my-actions. Twin confirmed L1 on both.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "My Actions loads with the honest no-open-recommendations state and guidance sections."
+    }
   },
   {
     "id": "admin-intelligence-opportunities",
@@ -11774,14 +12350,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Opportunities loads with filters and an honest no-opportunities state; Seed Demo was not used."
+    }
   },
   {
     "id": "admin-invite-staff",
@@ -11861,19 +12449,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Confirmed twin: /admin/invoicing rendered the same Payroll page/content rather than a distinct invoicing surface. Twin confirmed L1 on both.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Payroll loads with pay-period controls, summary metrics, and the staff payroll table."
+    }
   },
   {
     "id": "admin-journey-analytics",
@@ -11895,14 +12494,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Journey Analytics loads with journey metrics, health, retention/ROI proxies, and a journey row."
+    }
   },
   {
     "id": "admin-launcher-redesign-preview",
@@ -11924,14 +12535,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "05-launcher-redesign-preview.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route resolves to an access-denied dead end for Admin2."
+    }
   },
   {
     "id": "admin-meeting-capture",
@@ -11953,14 +12580,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Meeting Capturer loads with the honest feature-off state; no recording or feature flag action taken."
+    }
   },
   {
     "id": "admin-meta-autopilot",
@@ -12040,14 +12679,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "07-meta-hub-preview.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route resolves to an access-denied dead end for Admin2."
+    }
   },
   {
     "id": "admin-migration-dashboard",
@@ -12069,14 +12724,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Migration Dashboard loads with zero readiness scores and an honest no-scores-yet state; no recalculation was started."
+    }
   },
   {
     "id": "admin-migration-id-import",
@@ -12098,14 +12765,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-migration-id-mapping",
@@ -12127,14 +12806,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-migration-id-pre-launch",
@@ -12156,14 +12847,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-migration-id-redirects",
@@ -12185,14 +12888,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-milestone-club",
@@ -12214,14 +12929,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Milestone Club loads on Overview with tier, achievement, offer, leaderboard, and activity sections."
+    }
   },
   {
     "id": "admin-milestone-report",
@@ -12333,9 +13060,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -12346,12 +13073,23 @@
         "id": "2026-09-11-ambient-evidence-tip-232659cf",
         "path": "drops/2026-09-11-ambient-evidence-tip-232659cf/EVIDENCE.md",
         "href": "#drop-2026-09-11-ambient-evidence-tip-232659cf"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Dispatch health, history, and honest not-yet-run state load."
+    }
   },
   {
     "id": "admin-multichannel",
@@ -12373,14 +13111,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Multi-channel publishing loads with zero publication metrics, channel cards, and honest no-publications state."
+    }
   },
   {
     "id": "admin-my-actions",
@@ -12402,19 +13152,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Empty state: no open recommendations assigned.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "My Actions alias loads with the honest no-open-recommendations state and guidance sections."
+    }
   },
   {
     "id": "admin-navigation-preview",
@@ -12436,14 +13197,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "16-navigation-preview.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route resolves to an access-denied dead end for Admin2."
+    }
   },
   {
     "id": "admin-newsletter-analytics",
@@ -12465,14 +13242,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Newsletter analytics alias redirects to the Analytics tab and loads engagement metrics with an honest no-analytics state."
+    }
   },
   {
     "id": "admin-newsletter-analytics-legacy",
@@ -12581,14 +13370,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Accountability loads with zero direct actions, manager items, escalations, and an empty manager effectiveness section."
+    }
   },
   {
     "id": "admin-org-intelligence-staff-staffId",
@@ -12655,14 +13456,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Override Audit Log loads with period/category filters and the existing immutable audit entry."
+    }
   },
   {
     "id": "admin-payroll",
@@ -12799,14 +13612,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "path",
+        "path": "20-platform-sales-demos.png"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route resolves to an access-denied dead end for Admin2."
+    }
   },
   {
     "id": "admin-platform-safe-studio",
@@ -12970,14 +13799,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-qr-generator-id-analytics",
@@ -12999,14 +13840,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-qr-generator-id-customize",
@@ -13028,14 +13881,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-qr-generator-id-edit",
@@ -13057,14 +13922,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-qr-generator-new",
@@ -13086,21 +13963,32 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "New QR screen inventory + creation exercised.",
-    "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "drop",
         "id": "2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai",
         "path": "drops/2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai/MATRIX.md",
         "href": "#drop-2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "QR Code Generator create page loads with website field, type choices, and disabled Next until selection; no creation performed."
+    }
   },
   {
     "id": "admin-recommendation-tracker",
@@ -13122,19 +14010,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "B4-03 load DECORATION empty",
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-ai-census/RESULTS-MATRIX-BATCH4.md"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Recommendation Tracker loads with lifecycle filters and honest no-recommendations state; no action taken."
+    }
   },
   {
     "id": "admin-recovery-calendar",
@@ -13243,14 +14142,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route redirects to the Referral Programme hub, which loads with Dashboard, Analytics, and Insights tabs."
+    }
   },
   {
     "id": "admin-referral-report-legacy",
@@ -13330,14 +14241,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route redirects to the Referral Programme hub, which loads with honest no-referrers/no-data state."
+    }
   },
   {
     "id": "admin-refunds",
@@ -13359,14 +14282,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Refund Management loads with metrics, refund table, filters, and approval/configuration tabs; no refund action taken."
+    }
   },
   {
     "id": "admin-reporting",
@@ -13441,19 +14376,30 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "Owner loaded (read-only). Legacy/category report directory; all listed links were observed without opening report mutations.",
-    "lastTestedStamp": "88d622ea28ab637f6753f8f6702fd9e50d51af01",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
     "evidence": [
       {
         "kind": "path",
         "path": "helgoiq-afternoon-2026-09-12/16-menu-census/evidence/batch2.json"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 1,
-    "levelLabel": "L1 reachable"
+    "levelLabel": "L1 reachable",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Reports index loads themed report groups with concrete report links."
+    }
   },
   {
     "id": "admin-reports-reportId",
@@ -13475,14 +14421,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-resources-acknowledgements",
@@ -13504,14 +14462,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Acknowledgement Report loads with resource selector and honest select-a-resource state."
+    }
   },
   {
     "id": "admin-retention",
@@ -13578,14 +14548,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Retention Sequences loads with governance gate notice and honest no-sequences state; no sequence created."
+    }
   },
   {
     "id": "admin-retreat-bookings",
@@ -13652,14 +14634,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Retreat Enquiries & Waitlist loads with zeroed metrics, search/filter controls, and honest no-enquiries state."
+    }
   },
   {
     "id": "admin-retreat-financials",
@@ -13681,14 +14675,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Retreat Financials loads with zeroed revenue/payment metrics, retreat selector, and draft retreat financial row."
+    }
   },
   {
     "id": "admin-retreat-venues",
@@ -13710,14 +14716,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Retreat Venues loads with zeroed venue metrics, search, and honest no-venues state; no venue added."
+    }
   },
   {
     "id": "admin-retreats",
@@ -13739,14 +14757,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Retreats loads with retreat metrics and existing QA Overnight Retreat draft; no retreat action taken."
+    }
   },
   {
     "id": "admin-retreats-id",
@@ -13916,14 +14946,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route redirects to Staff Rota Builder, which loads with week controls, location filter, and zero shifts; no shift action taken."
+    }
   },
   {
     "id": "admin-rota-reporting",
@@ -14035,14 +15077,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route redirects to Staff Rota Sharing, which loads with honest no-sharing-rules state; no rule created."
+    }
   },
   {
     "id": "admin-rota-sharing-legacy",
@@ -14451,14 +15505,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Content Builder loads on Choose Type with content cards and no content creation performed."
+    }
   },
   {
     "id": "admin-screen-integrations",
@@ -14688,14 +15754,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Setup hub loads with setup areas and Insights tabs; no settings opened or changed."
+    }
   },
   {
     "id": "admin-social-competitors",
@@ -14746,14 +15824,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Conversion Funnel loads with filters, lead/trial/client metrics, source table, and monthly trend tab."
+    }
   },
   {
     "id": "admin-social-gtm",
@@ -14775,14 +15865,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Google measurement & ads loads with disconnected GTM empty state and zeroed metrics; no connection action taken."
+    }
   },
   {
     "id": "admin-social-instagram",
@@ -14878,14 +15980,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route redirects to Social & Reviews Instagram Planner, which loads with the Connect Meta empty state and no posts; no draft or schedule action taken."
+    }
   },
   {
     "id": "admin-social-reviews",
@@ -14907,14 +16021,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Google reviews loads with disconnected Google Business Profile state, zero metrics, filters, and honest no-live-reviews state; no setup or sync action taken."
+    }
   },
   {
     "id": "admin-staff",
@@ -15059,14 +16185,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
+    }
   },
   {
     "id": "admin-studio-pulse",
@@ -15088,9 +16226,9 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": "AI-040 Studio Pulse PARTIAL (recompute works; Ask failed)",
-    "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
-    "stale": true,
+    "stale": false,
     "evidence": [
       {
         "kind": "path",
@@ -15101,12 +16239,23 @@
         "id": "2026-09-11-ambient-evidence-tip-232659cf",
         "path": "drops/2026-09-11-ambient-evidence-tip-232659cf/EVIDENCE.md",
         "href": "#drop-2026-09-11-ambient-evidence-tip-232659cf"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
     "level": 2,
-    "levelLabel": "L2 works"
+    "levelLabel": "L2 works",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Studio Pulse loads with insufficient-data state and component table."
+    }
   },
   {
     "id": "admin-tasks",
@@ -15128,14 +16277,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Tasks loads with zero pending/in-progress counts, filters, tabs, and honest no-tasks state; no task created."
+    }
   },
   {
     "id": "admin-team-calendar",
@@ -15157,14 +16318,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route redirects to Team Communications Team Calendar, which loads with September 2026 calendar, sync controls, and honest no-events state; no event added."
+    }
   },
   {
     "id": "admin-team-chat",
@@ -15186,14 +16359,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route redirects to Team Communications Team Chat, which loads with Instructor Circle, search, availability, and honest no-channels state; no channel created."
+    }
   },
   {
     "id": "admin-team-legacy",
@@ -15244,14 +16429,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Route redirects to Team Communications Polls, which loads with honest no-polls state; no poll created."
+    }
   },
   {
     "id": "admin-trial-conversion",
@@ -15273,14 +16470,26 @@
     "percentFailed": null,
     "blockedBy": null,
     "reason": null,
-    "lastTestedStamp": "",
+    "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
-    "evidence": [],
+    "evidence": [
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
+      }
+    ],
     "prUrl": null,
     "issueUrl": null,
     "level": 0,
-    "levelLabel": "untested"
+    "levelLabel": "untested",
+    "senseCheck": {
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "AI Trial Conversion loads with active-trial metrics, conversion funnel, prediction breakdown, tabs, and nudge controls; no analysis or nudge action taken."
+    }
   },
   {
     "id": "admin-website-approval-hub",
@@ -15317,6 +16526,10 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
@@ -15324,8 +16537,11 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "source": "census-content",
-      "note": "Nothing publishes itself copy"
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "Website Approval Hub loads with AI Recommendations, Drafts, and Discounts tabs and honest no-pending-recommendations state; no publish or approval action taken."
     }
   },
   {
@@ -15363,6 +16579,10 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
@@ -15370,8 +16590,11 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "source": "census-content",
-      "note": "LINK ONLY exercised via created draft; no publish"
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
     }
   },
   {
@@ -15409,6 +16632,10 @@
       {
         "kind": "issue",
         "href": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+      },
+      {
+        "kind": "drop",
+        "id": "census-ai-l1"
       }
     ],
     "prUrl": null,
@@ -15416,8 +16643,11 @@
     "level": 1,
     "levelLabel": "L1 reachable",
     "senseCheck": {
-      "source": "census-content",
-      "note": "LINK ONLY preview OK without publish"
+      "source": "census-ai",
+      "hubFit": null,
+      "buriedDaily": null,
+      "duplicate": null,
+      "note": "needs-id / not exercised"
     }
   },
   {
