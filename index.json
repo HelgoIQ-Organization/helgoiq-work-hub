@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-13T21:16:06.237Z",
+  "updatedAt": "2026-09-13T21:40:12.455Z",
   "drops": [
+    {
+      "id": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782",
+      "title": "Overnight Teacher+Client Coverage L2 tip 3ad37824",
+      "date": "2026-09-13",
+      "summary": "Teacher 1P/10Part/2F + Client 0P/21Part on tip 3ad37824 (Member B + Teacher 3)",
+      "plainEnglish": "Teacher 1P/10Part/2F + Client 0P/21Part on tip 3ad37824 (Member B + Teacher 3)",
+      "tags": [
+        "census",
+        "findings"
+      ],
+      "type": "report",
+      "project": "helgoiq-overnight-2026-09-13",
+      "paths": [
+        "drops/2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782/OVERNIGHT-TEACHER-CLIENT-L2.md",
+        "drops/2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782/TEACHER-SUMMARY.md",
+        "drops/2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782/CLIENT-SUMMARY.md"
+      ],
+      "tip": "3ad3782443d147934342e08a27d7151133369f74",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-13-overnight-breakfast-tip-3ad37824",
       "title": "Overnight breakfast tip 3ad37824",

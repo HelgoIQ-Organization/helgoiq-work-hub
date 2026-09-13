@@ -162,15 +162,16 @@
     "note": "Evidence tips stamped from source drops; live tip confirmed via /api/version for reference only."
   },
   "lastL2Merge": {
-    "bot": "Census Longtail",
-    "hub": "long-tail-leftover14-COMPLETE",
-    "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "pass": 0,
-    "partial": 14,
-    "fail": 0,
+    "bot": "Census Core / overnight leftover",
+    "hub": "teacher+client-overnight-2026-09-13",
+    "tip": "3ad3782443d147934342e08a27d7151133369f74",
+    "pass": 1,
+    "partial": 31,
+    "fail": 2,
     "blocked": 0,
     "miss": 0,
-    "wave": "157/157 settings+long-tail L2 list complete"
+    "wave": "Teacher 1/10/2 + Client 0/21/0 on tip 3ad37824",
+    "note": "Admin census pages unchanged (teacher/client not in admin-pages). Evidence in overnight coverage/ + hub drop."
   },
   "dailyL2Wave": {
     "status": "complete",
@@ -188,5 +189,13 @@
     "status": "complete",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
   },
-  "updatedAt": "2026-09-13T05:44:53.343951+00:00"
+  "updatedAt": "2026-09-13T21:40:12.331289+00:00",
+  "teacherClientL2Wave": {
+    "status": "complete",
+    "tip": "3ad3782443d147934342e08a27d7151133369f74",
+    "teacher": "1 PASS / 10 PARTIAL / 2 FAIL",
+    "client": "0 PASS / 21 PARTIAL / 0 FAIL",
+    "seatTeacher": "helgoiq-bb-teacher-3@agentmail.to",
+    "seatClient": "helgoiq-bb-member-b@agentmail.to"
+  }
 }

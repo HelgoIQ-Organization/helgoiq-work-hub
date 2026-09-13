@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T17:36:51.874Z",
+  "updatedAt": "2026-09-13T21:41:32.099Z",
   "liveTip": "3ad3782443d147934342e08a27d7151133369f74",
   "liveTipShort": "3ad37824",
   "refreshLag": {
@@ -12,7 +12,7 @@
     "versionError": null,
     "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
     "mergedPrsError": null,
-    "dropsScanned": 76,
+    "dropsScanned": 80,
     "issue1180Error": null,
     "issue1180Comments": 50,
     "claudeReviewError": null,
@@ -33,7 +33,7 @@
         "id": 3,
         "name": "#1180 + hub drops",
         "ok": true,
-        "dropsScanned": 76,
+        "dropsScanned": 80,
         "issue1180": 50
       },
       {
@@ -49,8 +49,8 @@
     "strands": 10,
     "strandsStaleVsLiveTip": 9,
     "strandsCurrent": 0,
-    "pages": 260,
-    "pagesStaleVsLiveTip": 222,
+    "pages": 275,
+    "pagesStaleVsLiveTip": 221,
     "claudeReviews": 24
   },
   "recentMergedPrs": [
@@ -664,7 +664,7 @@
       "evidenceDropId": "2026-09-13-feel-measured-home-members",
       "claudeReviewCount": 0,
       "basis": "estimate",
-      "percent": 87
+      "percent": 90
     },
     {
       "id": "comms",
@@ -680,6 +680,182 @@
     }
   ],
   "pages": [
+    {
+      "id": "route:/api/version",
+      "name": "/api/version",
+      "route": "/api/version",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/profile",
+      "name": "/profile",
+      "route": "/profile",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/profile/calendar",
+      "name": "/profile/calendar",
+      "route": "/profile/calendar",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/recovery",
+      "name": "/recovery",
+      "route": "/recovery",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/related-contacts",
+      "name": "/related-contacts",
+      "route": "/related-contacts",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/payments",
+      "name": "/payments",
+      "route": "/payments",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/purchase",
+      "name": "/purchase",
+      "route": "/purchase",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/bookings",
+      "name": "/bookings",
+      "route": "/bookings",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/my-appointments",
+      "name": "/my-appointments",
+      "route": "/my-appointments",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/waitlist",
+      "name": "/waitlist",
+      "route": "/waitlist",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/schedule",
+      "name": "/schedule",
+      "route": "/schedule",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "route:/timetable",
+      "name": "/timetable",
+      "route": "/timetable",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "drop:2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782",
+      "name": "Overnight Teacher+Client Coverage L2 tip 3ad37824",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+    },
+    {
+      "id": "drop:2026-09-13-overnight-breakfast-tip-3ad37824",
+      "name": "Overnight breakfast tip 3ad37824",
+      "route": "",
+      "strandId": "smoke",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-overnight-breakfast-tip-3ad37824"
+    },
+    {
+      "id": "drop:2026-09-13-feel-before-after",
+      "name": "Feel before / after gallery",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-feel-before-after"
+    },
+    {
+      "id": "drop:2026-09-13-tip-3ad37824-evening-feel-pack-live",
+      "name": "Tip 3ad37824 evening Feel pack live",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-13-tip-3ad37824-evening-feel-pack-live"
+    },
     {
       "id": "drop:2026-09-13-launch-hub-tip-fa78ec61-1270-live-cms-1280-pack-",
       "name": "Launch Hub tip fa78ec61 (#1270 live; CMS #1280 pack ahead)",
@@ -701,17 +877,6 @@
       "verdict": "",
       "freshness": "untested",
       "evidenceDropId": "2026-09-13-claude-dispatch-onboarding-forever-live"
-    },
-    {
-      "id": "route:/api/version",
-      "name": "/api/version",
-      "route": "/api/version",
-      "strandId": "smoke",
-      "lastTestedStamp": "f40075da",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-progress-for-claude"
     },
     {
       "id": "route:/workspace/helgoiq-afternoon-2026-09-13/feel-measured/",
