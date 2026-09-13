@@ -2003,7 +2003,129 @@
     });
   }
 
-  function openUxSurface(id) {
+  function surfaceToMarkdown(s, data) {
+    const lines = [];
+    lines.push("# " + (s.name || s.id) + " — Feel review");
+    lines.push("");
+    lines.push("- **Bar:** Joyful · Obvious · Frictionless (vs WhatsApp & Slack)");
+    lines.push("- **Basis:** " + (s.basis || "—") + (s.confidence ? " (" + s.confidence + ")" : ""));
+    lines.push("- **Tip:** `" + (s.tipAtScore || (data && data.tip) || "—") + "`");
+    lines.push("- **Scored:** " + (s.scoredAt || "—"));
+    if (s.pathHint) lines.push("- **Path:** `" + s.pathHint + "`");
+    lines.push("");
+    lines.push("| Joyful | Obvious | Frictionless | Overall |");
+    lines.push("|---:|---:|---:|---:|");
+    lines.push(
+      "| " +
+        Math.round(s.joyful || 0) +
+        "% | " +
+        Math.round(s.obvious || 0) +
+        "% | " +
+        Math.round(s.frictionless || 0) +
+        "% | **" +
+        Math.round(s.overall || 0) +
+        "%** |"
+    );
+    lines.push("");
+    if (s.plainSummary) {
+      lines.push("## Summary");
+      lines.push("");
+      lines.push(s.plainSummary);
+      lines.push("");
+    }
+    if (s.evidenceNote) {
+      lines.push("## Evidence note");
+      lines.push("");
+      lines.push(s.evidenceNote);
+      lines.push("");
+    }
+    if ((s.strengths || []).length) {
+      lines.push("## Strengths");
+      lines.push("");
+      s.strengths.forEach((x) => lines.push("- " + x));
+      lines.push("");
+    }
+    if ((s.findings || []).length) {
+      lines.push("## Findings");
+      lines.push("");
+      s.findings.forEach((f) => {
+        lines.push("### " + (f.id || "") + " — " + (f.title || "") + " (" + (f.severity || "") + ")");
+        lines.push("");
+        if (f.detail) lines.push(f.detail);
+        if (f.suggestion) lines.push("\n**Suggestion:** " + f.suggestion);
+        lines.push("");
+      });
+    }
+    if ((s.suggestions || []).length) {
+      lines.push("## Suggestions");
+      lines.push("");
+      s.suggestions.forEach((x) => lines.push("- " + x));
+      lines.push("");
+    }
+    if (s.sourceReport) {
+      lines.push("## Source");
+      lines.push("");
+      lines.push("`" + s.sourceReport + "`");
+      lines.push("");
+    }
+    lines.push("---");
+    lines.push("*From HelgoIQ Work Hub Feel tab — paste into Claude for section review.*");
+    lines.push("");
+    return lines.join("\n");
+  }
+
+  async function loadUxShareMarkdown(s, data) {
+    state.uxMarkdown = "";
+    state.uxSharePath = s.detailPath || null;
+    state.uxShareName = (s.id || "surface") + "-feel-review.md";
+    const dl = $("uxDownloadLink");
+    const raw = $("uxRawLink");
+    const copyBtn = $("uxCopyBtn");
+    if (copyBtn) copyBtn.disabled = true;
+    if (dl) {
+      dl.classList.add("disabled");
+      dl.removeAttribute("href");
+    }
+    if (raw) {
+      raw.classList.add("disabled");
+      raw.href = "#";
+    }
+    let text = "";
+    if (s.detailPath) {
+      try {
+        const res = await fetch(s.detailPath);
+        if (res.ok) text = await res.text();
+      } catch (err) {
+        console.warn("ux detailPath fetch failed", err);
+      }
+    }
+    if (!text) text = surfaceToMarkdown(s, data);
+    state.uxMarkdown = text;
+    // Blob download always works even without a static file
+    const blob = new Blob([text], { type: "text/markdown;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    if (state.uxBlobUrl) {
+      try { URL.revokeObjectURL(state.uxBlobUrl); } catch (_) {}
+    }
+    state.uxBlobUrl = url;
+    if (dl) {
+      dl.href = url;
+      dl.setAttribute("download", state.uxShareName);
+      dl.classList.remove("disabled");
+    }
+    if (raw) {
+      if (s.detailPath) {
+        raw.href = s.detailPath;
+        raw.classList.remove("disabled");
+      } else {
+        raw.href = url;
+        raw.classList.remove("disabled");
+      }
+    }
+    if (copyBtn) copyBtn.disabled = false;
+  }
+
+  async function openUxSurface(id) {
     const data = state.uxBar;
     if (!data) return;
     const s = (data.surfaces || []).find((x) => x.id === id);
@@ -2120,6 +2242,7 @@
     if (!links.children.length) {
       links.innerHTML = '<p class="muted">No linked detail yet.</p>';
     }
+    await loadUxShareMarkdown(s, data);
     $("uxPanel").classList.remove("hidden");
     document.body.style.overflow = "hidden";
   }
@@ -2223,6 +2346,15 @@
     });
     $("closeStrand").addEventListener("click", () => closeStrand(true));
     if ($("closeUx")) $("closeUx").addEventListener("click", () => closeUx(true));
+    if ($("uxCopyBtn")) {
+      $("uxCopyBtn").addEventListener("click", () => {
+        if (!state.uxMarkdown) {
+          showToast("Nothing to copy yet");
+          return;
+        }
+        copyText(state.uxMarkdown);
+      });
+    }
     $("viewer").addEventListener("click", (e) => {
       if (e.target === $("viewer")) closeViewer(true);
     });

@@ -361,7 +361,12 @@
           <h2 id="uxTitle">Surface</h2>
           <p id="uxMeta" class="muted"></p>
         </div>
-        <button type="button" id="closeUx" class="btn" aria-label="Close">Close</button>
+        <div class="viewer-actions">
+          <a id="uxDownloadLink" class="btn ghost" href="#" download>Download</a>
+          <button type="button" id="uxCopyBtn" class="btn copy">Copy</button>
+          <a id="uxRawLink" class="btn ghost" href="#" target="_blank" rel="noopener">Raw</a>
+          <button type="button" id="closeUx" class="btn" aria-label="Close">Close</button>
+        </div>
       </header>
       <div class="strand-body ux-body">
         <div id="uxAxisBars" class="ux-axis-bars"></div>
