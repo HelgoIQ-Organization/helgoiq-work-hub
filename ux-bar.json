@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T21:00:06Z",
+  "updatedAt": "2026-09-13T21:00:34Z",
   "tip": "3ad3782443d147934342e08a27d7151133369f74",
   "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
   "rubric": {
@@ -13,10 +13,10 @@
     "obvious": 46,
     "frictionless": 44,
     "overall": 46,
-    "note": "Equal-weight across 15 surfaces. Website rescored overnight to 72 (tip 3ad37824)."
+    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %. Website uses Census Content Feel 65\u219272 on tip 3ad37824."
   },
   "honesty": {
-    "measured": "Surfaces with live Admin2 Bluebird retest PASS on tip 3ad37824: members-crm (#1284/#1287), marketing (#1285/#1288), website (#1280/#1281/#1283), intelligence (#1276/#1277/#1278), home (Overview #1277 adjacency). Evidence under helgoiq-overnight-2026-09-13/retests/.",
+    "measured": "Surfaces with live Admin2 Bluebird retest PASS on tip 3ad37824: members-crm (#1284/#1287), marketing (#1285/#1288), website (#1280/#1281/#1283), intelligence (#1276/#1277/#1278), home (Overview #1277 adjacency). Evidence under helgoiq-overnight-2026-09-13/retests/. Website Feel measured by Census Content overnight: 65\u219272 (J66/O79/F71).",
     "provisional_from_evidence": "academy/staff/finance/command-centre small bumps from tip-included PRs or screens without full RESULTS; team-chat/timetable/safe-studio/settings/forms/ambient held.",
     "unscored": "Prefer provisional with low confidence over blank if L2 touched the hub.",
     "note": "Prior Feel walks on tip 6486be87; overnight rescore synthesises retest PASSes on 3ad37824. Headline equal-weight not launch health."
@@ -498,27 +498,29 @@
       "obvious": 79,
       "frictionless": 71,
       "overall": 72,
-      "plainSummary": "Overnight rescore tip 3ad37824: #1280/#1281/#1283 PASS \u2014 phone tabs/CTA, honest Health, named identity, Unsaved clears. Overall 72 (was 65).",
+      "plainSummary": "Measured Sep 13 Admin2: strong draft/live governance on desktop; phone tab/CTA clipping and contradictory Health failure hurt frictionless/obvious. Overall 65 (was provisional 52).",
       "strengths": [
         "Draft vs live governance language",
-        "Phone Home selector + full New Post (#1280)",
-        "Honest Health failure + Retry (#1281)",
-        "Identity name + Unsaved clears (#1283)"
+        "Desktop named start cards and Blog draft badges",
+        "Sticky phone dock remains usable"
       ],
       "findings": [
-        "Splash on in-app Website route hops",
-        "Publish still loud beside Save Draft",
-        "Readiness empty still backlog-feeling"
+        "Health failure contradicts \u201cnot checked yet\u201d",
+        "Phone Website Hub tabs clip to lone \u201cI\u201d",
+        "Blog phone CTA truncates to \u201cNew Pos\u201d",
+        "Unsaved badge after Save Draft"
       ],
       "suggestions": [
-        "In-place skeleton for hub tab hops",
-        "Soften Publish while Draft",
+        "Honest Health failure + Retry",
+        "Fix phone tab/CTA overflow",
+        "Clear Unsaved on draft save",
+        "Fix Unknown display name",
         "Guided first-page win above readiness backlog"
       ],
-      "evidenceNote": "overnight feel/website.md + retests/website/; afternoon REVIEW for baseline",
+      "evidenceNote": "Measured Feel walk 2026-09-13 tip 6486be87. See REVIEW + FIX_CANDIDATE (Health contradiction, phone tab clip, Blog CTA).",
       "detailDropId": "2026-09-13-ux-bar-feel",
       "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/website.md",
-      "rescoreNote": "Retest PASS #1280 phone tabs/CTA, #1281 honest Health failure, #1283 named identity + Unsaved clear.",
+      "rescoreNote": "Census Content Feel Website live rescore on tip 3ad37824: 65\u219272 (J66/O79/F71). Aligns with #1280/#1281/#1283 PASS retests.",
       "previous": {
         "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
         "joyful": 64,
