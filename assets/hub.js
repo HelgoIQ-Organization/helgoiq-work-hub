@@ -1941,6 +1941,16 @@
 
   const FEEL_CATALOG_PATH = "drops/2026-09-13-feel-before-after/catalog.json";
   const FEEL_PR_BASE = "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/";
+  const FEEL_SURFACE_ALIASES = {
+    website: ["website"],
+    "members-crm": ["members-crm", "members"],
+    marketing: ["marketing", "inbox"],
+    staff: ["staff"],
+    academy: ["academy"],
+    intelligence: ["intelligence"],
+    finance: ["finance"],
+    home: ["home", "overview"],
+  };
 
   function feelCatalogItems() {
     const cat = state.feelCatalog;
@@ -1949,18 +1959,39 @@
     return Array.isArray(cat.items) ? cat.items : [];
   }
 
+  function feelBoardIdForCatalogSurface(surface) {
+    const key = String(surface || "");
+    if (FEEL_SURFACE_ALIASES[key]) return key;
+    for (const [board, aliases] of Object.entries(FEEL_SURFACE_ALIASES)) {
+      if (aliases.indexOf(key) !== -1) return board;
+    }
+    return key;
+  }
+
+  function feelSurfaceMatchKeys(surfaceId) {
+    const board = feelBoardIdForCatalogSurface(surfaceId);
+    const keys = new Set([surfaceId, board]);
+    (FEEL_SURFACE_ALIASES[board] || []).forEach((k) => keys.add(k));
+    return keys;
+  }
+
   function feelItemsForSurface(surfaceId) {
-    return feelCatalogItems().filter((it) => it && it.surface === surfaceId);
+    const keys = feelSurfaceMatchKeys(surfaceId);
+    return feelCatalogItems().filter((it) => it && keys.has(it.surface));
   }
 
   function feelSurfaceLabel(surfaceId) {
-    const s = ((state.uxBar && state.uxBar.surfaces) || []).find((x) => x.id === surfaceId);
+    const board = feelBoardIdForCatalogSurface(surfaceId);
+    const s = ((state.uxBar && state.uxBar.surfaces) || []).find((x) => x.id === board);
     if (s && s.name) return s.name;
     return String(surfaceId || "").replace(/-/g, " ");
   }
 
   function feelStatusInfo(item) {
-    if (item && item.after_ready) return { cls: "paired", label: "Paired" };
+    if (!item || item.after_ready === false) return { cls: "awaiting", label: "After pending" };
+    if (item.after_ready || item.status === "captured" || item.status === "paired") {
+      return { cls: "paired", label: "Paired" };
+    }
     return { cls: "awaiting", label: "After pending" };
   }
 
@@ -2065,7 +2096,7 @@
     badge.textContent = feelSurfaceLabel(item.surface);
     badge.title = "Open " + feelSurfaceLabel(item.surface) + " Feel detail";
     badge.addEventListener("click", () => {
-      if (item.surface) openUxSurface(item.surface);
+      if (item.surface) openUxSurface(feelBoardIdForCatalogSurface(item.surface));
     });
     meta.appendChild(badge);
     if (item.pr) {

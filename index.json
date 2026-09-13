@@ -2,19 +2,22 @@
   "updatedAt": "2026-09-13T19:40:35.760Z",
   "drops": [
     {
-      "id": "2026-09-13-feel-before-after-pairs-15-improvements",
-      "title": "Feel before/after pairs (15 improvements)",
+      "id": "2026-09-13-feel-before-after",
+      "title": "Feel before / after gallery",
       "date": "2026-09-13",
-      "summary": "Before shots staged; afters capturing on tip 3ad37824",
-      "plainEnglish": "Before shots staged; afters capturing on tip 3ad37824",
+      "summary": "15 merged Feel fixes with Before|After shots on tip 3ad37824.",
+      "plainEnglish": "The Feel tab Improvements strip shows 15 paired screenshots for the evening Feel pack. After shots are on the live tip — click a thumbnail for full size. After pending only appears if a file is missing.",
       "tags": [
-        "status"
+        "status",
+        "findings"
       ],
-      "type": "evidence",
-      "project": "helgoiq-platform",
+      "type": "pack",
+      "project": "helgoiq-work-hub",
       "paths": [
-        "drops/2026-09-13-feel-before-after-pairs-15-improvements/README.md"
-      ]
+        "drops/2026-09-13-feel-before-after/README.md",
+        "drops/2026-09-13-feel-before-after/catalog.json"
+      ],
+      "tip": "3ad3782443d147934342e08a27d7151133369f74"
     },
     {
       "id": "2026-09-13-tip-3ad37824-evening-feel-pack-live",
