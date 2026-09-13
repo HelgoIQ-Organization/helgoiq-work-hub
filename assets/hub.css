@@ -1402,3 +1402,197 @@ a { color: var(--accent); }
   color: var(--at-risk);
   border: 1px solid rgba(230, 195, 92, 0.4);
 }
+
+/* —— Feel Improvements (Before | After) —— */
+.feel-improvements {
+  margin: 0 0 1.35rem;
+}
+.feel-improvements .section-head h3 {
+  margin: 0;
+  font-size: 1.05rem;
+}
+.feel-gallery,
+.feel-pairs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+.feel-pairs { margin-bottom: 1.1rem; }
+.feel-pair-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.85rem 0.9rem 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.feel-pair-card.compact { padding: 0.7rem 0.75rem; }
+.feel-pair-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.5rem;
+}
+.feel-pair-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.3;
+}
+.feel-surface-badge {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--chip);
+  color: var(--text);
+  font: inherit;
+  font-size: 0.68rem;
+  font-weight: 650;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.12rem 0.45rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.feel-surface-badge:hover,
+.feel-surface-badge:focus-visible {
+  border-color: var(--accent);
+  outline: none;
+}
+.feel-pr-link {
+  font-size: 0.75rem;
+  font-weight: 650;
+  font-family: var(--mono);
+  text-decoration: none;
+}
+.feel-pr-link:hover { text-decoration: underline; }
+.feel-status-pill {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 650;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding: 0.12rem 0.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--muted);
+}
+.feel-status-pill.paired {
+  background: rgba(125, 211, 167, 0.16);
+  color: var(--on-track);
+  border-color: rgba(125, 211, 167, 0.35);
+}
+.feel-status-pill.awaiting {
+  background: rgba(230, 195, 92, 0.12);
+  color: var(--at-risk);
+  border-color: rgba(230, 195, 92, 0.35);
+}
+.feel-pair-shots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+.feel-shot { min-width: 0; }
+.feel-shot-label {
+  margin: 0 0 0.3rem;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.feel-shot-label.before { color: var(--muted); }
+.feel-shot-label.after { color: var(--ux-frictionless); }
+.feel-shot-frame {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface2);
+}
+.feel-shot-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: zoom-in;
+}
+.feel-shot-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.feel-pending {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  font-weight: 650;
+  text-align: center;
+  padding: 0.6rem;
+  background:
+    repeating-linear-gradient(
+      -45deg,
+      rgba(139, 155, 180, 0.05),
+      rgba(139, 155, 180, 0.05) 8px,
+      rgba(139, 155, 180, 0.1) 8px,
+      rgba(139, 155, 180, 0.1) 16px
+    );
+}
+.feel-pending-mark {
+  font-size: 1.15rem;
+  line-height: 1;
+  color: var(--warn);
+}
+.feel-pair-route {
+  margin: 0;
+  font-size: 0.7rem;
+  color: var(--muted);
+  font-family: var(--mono);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.feel-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  background: rgba(5, 8, 14, 0.82);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.feel-lightbox-panel {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  width: min(1100px, 100%);
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+.feel-lightbox-body {
+  overflow: auto;
+  padding: 0.75rem 1rem 1.1rem;
+  background: #0b1016;
+}
+.feel-lightbox-body img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+@media (max-width: 520px) {
+  .feel-gallery,
+  .feel-pairs { grid-template-columns: 1fr; }
+}

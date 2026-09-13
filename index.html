@@ -241,6 +241,13 @@
           <div class="ux-headline-bars" id="uxHeadlineBars" aria-label="Headline axis bars"></div>
         </div>
         <p id="uxHonesty" class="ux-honesty muted"></p>
+        <div id="feelImprovements" class="feel-improvements" aria-label="Feel improvements before and after">
+          <div class="section-head">
+            <h3>Improvements</h3>
+            <p class="muted" id="feelGallerySub">Before | After for merged Feel fixes. Missing afters show as After pending — never a broken image.</p>
+          </div>
+          <div id="feelGallery" class="feel-gallery"></div>
+        </div>
         <div id="uxSurfaceGrid" class="ux-surface-grid"></div>
       </section>
     </div>
@@ -372,6 +379,8 @@
         <div id="uxAxisBars" class="ux-axis-bars"></div>
         <p id="uxSummary" class="strand-summary"></p>
         <p id="uxEvidence" class="muted ux-evidence"></p>
+        <h3 id="uxPairsHead" class="hidden">Before | After</h3>
+        <div id="uxPairs" class="feel-pairs"></div>
         <h3>Strengths</h3>
         <ul id="uxStrengths"></ul>
         <h3 id="uxFindingsHead" class="hidden">Findings</h3>
@@ -380,6 +389,22 @@
         <ul id="uxSuggestions"></ul>
         <h3>Detail</h3>
         <div id="uxDetailLinks" class="strand-drops"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feel before/after lightbox -->
+  <div id="feelLightbox" class="feel-lightbox hidden" role="dialog" aria-modal="true" aria-labelledby="feelLightboxTitle">
+    <div class="feel-lightbox-panel">
+      <header class="viewer-header">
+        <div>
+          <p class="muted">Full size</p>
+          <h2 id="feelLightboxTitle">Screenshot</h2>
+        </div>
+        <button type="button" id="closeFeelLightbox" class="btn" aria-label="Close image">Close</button>
+      </header>
+      <div class="feel-lightbox-body">
+        <img id="feelLightboxImg" alt="" />
       </div>
     </div>
   </div>

@@ -16,10 +16,11 @@ The top of the site is a **visual dashboard** (plus Coverage, Tracker, and Drops
 - **Your moves** — actions only you can unblock, with how much each one moves the project / phase forward
 - **Phases** strip — share of the whole launch programme
 - **Coverage** tab — Admin inventory of every sidebar menu path, reconciled against the router / 407-route orphan audit. Platform owner / Teacher / Client are labelled placeholders (“coming as protocol/testing runs”).
+- **Feel** tab — joyful / obvious / frictionless scores per surface, plus an **Improvements** Before | After gallery for merged Feel fixes (`drops/2026-09-13-feel-before-after/catalog.json`). Missing afters show as After pending.
 - **Tracker** tab — findings grouped by state / area / builder / age; expand a row for evidence. Live GitHub Projects sync is **blocked** until `read:project` + the findings-agent token rotate (outstanding since 3 Sep)
 - **Work drops** feed — each card leads with friendly English; technical detail is secondary
 
-Deep links: `#dashboard`, `#coverage`, `#coverage-admin`, `#tracker`, `#drops`, `#strand-dataset`, `#action-merge-1232`, `#drop-<id>`.
+Deep links: `#dashboard`, `#coverage`, `#coverage-admin`, `#feel`, `#feel/<surface>`, `#tracker`, `#drops`, `#strand-dataset`, `#action-merge-1232`, `#drop-<id>`.
 
 Dashboard numbers live in [`dashboard.json`](./dashboard.json) (weighted from current testing state). Catalogue entries live in [`index.json`](./index.json).
 

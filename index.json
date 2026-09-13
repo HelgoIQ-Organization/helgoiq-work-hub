@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-13T17:38:09.497Z",
+  "updatedAt": "2026-09-13T19:45:00.000Z",
   "drops": [
+    {
+      "id": "2026-09-13-feel-before-after",
+      "title": "Feel before / after gallery",
+      "date": "2026-09-13",
+      "summary": "Paired Before|After shots for merged Feel fixes. After pending until live-tip PNGs land.",
+      "plainEnglish": "The Feel tab now has an Improvements strip: each merged Feel fix shows Before and After. After shots stay as “After pending” until Bot Commander walks the live tip and commits the PNG — nothing is faked.",
+      "tags": [
+        "status",
+        "findings"
+      ],
+      "type": "pack",
+      "project": "helgoiq-work-hub",
+      "paths": [
+        "drops/2026-09-13-feel-before-after/README.md",
+        "drops/2026-09-13-feel-before-after/catalog.json"
+      ],
+      "tip": "3ad3782443d147934342e08a27d7151133369f74"
+    },
     {
       "id": "2026-09-13-tip-3ad37824-evening-feel-pack-live",
       "title": "Tip 3ad37824 evening Feel pack live",

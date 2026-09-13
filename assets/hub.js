@@ -37,6 +37,7 @@
     coverageStateFilter: new Set(),
     coverageFacetFilter: "",
     uxBar: null,
+    feelCatalog: null,
     tracker: null,
     ptViewing: null,
     selectedTags: new Set(),
@@ -1938,6 +1939,205 @@
     });
   }
 
+  const FEEL_CATALOG_PATH = "drops/2026-09-13-feel-before-after/catalog.json";
+  const FEEL_PR_BASE = "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/";
+
+  function feelCatalogItems() {
+    const cat = state.feelCatalog;
+    if (!cat) return [];
+    if (Array.isArray(cat)) return cat;
+    return Array.isArray(cat.items) ? cat.items : [];
+  }
+
+  function feelItemsForSurface(surfaceId) {
+    return feelCatalogItems().filter((it) => it && it.surface === surfaceId);
+  }
+
+  function feelSurfaceLabel(surfaceId) {
+    const s = ((state.uxBar && state.uxBar.surfaces) || []).find((x) => x.id === surfaceId);
+    if (s && s.name) return s.name;
+    return String(surfaceId || "").replace(/-/g, " ");
+  }
+
+  function feelStatusInfo(item) {
+    if (item && item.after_ready) return { cls: "paired", label: "Paired" };
+    return { cls: "awaiting", label: "After pending" };
+  }
+
+  function feelPendingEl(label) {
+    const el = document.createElement("div");
+    el.className = "feel-pending";
+    el.setAttribute("role", "img");
+    el.setAttribute("aria-label", label);
+    const mark = document.createElement("span");
+    mark.className = "feel-pending-mark";
+    mark.setAttribute("aria-hidden", "true");
+    mark.textContent = "◌";
+    const text = document.createElement("span");
+    text.textContent = label;
+    el.appendChild(mark);
+    el.appendChild(text);
+    return el;
+  }
+
+  function openFeelLightbox(src, title) {
+    const box = $("feelLightbox");
+    const img = $("feelLightboxImg");
+    const heading = $("feelLightboxTitle");
+    if (!box || !img) {
+      window.open(src, "_blank", "noopener");
+      return;
+    }
+    if (heading) heading.textContent = title || "Screenshot";
+    img.alt = title || "Screenshot";
+    img.src = src;
+    box.classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeFeelLightbox() {
+    const box = $("feelLightbox");
+    if (!box || box.classList.contains("hidden")) return false;
+    box.classList.add("hidden");
+    const img = $("feelLightboxImg");
+    if (img) {
+      img.removeAttribute("src");
+      img.alt = "";
+    }
+    if (
+      (!$("viewer") || $("viewer").classList.contains("hidden")) &&
+      (!$("uxPanel") || $("uxPanel").classList.contains("hidden")) &&
+      (!$("strandPanel") || $("strandPanel").classList.contains("hidden"))
+    ) {
+      document.body.style.overflow = "";
+    }
+    return true;
+  }
+
+  function renderFeelShot(kind, item) {
+    const wrap = document.createElement("div");
+    wrap.className = "feel-shot";
+    const label = document.createElement("p");
+    label.className = "feel-shot-label " + kind;
+    label.textContent = kind === "before" ? "Before" : "After";
+    wrap.appendChild(label);
+    const frame = document.createElement("div");
+    frame.className = "feel-shot-frame";
+    const ready = kind === "before" ? item.before_ready : item.after_ready;
+    const path = kind === "before" ? item.before_path : item.after_path;
+    const pendingLabel = kind === "before" ? "Before pending" : "After pending";
+    if (ready && path) {
+      const link = document.createElement("a");
+      link.className = "feel-shot-link";
+      link.href = path;
+      link.target = "_blank";
+      link.rel = "noopener";
+      const img = document.createElement("img");
+      img.alt = (item.title || item.id || "Feel shot") + " — " + (kind === "before" ? "before" : "after");
+      img.loading = "lazy";
+      img.addEventListener("error", () => {
+        if (img.dataset.failed) return;
+        img.dataset.failed = "1";
+        link.replaceWith(feelPendingEl(pendingLabel));
+      });
+      img.src = path;
+      link.addEventListener("click", (e) => {
+        e.preventDefault();
+        openFeelLightbox(path, (item.title || item.id) + " — " + (kind === "before" ? "Before" : "After"));
+      });
+      link.appendChild(img);
+      frame.appendChild(link);
+    } else {
+      frame.appendChild(feelPendingEl(pendingLabel));
+    }
+    wrap.appendChild(frame);
+    return wrap;
+  }
+
+  function renderFeelPairCard(item) {
+    const card = document.createElement("article");
+    card.className = "feel-pair-card";
+    const meta = document.createElement("div");
+    meta.className = "feel-pair-meta";
+    const badge = document.createElement("button");
+    badge.type = "button";
+    badge.className = "feel-surface-badge";
+    badge.textContent = feelSurfaceLabel(item.surface);
+    badge.title = "Open " + feelSurfaceLabel(item.surface) + " Feel detail";
+    badge.addEventListener("click", () => {
+      if (item.surface) openUxSurface(item.surface);
+    });
+    meta.appendChild(badge);
+    if (item.pr) {
+      const pr = document.createElement("a");
+      pr.className = "feel-pr-link";
+      pr.href = FEEL_PR_BASE + item.pr;
+      pr.target = "_blank";
+      pr.rel = "noopener";
+      pr.textContent = "#" + item.pr;
+      meta.appendChild(pr);
+    }
+    const status = feelStatusInfo(item);
+    const pill = document.createElement("span");
+    pill.className = "feel-status-pill " + status.cls;
+    pill.textContent = status.label;
+    meta.appendChild(pill);
+    card.appendChild(meta);
+    const title = document.createElement("h4");
+    title.className = "feel-pair-title";
+    title.textContent = item.title || item.id || "Feel fix";
+    card.appendChild(title);
+    const shots = document.createElement("div");
+    shots.className = "feel-pair-shots";
+    shots.appendChild(renderFeelShot("before", item));
+    shots.appendChild(renderFeelShot("after", item));
+    card.appendChild(shots);
+    if (item.route) {
+      const route = document.createElement("p");
+      route.className = "feel-pair-route";
+      route.textContent = item.route;
+      card.appendChild(route);
+    }
+    return card;
+  }
+
+  function renderFeelGallery() {
+    const host = $("feelGallery");
+    if (!host) return;
+    const items = feelCatalogItems();
+    const sub = $("feelGallerySub");
+    if (!items.length) {
+      host.innerHTML = '<p class="muted">No Feel before/after pairs in the catalog yet.</p>';
+      if (sub) {
+        sub.textContent =
+          "Catalog missing or empty — Bot Commander can add drops/2026-09-13-feel-before-after/catalog.json.";
+      }
+      return;
+    }
+    const afters = items.filter((i) => i.after_ready).length;
+    if (sub) {
+      sub.textContent =
+        items.length +
+        " merged Feel fixes · " +
+        afters +
+        " after shot" +
+        (afters === 1 ? "" : "s") +
+        " ready · missing afters show as After pending.";
+    }
+    host.innerHTML = "";
+    items.forEach((item) => host.appendChild(renderFeelPairCard(item)));
+  }
+
+  function renderUxFeelPairs(surfaceId) {
+    const head = $("uxPairsHead");
+    const box = $("uxPairs");
+    if (!box) return;
+    const items = feelItemsForSurface(surfaceId);
+    if (head) head.classList.toggle("hidden", !items.length);
+    box.innerHTML = "";
+    items.forEach((item) => box.appendChild(renderFeelPairCard(item)));
+  }
+
   function renderUxBar() {
     const data = state.uxBar;
     const grid = $("uxSurfaceGrid");
@@ -2001,6 +2201,7 @@
       btn.addEventListener("click", () => openUxSurface(s.id));
       grid.appendChild(btn);
     });
+    renderFeelGallery();
   }
 
   function surfaceToMarkdown(s, data) {
@@ -2147,6 +2348,7 @@
       shortSha(s.tipAtScore || data.tip || "");
     renderUxAxisRows($("uxAxisBars"), s.joyful, s.obvious, s.frictionless, true);
     $("uxSummary").textContent = s.plainSummary || "";
+    renderUxFeelPairs(s.id);
     const ev = $("uxEvidence");
     if (ev) {
       ev.textContent = s.evidenceNote || (s.sourceReport ? "Source: " + s.sourceReport : "");
@@ -2346,6 +2548,14 @@
     });
     $("closeStrand").addEventListener("click", () => closeStrand(true));
     if ($("closeUx")) $("closeUx").addEventListener("click", () => closeUx(true));
+    if ($("closeFeelLightbox")) {
+      $("closeFeelLightbox").addEventListener("click", () => closeFeelLightbox());
+    }
+    if ($("feelLightbox")) {
+      $("feelLightbox").addEventListener("click", (e) => {
+        if (e.target === $("feelLightbox")) closeFeelLightbox();
+      });
+    }
     if ($("uxCopyBtn")) {
       $("uxCopyBtn").addEventListener("click", () => {
         if (!state.uxMarkdown) {
@@ -2368,7 +2578,8 @@
     }
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
-        if (!$("viewer").classList.contains("hidden")) closeViewer(true);
+        if ($("feelLightbox") && !$("feelLightbox").classList.contains("hidden")) closeFeelLightbox();
+        else if (!$("viewer").classList.contains("hidden")) closeViewer(true);
         else if ($("uxPanel") && !$("uxPanel").classList.contains("hidden")) closeUx(true);
         else if (!$("strandPanel").classList.contains("hidden")) closeStrand(true);
       }
@@ -2388,7 +2599,7 @@
     window.addEventListener("hashchange", applyHash);
 
     try {
-      const [idxRes, dashRes, covRes, trkRes, adminPagesRes, adminMetaRes, uxRes] = await Promise.all([
+      const [idxRes, dashRes, covRes, trkRes, adminPagesRes, adminMetaRes, uxRes, feelRes] = await Promise.all([
         fetch("index.json"),
         fetch("dashboard.json"),
         fetch("coverage.json"),
@@ -2396,6 +2607,7 @@
         fetch("coverage/admin-pages.json"),
         fetch("coverage/meta.json"),
         fetch("ux-bar.json"),
+        fetch(FEEL_CATALOG_PATH),
       ]);
       if (!idxRes.ok) throw new Error("index.json " + idxRes.status);
       const data = await idxRes.json();
@@ -2421,6 +2633,15 @@
         } catch (err) {
           console.warn("ux-bar.json parse failed", err);
         }
+      }
+      if (feelRes && feelRes.ok) {
+        try {
+          state.feelCatalog = await feelRes.json();
+        } catch (err) {
+          console.warn("feel catalog parse failed", err);
+        }
+      } else if (feelRes && !feelRes.ok) {
+        console.warn(FEEL_CATALOG_PATH + " " + feelRes.status);
       }
       renderUxBar();
       if (adminPagesRes && adminPagesRes.ok) {
