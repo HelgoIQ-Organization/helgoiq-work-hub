@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-13T05:21:22.388Z",
+  "updatedAt": "2026-09-13T05:43:36.860Z",
   "drops": [
+    {
+      "id": "2026-09-13-coverage-l2-long-tail-leftover-14",
+      "title": "Coverage L2 — Long-tail leftover 14",
+      "date": "2026-09-13",
+      "summary": "14 leftover L2 rows: 0 PASS / 14 PARTIAL. Wave-4 list 157/157 complete. Do not double-count recovered 5.",
+      "plainEnglish": "14 leftover L2 rows: 0 PASS / 14 PARTIAL. Wave-4 list 157/157 complete. Do not double-count recovered 5.",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-13-coverage-l2-long-tail-leftover-14/census-longtail-l2-settings-LEFTOVER14-SUMMARY.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-13-coverage-l2-long-tail-recovered5",
       "title": "Coverage L2 long-tail recovered 5",

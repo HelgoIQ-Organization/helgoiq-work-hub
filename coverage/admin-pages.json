@@ -22521,21 +22521,36 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/referrals.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Route redirects to the Referral Programme hub, which loads with honest no-referrers/no-data state.",
-      "title": "Referral Programme",
-      "breadcrumb": "Referral Programme",
-      "reachability": "redirect"
-    }
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Same Referral Programme surface. Dashboard + 6-month trend. Honest empty: no referral data yet. Create withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Dashboard tab"
+      ],
+      "controlsNotExercised": [
+        "create campaign"
+      ],
+      "tenant_ok": true
+    },
+    "reason": "Same Referral Programme surface. Dashboard + 6-month trend. Honest empty: no referral data yet. Create withheld."
   },
   {
     "id": "admin-refunds",
@@ -22862,21 +22877,37 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/resources-acknowledgements.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Acknowledgement Report loads with resource selector and honest select-a-resource state.",
-      "title": "Acknowledgement Report",
-      "breadcrumb": "Acknowledgement Report",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Select-a-resource empty prompt. Studio resources list was empty earlier so nothing to pick. Ack write withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "select resource",
+        "ack write"
+      ],
+      "tenant_ok": true
+    },
+    "reason": "Select-a-resource empty prompt. Studio resources list was empty earlier so nothing to pick. Ack write withheld."
   },
   {
     "id": "admin-retention",
@@ -23027,7 +23058,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Search zz. 0 bookings / 0 confirmed / 0 pending / \u00a30. Booking write withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -23040,17 +23071,35 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/retreat-bookings.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "hubFit": "ok",
-      "buriedDaily": "maybe \u2014 SEARCH ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Search zz. 0 bookings / 0 confirmed / 0 pending / \u00a30. Booking write withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search zz",
+        "status/retreat filters visible"
+      ],
+      "controlsNotExercised": [
+        "booking write"
+      ],
+      "tenant_ok": true
     }
   },
   {
@@ -23082,21 +23131,37 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/retreat-enquiries.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Retreat Enquiries & Waitlist loads with zeroed metrics, search/filter controls, and honest no-enquiries state.",
-      "title": "Retreat Enquiries & Waitlist",
-      "breadcrumb": "Retreat Enquiries & Waitlist",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Search zz. 0 enquiries / 0 this week / 0 converted / 0 pending. Reply withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search zz"
+      ],
+      "controlsNotExercised": [
+        "reply",
+        "convert"
+      ],
+      "tenant_ok": true
+    },
+    "reason": "Search zz. 0 enquiries / 0 this week / 0 converted / 0 pending. Reply withheld."
   },
   {
     "id": "admin-retreat-financials",
@@ -23127,21 +23192,37 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/retreat-financials.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Retreat Financials loads with zeroed revenue/payment metrics, retreat selector, and draft retreat financial row.",
-      "title": "Retreat Financials",
-      "breadcrumb": "Retreat Financials",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "QA Overnight Retreat selected. \u00a30 revenue/deposits/outstanding/refunds; 0 bookings; draft 15 Oct 2026. No Stripe."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "retreat selector QA Overnight Retreat"
+      ],
+      "controlsNotExercised": [
+        "charge",
+        "refund"
+      ],
+      "tenant_ok": true
+    },
+    "reason": "QA Overnight Retreat selected. \u00a30 revenue/deposits/outstanding/refunds; 0 bookings; draft 15 Oct 2026. No Stripe."
   },
   {
     "id": "admin-retreat-venues",
@@ -23172,21 +23253,36 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/retreat-venues.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Retreat Venues loads with zeroed venue metrics, search, and honest no-venues state; no venue added.",
-      "title": "Retreat Venues",
-      "breadcrumb": "Retreat Venues",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Search zz. 0 venues / 0 destinations / 0 active retreats. Add venue withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search zz"
+      ],
+      "controlsNotExercised": [
+        "Add Venue"
+      ],
+      "tenant_ok": true
+    },
+    "reason": "Search zz. 0 venues / 0 destinations / 0 active retreats. Add venue withheld."
   },
   {
     "id": "admin-retreats",
@@ -23217,21 +23313,37 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/retreats.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Retreats loads with retreat metrics and existing QA Overnight Retreat draft; no retreat action taken.",
-      "title": "Retreats",
-      "breadcrumb": "Retreats",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Tiles 1 total / 0 published / 1 upcoming / capacity 20. Search zz emptied list (KPIs unfiltered). Create/publish withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search zz"
+      ],
+      "controlsNotExercised": [
+        "Create retreat",
+        "Create with AI"
+      ],
+      "tenant_ok": true
+    },
+    "reason": "Tiles 1 total / 0 published / 1 upcoming / capacity 20. Search zz emptied list (KPIs unfiltered). Create/publish withheld."
   },
   {
     "id": "admin-retreats-id",
@@ -23252,7 +23364,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Concrete id=2 QA Overnight Retreat draft. 16\u201318 Oct 2026, \u00a3100/person, 0/20 bookings, \u00a30 revenue. Overview. Edit/publish withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -23265,17 +23377,36 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/retreats-2.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "hubFit": "platform tooling \u2014 review fit for studio admin",
-      "buriedDaily": "maybe \u2014 LINK ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Concrete id=2 QA Overnight Retreat draft. 16\u201318 Oct 2026, \u00a3100/person, 0/20 bookings, \u00a30 revenue. Overview. Edit/publish withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened retreat 2 Overview"
+      ],
+      "controlsNotExercised": [
+        "edit save",
+        "publish",
+        "Copy URL"
+      ],
+      "tenant_ok": true
     }
   },
   {
@@ -23297,7 +23428,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": null,
+    "reason": "Editor for QA Overnight Retreat (slug qa-overnight-retreat). No field change/save.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -23310,17 +23441,35 @@
         "kind": "drop",
         "id": "census-core-l1",
         "href": "#coverage-admin"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/retreats-2-edit.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "hubFit": "platform tooling \u2014 review fit for studio admin",
-      "buriedDaily": "maybe \u2014 LINK ONLY",
-      "duplicate": "no",
-      "source": "census-core"
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Editor for QA Overnight Retreat (slug qa-overnight-retreat). No field change/save."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened editor"
+      ],
+      "controlsNotExercised": [
+        "Save Changes",
+        "field edit"
+      ],
+      "tenant_ok": true
     }
   },
   {
@@ -23341,7 +23490,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Alias \u2192 staff-hub tab=roles. Team + Roles observed. Owner/Admin/Manager enabled. Toggles/create/save withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -23353,23 +23502,37 @@
       {
         "kind": "drop",
         "id": "census-longtail-studio-access-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/roles.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "studio-access",
-      "hubFit": "good studio staff governance surface",
-      "buriedDaily": "high",
-      "duplicate": "Staff hub contains the canonical Roles tab",
-      "proposedHome": "Team > Staff > Roles",
-      "note": "Direct /admin/roles?c=150002 resolved to canonical /admin/staff-hub?tab=roles&c=150002; roles observed only, no role, permission or access changes.",
-      "breadcrumb": "Staff > Roles",
-      "reachability": "SEARCH ONLY",
-      "heading": "Staff"
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Alias \u2192 staff-hub tab=roles. Team + Roles observed. Owner/Admin/Manager enabled. Toggles/create/save withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Team tab",
+        "Roles tab"
+      ],
+      "controlsNotExercised": [
+        "toggles",
+        "Create role",
+        "save"
+      ],
+      "tenant_ok": true
     }
   },
   {
@@ -23390,7 +23553,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Legacy alias \u2192 staff-hub tab=roles. Same roles surface. Save/toggles withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -23402,23 +23565,36 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/roles-legacy.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Team Staff roles surface",
-      "buriedDaily": "medium",
-      "duplicate": "legacy orphan route for the Staff hub Roles tab",
-      "proposedHome": "Team > Staff > Roles",
-      "note": "Direct legacy route canonicalized to /admin/staff-hub?tab=roles; observed only, no role or permission mutation used.",
-      "breadcrumb": "Team > Staff > Roles",
-      "reachability": "ORPHANED",
-      "heading": "Roles & permissions"
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Legacy alias \u2192 staff-hub tab=roles. Same roles surface. Save/toggles withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Roles tab"
+      ],
+      "controlsNotExercised": [
+        "toggles",
+        "Create role",
+        "save"
+      ],
+      "tenant_ok": true
     }
   },
   {
@@ -25980,21 +26156,41 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/tasks.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Tasks loads with zero pending/in-progress counts, filters, tabs, and honest no-tasks state; no task created.",
-      "title": "Tasks",
-      "breadcrumb": "Tasks",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Search zz + List/Priorities/Impact. 0 pending / 0 in progress. New Task/assign/complete withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "search zz",
+        "List",
+        "Priorities",
+        "Impact"
+      ],
+      "controlsNotExercised": [
+        "New Task",
+        "assign",
+        "complete"
+      ],
+      "tenant_ok": true
+    },
+    "reason": "Search zz + List/Priorities/Impact. 0 pending / 0 in progress. New Task/assign/complete withheld."
   },
   {
     "id": "admin-team-calendar",
@@ -26288,21 +26484,39 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/trial-conversion.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "AI Trial Conversion loads with active-trial metrics, conversion funnel, prediction breakdown, tabs, and nudge controls; no analysis or nudge action taken.",
-      "title": "AI Trial Conversion",
-      "breadcrumb": "AI Trial Conversion",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "Overview/AI Profiles/Nudge Analytics. 4 active trials / 0 will convert / 4 at risk / 0% historical / 4/4 analyzed. Run AI/nudge withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Overview",
+        "AI Profiles",
+        "Nudge Analytics"
+      ],
+      "controlsNotExercised": [
+        "Run AI Analysis",
+        "nudge"
+      ],
+      "tenant_ok": true
+    },
+    "reason": "Overview/AI Profiles/Nudge Analytics. 4 active trials / 0 will convert / 4 at risk / 0% historical / 4/4 analyzed. Run AI/nudge withheld."
   },
   {
     "id": "admin-website-approval-hub",
@@ -26520,7 +26734,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "By Category/By Location/Weekly Digest. 0 active lessons; resolved 0/3; positive 0/2. Record/publish withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -26532,23 +26746,37 @@
       {
         "kind": "drop",
         "id": "census-longtail-team-academy-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/what-we-learned.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-leftover-14"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "team-academy",
-      "hubFit": "good learning library surface",
-      "buriedDaily": "medium",
-      "duplicate": "none observed",
-      "proposedHome": "Team > What We've Learned",
-      "note": "What We've Learned rendered directly; no location filter, lesson, action, or outcome changed.",
-      "breadcrumb": "What We've Learned",
-      "reachability": "SEARCH ONLY",
-      "heading": "What We've Learned"
+      "source": "census-longtail-l2-leftover14",
+      "hub": "long-tail",
+      "note": "By Category/By Location/Weekly Digest. 0 active lessons; resolved 0/3; positive 0/2. Record/publish withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "By Category",
+        "By Location",
+        "Weekly Digest"
+      ],
+      "controlsNotExercised": [
+        "Record an action",
+        "publish"
+      ],
+      "tenant_ok": true
     }
   }
 ]

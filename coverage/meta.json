@@ -34,9 +34,9 @@
       "ORPHANED": 30
     },
     "byLevel": {
-      "2": 354,
+      "2": 368,
       "0": 30,
-      "1": 29
+      "1": 15
     }
   },
   "completenessStatement": "Reconciled 2026-09-12 against Cursor #1217 Admin census (407 router paths @ a73ff70b). Coverage now lists every census route with census breadcrumb + reachability alongside test state. Gap vs prior 334: prior Coverage was menu\u2229destinations; census is every <Route>. Counts now: total 413; reachability {'SIDEBAR': 218, 'SIDEBAR, DOCK': 4, 'MENU_ONLY': 5, 'PATH DEFECT': 1, 'SEARCH ONLY': 100, 'LINK ONLY': 55, 'ORPHANED': 30}. PATH DEFECT /admin/staff/substitutions kept as MENU_ONLY (no Route). Query-string menu keys retained.",
@@ -163,20 +163,14 @@
   },
   "lastL2Merge": {
     "bot": "Census Longtail",
-    "hub": "long-tail-recovered5",
+    "hub": "long-tail-leftover14-COMPLETE",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
     "pass": 0,
-    "partial": 4,
-    "fail": 1,
+    "partial": 14,
+    "fail": 0,
     "blocked": 0,
     "miss": 0,
-    "routes": [
-      "/admin/my-actions",
-      "/admin/override-audit-log",
-      "/admin/recommendation-tracker",
-      "/admin/recovery-calendar",
-      "/admin/referral-dashboard"
-    ]
+    "wave": "157/157 settings+long-tail L2 list complete"
   },
   "dailyL2Wave": {
     "status": "complete",
@@ -194,5 +188,5 @@
     "status": "complete",
     "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
   },
-  "updatedAt": "2026-09-13T05:21:15.167572+00:00"
+  "updatedAt": "2026-09-13T05:44:53.343951+00:00"
 }

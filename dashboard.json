@@ -18,7 +18,7 @@
     },
     "updatedAt": "2026-09-12T11:59:19.847671Z",
     "note": "Live tip a3a0e207: #1267 invite create. Staging ahead: #1266 Pulse (6486be87) not deployed. Cluster A last Measured 23/24 on a73ff70 (ACS-C01 fail).",
-    "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 354/413 \u2248 85.7%.",
+    "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 368/413 \u2248 89.1%.",
     "headlineVsCoverage": "Headline ~63% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
       "pctTestedAny": 98.8,
@@ -35,7 +35,7 @@
       }
     },
     "coverageL1Pct": 92.7,
-    "coverageL2Pct": 85.7,
+    "coverageL2Pct": 89.1,
     "commandCentreNote": "48% = A 24/24 + B\u2013F 4/30 measured on 6486be87 (replaced A-only 80%)."
   },
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -97,10 +97,10 @@
     "censusLongtailSettings": "14 PASS / 1 BLOCKED (live-support PA); orphans (30) next",
     "censusLongtailComplete": "133 routes: 124 PASS / 6 FAIL / 3 BLOCKED \u2014 Admin L1 wave complete",
     "coverageL1Plus": 383,
-    "coverageL2Plus": 354,
+    "coverageL2Plus": 368,
     "coverageTotal": 413,
     "coveragePctL1Plus": 92.7,
-    "coveragePctL2Plus": 85.7,
+    "coveragePctL2Plus": 89.1,
     "l2BackfillAt": "2026-09-12T11:59:19.847671Z",
     "censusCoreL2Members": "3 PASS / 1 PARTIAL / 1 FAIL (crm-hub KPI vs empty Insights)",
     "censusCoreL2": "Members 3P/1Part/1F \u00b7 Timetable L2_FAIL (fill-rate + cover cost + cover copy)",
@@ -116,7 +116,15 @@
     "scorePushWrap": "Done: tip refresh, Dispatch PASS (ambient 92), canary FAIL hold 52, AI-85 hold 56, Cluster A 24/24 (CC 80), ISO hold 86. Headline 66%. Need Declan: Comms secrets, smoke fixtures, PA seat.",
     "censusLongtailL2Staff": "0 PASS / 16 PARTIAL / 11 FAIL \u2014 onboarding tiles, rota KPIs, name/employment disagree",
     "censusLongtailL2SafeStudio": "2 PASS (cctv-hub, camio-live) / 19 PARTIAL / 5 FAIL",
-    "censusLongtailL2Complete": "53 routes: 2 PASS / 35 PARTIAL / 16 FAIL \u2014 daily L2 wave complete",
+    "censusLongtailL2Complete": {
+      "pass": 0,
+      "partial": 14,
+      "fail": 0,
+      "tip": "6486be87",
+      "totalJsonl": 157,
+      "at": "2026-09-13T05:44:53.349302+00:00",
+      "note": "Settings+long-tail L2 wave 157/157 complete"
+    },
     "censusContentL2Website": "14 PASS / 11 PARTIAL / 1 FAIL (Website Health check)",
     "censusCommsL2Marketing": "10 PASS / 14 PARTIAL / 1 FAIL (newsletter-analytics-legacy import error)",
     "censusAiL2Intel": "24 PASS / 6 PARTIAL / 7 FAIL \u2014 reports-hub Refrm heat-map leak; mrr crash confirmed",
