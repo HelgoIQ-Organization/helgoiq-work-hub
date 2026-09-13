@@ -1,6 +1,6 @@
 # Joyful · Obvious · Frictionless — UX Feel bar
 
-**Updated:** 2026-09-13T05:10:17Z · **Tip at board:** `6486be87a688…`  
+**Updated:** 2026-09-13T05:39:33Z · **Tip at board:** `6486be87a688…`
 **Bar:** joyful / obvious / frictionless vs WhatsApp & Slack
 
 ## How to read this board
@@ -40,7 +40,7 @@ This is **not** the launch readiness % on the Dashboard tab.
 | [Timetable & bookings](surfaces/timetable.md) | `provisional_from_evidence` | 45 | 48 | 42 | **45** |
 | [Finance / payments UI](surfaces/finance.md) | `provisional_from_evidence` | 32 | 28 | 35 | **32** |
 | [Staff hub](surfaces/staff.md) | `provisional_from_evidence` | 30 | 25 | 35 | **30** |
-| [Marketing / campaigns](surfaces/marketing.md) | `provisional_from_evidence` | 48 | 50 | 45 | **48** |
+| [Marketing / campaigns](surfaces/marketing.md) | `measured` | 68 | 72 | 58 | **66** |
 | [Website / CMS](surfaces/website.md) | `provisional_from_evidence` | 52 | 55 | 50 | **52** |
 | [Academy / LMS](surfaces/academy.md) | `provisional_from_evidence` | 35 | 18 | 30 | **28** |
 | [Safe Studio](surfaces/safe-studio.md) | `provisional_from_evidence` | 40 | 35 | 42 | **39** |

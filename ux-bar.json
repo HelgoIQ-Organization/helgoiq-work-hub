@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T05:38:13.925457+00:00",
+  "updatedAt": "2026-09-13T05:39:49.746482+00:00",
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
   "rubric": {
@@ -9,11 +9,11 @@
     "overall": "round((joyful + obvious + frictionless) / 3)"
   },
   "headline": {
-    "joyful": 40,
-    "obvious": 37,
+    "joyful": 41,
+    "obvious": 39,
     "frictionless": 39,
-    "overall": 39,
-    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %. Intelligence now measured."
+    "overall": 40,
+    "note": "Equal-weight across surfaces. Marketing now measured (66 overall)."
   },
   "honesty": {
     "measured": "Only team-chat from /workspace/helgoiq-chat-qa Sep 1 report.",
@@ -277,28 +277,35 @@
       "id": "marketing",
       "name": "Marketing / campaigns",
       "pathHint": "/admin/marketing",
-      "basis": "provisional_from_evidence",
-      "confidence": "medium",
+      "basis": "measured",
+      "confidence": "high",
       "scoredAt": "2026-09-13",
       "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 48,
-      "obvious": 50,
-      "frictionless": 45,
-      "overall": 48,
-      "plainSummary": "Provisional from Marketing (Comms) L2: 10 PASS / 14 PARTIAL / 1 FAIL. Stronger reachability than finance/staff, but Comms secrets still block real send joy, and campaign empty states need warmth.",
+      "joyful": 68,
+      "obvious": 72,
+      "frictionless": 58,
+      "overall": 66,
+      "plainSummary": "Measured Admin 2 walk on tip 6486be87. Warmth and clarity beat the mid provisional; friction is Inbox density (clipped rails, status contradiction, 1850% Active Members), splash hops, and en-GB vs mm/dd/yyyy \u2014 not Meta/send secrets.",
       "strengths": [
-        "10 L2 PASS routes in marketing wave",
-        "Meta Hub / invite-staff aliases land somewhere useful"
+        "Verdant editorial system and clear hub tabs",
+        "Newsletter 10-minute journey + AI CTA",
+        "Warm Banners empty state; Social connection honesty",
+        "Campaigns / Audience with real counts and next actions"
       ],
-      "findings": [],
+      "findings": [
+        "Inbox rails clip; Browser ON vs setup needed",
+        "Inbox Reporting % Active Members shows 1850%",
+        "Campaign schedule hint mm/dd/yyyy under en-GB",
+        "Full-page splash on in-app Marketing hops"
+      ],
       "suggestions": [
-        "Warm empty campaign list with first-campaign template",
-        "Label send/preview clearly; hide dead send until secrets present",
-        "One path from audience \u2192 campaign \u2192 send status",
-        "Don't leave owners on PARTIAL aliases without breadcrumb truth",
-        "Phone: campaign builder fields stack without horizontal scroll"
+        "Fix Inbox clipped rails + Browser status contradiction",
+        "Fix % Active Members 1850% card",
+        "Locale-aware schedule date for en-GB",
+        "Skeleton in shell instead of full splash",
+        "One why-blocked / what-next pattern for disconnected channels"
       ],
-      "evidenceNote": "Progress 13 Sep: Marketing (Comms) 10P / 14Part / 1F. Comms strand still ~15% blocked on Resend/Agentmail secrets.",
+      "evidenceNote": "Measured Feel walk 2026-09-13 tip 6486be87 \u2014 lightened vs provisional. See REVIEW + FIX_CANDIDATE.",
       "detailDropId": "2026-09-13-ux-bar-feel",
       "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/marketing.md"
     },
