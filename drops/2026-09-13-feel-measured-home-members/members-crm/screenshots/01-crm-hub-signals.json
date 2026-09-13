@@ -1,0 +1,167 @@
+{
+  "timing": {
+    "navMs": 21308,
+    "firstMeaningfulMs": 18389,
+    "afterSplash": {
+      "stillLoading": false,
+      "textStart": "TEST DATA\nBluebird Pilates — TEST DATA (fabricated)\nTEST DATA\nADMIN\nHome\n\nRECENT\n\nCRM & Acquisition\nMorning Dispatch\nMRR Intelligence\nOverview\nHome\nHome\nStudio\nMembers\nDirectory\nTraining\nCRM\nJourneys\nRetention\nMarketing\nTeam\nAcademy\nFinance\nExperiences\nSettings\nMENU\n280PX\n\nSWITCH VIEW\n\nTeacher View\n"
+    }
+  },
+  "sig": {
+    "url": "https://lobster-app-662c7.ondigitalocean.app/admin/crm-hub?c=150002",
+    "title": "Bluebird Pilates — TEST DATA (fabricated)",
+    "hasRefrm": false,
+    "hasAlaska": false,
+    "hasSplash": false,
+    "loading": false,
+    "skeleton": false,
+    "buttons": [
+      "Collapse sidebar",
+      "Home",
+      "CRM & Acquisition",
+      "Morning Dispatch",
+      "MRR Intelligence",
+      "Overview",
+      "Home",
+      "Home",
+      "Expand Home",
+      "Studio",
+      "Expand Studio",
+      "Members",
+      "Collapse Members",
+      "Directory",
+      "Unpin Directory from dock",
+      "Training",
+      "Pin Training to dock",
+      "CRM",
+      "Pin CRM to dock",
+      "Journeys",
+      "Pin Journeys to dock",
+      "Retention",
+      "Pin Retention to dock",
+      "Marketing",
+      "Expand Marketing",
+      "Team",
+      "Expand Team",
+      "Academy",
+      "Expand Academy",
+      "Finance",
+      "Expand Finance",
+      "Experiences",
+      "Expand Experiences",
+      "Settings",
+      "Expand Settings",
+      "Teacher View",
+      "Client View",
+      "helgoiq-bb-admin-2@agentmail.to",
+      "Admin",
+      "Home",
+      "CRM & Acquisition",
+      "Morning Dispatch",
+      "MRR Intelligence",
+      "Overview",
+      "Home",
+      "Home",
+      "Expand Home",
+      "Studio",
+      "Expand Studio",
+      "Members",
+      "Collapse Members",
+      "Directory",
+      "Unpin Directory from dock",
+      "Training",
+      "Pin Training to dock",
+      "CRM",
+      "Pin CRM to dock",
+      "Journeys",
+      "Pin Journeys to dock",
+      "Retention",
+      "Pin Retention to dock",
+      "Marketing",
+      "Expand Marketing",
+      "Team",
+      "Expand Team",
+      "Academy",
+      "Expand Academy",
+      "Finance",
+      "Expand Finance",
+      "Experiences",
+      "Expand Experiences",
+      "Settings",
+      "Expand Settings",
+      "Teacher View",
+      "Client View",
+      "helgoiq-bb-admin-2@agentmail.to",
+      "Back to previous admin screen",
+      "Back to previous admin screen",
+      "Ask Command Centre about CRM Hub",
+      "Open admin navigation"
+    ],
+    "headings": [
+      "CRM & Acquisition",
+      "Sales Pipeline",
+      "Trial"
+    ],
+    "tabs": [
+      "Pipeline",
+      "Funnel",
+      "Automations",
+      "Acquisition Report",
+      "Channel Intelligence",
+      "AI Audience Intelligence",
+      "AI Performance Intelligence",
+      "Insights"
+    ],
+    "kpiLike": [
+      "QR Checkout Trace qr_payment:8XT6fsc qr-checkout-trace@example.test 9/12/2026",
+      "QR Checkout Test qr_payment:8XT6fsc qr-checkout-test@example.test 9/12/2026",
+      "BB Smoke Sep8-2 form:e2e-studio-waiver-sep11 9/11/2026",
+      "Declan QR Test qr_payment:8XT6fsc helgoiq-bb-owner@agentmail.to 9/11/2026",
+      "E2E Member form:e2e-contact-test 9/11/2026",
+      "trial_pack helgoiq-bb-admin-2@agentmail.to 30.00 9/4/2026",
+      "Bluebird Member A trial_pack helgoiq-bb-member-a@agentmail.to 30.00 9/4/2026",
+      "MKTM1 JourneyTest Direct declaneryan71+mktm1@gmail.com 9/3/2026",
+      "Grok Bluebird Journey 0902 trial_pack declaneryan71+grok-retest-0902@gmail.com 30.00 9/2/2026",
+      "trial_pack declaneryan71+tester@gmail.com 30.00 9/2/2026"
+    ],
+    "clickables": [
+      {
+        "tag": "BUTTON",
+        "text": "helgoiq-bb-admin-2@agentmail.to",
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "helgoiq-bb-admin-2@agentmail.to",
+        "href": null
+      },
+      {
+        "tag": "A",
+        "text": "BB Smoke Sep8-2",
+        "href": "https://lobster-app-662c7.ondigitalocean.app/admin/crm/lead/12?c=150002"
+      },
+      {
+        "tag": "A",
+        "text": "E2E Member",
+        "href": "https://lobster-app-662c7.ondigitalocean.app/admin/crm/lead/10?c=150002"
+      },
+      {
+        "tag": "A",
+        "text": "MKTM1 JourneyTest",
+        "href": "https://lobster-app-662c7.ondigitalocean.app/admin/crm/lead/7?c=150002"
+      },
+      {
+        "tag": "A",
+        "text": "Grok Bluebird Journey 0902",
+        "href": "https://lobster-app-662c7.ondigitalocean.app/admin/crm/lead/5?c=150002"
+      }
+    ],
+    "textLen": 1371,
+    "hasBluebird": true,
+    "hasAdmin2": true,
+    "viewport": {
+      "w": 1440,
+      "h": 900
+    }
+  }
+}

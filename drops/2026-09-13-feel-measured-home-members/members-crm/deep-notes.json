@@ -1,0 +1,96 @@
+{
+  "aiPerf": {
+    "tabClicked": "AI Performance Intelligence",
+    "url": "https://lobster-app-662c7.ondigitalocean.app/admin/crm-hub?c=150002&tab=performance",
+    "text": "TEST DATA\nBluebird Pilates — TEST DATA (fabricated)\nTEST DATA\nADMIN\nHome\n\nRECENT\n\nIntelligence Centre\nAcquisition\nCRM & Acquisition\nMorning Dispatch\nMRR Intelligence\nHome\nStudio\nMembers\nDirectory\nTraining\nCRM\nJourneys\nRetention\nMarketing\nTeam\nAcademy\nFinance\nExperiences\nSettings\nMENU\n280PX\n\nSWITCH VIEW\n\nTeacher View\nClient View\n\nhelgoiq-bb-admin-2@agentmail.to\n\nCRM & Acquisition\nSuggest Feature\nHelp\n\nSales pipeline, automations, acquisition reporting, and audience intelligence.\n\nPipeline\nFunnel\nAutomations\nAcquisition Report\nChannel Intelligence\nAI Audience Intelligence\nAI Performance Intelligence\nInsights\nAI Performance Intelligence\n\nLLM-generated business insights with actionable plans — value-led, never price increases\n\nGenerate Insights\n\nTotal Insights\n\n10\n\nNew (Unread)\n\n10\n\nActioned\n\n0\n\nCritical\n\n3\n\nAll\nNew\nAcknowledged\nActioned\nDismissed\nRefresh\nZero Class Attendance From Bookings\ncritical\nESTIMATED\nEngagement\n\nDespite 26 classes being booked this month, no members attended, resulting in a 0% attendance rate.\n\nThe studio recorded 26 bookings this month, a significant increase compared to 0 bookings last month. However, 0 members actually attended any classes, leading to an attendance rate of 0%. This indicates a critical issue where members are booking but not physically turning up for their scheduled sessions.\n\nESTIMATED\nDespite 26 classes being booked this month, no members attended, resulting in a 0% attendance rate.\n\nDRIVING SIGNALS\n\nDerived from real booking, revenue, and capacity data for this studio\nThe studio recorded 26 bookings this month, a significant increase compared to 0 bookings last month. However, 0 members actually attended any classes, leading to an attendance rate of 0%. This indicates a critical issue where members are booking but not physically turning up for their scheduled sessions.\n\nMODERATING SIGNALS\n\nInsight interpretation is AI-generated and may not account for all business context\nThis model has not yet been validated against outcomes\n\nThis model has not yet been validated against outcomes.\n\nBookings this month:\n26\nAttended this month:\n0\nAttendance rate:\n0\n\nSuggested Action\nSUGGESTED\n\nInvestigate the reasons why booked classes are not being attended. Consider implementing a system for pre-class reminders and post-class feedback to understand barriers to attendance. Explore options for simpler cancellation processes if members are reluctant to attend.\n\nSUGGESTED\nAI-drafted · review before sending\nGet Action Plan\nAcknowledge\nMark Actioned\nDismiss\nInitial Revenue Generation Achieved\npositive\nESTIMATED\nRevenue\n\nThe studio generated 67 credits in revenue this month, a positive development from no revenue in the previous month.\n\nRevenue for this month stands at 67 credits, a clear improvement from 0 credits last month. This initial revenue indicates some successful monetisation. However, it is important to note this revenue was generated while class attendance remained at 0%.\n\nESTIMATED\nThe studio generated 67 credits in revenue this month, a positive development from no revenue in the previous month.\n\nDRIVING SIGNALS\n\nDerived from real booking, revenue, and capacity data for this studio\nRevenue for this month stands at 67 credits, a clear improvement from 0 credits last month. This initial revenue indicates some successful monetisation. However, it is important to note this revenue was generated while class attendance remained at 0%.\n\nMODERATING SIGNALS\n\nInsight interpretation is AI-generated and may not account for all business context\nThis model has not yet been validated against outcomes\n\nThis model has not yet been validated against outcomes.\n\nRevenue this month:\n67\nRevenue last month:\n0\nAttended this month:\n0\n\nSuggested Action\nSUGGESTED\n\nAcknowledge the positive step in generating revenue. Focus on understanding the source of this revenue and connecting it more directly to member engagement and class attendance to ensure sustained income and member satisfaction.\n\nSUGGESTED\nAI-drafted · revie"
+  },
+  "nav-crm-hub?c=150002&tab=insights": {
+    "url": "https://lobster-app-662c7.ondigitalocean.app/admin/crm-hub?c=150002&tab=insights",
+    "snippet": "TEST DATA\nBluebird Pilates — TEST DATA (fabricated)\nTEST DATA\nADMIN\nHome\n\nRECENT\n\nCRM & Acquisition\nMember Feedback\nHome\nOverview\nMorning Dispatch\nHome\nStudio\nMembers\nDirectory\nTraining\nCRM\nJourneys\nRetention\nMarketing\nTeam\nAcademy\nFinance\nExperiences\nSettings\nMENU\n280PX\n\nSWITCH VIEW\n\nTeacher View\nClient View\n\nhelgoiq-bb-admin-2@agentmail.to\n\nLoading admin workspace\n\nPreparing this page and its latest data…\n\nMembers\nInbox\nTimetable"
+  },
+  "nav-performance-insights?c=150002": {
+    "url": "https://lobster-app-662c7.ondigitalocean.app/admin/performance-insights?c=150002",
+    "snippet": "TEST DATA\nBluebird Pilates — TEST DATA (fabricated)\nTEST DATA\nADMIN\nHome\n\nRECENT\n\nIntelligence Centre\nAcquisition\nCRM & Acquisition\nMorning Dispatch\nMRR Intelligence\nHome\nStudio\nMembers\nDirectory\nTraining\nCRM\nJourneys\nRetention\nMarketing\nTeam\nAcademy\nFinance\nExperiences\nSettings\nMENU\n280PX\n\nSWITCH VIEW\n\nTeacher View\nClient View\n\nhelgoiq-bb-admin-2@agentmail.to\n\nThis admin page is unavailable\n\nThis link may be out of date, or the page may not be available in your workspace yet. Your other admin tools are still available.\n\nOpen Home\nGo to Home\nGo back\nMembers\nInbox\nTimetable"
+  },
+  "nav-performance?c=150002": {
+    "url": "https://lobster-app-662c7.ondigitalocean.app/admin/crm/performance?c=150002",
+    "snippet": "Bluebird Pilates — TEST DATA (fabricated)\nTEST DATA\nADMIN\nHome\n\nRECENT\n\nIntelligence Centre\nAcquisition\nCRM & Acquisition\nMorning Dispatch\nMRR Intelligence\nHome\nStudio\nMembers\nDirectory\nTraining\nCRM\nJourneys\nRetention\nMarketing\nTeam\nAcademy\nFinance\nExperiences\nSettings\nMENU\n280PX\n\nSWITCH VIEW\n\nTeacher View\nClient View\n\nhelgoiq-bb-admin-2@agentmail.to\n\nThis admin page is unavailable\n\nThis link may be out of date, or the page may not be available in your workspace yet. Your other admin tools are still available.\n\nOpen Home\nGo to Home\nGo back\nMembers\nInbox\nTimetable"
+  },
+  "members": {
+    "url": "https://lobster-app-662c7.ondigitalocean.app/admin/members?c=150002",
+    "text": "TEST DATA\nBluebird Pilates — TEST DATA (fabricated)\nTEST DATA\nADMIN\nHome\n\nRECENT\n\nMembers\nCampaigns\nIntelligence Centre\nAcquisition\nCRM & Acquisition\nHome\nStudio\nMembers\nDirectory\nTraining\nCRM\nJourneys\nRetention\nMarketing\nTeam\nAcademy\nFinance\nExperiences\nSettings\nMENU\n280PX\n\nSWITCH VIEW\n\nTeacher View\nClient View\n\nhelgoiq-bb-admin-2@agentmail.to\n\nPEOPLE\n\nMembers\n11 total members\nAdd Member\nSuggest Feature\nHelp\nMember invitations\n\n2 pending · 10 historical\n\nShow audit log\nAwaiting response (2)\n\nBB Invite Retest Sep12\n\nhelgoiq-bb-invite-e2e@agentmail.to\n\nSent 12 Sept 2026 · Expires 19 Sept 2026\n\nCopy link\nResend\nRevoke invitation for helgoiq-bb-invite-e2e@agentmail.to\n\nBB Related2 Smoke\n\nhelgoiq-bb-related-2@agentmail.to\n\nSent 8 Sept 2026 · Expires 15 Sept 2026\n\nCopy link\nResend\nRevoke invitation for helgoiq-bb-related-2@agentmail.to\nInvitation history (10)\nTotal Active Members\n\n9\n\nNew\n\nvs 30 days ago\n\nNew This Month\n\n6\n\nFirst period start · UTC month · same as Memberships report\n\nChurn Rate\n\n60%\n\n3 cancellations this UTC month · same as Memberships report\n\nAvg Credit Balance\n\n7\n\nCredits per active member\n\nAll Members\nDuplicates\nInsights\nFilter\n\tMember\tHome Studio\tJoined\tMembership\tCredits\t\n\n\t\n\nBB Smoke Sep8-2\n\nhelgoiq-bb-smoke-2@agentmail.to\n\n\tBluebird Central\t11 Sept 2026\t\nactive\n\nBluebird 8\n\n\t\n\t\n\n\t\n\nBB Smoke Sep8\n\nhelgoiq-bb-smoke@agentmail.to\n\n\tBluebird Central\t10 Sept 2026\t\npaused\n\nBluebird 8\n\n\t\n\t\n\n\t\n\nBB Member B\n\nhelgoiq-bb-member-b@agentmail.to\n\n\tBluebird Central\t7 Sept 2026\t\nactive\n\nBluebird 8\n\n\t\n\t\n\n\t\n\nMember A\n\nhelgoiq-bb-member-a@agentmail.to\n\n\tBluebird Central\t4 Sept 2026\t\ncancelling\n\nBluebird 8\n\n\t\n\t\n\n\t\n\nUnnamed\n\nhelgoiq-bb-admin-2@agentmail.to\n\n\tBluebird Central\t4 Sept 2026\t\ncancelling\n\nBluebird 8\n\n\t\n\t\n\n\t\n\nGrok Bluebird Chosen 0902\n\ndeclaneryan71+grok-retest-0902@gmail.com\n\n\tBluebird Central\t2 Sept 2026\t—\t\n\t\n\n\t\n\nDeclaneryan71 Tester\n\ndeclaneryan71+tester@gmail.com\n\n\tBluebird Central\t2 Sept 2026\t\ncancelling\n\nBluebird 8\n\n\t\n\t\n\n\t\n\nDeclan Ryan\n\ndeclan@helgoiq.com\n\n\t—\t13 Aug 2026\t—\t\n\t\n\n\t\n\nOtto Othertenant\nTEST DATA\n\nseed-decoy-otto@example.com\n\n\tBluebird Central\t7 Jul 2026\t—\t\n\t\n\n\t\n\nBianca Bluebird\nTEST DATA\n\nseed-decoy-bianca@example.com\n\n\tBluebird Central\t7 Jul 2026\t—\t\n\t\n\n\t\n\nDeclan Ryan\n\ndeclaneryan71@gmail.com\n\n\t—\t27 Apr 2026\t—\t\n\t\nMembers\nInbox\nTimetable"
+  },
+  "directory": {
+    "path": "/admin/directory",
+    "url": "https://lobster-app-662c7.ondigitalocean.app/admin/directory?c=150002",
+    "text": "TEST DATA\nBluebird Pilates — TEST DATA (fabricated)\nTEST DATA\nADMIN\nHome\n\nRECENT\n\nStudio Intelligence\nMembers\nCampaigns\nIntelligence Centre\nAcquisition\nHome\nStudio\nMembers\nDirectory\nTraining\nCRM\nJourneys\nRetention\nMarketing\nTeam\nAcademy\nFinance\nExperiences\nSettings\nMENU\n280PX\n\nSWITCH VIEW\n\nTeacher View\nClient View\n\nhelgoiq-bb-admin-2@agentmail.to\n\nThis admin page is unavailable\n\nThis link may be out of date, or the page may not be available in your workspace yet. Your other admin tools are still available.\n\nOpen Home\nGo to Home\nGo back\nMembers\nInbox\nTimetable"
+  },
+  "leadBack": [
+    {
+      "text": "CRM",
+      "href": "https://lobster-app-662c7.ondigitalocean.app/admin/crm-hub?c=150002"
+    },
+    {
+      "text": "",
+      "href": null
+    },
+    {
+      "text": "CRM",
+      "href": "https://lobster-app-662c7.ondigitalocean.app/admin/crm-hub?c=150002"
+    },
+    {
+      "text": "",
+      "href": null
+    },
+    {
+      "text": "",
+      "href": null
+    },
+    {
+      "text": "",
+      "href": null
+    },
+    {
+      "text": "",
+      "href": null
+    }
+  ],
+  "afterBack": "https://lobster-app-662c7.ondigitalocean.app/admin/crm-hub?c=150002",
+  "funnel": {
+    "url": "https://lobster-app-662c7.ondigitalocean.app/admin/crm-hub?c=150002",
+    "text": "TEST DATA\nBluebird Pilates — TEST DATA (fabricated)\nTEST DATA\nADMIN\nHome\n\nRECENT\n\nStudio Intelligence\nMembers\nCampaigns\nIntelligence Centre\nAcquisition\nHome\nStudio\nMembers\nDirectory\nTraining\nCRM\nJourneys\nRetention\nMarketing\nTeam\nAcademy\nFinance\nExperiences\nSettings\nMENU\n280PX\n\nSWITCH VIEW\n\nTeacher View\nClient View\n\nhelgoiq-bb-admin-2@agentmail.to\n\nCRM & Acquisition\n\nSales pipeline, automations, acquisition reporting, and audience intelligence.\n\nPipeline\nFunnel\nAutomations\nAcquisition Report\nChannel Intelligence\nAI Audience Intelligence\nAI Performance Intelligence\nInsights\nSales Pipeline\n\n10 leads in pipeline\n\nAdd Lead\nSuggest Feature\nHelp\nTrial\n10\nQR Checkout Trace\n\nqr_payment:8XT6fsc\n\nqr-checkout-trace@example.test\n9/12/2026\nQR Checkout Test\n\nqr_payment:8XT6fsc\n\nqr-checkout-test@example.test\n9/12/2026\nBB Smoke Sep8-2\n\nform:e2e-studio-waiver-sep11\n\n9/11/2026\nDeclan QR Test\n\nqr_payment:8XT6fsc\n\nhelgoiq-bb-owner@agentmail.to\n9/11/2026\nE2E Member\n\nform:e2e-contact-test\n\n9/11/2026\n\ntrial_pack\n\nhelgoiq-bb-admin-2@agentmail.to\n30.00\n9/4/2026\nBluebird Member A\n\ntrial_pack\n\nhelgoiq-bb-member-a@agentmail.to\n30.00\n9/4/2026\nMKTM1 JourneyTest\n\nDirect\n\ndeclaneryan71+mktm1@gmail.com\n9/3/2026\nGrok Bluebird Journey 0902\n\ntrial_pack\n\ndeclaneryan71+grok-retest-0902@gmail.com\n30.00\n9/2/2026\n\ntrial_pack\n\ndeclaneryan71+tester@gmail.com\n30.00\n9/2/2026\nMembers\nInbox\nTimetable"
+  },
+  "aiPerfRetry": {
+    "names": [
+      "Pipeline",
+      "Funnel",
+      "Automations",
+      "Acquisition Report",
+      "Channel Intelligence",
+      "AI Audience Intelligence",
+      "AI Performance Intelligence",
+      "Insights"
+    ],
+    "clicked": "AI Performance Intelligence",
+    "url": "https://lobster-app-662c7.ondigitalocean.app/admin/crm-hub?c=150002&tab=performance",
+    "text": "TEST DATA\nBluebird Pilates — TEST DATA (fabricated)\nTEST DATA\nADMIN\nHome\n\nRECENT\n\nStudio Intelligence\nMembers\nCampaigns\nIntelligence Centre\nAcquisition\nHome\nStudio\nMembers\nDirectory\nTraining\nCRM\nJourneys\nRetention\nMarketing\nTeam\nAcademy\nFinance\nExperiences\nSettings\nMENU\n280PX\n\nSWITCH VIEW\n\nTeacher View\nClient View\n\nhelgoiq-bb-admin-2@agentmail.to\n\nCRM & Acquisition\nSuggest Feature\nHelp\n\nSales pipeline, automations, acquisition reporting, and audience intelligence.\n\nPipeline\nFunnel\nAutomations\nAcquisition Report\nChannel Intelligence\nAI Audience Intelligence\nAI Performance Intelligence\nInsights\nAI Performance Intelligence\n\nLLM-generated business insights with actionable plans — value-led, never price increases\n\nGenerate Insights\n\nTotal Insights\n\n10\n\nNew (Unread)\n\n10\n\nActioned\n\n0\n\nCritical\n\n3\n\nAll\nNew\nAcknowledged\nActioned\nDismissed\nRefresh\nZero Class Attendance From Bookings\ncritical\nESTIMATED\nEngagement\n\nDespite 26 classes being booked this month, no members attended, resulting in a 0% attendance rate.\n\nThe studio recorded 26 bookings this month, a significant increase compared to 0 bookings last month. However, 0 members actually attended any classes, leading to an attendance rate of 0%. This indicates a critical issue where members are booking but not physically turning up for their scheduled sessions.\n\nESTIMATED\nDespite 26 classes being booked this month, no members attended, resulting in a 0% attendance rate.\n\nDRIVING SIGNALS\n\nDerived from real booking, revenue, and capacity data for this studio\nThe studio recorded 26 bookings this month, a significant increase compared to 0 bookings last month. However, 0 members actually attended any classes, leading to an attendance rate of 0%. This indicates a critical issue where members are booking but not physically turning up for their scheduled sessions.\n\nMODERATING SIGNALS\n\nInsight interpretation is AI-generated and may not account for all business context\nThis model has not yet been validated against outcomes\n\nThis model has not yet been validated against outcomes.\n\nBookings this month:\n26\nAttended this month:\n0\nAttendance rate:\n0\n\nSuggested Action\nSUGGESTED\n\nInvestigate the reasons why booked classes are not being attended. Consider implementing a system for pre-class reminders and post-class feedback to understand barriers to attendance. Explore options for simpler cancellation processes if members are reluctant to attend.\n\nSUGGESTED\nAI-drafted · review before sending\nGet Action Plan\nAcknowledge\nMark Actioned\nDismiss\nInitial Revenue Generation Achieved\npositive\nESTIMATED\nRevenue\n\nThe studio generated 67 credits in revenue this month, a positive development from no revenue in the previous month.\n\nRevenue for this month stands at 67 credits, a clear improvement from 0 credits last month. This initial revenue indicates some successful monetisation. However, it is important to note this revenue was generated while class attendance remained at 0%.\n\nESTIMATED\nThe studio generated 67 credits in revenue this month, a positive development from no revenue in the previous month.\n\nDRIVING SIGNALS\n\nDerived from real booking, revenue, and capacity data for this studio\nRevenue for this month stands at 67 credits, a clear improvement from 0 credits last month. This initial revenue indicates some successful monetisation. However, it is important to note this revenue was generated while class attendance remained at 0%.\n\nMODERATING SIGNALS\n\nInsight interpretation is AI-generated and may not account for all business context\nThis model has not yet been validated against outcomes\n\nThis model has not yet been validated against outcomes.\n\nRevenue this month:\n67\nRevenue last month:\n0\nAttended this month:\n0\n\nSuggested Action\nSUGGESTED\n\nAcknowledge the positive step in generating revenue. Focus on understanding the source of this revenue and connecting it more directly to member engagement and class attendance to ensure sustained income and member satisfaction.\n\nSUGGESTED\nAI-drafted · review before sending\nGet Action Plan\nAcknowledge\nMark Actioned\nDismiss\nSignificant Member Churn Risk\nwarning\nESTIMATED\nrisk\n\nOne member, accounting for 17% of the total member base, is currently at a high or critical risk of churn.\n\nOut of 6 total members, one member is identified as being at high or critical churn risk. This represents 17% of the entire member base. This risk is amplified by the general lack of attendance across the studio this month.\n\nESTIMATED\nOne member, accounting for 17% of the total member base, is currently at a high or critical risk of churn.\n\nDRIVING SIGNALS\n\nDerived from real booking, revenue, and capacity data for this studio\nOut of 6 total members, one member is identified as being at high or critical churn risk. This represents 17% of the entire member base. This risk is amplified by the general lack of attendance across the studio this month.\n\nMODERATING SIGNALS\n\nInsight interpretation is AI-generated and may not account for all business context\nThis model has not yet bee"
+  },
+  "aiPerfAnalysis": {
+    "emptyMsgs": [
+      "0 members",
+      "0 members"
+    ],
+    "bigNumbers": [
+      "Total Insights 10",
+      "New (Unread) 10",
+      "Actioned 0",
+      "Critical 3",
+      "Zero Class Attendance From Bookings critical ESTIMATED Engagement Despite 26 classes being booked th",
+      "Initial Revenue Generation Achieved positive ESTIMATED Revenue The studio generated 67 credits in re",
+      "Significant Member Churn Risk warning ESTIMATED risk One member, accounting for 17% of the total mem",
+      "Complete Absence of Class Attendance critical ESTIMATED Engagement Despite 6 bookings being made thi",
+      "High Proportion of Churn Risk Members warning ESTIMATED risk One quarter of the total member base, 1"
+    ],
+    "title": "Bluebird Pilates — TEST DATA (fabricated)"
+  }
+}

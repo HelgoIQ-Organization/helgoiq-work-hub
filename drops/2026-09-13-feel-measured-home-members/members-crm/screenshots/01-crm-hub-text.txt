@@ -1,0 +1,121 @@
+TEST DATA
+Bluebird Pilates — TEST DATA (fabricated)
+TEST DATA
+ADMIN
+Home
+
+RECENT
+
+CRM & Acquisition
+Morning Dispatch
+MRR Intelligence
+Overview
+Home
+Home
+Studio
+Members
+Directory
+Training
+CRM
+Journeys
+Retention
+Marketing
+Team
+Academy
+Finance
+Experiences
+Settings
+MENU
+280PX
+
+SWITCH VIEW
+
+Teacher View
+Client View
+
+helgoiq-bb-admin-2@agentmail.to
+
+CRM & Acquisition
+
+Sales pipeline, automations, acquisition reporting, and audience intelligence.
+
+Pipeline
+Funnel
+Automations
+Acquisition Report
+Channel Intelligence
+AI Audience Intelligence
+AI Performance Intelligence
+Insights
+Sales Pipeline
+
+10 leads in pipeline
+
+Add Lead
+Suggest Feature
+Help
+Trial
+10
+QR Checkout Trace
+
+qr_payment:8XT6fsc
+
+qr-checkout-trace@example.test
+9/12/2026
+QR Checkout Test
+
+qr_payment:8XT6fsc
+
+qr-checkout-test@example.test
+9/12/2026
+BB Smoke Sep8-2
+
+form:e2e-studio-waiver-sep11
+
+9/11/2026
+Declan QR Test
+
+qr_payment:8XT6fsc
+
+helgoiq-bb-owner@agentmail.to
+9/11/2026
+E2E Member
+
+form:e2e-contact-test
+
+9/11/2026
+
+trial_pack
+
+helgoiq-bb-admin-2@agentmail.to
+30.00
+9/4/2026
+Bluebird Member A
+
+trial_pack
+
+helgoiq-bb-member-a@agentmail.to
+30.00
+9/4/2026
+MKTM1 JourneyTest
+
+Direct
+
+declaneryan71+mktm1@gmail.com
+9/3/2026
+Grok Bluebird Journey 0902
+
+trial_pack
+
+declaneryan71+grok-retest-0902@gmail.com
+30.00
+9/2/2026
+
+trial_pack
+
+declaneryan71+tester@gmail.com
+30.00
+9/2/2026
+Members
+Inbox
+Timetable

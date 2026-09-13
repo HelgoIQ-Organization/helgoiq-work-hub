@@ -1,0 +1,263 @@
+TEST DATA
+Bluebird Pilates — TEST DATA (fabricated)
+TEST DATA
+ADMIN
+Home
+
+RECENT
+
+Studio Intelligence
+Members
+Campaigns
+Intelligence Centre
+Acquisition
+Home
+Studio
+Members
+Directory
+Training
+CRM
+Journeys
+Retention
+Marketing
+Team
+Academy
+Finance
+Experiences
+Settings
+MENU
+280PX
+
+SWITCH VIEW
+
+Teacher View
+Client View
+
+helgoiq-bb-admin-2@agentmail.to
+
+CRM & Acquisition
+Suggest Feature
+Help
+
+Sales pipeline, automations, acquisition reporting, and audience intelligence.
+
+Pipeline
+Funnel
+Automations
+Acquisition Report
+Channel Intelligence
+AI Audience Intelligence
+AI Performance Intelligence
+Insights
+AI Performance Intelligence
+
+LLM-generated business insights with actionable plans — value-led, never price increases
+
+Generate Insights
+
+Total Insights
+
+10
+
+New (Unread)
+
+10
+
+Actioned
+
+0
+
+Critical
+
+3
+
+All
+New
+Acknowledged
+Actioned
+Dismissed
+Refresh
+Zero Class Attendance From Bookings
+critical
+ESTIMATED
+Engagement
+
+Despite 26 classes being booked this month, no members attended, resulting in a 0% attendance rate.
+
+The studio recorded 26 bookings this month, a significant increase compared to 0 bookings last month. However, 0 members actually attended any classes, leading to an attendance rate of 0%. This indicates a critical issue where members are booking but not physically turning up for their scheduled sessions.
+
+ESTIMATED
+Despite 26 classes being booked this month, no members attended, resulting in a 0% attendance rate.
+
+DRIVING SIGNALS
+
+Derived from real booking, revenue, and capacity data for this studio
+The studio recorded 26 bookings this month, a significant increase compared to 0 bookings last month. However, 0 members actually attended any classes, leading to an attendance rate of 0%. This indicates a critical issue where members are booking but not physically turning up for their scheduled sessions.
+
+MODERATING SIGNALS
+
+Insight interpretation is AI-generated and may not account for all business context
+This model has not yet been validated against outcomes
+
+This model has not yet been validated against outcomes.
+
+Bookings this month:
+26
+Attended this month:
+0
+Attendance rate:
+0
+
+Suggested Action
+SUGGESTED
+
+Investigate the reasons why booked classes are not being attended. Consider implementing a system for pre-class reminders and post-class feedback to understand barriers to attendance. Explore options for simpler cancellation processes if members are reluctant to attend.
+
+SUGGESTED
+AI-drafted · review before sending
+Get Action Plan
+Acknowledge
+Mark Actioned
+Dismiss
+Initial Revenue Generation Achieved
+positive
+ESTIMATED
+Revenue
+
+The studio generated 67 credits in revenue this month, a positive development from no revenue in the previous month.
+
+Revenue for this month stands at 67 credits, a clear improvement from 0 credits last month. This initial revenue indicates some successful monetisation. However, it is important to note this revenue was generated while class attendance remained at 0%.
+
+ESTIMATED
+The studio generated 67 credits in revenue this month, a positive development from no revenue in the previous month.
+
+DRIVING SIGNALS
+
+Derived from real booking, revenue, and capacity data for this studio
+Revenue for this month stands at 67 credits, a clear improvement from 0 credits last month. This initial revenue indicates some successful monetisation. However, it is important to note this revenue was generated while class attendance remained at 0%.
+
+MODERATING SIGNALS
+
+Insight interpretation is AI-generated and may not account for all business context
+This model has not yet been validated against outcomes
+
+This model has not yet been validated against outcomes.
+
+Revenue this month:
+67
+Revenue last month:
+0
+Attended this month:
+0
+
+Suggested Action
+SUGGESTED
+
+Acknowledge the positive step in generating revenue. Focus on understanding the source of this revenue and connecting it more directly to member engagement and class attendance to ensure sustained income and member satisfaction.
+
+SUGGESTED
+AI-drafted · review before sending
+Get Action Plan
+Acknowledge
+Mark Actioned
+Dismiss
+Significant Member Churn Risk
+warning
+ESTIMATED
+risk
+
+One member, accounting for 17% of the total member base, is currently at a high or critical risk of churn.
+
+Out of 6 total members, one member is identified as being at high or critical churn risk. This represents 17% of the entire member base. This risk is amplified by the general lack of attendance across the studio this month.
+
+ESTIMATED
+One member, accounting for 17% of the total member base, is currently at a high or critical risk of churn.
+
+DRIVING SIGNALS
+
+Derived from real booking, revenue, and capacity data for this studio
+Out of 6 total members, one member is identified as being at high or critical churn risk. This represents 17% of the entire member base. This risk is amplified by the general lack of attendance across the studio this month.
+
+MODERATING SIGNALS
+
+Insight interpretation is AI-generated and may not account for all business context
+This model has not yet been validated against outcomes
+
+This model has not yet been validated against outcomes.
+
+High/critical churn risk members:
+1
+Total members:
+6
+Attendance rate:
+0
+
+Suggested Action
+SUGGESTED
+
+Prioritise engagement with the identified at-risk member. Develop a personalised retention strategy which could include direct communication to understand their needs or offering incentives to encourage their return to classes.
+
+SUGGESTED
+AI-drafted · review before sending
+Get Action Plan
+Acknowledge
+Mark Actioned
+Dismiss
+No New Member Acquisition
+warning
+ESTIMATED
+growth
+
+The studio has not acquired any new members this month, nor in the previous month, indicating a static member base.
+
+Both this month and last month recorded 0 new members. This metric shows no growth in the total member count over the 6 existing members. A consistent lack of new member acquisition can restrict the studio's potential for expansion.
+
+ESTIMATED
+The studio has not acquired any new members this month, nor in the previous month, indicating a static member base.
+
+DRIVING SIGNALS
+
+Derived from real booking, revenue, and capacity data for this studio
+Both this month and last month recorded 0 new members. This metric shows no growth in the total member count over the 6 existing members. A consistent lack of new member acquisition can restrict the studio's potential for expansion.
+
+MODERATING SIGNALS
+
+Insight interpretation is AI-generated and may not account for all business context
+This model has not yet been validated against outcomes
+
+This model has not yet been validated against outcomes.
+
+New members this month:
+0
+New members last month:
+0
+Total members:
+6
+
+Suggested Action
+SUGGESTED
+
+Implement strategies focused on attracting new clients. This could involve local community outreach, promotional offers for first-time visitors, or encouraging existing members, once they are attending, to refer friends. Addressing the attendance issues first would create a more inviting experience for potential new members.
+
+SUGGESTED
+AI-drafted · review before sending
+Get Action Plan
+Acknowledge
+Mark Actioned
+Dismiss
+Consistent New Member Acquisition and Initial Revenue
+positive
+ESTIMATED
+growth
+
+The studio has maintained its rate of new member acquisition, bringing in 2 new members this month, matching the previous month. This has contributed to 6 bookings and an initial revenue of 11 credits.
+
+The studio added 2 new members this month, demonstrating consistent growth compared to the previous month's intake of 2 new members. This growth has resulted in 6 bookings this month and generated 11 credits in revenue, an increase from 0 credits last month.
+
+ESTIMATED
+The studio has maintained its rate of new member acquisition, bringing in 2 new members this month, matching the previous month. This has contributed to 6 bookings and an initial revenue of 11 credits.
+
+DRIVING SIGNALS
+
+Derived from real booking, revenue, and capacity data for this studio
+The studio added 2 new members this month, demonstratin

@@ -1,0 +1,116 @@
+{
+  "timing": {
+    "navMs": 17838,
+    "firstMeaningfulMs": 15151,
+    "afterSplash": {
+      "stillLoading": false,
+      "textStart": "Bluebird Pilates — TEST DATA (fabricated)\n›\nAdmin View\nBluebird Pilates — TEST DATA (fabricated)\nAll Locations\nBluebird Pilates — TEST DATA (fabricated)\nTEST DATA\nAdmin\nA\nEVERYTHING\n\nRECENT\n\nOverview\nHome\nFinance & Payments\nReferral Programme\nExercises\nHome\nAI Command Centre\nStudio\nMembers\nMarketing"
+    }
+  },
+  "sig": {
+    "url": "https://lobster-app-662c7.ondigitalocean.app/admin?c=150002",
+    "title": "Bluebird Pilates — TEST DATA (fabricated)",
+    "hasRefrm": false,
+    "hasAlaska": false,
+    "hasSplash": false,
+    "loading": false,
+    "skeleton": false,
+    "buttons": [
+      "A",
+      "All Locations",
+      "Admin",
+      "A",
+      "Collapse sidebar",
+      "Overview",
+      "Home",
+      "Finance & Payments",
+      "Referral Programme",
+      "Exercises",
+      "Home",
+      "Collapse Home",
+      "AI Command Centre",
+      "Pin AI Command Centre to dock",
+      "Studio",
+      "Expand Studio",
+      "Members",
+      "Expand Members",
+      "Marketing",
+      "Expand Marketing",
+      "Team",
+      "Expand Team",
+      "Academy",
+      "Expand Academy",
+      "Finance",
+      "Expand Finance",
+      "Experiences",
+      "Expand Experiences",
+      "Settings",
+      "Expand Settings",
+      "Menu",
+      "Customise Home",
+      "psychology\nSTUDIO PULSE\n—\nINSUFFICIENT DATA",
+      "All",
+      "Bluebird Central",
+      "Bluebird North",
+      "History",
+      "Today's classes\n\nNone on the floor",
+      "Birthdays and milestones\n\nNone this week\n\nNo birthdays in the next 7 days.",
+      "Week at a glance",
+      "MON\n\n0%",
+      "TUE\n\n0%",
+      "WED\n\n0%",
+      "THU\n\n—",
+      "FRI\n\n5%",
+      "SAT\n\n—",
+      "SUN\n\n—",
+      "My tasks\n\n0 open\n\nNothing assigned to you.",
+      "Members",
+      "Inbox",
+      "Timetable"
+    ],
+    "headings": [
+      "Good morning, there"
+    ],
+    "tabs": [],
+    "kpiLike": [],
+    "clickables": [
+      {
+        "tag": "BUTTON",
+        "text": "Birthdays and milestones None this week No birthdays in the next 7 days.",
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "MON 0%",
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "TUE 0%",
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "WED 0%",
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "FRI 5%",
+        "href": null
+      },
+      {
+        "tag": "BUTTON",
+        "text": "My tasks 0 open Nothing assigned to you.",
+        "href": null
+      }
+    ],
+    "textLen": 1130,
+    "hasBluebird": true,
+    "hasAdmin2": false,
+    "viewport": {
+      "w": 1440,
+      "h": 900
+    }
+  }
+}

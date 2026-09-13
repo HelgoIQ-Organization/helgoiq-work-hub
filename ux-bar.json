@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T05:44:54Z",
+  "updatedAt": "2026-09-13T05:45:28.516494+00:00",
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
   "rubric": {
@@ -13,7 +13,7 @@
     "obvious": 39,
     "frictionless": 39,
     "overall": 40,
-    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %."
+    "note": "Equal-weight. Home+Members now measured (33 / 41)."
   },
   "honesty": {
     "measured": "Team-chat from /workspace/helgoiq-chat-qa Sep 1 report; Home + Members/CRM from /workspace/helgoiq-afternoon-2026-09-13/feel-measured REVIEW.md (Admin2 tip 6486be87).",
@@ -178,7 +178,7 @@
         "One clear next action on quiet days; fix Good morning, there",
         "Make KPI tiles drill + return"
       ],
-      "evidenceNote": "Measured feel walk 2026-09-13 Admin2 c=150002. Source: /workspace/helgoiq-afternoon-2026-09-13/feel-measured/home/REVIEW.md",
+      "evidenceNote": "Measured 2026-09-13. Refrm still on Overview. Low obvious from aggregate/misroute pain.",
       "detailDropId": "2026-09-13-ux-bar-feel",
       "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/home.md",
       "sourceReport": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/home/REVIEW.md"
@@ -235,7 +235,7 @@
         "Keep AI Performance KPI\u2194list contract; clarify Insights naming",
         "One-path Add Member from every Members entry"
       ],
-      "evidenceNote": "Measured feel walk 2026-09-13 Admin2 c=150002. L2 KPI-vs-empty Insights did not reproduce (list populated). Source: /workspace/helgoiq-afternoon-2026-09-13/feel-measured/members-crm/REVIEW.md",
+      "evidenceNote": "Measured 2026-09-13. Directory unavailable / count disagree / list buried.",
       "detailDropId": "2026-09-13-ux-bar-feel",
       "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/members-crm.md",
       "sourceReport": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/members-crm/REVIEW.md"

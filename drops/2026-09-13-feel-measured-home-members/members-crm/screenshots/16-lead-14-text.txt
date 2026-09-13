@@ -1,0 +1,67 @@
+TEST DATA
+Bluebird Pilates — TEST DATA (fabricated)
+TEST DATA
+ADMIN
+Home
+
+RECENT
+
+Studio Intelligence
+Members
+Campaigns
+Intelligence Centre
+Acquisition
+Home
+Studio
+Members
+Directory
+Training
+CRM
+Journeys
+Retention
+Marketing
+Team
+Academy
+Finance
+Experiences
+Settings
+MENU
+280PX
+
+SWITCH VIEW
+
+Teacher View
+Client View
+
+helgoiq-bb-admin-2@agentmail.to
+
+QR Checkout Trace
+
+Lead since 9/12/2026 · Source: qr_payment:8XT6fsc
+
+Trial
+Convert to Member
+Contact Details
+qr-checkout-trace@example.test
+Pipeline Stage
+Trial
+Notes
+
+QR payment form: E2E test payment
+
+Quick Actions
+Send Email
+Log Call
+Create Task
+Convert to Member
+Activity Timeline
+Phone call logged
+9/12/2026, 12:07:18 PM
+Lead created from QR payment form
+9/12/2026, 5:54:22 AM
+
+QR payment form: E2E test payment
+
+Members
+Inbox
+Timetable

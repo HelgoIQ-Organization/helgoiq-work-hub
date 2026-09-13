@@ -1,0 +1,74 @@
+[
+  {
+    "tag": "DIV",
+    "role": null,
+    "class": "flex flex-col gap-2",
+    "text": "All Companies Refrm Bluebird Pilates — TEST DATA (fabricated) Refrm Active 2 locations Bluebird Central Europe/London Bl"
+  },
+  {
+    "tag": "DIV",
+    "role": "tablist",
+    "class": "flex w-full max-w-full items-center border-b border-border gap-0 bg-transparent ",
+    "text": "All Companies Refrm"
+  },
+  {
+    "tag": "BUTTON",
+    "role": "tab",
+    "class": "inline-flex items-center justify-center px-4 py-2.5 text-sm font-medium whitespa",
+    "text": "Refrm"
+  },
+  {
+    "tag": "DIV",
+    "role": "tabpanel",
+    "class": "flex-1 outline-none",
+    "text": "Bluebird Pilates — TEST DATA (fabricated) Refrm Active 2 locations Bluebird Central Europe/London Bluebird North 1 Test "
+  },
+  {
+    "tag": "DIV",
+    "role": null,
+    "class": "space-y-4",
+    "text": "Bluebird Pilates — TEST DATA (fabricated) Refrm Active 2 locations Bluebird Central Europe/London Bluebird North 1 Test "
+  },
+  {
+    "tag": "DIV",
+    "role": null,
+    "class": "bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-[",
+    "text": "Bluebird Pilates — TEST DATA (fabricated) Refrm Active 2 locations Bluebird Central Europe/London Bluebird North 1 Test "
+  },
+  {
+    "tag": "DIV",
+    "role": null,
+    "class": "@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-",
+    "text": "Bluebird Pilates — TEST DATA (fabricated) Refrm Active 2 locations"
+  },
+  {
+    "tag": "DIV",
+    "role": null,
+    "class": "flex items-center justify-between",
+    "text": "Bluebird Pilates — TEST DATA (fabricated) Refrm Active 2 locations"
+  },
+  {
+    "tag": "DIV",
+    "role": null,
+    "class": "flex items-center gap-3",
+    "text": "Bluebird Pilates — TEST DATA (fabricated) Refrm Active"
+  },
+  {
+    "tag": "DIV",
+    "role": null,
+    "class": "",
+    "text": "Bluebird Pilates — TEST DATA (fabricated) Refrm Active"
+  },
+  {
+    "tag": "DIV",
+    "role": null,
+    "class": "flex items-center gap-2 mt-0.5",
+    "text": "Refrm Active"
+  },
+  {
+    "tag": "SPAN",
+    "role": null,
+    "class": "inline-flex items-center justify-center rounded-md border px-2 py-0.5 font-mediu",
+    "text": "Refrm"
+  }
+]

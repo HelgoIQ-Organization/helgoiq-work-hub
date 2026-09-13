@@ -1,0 +1,236 @@
+TEST DATA
+Bluebird Pilates — TEST DATA (fabricated)
+TEST DATA
+ADMIN
+Home
+
+RECENT
+
+Newsletter
+Inbox
+Studio Intelligence
+Members
+Campaigns
+Home
+Studio
+Members
+Directory
+Training
+CRM
+Journeys
+Retention
+Marketing
+Team
+Academy
+Finance
+Experiences
+Settings
+MENU
+280PX
+
+SWITCH VIEW
+
+Teacher View
+Client View
+
+helgoiq-bb-admin-2@agentmail.to
+
+PEOPLE
+
+Members
+11 total members
+Add Member
+Suggest Feature
+Help
+Member invitations
+
+2 pending · 10 historical
+
+Show audit log
+Awaiting response (2)
+
+BB Invite Retest Sep12
+
+helgoiq-bb-invite-e2e@agentmail.to
+
+Sent 12 Sept 2026 · Expires 19 Sept 2026
+
+Copy link
+Resend
+Revoke invitation for helgoiq-bb-invite-e2e@agentmail.to
+
+BB Related2 Smoke
+
+helgoiq-bb-related-2@agentmail.to
+
+Sent 8 Sept 2026 · Expires 15 Sept 2026
+
+Copy link
+Resend
+Revoke invitation for helgoiq-bb-related-2@agentmail.to
+Invitation history (10)
+Total Active Members
+
+9
+
+New
+
+vs 30 days ago
+
+New This Month
+
+6
+
+First period start · UTC month · same as Memberships report
+
+Churn Rate
+
+60%
+
+3 cancellations this UTC month · same as Memberships report
+
+Avg Credit Balance
+
+7
+
+Credits per active member
+
+All Members
+Duplicates
+Insights
+Filter
+	Member	Home Studio	Joined	Membership	Credits	
+
+	
+
+BB Smoke Sep8-2
+
+helgoiq-bb-smoke-2@agentmail.to
+
+	Bluebird Central	11 Sept 2026	
+active
+
+Bluebird 8
+
+	
+	
+
+	
+
+BB Smoke Sep8
+
+helgoiq-bb-smoke@agentmail.to
+
+	Bluebird Central	10 Sept 2026	
+paused
+
+Bluebird 8
+
+	
+	
+
+	
+
+BB Member B
+
+helgoiq-bb-member-b@agentmail.to
+
+	Bluebird Central	7 Sept 2026	
+active
+
+Bluebird 8
+
+	
+	
+
+	
+
+Member A
+
+helgoiq-bb-member-a@agentmail.to
+
+	Bluebird Central	4 Sept 2026	
+cancelling
+
+Bluebird 8
+
+	
+	
+
+	
+
+Unnamed
+
+helgoiq-bb-admin-2@agentmail.to
+
+	Bluebird Central	4 Sept 2026	
+cancelling
+
+Bluebird 8
+
+	
+	
+
+	
+
+Grok Bluebird Chosen 0902
+
+declaneryan71+grok-retest-0902@gmail.com
+
+	Bluebird Central	2 Sept 2026	—	
+	
+
+	
+
+Declaneryan71 Tester
+
+declaneryan71+tester@gmail.com
+
+	Bluebird Central	2 Sept 2026	
+cancelling
+
+Bluebird 8
+
+	
+	
+
+	
+
+Declan Ryan
+
+declan@helgoiq.com
+
+	—	13 Aug 2026	—	
+	
+
+	
+
+Otto Othertenant
+TEST DATA
+
+seed-decoy-otto@example.com
+
+	Bluebird Central	7 Jul 2026	—	
+	
+
+	
+
+Bianca Bluebird
+TEST DATA
+
+seed-decoy-bianca@example.com
+
+	Bluebird Central	7 Jul 2026	—	
+	
+
+	
+
+Declan Ryan
+
+declaneryan71@gmail.com
+
+	—	27 Apr 2026	—	
+	
+Members
+Inbox
+Timetable
