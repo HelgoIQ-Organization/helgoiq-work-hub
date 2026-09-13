@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-12T21:24:14.538Z",
-  "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
-  "liveTipShort": "6486be87",
+  "updatedAt": "2026-09-13T17:36:51.874Z",
+  "liveTip": "3ad3782443d147934342e08a27d7151133369f74",
+  "liveTipShort": "3ad37824",
   "refreshLag": {
     "tipChange": "near-real-time (refresh-dashboard.mjs when /api/version tip changes)",
     "coverageSync": "≤15m when the 15-minute routine is wired",
@@ -11,12 +11,12 @@
     "versionUrl": "(configured staging)/api/version",
     "versionError": null,
     "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
-    "mergedPrsError": "skipped",
-    "dropsScanned": 67,
-    "issue1180Error": "skipped",
-    "issue1180Comments": 0,
+    "mergedPrsError": null,
+    "dropsScanned": 76,
+    "issue1180Error": null,
+    "issue1180Comments": 50,
     "claudeReviewError": null,
-    "claudeReviews": 0,
+    "claudeReviews": 24,
     "sources": [
       {
         "id": 1,
@@ -26,35 +26,537 @@
       {
         "id": 2,
         "name": "merged PRs",
-        "ok": false,
-        "count": 0
+        "ok": true,
+        "count": 20
       },
       {
         "id": 3,
         "name": "#1180 + hub drops",
         "ok": true,
-        "dropsScanned": 67,
-        "issue1180": null
+        "dropsScanned": 76,
+        "issue1180": 50
       },
       {
         "id": 4,
         "name": "Claude Code PR review comments",
-        "ok": false,
-        "skipped": true,
-        "count": 0
+        "ok": true,
+        "skipped": false,
+        "count": 24
       }
     ]
   },
   "counts": {
     "strands": 10,
-    "strandsStaleVsLiveTip": 6,
-    "strandsCurrent": 3,
-    "pages": 205,
-    "pagesStaleVsLiveTip": 84,
-    "claudeReviews": 0
+    "strandsStaleVsLiveTip": 9,
+    "strandsCurrent": 0,
+    "pages": 260,
+    "pagesStaleVsLiveTip": 222,
+    "claudeReviews": 24
   },
-  "recentMergedPrs": [],
-  "claudeReviews": [],
+  "recentMergedPrs": [
+    {
+      "number": 1296,
+      "title": "fix(smoke): authenticated invitation replay already_accepted",
+      "mergedAt": "2026-09-13T17:26:48Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1296",
+      "mergeSha": "8484d562979879035e53a19bdc95d73ae7aa1ee6"
+    },
+    {
+      "number": 1295,
+      "title": "fix(smoke): page-context Clerk session for getActiveCompany",
+      "mergedAt": "2026-09-13T07:59:48Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1295",
+      "mergeSha": "f40075da5f7ce0287e406459ace4adcbe6f053f7"
+    },
+    {
+      "number": 1294,
+      "title": "fix(insights): no-baseline vs missed-target on the BI scorecard",
+      "mergedAt": "2026-09-13T17:27:49Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1294",
+      "mergeSha": "3ad3782443d147934342e08a27d7151133369f74"
+    },
+    {
+      "number": 1291,
+      "title": "fix(staff): resolve profile heading and wrap clipped tabs",
+      "mergedAt": "2026-09-13T17:27:41Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1291",
+      "mergeSha": "7ce1faf5ea854b86e02e92c4888be6a217011753"
+    },
+    {
+      "number": 1290,
+      "title": "fix(admin): keep LMS cards and rota above the dock",
+      "mergedAt": "2026-09-13T17:23:45Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1290",
+      "mergeSha": "24c4033d4cf473f8ff002f6909aa334d018d9cb6"
+    },
+    {
+      "number": 1289,
+      "title": "fix(academy): land named LMS URLs on their own lists",
+      "mergedAt": "2026-09-13T17:26:13Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1289",
+      "mergeSha": "d46d7c73fc2a6e01a78587c4179db5a269764dd5"
+    },
+    {
+      "number": 1288,
+      "title": "fix(campaigns): locale-aware schedule date on new campaign",
+      "mergedAt": "2026-09-13T17:26:10Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1288",
+      "mergeSha": "56762f3ba6a2eda165319477193ebe68690978c1"
+    },
+    {
+      "number": 1287,
+      "title": "fix(members): keep invitations secondary so the list is visible (M-F003)",
+      "mergedAt": "2026-09-13T17:27:36Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1287",
+      "mergeSha": "1d5c9a1f56b063e9a091b31dfd28cabdb1da5179"
+    },
+    {
+      "number": 1285,
+      "title": "fix(inbox): wrap desktop rails and stop 1850% member share",
+      "mergedAt": "2026-09-13T17:27:39Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1285",
+      "mergeSha": "a2884b534f1a5a25d473029198a7c24bff2c71c3"
+    },
+    {
+      "number": 1284,
+      "title": "fix(nav): Members → Directory opens the member list (M-F001)",
+      "mergedAt": "2026-09-13T17:27:34Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1284",
+      "mergeSha": "673e5bbd75fbbe3f15bd71be4127e823ad64acac"
+    },
+    {
+      "number": 1283,
+      "title": "fix(cms): restore identity names and clear blog Unsaved after save",
+      "mergedAt": "2026-09-13T17:22:37Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1283",
+      "mergeSha": "e44a58ee8cae529c99f6596ebe31996cd08ed0fd"
+    },
+    {
+      "number": 1281,
+      "title": "fix(cms): tell the truth after a failed Website Health check",
+      "mergedAt": "2026-09-13T17:22:33Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1281",
+      "mergeSha": "ca05985a9d133d45d12340e835f999d4b67a3958"
+    },
+    {
+      "number": 1280,
+      "title": "fix(cms): keep Website and Blog hub controls readable on phones",
+      "mergedAt": "2026-09-13T17:22:29Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1280",
+      "mergeSha": "1983b99aea6db39a4a32f53eaf01fb3348339f40"
+    },
+    {
+      "number": 1278,
+      "title": "FC-INTEL-03: MRR Intelligence crash → honest empty state",
+      "mergedAt": "2026-09-13T17:26:04Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1278",
+      "mergeSha": "13cbc0a65eddf41639f40ef4f28d5fe9e9ef5f80"
+    },
+    {
+      "number": 1277,
+      "title": "FC-INTEL-02: Hide Refrm tab on Bluebird Studio Overview",
+      "mergedAt": "2026-09-13T17:27:09Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1277",
+      "mergeSha": "e41973e1444a1596b4ead0ed499f62fb28f175c7"
+    },
+    {
+      "number": 1276,
+      "title": "FC-INTEL-01: Scope Geographic Heat Map studio filters to the selected company",
+      "mergedAt": "2026-09-13T17:25:33Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1276",
+      "mergeSha": "50808df95258cb14caa2f59a4017f3e02204de65"
+    },
+    {
+      "number": 1273,
+      "title": "Open the list behind every Finance Hub figure",
+      "mergedAt": "2026-09-13T17:27:47Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1273",
+      "mergeSha": "03dd0891756bab36890f2b0072dd38a2f57859b9"
+    },
+    {
+      "number": 1271,
+      "title": "fix(command-centre): gate agent rollout mutations",
+      "mergedAt": "2026-09-13T17:27:06Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1271",
+      "mergeSha": "6efceeba12e41ca12d5466528118c9365abc9f3a"
+    },
+    {
+      "number": 1270,
+      "title": "fix(privacy): replace remaining finance preview names in the public bundle",
+      "mergedAt": "2026-09-13T17:13:19Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1270",
+      "mergeSha": "fa78ec61186dcc7c4979d9ba0a0cc13f6d034a62"
+    },
+    {
+      "number": 1267,
+      "title": "fix(invites): let studio admins create a pending member invitation",
+      "mergedAt": "2026-09-12T07:07:16Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1267",
+      "mergeSha": "a3a0e20783530334e24ba3f64c0345a419e4179b"
+    }
+  ],
+  "claudeReviews": [
+    {
+      "id": "claude-pr-1296-5654770881",
+      "pr": 1296,
+      "prTitle": "fix(smoke): authenticated invitation replay already_accepted",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1296",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1296#issuecomment-5654770881",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:11:46Z",
+      "mergeSha": "8484d562979879035e53a19bdc95d73ae7aa1ee6",
+      "path": "",
+      "verdict": "FAIL",
+      "strandId": "smoke",
+      "excerpt": "🟢 **PASS may merge** — head `dc107811c099082c8c2cefd87aeb27b3d7f06804` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1294-5654822229",
+      "pr": 1294,
+      "prTitle": "fix(insights): no-baseline vs missed-target on the BI scorecard",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1294",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1294#issuecomment-5654822229",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:19:04Z",
+      "mergeSha": "3ad3782443d147934342e08a27d7151133369f74",
+      "path": "",
+      "verdict": "FAIL",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `11688868587e6adde7ff551929b2a000c0179e08` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1291-5654841485",
+      "pr": 1291,
+      "prTitle": "fix(staff): resolve profile heading and wrap clipped tabs",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1291",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1291#issuecomment-5654841485",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:22:08Z",
+      "mergeSha": "7ce1faf5ea854b86e02e92c4888be6a217011753",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `01b5afb1abff18a7ee726aabc16148c88e64a15f` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1290-5654752128",
+      "pr": 1290,
+      "prTitle": "fix(admin): keep LMS cards and rota above the dock",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1290",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1290#issuecomment-5654752128",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:08:25Z",
+      "mergeSha": "24c4033d4cf473f8ff002f6909aa334d018d9cb6",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `b8822242ee21983913369ddc6a80ae7d1a2c1ce6` (Claude Code, UI spot check). Fixes ACD-FEEL-02 and STF-FEEL-03 as filed: the dock gap no longer collapses a",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1289-5654751939",
+      "pr": 1289,
+      "prTitle": "fix(academy): land named LMS URLs on their own lists",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1289",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1289#issuecomment-5654751939",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:08:23Z",
+      "mergeSha": "d46d7c73fc2a6e01a78587c4179db5a269764dd5",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `73711cede33c54fa1875b56c65adfef8d9ac37a8` (Claude Code, UI spot check). Fixes ACD-FEEL-01 as filed: class-tags, terms, news, invites and teachers each",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1288-5654751754",
+      "pr": 1288,
+      "prTitle": "fix(campaigns): locale-aware schedule date on new campaign",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1288",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1288#issuecomment-5654751754",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:08:21Z",
+      "mergeSha": "56762f3ba6a2eda165319477193ebe68690978c1",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `18f298440a7b567a6c6becf7e4627fe4c0ec3a4c` (Claude Code, UI spot check). Fixes FC-MKT-02 as filed: the schedule field shows `dd/mm/yyyy` with 24-hour s",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1287-5654751567",
+      "pr": 1287,
+      "prTitle": "fix(members): keep invitations secondary so the list is visible (M-F003)",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1287",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1287#issuecomment-5654751567",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:08:19Z",
+      "mergeSha": "1d5c9a1f56b063e9a091b31dfd28cabdb1da5179",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `976a5e91453b722dcdbeeac26a828bce6049308b` (Claude Code, UI spot check). Fixes M-F003 as filed: invitations open as one compact disclosure, so the memb",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1287-5654847653",
+      "pr": 1287,
+      "prTitle": "fix(members): keep invitations secondary so the list is visible (M-F003)",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1287",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1287#issuecomment-5654847653",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:23:14Z",
+      "mergeSha": "1d5c9a1f56b063e9a091b31dfd28cabdb1da5179",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "smoke",
+      "excerpt": "🟢 **PASS may merge. Re-issued at the moved head** `f6ea9127bff6557056fea20fd58e98099e61886e` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1285-5654841311",
+      "pr": 1285,
+      "prTitle": "fix(inbox): wrap desktop rails and stop 1850% member share",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1285",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1285#issuecomment-5654841311",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:22:07Z",
+      "mergeSha": "a2884b534f1a5a25d473029198a7c24bff2c71c3",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `dffcf2349ac8fbd53bd71b48b8c1dc05b888b550` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1284-5654751397",
+      "pr": 1284,
+      "prTitle": "fix(nav): Members → Directory opens the member list (M-F001)",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1284",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1284#issuecomment-5654751397",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:08:17Z",
+      "mergeSha": "673e5bbd75fbbe3f15bd71be4127e823ad64acac",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `0962a29e28edfbc9487d6d9238e55ee4a9781ac3` (Claude Code, UI spot check). Fixes M-F001 as filed: `/admin/directory` is registered as the same Members pa",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1284-5654847486",
+      "pr": 1284,
+      "prTitle": "fix(nav): Members → Directory opens the member list (M-F001)",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1284",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1284#issuecomment-5654847486",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:23:12Z",
+      "mergeSha": "673e5bbd75fbbe3f15bd71be4127e823ad64acac",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "smoke",
+      "excerpt": "🟢 **PASS may merge. Re-issued at the moved head** `32ede9defff7af7960af9d9fe3a8545e8a84a929` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1283-5654841148",
+      "pr": 1283,
+      "prTitle": "fix(cms): restore identity names and clear blog Unsaved after save",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1283",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1283#issuecomment-5654841148",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:22:05Z",
+      "mergeSha": "e44a58ee8cae529c99f6596ebe31996cd08ed0fd",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `92cf7da2ddf8486d134e892b7a93ec2ccd11e40c` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1281-5654751066",
+      "pr": 1281,
+      "prTitle": "fix(cms): tell the truth after a failed Website Health check",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1281",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1281#issuecomment-5654751066",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:08:13Z",
+      "mergeSha": "ca05985a9d133d45d12340e835f999d4b67a3958",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `2715cb63b9cc7db383c1b62b7dae02262068a7cd` (Claude Code, UI spot check). Fixes FC-WEB-03 as filed: a failed first check shows one honest failure with a",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1280-5654750883",
+      "pr": 1280,
+      "prTitle": "fix(cms): keep Website and Blog hub controls readable on phones",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1280",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1280#issuecomment-5654750883",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:08:11Z",
+      "mergeSha": "1983b99aea6db39a4a32f53eaf01fb3348339f40",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `aad016efd1a13a07369ad630d2b9683ede12cd53` (Claude Code, UI spot check). Fixes FC-WEB-01 and FC-WEB-02 as filed: phones get a full-label section menu f",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1278-5654750482",
+      "pr": 1278,
+      "prTitle": "FC-INTEL-03: MRR Intelligence crash → honest empty state",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1278",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1278#issuecomment-5654750482",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:08:07Z",
+      "mergeSha": "13cbc0a65eddf41639f40ef4f28d5fe9e9ef5f80",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `2a3cd7f1b764913620ccb262806fbf9faee0fd3b` (Claude Code, UI spot check). Fixes FC-INTEL-03 as filed: the trend, tier and at-risk series are normalised ",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1277-5654771618",
+      "pr": 1277,
+      "prTitle": "FC-INTEL-02: Hide Refrm tab on Bluebird Studio Overview",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1277",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1277#issuecomment-5654771618",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:11:54Z",
+      "mergeSha": "e41973e1444a1596b4ead0ed499f62fb28f175c7",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `a70bf188f9910b6647259272dfc75a8f268075af` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1276-5654771408",
+      "pr": 1276,
+      "prTitle": "FC-INTEL-01: Scope Geographic Heat Map studio filters to the selected company",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1276",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1276#issuecomment-5654771408",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:11:52Z",
+      "mergeSha": "50808df95258cb14caa2f59a4017f3e02204de65",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "🟢 **PASS may merge** — head `1a6000284f6d6d3792c2d7228da0fc0894a454d3` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1273-5648082508",
+      "pr": 1273,
+      "prTitle": "Open the list behind every Finance Hub figure",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1273",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1273#issuecomment-5648082508",
+      "author": "cursor[bot]",
+      "createdAt": "2026-09-12T19:12:05Z",
+      "mergeSha": "03dd0891756bab36890f2b0072dd38a2f57859b9",
+      "path": "",
+      "verdict": "FAIL",
+      "strandId": "smoke",
+      "excerpt": "**⚪ PROGRESS — nothing needed from Declan**",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1273-5649341141",
+      "pr": 1273,
+      "prTitle": "Open the list behind every Finance Hub figure",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1273",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1273#issuecomment-5649341141",
+      "author": "cursor[bot]",
+      "createdAt": "2026-09-12T23:16:39Z",
+      "mergeSha": "03dd0891756bab36890f2b0072dd38a2f57859b9",
+      "path": "",
+      "verdict": "FAIL",
+      "strandId": "payments",
+      "excerpt": "**⚪ PROGRESS — nothing needed from Declan if Claude verdicts**",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1273-5654821306",
+      "pr": 1273,
+      "prTitle": "Open the list behind every Finance Hub figure",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1273",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1273#issuecomment-5654821306",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:18:57Z",
+      "mergeSha": "03dd0891756bab36890f2b0072dd38a2f57859b9",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "isolation",
+      "excerpt": "🟢 **PASS may merge** — head `916d1fb4163046af070f04d7875a090ffeaa393b` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1271-5654771222",
+      "pr": 1271,
+      "prTitle": "fix(command-centre): gate agent rollout mutations",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1271",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1271#issuecomment-5654771222",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:11:50Z",
+      "mergeSha": "6efceeba12e41ca12d5466528118c9365abc9f3a",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "command-centre",
+      "excerpt": "🟢 **PASS may merge** — head `edeb52f2f228d4eb5095601eb4b7f02bf11d0f07` (Claude Code, non-builder; builder Codex)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1270-5645639918",
+      "pr": 1270,
+      "prTitle": "fix(privacy): replace remaining finance preview names in the public bundle",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1270",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1270#issuecomment-5645639918",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-12T11:36:50Z",
+      "mergeSha": "fa78ec61186dcc7c4979d9ba0a0cc13f6d034a62",
+      "path": "",
+      "verdict": "FAIL",
+      "strandId": "payments",
+      "excerpt": "**⚪ PROGRESS — nothing needed from Declan**",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1270-5654771802",
+      "pr": 1270,
+      "prTitle": "fix(privacy): replace remaining finance preview names in the public bundle",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1270",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1270#issuecomment-5654771802",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-13T17:11:56Z",
+      "mergeSha": "fa78ec61186dcc7c4979d9ba0a0cc13f6d034a62",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "payments",
+      "excerpt": "🟢 **PASS may merge** — head `7fc205074dda8252ab1c16492b97b21c2b3b16d2` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1267-5644260073",
+      "pr": 1267,
+      "prTitle": "fix(invites): let studio admins create a pending member invitation",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1267",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1267#issuecomment-5644260073",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-12T06:42:18Z",
+      "mergeSha": "a3a0e20783530334e24ba3f64c0345a419e4179b",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "smoke",
+      "excerpt": "🟢 **PASS may merge** — head `6123c47721f5dac4106bb00b6b64819dab34a20a` (Claude Code, non-builder; builder Cursor)",
+      "source": "claude-pr-review"
+    }
+  ],
   "strands": [
     {
       "id": "dataset",
@@ -62,7 +564,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-dataset-canary-fail-missing-companyid-tip-6486be",
       "claudeReviewCount": 0,
       "basis": "measured",
@@ -74,9 +576,9 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-milestone-2-bf-4-30",
-      "claudeReviewCount": 0,
+      "claudeReviewCount": 1,
       "basis": "Measured",
       "percent": 48
     },
@@ -88,7 +590,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-iso29-complete-tip-232659cf",
-      "claudeReviewCount": 0,
+      "claudeReviewCount": 1,
       "basis": "measured",
       "percent": 86
     },
@@ -110,7 +612,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-ambient-morning-dispatch-viewer-pass-tip-6486be8",
       "claudeReviewCount": 0,
       "basis": "measured",
@@ -136,7 +638,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f",
-      "claudeReviewCount": 0,
+      "claudeReviewCount": 5,
       "basis": "measured",
       "percent": 67
     },
@@ -148,18 +650,18 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-11-payment-qr-checkout-fail-studio-waiver-no-tip-a7",
-      "claudeReviewCount": 0,
+      "claudeReviewCount": 3,
       "basis": "estimate",
       "percent": 62
     },
     {
       "id": "findings-fix",
       "name": "Fixing known launch bugs",
-      "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
-      "lastTestedAt": "2026-09-11",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
       "verdict": "FAIL",
       "freshness": "stale",
-      "evidenceDropId": "2026-09-11-payment-qr-checkout-fail-studio-waiver-no-tip-a7",
+      "evidenceDropId": "2026-09-13-feel-measured-home-members",
       "claudeReviewCount": 0,
       "basis": "estimate",
       "percent": 87
@@ -179,6 +681,446 @@
   ],
   "pages": [
     {
+      "id": "drop:2026-09-13-launch-hub-tip-fa78ec61-1270-live-cms-1280-pack-",
+      "name": "Launch Hub tip fa78ec61 (#1270 live; CMS #1280 pack ahead)",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "fa78ec61186dcc7c4979d9ba0a0cc13f6d034a62",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-launch-hub-tip-fa78ec61-1270-live-cms-1280-pack-"
+    },
+    {
+      "id": "drop:2026-09-13-claude-dispatch-onboarding-forever-live",
+      "name": "Claude dispatch — onboarding forever-live",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "untested",
+      "evidenceDropId": "2026-09-13-claude-dispatch-onboarding-forever-live"
+    },
+    {
+      "id": "route:/api/version",
+      "name": "/api/version",
+      "route": "/api/version",
+      "strandId": "smoke",
+      "lastTestedStamp": "f40075da",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-progress-for-claude"
+    },
+    {
+      "id": "route:/workspace/helgoiq-afternoon-2026-09-13/feel-measured/",
+      "name": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/",
+      "route": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/",
+      "strandId": "smoke",
+      "lastTestedStamp": "f40075da",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-progress-for-claude"
+    },
+    {
+      "id": "drop:2026-09-13-progress-for-claude",
+      "name": "Progress for Claude — smoke, Feel, testing (13 Sep)",
+      "route": "",
+      "strandId": "smoke",
+      "lastTestedStamp": "f40075da",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-progress-for-claude"
+    },
+    {
+      "id": "route:/admin/staff/2160660",
+      "name": "/admin/staff/2160660",
+      "route": "/admin/staff/2160660",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-feel-measured-academy-staff"
+    },
+    {
+      "id": "drop:2026-09-13-feel-measured-academy-staff",
+      "name": "Feel measured: Academy + Staff",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-feel-measured-academy-staff"
+    },
+    {
+      "id": "route:/admin/overview",
+      "name": "/admin/overview",
+      "route": "/admin/overview",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-feel-measured-home-members"
+    },
+    {
+      "id": "route:/admin",
+      "name": "/admin",
+      "route": "/admin",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-feel-measured-home-members"
+    },
+    {
+      "id": "route:/admin/members",
+      "name": "/admin/members",
+      "route": "/admin/members",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-feel-measured-home-members"
+    },
+    {
+      "id": "drop:2026-09-13-feel-measured-home-members",
+      "name": "Feel measured: Home + Members/CRM",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-feel-measured-home-members"
+    },
+    {
+      "id": "route:/admin/referrals",
+      "name": "/admin/referrals",
+      "route": "/admin/referrals",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-coverage-l2-long-tail-leftover-14"
+    },
+    {
+      "id": "route:/admin/roles",
+      "name": "/admin/roles",
+      "route": "/admin/roles",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-coverage-l2-long-tail-leftover-14"
+    },
+    {
+      "id": "route:/admin/roles-legacy",
+      "name": "/admin/roles-legacy",
+      "route": "/admin/roles-legacy",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-coverage-l2-long-tail-leftover-14"
+    },
+    {
+      "id": "drop:2026-09-13-coverage-l2-long-tail-leftover-14",
+      "name": "Coverage L2 — Long-tail leftover 14",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-coverage-l2-long-tail-leftover-14"
+    },
+    {
+      "id": "route:/admin/my-actions",
+      "name": "/admin/my-actions",
+      "route": "/admin/my-actions",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-coverage-l2-long-tail-recovered5"
+    },
+    {
+      "id": "route:/admin/override-audit-log",
+      "name": "/admin/override-audit-log",
+      "route": "/admin/override-audit-log",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-coverage-l2-long-tail-recovered5"
+    },
+    {
+      "id": "route:/admin/recommendation-tracker",
+      "name": "/admin/recommendation-tracker",
+      "route": "/admin/recommendation-tracker",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-coverage-l2-long-tail-recovered5"
+    },
+    {
+      "id": "route:/admin/recovery-calendar",
+      "name": "/admin/recovery-calendar",
+      "route": "/admin/recovery-calendar",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-coverage-l2-long-tail-recovered5"
+    },
+    {
+      "id": "route:/admin/referral-dashboard",
+      "name": "/admin/referral-dashboard",
+      "route": "/admin/referral-dashboard",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-coverage-l2-long-tail-recovered5"
+    },
+    {
+      "id": "drop:2026-09-13-coverage-l2-long-tail-recovered5",
+      "name": "Coverage L2 long-tail recovered 5",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-coverage-l2-long-tail-recovered5"
+    },
+    {
+      "id": "route:/workspace/helgoiq-chat-qa/report/CHAT-QA-REPORT.md",
+      "name": "/workspace/helgoiq-chat-qa/report/CHAT-QA-REPORT.md",
+      "route": "/workspace/helgoiq-chat-qa/report/CHAT-QA-REPORT.md",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/terms",
+      "name": "/terms",
+      "route": "/terms",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/news",
+      "name": "/news",
+      "route": "/news",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/invites",
+      "name": "/invites",
+      "route": "/invites",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/teachers",
+      "name": "/teachers",
+      "route": "/teachers",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/class-tags",
+      "name": "/class-tags",
+      "route": "/class-tags",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/admin/academy",
+      "name": "/admin/academy",
+      "route": "/admin/academy",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/admin/academy/courses",
+      "name": "/admin/academy/courses",
+      "route": "/admin/academy/courses",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/admin/academy/class-tags",
+      "name": "/admin/academy/class-tags",
+      "route": "/admin/academy/class-tags",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/admin/academy/terms",
+      "name": "/admin/academy/terms",
+      "route": "/admin/academy/terms",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/admin/academy/news",
+      "name": "/admin/academy/news",
+      "route": "/admin/academy/news",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/admin/academy/invites",
+      "name": "/admin/academy/invites",
+      "route": "/admin/academy/invites",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "drop:2026-09-13-ux-bar-feel",
+      "name": "UX Feel bar — Joyful · Obvious · Frictionless",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-13",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-13-ux-bar-feel"
+    },
+    {
+      "id": "route:/admin/disputes",
+      "name": "/admin/disputes",
+      "route": "/admin/disputes",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-after-charts-new"
+    },
+    {
+      "id": "route:/admin/disputes/:id",
+      "name": "/admin/disputes/:id",
+      "route": "/admin/disputes/:id",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-after-charts-new"
+    },
+    {
+      "id": "route:/admin/invite-staff",
+      "name": "/admin/invite-staff",
+      "route": "/admin/invite-staff",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-after-charts-new"
+    },
+    {
+      "id": "route:/admin/invite-staff-legacy",
+      "name": "/admin/invite-staff-legacy",
+      "route": "/admin/invite-staff-legacy",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-after-charts-new"
+    },
+    {
+      "id": "route:/admin/meta-autopilot",
+      "name": "/admin/meta-autopilot",
+      "route": "/admin/meta-autopilot",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-after-charts-new"
+    },
+    {
+      "id": "drop:2026-09-12-coverage-l2-long-tail-after-charts-new",
+      "name": "Coverage L2 — Long-tail after charts/new",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedAt": "2026-09-12",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-12-coverage-l2-long-tail-after-charts-new"
+    },
+    {
       "id": "route:/admin/credit-liability",
       "name": "/admin/credit-liability",
       "route": "/admin/credit-liability",
@@ -186,7 +1128,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-4"
     },
     {
@@ -197,7 +1139,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-4"
     },
     {
@@ -208,7 +1150,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-4"
     },
     {
@@ -219,18 +1161,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-13-helgoiq-progress"
-    },
-    {
-      "id": "route:/admin/overview",
-      "name": "/admin/overview",
-      "route": "/admin/overview",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-13-helgoiq-progress"
     },
     {
@@ -241,7 +1172,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-13-helgoiq-progress"
     },
     {
@@ -252,7 +1183,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-13-helgoiq-progress"
     },
     {
@@ -263,7 +1194,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-13-helgoiq-progress"
     },
     {
@@ -274,7 +1205,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
     },
     {
@@ -285,7 +1216,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
     },
     {
@@ -296,7 +1227,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
     },
     {
@@ -307,7 +1238,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
     },
     {
@@ -318,7 +1249,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
     },
     {
@@ -329,7 +1260,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-3"
     },
     {
@@ -340,7 +1271,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-2"
     },
     {
@@ -351,7 +1282,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-2"
     },
     {
@@ -362,7 +1293,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-2"
     },
     {
@@ -373,19 +1304,8 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-long-tail-chunk-2"
-    },
-    {
-      "id": "route:/api/version",
-      "name": "/api/version",
-      "route": "/api/version",
-      "strandId": "command-centre",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-milestone-2-bf-4-30"
     },
     {
       "id": "route:/workspace/helgoiq-command-centre/cc_run_cluster_bf_6486be87.js",
@@ -395,7 +1315,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-milestone-2-bf-4-30"
     },
     {
@@ -406,7 +1326,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-milestone-2-bf-4-30"
     },
     {
@@ -417,52 +1337,8 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-milestone-2-bf-4-30"
-    },
-    {
-      "id": "route:/admin/academy/class-tags",
-      "name": "/admin/academy/class-tags",
-      "route": "/admin/academy/class-tags",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
-    },
-    {
-      "id": "route:/admin/academy/terms",
-      "name": "/admin/academy/terms",
-      "route": "/admin/academy/terms",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
-    },
-    {
-      "id": "route:/admin/academy/news",
-      "name": "/admin/academy/news",
-      "route": "/admin/academy/news",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
-    },
-    {
-      "id": "route:/admin/academy/invites",
-      "name": "/admin/academy/invites",
-      "route": "/admin/academy/invites",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
     },
     {
       "id": "route:/admin/academy/certificate-design",
@@ -472,7 +1348,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
     },
     {
@@ -483,7 +1359,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
     },
     {
@@ -494,7 +1370,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
     },
     {
@@ -505,7 +1381,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
     },
     {
@@ -516,18 +1392,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
-    },
-    {
-      "id": "route:/admin/academy/courses",
-      "name": "/admin/academy/courses",
-      "route": "/admin/academy/courses",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
     },
     {
@@ -538,7 +1403,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
     },
     {
@@ -549,7 +1414,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
     },
     {
@@ -560,7 +1425,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk1"
     },
     {
@@ -571,7 +1436,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-academy-chunk-1"
     },
     {
@@ -582,7 +1447,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-settings-chunk"
     },
     {
@@ -593,7 +1458,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-settings-chunk"
     },
     {
@@ -604,7 +1469,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
     },
     {
@@ -615,7 +1480,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
     },
     {
@@ -626,7 +1491,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
     },
     {
@@ -637,7 +1502,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
     },
     {
@@ -648,7 +1513,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
     },
     {
@@ -659,7 +1524,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
     },
     {
@@ -670,7 +1535,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
     },
     {
@@ -681,7 +1546,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-helgoiq-progress-unblock-handoff-for-claude-12-s"
     },
     {
@@ -692,7 +1557,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "BLOCKED",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-safe-studio-hub"
     },
     {
@@ -703,7 +1568,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "BLOCKED",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-safe-studio-hub"
     },
     {
@@ -714,7 +1579,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "BLOCKED",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-safe-studio-hub"
     },
     {
@@ -725,7 +1590,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "BLOCKED",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-safe-studio-hub"
     },
     {
@@ -736,7 +1601,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "BLOCKED",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-safe-studio-hub"
     },
     {
@@ -747,7 +1612,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "BLOCKED",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-safe-studio-hub"
     },
     {
@@ -758,7 +1623,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "BLOCKED",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-safe-studio-hub"
     },
     {
@@ -769,7 +1634,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "BLOCKED",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-safe-studio-hub"
     },
     {
@@ -780,7 +1645,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "BLOCKED",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-safe-studio-hub"
     },
     {
@@ -791,7 +1656,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "BLOCKED",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-safe-studio-hub"
     },
     {
@@ -802,7 +1667,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -813,7 +1678,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -824,7 +1689,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -835,7 +1700,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -846,7 +1711,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -857,7 +1722,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -868,18 +1733,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
-    },
-    {
-      "id": "route:/admin/staff/2160660",
-      "name": "/admin/staff/2160660",
-      "route": "/admin/staff/2160660",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -890,7 +1744,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -901,7 +1755,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -912,7 +1766,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -923,7 +1777,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l2-staff-hub"
     },
     {
@@ -934,7 +1788,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-dataset-canary-fail-missing-companyid-tip-6486be"
     },
     {
@@ -945,7 +1799,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-ambient-morning-dispatch-viewer-pass-tip-6486be8"
     },
     {
@@ -956,7 +1810,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-ambient-morning-dispatch-viewer-pass-tip-6486be8"
     },
     {
@@ -967,7 +1821,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -978,7 +1832,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -989,7 +1843,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -1000,7 +1854,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -1011,18 +1865,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
-    },
-    {
-      "id": "route:/admin",
-      "name": "/admin",
-      "route": "/admin",
-      "strandId": "findings-fix",
-      "lastTestedStamp": "6486be87",
-      "lastTestedAt": "2026-09-12",
-      "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -1033,7 +1876,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -1044,7 +1887,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -1055,7 +1898,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -1066,7 +1909,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -1077,7 +1920,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -1088,7 +1931,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-l2-backfill-declan-criteria"
     },
     {
@@ -1099,7 +1942,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "PASS",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-coverage-l1-website-blog"
     },
     {
@@ -2364,7 +3207,7 @@
       "lastTestedStamp": "6486be87",
       "lastTestedAt": "2026-09-12",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-12-claude-progress-unblock-handoff-tip-6486be87"
     },
     {
@@ -2432,6 +3275,318 @@
       "verdict": "",
       "freshness": "untested",
       "evidenceDropId": "tmp-tip-a3a0e207"
+    },
+    {
+      "id": "claude-pr-1296-5654770881",
+      "name": "🟢 **PASS may merge** — head `dc107811c099082c8c2cefd87aeb27b3d7f06804` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "smoke",
+      "lastTestedStamp": "8484d562979879035e53a19bdc95d73ae7aa1ee6",
+      "lastTestedAt": "2026-09-13T17:11:46Z",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1296#issuecomment-5654770881",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1294-5654822229",
+      "name": "🟢 **PASS may merge** — head `11688868587e6adde7ff551929b2a000c0179e08` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
+      "lastTestedAt": "2026-09-13T17:19:04Z",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1294#issuecomment-5654822229",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1291-5654841485",
+      "name": "🟢 **PASS may merge** — head `01b5afb1abff18a7ee726aabc16148c88e64a15f` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "7ce1faf5ea854b86e02e92c4888be6a217011753",
+      "lastTestedAt": "2026-09-13T17:22:08Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1291#issuecomment-5654841485",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1290-5654752128",
+      "name": "🟢 **PASS may merge** — head `b8822242ee21983913369ddc6a80ae7d1a2c1ce6` (Claude Code, UI spot check). Fixes ACD-FEEL-02 and STF-FEEL-03 as filed: the dock gap no longer collapses a",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "24c4033d4cf473f8ff002f6909aa334d018d9cb6",
+      "lastTestedAt": "2026-09-13T17:08:25Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1290#issuecomment-5654752128",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1289-5654751939",
+      "name": "🟢 **PASS may merge** — head `73711cede33c54fa1875b56c65adfef8d9ac37a8` (Claude Code, UI spot check). Fixes ACD-FEEL-01 as filed: class-tags, terms, news, invites and teachers each",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "d46d7c73fc2a6e01a78587c4179db5a269764dd5",
+      "lastTestedAt": "2026-09-13T17:08:23Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1289#issuecomment-5654751939",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1288-5654751754",
+      "name": "🟢 **PASS may merge** — head `18f298440a7b567a6c6becf7e4627fe4c0ec3a4c` (Claude Code, UI spot check). Fixes FC-MKT-02 as filed: the schedule field shows `dd/mm/yyyy` with 24-hour s",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "56762f3ba6a2eda165319477193ebe68690978c1",
+      "lastTestedAt": "2026-09-13T17:08:21Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1288#issuecomment-5654751754",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1287-5654751567",
+      "name": "🟢 **PASS may merge** — head `976a5e91453b722dcdbeeac26a828bce6049308b` (Claude Code, UI spot check). Fixes M-F003 as filed: invitations open as one compact disclosure, so the memb",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "1d5c9a1f56b063e9a091b31dfd28cabdb1da5179",
+      "lastTestedAt": "2026-09-13T17:08:19Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1287#issuecomment-5654751567",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1287-5654847653",
+      "name": "🟢 **PASS may merge. Re-issued at the moved head** `f6ea9127bff6557056fea20fd58e98099e61886e` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "smoke",
+      "lastTestedStamp": "1d5c9a1f56b063e9a091b31dfd28cabdb1da5179",
+      "lastTestedAt": "2026-09-13T17:23:14Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1287#issuecomment-5654847653",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1285-5654841311",
+      "name": "🟢 **PASS may merge** — head `dffcf2349ac8fbd53bd71b48b8c1dc05b888b550` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "a2884b534f1a5a25d473029198a7c24bff2c71c3",
+      "lastTestedAt": "2026-09-13T17:22:07Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1285#issuecomment-5654841311",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1284-5654751397",
+      "name": "🟢 **PASS may merge** — head `0962a29e28edfbc9487d6d9238e55ee4a9781ac3` (Claude Code, UI spot check). Fixes M-F001 as filed: `/admin/directory` is registered as the same Members pa",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "673e5bbd75fbbe3f15bd71be4127e823ad64acac",
+      "lastTestedAt": "2026-09-13T17:08:17Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1284#issuecomment-5654751397",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1284-5654847486",
+      "name": "🟢 **PASS may merge. Re-issued at the moved head** `32ede9defff7af7960af9d9fe3a8545e8a84a929` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "smoke",
+      "lastTestedStamp": "673e5bbd75fbbe3f15bd71be4127e823ad64acac",
+      "lastTestedAt": "2026-09-13T17:23:12Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1284#issuecomment-5654847486",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1283-5654841148",
+      "name": "🟢 **PASS may merge** — head `92cf7da2ddf8486d134e892b7a93ec2ccd11e40c` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "e44a58ee8cae529c99f6596ebe31996cd08ed0fd",
+      "lastTestedAt": "2026-09-13T17:22:05Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1283#issuecomment-5654841148",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1281-5654751066",
+      "name": "🟢 **PASS may merge** — head `2715cb63b9cc7db383c1b62b7dae02262068a7cd` (Claude Code, UI spot check). Fixes FC-WEB-03 as filed: a failed first check shows one honest failure with a",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "ca05985a9d133d45d12340e835f999d4b67a3958",
+      "lastTestedAt": "2026-09-13T17:08:13Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1281#issuecomment-5654751066",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1280-5654750883",
+      "name": "🟢 **PASS may merge** — head `aad016efd1a13a07369ad630d2b9683ede12cd53` (Claude Code, UI spot check). Fixes FC-WEB-01 and FC-WEB-02 as filed: phones get a full-label section menu f",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "1983b99aea6db39a4a32f53eaf01fb3348339f40",
+      "lastTestedAt": "2026-09-13T17:08:11Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1280#issuecomment-5654750883",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1278-5654750482",
+      "name": "🟢 **PASS may merge** — head `2a3cd7f1b764913620ccb262806fbf9faee0fd3b` (Claude Code, UI spot check). Fixes FC-INTEL-03 as filed: the trend, tier and at-risk series are normalised ",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "13cbc0a65eddf41639f40ef4f28d5fe9e9ef5f80",
+      "lastTestedAt": "2026-09-13T17:08:07Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1278#issuecomment-5654750482",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1277-5654771618",
+      "name": "🟢 **PASS may merge** — head `a70bf188f9910b6647259272dfc75a8f268075af` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "e41973e1444a1596b4ead0ed499f62fb28f175c7",
+      "lastTestedAt": "2026-09-13T17:11:54Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1277#issuecomment-5654771618",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1276-5654771408",
+      "name": "🟢 **PASS may merge** — head `1a6000284f6d6d3792c2d7228da0fc0894a454d3` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "50808df95258cb14caa2f59a4017f3e02204de65",
+      "lastTestedAt": "2026-09-13T17:11:52Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1276#issuecomment-5654771408",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1273-5648082508",
+      "name": "**⚪ PROGRESS — nothing needed from Declan**",
+      "route": "",
+      "strandId": "smoke",
+      "lastTestedStamp": "03dd0891756bab36890f2b0072dd38a2f57859b9",
+      "lastTestedAt": "2026-09-12T19:12:05Z",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1273#issuecomment-5648082508",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1273-5649341141",
+      "name": "**⚪ PROGRESS — nothing needed from Declan if Claude verdicts**",
+      "route": "",
+      "strandId": "payments",
+      "lastTestedStamp": "03dd0891756bab36890f2b0072dd38a2f57859b9",
+      "lastTestedAt": "2026-09-12T23:16:39Z",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1273#issuecomment-5649341141",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1273-5654821306",
+      "name": "🟢 **PASS may merge** — head `916d1fb4163046af070f04d7875a090ffeaa393b` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "isolation",
+      "lastTestedStamp": "03dd0891756bab36890f2b0072dd38a2f57859b9",
+      "lastTestedAt": "2026-09-13T17:18:57Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1273#issuecomment-5654821306",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1271-5654771222",
+      "name": "🟢 **PASS may merge** — head `edeb52f2f228d4eb5095601eb4b7f02bf11d0f07` (Claude Code, non-builder; builder Codex)",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "6efceeba12e41ca12d5466528118c9365abc9f3a",
+      "lastTestedAt": "2026-09-13T17:11:50Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1271#issuecomment-5654771222",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1270-5645639918",
+      "name": "**⚪ PROGRESS — nothing needed from Declan**",
+      "route": "",
+      "strandId": "payments",
+      "lastTestedStamp": "fa78ec61186dcc7c4979d9ba0a0cc13f6d034a62",
+      "lastTestedAt": "2026-09-12T11:36:50Z",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1270#issuecomment-5645639918",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1270-5654771802",
+      "name": "🟢 **PASS may merge** — head `7fc205074dda8252ab1c16492b97b21c2b3b16d2` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "payments",
+      "lastTestedStamp": "fa78ec61186dcc7c4979d9ba0a0cc13f6d034a62",
+      "lastTestedAt": "2026-09-13T17:11:56Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1270#issuecomment-5654771802",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1267-5644260073",
+      "name": "🟢 **PASS may merge** — head `6123c47721f5dac4106bb00b6b64819dab34a20a` (Claude Code, non-builder; builder Cursor)",
+      "route": "",
+      "strandId": "smoke",
+      "lastTestedStamp": "a3a0e20783530334e24ba3f64c0345a419e4179b",
+      "lastTestedAt": "2026-09-12T06:42:18Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1267#issuecomment-5644260073",
+      "source": "claude-pr-review"
     }
   ]
 }

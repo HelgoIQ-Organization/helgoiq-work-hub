@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-13T17:24:29.975Z",
+  "updatedAt": "2026-09-13T17:38:09.497Z",
   "drops": [
+    {
+      "id": "2026-09-13-tip-3ad37824-evening-feel-pack-live",
+      "title": "Tip 3ad37824 evening Feel pack live",
+      "date": "2026-09-13",
+      "summary": "Staging tip moved fa78ec61→3ad37824; Feel/CMS/Academy pack live; headline ~63%",
+      "plainEnglish": "Staging tip moved fa78ec61→3ad37824; Feel/CMS/Academy pack live; headline ~63%",
+      "tags": [
+        "status",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-13-tip-3ad37824-evening-feel-pack-live/tip-3ad37824.md"
+      ],
+      "tip": "3ad3782443d147934342e08a27d7151133369f74"
+    },
     {
       "id": "2026-09-13-launch-hub-tip-fa78ec61-1270-live-cms-1280-pack-",
       "title": "Launch Hub tip fa78ec61 (#1270 live; CMS #1280 pack ahead)",

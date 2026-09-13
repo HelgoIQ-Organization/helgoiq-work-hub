@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-09-13T17:24:15.131Z",
+  "updatedAt": "2026-09-13T17:38:09.250144Z",
   "meta": {
-    "dataAsOf": "2026-09-13T17:24:15.131Z",
-    "buildStamp": "fa78ec61186dcc7c4979d9ba0a0cc13f6d034a62",
-    "liveTip": "fa78ec61186dcc7c4979d9ba0a0cc13f6d034a62",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 63% = round((52\u00d712 + 48\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) half-up.",
+    "dataAsOf": "2026-09-13T17:38:09.250144Z",
+    "buildStamp": "3ad3782443d147934342e08a27d7151133369f74",
+    "liveTip": "3ad3782443d147934342e08a27d7151133369f74",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 63% = round((52\u00d712 + 48\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 90\u00d710 + 15\u00d710)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Tip unchanged (fa78ec61); stamps refreshed only \u2014 do not look more confident without new measured facts.",
+    "lastRefreshNote": "Tip changed fa78ec61 \u2192 3ad37824 (PR #1289 wake; tip is #1294 merge). Evening Feel/CMS/Academy/Finance/CC pack live. Headline ~63%. Findings-fix estimate 87\u219290; Measured held.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-13T17:24:15.131Z"
+      "checkedAt": "2026-09-13T17:36:21.742Z"
     },
-    "updatedAt": "2026-09-13T17:24:14.806115Z",
-    "note": "Live tip fa78ec61: #1270 finance preview names. Staging ahead: #1280/#1281/#1283 CMS Feel pack. Headline held 63% \u2014 no strand re-score tonight. Never import.rollbackBatch.",
+    "updatedAt": "2026-09-13T17:38:09.250144Z",
+    "note": "Live tip 3ad37824: evening Feel pack on tip (CMS/Academy/Members/Finance/Intel/CC/smoke probe). Headline ~63%. Never import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 368/413 \u2248 89.1%.",
     "headlineVsCoverage": "Headline ~63% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
@@ -37,9 +37,9 @@
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
     "commandCentreNote": "48% = A 24/24 + B\u2013F 4/30 measured on 6486be87 (replaced A-only 80%).",
-    "liveTipNote": "Live tip f40075da includes #1295 smoke Clerk session fix. Many strand % still measured on 6486be87 until retest."
+    "liveTipNote": "3ad37824 = merge of #1294 (finance BI scorecard). Includes #1280\u2013#1283 CMS, #1289 Academy, #1284/#1287/#1285/#1291 Members/Inbox/Staff, #1273/#1276/#1277/#1278 Finance/Intel, #1265/#1271 CC, #1296 smoke."
   },
-  "tip": "fa78ec61186dcc7c4979d9ba0a0cc13f6d034a62",
+  "tip": "3ad3782443d147934342e08a27d7151133369f74",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 63,
@@ -64,7 +64,7 @@
       "m1": 72,
       "smoke": 67,
       "payments": 62,
-      "findings-fix": 87,
+      "findings-fix": 90,
       "comms": 15
     },
     "deltas": {
@@ -76,14 +76,14 @@
       "m1": 12,
       "smoke": 47,
       "payments": 17,
-      "findings-fix": 47,
+      "findings-fix": 50,
       "comms": 15,
       "headline": 11
     },
-    "plainEnglishDay": "Sunday evening (13 Sep Europe/Athens ~20:22): LIVE TIP MOVED f40075da \u2192 fa78ec61. Now live: #1270 (remaining finance preview names scrubbed from public bundle). Just merged, not yet on tip: #1280 (Website/Blog hub readable on phones), #1281 (Website Health failure truth), #1283 (identity names + blog Unsaved clear). Headline held ~63% \u2014 strand percents NOT re-scored. Your Move: wait for CMS pack to land on tip, then Feel re-check Website/Blog hubs on phone; optional retest Pulse saved-fact explain now that #1266 is in ancestry. Never instruct import.rollbackBatch.",
+    "plainEnglishDay": "Sunday evening (13 Sep Europe/Athens ~20:36): LIVE TIP MOVED fa78ec61 \u2192 3ad37824. Big evening deploy landed on tip: CMS Feel pack (#1280/#1281/#1283), Academy named URLs (#1289), Members/Inbox/Staff Feel (#1284/#1287/#1285/#1291), Finance KPI+BI (#1273/#1294), Intel (#1276/#1277/#1278), CC identity+rollout (#1265/#1271), smoke invite-replay probe (#1296), campaigns locale (#1288), dock (#1290). GitHub staging HEAD matches live tip. Headline ~63% (findings-fix estimate 87\u219290 only; Measured strands held). Your Moves: phone Feel re-check Website/Blog/Academy named lists; retest invite-replay smoke + Pulse explain. Never instruct import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board vs now: headline still ~63% (held). Tip f40075da \u2192 fa78ec61. No Measured strand moves tonight \u2014 tip stamp + merge lag only.",
-    "updatedAt": "2026-09-13T17:24:14.806115Z",
+    "compareNote": "Morning board vs now: headline ~63% (Measured strands held; findings-fix estimate +3). Tip fa78ec61 \u2192 3ad37824. Evening Feel pack live \u2014 retests pending before claiming Measured progress.",
+    "updatedAt": "2026-09-13T17:38:09.250144Z",
     "coverageNote": "After AI L2 Intel: L\u22651=372 (90%); L\u22652=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED fixtures consumed",
@@ -213,7 +213,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "Dataset canary FAIL again on tip 6486be87: batchImport.upload Missing companyId HTTP 403; Import Batches empty; 0 members. Same as 232659cf. Engineering fix required. No rollback used.",
-      "progressNote": "Dataset canary FAIL again on tip 6486be87: batchImport.upload Missing companyId HTTP 403; Import Batches empty; 0 members. Same as 232659cf. Engineering fix required. No rollback used.",
+      "progressNote": "Held 52% \u2014 tip 3ad37824. Dataset canary still last FAIL (Missing companyId 403); no canary tonight.",
       "blockers": [
         "Canary upload FAIL: Missing companyId on batchImport.upload (403) \u2014 engineering",
         "12-month dataset not imported (0 members from canary)"
@@ -229,7 +229,7 @@
       "measuredNote": "Prior tip 232659cf canary: preview OK; upload Missing companyId 403; 0 members; no rollback used. New tip a263c4ab not re-canaried yet. Ban lifted \u2014 prefer avoid rollback; company-scoped batchId only.",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedVerdict": "FAIL",
-      "coverageFreshness": "current"
+      "coverageFreshness": "stale"
     },
     {
       "id": "command-centre",
@@ -237,8 +237,8 @@
       "percent": 48,
       "basis": "Measured",
       "status": "at-risk",
-      "plainSummary": "Cluster A 24/24 PASS on tip 6486be87. Milestone 2 B\u2013F frozen 30-slot gate scored 4/30 (26 FAIL). How-do-I invents paths; named-reason refusals missing; XAGR numbers missing vs Pulse/Dispatch/Twin.",
-      "progressNote": "Held 48% \u2014 tip fa78ec61. Last Measured Milestone 2 B\u2013F 4/30 + Cluster A 24/24 on 6486be87; tip-change re-run still armed, not re-run tonight.",
+      "plainSummary": "Cluster A 24/24 PASS on tip 6486be87. Milestone 2 B\u2013F frozen 30-slot gate scored 4/30 (26 FAIL). On tip 3ad37824: #1265/#1271 merged (finding identity + rollout gate) \u2014 not re-scored tonight.",
+      "progressNote": "Held 48% Measured \u2014 tip 3ad37824. #1265 finding-identity dedupe + #1271 rollout gate now on tip; Milestone 2 B\u2013F still last Measured 4/30 on 6486be87. Tip-change re-run still needed.",
       "blockers": [
         "Milestone 2 B\u2013F 26 FAIL \u2014 invented how-do-I paths, missing named refuse reasons, XAGR disagreements/missing numbers, investigation stalls",
         "E-FAC-01 isolation: invented Setup path toward deleting a Refrm building"
@@ -255,7 +255,7 @@
       "projectWeightPercent": 10,
       "measuredNote": "A 24/24 + B\u2013F 4/30 on 6486be87 \u2192 strand 48% (not A-only 80%).",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "coverageFreshness": "current",
+      "coverageFreshness": "stale",
       "lastTestedVerdict": "FAIL",
       "measured": 95.83333333333334,
       "blocker": "ACS-C01 fault (compared_person_not_found Admin 2); B\u2013F locked"
@@ -267,7 +267,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "ISO-29 re-sweep on tip 6486be87: same 26 PASS / 4 FAIL / 2 NOT_RUN as 232659cf. ISO-18/20/27/29 still FAIL (Refrm Helgo chooser Bluebird leak; cohorts identical; Staff Availability lists Bluebird teachers; CC ?c=150001 only offers Bluebird). Hold 86%.",
-      "progressNote": "Held 86% \u2014 tip fa78ec61. #1270 is public-bundle finance name scrub (not an ISO-29 re-sweep). ISO-18/20/27/29 still FAIL from last Measured on 6486be87.",
+      "progressNote": "Held 86% \u2014 tip 3ad37824. #1276/#1277 tenant filter/overview fixes live but ISO-18/20/27/29 last Measured FAILs on 6486be87 not re-swept tonight.",
       "blockers": [
         "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (Measured on 6486be87)",
         "Weymouth #1245 and Luton #1242 extras NOT_RUN \u2014 no dedicated fixture/route"
@@ -292,7 +292,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "AI-85 Admin2 re-score on tip 6486be87: 25 surfaces (20 UNCERTAIN + 5 FAIL). PASS still 48/85 \u2192 hold 56%. Only change AI-018 FAIL\u2192PARTIAL (Dispatch honest empty). Open FAILs: AI-042 MRR crash, AI-025 Ask HelgoIQ, AI-037 Predictive Cash Flow, AI-021 What We\u2019ve Learned. PA-gated Hea",
-      "progressNote": "AI-85 Admin2 re-score on tip 6486be87: 25 surfaces (20 UNCERTAIN + 5 FAIL). PASS still 48/85 \u2192 hold 56%. Only change AI-018 FAIL\u2192PARTIAL (Dispatch honest empty). Open FAILs: AI-042 MRR crash, AI-025 Ask HelgoIQ, AI-037 Predictive Cash Flow, AI-021 What We\u2019ve Learned. PA-gated Health/Decision Audit/Event Bus skipped.",
+      "progressNote": "Held 56% Measured \u2014 tip 3ad37824. #1278 MRR honest empty + #1276/#1277 Intel tenant filters live; AI-042 / AI-85 Admin2 not re-scored tonight.",
       "blockers": [
         "23 UNCERTAIN remain (many empty AI / NEED_DECLAN)",
         "4 FAIL: MRR crash, Ask HelgoIQ, Predictive Cash Flow, What We\u2019ve Learned launcher",
@@ -316,7 +316,7 @@
       "basis": "measured",
       "status": "on-track",
       "plainSummary": "Morning Dispatch viewer PASS on tip 6486be87 (Admin2): /dispatch honest empty, no crash; Generate/Preview present on admin page. Prior viewer FAIL cleared. Pulse/Event Bus/Learning Engine blockers unchanged.",
-      "progressNote": "Held 92% \u2014 tip fa78ec61. #1266 Pulse saved-fact explain is in tip ancestry (was lagging earlier). Retest of saved-fact explain still pending; do not claim ambient progress until Measured.",
+      "progressNote": "Held 92% \u2014 tip 3ad37824. #1266 Pulse saved-fact explain still in ancestry; retest still pending.",
       "blockers": [
         "Event Bus Platform-Admin gated \u2014 Declan escalation not attempted",
         "Learning Engine still 0 active lessons (one-tap action works)"
@@ -330,7 +330,7 @@
       "measuredNote": "Prior tip 232659cf ambient evidence held. New tip a263c4ab Twin/Insights packs await re-evidence.",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedVerdict": "FAIL",
-      "coverageFreshness": "current"
+      "coverageFreshness": "stale"
     },
     {
       "id": "m1",
@@ -339,7 +339,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "M1 Wave1 partial was Measured on prior tip 232659cf: Admin2 freeze PASS; unfreeze FAIL (payment provider \u2014 BB Smoke Sep8 paused); cancel+reverse PASS. On tip a263c4ab: #1247/#1258/#1252 live; morning invite E2E consumed-invite PASS but fresh member invite create FAIL (pending list unchanged). M1 Wave1 full re-run still pending. Upgrade/downgrade/MemberB/waitlist/Owner still BLOCKED from prior board.",
-      "progressNote": "Held 72% \u2014 #1267 on tip a3a0e207; fresh invite create retest pending before claiming m1 progress.",
+      "progressNote": "Held 72% \u2014 tip 3ad37824. Members Directory/invitations/inbox Feel fixes (#1284/#1287/#1285) live; fresh invite create + Wave1 not re-measured tonight.",
       "blockers": [
         "Fresh member invite create FAIL on a263c4ab (form closed; pending list unchanged)",
         "Admin2 unfreeze FAIL \u2014 payment provider; BB Smoke Sep8 still paused (prior tip)",
@@ -369,8 +369,8 @@
       "percent": 67,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Tip fa78ec61 live (#1270). Prior on tip chain includes #1295 page-context Clerk for getActiveCompany. Smoke gate still treated red until invitation replay + six-step retest on this tip. Fixtures from 13 Sep.",
-      "progressNote": "Held 67% \u2014 tip moved f40075da \u2192 fa78ec61 (#1270). #1295 getActiveCompany fix still in ancestry; invitation-replay / six-step smoke not re-measured tonight.",
+      "plainSummary": "Tip 3ad37824 live. #1296 invitation-replay probe + prior #1295 page-context Clerk in ancestry. Smoke gate still treated red until invitation replay + six-step retest on this tip.",
+      "progressNote": "Held 67% \u2014 tip 3ad37824. #1296 authenticated invitation-replay already_accepted probe is live; six-step / invitation-replay smoke not re-measured tonight.",
       "blockers": [
         "HELGOBIRD promo not entered on Bluebird 8 checkout (standard price used)",
         "Late cancel left 7 credits (not 8) \u2014 credit-return-once FAIL"
@@ -386,7 +386,7 @@
       "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
-      "lastNote": "6486be87 invite PASS; six-step fixtures stale"
+      "lastNote": "Held 67% \u2014 tip 3ad37824. #1296 authenticated invitation-replay already_accepted probe is live; six-step / invitation-replay smoke not re-measured tonight."
     },
     {
       "id": "payments",
@@ -394,8 +394,8 @@
       "percent": 62,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Overnight smoke completed one Stripe TEST discounted checkout on prior tip 232659cf, but M1 Admin2 Resume failed at the payment provider and BB Smoke Sep8 remains paused. Tip a263c4ab does not change that payments picture until retest.",
-      "progressNote": "Estimate 62% held \u2014 smoke Stripe path passed on 232659cf; resume/unfreeze still FAIL; tip a263c4ab not rechecked.",
+      "plainSummary": "Tip 3ad37824: Finance Hub list-behind-KPI (#1273) and BI scorecard baseline honesty (#1294) live. Overnight smoke Stripe TEST path still the last Measured payments proof; Admin2 Resume/unfreeze still FAIL; BB Smoke Sep8 paused.",
+      "progressNote": "Estimate 62% held \u2014 tip 3ad37824. Finance KPI drill (#1273) + BI scorecard (#1294) live; Stripe resume/unfreeze picture unchanged until retest.",
       "blockers": [
         "Admin2 Resume/unfreeze FAIL \u2014 payment provider; Smoke membership still paused",
         "Broader payments / Stripe recheck beyond overnight smoke step 2 not done"
@@ -414,11 +414,11 @@
     {
       "id": "findings-fix",
       "name": "Fixing known launch bugs",
-      "percent": 87,
+      "percent": 90,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Tip fa78ec61 (#1270 privacy finance fixture labels live). Afternoon CMS merges #1280 phone hub controls, #1281 Website Health truth, #1283 identity/blog Unsaved \u2014 on GitHub staging ahead of live tip. No new Measured retests this evening; hold findings-fix 87%. Never instruct import.rollbackBatch.",
-      "progressNote": "Held 87% \u2014 tip fa78ec61 live with #1270 (finance preview names out of public bundle). CMS phone/Website pack #1280/#1281/#1283 merged but not on live tip yet. Strand percents not re-scored.",
+      "plainSummary": "Tip 3ad37824 now carries the evening Feel pack: CMS phone hubs (#1280/#1281/#1283), Academy named LMS URLs (#1289), Members Directory/invitations (#1284/#1287), Inbox rails (#1285), Staff profile (#1291), Finance KPI drill + BI scorecard (#1273/#1294), Intel heatmap/MRR/overview (#1276/#1278/#1277), CC finding identity + rollout gate (#1265/#1271), smoke invite-replay probe (#1296), campaign schedule locale (#1288), admin dock clearance (#1290). Estimate 90% (was 87%) \u2014 walkthroughs pending; do not claim Measured Feel clears until Bluebird re-check. Never instruct import.rollbackBatch.",
+      "progressNote": "Estimate 87\u219290 on tip 3ad37824: large Feel/CMS/Academy/Finance/CC pack live. No Measured Feel re-score yet tonight.",
       "blockers": [
         "ISO-18/20/27/29 still FAIL (last Measured on prior tip; #1250 awaits re-sweep)",
         "Dataset canary FAIL \u2014 Missing companyId on batchImport.upload (403); 0 members (engineering)",
@@ -441,7 +441,7 @@
       ],
       "phaseId": "launch-hardening",
       "projectWeightPercent": 10,
-      "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale"
     },
@@ -451,8 +451,8 @@
       "percent": 15,
       "basis": "estimate",
       "status": "blocked",
-      "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. Tip fa78ec61 does not unblock this strand.",
-      "progressNote": "Still 15% \u2014 secrets gate unchanged.",
+      "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. #1288 campaign schedule locale landed on tip 3ad37824 but does not unblock this strand.",
+      "progressNote": "Still 15% \u2014 tip 3ad37824. #1288 campaign schedule locale is a Feel fix, not the Resend/Agentmail secrets gate.",
       "blockers": [
         "Five Resend/Agentmail repository secrets missing for #1213"
       ],
@@ -464,11 +464,12 @@
     }
   ],
   "health": {
-    "overallLaunchPercent": 66,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 66% = round((52\u00d712 + 80\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) half-up.",
-    "readinessLabel": "Not ready to launch \u2014 tip fa78ec61. Headline ~63\u201366%. Smoke gate still red; CMS Feel pack merged ahead of tip.",
-    "plainSummary": "As of 2026-09-13T17:24:14.806115Z (Europe/Athens 13 Sep 2026 ~20:22), live tip moved f40075da \u2192 fa78ec61. On tip: #1270 privacy finance preview names. Ahead of tip (merged): #1280/#1281/#1283 CMS Feel pack. Strand percents NOT re-scored \u2014 retest pending. Headline held ~63%.",
+    "overallLaunchPercent": 63,
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 63% = round((52\u00d712 + 48\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 90\u00d710 + 15\u00d710)/100) half-up.",
+    "readinessLabel": "Not ready to launch \u2014 tip 3ad37824. Headline ~63%. Smoke gate still red pending retest; Feel pack live awaiting walkthrough.",
+    "plainSummary": "As of 2026-09-13T17:38:09.250144Z (Europe/Athens 13 Sep 2026 ~20:36), live tip moved fa78ec61 \u2192 3ad37824. Evening Feel/CMS/Academy/Finance/Intel/CC pack is ON tip (staging HEAD matches). Strand Measured scores held; findings-fix estimate 90. Headline ~63%.",
     "strengths": [
+      "Evening Feel pack ON tip 3ad37824 (CMS/Academy/Members/Finance/Intel/CC + smoke probe)",
       "Cluster A Measured 22/24 on tip a263c4ab; Teacher2 MGR-10 + ACS-X01 PASS",
       "Morning smoke: invite/OTP, booking, membership cancel+reverse PROVEN, evidence PASS on tip a263c4ab",
       "Invite E2E consumed-invite path PASS (#1258)",
@@ -479,6 +480,8 @@
       "Rollback ban LIFTED (#1240 on tip) \u2014 do not use import.rollbackBatch"
     ],
     "risks": [
+      "Feel pack live on tip 3ad37824 but Bluebird walkthroughs not done tonight",
+      "#1296 invite-replay probe live \u2014 six-step smoke not re-measured on this tip",
       "Cluster A still FAIL: ACS-F01, ACS-C01; Clusters B\u2013F locked",
       "Morning smoke FAIL on a263c4ab \u2014 HELGOBIRD not entered; late-cancel credit left 7 not 8",
       "Fresh member invite create FAIL on a263c4ab",
@@ -487,8 +490,7 @@
       "Morning Dispatch viewer still FAIL (last Measured on prior tip)",
       "Admin2 unfreeze FAIL \u2014 payment provider; BB Smoke Sep8 still paused",
       "AI-85 / ambient / ISO / dataset not fully re-measured on a263c4ab",
-      "Automated comms #1213 blocked on secrets",
-      "Three CMS Feel PRs merged but not on live /api/version tip yet"
+      "Automated comms #1213 blocked on secrets"
     ],
     "topPriorities": [
       "Wait for #1280/#1281/#1283 CMS pack on live tip, then Feel re-check Website/Blog on phone",
@@ -515,27 +517,53 @@
         "dataset"
       ]
     },
-    "refreshWarning": "Live tip unchanged since last strand rebuild \u2014 readiness may be stale relative to merged-but-undeployed PRs.",
+    "refreshWarning": null,
     "headlinePercent": 63,
     "status": "at-risk",
     "plain": "Launch health ~63%. Tip fa78ec61 (#1270 live). CMS phone hubs #1280 pack waiting for deploy."
   },
   "actions": [
     {
-      "id": "await-cms-1280-pack-tip",
-      "title": "Wait for CMS Feel pack (#1280/#1281/#1283) on tip, then phone re-check",
+      "id": "feel-recheck-cms-academy-on-tip",
+      "title": "Feel re-check on tip \u2014 Website/Blog phone + Academy named lists",
       "owner": "declan+bot",
       "priority": "P1",
-      "plainWhy": "#1280 phone Website/Blog hubs, #1281 Website Health truth, and #1283 identity/blog Unsaved merged ~20:22 EEST but live tip is still fa78ec61 (#1270). Once tip moves, Feel re-check Website + Blog hubs on a phone.",
-      "plain": "CMS Feel pack is merged ahead of staging tip \u2014 wait for deploy, then check Website/Blog on phone."
+      "plainWhy": "CMS #1280/#1281/#1283, Academy #1289, dock #1290, Members/Inbox/Staff #1284/#1287/#1285/#1291 are live on tip 3ad37824. Walk Website + Blog hubs on a phone and open the five Academy named URLs.",
+      "plain": "Feel pack is on tip now \u2014 phone-check Website/Blog and open Academy class-tags/terms/news/invites/teachers.",
+      "strandIds": [
+        "findings-fix",
+        "m1"
+      ],
+      "status": "needed",
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1289 Academy named URLs",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1289"
+        },
+        {
+          "label": "PR #1280 Website phone hubs",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1280"
+        }
+      ]
+    },
+    {
+      "id": "retest-smoke-invite-replay-1296",
+      "title": "Retest invitation-replay smoke \u2014 #1296 live on tip",
+      "owner": "bot",
+      "priority": "P1",
+      "plainWhy": "#1296 authenticated invitation replay already_accepted probe is on tip 3ad37824. Smoke strand still Held 67% until Measured invite-replay + six-step pass.",
+      "plain": "Invite-replay smoke probe shipped \u2014 re-run invitation already_accepted + six-step on this tip.",
+      "strandId": "smoke",
+      "status": "needed"
     },
     {
       "id": "retest-pulse-1266-on-tip",
       "title": "Retest Pulse saved-fact explain \u2014 #1266 is in tip ancestry",
       "owner": "bot",
       "priority": "P2",
-      "plainWhy": "#1266 was lagging earlier; it is now an ancestor of live tip fa78ec61. Ambient still Held 92% until Measured retest of saved-fact explain.",
-      "plain": "Pulse explain should be on tip now \u2014 re-check one saved fact returns exact data."
+      "plainWhy": "#1266 remains in tip ancestry of 3ad37824. Ambient still Held 92% until Measured retest of saved-fact explain.",
+      "plain": "Pulse explain should still be on tip \u2014 re-check one saved fact returns exact data."
     },
     {
       "id": "cc-bf-26-fail-codex",
@@ -785,8 +813,9 @@
     }
   ],
   "notes": [
-    "Tip refresh f40075da \u2192 fa78ec61 on routine launch-hub-tip-change-refresh (trigger PR #1280 merge; live tip is #1270).",
-    "HARD RULE: never instruct import.rollbackBatch (#1240 gate / prefer not to need rollback)."
+    "Tip refresh fa78ec61 \u2192 3ad37824 on routine launch-hub-tip-change-refresh (wake: PR #1289 merge; tip SHA is #1294).",
+    "HARD RULE: never instruct import.rollbackBatch (#1240 gate / prefer not to need rollback).",
+    "Headline ~63% after findings-fix estimate 87\u219290; Measured strands held pending Bluebird retests."
   ],
   "engineeringActions": [
     {
