@@ -14,8 +14,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/website/after-1280-website-hub-phone.png",
       "before_path": "drops/2026-09-13-feel-before-after/website/before-1280-W-F002.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "W-F003",
@@ -27,8 +27,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/website/after-1280-blog-hub-phone.png",
       "before_path": "drops/2026-09-13-feel-before-after/website/before-1280-W-F003.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "W-F001",
@@ -40,8 +40,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/website/after-1281-health.png",
       "before_path": "drops/2026-09-13-feel-before-after/website/before-1281-W-F001.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "W-F004",
@@ -53,8 +53,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/website/after-1283-identity.png",
       "before_path": "drops/2026-09-13-feel-before-after/website/before-1283-W-F004.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "W-F005",
@@ -66,8 +66,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/website/after-1283-blog-unsaved.png",
       "before_path": "drops/2026-09-13-feel-before-after/website/before-1283-W-F005.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "M-F001",
@@ -79,8 +79,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/members/after-1284-directory.png",
       "before_path": "drops/2026-09-13-feel-before-after/members/before-1284-M-F001.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "M-F003",
@@ -92,8 +92,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/members/after-1287-members-list.png",
       "before_path": "drops/2026-09-13-feel-before-after/members/before-1287-M-F003.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "INBOX-01",
@@ -105,8 +105,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/inbox/after-1285-inbox.png",
       "before_path": "drops/2026-09-13-feel-before-after/inbox/before-1285-INBOX-01.webp",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "STAFF-01",
@@ -118,8 +118,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/staff/after-1291-staff-profile.png",
       "before_path": "drops/2026-09-13-feel-before-after/staff/before-1291-STAFF-01.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "ACAD-01",
@@ -131,8 +131,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/academy/after-1289-class-tags.png",
       "before_path": "drops/2026-09-13-feel-before-after/academy/before-1289-ACAD-01.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "ACAD-02",
@@ -144,8 +144,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/academy/after-1289-terms.png",
       "before_path": "drops/2026-09-13-feel-before-after/academy/before-1289-ACAD-02.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "INTEL-01",
@@ -157,8 +157,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/intelligence/after-1276-heatmap.png",
       "before_path": "drops/2026-09-13-feel-before-after/intelligence/before-1276-INTEL-01.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "INTEL-02",
@@ -170,8 +170,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/intelligence/after-1277-overview.png",
       "before_path": "drops/2026-09-13-feel-before-after/intelligence/before-1277-INTEL-02.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "INTEL-03",
@@ -183,8 +183,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/intelligence/after-1278-mrr.png",
       "before_path": "drops/2026-09-13-feel-before-after/intelligence/before-1278-INTEL-03.png",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     },
     {
       "id": "FIN-01",
@@ -196,8 +196,8 @@
       "after_path": "drops/2026-09-13-feel-before-after/finance/after-1273-finance-hub.png",
       "before_path": "drops/2026-09-13-feel-before-after/finance/before-1273-FIN-01.webp",
       "before_ready": true,
-      "after_ready": false,
-      "status": "awaiting_after"
+      "after_ready": true,
+      "status": "captured"
     }
   ]
 }
