@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-13T05:45:16.664Z",
+  "updatedAt": "2026-09-13T05:56:45.152Z",
   "drops": [
+    {
+      "id": "2026-09-13-feel-measured-academy-staff",
+      "title": "Feel measured: Academy + Staff",
+      "date": "2026-09-13",
+      "summary": "Academy overall 33 (misroutes); Staff overall 43 (Unknown profile, clipped tabs, rota dock). Headline ~42 · 9/15 measured.",
+      "plainEnglish": "Academy Feel measured at 33% — named URLs still open the wrong job. Staff at 43% — warmer hub, but a known teacher shows as Unknown and tabs clip. Feel board overall about 42% with nine surfaces measured.",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "pack",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-13-feel-measured-academy-staff/feel-academy-staff.md"
+      ],
+      "tip": "6486be87"
+    },
     {
       "id": "2026-09-13-feel-measured-home-members",
       "title": "Feel measured: Home + Members/CRM",
