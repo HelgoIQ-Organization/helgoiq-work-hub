@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-09-13T10:05:15.997Z",
+  "updatedAt": "2026-09-13T14:51:41.329Z",
   "drops": [
+    {
+      "id": "2026-09-13-claude-dispatch-onboarding-forever-live",
+      "title": "Claude dispatch — onboarding forever-live",
+      "date": "2026-09-13",
+      "summary": "Git auto-deploy for onboarding.helgoiq.com via HelgoIQ-Organization/helgoiq-onboarding",
+      "plainEnglish": "Git auto-deploy for onboarding.helgoiq.com via HelgoIQ-Organization/helgoiq-onboarding",
+      "tags": [
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-13-claude-dispatch-onboarding-forever-live/CLAUDE-DISPATCH-ONBOARDING-FOREVER-LIVE-2026-09-13.md"
+      ]
+    },
     {
       "id": "2026-09-13-progress-for-claude",
       "title": "Progress for Claude — smoke, Feel, testing (13 Sep)",
