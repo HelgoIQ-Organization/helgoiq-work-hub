@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T05:44:15.679487+00:00",
+  "updatedAt": "2026-09-13T05:44:54Z",
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
   "rubric": {
@@ -9,14 +9,14 @@
     "overall": "round((joyful + obvious + frictionless) / 3)"
   },
   "headline": {
-    "joyful": 42,
-    "obvious": 40,
-    "frictionless": 40,
-    "overall": 41,
-    "note": "Equal-weight across surfaces. Website now measured (65 overall)."
+    "joyful": 43,
+    "obvious": 39,
+    "frictionless": 39,
+    "overall": 40,
+    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %."
   },
   "honesty": {
-    "measured": "Only team-chat from /workspace/helgoiq-chat-qa Sep 1 report.",
+    "measured": "Team-chat from /workspace/helgoiq-chat-qa Sep 1 report; Home + Members/CRM from /workspace/helgoiq-afternoon-2026-09-13/feel-measured REVIEW.md (Admin2 tip 6486be87).",
     "provisional_from_evidence": "Derived from Coverage L2 fails/misroutes, finance visual review notes, known P0 defects \u2014 labeled in plain English per surface.",
     "unscored": "Prefer provisional with low confidence over blank if L2 touched the hub."
   },
@@ -130,59 +130,115 @@
       "id": "home",
       "name": "Admin Home / overview",
       "pathHint": "/admin/overview",
-      "basis": "provisional_from_evidence",
-      "confidence": "medium",
+      "basis": "measured",
+      "confidence": "high",
       "scoredAt": "2026-09-13",
       "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 35,
-      "obvious": 30,
-      "frictionless": 45,
-      "overall": 37,
-      "plainSummary": "Provisional from Coverage L2 daily hubs + known P0. Overview still shows a Refrm tab/badge under Bluebird \u2014 tanks trust and obviousness. Home is reachable but does not feel like a warm studio dashboard yet.",
+      "joyful": 40,
+      "obvious": 22,
+      "frictionless": 38,
+      "overall": 33,
+      "plainSummary": "Measured Admin2 Bluebird walk tip 6486be87. /admin Home has warmth (date greeting, honest Pulse empty) but /admin/overview still shows Refrm tab+badge under Bluebird, Members (aggregated) is \u2014 while Members lists 11, and in-app moves flash a full-page FITNESS BUSINESS PLATFORM splash. Reachable and partly human \u2014 not yet obvious or trustworthy.",
       "strengths": [
-        "Loads under Bluebird TEST DATA",
-        "Part of daily hubs L2 programme (merged)"
+        "/admin greets with weekday date + honest Studio Pulse INSUFFICIENT DATA",
+        "Empty Today's classes points to Timetable; location pills clear",
+        "Bluebird + TEST DATA badges make staging context obvious",
+        "Customise Home affordance present"
       ],
-      "findings": [],
+      "findings": [
+        {
+          "id": "H-F001",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Refrm tab + badge on Bluebird Overview",
+          "detail": "/admin/overview?c=150002 shows tablist All Companies | Refrm and a Refrm pill on the Bluebird company card.",
+          "suggestion": "When companyId=150002 never render other-tenant tabs/badges; scope overview server-side."
+        },
+        {
+          "id": "H-F002",
+          "axis": "frictionless",
+          "severity": "confusing",
+          "title": "Full-page splash for in-app Home moves",
+          "detail": "Members\u2192/admin and KPI clicks flash Helgo FITNESS BUSINESS PLATFORM full-page splash.",
+          "suggestion": "Keep chrome; skeleton/pulse in content pane only."
+        },
+        {
+          "id": "H-F003",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Members (aggregated) \u2014 while Members has 11",
+          "detail": "Overview KPI Members (aggregated) is a dash; /admin/members reports 11 total / 9 active same tip.",
+          "suggestion": "Wire aggregate to same member query or hide until real; tile drills to /admin/members."
+        }
+      ],
       "suggestions": [
-        "Remove Refrm tab/badge whenever company is Bluebird",
-        "Surface one clear next action (today's bookings / open faults / unpaid)",
-        "Celebrate progress (members joined, classes filled) instead of empty KPI chrome",
-        "Make KPI tiles drill to the named list and return",
-        "Phone: ensure overview cards stack without horizontal clip"
+        "Kill Refrm tab/badge under Bluebird before other Home polish (H-F001)",
+        "Replace full-page splash with in-shell skeleton (H-F002)",
+        "Fix or hide Members (aggregated) until it matches Members (H-F003)",
+        "One clear next action on quiet days; fix Good morning, there",
+        "Make KPI tiles drill + return"
       ],
-      "evidenceNote": "Known defect: /admin/overview Refrm tab/badge on Bluebird (progress 13 Sep). Daily hubs L2 wave merged.",
+      "evidenceNote": "Measured feel walk 2026-09-13 Admin2 c=150002. Source: /workspace/helgoiq-afternoon-2026-09-13/feel-measured/home/REVIEW.md",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/home.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/home.md",
+      "sourceReport": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/home/REVIEW.md"
     },
     {
       "id": "members-crm",
       "name": "Members & CRM",
       "pathHint": "/admin/crm-hub",
-      "basis": "provisional_from_evidence",
-      "confidence": "medium",
+      "basis": "measured",
+      "confidence": "high",
       "scoredAt": "2026-09-13",
       "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 40,
-      "obvious": 38,
-      "frictionless": 42,
-      "overall": 40,
-      "plainSummary": "Provisional from core L2 Members: 3 PASS / 1 PARTIAL / 1 FAIL. crm-hub KPI vs empty Insights disagreement \u2014 you cannot trust the number you see. Dataset canary still 0 members on import, so empty states dominate.",
+      "joyful": 48,
+      "obvious": 36,
+      "frictionless": 40,
+      "overall": 41,
+      "plainSummary": "Measured Admin2 Bluebird walk tip 6486be87. CRM Pipeline 10 human lead cards + loud Add Lead/search; Members 11 with Add Member and invitations. Trust cracks: Directory dead-ends unavailable; Overview \u2014 vs Members 11; people list buried under invitations/KPIs. Stronger bones than Home \u2014 not WhatsApp-member-finder yet.",
       "strengths": [
-        "Several member paths L2 PASS",
-        "Member preview/forms path works in Forms E2E"
+        "Pipeline lead cards feel human (avatar + source + timestamp)",
+        "+ Add Lead / + Add Member high-contrast on primary hubs",
+        "Lead detail Convert + timeline + back works",
+        "Member rows show status and home studio"
       ],
-      "findings": [],
+      "findings": [
+        {
+          "id": "M-F001",
+          "axis": "frictionless",
+          "severity": "broken",
+          "title": "Sidebar Directory \u2192 unavailable page",
+          "detail": "Members \u2192 Directory and /admin/directory show This admin page is unavailable with duplicate Home CTAs.",
+          "suggestion": "Point Directory at /admin/members or remove pin if route missing."
+        },
+        {
+          "id": "M-F002",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Overview \u2014 vs Members 11 count disagree",
+          "detail": "Same seat/tenant/tip: Overview Members (aggregated)=\u2014; Members header 11 total / 9 active.",
+          "suggestion": "One source of truth for member counts; drill from Overview tile."
+        },
+        {
+          "id": "M-F003",
+          "axis": "joyful",
+          "severity": "confusing",
+          "title": "Invitations + KPIs bury the people list",
+          "detail": "First paint is invitations + four KPI cards; human rows below the fold.",
+          "suggestion": "People list first (avatar + last activity); collapse invitations; KPIs secondary."
+        }
+      ],
       "suggestions": [
-        "Fix CRM Insights empty vs hub KPI disagreement",
-        "Empty Insights: invite copy + link to import / add member",
-        "Align member counts across hub tiles and list",
-        "One path to Add member from every Members entry point",
-        "Don't show money/CRM KPIs that don't drill"
+        "Fix Directory route or retarget to Members (M-F001)",
+        "Align Overview member aggregate with Members counts (M-F002)",
+        "Promote human member rows above invitations chrome (M-F003)",
+        "Keep AI Performance KPI\u2194list contract; clarify Insights naming",
+        "One-path Add Member from every Members entry"
       ],
-      "evidenceNote": "dashboard censusCoreL2Members: 3 PASS / 1 PARTIAL / 1 FAIL (crm-hub KPI vs empty Insights). Dataset canary 0 members.",
+      "evidenceNote": "Measured feel walk 2026-09-13 Admin2 c=150002. L2 KPI-vs-empty Insights did not reproduce (list populated). Source: /workspace/helgoiq-afternoon-2026-09-13/feel-measured/members-crm/REVIEW.md",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/members-crm.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/members-crm.md",
+      "sourceReport": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/members-crm/REVIEW.md"
     },
     {
       "id": "timetable",

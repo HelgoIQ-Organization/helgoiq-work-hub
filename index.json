@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-09-13T05:43:36.860Z",
+  "updatedAt": "2026-09-13T05:45:16.664Z",
   "drops": [
+    {
+      "id": "2026-09-13-feel-measured-home-members",
+      "title": "Feel measured: Home + Members/CRM",
+      "date": "2026-09-13",
+      "summary": "Measured UX bar: Home 33% (Refrm leak, splash, aggregate dash); Members/CRM 41% (Directory dead end, count disagree, buried list). 6 FIX_CANDIDATEs.",
+      "plainEnglish": "Measured UX bar: Home 33% (Refrm leak, splash, aggregate dash); Members/CRM 41% (Directory dead end, count disagree, buried list). 6 FIX_CANDIDATEs.",
+      "tags": [
+        "findings",
+        "status",
+        "census"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-13-feel-measured-home-members/home-REVIEW.md",
+        "drops/2026-09-13-feel-measured-home-members/members-crm-REVIEW.md",
+        "drops/2026-09-13-feel-measured-home-members/FIX_CANDIDATE-H-F001-refrm-leak.md",
+        "drops/2026-09-13-feel-measured-home-members/FIX_CANDIDATE-M-F001-directory-unavailable.md"
+      ],
+      "tip": "6486be87a68821e383d36d5246f9da08a802ee59"
+    },
     {
       "id": "2026-09-13-coverage-l2-long-tail-leftover-14",
       "title": "Coverage L2 — Long-tail leftover 14",

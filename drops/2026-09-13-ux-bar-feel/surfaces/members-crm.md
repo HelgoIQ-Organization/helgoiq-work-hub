@@ -1,32 +1,52 @@
 # Members & CRM
 
-**Basis:** `provisional_from_evidence` · **Confidence:** medium · **Scored:** 2026-09-13 · **Tip:** `6486be87a688…`  
-**Path hint:** `/admin/crm-hub`
+**Basis:** `measured` · **Confidence:** high · **Scored:** 2026-09-13  
+**Tip:** `6486be87a68821e383d36d5246f9da08a802ee59` · Seat Admin2 · `?c=150002`  
+**Paths:** `/admin/crm-hub`, `/admin/crm`, `/admin/members`, `/admin/crm/lead/14`, `/admin/directory`
 
 ## Scores
 
 | Joyful | Obvious | Frictionless | Overall |
 |---:|---:|---:|---:|
-| **40%** | **38%** | **42%** | **40%** |
+| **48%** | **36%** | **40%** | **41%** |
 
 ## Plain English
 
-Provisional from core L2 Members: 3 PASS / 1 PARTIAL / 1 FAIL. crm-hub KPI vs empty Insights disagreement — you cannot trust the number you see. Dataset canary still 0 members on import, so empty states dominate.
+Measured Admin2 Bluebird walk. CRM Pipeline shows **10** human lead cards with loud **+ Add Lead** and search; Members shows **11** with invitations and **+ Add Member**; lead detail is usable. Trust cracks: sidebar **Directory** dead-ends “unavailable”; Overview **—** vs Members **11**; people list buried under invitations/KPIs. Stronger bones than Home — not WhatsApp-member-finder yet. L2 KPI-vs-empty Insights **did not reproduce** (list populated).
 
-**Evidence note:** dashboard censusCoreL2Members: 3 PASS / 1 PARTIAL / 1 FAIL (crm-hub KPI vs empty Insights). Dataset canary 0 members.
+## Source
+
+Canonical: `/workspace/helgoiq-afternoon-2026-09-13/feel-measured/members-crm/REVIEW.md`  
+FIX candidates: `FIX_CANDIDATE-M-F001-directory-unavailable.md`, `M-F002-count-disagree.md`, `M-F003-list-buried.md`
 
 ## Strengths
 
-- Several member paths L2 PASS
-- Member preview/forms path works in Forms E2E
+- Pipeline lead cards feel human (avatar + source + timestamp)
+- + Add Lead / + Add Member high-contrast on primary hubs
+- Lead detail Convert + timeline + back works
+- Member rows show status and home studio
+
+## Findings
+
+### M-F001 — Directory → unavailable
+- **Axis:** frictionless · **Severity:** broken
+- **Detail:** `/admin/directory` is “This admin page is unavailable”.
+- **Suggestion:** Retarget to `/admin/members` or remove pin.
+
+### M-F002 — Overview — vs Members 11
+- **Axis:** obvious · **Severity:** broken
+- **Detail:** Cross-surface member count disagree.
+- **Suggestion:** One source of truth; Overview tile drills here.
+
+### M-F003 — People list buried
+- **Axis:** joyful · **Severity:** confusing
+- **Detail:** Invitations + KPI stack eat first viewport.
+- **Suggestion:** People list first (avatar + last activity).
 
 ## Suggestions
 
-- Fix CRM Insights empty vs hub KPI disagreement
-- Empty Insights: invite copy + link to import / add member
-- Align member counts across hub tiles and list
-- One path to Add member from every Members entry point
-- Don't show money/CRM KPIs that don't drill
-
----
-*Provisional — not a dedicated UX lab pass. Re-score when L2 defects clear.*
+1. Fix Directory route (M-F001)
+2. Align Overview aggregate with Members (M-F002)
+3. Promote human rows above invitations (M-F003)
+4. Keep AI Performance KPI↔list contract; clarify Insights naming
+5. One-path Add Member from every entry
