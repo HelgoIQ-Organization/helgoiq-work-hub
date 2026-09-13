@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T05:45:28.516494+00:00",
+  "updatedAt": "2026-09-13T05:48:49Z",
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
   "rubric": {
@@ -9,14 +9,14 @@
     "overall": "round((joyful + obvious + frictionless) / 3)"
   },
   "headline": {
-    "joyful": 43,
-    "obvious": 39,
-    "frictionless": 39,
-    "overall": 40,
-    "note": "Equal-weight. Home+Members now measured (33 / 41)."
+    "joyful": 45,
+    "obvious": 40,
+    "frictionless": 40,
+    "overall": 42,
+    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %."
   },
   "honesty": {
-    "measured": "Team-chat from /workspace/helgoiq-chat-qa Sep 1 report; Home + Members/CRM from /workspace/helgoiq-afternoon-2026-09-13/feel-measured REVIEW.md (Admin2 tip 6486be87).",
+    "measured": "Team chat (Sep 1 chat-qa) + Finance (2026-09-13 feel-measured live Admin2 Bluebird). See drops/2026-09-13-ux-bar-feel/surfaces/ and afternoon feel-measured/finance/REVIEW.md.",
     "provisional_from_evidence": "Derived from Coverage L2 fails/misroutes, finance visual review notes, known P0 defects \u2014 labeled in plain English per surface.",
     "unscored": "Prefer provisional with low confidence over blank if L2 touched the hub."
   },
@@ -273,29 +273,60 @@
       "id": "finance",
       "name": "Finance / payments UI",
       "pathHint": "/admin/finance",
-      "basis": "provisional_from_evidence",
-      "confidence": "medium",
+      "basis": "measured",
+      "confidence": "high",
       "scoredAt": "2026-09-13",
       "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 32,
-      "obvious": 28,
-      "frictionless": 35,
-      "overall": 32,
-      "plainSummary": "Provisional from money L2 Finance: 0 PASS / 1 PARTIAL / 6 FAIL \u2014 KPI drills and invoicing alias. Empty or non-drilling money tiles tank joyful and obvious. Payments strand still at-risk (unfreeze / provider).",
+      "joyful": 58,
+      "obvious": 47,
+      "frictionless": 49,
+      "overall": 51,
+      "plainSummary": "Measured live tip 6486be87 Admin2 Bluebird. Calm UI + strong Stripe Connect sandbox language, but invoicing\u2192Payroll misroute, POS Overview vs Orders disagreement, and non-drilling KPI tiles keep money ops below a WhatsApp/Slack bar. Cashflow y-axis readable live; empty payroll/BI history states still cold.",
       "strengths": [
-        "Stripe Connect path at least PARTIAL",
-        "Stripe TEST checkout proven in overnight smoke historically"
+        "Stripe Connect Connected and ready / Safe Studio sandbox copy",
+        "Billing cards open Stripe TEST hosted sessions (observe-only)",
+        "Gift Cards and Products usable once found",
+        "Cashflow forecast y-axis readable on this tip"
       ],
-      "findings": [],
+      "findings": [
+        {
+          "id": "F-FIN-02",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Invoicing URL shows Payroll",
+          "detail": "/admin/invoicing renders Payroll chrome and Approve Payrun."
+        },
+        {
+          "id": "F-FIN-03",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "POS Overview vs Orders disagreement",
+          "detail": "Overview Paid orders 0 / \u00a30 while Orders lists three paid \u00a320 rows."
+        },
+        {
+          "id": "F-FIN-01",
+          "axis": "frictionless",
+          "severity": "confusing",
+          "title": "Payroll KPIs do not drill",
+          "detail": "KPI tiles look clickable; August empty is bare zeros."
+        },
+        {
+          "id": "F-FIN-05",
+          "axis": "joyful",
+          "severity": "confusing",
+          "title": "BI history looks like failure",
+          "detail": "Red X / em-dash targets / internal totalRevenue keys when baseline missing."
+        }
+      ],
       "suggestions": [
-        "Make every finance KPI tile drill to the named ledger and return",
-        "Fix invoicing alias so the route name matches the page",
-        "Replace empty money dashboards with invite-to-connect / first-invoice copy",
-        "One path: unpaid \u2192 invoice \u2192 collect (no hub hop)",
-        "Fix Admin2 Resume/unfreeze payment-provider path",
-        "Never show Refrm or wrong-tenant money figures"
+        "Make every finance KPI a labeled filter with return, or remove click affordance",
+        "Fix invoicing alias so route name matches the page",
+        "One paid-order query + period across POS Overview and Orders",
+        "Neutral not-enough-history BI state (no red failure chrome)",
+        "Finance hub Money actions row for Gift Cards / Products / Refunds / Invoices",
+        "Empty payroll month CTA: No run yet \u2014 Run Payroll"
       ],
-      "evidenceNote": "dashboard censusMoneyL2Finance: 0 PASS / 1 PARTIAL (stripe-connect) / 6 FAIL \u2014 KPI drills + invoicing alias. Payments strand ~62% estimate.",
+      "evidenceNote": "Measured REVIEW + FIX_CANDIDATE + 25 screenshots under helgoiq-afternoon-2026-09-13/feel-measured/finance/. L2 Finance (0P/1Part/6F) informed but scores from live feel walk.",
       "detailDropId": "2026-09-13-ux-bar-feel",
       "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/finance.md"
     },
