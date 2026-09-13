@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-13T10:05:07Z",
-  "tip": "f40075da5f7ce0287e406459ace4adcbe6f053f7",
+  "updatedAt": "2026-09-13T21:00:06Z",
+  "tip": "3ad3782443d147934342e08a27d7151133369f74",
   "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
   "rubric": {
     "joyful": "Warm, human, celebrates progress; list sells conversation not filenames; empty states inviting (0\u2013100 vs WhatsApp/Slack).",
@@ -9,17 +9,17 @@
     "overall": "round((joyful + obvious + frictionless) / 3)"
   },
   "headline": {
-    "joyful": 45,
-    "obvious": 40,
-    "frictionless": 40,
-    "overall": 42,
-    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %."
+    "joyful": 48,
+    "obvious": 46,
+    "frictionless": 44,
+    "overall": 46,
+    "note": "Equal-weight across 15 surfaces. Website rescored overnight to 72 (tip 3ad37824)."
   },
   "honesty": {
-    "measured": "Team chat (Sep 1 chat-qa) + Finance (2026-09-13 feel-measured live Admin2 Bluebird). See drops/2026-09-13-ux-bar-feel/surfaces/ and afternoon feel-measured/finance/REVIEW.md.",
-    "provisional_from_evidence": "Derived from Coverage L2 fails/misroutes, finance visual review notes, known P0 defects \u2014 labeled in plain English per surface.",
+    "measured": "Surfaces with live Admin2 Bluebird retest PASS on tip 3ad37824: members-crm (#1284/#1287), marketing (#1285/#1288), website (#1280/#1281/#1283), intelligence (#1276/#1277/#1278), home (Overview #1277 adjacency). Evidence under helgoiq-overnight-2026-09-13/retests/.",
+    "provisional_from_evidence": "academy/staff/finance/command-centre small bumps from tip-included PRs or screens without full RESULTS; team-chat/timetable/safe-studio/settings/forms/ambient held.",
     "unscored": "Prefer provisional with low confidence over blank if L2 touched the hub.",
-    "note": "Measured Feel walks were on tip 6486be87; live tip is f40075da (#1295). Retest Feel after fix PRs merge. Headline equal-weight not launch health."
+    "note": "Prior Feel walks on tip 6486be87; overnight rescore synthesises retest PASSes on 3ad37824. Headline equal-weight not launch health."
   },
   "surfaces": [
     {
@@ -125,20 +125,28 @@
       ],
       "detailDropId": "2026-09-13-ux-bar-feel",
       "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/team-chat.md",
-      "sourceReport": "/workspace/helgoiq-chat-qa/report/CHAT-QA-REPORT.md"
+      "sourceReport": "/workspace/helgoiq-chat-qa/report/CHAT-QA-REPORT.md",
+      "previous": {
+        "tip": "pre-6486be87-chat-qa-2026-09-01",
+        "joyful": 28,
+        "obvious": 32,
+        "frictionless": 18,
+        "overall": 26
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight \u2014 held prior scores; tip stamp updated for honesty only where unchanged."
     },
     {
       "id": "home",
       "name": "Admin Home / overview",
       "pathHint": "/admin/overview",
       "basis": "measured",
-      "confidence": "high",
+      "confidence": "medium",
       "scoredAt": "2026-09-13",
-      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 40,
-      "obvious": 22,
-      "frictionless": 38,
-      "overall": 33,
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 42,
+      "obvious": 30,
+      "frictionless": 40,
+      "overall": 37,
       "plainSummary": "Measured Admin2 Bluebird walk tip 6486be87. /admin Home has warmth (date greeting, honest Pulse empty) but /admin/overview still shows Refrm tab+badge under Bluebird, Members (aggregated) is \u2014 while Members lists 11, and in-app moves flash a full-page FITNESS BUSINESS PLATFORM splash. Reachable and partly human \u2014 not yet obvious or trustworthy.",
       "strengths": [
         "/admin greets with weekday date + honest Studio Pulse INSUFFICIENT DATA",
@@ -182,20 +190,28 @@
       "evidenceNote": "Measured 2026-09-13. Refrm still on Overview. Low obvious from aggregate/misroute pain.",
       "detailDropId": "2026-09-13-ux-bar-feel",
       "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/home.md",
-      "sourceReport": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/home/REVIEW.md"
+      "sourceReport": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/home/REVIEW.md",
+      "rescoreNote": "Overview Refrm hide (#1277 PASS) removes trust-breaker on Home/Overview adjacency; Pulse Stage 1B still pending.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 40,
+        "obvious": 22,
+        "frictionless": 38,
+        "overall": 33
+      }
     },
     {
       "id": "members-crm",
       "name": "Members & CRM",
       "pathHint": "/admin/crm-hub",
       "basis": "measured",
-      "confidence": "high",
+      "confidence": "medium",
       "scoredAt": "2026-09-13",
-      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 48,
-      "obvious": 36,
-      "frictionless": 40,
-      "overall": 41,
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 52,
+      "obvious": 46,
+      "frictionless": 46,
+      "overall": 48,
       "plainSummary": "Measured Admin2 Bluebird walk tip 6486be87. CRM Pipeline 10 human lead cards + loud Add Lead/search; Members 11 with Add Member and invitations. Trust cracks: Directory dead-ends unavailable; Overview \u2014 vs Members 11; people list buried under invitations/KPIs. Stronger bones than Home \u2014 not WhatsApp-member-finder yet.",
       "strengths": [
         "Pipeline lead cards feel human (avatar + source + timestamp)",
@@ -239,7 +255,15 @@
       "evidenceNote": "Measured 2026-09-13. Directory unavailable / count disagree / list buried.",
       "detailDropId": "2026-09-13-ux-bar-feel",
       "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/members-crm.md",
-      "sourceReport": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/members-crm/REVIEW.md"
+      "sourceReport": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/members-crm/REVIEW.md",
+      "rescoreNote": "Retest PASS #1284 Directory list + #1287 invitations compact on tip 3ad37824 \u2014 obvious/friction up vs Directory dead-end + buried list on 6486be87.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 48,
+        "obvious": 36,
+        "frictionless": 40,
+        "overall": 41
+      }
     },
     {
       "id": "timetable",
@@ -268,20 +292,28 @@
       ],
       "evidenceNote": "Daily hubs L2 merged (Members/Timetable/Inbox/Finance/Home/Staff/Safe Studio). Specific timetable FAIL detail sparse \u2014 scores conservative.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/timetable.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/timetable.md",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 45,
+        "obvious": 48,
+        "frictionless": 42,
+        "overall": 45
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight \u2014 held prior scores; tip stamp updated for honesty only where unchanged."
     },
     {
       "id": "finance",
       "name": "Finance / payments UI",
       "pathHint": "/admin/finance",
-      "basis": "measured",
-      "confidence": "high",
+      "basis": "provisional_from_evidence",
+      "confidence": "low",
       "scoredAt": "2026-09-13",
-      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
       "joyful": 58,
-      "obvious": 47,
+      "obvious": 49,
       "frictionless": 49,
-      "overall": 51,
+      "overall": 52,
       "plainSummary": "Measured live tip 6486be87 Admin2 Bluebird. Calm UI + strong Stripe Connect sandbox language, but invoicing\u2192Payroll misroute, POS Overview vs Orders disagreement, and non-drilling KPI tiles keep money ops below a WhatsApp/Slack bar. Cashflow y-axis readable live; empty payroll/BI history states still cold.",
       "strengths": [
         "Stripe Connect Connected and ready / Safe Studio sandbox copy",
@@ -329,20 +361,28 @@
       ],
       "evidenceNote": "Measured REVIEW + FIX_CANDIDATE + 25 screenshots under helgoiq-afternoon-2026-09-13/feel-measured/finance/. L2 Finance (0P/1Part/6F) informed but scores from live feel walk.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/finance.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/finance.md",
+      "rescoreNote": "#1294 BI scorecard on tip; #1292/#1293 still open \u2014 tiny obvious bump only, no clear measured walk tonight.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 58,
+        "obvious": 47,
+        "frictionless": 49,
+        "overall": 51
+      }
     },
     {
       "id": "staff",
       "name": "Staff hub",
       "pathHint": "/admin/staff-hub",
-      "basis": "measured",
-      "confidence": "high",
+      "basis": "provisional_from_evidence",
+      "confidence": "low",
       "scoredAt": "2026-09-13",
-      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 48,
-      "obvious": 44,
-      "frictionless": 36,
-      "overall": 43,
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 50,
+      "obvious": 48,
+      "frictionless": 40,
+      "overall": 46,
       "plainSummary": "Measured lab: Staff hub is warmer and clearer than the L2 FAIL list (checklist, Invite staff, 14-member table). Friction is chrome \u2014 Unknown profile name, clipped \u201cOb\u201d tabs, rota grid under the dock.",
       "strengths": [
         "Onboarding checklist names expired invites and incomplete setups",
@@ -392,20 +432,28 @@
       ],
       "evidenceNote": "Measured 2026-09-13 Admin 2 Bluebird c=150002. Shots in feel-measured/staff/. FIX_CANDIDATE.md in staff-measured/.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/staff.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/staff.md",
+      "rescoreNote": "Tip includes #1291 Staff Unknown + wrap tabs + #1290 dock; longtail screens present, RESULTS pending \u2014 small provisional bump.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 48,
+        "obvious": 44,
+        "frictionless": 36,
+        "overall": 43
+      }
     },
     {
       "id": "marketing",
       "name": "Marketing / campaigns",
       "pathHint": "/admin/marketing",
       "basis": "measured",
-      "confidence": "high",
+      "confidence": "medium",
       "scoredAt": "2026-09-13",
-      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 68,
-      "obvious": 72,
-      "frictionless": 58,
-      "overall": 66,
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 70,
+      "obvious": 76,
+      "frictionless": 66,
+      "overall": 71,
       "plainSummary": "Measured Admin 2 walk on tip 6486be87. Warmth and clarity beat the mid provisional; friction is Inbox density (clipped rails, status contradiction, 1850% Active Members), splash hops, and en-GB vs mm/dd/yyyy \u2014 not Meta/send secrets.",
       "strengths": [
         "Verdant editorial system and clear hub tabs",
@@ -428,7 +476,15 @@
       ],
       "evidenceNote": "Measured Feel walk 2026-09-13 tip 6486be87 \u2014 lightened vs provisional. See REVIEW + FIX_CANDIDATE.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/marketing.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/marketing.md",
+      "rescoreNote": "Retest PASS #1285 inbox rails + honest 36/2 share (no 1850%); #1288 en-GB 24h schedule \u2014 friction/obvious lift.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 68,
+        "obvious": 72,
+        "frictionless": 58,
+        "overall": 66
+      }
     },
     {
       "id": "website",
@@ -437,46 +493,52 @@
       "basis": "measured",
       "confidence": "high",
       "scoredAt": "2026-09-13",
-      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 64,
-      "obvious": 72,
-      "frictionless": 60,
-      "overall": 65,
-      "plainSummary": "Measured Sep 13 Admin2: strong draft/live governance on desktop; phone tab/CTA clipping and contradictory Health failure hurt frictionless/obvious. Overall 65 (was provisional 52).",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 66,
+      "obvious": 79,
+      "frictionless": 71,
+      "overall": 72,
+      "plainSummary": "Overnight rescore tip 3ad37824: #1280/#1281/#1283 PASS \u2014 phone tabs/CTA, honest Health, named identity, Unsaved clears. Overall 72 (was 65).",
       "strengths": [
         "Draft vs live governance language",
-        "Desktop named start cards and Blog draft badges",
-        "Sticky phone dock remains usable"
+        "Phone Home selector + full New Post (#1280)",
+        "Honest Health failure + Retry (#1281)",
+        "Identity name + Unsaved clears (#1283)"
       ],
       "findings": [
-        "Health failure contradicts \u201cnot checked yet\u201d",
-        "Phone Website Hub tabs clip to lone \u201cI\u201d",
-        "Blog phone CTA truncates to \u201cNew Pos\u201d",
-        "Unsaved badge after Save Draft"
+        "Splash on in-app Website route hops",
+        "Publish still loud beside Save Draft",
+        "Readiness empty still backlog-feeling"
       ],
       "suggestions": [
-        "Honest Health failure + Retry",
-        "Fix phone tab/CTA overflow",
-        "Clear Unsaved on draft save",
-        "Fix Unknown display name",
+        "In-place skeleton for hub tab hops",
+        "Soften Publish while Draft",
         "Guided first-page win above readiness backlog"
       ],
-      "evidenceNote": "Measured Feel walk 2026-09-13 tip 6486be87. See REVIEW + FIX_CANDIDATE (Health contradiction, phone tab clip, Blog CTA).",
+      "evidenceNote": "overnight feel/website.md + retests/website/; afternoon REVIEW for baseline",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/website.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/website.md",
+      "rescoreNote": "Retest PASS #1280 phone tabs/CTA, #1281 honest Health failure, #1283 named identity + Unsaved clear.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 64,
+        "obvious": 72,
+        "frictionless": 60,
+        "overall": 65
+      }
     },
     {
       "id": "academy",
       "name": "Academy / LMS",
       "pathHint": "/admin/academy",
-      "basis": "measured",
-      "confidence": "high",
+      "basis": "provisional_from_evidence",
+      "confidence": "low",
       "scoredAt": "2026-09-13",
-      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 42,
-      "obvious": 22,
-      "frictionless": 34,
-      "overall": 33,
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 44,
+      "obvious": 30,
+      "frictionless": 38,
+      "overall": 37,
       "plainSummary": "Measured lab: overview is warmer than L2 implied (green hero, Create a course), but named URLs still lie \u2014 tags/terms\u2192LMS roles, news\u2192libraries, invites/teachers\u21920 Reflections. Obviousness stays crushed.",
       "strengths": [
         "Editorial green hero and Create a course on overview",
@@ -519,7 +581,15 @@
       ],
       "evidenceNote": "Measured 2026-09-13 Admin 2 Bluebird c=150002. Shots in feel-measured/academy/. FIX_CANDIDATE.md in academy-measured/.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/academy.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/academy.md",
+      "rescoreNote": "Tip includes #1289 named Academy routes + #1290 dock clearance (screens in longtail/; RESULTS pending). Provisional bump on obvious from named routes evidence screens.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 42,
+        "obvious": 22,
+        "frictionless": 34,
+        "overall": 33
+      }
     },
     {
       "id": "safe-studio",
@@ -549,7 +619,15 @@
       ],
       "evidenceNote": "Safe Studio L2 summary tip 6486be87: 5 FAIL unique defects all KPI non-drill.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/safe-studio.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/safe-studio.md",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 40,
+        "obvious": 35,
+        "frictionless": 42,
+        "overall": 39
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight \u2014 held prior scores; tip stamp updated for honesty only where unchanged."
     },
     {
       "id": "settings",
@@ -578,20 +656,28 @@
       ],
       "evidenceNote": "Settings chunk tip 6486be87: Feature Management Refrm search hit on Bluebird; platform-sales BLOCKED.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/settings.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/settings.md",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 38,
+        "obvious": 28,
+        "frictionless": 40,
+        "overall": 35
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight \u2014 held prior scores; tip stamp updated for honesty only where unchanged."
     },
     {
       "id": "intelligence",
       "name": "Intelligence & reports",
       "pathHint": "/admin/reports-hub",
       "basis": "measured",
-      "confidence": "high",
+      "confidence": "medium",
       "scoredAt": "2026-09-13",
-      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 44,
-      "obvious": 47,
-      "frictionless": 27,
-      "overall": 39,
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 48,
+      "obvious": 57,
+      "frictionless": 39,
+      "overall": 48,
       "plainSummary": "Measured hub pass on tip 6486be87. Titles/cards orient well; Daily Focus and Performance Intelligence show craft. Still fails WhatsApp/Slack on flow and trust: full-page splashes, MRR crash, Refrm on Bluebird Heat Map/Overview.",
       "strengths": [
         "Clear titles/tabs within ~10 seconds on most surfaces",
@@ -614,7 +700,15 @@
       ],
       "evidenceNote": "Measured Feel walk 2026-09-13 tip 6486be87 \u2014 see REVIEW.md + 9 screenshots. Top pains: MRR crash, Refrm on Heat Map/Overview, full-page splash, fragmented IA, no KPI drill.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/intelligence.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/intelligence.md",
+      "rescoreNote": "Retest PASS #1276 Bluebird-only heat filters, #1277 no Refrm on Overview, #1278 MRR loads without crash \u2014 friction/obvious large lift vs prior Refrm/MRR fails.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 44,
+        "obvious": 47,
+        "frictionless": 27,
+        "overall": 39
+      }
     },
     {
       "id": "forms",
@@ -643,7 +737,15 @@
       ],
       "evidenceNote": "forms-pass-qr-dest-fail tip a263c4ab; later matrices on a73ff70 still show QR kind / public fails. Tip at score uses hub live tip for board currency; evidence spans a263c4ab\u2013a73ff70.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/forms.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/forms.md",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 42,
+        "obvious": 38,
+        "frictionless": 35,
+        "overall": 38
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight \u2014 held prior scores; tip stamp updated for honesty only where unchanged."
     },
     {
       "id": "ambient",
@@ -673,7 +775,15 @@
       ],
       "evidenceNote": "Ambient dispatch viewer PASS tip 6486be87; ambient strand 92%. Twin/BI Admin2 reachability historically uneven \u2014 confidence medium.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/ambient.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/ambient.md",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 55,
+        "obvious": 58,
+        "frictionless": 52,
+        "overall": 55
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight \u2014 held prior scores; tip stamp updated for honesty only where unchanged."
     },
     {
       "id": "command-centre",
@@ -682,11 +792,11 @@
       "basis": "provisional_from_evidence",
       "confidence": "medium",
       "scoredAt": "2026-09-13",
-      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
       "joyful": 35,
-      "obvious": 28,
+      "obvious": 30,
       "frictionless": 40,
-      "overall": 34,
+      "overall": 35,
       "plainSummary": "Provisional from answer quality (not acceptance % as a feel score). Milestone 2 B\u2013F 4/30: invented how-do-I paths, missing named refuse reasons, XAGR numbers missing vs Pulse/Dispatch/Twin, investigation stalls. Chat shell may load; answers are not yet obvious or joyful.",
       "strengths": [
         "Cluster A 24/24 PASS on tip",
@@ -703,7 +813,15 @@
       ],
       "evidenceNote": "CC Milestone 2 frozen bank 4/30 PASS on 6486be87; fail themes posted #1180. This surface scores answer UX feel, not the 48% strand acceptance meter.",
       "detailDropId": "2026-09-13-ux-bar-feel",
-      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/command-centre.md"
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/command-centre.md",
+      "rescoreNote": "#1265/#1271 on tip but agents Paused/Not opted in \u2014 cannot claim finding-identity feel win; tiny provisional only.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 35,
+        "obvious": 28,
+        "frictionless": 40,
+        "overall": 34
+      }
     }
   ]
 }
