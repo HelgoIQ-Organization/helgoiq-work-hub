@@ -1,6 +1,21 @@
 {
-  "updatedAt": "2026-09-13T17:38:09.497Z",
+  "updatedAt": "2026-09-13T19:40:35.760Z",
   "drops": [
+    {
+      "id": "2026-09-13-feel-before-after-pairs-15-improvements",
+      "title": "Feel before/after pairs (15 improvements)",
+      "date": "2026-09-13",
+      "summary": "Before shots staged; afters capturing on tip 3ad37824",
+      "plainEnglish": "Before shots staged; afters capturing on tip 3ad37824",
+      "tags": [
+        "status"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-13-feel-before-after-pairs-15-improvements/README.md"
+      ]
+    },
     {
       "id": "2026-09-13-tip-3ad37824-evening-feel-pack-live",
       "title": "Tip 3ad37824 evening Feel pack live",
