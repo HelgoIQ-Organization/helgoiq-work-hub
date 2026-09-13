@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-09-12T19:55:08.335146+00:00",
+  "updatedAt": "2026-09-13T10:05:07.243637+00:00",
   "meta": {
-    "dataAsOf": "2026-09-12T19:55:08.335146+00:00",
-    "buildStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-    "liveTip": "6486be87a68821e383d36d5246f9da08a802ee59",
+    "dataAsOf": "2026-09-13T10:05:07.243637+00:00",
+    "buildStamp": "f40075da5f7ce0287e406459ace4adcbe6f053f7",
+    "liveTip": "f40075da5f7ce0287e406459ace4adcbe6f053f7",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 63% = round((52\u00d712 + 48\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/latest.json",
-    "lastRefreshNote": "Tip changed a3a0e207 \u2192 6486be87; Bot Commander should rescore strands.",
+    "lastRefreshNote": "Tip changed 6486be87 \u2192 f40075da; Bot Commander should rescore strands.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-12T12:41:47.214Z"
+      "checkedAt": "2026-09-13T10:05:07.146Z"
     },
     "updatedAt": "2026-09-12T11:59:19.847671Z",
     "note": "Live tip a3a0e207: #1267 invite create. Staging ahead: #1266 Pulse (6486be87) not deployed. Cluster A last Measured 23/24 on a73ff70 (ACS-C01 fail).",
@@ -36,9 +36,10 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "48% = A 24/24 + B\u2013F 4/30 measured on 6486be87 (replaced A-only 80%)."
+    "commandCentreNote": "48% = A 24/24 + B\u2013F 4/30 measured on 6486be87 (replaced A-only 80%).",
+    "liveTipNote": "Live tip f40075da includes #1295 smoke Clerk session fix. Many strand % still measured on 6486be87 until retest."
   },
-  "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+  "tip": "f40075da5f7ce0287e406459ace4adcbe6f053f7",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 63,
@@ -345,7 +346,7 @@
       "percent": 67,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Invite create #1267 PASS on 6486be87. Six-step smoke BLOCKED \u2014 fixtures seat already accepted. Morning seat smoke-2 on tip a263c4ab overall FAIL (Measured 4/6). Invite/OTP PASS; Bluebird 8 join Active via Stripe TEST but HELGOBIRD not entered; booking PASS; late-cancel credit FAIL (7 not 8); membership cancel+reverse PROVEN PASS; evidence PASS. Residual: BB Smoke Sep8 still paused after M1 unfreeze FAIL.",
+      "plainSummary": "Tip f40075da live: #1295 fixed getActiveCompany 401. Smoke still FAIL \u2014 invitation replay not already_accepted. Gate red on open staging PRs. Fixtures refreshed 13 Sep.",
       "progressNote": "Held 67% \u2014 tip now a3a0e207 with #1267 invite create LIVE; invite path retest pending (not re-measured).",
       "blockers": [
         "HELGOBIRD promo not entered on Bluebird 8 checkout (standard price used)",
@@ -442,7 +443,7 @@
   "health": {
     "overallLaunchPercent": 66,
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 66% = round((52\u00d712 + 80\u00d710 + 86\u00d710 + 56\u00d715 + 92\u00d79 + 72\u00d710 + 67\u00d76 + 62\u00d78 + 87\u00d710 + 15\u00d710)/100) half-up.",
-    "readinessLabel": "Not ready to launch \u2014 tip 6486be87. Headline 66% after score-push retests: Cluster A 24/24, Dispatch PASS, AI-85/dataset/ISO held. Biggest remaining: Comms secrets, dataset companyId 403, four ISO leaks, AI-85 FAILs.",
+    "readinessLabel": "Not ready to launch \u2014 tip f40075da. Headline ~63\u201366%. Smoke gate still red (invite replay). Feel ~42% with ~20 fix PRs open.",
     "plainSummary": "As of 2026-09-12T07:08:35.782Z (Europe/London 12 Sep 2026 ~08:08), launch readiness headline held at about 64%. Live tip moved a73ff70b \u2192 88d622ea. On this tip: #1262 smoke invite sign-in, #1263 QR landing, #1264 Command Centre Admin 2 identity, #1249 public-bundle PII removal. Strand percents NOT re-scored \u2014 retest pending. #1267 (studio admin pending invite create) is on GitHub staging (a3a0e207) but not yet on live /api/version.",
     "strengths": [
       "Cluster A Measured 22/24 on tip a263c4ab; Teacher2 MGR-10 + ACS-X01 PASS",

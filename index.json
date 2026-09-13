@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-13T05:56:45.152Z",
+  "updatedAt": "2026-09-13T10:05:15.997Z",
   "drops": [
+    {
+      "id": "2026-09-13-progress-for-claude",
+      "title": "Progress for Claude — smoke, Feel, testing (13 Sep)",
+      "date": "2026-09-13",
+      "summary": "Live tip f40075da. Smoke 401 fixed (#1295) but invite replay still fails. Feel ~42% (9/15 measured), ~20 fix PRs open. Launch ~63–66%. CC A 24/24 · M2 4/30. Pulse 0 CRITICAL = placeholder.",
+      "plainEnglish": "Staging tip moved to f40075da. Smoke Clerk 401 is fixed but the gate is still red on invitation replay. Feel board about 42% with nine surfaces measured and about twenty fix PRs waiting. Launch health still mid-60s. Pulse showing 0 Critical is likely a placeholder, not a real score.",
+      "tags": [
+        "status",
+        "smoke",
+        "census",
+        "findings",
+        "command-centre"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-13-progress-for-claude/helgoiq-progress-for-claude.md"
+      ],
+      "tip": "f40075da"
+    },
     {
       "id": "2026-09-13-feel-measured-academy-staff",
       "title": "Feel measured: Academy + Staff",
