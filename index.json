@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-13T14:51:41.329Z",
+  "updatedAt": "2026-09-13T17:24:29.975Z",
   "drops": [
+    {
+      "id": "2026-09-13-launch-hub-tip-fa78ec61-1270-live-cms-1280-pack-",
+      "title": "Launch Hub tip fa78ec61 (#1270 live; CMS #1280 pack ahead)",
+      "date": "2026-09-13",
+      "summary": "Tip moved f40075da→fa78ec61. #1270 live. #1280/#1281/#1283 merged ahead of tip. Headline held 63%.",
+      "plainEnglish": "Staging tip moved to the finance-name privacy fix. Phone Website/Blog hub fixes merged but not live on tip yet. Launch readiness still about 63%.",
+      "tags": [
+        "status",
+        "findings",
+        "smoke"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-13-launch-hub-tip-fa78ec61-1270-live-cms-1280-pack-/TIP-REFRESH.md"
+      ],
+      "tip": "fa78ec61186dcc7c4979d9ba0a0cc13f6d034a62"
+    },
     {
       "id": "2026-09-13-claude-dispatch-onboarding-forever-live",
       "title": "Claude dispatch — onboarding forever-live",
