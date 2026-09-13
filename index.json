@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-09-13T19:40:35.760Z",
+  "updatedAt": "2026-09-13T21:16:06.237Z",
   "drops": [
+    {
+      "id": "2026-09-13-overnight-breakfast-tip-3ad37824",
+      "title": "Overnight breakfast tip 3ad37824",
+      "date": "2026-09-13",
+      "summary": "Tip stable 3ad37824. Feel 42→46 Website 65→72. Smoke FAIL locator. #1290 NEED_DECLAN. ISO 18/20/27/29 FAIL. Stage1B PASS. #1265 agents paused.",
+      "plainEnglish": true,
+      "tags": [
+        "overnight",
+        "breakfast",
+        "feel",
+        "smoke",
+        "isolation"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-13-overnight-breakfast-tip-3ad37824/BREAKFAST.md"
+      ],
+      "tip": "3ad3782443d147934342e08a27d7151133369f74",
+      "githubIssue": "1180"
+    },
     {
       "id": "2026-09-13-feel-before-after",
       "title": "Feel before / after gallery",
