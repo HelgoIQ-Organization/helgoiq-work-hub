@@ -45,7 +45,7 @@ This is **not** the launch readiness % on the Dashboard tab.
 | [Academy / LMS](surfaces/academy.md) | `provisional_from_evidence` | 35 | 18 | 30 | **28** |
 | [Safe Studio](surfaces/safe-studio.md) | `provisional_from_evidence` | 40 | 35 | 42 | **39** |
 | [Settings / setup / feature mgmt](surfaces/settings.md) | `provisional_from_evidence` | 38 | 28 | 40 | **35** |
-| [Intelligence & reports](surfaces/intelligence.md) | `provisional_from_evidence` | 30 | 25 | 32 | **29** |
+| [Intelligence & reports](surfaces/intelligence.md) | `measured` | 44 | 47 | 27 | **39** |
 | [Forms / QR / waivers](surfaces/forms.md) | `provisional_from_evidence` | 42 | 38 | 35 | **38** |
 | [Studio Pulse / Morning Dispatch / Twin](surfaces/ambient.md) | `provisional_from_evidence` | 55 | 58 | 52 | **55** |
 | [Command Centre chat UX](surfaces/command-centre.md) | `provisional_from_evidence` | 35 | 28 | 40 | **34** |

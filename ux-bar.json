@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T05:10:17Z",
+  "updatedAt": "2026-09-13T05:38:13.925457+00:00",
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
   "rubric": {
@@ -9,11 +9,11 @@
     "overall": "round((joyful + obvious + frictionless) / 3)"
   },
   "headline": {
-    "joyful": 39,
-    "obvious": 36,
+    "joyful": 40,
+    "obvious": 37,
     "frictionless": 39,
-    "overall": 38,
-    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %."
+    "overall": 39,
+    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %. Intelligence now measured."
   },
   "honesty": {
     "measured": "Only team-chat from /workspace/helgoiq-chat-qa Sep 1 report.",
@@ -424,29 +424,35 @@
       "id": "intelligence",
       "name": "Intelligence & reports",
       "pathHint": "/admin/reports-hub",
-      "basis": "provisional_from_evidence",
-      "confidence": "medium",
+      "basis": "measured",
+      "confidence": "high",
       "scoredAt": "2026-09-13",
       "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 30,
-      "obvious": 25,
-      "frictionless": 32,
-      "overall": 29,
-      "plainSummary": "Provisional from Intel+Reports L2 (24P / 6Part / 7F) and AI-85 fails. MRR crashes (undefined.length); reports Geographic Heat Map shows Refrm studios on Bluebird; empty AI dashboards feel cold.",
+      "joyful": 44,
+      "obvious": 47,
+      "frictionless": 27,
+      "overall": 39,
+      "plainSummary": "Measured hub pass on tip 6486be87. Titles/cards orient well; Daily Focus and Performance Intelligence show craft. Still fails WhatsApp/Slack on flow and trust: full-page splashes, MRR crash, Refrm on Bluebird Heat Map/Overview.",
       "strengths": [
-        "Many intel routes load (24 PASS in wave)",
-        "Audit trail search works"
+        "Clear titles/tabs within ~10 seconds on most surfaces",
+        "Studio Intelligence executive framing; Performance Intelligence trust-labelled insights",
+        "Daily Focus empty state warm and actionable"
       ],
-      "findings": [],
+      "findings": [
+        "MRR crash (undefined.length) on /admin/intelligence/mrr",
+        "Refrm studios still listed on Bluebird Geographic Heat Map filters and Overview tab",
+        "Full HelgoIQ splash on every in-hub Intelligence/Reports move",
+        "Fragmented IA \u2014 many polished rooms, no single start-here",
+        "Reporting KPIs lack obvious drill; Centre/Impact empty push Seed Demo"
+      ],
       "suggestions": [
         "Fix /admin/intelligence/mrr crash",
-        "Strip Refrm studios from Bluebird heat map",
-        "Empty AI cards: say why empty + how to enable",
-        "KPI drill + return on every intelligence tile",
-        "Plain English on executive briefing when data sparse",
-        "Credit-liability / custom chart tenant fails also hurt trust nearby"
+        "Strip Refrm studios from Bluebird heat map + Overview tabs",
+        "In-shell skeletons instead of full-page splash for in-admin moves",
+        "One Intelligence home; KPI drill + return on Reporting tiles",
+        "Empty AI cards: why empty + how to enable (hide Seed Demo day-to-day)"
       ],
-      "evidenceNote": "Progress: Intel+Reports 24P/6Part/7F; open defects MRR crash, reports-hub Refrm heat map; AI-85 FAILs held.",
+      "evidenceNote": "Measured Feel walk 2026-09-13 tip 6486be87 \u2014 see REVIEW.md + 9 screenshots. Top pains: MRR crash, Refrm on Heat Map/Overview, full-page splash, fragmented IA, no KPI drill.",
       "detailDropId": "2026-09-13-ux-bar-feel",
       "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/intelligence.md"
     },
