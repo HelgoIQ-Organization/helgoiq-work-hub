@@ -15,7 +15,7 @@
         <span class="logo" aria-hidden="true">◈</span>
         <div>
           <h1>HelgoIQ Launch Hub</h1>
-          <p class="tagline">Plain-English progress · coverage · tracker · work drops</p>
+          <p class="tagline">Plain-English progress · coverage · feel · tracker · work drops</p>
         </div>
       </div>
       <div class="header-meta">
@@ -23,6 +23,7 @@
         <nav class="top-tabs" role="tablist" aria-label="Hub sections">
           <a class="tab-link active" role="tab" id="tab-dashboard" href="#dashboard" aria-controls="view-dashboard" aria-selected="true">Dashboard</a>
           <a class="tab-link" role="tab" id="tab-coverage" href="#coverage" aria-controls="view-coverage" aria-selected="false">Coverage</a>
+          <a class="tab-link" role="tab" id="tab-feel" href="#feel" aria-controls="view-feel" aria-selected="false">Feel</a>
           <a class="tab-link" role="tab" id="tab-tracker" href="#tracker" aria-controls="view-tracker" aria-selected="false">Tracker</a>
           <a class="tab-link" role="tab" id="tab-drops" href="#drops" aria-controls="view-drops" aria-selected="false">Drops</a>
         </nav>
@@ -218,6 +219,32 @@
     </div>
 
     <!-- TRACKER -->
+
+    <!-- FEEL (Joyful · Obvious · Frictionless) -->
+    <div id="view-feel" class="view hidden" role="tabpanel" aria-labelledby="tab-feel" hidden>
+      <section id="feel" class="section ux-section" aria-label="Joyful obvious frictionless">
+        <div class="section-head">
+          <h2>Feel — Joyful · Obvious · Frictionless</h2>
+          <p class="muted" id="uxBarSub">Progress bars vs WhatsApp &amp; Slack. Team chat is measured; other surfaces are provisional from Coverage L2 and known defects — not invented lab scores.</p>
+        </div>
+        <div class="ux-headline" id="uxHeadline">
+          <div class="ux-ring-wrap">
+            <svg class="progress-ring ux-ring" viewBox="0 0 120 120" aria-hidden="true">
+              <circle class="ring-bg" cx="60" cy="60" r="52" />
+              <circle id="uxOverallRing" class="ring-fg ux-ring-overall" cx="60" cy="60" r="52" />
+            </svg>
+            <div class="ring-label">
+              <span id="uxOverallPct" class="ring-pct">—</span>
+              <span class="ring-sub">overall feel</span>
+            </div>
+          </div>
+          <div class="ux-headline-bars" id="uxHeadlineBars" aria-label="Headline axis bars"></div>
+        </div>
+        <p id="uxHonesty" class="ux-honesty muted"></p>
+        <div id="uxSurfaceGrid" class="ux-surface-grid"></div>
+      </section>
+    </div>
+
     <div id="view-tracker" class="view hidden" role="tabpanel" aria-labelledby="tab-tracker" hidden>
       <section id="tracker" class="section tracker-section" aria-label="Findings tracker">
         <div class="section-head">
@@ -320,6 +347,34 @@
         <ul id="strandBlockers"></ul>
         <h3>Linked drops</h3>
         <div id="strandDrops" class="strand-drops"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- UX Feel detail panel -->
+  <div id="uxPanel" class="viewer hidden" role="dialog" aria-modal="true" aria-labelledby="uxTitle">
+    <div class="viewer-panel strand-panel ux-panel">
+      <header class="viewer-header">
+        <div>
+          <p id="uxBasis" class="status-pill">—</p>
+          <h2 id="uxTitle">Surface</h2>
+          <p id="uxMeta" class="muted"></p>
+        </div>
+        <button type="button" id="closeUx" class="btn" aria-label="Close">Close</button>
+      </header>
+      <div class="strand-body ux-body">
+        <div id="uxAxisBars" class="ux-axis-bars"></div>
+        <p id="uxSummary" class="strand-summary"></p>
+        <p id="uxEvidence" class="muted ux-evidence"></p>
+        <h3>Strengths</h3>
+        <ul id="uxStrengths"></ul>
+        <h3 id="uxFindingsHead" class="hidden">Findings</h3>
+        <div id="uxFindings" class="ux-findings"></div>
+        <h3>Suggestions</h3>
+        <ul id="uxSuggestions"></ul>
+        <h3>Detail</h3>
+        <div id="uxDetailLinks" class="strand-drops"></div>
       </div>
     </div>
   </div>

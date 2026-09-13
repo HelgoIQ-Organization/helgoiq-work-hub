@@ -10,7 +10,7 @@
   const PT_SNAPSHOTS_KEY = "helgoiq-launch-hub-pt-snapshots";
   const PT_SNAPSHOTS_MAX = 40;
 
-  const VIEWS = ["dashboard", "coverage", "tracker", "drops"];
+  const VIEWS = ["dashboard", "coverage", "feel", "tracker", "drops"];
   const COVERAGE_SUBS = {
     admin: { hash: "coverage-admin", panel: "coverage-panel-admin", tab: "subtab-admin" },
     owner: { hash: "coverage-owner", panel: "coverage-panel-owner", tab: "subtab-owner" },
@@ -36,6 +36,7 @@
     coverageQuery: "",
     coverageStateFilter: new Set(),
     coverageFacetFilter: "",
+    uxBar: null,
     tracker: null,
     ptViewing: null,
     selectedTags: new Set(),
@@ -1894,6 +1895,250 @@
     }
   }
 
+
+  /* —— Feel / UX bar —— */
+  function uxBasisClass(basis) {
+    if (basis === "measured") return "ux-basis-measured";
+    if (basis === "provisional_from_evidence") return "ux-basis-provisional";
+    return "ux-basis-unscored";
+  }
+
+  function uxBasisLabel(basis) {
+    if (basis === "measured") return "Measured";
+    if (basis === "provisional_from_evidence") return "Provisional";
+    return "Unscored";
+  }
+
+  function renderUxAxisRows(container, joyful, obvious, frictionless, big) {
+    if (!container) return;
+    const rows = [
+      { key: "joyful", label: "Joyful", val: joyful },
+      { key: "obvious", label: "Obvious", val: obvious },
+      { key: "frictionless", label: "Frictionless", val: frictionless },
+    ];
+    container.innerHTML = "";
+    rows.forEach((r) => {
+      const row = document.createElement("div");
+      row.className = big ? "ux-axis-row" : "ux-mini-row";
+      row.innerHTML =
+        '<span class="ux-axis-label ' +
+        r.key +
+        '">' +
+        r.label +
+        '</span><div class="bar-track' +
+        (big ? " big" : "") +
+        '"><div class="bar-fill ux-' +
+        r.key +
+        '" style="width:' +
+        Math.max(0, Math.min(100, r.val || 0)) +
+        '%"></div></div><span class="ux-axis-pct">' +
+        (r.val != null ? Math.round(r.val) + "%" : "—") +
+        "</span>";
+      container.appendChild(row);
+    });
+  }
+
+  function renderUxBar() {
+    const data = state.uxBar;
+    const grid = $("uxSurfaceGrid");
+    if (!grid) return;
+    if (!data) {
+      grid.innerHTML = '<p class="muted">Feel board not loaded (ux-bar.json missing).</p>';
+      return;
+    }
+    const h = data.headline || {};
+    const pct = Math.round(h.overall || 0);
+    if ($("uxOverallPct")) $("uxOverallPct").textContent = pct + "%";
+    const circ = 2 * Math.PI * 52;
+    const ring = $("uxOverallRing");
+    if (ring) {
+      ring.style.strokeDasharray = String(circ);
+      ring.style.strokeDashoffset = String(circ * (1 - pct / 100));
+    }
+    renderUxAxisRows($("uxHeadlineBars"), h.joyful, h.obvious, h.frictionless, true);
+    const honesty = $("uxHonesty");
+    if (honesty) {
+      const tip = shortSha(data.tip || "");
+      honesty.textContent =
+        "Headline " +
+        pct +
+        "% = equal-weight average of " +
+        (data.surfaces || []).length +
+        " surfaces · tip " +
+        tip +
+        " · only Team chat is measured; everything else is provisional_from_evidence (L2 fails, misroutes, known P0s) — not fake lab scores.";
+    }
+    const sub = $("uxBarSub");
+    if (sub && data.bar) {
+      sub.textContent =
+        data.bar +
+        ". Team chat measured Sep 1; other surfaces provisional from Coverage L2 + known defects.";
+    }
+    grid.innerHTML = "";
+    (data.surfaces || []).forEach((s) => {
+      const btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "ux-card";
+      btn.setAttribute("data-ux-id", s.id);
+      const basisCls = uxBasisClass(s.basis);
+      btn.innerHTML =
+        '<div class="ux-card-top"><div><span class="ux-basis-pill ' +
+        basisCls +
+        '">' +
+        uxBasisLabel(s.basis) +
+        '</span><p class="name"></p><p class="path"></p></div><span class="pct"></span></div>';
+      btn.querySelector(".name").textContent = s.name;
+      btn.querySelector(".path").textContent = s.pathHint || "";
+      btn.querySelector(".pct").textContent = Math.round(s.overall || 0) + "%";
+      const mini = document.createElement("div");
+      mini.className = "ux-mini-bars";
+      renderUxAxisRows(mini, s.joyful, s.obvious, s.frictionless, false);
+      btn.appendChild(mini);
+      const note = document.createElement("p");
+      note.className = "ux-card-note";
+      note.textContent = s.plainSummary || "";
+      btn.appendChild(note);
+      btn.addEventListener("click", () => openUxSurface(s.id));
+      grid.appendChild(btn);
+    });
+  }
+
+  function openUxSurface(id) {
+    const data = state.uxBar;
+    if (!data) return;
+    const s = (data.surfaces || []).find((x) => x.id === id);
+    if (!s) return;
+    location.hash = "feel/" + id;
+    showView("feel");
+    $("uxTitle").textContent = s.name;
+    const basis = $("uxBasis");
+    basis.textContent = uxBasisLabel(s.basis) + (s.confidence ? " · " + s.confidence : "");
+    basis.className =
+      "status-pill " + (s.basis === "measured" ? "ux-measured" : "ux-provisional");
+    $("uxMeta").textContent =
+      Math.round(s.overall || 0) +
+      "% overall · " +
+      (s.pathHint || "") +
+      " · scored " +
+      (s.scoredAt || "—") +
+      " · tip " +
+      shortSha(s.tipAtScore || data.tip || "");
+    renderUxAxisRows($("uxAxisBars"), s.joyful, s.obvious, s.frictionless, true);
+    $("uxSummary").textContent = s.plainSummary || "";
+    const ev = $("uxEvidence");
+    if (ev) {
+      ev.textContent = s.evidenceNote || (s.sourceReport ? "Source: " + s.sourceReport : "");
+      ev.classList.toggle("hidden", !ev.textContent);
+    }
+    const ulS = $("uxStrengths");
+    ulS.innerHTML = "";
+    (s.strengths || []).forEach((t) => {
+      const li = document.createElement("li");
+      li.textContent = t;
+      ulS.appendChild(li);
+    });
+    if (!(s.strengths || []).length) {
+      const li = document.createElement("li");
+      li.className = "muted";
+      li.textContent = "None listed.";
+      ulS.appendChild(li);
+    }
+    const findings = s.findings || [];
+    const fh = $("uxFindingsHead");
+    const fd = $("uxFindings");
+    fh.classList.toggle("hidden", !findings.length);
+    fd.innerHTML = "";
+    findings.forEach((f) => {
+      const card = document.createElement("div");
+      card.className = "ux-finding";
+      card.innerHTML =
+        "<h4><span class=\"sev " +
+        (f.severity || "") +
+        '">' +
+        (f.id || "") +
+        " · " +
+        (f.severity || "") +
+        "</span>" +
+        (f.title || "") +
+        "</h4>";
+      const d = document.createElement("p");
+      d.textContent = f.detail || "";
+      card.appendChild(d);
+      if (f.suggestion) {
+        const sug = document.createElement("p");
+        sug.innerHTML = "<strong>Suggestion:</strong> ";
+        sug.appendChild(document.createTextNode(f.suggestion));
+        card.appendChild(sug);
+      }
+      fd.appendChild(card);
+    });
+    const ulG = $("uxSuggestions");
+    ulG.innerHTML = "";
+    (s.suggestions || []).forEach((t) => {
+      const li = document.createElement("li");
+      li.textContent = t;
+      ulG.appendChild(li);
+    });
+    if (!(s.suggestions || []).length) {
+      const li = document.createElement("li");
+      li.className = "muted";
+      li.textContent = "None listed.";
+      ulG.appendChild(li);
+    }
+    const links = $("uxDetailLinks");
+    links.innerHTML = "";
+    if (s.detailPath) {
+      const a = document.createElement("a");
+      a.className = "drop-link";
+      a.href = s.detailPath;
+      a.target = "_blank";
+      a.rel = "noopener";
+      a.textContent = "Open surface review markdown";
+      links.appendChild(a);
+    }
+    if (s.detailDropId) {
+      const drop = state.drops.find((d) => d.id === s.detailDropId);
+      const b = document.createElement("button");
+      b.type = "button";
+      b.textContent = drop ? "Open drop: " + drop.title : "Open drop " + s.detailDropId;
+      b.addEventListener("click", () => {
+        closeUx(false);
+        if (drop) {
+          showView("drops");
+          openDrop(drop, true);
+        } else location.hash = "drop-" + s.detailDropId;
+      });
+      links.appendChild(b);
+    }
+    if (s.sourceReport) {
+      const p = document.createElement("p");
+      p.className = "muted";
+      p.style.marginTop = "0.5rem";
+      p.textContent = "Canonical QA report (repo path): " + s.sourceReport;
+      links.appendChild(p);
+    }
+    if (!links.children.length) {
+      links.innerHTML = '<p class="muted">No linked detail yet.</p>';
+    }
+    $("uxPanel").classList.remove("hidden");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeUx(clearHash) {
+    const panel = $("uxPanel");
+    if (panel) panel.classList.add("hidden");
+    if ((!$("viewer") || $("viewer").classList.contains("hidden")) &&
+        (!$("strandPanel") || $("strandPanel").classList.contains("hidden"))) {
+      document.body.style.overflow = "";
+    }
+    if (clearHash !== false) {
+      const raw = (location.hash || "").replace(/^#/, "");
+      if (raw === "feel" || raw.startsWith("feel/")) {
+        history.replaceState(null, "", "#feel");
+      }
+    }
+  }
+
   function applyHash() {
     const raw = (location.hash || "").replace(/^#/, "");
     if (!raw) {
@@ -1919,6 +2164,14 @@
       if (applyCoverageHashFilter(filterKey)) {
         renderCoverage();
       }
+      return;
+    }
+    if (raw === "feel" || raw.startsWith("feel/")) {
+      showView("feel");
+      const parts = raw.split("/");
+      const sid = parts[1] || "";
+      if (sid) openUxSurface(sid);
+      else closeUx(false);
       return;
     }
     if (raw === "tracker" || raw.startsWith("tracker-")) {
@@ -1969,15 +2222,22 @@
       copyText(state.activeMarkdown);
     });
     $("closeStrand").addEventListener("click", () => closeStrand(true));
+    if ($("closeUx")) $("closeUx").addEventListener("click", () => closeUx(true));
     $("viewer").addEventListener("click", (e) => {
       if (e.target === $("viewer")) closeViewer(true);
     });
     $("strandPanel").addEventListener("click", (e) => {
       if (e.target === $("strandPanel")) closeStrand(true);
     });
+    if ($("uxPanel")) {
+      $("uxPanel").addEventListener("click", (e) => {
+        if (e.target === $("uxPanel")) closeUx(true);
+      });
+    }
     document.addEventListener("keydown", (e) => {
       if (e.key === "Escape") {
         if (!$("viewer").classList.contains("hidden")) closeViewer(true);
+        else if ($("uxPanel") && !$("uxPanel").classList.contains("hidden")) closeUx(true);
         else if (!$("strandPanel").classList.contains("hidden")) closeStrand(true);
       }
     });
@@ -1996,13 +2256,14 @@
     window.addEventListener("hashchange", applyHash);
 
     try {
-      const [idxRes, dashRes, covRes, trkRes, adminPagesRes, adminMetaRes] = await Promise.all([
+      const [idxRes, dashRes, covRes, trkRes, adminPagesRes, adminMetaRes, uxRes] = await Promise.all([
         fetch("index.json"),
         fetch("dashboard.json"),
         fetch("coverage.json"),
         fetch("tracker/items.json"),
         fetch("coverage/admin-pages.json"),
         fetch("coverage/meta.json"),
+        fetch("ux-bar.json"),
       ]);
       if (!idxRes.ok) throw new Error("index.json " + idxRes.status);
       const data = await idxRes.json();
@@ -2022,6 +2283,14 @@
           console.warn("tracker/items.json parse failed", err);
         }
       }
+      if (uxRes && uxRes.ok) {
+        try {
+          state.uxBar = await uxRes.json();
+        } catch (err) {
+          console.warn("ux-bar.json parse failed", err);
+        }
+      }
+      renderUxBar();
       if (adminPagesRes && adminPagesRes.ok) {
         try {
           const pages = await adminPagesRes.json();

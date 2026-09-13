@@ -1,0 +1,543 @@
+{
+  "updatedAt": "2026-09-13T05:10:17Z",
+  "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+  "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
+  "rubric": {
+    "joyful": "Warm, human, celebrates progress; list sells conversation not filenames; empty states inviting (0\u2013100 vs WhatsApp/Slack).",
+    "obvious": "Know where you are, who's here, what to do next; labels not mystery icons; links land where names promise \u2014 no misroutes (0\u2013100).",
+    "frictionless": "No full-page splash for in-app moves; phone works; one path to common actions; no dead ends (0\u2013100).",
+    "overall": "round((joyful + obvious + frictionless) / 3)"
+  },
+  "headline": {
+    "joyful": 39,
+    "obvious": 36,
+    "frictionless": 39,
+    "overall": 38,
+    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %."
+  },
+  "honesty": {
+    "measured": "Only team-chat from /workspace/helgoiq-chat-qa Sep 1 report.",
+    "provisional_from_evidence": "Derived from Coverage L2 fails/misroutes, finance visual review notes, known P0 defects \u2014 labeled in plain English per surface.",
+    "unscored": "Prefer provisional with low confidence over blank if L2 touched the hub."
+  },
+  "surfaces": [
+    {
+      "id": "team-chat",
+      "name": "Team chat",
+      "pathHint": "/admin/team-comms-hub",
+      "basis": "measured",
+      "confidence": "high",
+      "scoredAt": "2026-09-01",
+      "tipAtScore": "pre-6486be87-chat-qa-2026-09-01",
+      "joyful": 28,
+      "obvious": 32,
+      "frictionless": 18,
+      "overall": 26,
+      "plainSummary": "Measured Sep 1 Instructor Circle QA vs WhatsApp/Slack. Good bones (channel groups, warm reactions, Catch me up idea) but Refrm leak under Bluebird, phone thread unusable, no DMs/@mentions, and full-page splash on every open. Not yet a joyful or frictionless team chat.",
+      "strengths": [
+        "GENERAL / LOCATIONS / ROLES grouping matches how studios think",
+        "Warm reaction strip; poll results visible without voting",
+        "In-chat search is instant and correctly scoped",
+        "Catch me up concept is delightful \u2014 just unlabeled"
+      ],
+      "findings": [
+        {
+          "id": "F001",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Tenant isolation \u2014 Refrm chat under Bluebird",
+          "detail": "Bluebird shell still shows Refrm channels, staff names, polls and files. Teacher/client ignore ?c= for chat.",
+          "suggestion": "Scope channel/message/poll/file queries by company id server-side; reject unauthorized ?c=; fix document title/branding."
+        },
+        {
+          "id": "F002",
+          "axis": "obvious",
+          "severity": "confusing",
+          "title": "Who's here / Catch me up hidden",
+          "detail": "No avatar stack or member count in header; sparkle icon unlabeled so Catch me up looks like decoration.",
+          "suggestion": "Avatar stack + count in header; label Catch me up as a real button."
+        },
+        {
+          "id": "F003",
+          "axis": "frictionless",
+          "severity": "confusing",
+          "title": "No @mention, no composer emoji, no link previews",
+          "detail": "Typing @ does nothing; emoji only as reactions; Mentions-only notifications are dead.",
+          "suggestion": "Add @mention picker, composer emoji, and basic link previews."
+        },
+        {
+          "id": "F004",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Locked channel writable; Groups empty",
+          "detail": "Padlock icon on a channel that still accepts typing; Groups shows skeletons then zero with no create affordance.",
+          "suggestion": "Enforce lock or drop the icon; empty Groups state with next action."
+        },
+        {
+          "id": "F005",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Polls tab empty while live poll exists",
+          "detail": "Named Polls home shows No polls yet while a live poll sits in-channel.",
+          "suggestion": "Aggregate channel polls into the Polls tab."
+        },
+        {
+          "id": "F006",
+          "axis": "frictionless",
+          "severity": "confusing",
+          "title": "People search blank; no DMs",
+          "detail": "Search channels or people returns blank for people; no 1:1 path \u2014 private talk stays on WhatsApp.",
+          "suggestion": "People results + DM / New message path."
+        },
+        {
+          "id": "F007",
+          "axis": "obvious",
+          "severity": "confusing",
+          "title": "Unread / presence / Priority unclear",
+          "detail": "Priority only undefined; presence has no visible payoff; unread counts disagree across surfaces.",
+          "suggestion": "Define Priority; show presence dots; reconcile unread badges."
+        },
+        {
+          "id": "F008",
+          "axis": "frictionless",
+          "severity": "confusing",
+          "title": "Full-screen splash; filter chips sticky",
+          "detail": "HelgoIQ splash + Loading messages for in-app channel opens; filter chips can both look active.",
+          "suggestion": "In-place skeleton; never leave chat shell; reliable chip state."
+        },
+        {
+          "id": "F009",
+          "axis": "frictionless",
+          "severity": "broken",
+          "title": "Phone thread unscrolled; list clipped; no studio switcher",
+          "detail": "At 390\u00d7844 message column ~2440px with overflow hidden \u2014 composer off-screen. Timestamps/unread clipped. No company switcher on phone.",
+          "suggestion": "min-h-0 + overflow-y:auto on scroller; mobile-first list; studio switcher in phone chrome."
+        }
+      ],
+      "suggestions": [
+        "Make channel list WhatsApp-like: avatar + last message + bold unread",
+        "Header answers who's here (avatar stack + count)",
+        "Kill full-page splash for in-chat moves \u2014 skeleton in place",
+        "Ship DMs and a working @mention picker",
+        "Fix phone thread scroll (min-h-0) before any polish",
+        "Close F001 tenant scope before any write testing"
+      ],
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/team-chat.md",
+      "sourceReport": "/workspace/helgoiq-chat-qa/report/CHAT-QA-REPORT.md"
+    },
+    {
+      "id": "home",
+      "name": "Admin Home / overview",
+      "pathHint": "/admin/overview",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 35,
+      "obvious": 30,
+      "frictionless": 45,
+      "overall": 37,
+      "plainSummary": "Provisional from Coverage L2 daily hubs + known P0. Overview still shows a Refrm tab/badge under Bluebird \u2014 tanks trust and obviousness. Home is reachable but does not feel like a warm studio dashboard yet.",
+      "strengths": [
+        "Loads under Bluebird TEST DATA",
+        "Part of daily hubs L2 programme (merged)"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Remove Refrm tab/badge whenever company is Bluebird",
+        "Surface one clear next action (today's bookings / open faults / unpaid)",
+        "Celebrate progress (members joined, classes filled) instead of empty KPI chrome",
+        "Make KPI tiles drill to the named list and return",
+        "Phone: ensure overview cards stack without horizontal clip"
+      ],
+      "evidenceNote": "Known defect: /admin/overview Refrm tab/badge on Bluebird (progress 13 Sep). Daily hubs L2 wave merged.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/home.md"
+    },
+    {
+      "id": "members-crm",
+      "name": "Members & CRM",
+      "pathHint": "/admin/crm-hub",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 40,
+      "obvious": 38,
+      "frictionless": 42,
+      "overall": 40,
+      "plainSummary": "Provisional from core L2 Members: 3 PASS / 1 PARTIAL / 1 FAIL. crm-hub KPI vs empty Insights disagreement \u2014 you cannot trust the number you see. Dataset canary still 0 members on import, so empty states dominate.",
+      "strengths": [
+        "Several member paths L2 PASS",
+        "Member preview/forms path works in Forms E2E"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Fix CRM Insights empty vs hub KPI disagreement",
+        "Empty Insights: invite copy + link to import / add member",
+        "Align member counts across hub tiles and list",
+        "One path to Add member from every Members entry point",
+        "Don't show money/CRM KPIs that don't drill"
+      ],
+      "evidenceNote": "dashboard censusCoreL2Members: 3 PASS / 1 PARTIAL / 1 FAIL (crm-hub KPI vs empty Insights). Dataset canary 0 members.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/members-crm.md"
+    },
+    {
+      "id": "timetable",
+      "name": "Timetable & bookings",
+      "pathHint": "/admin/timetable",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 45,
+      "obvious": 48,
+      "frictionless": 42,
+      "overall": 45,
+      "plainSummary": "Provisional from daily hubs L2 (merged) plus booking/smoke history. Timetable is more navigable than chat/finance but phone and multi-step booking still add friction; no dedicated joyful polish pass.",
+      "strengths": [
+        "Daily hubs L2 wave included timetable",
+        "Booking smoke steps have passed on recent tips"
+      ],
+      "findings": [],
+      "suggestions": [
+        "One-tap from timetable cell to class roster / waitlist",
+        "Honest empty days with 'Add class' CTA",
+        "Phone: day/week switch without losing scroll position",
+        "Label mystery icons (capacity, waitlist, cover)",
+        "After booking actions, stay in context \u2014 no full splash"
+      ],
+      "evidenceNote": "Daily hubs L2 merged (Members/Timetable/Inbox/Finance/Home/Staff/Safe Studio). Specific timetable FAIL detail sparse \u2014 scores conservative.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/timetable.md"
+    },
+    {
+      "id": "finance",
+      "name": "Finance / payments UI",
+      "pathHint": "/admin/finance",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 32,
+      "obvious": 28,
+      "frictionless": 35,
+      "overall": 32,
+      "plainSummary": "Provisional from money L2 Finance: 0 PASS / 1 PARTIAL / 6 FAIL \u2014 KPI drills and invoicing alias. Empty or non-drilling money tiles tank joyful and obvious. Payments strand still at-risk (unfreeze / provider).",
+      "strengths": [
+        "Stripe Connect path at least PARTIAL",
+        "Stripe TEST checkout proven in overnight smoke historically"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Make every finance KPI tile drill to the named ledger and return",
+        "Fix invoicing alias so the route name matches the page",
+        "Replace empty money dashboards with invite-to-connect / first-invoice copy",
+        "One path: unpaid \u2192 invoice \u2192 collect (no hub hop)",
+        "Fix Admin2 Resume/unfreeze payment-provider path",
+        "Never show Refrm or wrong-tenant money figures"
+      ],
+      "evidenceNote": "dashboard censusMoneyL2Finance: 0 PASS / 1 PARTIAL (stripe-connect) / 6 FAIL \u2014 KPI drills + invoicing alias. Payments strand ~62% estimate.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/finance.md"
+    },
+    {
+      "id": "staff",
+      "name": "Staff hub",
+      "pathHint": "/admin/staff-hub",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 30,
+      "obvious": 25,
+      "frictionless": 35,
+      "overall": 30,
+      "plainSummary": "Provisional from Staff L2: 0 PASS / 16 PARTIAL / 11 FAIL. Onboarding tiles disagree with data; rota KPIs don't drill; profile shows Unknown; employment list empty vs 14 hub staff. Feels broken more than unfinished.",
+      "strengths": [
+        "Substitutions/Cover Requests now loads (prior path defect gone)",
+        "Write-guarded PARTIALs are honest observe-only"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Fix onboarding tiles so counts open filtered lists that match",
+        "Make rota KPI cards drill to underlying rows",
+        "Fix Unknown display name on staff profiles",
+        "Sync Staff Employment picker with hub Team (14)",
+        "Reconcile Instructor AI Agents conversation counts",
+        "Empty rota: explain Holiday Risk 4/4 with 0 rostered"
+      ],
+      "evidenceNote": "L2 staff hub summary tip 6486be87: 11 unique FAIL class defects (tiles, KPIs, Unknown, employment empty, AI agent counts).",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/staff.md"
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing / campaigns",
+      "pathHint": "/admin/marketing",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 48,
+      "obvious": 50,
+      "frictionless": 45,
+      "overall": 48,
+      "plainSummary": "Provisional from Marketing (Comms) L2: 10 PASS / 14 PARTIAL / 1 FAIL. Stronger reachability than finance/staff, but Comms secrets still block real send joy, and campaign empty states need warmth.",
+      "strengths": [
+        "10 L2 PASS routes in marketing wave",
+        "Meta Hub / invite-staff aliases land somewhere useful"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Warm empty campaign list with first-campaign template",
+        "Label send/preview clearly; hide dead send until secrets present",
+        "One path from audience \u2192 campaign \u2192 send status",
+        "Don't leave owners on PARTIAL aliases without breadcrumb truth",
+        "Phone: campaign builder fields stack without horizontal scroll"
+      ],
+      "evidenceNote": "Progress 13 Sep: Marketing (Comms) 10P / 14Part / 1F. Comms strand still ~15% blocked on Resend/Agentmail secrets.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/marketing.md"
+    },
+    {
+      "id": "website",
+      "name": "Website / CMS",
+      "pathHint": "/admin/website",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 52,
+      "obvious": 55,
+      "frictionless": 50,
+      "overall": 52,
+      "plainSummary": "Provisional from Website L1 25/25 PASS plus Content wave. Best obviousness of the set so far \u2014 pages land where named. Still provisional (no dedicated joyful/frictionless UX pass); drafts-only caution.",
+      "strengths": [
+        "Website/Blog L1: 25/25 routes PASS",
+        "Content wave largely reachable"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Celebrate publish with clear success + public link",
+        "Empty site: guided first page / blog post",
+        "Keep draft vs live labels always visible",
+        "Phone CMS editor: sticky save without covering fields",
+        "Health page: plain English if something fails (1 known F)"
+      ],
+      "evidenceNote": "drops/2026-09-12-coverage-l1-website-blog: 25/25 L1 PASS. Progress: Website (Content) 14P / 11Part / 1F.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/website.md"
+    },
+    {
+      "id": "academy",
+      "name": "Academy / LMS",
+      "pathHint": "/admin/academy",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 35,
+      "obvious": 18,
+      "frictionless": 30,
+      "overall": 28,
+      "plainSummary": "Provisional from Academy L2 chunk 1: 6 PASS / 16 PARTIAL / 8 FAIL misroutes. Links do not land where names promise (class-tags\u2192LMS settings, news\u2192libraries, invites\u2192Teacher tools). Obviousness collapses; joyful and frictionless follow.",
+      "strengths": [
+        "Courses / financials / pricing / reflections PASS",
+        "No Refrm seen on these academy pages"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Fix all 8 misroutes so URL/label matches destination",
+        "certificate-design must open a design editor, not just Certificates hub",
+        "invites must list invites, not Teacher tools",
+        "Empty course list: create-course CTA",
+        "Breadcrumb always shows Academy \u203a named page",
+        "After misroute fixes, re-score obvious upward"
+      ],
+      "evidenceNote": "Academy chunk 1 tip 6486be87: 8 FAIL misroutes documented in census-longtail-l2-settings-ACADEMY-CHUNK1-SUMMARY.md.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/academy.md"
+    },
+    {
+      "id": "safe-studio",
+      "name": "Safe Studio",
+      "pathHint": "/admin/safe-studio",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 40,
+      "obvious": 35,
+      "frictionless": 42,
+      "overall": 39,
+      "plainSummary": "Provisional from Safe Studio L2: 2 PASS / 19 PARTIAL / 5 FAIL. Overview and security/door KPI cards do not drill. Honest empties (Camio not configured) are good; non-clickable Open faults/incidents are not.",
+      "strengths": [
+        "CCTV hub and Camio live: honest empty copy",
+        "Operations drills to named fault/incident records",
+        "No Refrm on these pages"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Make overview tiles (Checks/Equipment/Faults/Incidents) drill",
+        "Same for Security Hub / Door Access KPI cards",
+        "Keep honest empty (Camio not configured) \u2014 pattern for other hubs",
+        "One path: open fault \u2192 record \u2192 resolve",
+        "Phone: operations list usable without horizontal clip"
+      ],
+      "evidenceNote": "Safe Studio L2 summary tip 6486be87: 5 FAIL unique defects all KPI non-drill.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/safe-studio.md"
+    },
+    {
+      "id": "settings",
+      "name": "Settings / setup / feature mgmt",
+      "pathHint": "/admin/feature-management",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 38,
+      "obvious": 28,
+      "frictionless": 40,
+      "overall": 35,
+      "plainSummary": "Provisional from Settings L2: 3 PASS / 13 PARTIAL / 1 FAIL / 1 BLOCKED. Feature Management shows Refrm-named feature on Bluebird \u2014 isolation leak tanks obvious and joyful trust. Many writes correctly withheld.",
+      "strengths": [
+        "Most settings pages load",
+        "Platform-sales correctly BLOCKED (not FAIL) without PA"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Remove or scope Refrm Academy \u2014 Learning off Bluebird feature list",
+        "Group settings by job-to-be-done, not internal module names",
+        "Explain Feature Control risk before any toggle",
+        "Academy import triplets: one clear entry, not three twins",
+        "Empty GDPR/export: plain what happens next"
+      ],
+      "evidenceNote": "Settings chunk tip 6486be87: Feature Management Refrm search hit on Bluebird; platform-sales BLOCKED.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/settings.md"
+    },
+    {
+      "id": "intelligence",
+      "name": "Intelligence & reports",
+      "pathHint": "/admin/reports-hub",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 30,
+      "obvious": 25,
+      "frictionless": 32,
+      "overall": 29,
+      "plainSummary": "Provisional from Intel+Reports L2 (24P / 6Part / 7F) and AI-85 fails. MRR crashes (undefined.length); reports Geographic Heat Map shows Refrm studios on Bluebird; empty AI dashboards feel cold.",
+      "strengths": [
+        "Many intel routes load (24 PASS in wave)",
+        "Audit trail search works"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Fix /admin/intelligence/mrr crash",
+        "Strip Refrm studios from Bluebird heat map",
+        "Empty AI cards: say why empty + how to enable",
+        "KPI drill + return on every intelligence tile",
+        "Plain English on executive briefing when data sparse",
+        "Credit-liability / custom chart tenant fails also hurt trust nearby"
+      ],
+      "evidenceNote": "Progress: Intel+Reports 24P/6Part/7F; open defects MRR crash, reports-hub Refrm heat map; AI-85 FAILs held.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/intelligence.md"
+    },
+    {
+      "id": "forms",
+      "name": "Forms / QR / waivers",
+      "pathHint": "/admin/forms",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 42,
+      "obvious": 38,
+      "frictionless": 35,
+      "overall": 38,
+      "plainSummary": "Provisional from Forms+QR E2E: contact builder PASS; QR generation PASS; public QR destination FAIL (Loading payment\u2026 then blank). Waiver type not present. Physical phone scan blocked. Destination mismatch tanks obvious+frictionless.",
+      "strengths": [
+        "Admin create/edit/preview/submit contact form PASS",
+        "QR create under Bluebird PASS"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Fix public /q/\u2026 destination \u2014 must open the linked form, not payment loader",
+        "Offer waiver form type in builder",
+        "Empty forms list: start from template (contact / waiver / intake)",
+        "After QR create, show scan preview that matches public URL",
+        "Phone: form fill without chrome covering submit"
+      ],
+      "evidenceNote": "forms-pass-qr-dest-fail tip a263c4ab; later matrices on a73ff70 still show QR kind / public fails. Tip at score uses hub live tip for board currency; evidence spans a263c4ab\u2013a73ff70.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/forms.md"
+    },
+    {
+      "id": "ambient",
+      "name": "Studio Pulse / Morning Dispatch / Twin",
+      "pathHint": "/admin/morning-dispatch",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 55,
+      "obvious": 58,
+      "frictionless": 52,
+      "overall": 55,
+      "plainSummary": "Provisional from Ambient measured strand (92%) + Dispatch viewer PASS on tip 6486be87 (honest empty, no crash). Best feel candidate: honest not-ready copy, role tabs, Generate present. Twin/BI historically blocked for some seats \u2014 kept conservative.",
+      "strengths": [
+        "Dispatch viewer FAIL\u2192PASS with inviting empty state",
+        "Pulse shell loads",
+        "Role tabs Owner/Manager/Marketing/Sales"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Keep honest empty pattern \u2014 export it to other hubs",
+        "After Generate, celebrate with clear preview link",
+        "Pulse: explain numbers in one sentence (why this matters today)",
+        "Twin: reachable for Admin2 without seed dead-ends",
+        "Phone: dispatch viewer readable without zoom"
+      ],
+      "evidenceNote": "Ambient dispatch viewer PASS tip 6486be87; ambient strand 92%. Twin/BI Admin2 reachability historically uneven \u2014 confidence medium.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/ambient.md"
+    },
+    {
+      "id": "command-centre",
+      "name": "Command Centre chat UX",
+      "pathHint": "/admin/command-centre",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 35,
+      "obvious": 28,
+      "frictionless": 40,
+      "overall": 34,
+      "plainSummary": "Provisional from answer quality (not acceptance % as a feel score). Milestone 2 B\u2013F 4/30: invented how-do-I paths, missing named refuse reasons, XAGR numbers missing vs Pulse/Dispatch/Twin, investigation stalls. Chat shell may load; answers are not yet obvious or joyful.",
+      "strengths": [
+        "Cluster A 24/24 PASS on tip",
+        "Four B\u2013F slots PASS (B-MSG-01, C-TODAY-01, E-FU-01, F-FU-01)"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Stop inventing navigation paths \u2014 only cite real Admin routes",
+        "When refusing, use named refuse reasons Declan approved",
+        "Align XAGR / headcount numbers with Pulse/Dispatch/Twin",
+        "Investigation stalls: always offer next step or escalate",
+        "Celebrate correct answers briefly; don't dump walls of text",
+        "Isolation scare (E-FAC-01) must never appear for Bluebird-only asks"
+      ],
+      "evidenceNote": "CC Milestone 2 frozen bank 4/30 PASS on 6486be87; fail themes posted #1180. This surface scores answer UX feel, not the 48% strand acceptance meter.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/command-centre.md"
+    }
+  ]
+}
