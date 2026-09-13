@@ -18,7 +18,7 @@
     },
     "updatedAt": "2026-09-12T11:59:19.847671Z",
     "note": "Live tip a3a0e207: #1267 invite create. Staging ahead: #1266 Pulse (6486be87) not deployed. Cluster A last Measured 23/24 on a73ff70 (ACS-C01 fail).",
-    "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 349/413 \u2248 84.5%.",
+    "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 354/413 \u2248 85.7%.",
     "headlineVsCoverage": "Headline ~63% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
       "pctTestedAny": 98.8,
@@ -35,7 +35,7 @@
       }
     },
     "coverageL1Pct": 92.7,
-    "coverageL2Pct": 84.5,
+    "coverageL2Pct": 85.7,
     "commandCentreNote": "48% = A 24/24 + B\u2013F 4/30 measured on 6486be87 (replaced A-only 80%)."
   },
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -97,10 +97,10 @@
     "censusLongtailSettings": "14 PASS / 1 BLOCKED (live-support PA); orphans (30) next",
     "censusLongtailComplete": "133 routes: 124 PASS / 6 FAIL / 3 BLOCKED \u2014 Admin L1 wave complete",
     "coverageL1Plus": 383,
-    "coverageL2Plus": 349,
+    "coverageL2Plus": 354,
     "coverageTotal": 413,
     "coveragePctL1Plus": 92.7,
-    "coveragePctL2Plus": 84.5,
+    "coveragePctL2Plus": 85.7,
     "l2BackfillAt": "2026-09-12T11:59:19.847671Z",
     "censusCoreL2Members": "3 PASS / 1 PARTIAL / 1 FAIL (crm-hub KPI vs empty Insights)",
     "censusCoreL2": "Members 3P/1Part/1F \u00b7 Timetable L2_FAIL (fill-rate + cover cost + cover copy)",
@@ -161,6 +161,16 @@
       "tip": "6486be87",
       "routes": 15,
       "at": "2026-09-12T21:32:43.152121+00:00"
+    },
+    "censusLongtailL2Recovered5": {
+      "pass": 0,
+      "partial": 4,
+      "fail": 1,
+      "tip": "6486be87",
+      "fails": [
+        "/admin/override-audit-log"
+      ],
+      "at": "2026-09-13T05:21:15.234158+00:00"
     }
   },
   "strands": [

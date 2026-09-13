@@ -20853,7 +20853,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "Owner loaded (read-only). Empty state: no open recommendations assigned.",
+    "reason": "Honest empty: no actions assigned, 0 total. Complete/assign withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -20869,20 +20869,35 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/my-actions.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-recovered5"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "My Actions alias loads with the honest no-open-recommendations state and guidance sections.",
-      "title": "My Actions",
-      "breadcrumb": "My Actions",
-      "reachability": "unknown"
+      "source": "census-longtail-l2-recovered5",
+      "hub": "long-tail",
+      "note": "Honest empty: no actions assigned, 0 total. Complete/assign withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "opened page"
+      ],
+      "controlsNotExercised": [
+        "complete",
+        "assign"
+      ],
+      "tenant_ok": true
     }
   },
   {
@@ -21335,7 +21350,7 @@
     "inRouter": true,
     "in407": true,
     "completeness": "hub_only",
-    "state": "partially_tested",
+    "state": "failed",
     "percentPassed": null,
     "percentFailed": null,
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -21349,21 +21364,35 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/override-audit-log.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-recovered5"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 fail",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Override Audit Log loads with period/category filters and the existing immutable audit entry.",
-      "title": "Override Audit Log",
-      "breadcrumb": "Override Audit Log",
-      "reachability": "unknown"
-    }
+      "source": "census-longtail-l2-recovered5",
+      "hub": "long-tail",
+      "note": "AGREEMENT FAIL: Month-End tile 0 total overrides (Sep 2026) vs Credit filter 1 entry (6 Sep 14:19 goodwill_credit, admin)."
+    },
+    "l2": {
+      "verdict": "L2_FAIL",
+      "controlsExercised": [
+        "month Sep 2026",
+        "Credit filter"
+      ],
+      "controlsNotExercised": [],
+      "tenant_ok": true
+    },
+    "reason": "AGREEMENT FAIL: Month-End tile 0 total overrides (Sep 2026) vs Credit filter 1 entry (6 Sep 14:19 goodwill_credit, admin)."
   },
   {
     "id": "admin-payroll",
@@ -22023,7 +22052,7 @@
     "percentPassed": null,
     "percentFailed": null,
     "blockedBy": null,
-    "reason": "B4-03 load DECORATION empty",
+    "reason": "Generated-stage filter. Honest empty: no recommendations tracked. Apply withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -22039,20 +22068,34 @@
       {
         "kind": "drop",
         "id": "census-ai-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/recommendation-tracker.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-recovered5"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-ai",
-      "hubSense": "ok",
-      "hubFit": "ok",
-      "note": "Recommendation Tracker loads with lifecycle filters and honest no-recommendations state; no action taken.",
-      "title": "Recommendation Tracker",
-      "breadcrumb": "Recommendation Tracker",
-      "reachability": "unknown"
+      "source": "census-longtail-l2-recovered5",
+      "hub": "long-tail",
+      "note": "Generated-stage filter. Honest empty: no recommendations tracked. Apply withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "generated filter"
+      ],
+      "controlsNotExercised": [
+        "apply/accept"
+      ],
+      "tenant_ok": true
     }
   },
   {
@@ -22073,7 +22116,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Calendar week 7\u201313 Sep 2026, Bluebird Central / All Areas. Reporting tab not required. Booking write withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -22085,23 +22128,36 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/recovery-calendar.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-recovered5"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Studio Timetable recovery calendar surface",
-      "buriedDaily": "medium",
-      "duplicate": "orphan route for the Recovery hub Calendar tab",
-      "proposedHome": "Studio > Timetable > Recovery > Calendar",
-      "note": "Direct route canonicalized to the Recovery hub Calendar tab; observed only, no recovery booking, filter or setup action used.",
-      "breadcrumb": "Studio > Timetable > Recovery > Calendar",
-      "reachability": "ORPHANED",
-      "heading": "Recovery Calendar"
+      "source": "census-longtail-l2-recovered5",
+      "hub": "long-tail",
+      "note": "Calendar week 7\u201313 Sep 2026, Bluebird Central / All Areas. Reporting tab not required. Booking write withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Recovery Calendar",
+        "location Bluebird Central",
+        "week view"
+      ],
+      "controlsNotExercised": [
+        "booking write"
+      ],
+      "tenant_ok": true
     }
   },
   {
@@ -22185,7 +22241,7 @@
     "state": "partially_tested",
     "percentPassed": null,
     "percentFailed": null,
-    "reason": null,
+    "reason": "Analytics tab + search bluebird. \u00a30 income / 0 cr rewards / \u00a30 net / 0 all-time. Create/export withheld.",
     "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
     "lastTestedAt": null,
     "stale": false,
@@ -22197,23 +22253,36 @@
       {
         "kind": "drop",
         "id": "census-longtail-orphans-l1"
+      },
+      {
+        "kind": "path",
+        "path": "evidence/census-longtail-l2-settings//workspace/helgoiq-afternoon-2026-09-12/17-coverage-programme/evidence/census-longtail-l2-settings/referral-dashboard.png"
+      },
+      {
+        "kind": "drop",
+        "id": "coverage-l2-long-tail-recovered5"
       }
     ],
     "prUrl": null,
     "issueUrl": null,
-    "level": 1,
-    "levelLabel": "L1 reachable",
+    "level": 2,
+    "levelLabel": "L2 partial",
     "senseCheck": {
-      "source": "census-longtail",
-      "hub": "orphans",
-      "hubFit": "good Experiences referral-programme surface",
-      "buriedDaily": "medium",
-      "duplicate": "orphan route for the Referral Programme Dashboard",
-      "proposedHome": "Experiences > Referral Programme > Dashboard",
-      "note": "Direct route canonicalized to the Referral Programme hub; observed only, no referral or reward action used.",
-      "breadcrumb": "Experiences > Referral Programme > Dashboard",
-      "reachability": "ORPHANED",
-      "heading": "Referral Programme"
+      "source": "census-longtail-l2-recovered5",
+      "hub": "long-tail",
+      "note": "Analytics tab + search bluebird. \u00a30 income / 0 cr rewards / \u00a30 net / 0 all-time. Create/export withheld."
+    },
+    "l2": {
+      "verdict": "L2_PARTIAL",
+      "controlsExercised": [
+        "Analytics tab",
+        "search bluebird"
+      ],
+      "controlsNotExercised": [
+        "create campaign",
+        "Export CSV"
+      ],
+      "tenant_ok": true
     }
   },
   {
