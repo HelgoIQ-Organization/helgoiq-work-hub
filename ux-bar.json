@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-13T05:39:49.746482+00:00",
+  "updatedAt": "2026-09-13T05:44:15.679487+00:00",
   "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
   "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
   "rubric": {
@@ -9,11 +9,11 @@
     "overall": "round((joyful + obvious + frictionless) / 3)"
   },
   "headline": {
-    "joyful": 41,
-    "obvious": 39,
-    "frictionless": 39,
-    "overall": 40,
-    "note": "Equal-weight across surfaces. Marketing now measured (66 overall)."
+    "joyful": 42,
+    "obvious": 40,
+    "frictionless": 40,
+    "overall": 41,
+    "note": "Equal-weight across surfaces. Website now measured (65 overall)."
   },
   "honesty": {
     "measured": "Only team-chat from /workspace/helgoiq-chat-qa Sep 1 report.",
@@ -313,28 +313,34 @@
       "id": "website",
       "name": "Website / CMS",
       "pathHint": "/admin/website",
-      "basis": "provisional_from_evidence",
-      "confidence": "medium",
+      "basis": "measured",
+      "confidence": "high",
       "scoredAt": "2026-09-13",
       "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "joyful": 52,
-      "obvious": 55,
-      "frictionless": 50,
-      "overall": 52,
-      "plainSummary": "Provisional from Website L1 25/25 PASS plus Content wave. Best obviousness of the set so far \u2014 pages land where named. Still provisional (no dedicated joyful/frictionless UX pass); drafts-only caution.",
+      "joyful": 64,
+      "obvious": 72,
+      "frictionless": 60,
+      "overall": 65,
+      "plainSummary": "Measured Sep 13 Admin2: strong draft/live governance on desktop; phone tab/CTA clipping and contradictory Health failure hurt frictionless/obvious. Overall 65 (was provisional 52).",
       "strengths": [
-        "Website/Blog L1: 25/25 routes PASS",
-        "Content wave largely reachable"
+        "Draft vs live governance language",
+        "Desktop named start cards and Blog draft badges",
+        "Sticky phone dock remains usable"
       ],
-      "findings": [],
+      "findings": [
+        "Health failure contradicts \u201cnot checked yet\u201d",
+        "Phone Website Hub tabs clip to lone \u201cI\u201d",
+        "Blog phone CTA truncates to \u201cNew Pos\u201d",
+        "Unsaved badge after Save Draft"
+      ],
       "suggestions": [
-        "Celebrate publish with clear success + public link",
-        "Empty site: guided first page / blog post",
-        "Keep draft vs live labels always visible",
-        "Phone CMS editor: sticky save without covering fields",
-        "Health page: plain English if something fails (1 known F)"
+        "Honest Health failure + Retry",
+        "Fix phone tab/CTA overflow",
+        "Clear Unsaved on draft save",
+        "Fix Unknown display name",
+        "Guided first-page win above readiness backlog"
       ],
-      "evidenceNote": "drops/2026-09-12-coverage-l1-website-blog: 25/25 L1 PASS. Progress: Website (Content) 14P / 11Part / 1F.",
+      "evidenceNote": "Measured Feel walk 2026-09-13 tip 6486be87. See REVIEW + FIX_CANDIDATE (Health contradiction, phone tab clip, Blog CTA).",
       "detailDropId": "2026-09-13-ux-bar-feel",
       "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/website.md"
     },
