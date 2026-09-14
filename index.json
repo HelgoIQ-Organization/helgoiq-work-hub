@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-14T11:29:18.427Z",
+  "updatedAt": "2026-09-14T12:18:03.673Z",
   "drops": [
+    {
+      "id": "2026-09-14-occupancy-retention-scan-2-1265",
+      "title": "Occupancy Retention scan 2 (#1265)",
+      "date": "2026-09-14",
+      "summary": "Scan 2 BLOCKED on tip daaeebc3 (live now 160fc539): Admin2+Owner Agents page shows Studio support shell only; Occupancy/Retention cards absent; 0 findings/IDs. Scan1 PA had Observe+queued reviews. #1180 comment 5663754124. Finite routine deleted.",
+      "plainEnglish": "Scan 2 BLOCKED on tip daaeebc3 (live now 160fc539): Admin2+Owner Agents page shows Studio support shell only; Occupancy/Retention cards absent; 0 findings/IDs. Scan1 PA had Observe+queued reviews. #1180 comment 5663754124. Finite routine deleted.",
+      "tags": [
+        "command-centre",
+        "findings",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-14-occupancy-retention-scan-2-1265/scan2b-daaeebc3.json"
+      ],
+      "tip": "daaeebc3"
+    },
     {
       "id": "2026-09-14-launch-hub-tip-daaeebc3-astra-pack-live",
       "title": "Launch Hub tip daaeebc3 Astra pack live",

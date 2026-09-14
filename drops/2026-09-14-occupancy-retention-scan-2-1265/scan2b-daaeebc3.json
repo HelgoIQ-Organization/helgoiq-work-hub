@@ -1,0 +1,85 @@
+{
+  "tip": "daaeebc340df1b27101c9f4641abc02bc298208d",
+  "scan": "occupancy-retention-scan2",
+  "when_local": "2026-09-14T15:04:00+03:00",
+  "studio": {
+    "name": "Bluebird Pilates — TEST DATA (fabricated)",
+    "company_id": 150002,
+    "query": "c=150002",
+    "refrm_touched": false
+  },
+  "seat_verification": [
+    {
+      "seat": "Admin 2",
+      "email": "helgoiq-bb-admin-2@agentmail.to",
+      "identity_confirmed": true,
+      "identity_ui": "Helgoiq Bb Admin 2; Owner · Bluebird Central",
+      "agents_page": "Authenticated shell rendered, but agent rollout cards were absent"
+    },
+    {
+      "seat": "Owner",
+      "email": "helgoiq-bb-owner@agentmail.to",
+      "identity_confirmed": true,
+      "identity_ui": "Helgoiq Bb Owner; Owner · Bluebird Central",
+      "agents_page": "Authenticated shell rendered, but agent rollout cards were absent"
+    }
+  ],
+  "agents": {
+    "Occupancy Agent": {
+      "stage": null,
+      "rollout_mode": null,
+      "run_review_enabled": null,
+      "in_progress": null,
+      "last_run": null,
+      "finding_ids": [],
+      "findings_count": 0,
+      "recommendation_ids": [],
+      "recommendations_count": 0,
+      "scoped_scans": null,
+      "proactive_reviews": null,
+      "agent_work": null,
+      "current_status": "not exposed by authenticated page",
+      "last_concrete_bluebird_observation": "Paused / Not opted in; Run a review now disabled; Not run yet (prior authenticated scan2 evidence)"
+    },
+    "Retention Agent": {
+      "stage": null,
+      "rollout_mode": null,
+      "run_review_enabled": null,
+      "in_progress": null,
+      "last_run": null,
+      "finding_ids": [],
+      "findings_count": 0,
+      "recommendation_ids": [],
+      "recommendations_count": 0,
+      "scoped_scans": null,
+      "proactive_reviews": null,
+      "agent_work": null,
+      "current_status": "not exposed by authenticated page",
+      "last_concrete_bluebird_observation": "Paused / Not opted in; Run a review now disabled; Not run yet (prior authenticated scan2 evidence)"
+    }
+  },
+  "queue_snapshot": {
+    "all_open": 0,
+    "approvals": 0,
+    "agent_work": 0,
+    "tasks": 0,
+    "recommendations": 0,
+    "verified_outcomes": 0,
+    "ready_for_approval": 0,
+    "new_findings": 0,
+    "needs_attention": 0
+  },
+  "review_actions_taken": [],
+  "ui_messages": [
+    "Nothing in this queue",
+    "No matching item currently needs your attention.",
+    "No prepared work yet",
+    "There is no prepared work to show yet. This does not mean every area has been checked."
+  ],
+  "reviews_ran": false,
+  "blocker": "Both Admin 2 and Owner identities were confirmed on Bluebird. The authenticated /admin/command-centre/agents?c=150002 route repeatedly rendered only the Studio support dashboard and zeroed operational queue; Occupancy and Retention cards, stages, run controls, finding IDs and recommendation panels were not present. No review or Start Observe action was attempted without a visible governed control.",
+  "screenshots": [
+    "/workspace/helgoiq-bb-settings-2026-09-14/evidence/scan2c-agents-owner.png",
+    "/workspace/helgoiq-bb-settings-2026-09-14/evidence/scan2c-agents.png"
+  ]
+}
