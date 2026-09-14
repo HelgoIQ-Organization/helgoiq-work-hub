@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-14T09:19:07.935Z",
+  "updatedAt": "2026-09-14T10:54:54.585Z",
   "drops": [
+    {
+      "id": "2026-09-14-ai-85-provisional-rescore-tip-40da6535-fc-21-21",
+      "title": "AI-85 provisional rescore tip 40da6535 (FC 21/21)",
+      "date": "2026-09-14",
+      "summary": "AI-85 provisional set re-scored after PA Feature Controls 21/21 on tip 40da6535; UNCERTAIN 23→21, UNREACHABLE 8→10 (AI-008/009 PA gate); no PASS upgrades; flags no longer the blocker.",
+      "plainEnglish": "Bluebird AI feature flags are on. We re-checked the uncertain AI pages: two need Platform Admin access, four still have no page, and the rest open but still lack useful studio data.",
+      "tags": [
+        "ai-85",
+        "findings",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-ai85-rescore-40da6535",
+      "paths": [
+        "drops/2026-09-14-ai-85-provisional-rescore-tip-40da6535-fc-21-21/RESCORE.md",
+        "drops/2026-09-14-ai-85-provisional-rescore-tip-40da6535-fc-21-21/COUNTS.md"
+      ],
+      "tip": "40da6535c03b3f1bc8e1dd28b181143da0268f69",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-14-occupancy-retention-scan-2-blocked",
       "title": "Occupancy Retention scan 2 blocked",
