@@ -1,0 +1,25 @@
+{
+  "capturedAt": "2026-09-14T10:57:26.455Z",
+  "kind": "await-tip",
+  "liveTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
+  "stagingMerge": {
+    "pr": 1303,
+    "sha": "b8e5a06d",
+    "title": "Fix Cluster C named booking-block diagnosis"
+  },
+  "headlinePercent": 66,
+  "nowStrands": {
+    "dataset": 52,
+    "command-centre": 55,
+    "isolation": 86,
+    "ai-85": 60,
+    "ambient": 93,
+    "m1": 73,
+    "smoke": 72,
+    "payments": 68,
+    "findings-fix": 95,
+    "comms": 15
+  },
+  "plainEnglishDay": "Monday afternoon (14 Sep Europe/Athens ~13:55): #1303 merged to staging (Cluster C named booking-block diagnosis / C-BOOK-01) — LIVE tip STILL 1fa31d14 (#1272/#1306). Staging ahead by 2 commits (d256fd02 + b8e5a06d). Headline estimate holds ~66%. Prior retests on tip still open. Never import.rollbackBatch.",
+  "note": "Tip unchanged (1fa31d14); stamps refreshed only — do not look more confident without new measured facts."
+}
