@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-14T05:12:44.370Z",
+  "updatedAt": "2026-09-14T05:26:34.995Z",
   "drops": [
+    {
+      "id": "2026-09-14-launch-hub-tip-40da6535-4-live",
+      "title": "Launch Hub tip 40da6535 — +4 live",
+      "date": "2026-09-14",
+      "summary": "Tip moved af7e6009→40da6535 with #1304/#1300/#1268/#1298 live. Headline estimate ~65%. Bluebird retests pending.",
+      "plainEnglish": "Staging tip just moved. Four fixes are live now (Cluster C North timetable, Command Centre send guidance, public QR checkout, and the smoke membership selector). Launch readiness estimate is about 65%. We still need Bluebird retests before calling any of those Measured PASS.",
+      "tags": [
+        "status",
+        "command-centre",
+        "smoke",
+        "payments"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-14-launch-hub-tip-40da6535-4-live/tip-40da6535-status.md"
+      ],
+      "tip": "40da6535c03b3f1bc8e1dd28b181143da0268f69"
+    },
     {
       "id": "2026-09-14-launch-hub-tip-af7e6009-overview-intel-morning-p",
       "title": "Launch Hub tip af7e6009 — Overview/Intel morning pack",

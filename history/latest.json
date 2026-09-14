@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-09-14T05:14:43.373Z",
+  "updatedAt": "2026-09-14T05:25:03.022Z",
   "meta": {
-    "dataAsOf": "2026-09-14T05:14:43.373Z",
-    "buildStamp": "af7e6009e076850b1e85daab312e40ce16199e44",
-    "liveTip": "af7e6009e076850b1e85daab312e40ce16199e44",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 63% = round((52×12 + 48×10 + 86×10 + 56×15 + 93×9 + 73×10 + 66×6 + 62×8 + 91×10 + 15×10)/100) half-up.",
+    "dataAsOf": "2026-09-14T05:25:03.022Z",
+    "buildStamp": "40da6535c03b3f1bc8e1dd28b181143da0268f69",
+    "liveTip": "40da6535c03b3f1bc8e1dd28b181143da0268f69",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 65% = round((52×12 + 55×10 + 86×10 + 56×15 + 93×9 + 73×10 + 72×6 + 68×8 + 93×10 + 15×10)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
-    "latestSnapshotPath": "history/2026-09-14-tip-af7e6009.json",
-    "lastRefreshNote": "Tip unchanged af7e6009. Folded staging +4 merges (#1304/#1300/#1268/#1298) not yet on live tip. Headline held ~63% — no new Measured. Never import.rollbackBatch.",
+    "latestSnapshotPath": "history/2026-09-14-tip-40da6535.json",
+    "lastRefreshNote": "Tip moved af7e6009 → 40da6535 (wake PR #1300). Now on tip: #1304 Cluster C North timetable, #1300 CC campaign send guidance, #1268 public QR checkout, #1298 smoke exact membership selector. Headline estimate ~65% (modest bumps pending Bluebird retest). Never import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-14T05:14:43.373Z"
+      "checkedAt": "2026-09-14T05:25:03.022Z"
     },
-    "updatedAt": "2026-09-14T05:14:43.039Z",
-    "note": "Live tip af7e6009 unchanged. Four staging merges queued for tip (#1304/#1300/#1268/#1298). Headline ~63%. Never import.rollbackBatch.",
+    "updatedAt": "2026-09-14T05:25:03.022Z",
+    "note": "Live tip 40da6535. Four merges now deployed (#1304/#1300/#1268/#1298). Headline estimate ~65% — Measured retests not run yet on this tip. Never import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L≥1 = 383/413 ≈ 92.7%; L≥2 = 368/413 ≈ 89.1%.",
-    "headlineVsCoverage": "Headline ~63% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
+    "headlineVsCoverage": "Headline ~65% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
       "pctTestedAny": 98.8,
       "pctL1Plus": 88.4,
@@ -36,13 +36,13 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "48% = A 24/24 + B–F 4/30 measured on 6486be87 (replaced A-only 80%).",
-    "liveTipNote": "af7e6009 = #1279 FC-INTEL-04 in-shell loading (+ #1286/#1274 on tip). Staging ahead: #1304 (Cluster C North timetable count), #1300 (CC campaign send guidance), #1268 (payments public QR checkout), #1298 (smoke exact membership product selector). Awaiting tip move before Measured retests."
+    "commandCentreNote": "Estimate 55% on tip 40da6535 — #1300 campaign send guidance + #1304 Cluster C North on tip; last Measured still A 24/24 + B–F 4/30 on 6486be87 (held Cluster A 22/24 narrative from prior gates).",
+    "liveTipNote": "40da6535 = #1298 smoke exact membership product selector (tip SHA) + #1304 Cluster C North timetable count + #1300 CC campaign send guidance + #1268 payments public QR checkout (also retains #1279/#1286/#1274 from prior tip). Bluebird Measured retests pending on all four."
   },
-  "tip": "af7e6009e076850b1e85daab312e40ce16199e44",
+  "tip": "40da6535c03b3f1bc8e1dd28b181143da0268f69",
   "progressToday": {
     "morningHeadlinePercent": 52,
-    "nowHeadlinePercent": 63,
+    "nowHeadlinePercent": 65,
     "morningStrands": {
       "dataset": 25,
       "command-centre": 55,
@@ -57,36 +57,36 @@
     },
     "nowStrands": {
       "dataset": 52,
-      "command-centre": 48,
+      "command-centre": 55,
       "isolation": 86,
       "ai-85": 56,
       "ambient": 93,
       "m1": 73,
-      "smoke": 66,
-      "payments": 62,
-      "findings-fix": 91,
+      "smoke": 72,
+      "payments": 68,
+      "findings-fix": 93,
       "comms": 15
     },
     "deltas": {
       "dataset": 27,
-      "command-centre": -7,
+      "command-centre": 0,
       "isolation": 0,
       "ai-85": 0,
       "ambient": 23,
       "m1": 13,
-      "smoke": 46,
-      "payments": 17,
-      "findings-fix": 51,
+      "smoke": 52,
+      "payments": 23,
+      "findings-fix": 53,
       "comms": 15,
-      "headline": 11
+      "headline": 13
     },
-    "plainEnglishDay": "Monday mid-morning (14 Sep Europe/Athens ~08:13): TIP UNCHANGED af7e6009. Since last hub stamp, four PRs merged to staging but NOT live yet: #1304 Cluster C North timetable, #1300 CC campaign-send guidance, #1268 public QR checkout, #1298 smoke membership product selector (candidate for overnight smoke step2 locator FAIL). Headline held ~63% — no new Measured on tip. Prior tip move 3ad37824→af7e6009 (#1279/#1286/#1274) still awaiting Bluebird Feel retest. Never import.rollbackBatch.",
+    "plainEnglishDay": "Monday mid-morning (14 Sep Europe/Athens ~08:25): TIP MOVED af7e6009 → 40da6535. Wake: PR #1300 (CC campaign send guidance). Also now on tip: #1304 Cluster C North timetable count, #1268 public QR checkout, #1298 smoke exact membership product selector (candidate for overnight step2 locator FAIL). Headline estimate ~63→65% — modest estimate bumps only; Bluebird retests NOT run yet on 40da6535. Prior pack #1286/#1274/#1279 still needs Overview/Intel retest. Never import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board vs now: headline ~63% held. Tip still af7e6009. Staging ahead of tip by 4 merges (#1304/#1300/#1268/#1298) — tip-change refresh will catch deploy.",
-    "updatedAt": "2026-09-14T05:14:43.039Z",
+    "compareNote": "Morning board vs now: headline ~52→65%. Tip moved to 40da6535 with +4 merges live (#1304/#1300/#1268/#1298). Estimate bumps: CC 48→55, smoke 66→72, payments 62→68, findings-fix 91→93 — all pending Measured retest.",
+    "updatedAt": "2026-09-14T05:25:03.022Z",
     "coverageNote": "After AI L2 Intel: L≥1=372 (90%); L≥2=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
-    "smokeSixStep": "FAIL 1/6 on tip 3ad37824 (step1 #1296 PASS; step2 locator FAIL; 3–6 skipped)",
+    "smokeSixStep": "FAIL 1/6 last Measured on tip 3ad37824 (step1 #1296 PASS; step2 locator FAIL; 3–6 skipped). #1298 exact membership selector NOW on tip 40da6535 — retest pending.",
     "pulse1266": "PASS Owner seat overnight on tip 3ad37824",
     "censusCoreL1": "80/88 PASS tip 6486be87; Coverage merge done",
     "censusContentL1": "25/25 PASS Website/Blog tip 6486be87 MERGED",
@@ -198,11 +198,24 @@
       "note": "#1280 phone Website/Blog hubs; #1281 Website Health truth; #1283 identity/blog Unsaved. Live tip still #1270."
     },
     "triggerPr": {
-      "number": 1280,
-      "title": "fix(cms): keep Website and Blog hub controls readable on phones",
-      "mergedAt": "2026-09-13T17:22:29Z",
-      "mergeCommit": "1983b99aea6db39a4a32f53eaf01fb3348339f40",
-      "onLiveTip": false
+      "number": 1300,
+      "title": "fix(command-centre): route campaign send guidance",
+      "mergedAt": "2026-09-14T05:20:00Z",
+      "mergeCommit": "d3d4c32d",
+      "onLiveTip": true,
+      "note": "Wake PR for tip move af7e6009→40da6535; also #1304/#1268/#1298 on tip."
+    },
+    "tipMove40da6535": {
+      "prevTip": "af7e6009e076850b1e85daab312e40ce16199e44",
+      "newTip": "40da6535c03b3f1bc8e1dd28b181143da0268f69",
+      "prs": [
+        1304,
+        1300,
+        1268,
+        1298
+      ],
+      "at": "2026-09-14T05:25:03.022Z",
+      "note": "Estimate bumps only; no new Measured on 40da6535 yet."
     }
   },
   "strands": [
@@ -213,7 +226,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "Dataset canary FAIL again on tip 6486be87: batchImport.upload Missing companyId HTTP 403; Import Batches empty; 0 members. Same as 232659cf. Engineering fix required. No rollback used.",
-      "progressNote": "Held 52% — tip af7e6009. tip 3ad37824. Dataset canary still last FAIL (Missing companyId 403); no canary tonight.",
+      "progressNote": "Held 52% — tip 40da6535. Dataset canary still last FAIL (Missing companyId 403); no canary on this tip.",
       "blockers": [
         "Canary upload FAIL: Missing companyId on batchImport.upload (403) — engineering",
         "12-month dataset not imported (0 members from canary)"
@@ -234,11 +247,11 @@
     {
       "id": "command-centre",
       "name": "Command Centre acceptance",
-      "percent": 48,
-      "basis": "Measured",
+      "percent": 55,
+      "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Cluster A 24/24 PASS on tip 6486be87. Milestone 2 B–F frozen 30-slot gate scored 4/30 (26 FAIL). On tip 3ad37824: #1265/#1271 merged (finding identity + rollout gate) — not re-scored tonight.",
-      "progressNote": "Held 48% — tip af7e6009. tip 3ad37824. #1265 finding-identity dedupe + #1271 rollout gate now on tip; Milestone 2 B–F still last Measured 4/30 on 6486be87. Tip-change re-run still needed.",
+      "plainSummary": "Tip 40da6535 now includes #1300 (campaign send guidance) and #1304 (Cluster C North timetable count). Estimate 48→55 pending Bluebird retest. Last Measured still Cluster A 24/24 + B–F 4/30 on 6486be87 (Cluster A 22/24 narrative held from prior gates).",
+      "progressNote": "Estimate 48→55 — #1300/#1304 on tip 40da6535; Measured Cluster A/B–F not re-scored yet.",
       "blockers": [
         "Milestone 2 B–F 26 FAIL — invented how-do-I paths, missing named refuse reasons, XAGR disagreements/missing numbers, investigation stalls",
         "E-FAC-01 isolation: invented Setup path toward deleting a Refrm building"
@@ -267,7 +280,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "ISO-29 re-sweep on tip 6486be87: same 26 PASS / 4 FAIL / 2 NOT_RUN as 232659cf. ISO-18/20/27/29 still FAIL (Refrm Helgo chooser Bluebird leak; cohorts identical; Staff Availability lists Bluebird teachers; CC ?c=150001 only offers Bluebird). Hold 86%.",
-      "progressNote": "Held 86% — tip af7e6009. tip 3ad37824. #1276/#1277 tenant filter/overview fixes live but ISO-18/20/27/29 last Measured FAILs on 6486be87 not re-swept tonight.",
+      "progressNote": "Held 86% — tip 40da6535. ISO-18/20/27/29 last Measured FAILs on 6486be87 not re-swept on this tip.",
       "blockers": [
         "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (Measured on 6486be87)",
         "Weymouth #1245 and Luton #1242 extras NOT_RUN — no dedicated fixture/route"
@@ -292,7 +305,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "AI-85 Admin2 re-score on tip 6486be87: 25 surfaces (20 UNCERTAIN + 5 FAIL). PASS still 48/85 → hold 56%. Only change AI-018 FAIL→PARTIAL (Dispatch honest empty). Open FAILs: AI-042 MRR crash, AI-025 Ask HelgoIQ, AI-037 Predictive Cash Flow, AI-021 What We’ve Learned. PA-gated Hea",
-      "progressNote": "Held 56% — tip af7e6009. tip 3ad37824. #1278 MRR honest empty + #1276/#1277 Intel tenant filters live; AI-042 / AI-85 Admin2 not re-scored tonight.",
+      "progressNote": "Held 56% — tip 40da6535. AI-042 / AI-85 Admin2 not re-scored on this tip.",
       "blockers": [
         "23 UNCERTAIN remain (many empty AI / NEED_DECLAN)",
         "4 FAIL: MRR crash, Ask HelgoIQ, Predictive Cash Flow, What We’ve Learned launcher",
@@ -315,8 +328,8 @@
       "percent": 93,
       "basis": "measured",
       "status": "on-track",
-      "plainSummary": "Stage 1B #1266 Pulse Explain PASS overnight on tip 3ad37824 (Owner seat: Insufficient≠Critical zero; Why-no-score; attendance/check-ins; Save/Close). Morning Dispatch viewer PASS held from tip 6486be87. Event Bus / Learning Engine blockers unchanged. Tip now af7e6009 — no ambient-specific new PRs; held Measured +1 for Pulse clear.",
-      "progressNote": "92→93 Measured — #1266 Pulse Explain PASS overnight; tip af7e6009.",
+      "plainSummary": "Stage 1B #1266 Pulse Explain PASS overnight on tip 3ad37824 (Owner seat). Morning Dispatch viewer PASS held from tip 6486be87. Tip now 40da6535 — no ambient-specific new PRs; held Measured.",
+      "progressNote": "Held 93% Measured — #1266 Pulse Explain PASS; tip 40da6535.",
       "blockers": [
         "Event Bus Platform-Admin gated — Declan escalation not attempted",
         "Learning Engine still 0 active lessons (one-tap action works)"
@@ -338,10 +351,10 @@
       "percent": 73,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Members Directory/invitations/Inbox Feel (#1284/#1287/#1285) PASS overnight on tip 3ad37824. #1286 Overview Members count = directory now ON tip af7e6009 (H-F003/M-F002) — retest pending. Wave1 full re-run, fresh invite create, upgrade/downgrade/MemberB/waitlist/Owner still open. Unfreeze payment-provider FAIL held.",
-      "progressNote": "72→73 Measured — Members Feel clears overnight; #1286 on tip af7e6009 pending retest.",
+      "plainSummary": "Members Directory/invitations/Inbox Feel (#1284/#1287/#1285) PASS overnight on tip 3ad37824. #1286 Overview Members count = directory still ON tip (ancestry) — retest pending. Tip now 40da6535 with payments/smoke/CC packs; Wave1 full re-run still open.",
+      "progressNote": "Held 73% — tip 40da6535; #1286 Overview retest still pending.",
       "blockers": [
-        "#1286 Overview Members count on tip af7e6009 — Bluebird retest pending",
+        "#1286 Overview Members count — Bluebird retest still pending (tip ancestry)",
         "Fresh member invite create FAIL on a263c4ab (form closed; pending list unchanged)",
         "Admin2 unfreeze FAIL — payment provider; BB Smoke Sep8 still paused (prior tip)",
         "Upgrade/downgrade BLOCKED (no selectable tiers)",
@@ -366,13 +379,13 @@
     {
       "id": "smoke",
       "name": "Critical path smoke",
-      "percent": 66,
-      "basis": "measured",
+      "percent": 72,
+      "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Overnight on tip 3ad37824: #1296 invitation replay step1 PASS (already_accepted + tenant denial); six-step FAIL 1/6 — step2 discounted-checkout strict-mode locator FAIL on Bluebird 8 (not paused-Stripe); steps 3–6 skipped. Tip now af7e6009 — no smoke-specific new PR; gate still red.",
-      "progressNote": "67→66 Measured — six-step FAIL 1/6 outweighs #1296 step1 PASS; tip af7e6009.",
+      "plainSummary": "Overnight on tip 3ad37824: six-step FAIL 1/6 — step2 discounted-checkout locator FAIL; #1296 step1 PASS. #1298 (exact membership product selector) is NOW on tip 40da6535 — candidate fix for that locator FAIL. Estimate 66→72 pending retest; status stays at-risk until Measured.",
+      "progressNote": "Estimate 66→72 — #1298 on tip 40da6535; six-step still last Measured FAIL 1/6 on 3ad37824.",
       "blockers": [
-        "Six-step smoke FAIL 1/6 — step2 Playwright locator on Bluebird 8 checkout",
+        "Six-step smoke last Measured FAIL 1/6 — step2 Playwright locator; #1298 now on tip — retest pending",
         "Join-and-pay job missing JOIN_PAY_PROOF_FIXTURES",
         "Fresh member invite create FAIL on a263c4ab"
       ],
@@ -387,17 +400,18 @@
       "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
-      "lastNote": "Held 67% — tip 3ad37824. #1296 authenticated invitation-replay already_accepted probe is live; six-step / invitation-replay smoke not re-measured tonight."
+      "lastNote": "Estimate 72% — #1298 exact membership selector live on tip 40da6535; retest six-step before claiming Measured."
     },
     {
       "id": "payments",
       "name": "Payments & Stripe",
-      "percent": 62,
+      "percent": 68,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Tip 3ad37824: Finance Hub list-behind-KPI (#1273) and BI scorecard baseline honesty (#1294) live. Overnight smoke Stripe TEST path still the last Measured payments proof; Admin2 Resume/unfreeze still FAIL; BB Smoke Sep8 paused.",
-      "progressNote": "Held 62% — tip af7e6009. tip 3ad37824. Finance KPI drill (#1273) + BI scorecard (#1294) live; Stripe resume/unfreeze picture unchanged until retest.",
+      "plainSummary": "#1268 public QR checkout is NOW on tip 40da6535. Estimate 62→68 pending Bluebird retest. Admin2 Resume/unfreeze still FAIL; overnight smoke Stripe TEST path still last Measured payments proof.",
+      "progressNote": "Estimate 62→68 — #1268 QR public checkout on tip 40da6535; Stripe resume/unfreeze unchanged until retest.",
       "blockers": [
+        "#1268 public QR checkout on tip 40da6535 — Bluebird retest pending",
         "Admin2 Resume/unfreeze FAIL — payment provider; Smoke membership still paused",
         "Broader payments / Stripe recheck beyond overnight smoke step 2 not done"
       ],
@@ -415,15 +429,16 @@
     {
       "id": "findings-fix",
       "name": "Fixing known launch bugs",
-      "percent": 91,
+      "percent": 93,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Overnight on tip 3ad37824: Feel merged-fix retests PASS=14 FAIL=1 (#1290 LMS/rota under admin dock) BLOCKED=1 (#1270 privacy preview). Feel hub headline 42→46 / Website 65→72. Tip moved to af7e6009 with #1286 Overview Members count, #1274 paired admin figures SoT, #1279 FC-INTEL-04 keep admin chrome while route chunks load — retests pending. Estimate 90→91. Never instruct import.rollbackBatch.",
-      "progressNote": "Estimate 90→91 — overnight Feel PASS=14 folded; #1286/#1274/#1279 on tip af7e6009 pending Bluebird retest.",
+      "plainSummary": "Tip moved to 40da6535 with four landed fixes: #1304 Cluster C North, #1300 CC send guidance, #1268 public QR checkout, #1298 smoke membership selector. Estimate 91→93 pending Bluebird retest. Prior tip pack #1286/#1274/#1279 still needs Overview/Intel retest. Never instruct import.rollbackBatch.",
+      "progressNote": "Estimate 91→93 — four fixes on tip 40da6535 pending retest; #1286/#1274/#1279 pack still open.",
       "blockers": [
         "#1290 FINDING — LMS/rota still under admin dock (merged but broken); fix PR NEED_DECLAN Auto-review",
+        "#1304/#1300/#1268/#1298 on tip 40da6535 — Bluebird retest pending",
+        "#1286/#1274/#1279 (prior tip pack) — Bluebird Overview/Intel retest still pending",
         "#1270 privacy-name preview BLOCKED (not findable in Admin nav)",
-        "#1286/#1274/#1279 on tip af7e6009 — Bluebird retest pending",
         "ISO-18/20/27/29 still FAIL",
         "Dataset canary FAIL — Missing companyId on batchImport.upload (403); 0 members (engineering)",
         "Admin2 unfreeze FAIL — payment provider; Smoke still paused",
@@ -455,8 +470,8 @@
       "percent": 15,
       "basis": "estimate",
       "status": "blocked",
-      "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. Tip af7e6009 does not unblock this strand.",
-      "progressNote": "Still 15% — tip af7e6009. Secrets gate unchanged.",
+      "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. Tip 40da6535 does not unblock this strand.",
+      "progressNote": "Still 15% — tip 40da6535. Secrets gate unchanged.",
       "blockers": [
         "Five Resend/Agentmail repository secrets missing for #1213"
       ],
@@ -468,13 +483,13 @@
     }
   ],
   "health": {
-    "overallLaunchPercent": 63,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 63% = round((52×12 + 48×10 + 86×10 + 56×15 + 93×9 + 73×10 + 66×6 + 62×8 + 91×10 + 15×10)/100) half-up.",
-    "readinessLabel": "Not ready to launch — tip af7e6009. Headline ~63%. Smoke gate still red (FAIL 1/6); staging has #1298 smoke selector + #1268 QR queued.",
-    "plainSummary": "As of 2026-09-14T05:14:43.373Z (Europe/Athens 14 Sep 2026 ~08:15), live tip still af7e6009. Four new staging merges not deployed yet (#1304/#1300/#1268/#1298). Headline ~63%.",
+    "overallLaunchPercent": 65,
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 65% = round((52×12 + 55×10 + 86×10 + 56×15 + 93×9 + 73×10 + 72×6 + 68×8 + 93×10 + 15×10)/100) half-up.",
+    "readinessLabel": "Not ready to launch — tip 40da6535. Headline estimate ~65%. Four fixes live (#1304/#1300/#1268/#1298) but Bluebird retests not run; smoke gate still last Measured FAIL 1/6.",
+    "plainSummary": "As of 2026-09-14T05:25:03.022Z (Europe/Athens 14 Sep 2026 ~08:25), live tip moved af7e6009 → 40da6535. Wake PR #1300; also #1304/#1268/#1298 on tip. Headline estimate ~65%.",
     "strengths": [
-      "Staging +4 vs tip: #1304 Cluster C North, #1300 CC send guidance, #1268 QR checkout, #1298 smoke selector",
-      "Tip af7e6009 live — #1279 in-shell admin loading, #1286 Overview Members count, #1274 agreeing numbers",
+      "Tip 40da6535 live — #1304 Cluster C North, #1300 CC send guidance, #1268 QR checkout, #1298 smoke selector",
+      "Prior tip pack still in ancestry — #1279 in-shell loading, #1286 Overview Members count, #1274 agreeing numbers",
       "Overnight Feel merged-fix PASS=14 on tip 3ad37824 (Website/CMS/Academy/Members/Finance/Intel)",
       "#1266 Pulse Explain PASS overnight (Owner)",
       "#1296 invitation replay smoke step1 PASS",
@@ -483,10 +498,10 @@
       "Rollback ban LIFTED (#1240 on tip) — do not use import.rollbackBatch"
     ],
     "risks": [
-      "Four merges on staging not on tip yet — DO deploy lag; do not claim Measured until tip moves",
-      "Smoke still FAIL 1/6 on tip — #1298 (membership product selector) merged to staging, not live; retest after tip move",
+      "#1304/#1300/#1268/#1298 on tip 40da6535 — Bluebird Measured retests NOT run yet (estimate bumps only)",
+      "Smoke still last Measured FAIL 1/6 — #1298 now on tip; retest six-step step2 before claiming PASS",
+      "#1286/#1274/#1279 Overview/Intel pack — Bluebird retest still needed",
       "#1290 FINDING — LMS/rota under admin dock; fix PR NEED_DECLAN",
-      "#1286/#1274/#1279 on tip af7e6009 — Bluebird retest not done yet",
       "ISO-18/20/27/29 still FAIL",
       "#1265 finding identity BLOCKED (agents Paused / Not opted in)",
       "#1270 privacy preview BLOCKED",
@@ -495,10 +510,10 @@
       "Cluster A ACS-F01/ACS-C01 still FAIL; B–F locked"
     ],
     "topPriorities": [
-      "Retest #1286/#1274/#1279 on tip af7e6009 (Overview Members count, agreeing numbers, in-shell loading)",
-      "Fix smoke step2 Playwright locator on Bluebird 8 checkout (six-step still red)",
-      "Approve #1290 dock fix Auto-review (NEED_DECLAN)",
-      "Add Resend/Agentmail secrets for automated comms (#1213)"
+      "Retest #1304/#1300/#1268/#1298 on tip 40da6535 (Cluster C North, CC send guidance, QR checkout, smoke selector)",
+      "Retest smoke six-step step2 — #1298 IS on tip now",
+      "Retest #1286/#1274/#1279 Overview/Intel Feel (still open from prior tip)",
+      "Approve #1290 dock fix Auto-review (NEED_DECLAN)"
     ],
     "visualBands": {
       "ready": [],
@@ -519,27 +534,122 @@
         "dataset"
       ]
     },
-    "refreshWarning": "Live tip unchanged since last strand rebuild — readiness may be stale relative to merged-but-undeployed PRs.",
-    "headlinePercent": 63,
+    "refreshWarning": null,
+    "headlinePercent": 65,
     "status": "not-ready",
-    "plain": "As of 2026-09-14T05:12:33.563Z (Europe/Athens 14 Sep 2026 ~08:10), live tip moved 3ad37824 → af7e6009. Overnight Measured Feel/Pulse/smoke folded; morning pack #1286/#1274/#1279 ON tip. Headline ~63%."
+    "plain": "As of 2026-09-14T05:25:03.022Z (Europe/Athens 14 Sep 2026 ~08:25), live tip moved af7e6009 → 40da6535. Wake PR #1300; also #1304/#1268/#1298 on tip. Headline estimate ~65%."
   },
   "actions": [
     {
       "id": "await-tip-staging-plus4",
-      "title": "Wait for tip to pick up staging +4 (#1304/#1300/#1268/#1298)",
+      "title": "Tip picked up staging +4 (#1304/#1300/#1268/#1298) — DONE",
       "owner": "bot",
       "priority": "P1",
-      "plainWhy": "Live tip still af7e6009 while staging is 4 merges ahead. Tip-change refresh will stamp when /api/version moves; then retest Cluster C North, CC send guidance, QR checkout, smoke selector.",
-      "status": "open"
+      "plainWhy": "Tip moved af7e6009 → 40da6535. All four merges are live. Closed — replaced by concrete retest moves.",
+      "status": "done",
+      "plain": "Staging +4 is now on tip 40da6535. Open the retest moves instead."
+    },
+    {
+      "id": "retest-tip-40da6535-plus4",
+      "title": "Retest tip 40da6535 +4 — #1304/#1300/#1268/#1298",
+      "owner": "bot",
+      "priority": "P0",
+      "plainWhy": "Tip moved to 40da6535 with four fixes live but no Bluebird Measured yet: #1304 Cluster C North timetable count, #1300 CC campaign send guidance, #1268 public QR checkout, #1298 smoke exact membership selector.",
+      "plain": "New tip pack — re-check Cluster C North timetable count, Command Centre campaign-send guidance, public QR checkout, and smoke membership product selector on Bluebird.",
+      "strandIds": [
+        "command-centre",
+        "smoke",
+        "payments",
+        "findings-fix"
+      ],
+      "status": "needed",
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1304 Cluster C North",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1304"
+        },
+        {
+          "label": "PR #1300 CC send guidance",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1300"
+        },
+        {
+          "label": "PR #1268 QR checkout",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1268"
+        },
+        {
+          "label": "PR #1298 smoke selector",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1298"
+        }
+      ]
+    },
+    {
+      "id": "retest-1304-cluster-c-north",
+      "title": "Retest #1304 Cluster C North timetable count on tip 40da6535",
+      "owner": "bot",
+      "priority": "P1",
+      "plainWhy": "#1304 Fix Cluster C North timetable count is ON tip 40da6535. Measured retest pending.",
+      "plain": "Check Cluster C North timetable count looks right on Bluebird after #1304.",
+      "strandIds": [
+        "command-centre",
+        "findings-fix"
+      ],
+      "status": "needed",
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1304",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1304"
+        }
+      ]
+    },
+    {
+      "id": "retest-1300-cc-campaign-send",
+      "title": "Retest #1300 Command Centre campaign send guidance on tip 40da6535",
+      "owner": "bot",
+      "priority": "P1",
+      "plainWhy": "#1300 fix(command-centre): route campaign send guidance is ON tip 40da6535 (wake PR). Measured retest pending.",
+      "plain": "In Command Centre, check campaign-send guidance routes to the right place on Bluebird.",
+      "strandIds": [
+        "command-centre",
+        "findings-fix"
+      ],
+      "status": "needed",
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1300",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1300"
+        }
+      ]
+    },
+    {
+      "id": "retest-1268-qr-checkout",
+      "title": "Retest #1268 public QR checkout on tip 40da6535",
+      "owner": "bot",
+      "priority": "P1",
+      "plainWhy": "#1268 fix(payments): unblock public QR checkout is ON tip 40da6535. Measured retest pending.",
+      "plain": "Try the public QR checkout path on Bluebird — it should no longer be blocked.",
+      "strandIds": [
+        "payments",
+        "findings-fix"
+      ],
+      "status": "needed",
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1268",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1268"
+        }
+      ]
     },
     {
       "id": "retest-tip-af7e6009-overview-intel",
       "title": "Retest Overview/Intel Feel on tip af7e6009 — #1286/#1274/#1279",
       "owner": "bot",
       "priority": "P1",
-      "plainWhy": "#1286 Overview Members count = directory, #1274 paired admin figures SoT, #1279 keep admin chrome while route chunks load — all ON tip af7e6009. Bluebird retest pending.",
-      "plain": "New morning tip pack — check Overview Members matches directory, agreeing Timetable/Finance figures, and no full-page splash when hopping admin routes.",
+      "plainWhy": "#1286 Overview Members count = directory, #1274 paired admin figures SoT, #1279 keep admin chrome while route chunks load — still in tip ancestry (af7e6009 pack). Tip now 40da6535. Bluebird retest still pending.",
+      "plain": "Prior morning pack still needs checking — Overview Members vs directory, agreeing Timetable/Finance figures, no full-page splash.",
       "strandIds": [
         "findings-fix",
         "m1"
@@ -563,11 +673,11 @@
     },
     {
       "id": "fix-smoke-step2-locator",
-      "title": "Retest smoke step2 after tip picks up #1298 selector",
+      "title": "Retest smoke step2 on tip 40da6535 — #1298 IS on tip",
       "owner": "engineering",
       "priority": "P0",
-      "plainWhy": "Overnight six-step FAIL 1/6: step2 discounted-checkout strict-mode locator FAIL (not paused-Stripe). Gate stays red. #1298 (exact membership product selector) merged to staging 14 Sep ~08:13 Athens — not on tip af7e6009 yet; retest smoke after tip move.",
-      "plain": "Smoke is red for a small checkout locator bug on Bluebird 8 — invite replay already PASS.",
+      "plainWhy": "Overnight six-step FAIL 1/6: step2 discounted-checkout strict-mode locator FAIL. #1298 (exact membership product selector) IS NOW on tip 40da6535. Re-run six-step / step2 on Bluebird before claiming Measured PASS.",
+      "plain": "Smoke was red for a checkout locator on Bluebird 8 — #1298 (exact membership selector) is live now; retest step2.",
       "strandIds": [
         "smoke"
       ],
@@ -613,13 +723,13 @@
     },
     {
       "id": "retest-smoke-invite-replay-1296",
-      "title": "Finish six-step smoke — step1 #1296 PASS; step2 locator FAIL",
+      "title": "Finish six-step smoke on tip 40da6535 — step1 PASS; retest step2 with #1298",
       "owner": "bot",
       "priority": "P0",
-      "plainWhy": "#1296 step1 PASS on tip 3ad37824; step2 discounted-checkout strict-mode locator FAIL. Tip now af7e6009. #1298 (exact membership product selector) merged to staging 14 Sep ~08:13 Athens — not on tip af7e6009 yet; retest smoke after tip move.",
-      "plain": "Invite-replay PASS overnight; six-step still FAIL 1/6 on Bluebird 8 checkout locator.",
+      "plainWhy": "#1296 step1 PASS on tip 3ad37824; step2 locator FAIL. Tip now 40da6535 with #1298 exact membership product selector live — retest six-step.",
+      "plain": "Invite-replay PASS overnight; six-step still FAIL 1/6 last Measured — #1298 now on tip, retest step2.",
       "strandId": "smoke",
-      "status": "partial"
+      "status": "needed"
     },
     {
       "id": "retest-pulse-1266-on-tip",
@@ -878,12 +988,11 @@
     }
   ],
   "notes": [
-    "Staging +4 vs live tip af7e6009: #1304 (Cluster C North timetable count), #1300 (CC campaign send guidance), #1268 (payments public QR checkout), #1298 (smoke exact membership product selector) — deploy pending; headline held ~63%.",
-    "Tip still af7e6009 (#1279/#1286/#1274). No tip move this cycle.",
-    "Tip refresh 3ad37824 → af7e6009 on routine launch-hub-tip-change-refresh (wake: staging CI success; tip SHA #1279; also #1286/#1274).",
-    "Folded overnight Measured: Feel PASS=14, #1266 Pulse PASS, smoke FAIL 1/6, Feel hub 42→46.",
+    "TIP MOVED af7e6009 → 40da6535 (wake #1300). On tip: #1304 Cluster C North, #1300 CC campaign send guidance, #1268 public QR checkout, #1298 smoke exact membership selector.",
+    "Headline estimate ~63→65% — modest bumps (CC 48→55, smoke 66→72, payments 62→68, findings-fix 91→93) pending Bluebird Measured retest. Do not invent Measured PASS rates.",
+    "Prior pack #1286/#1274/#1279 still needs Overview/Intel retest. Smoke six-step last Measured FAIL 1/6 — #1298 now on tip.",
     "HARD RULE: never instruct import.rollbackBatch (#1240 gate / prefer not to need rollback).",
-    "Headline ~63% (ambient 93, m1 73, smoke 66, findings-fix estimate 91)."
+    "Your Moves: closed await-tip-staging-plus4; added concrete +4 retests on tip 40da6535."
   ],
   "engineeringActions": [
     {
