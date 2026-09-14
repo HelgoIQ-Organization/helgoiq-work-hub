@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-14T04:04:04.803Z",
+  "updatedAt": "2026-09-14T05:12:44.370Z",
   "drops": [
+    {
+      "id": "2026-09-14-launch-hub-tip-af7e6009-overview-intel-morning-p",
+      "title": "Launch Hub tip af7e6009 — Overview/Intel morning pack",
+      "date": "2026-09-14",
+      "summary": "Tip 3ad37824→af7e6009 (#1279/#1286/#1274). Headline ~63%. Overnight Feel/Pulse folded; new pack pending retest.",
+      "plainEnglish": "Tip 3ad37824→af7e6009 (#1279/#1286/#1274). Headline ~63%. Overnight Feel/Pulse folded; new pack pending retest.",
+      "tags": [
+        "status",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-launch-hub",
+      "paths": [
+        "drops/2026-09-14-launch-hub-tip-af7e6009-overview-intel-morning-p/TIP-REFRESH.md"
+      ],
+      "tip": "af7e6009e076850b1e85daab312e40ce16199e44"
+    },
     {
       "id": "2026-09-14-overnight-close-out-pack-2026-09-14",
       "title": "Overnight close-out pack 2026-09-14",
