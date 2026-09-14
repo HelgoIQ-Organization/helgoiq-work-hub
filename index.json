@@ -1,6 +1,31 @@
 {
-  "updatedAt": "2026-09-13T21:40:12.455Z",
+  "updatedAt": "2026-09-14T04:04:04.803Z",
   "drops": [
+    {
+      "id": "2026-09-14-overnight-close-out-pack-2026-09-14",
+      "title": "Overnight close-out pack 2026-09-14",
+      "date": "2026-09-14",
+      "summary": "Morning ZIP: overnight tip 3ad37824 merged-fix retests PASS=14 FAIL=1(#1290) BLOCKED=1; smoke FAIL 1/6; ISO 18/20/27/29 FAIL; finance/dispatch1 continuity only. #1175 MERGED.",
+      "plainEnglish": "Big Feel fix batch is green on staging. Smoke still red on a small checkout locator bug. Four isolation holes still open. #1290 dock fix needs your Auto-review approve.",
+      "tags": [
+        "status",
+        "smoke",
+        "isolation",
+        "finance",
+        "findings",
+        "census"
+      ],
+      "type": "pack",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-14-overnight-close-out-pack-2026-09-14/SIGNAL.md",
+        "drops/2026-09-14-overnight-close-out-pack-2026-09-14/CLOSEOUT-README.md",
+        "drops/2026-09-14-overnight-close-out-pack-2026-09-14/ZIP-MANIFEST.md",
+        "drops/2026-09-14-overnight-close-out-pack-2026-09-14/ADDENDUM-overnight-closeout-2026-09-14.md",
+        "drops/2026-09-14-overnight-close-out-pack-2026-09-14/BREAKFAST.md"
+      ],
+      "tip": "3ad3782443d147934342e08a27d7151133369f74"
+    },
     {
       "id": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782",
       "title": "Overnight Teacher+Client Coverage L2 tip 3ad37824",
