@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-14T05:32:21.440Z",
+  "updatedAt": "2026-09-14T09:19:07.935Z",
   "drops": [
+    {
+      "id": "2026-09-14-occupancy-retention-scan-2-blocked",
+      "title": "Occupancy Retention scan 2 blocked",
+      "date": "2026-09-14",
+      "summary": "Scan1=scan2: Occupancy+Retention still Paused/Not opted in; Run review disabled; 0 finding IDs",
+      "plainEnglish": "Scan1=scan2: Occupancy+Retention still Paused/Not opted in; Run review disabled; 0 finding IDs",
+      "tags": [
+        "command-centre",
+        "findings",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-14-occupancy-retention-scan-2-blocked/REPORT.md"
+      ],
+      "tip": "40da6535c03b3f1bc8e1dd28b181143da0268f69"
+    },
     {
       "id": "2026-09-14-helgoiq-progress-for-claude-14-sep",
       "title": "HelgoIQ progress for Claude 14 Sep",
