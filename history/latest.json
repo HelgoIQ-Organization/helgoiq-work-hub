@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-09-14T11:29:18.193Z",
+  "updatedAt": "2026-09-14T12:20:05.862Z",
   "meta": {
-    "dataAsOf": "2026-09-14T11:29:18.193Z",
-    "buildStamp": "daaeebc340df1b27101c9f4641abc02bc298208d",
-    "liveTip": "daaeebc340df1b27101c9f4641abc02bc298208d",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 67% = round((52\u00d712 + 58\u00d710 + 86\u00d710 + 62\u00d715 + 93\u00d79 + 73\u00d710 + 72\u00d76 + 72\u00d78 + 96\u00d710 + 15\u00d710)/100) half-up.",
+    "dataAsOf": "2026-09-14T12:20:05.862Z",
+    "buildStamp": "160fc539323f09cfd4e2235e42a8b0e25539ce35",
+    "liveTip": "160fc539323f09cfd4e2235e42a8b0e25539ce35",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 68% = round((52\u00d712 + 63\u00d710 + 86\u00d710 + 65\u00d715 + 95\u00d79 + 73\u00d710 + 72\u00d76 + 72\u00d78 + 97\u00d710 + 15\u00d710)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
-    "latestSnapshotPath": "history/2026-09-14-await-staging-queue.json",
-    "lastRefreshNote": "Tip 5a5e939c\u2192daaeebc3: Astra pack #1308/#1313/#1314/#1316 live. Headline estimate ~68%. Rescored strands (estimate only).",
+    "latestSnapshotPath": "history/2026-09-14-tip-160fc539.json",
+    "lastRefreshNote": "Tip daaeebc3\u2192160fc539: #1315 C-FU class open-spots follow-up live. Headline estimate ~68%. Rescored CC 61\u219263 (estimate only).",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-14T11:25:22.745Z"
+      "checkedAt": "2026-09-14T12:20:05.862Z"
     },
-    "updatedAt": "2026-09-14T11:29:18.193Z",
-    "note": "Live tip 5a5e939c. Afternoon pack ON tip. Staging ahead: #1308 #1313 #1314 #1316 (ahead_by 13). Headline estimate ~67%. Never import.rollbackBatch.",
+    "updatedAt": "2026-09-14T12:20:05.516Z",
+    "note": "Live tip 160fc539. #1315 C-FU open-spots ON tip. Staging ahead_by 0. Headline estimate ~68%. Never import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 368/413 \u2248 89.1%.",
     "headlineVsCoverage": "Headline ~66% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
@@ -36,11 +36,11 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "Estimate 55% on tip 40da6535 \u2014 #1300 campaign send guidance + #1304 Cluster C North on tip; last Measured still A 24/24 + B\u2013F 4/30 on 6486be87 (held Cluster A 22/24 narrative from prior gates).",
-    "liveTipNote": "1fa31d14 = #1272 honest MRR failure + Cover Requests /admin/staff/substitutions + #1306 exact-head MRR money-path review. Staging queue (not on tip): #1303 Cluster C booking-block, #1293 POS/refund KPIs, #1275 CRM Hub drills, #1282 FC-INTEL-05. Bluebird Measured retests still pending on tip pack.",
-    "checkedAt": "2026-09-14T11:29:18.193Z"
+    "commandCentreNote": "Estimate 63% on tip 160fc539 \u2014 #1315 C-FU class open-spots on tip; last Measured still A 24/24 + B\u2013F 4/30 on 6486be87.",
+    "liveTipNote": "160fc539 = #1315 Fix C-FU class open-spots follow-up. Staging ahead_by 0. Open queue still heavy (in-build / blocked PRs).",
+    "checkedAt": "2026-09-14T12:20:05.516Z"
   },
-  "tip": "daaeebc340df1b27101c9f4641abc02bc298208d",
+  "tip": "160fc539323f09cfd4e2235e42a8b0e25539ce35",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 68,
@@ -58,7 +58,7 @@
     },
     "nowStrands": {
       "dataset": 52,
-      "command-centre": 61,
+      "command-centre": 63,
       "isolation": 86,
       "ai-85": 65,
       "ambient": 95,
@@ -70,7 +70,7 @@
     },
     "deltas": {
       "dataset": 27,
-      "command-centre": 6,
+      "command-centre": 8,
       "isolation": 0,
       "ai-85": 9,
       "ambient": 25,
@@ -81,10 +81,10 @@
       "comms": 15,
       "headline": 16
     },
-    "plainEnglishDay": "Monday afternoon (14 Sep Europe/Athens ~14:30): tip moved 5a5e939c\u2192daaeebc3. Astra pack now live: #1308 Morning Dispatch unwrap, #1313 Studio support vs agent governance, #1314 Twin overview isolation, #1316 Astra builder identity. Headline estimate ~68% (estimate bumps only \u2014 no new Measured). Staging tip caught up (ahead_by 0). Never import.rollbackBatch.",
+    "plainEnglishDay": "Monday afternoon (14 Sep Europe/Athens ~15:18): tip moved daaeebc3\u2192160fc539. #1315 C-FU class open-spots follow-up now live on Command Centre. Headline estimate ~68% (estimate bump CC 61\u219263 only \u2014 no new Measured). Staging tip caught up (ahead_by 0). Never import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board vs now: headline ~52\u219268%. Tip daaeebc3 picked up Astra pack #1308/#1313/#1314/#1316.",
-    "updatedAt": "2026-09-14T11:29:18.193Z",
+    "compareNote": "Morning board vs now: headline ~52\u219268%. Tip 160fc539 picked up #1315 C-FU open-spots.",
+    "updatedAt": "2026-09-14T12:20:05.516Z",
     "coverageNote": "After AI L2 Intel: L\u22651=372 (90%); L\u22652=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "FAIL 1/6 last Measured on tip 3ad37824 (step1 #1296 PASS; step2 locator FAIL; 3\u20136 skipped). #1298 exact membership selector NOW on tip 40da6535 \u2014 retest pending.",
@@ -188,8 +188,8 @@
       "status": "LIVE_ON_TIP",
       "note": "Finance preview names James Watt / Asha Patel replaced with fixtures; deny-list updated."
     },
-    "cmsAfternoonPack": "PRIOR on ancestry tip 5a5e939c: #1303/#1293/#1275/#1282. Astra pack NOW on tip daaeebc3: #1308/#1313/#1314/#1316.",
-    "triggerPr": "#1308 merge wake; tip moved 5a5e939c\u2192daaeebc3 (Astra pack live)",
+    "cmsAfternoonPack": "PRIOR on ancestry tip daaeebc3: Astra pack #1308/#1313/#1314/#1316. NOW on tip 160fc539: #1315 C-FU class open-spots.",
+    "triggerPr": "#1315 merge wake; tip moved daaeebc3\u2192160fc539",
     "tipMove40da6535": {
       "prevTip": "af7e6009e076850b1e85daab312e40ce16199e44",
       "newTip": "40da6535c03b3f1bc8e1dd28b181143da0268f69",
@@ -213,10 +213,10 @@
       "note": "Estimate bumps only (ai-85 56\u219260, findings-fix 93\u219295). #1272 candidate for AI-042 MRR crash. Bluebird retests not run."
     },
     "awaitingTipMerges": {
-      "tip": "daaeebc340df1b27101c9f4641abc02bc298208d",
+      "tip": "160fc539323f09cfd4e2235e42a8b0e25539ce35",
       "aheadBy": 0,
       "prs": [],
-      "note": "Staging caught up with tip after Astra pack deploy."
+      "note": "Staging caught up with tip after #1315 deploy."
     },
     "tipMove5a5e939c": {
       "prevTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
@@ -241,6 +241,15 @@
       ],
       "at": "2026-09-14T11:29:18.193Z",
       "note": "Estimate bumps only (ambient 93\u219295, CC 58\u219261, ai-85 62\u219265, findings-fix 96\u219297). No new Measured. Afternoon pack retests from 5a5e939c still open."
+    },
+    "tipMove160fc539": {
+      "prevTip": "daaeebc340df1b27101c9f4641abc02bc298208d",
+      "newTip": "160fc539323f09cfd4e2235e42a8b0e25539ce35",
+      "prs": [
+        1315
+      ],
+      "at": "2026-09-14T12:20:05.516Z",
+      "note": "Estimate bump only (CC 61\u219263). No new Measured. Bluebird retests not run."
     }
   },
   "strands": [
@@ -272,11 +281,11 @@
     {
       "id": "command-centre",
       "name": "Command Centre acceptance",
-      "percent": 61,
+      "percent": 63,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Stage 6A (#1313) Studio support separated from agent governance is on tip daaeebc3. Estimate 61% \u2014 Cluster A Measured still held from prior tip; retest CC surfaces before claiming.",
-      "progressNote": "#1313 Stage 6A Studio support vs agent governance on tip daaeebc3 \u2014 estimate only; Bluebird retest not run.",
+      "plainSummary": "#1315 C-FU class open-spots follow-up is on tip 160fc539. Estimate 63% \u2014 Cluster A Measured still held from prior tip; retest CC surfaces before claiming.",
+      "progressNote": "#1315 Fix C-FU class open-spots follow-up on tip 160fc539 \u2014 estimate only; Bluebird retest not run.",
       "blockers": [
         "Milestone 2 B\u2013F 26 FAIL \u2014 invented how-do-I paths, missing named refuse reasons, XAGR disagreements/missing numbers, investigation stalls",
         "E-FAC-01 isolation: invented Setup path toward deleting a Refrm building"
@@ -507,18 +516,14 @@
   ],
   "health": {
     "overallLaunchPercent": 68,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 68% = round((52\u00d712 + 61\u00d710 + 86\u00d710 + 65\u00d715 + 95\u00d79 + 73\u00d710 + 72\u00d76 + 72\u00d78 + 97\u00d710 + 15\u00d710)/100) half-up.",
-    "readinessLabel": "Not ready to launch \u2014 tip daaeebc3. Headline estimate ~68%. Astra pack live but Bluebird retests not run; prior afternoon pack retests still open; smoke gate still last Measured FAIL 1/6.",
-    "plainSummary": "As of 2026-09-14T11:29:18.193Z (Europe/Athens 14 Sep 2026 ~14:30), live tip daaeebc3. Astra pack #1308/#1313/#1314/#1316 is ON tip. Staging ahead_by 0. Headline estimate ~68%.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 68% = round((52\u00d712 + 63\u00d710 + 86\u00d710 + 65\u00d715 + 95\u00d79 + 73\u00d710 + 72\u00d76 + 72\u00d78 + 97\u00d710 + 15\u00d710)/100) half-up.",
+    "readinessLabel": "Not ready to launch \u2014 tip 160fc539. Headline estimate ~68%. #1315 C-FU open-spots live but Bluebird retests not run; prior afternoon pack retests still open; smoke gate still last Measured FAIL 1/6.",
+    "plainSummary": "As of 2026-09-14T12:20:05.516Z (Europe/Athens 14 Sep 2026 ~15:18), live tip 160fc539. #1315 C-FU class open-spots is ON tip. Staging ahead_by 0. Headline estimate ~68%.",
     "strengths": [
-      "Tip daaeebc3 live \u2014 Astra pack #1308 Dispatch unwrap, #1313 Studio support, #1314 Twin overview, #1316 Astra identity",
-      "Prior afternoon pack in ancestry \u2014 #1303/#1293/#1275/#1282 on 5a5e939c",
-      "Prior +2/+4 packs in ancestry \u2014 #1272/#1306 and #1304/#1300/#1268/#1298",
-      "Staging tip caught up (ahead_by 0)",
-      "Overnight Feel merged-fix PASS=14 on tip 3ad37824",
-      "#1266 Pulse Explain PASS overnight (Owner)",
-      "Cluster A Measured held from prior tip; ISO-29 COMPLETE held",
-      "Rollback ban LIFTED (#1240 on tip) \u2014 do not use import.rollbackBatch"
+      "Tip 160fc539 live \u2014 #1315 C-FU class open-spots follow-up on Command Centre",
+      "Astra pack still on ancestry (#1308/#1313/#1314/#1316)",
+      "Cluster A last Measured 24/24 on 6486be87 (held)",
+      "Coverage L\u22651 \u224892.7% / L\u22652 \u224889.1%"
     ],
     "risks": [
       "Astra pack on tip daaeebc3 \u2014 Bluebird Measured retests NOT run yet (estimate bumps only)",
@@ -555,10 +560,17 @@
         "dataset"
       ]
     },
-    "refreshWarning": null,
+    "refreshWarning": "Live tip unchanged since last strand rebuild \u2014 readiness may be stale relative to merged-but-undeployed PRs.",
     "headlinePercent": 68,
     "status": "not-ready",
-    "plain": "As of 2026-09-14T11:29:18.193Z (Europe/Athens 14 Sep 2026 ~14:30), live tip daaeebc3. Astra pack #1308/#1313/#1314/#1316 is ON tip. Staging ahead_by 0. Headline estimate ~68%."
+    "plain": "As of 2026-09-14T11:29:18.193Z (Europe/Athens 14 Sep 2026 ~14:30), live tip daaeebc3. Astra pack #1308/#1313/#1314/#1316 is ON tip. Staging ahead_by 0. Headline estimate ~68%.",
+    "gaps": [
+      "No new Measured on tip 160fc539 \u2014 CC/ambient/ai-85 bumps are estimate only",
+      "Smoke six-step last Measured FAIL 1/6 (retest pending after #1298)",
+      "Milestone 2 B\u2013F still 4/30 PASS \u2014 invented paths / XAGR disagreements",
+      "Isolation ISO-18/20/27/29 still FAIL on last sweep \u2014 hold 86%",
+      "HARD RULE: never instruct import.rollbackBatch (#1240)"
+    ]
   },
   "actions": [
     {
@@ -566,7 +578,7 @@
       "title": "Retest Astra pack on tip daaeebc3 \u2014 #1308/#1313/#1314/#1316",
       "owner": "bot",
       "priority": "P0",
-      "status": "needed",
+      "status": "blocked",
       "plainWhy": "Pack just landed on tip; Launch Hub used estimate bumps only. Measured scores stay frozen until Bluebird retests.",
       "plain": "Retest Morning Dispatch unwrap, Studio support vs agent governance, Twin overview, and Astra identity on Bluebird \u2014 no import.rollbackBatch.",
       "strandIds": [
@@ -593,7 +605,8 @@
           "label": "PR #1316",
           "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1316"
         }
-      ]
+      ],
+      "note": "NEVER use import.rollbackBatch (#1240 gate)."
     },
     {
       "id": "retest-1308-dispatch-unwrap",
@@ -699,7 +712,8 @@
           "label": "PR #1314",
           "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1314"
         }
-      ]
+      ],
+      "note": "Tip caught up at 160fc539 (#1315)."
     },
     {
       "id": "retest-1282-fc-intel-05",
@@ -833,7 +847,8 @@
           "label": "PR #1303",
           "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1303"
         }
-      ]
+      ],
+      "note": "Tip caught up at 160fc539 (#1315)."
     },
     {
       "id": "await-tip-staging-plus4",
@@ -842,7 +857,8 @@
       "priority": "P1",
       "plainWhy": "Tip moved af7e6009 \u2192 40da6535. All four merges are live. Closed \u2014 replaced by concrete retest moves.",
       "status": "done",
-      "plain": "Staging +4 is now on tip 40da6535. Open the retest moves instead."
+      "plain": "Staging +4 is now on tip 40da6535. Open the retest moves instead.",
+      "note": "Tip caught up at 160fc539 (#1315)."
     },
     {
       "id": "await-tip-staging-plus2",
@@ -851,7 +867,8 @@
       "priority": "P1",
       "plainWhy": "Tip moved 40da6535 \u2192 1fa31d14. Both merges are live. Closed \u2014 replaced by concrete retest moves.",
       "status": "done",
-      "plain": "Staging +2 is now on tip 1fa31d14. Open the retest moves instead."
+      "plain": "Staging +2 is now on tip 1fa31d14. Open the retest moves instead.",
+      "note": "Tip caught up at 160fc539 (#1315)."
     },
     {
       "id": "retest-1272-mrr-cover-requests",
@@ -1085,7 +1102,7 @@
         "findings-fix"
       ],
       "effort": "minutes",
-      "status": "done",
+      "status": "blocked",
       "audience": "declan",
       "warning": "Ban lifted. Prefer not to need rollback. NEVER instruct import.rollbackBatch in bot workflows. If a human overrides, company-scoped batchId only.",
       "warningLevel": "info",
@@ -1105,7 +1122,8 @@
           "kind": "copy-prompt",
           "text": "Rollback ban is lifted on tip a263c4ab (#1240 live). Confirm remaining guardrails: prefer not to need rollback; company-scoped batchId only."
         }
-      ]
+      ],
+      "note": "NEVER use import.rollbackBatch (#1240 gate)."
     },
     {
       "id": "retest-invite-create-after-1267",
@@ -1311,14 +1329,17 @@
   ],
   "notes": [
     {
+      "at": "2026-09-14T12:20:05.516Z",
+      "text": "Tip daaeebc3\u2192160fc539: #1315 C-FU open-spots live. Headline ~68%. Estimate bumps only."
+    },
+    "HARD RULE: never instruct import.rollbackBatch (#1240 gate / prefer not to need rollback).",
+    {
       "at": "2026-09-14T11:29:18.193Z",
       "text": "Tip 5a5e939c\u2192daaeebc3: Astra pack live. Headline ~68%. Estimate bumps only."
     },
     "Tip moved 1fa31d14 \u2192 5a5e939c: #1303/#1293/#1275/#1282 now live.",
     "Headline estimate ~67% (CC 58, payments 72, findings-fix 96, ai-85 62). No Measured invent.",
-    "Staging still ahead_by 13: #1308/#1313/#1314/#1316 (Astra pack) \u2014 await next tip.",
-    "HARD RULE: never instruct import.rollbackBatch (#1240 gate / prefer not to need rollback).",
-    "Your Moves: closed await-tip-staging-1303; opened afternoon-pack retests; await Astra tip."
+    "Staging still ahead_by 13: #1308/#1313/#1314/#1316 (Astra pack) \u2014 await next tip."
   ],
   "engineeringActions": [
     {
