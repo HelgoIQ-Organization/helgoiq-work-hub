@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-14T10:57:26.800Z",
+  "updatedAt": "2026-09-14T11:29:18.427Z",
   "drops": [
+    {
+      "id": "2026-09-14-launch-hub-tip-daaeebc3-astra-pack-live",
+      "title": "Launch Hub tip daaeebc3 Astra pack live",
+      "date": "2026-09-14",
+      "summary": "Tip 5a5e939c→daaeebc3; Astra pack #1308/#1313/#1314/#1316 live; headline ~68% estimate",
+      "plainEnglish": "Tip 5a5e939c→daaeebc3; Astra pack #1308/#1313/#1314/#1316 live; headline ~68% estimate",
+      "tags": [
+        "status",
+        "command-centre",
+        "ambient",
+        "ai-85",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-launch-hub",
+      "paths": [
+        "drops/2026-09-14-launch-hub-tip-daaeebc3-astra-pack-live/tip-daaeebc3-status.md"
+      ],
+      "tip": "daaeebc340df1b27101c9f4641abc02bc298208d"
+    },
     {
       "id": "2026-09-14-await-tip-1303-cluster-c-booking-block",
       "title": "Await tip — #1303 Cluster C booking-block",
