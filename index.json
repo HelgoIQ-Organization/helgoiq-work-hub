@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-14T05:26:34.995Z",
+  "updatedAt": "2026-09-14T05:32:21.440Z",
   "drops": [
+    {
+      "id": "2026-09-14-helgoiq-progress-for-claude-14-sep",
+      "title": "HelgoIQ progress for Claude 14 Sep",
+      "date": "2026-09-14",
+      "summary": "Platform testing handoff for Claude on tip 40da6535",
+      "plainEnglish": "Platform testing handoff for Claude on tip 40da6535",
+      "tags": [
+        "status",
+        "smoke",
+        "findings",
+        "ai-85"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-14-helgoiq-progress-for-claude-14-sep/HELGOIQ-PROGRESS-FOR-CLAUDE-2026-09-14.md"
+      ],
+      "tip": "40da6535c03b3f1bc8e1dd28b181143da0268f69"
+    },
     {
       "id": "2026-09-14-launch-hub-tip-40da6535-4-live",
       "title": "Launch Hub tip 40da6535 — +4 live",
