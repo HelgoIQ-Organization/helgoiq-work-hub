@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-09-14T11:03:40.275Z",
+  "updatedAt": "2026-09-14T11:23:17.349Z",
   "meta": {
-    "dataAsOf": "2026-09-14T11:03:40.275Z",
-    "buildStamp": "1fa31d1404b72d18c945143dc420bf49cca0a286",
-    "liveTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 66% = round((52\u00d712 + 55\u00d710 + 86\u00d710 + 60\u00d715 + 93\u00d79 + 73\u00d710 + 72\u00d76 + 68\u00d78 + 95\u00d710 + 15\u00d710)/100) half-up.",
+    "dataAsOf": "2026-09-14T11:23:17.349Z",
+    "buildStamp": "5a5e939cc549bb1e102306561faa2c5149079f3a",
+    "liveTip": "5a5e939cc549bb1e102306561faa2c5149079f3a",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 67% = round((52\u00d712 + 58\u00d710 + 86\u00d710 + 62\u00d715 + 93\u00d79 + 73\u00d710 + 72\u00d76 + 72\u00d78 + 96\u00d710 + 15\u00d710)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/2026-09-14-await-staging-queue.json",
-    "lastRefreshNote": "Tip unchanged (1fa31d14); material staging merges #1303/#1293/#1275/#1282 since prior stamp \u2014 await tip; scores held (no new Measured).",
+    "lastRefreshNote": "Tip changed 1fa31d14 \u2192 5a5e939c; afternoon pack #1303/#1293/#1275/#1282 live. Headline estimate ~67% (estimate bumps only). Astra pack still ahead of tip.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-14T11:03:40.275Z"
+      "checkedAt": "2026-09-14T11:23:17.349Z"
     },
-    "updatedAt": "2026-09-14T11:03:39.963296Z",
-    "note": "Live tip still 1fa31d14. Staging ahead: #1303 #1293 #1275 #1282 (ahead_by 17). Headline estimate ~66%. Never import.rollbackBatch.",
+    "updatedAt": "2026-09-14T11:23:17.349Z",
+    "note": "Live tip 5a5e939c. Afternoon pack ON tip. Staging ahead: #1308 #1313 #1314 #1316 (ahead_by 13). Headline estimate ~67%. Never import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 368/413 \u2248 89.1%.",
     "headlineVsCoverage": "Headline ~66% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
@@ -40,10 +40,10 @@
     "liveTipNote": "1fa31d14 = #1272 honest MRR failure + Cover Requests /admin/staff/substitutions + #1306 exact-head MRR money-path review. Staging queue (not on tip): #1303 Cluster C booking-block, #1293 POS/refund KPIs, #1275 CRM Hub drills, #1282 FC-INTEL-05. Bluebird Measured retests still pending on tip pack.",
     "checkedAt": "2026-09-14T11:03:39.963296Z"
   },
-  "tip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
+  "tip": "5a5e939cc549bb1e102306561faa2c5149079f3a",
   "progressToday": {
     "morningHeadlinePercent": 52,
-    "nowHeadlinePercent": 66,
+    "nowHeadlinePercent": 67,
     "morningStrands": {
       "dataset": 25,
       "command-centre": 55,
@@ -58,33 +58,33 @@
     },
     "nowStrands": {
       "dataset": 52,
-      "command-centre": 55,
+      "command-centre": 58,
       "isolation": 86,
-      "ai-85": 60,
+      "ai-85": 62,
       "ambient": 93,
       "m1": 73,
       "smoke": 72,
-      "payments": 68,
-      "findings-fix": 95,
+      "payments": 72,
+      "findings-fix": 96,
       "comms": 15
     },
     "deltas": {
       "dataset": 27,
-      "command-centre": 0,
+      "command-centre": 3,
       "isolation": 0,
-      "ai-85": 4,
+      "ai-85": 6,
       "ambient": 23,
       "m1": 13,
       "smoke": 52,
-      "payments": 23,
-      "findings-fix": 55,
+      "payments": 27,
+      "findings-fix": 56,
       "comms": 15,
-      "headline": 14
+      "headline": 15
     },
-    "plainEnglishDay": "Monday afternoon (14 Sep Europe/Athens ~14:02): staging is 17 commits ahead of LIVE tip 1fa31d14 (#1272/#1306). Awaiting DO tip deploy for merged #1303 (Cluster C booking-block), #1293 (POS/refund KPIs), #1275 (CRM Hub KPI lists), #1282 (FC-INTEL-05 warm empty / hide Seed Demo). Headline estimate holds ~66% \u2014 no new Measured on tip. Never import.rollbackBatch.",
+    "plainEnglishDay": "Monday afternoon (14 Sep Europe/Athens ~14:23): tip moved 1fa31d14\u21925a5e939c. Live now: #1303 Cluster C booking-block, #1293 POS/refund KPIs, #1275 CRM Hub KPI lists, #1282 FC-INTEL-05. Headline estimate ~67% (estimate bumps only \u2014 no new Measured). Staging still ahead: #1308/#1313/#1314/#1316 (Astra pack) \u2014 await next tip. Never import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board vs now: headline ~52\u219266%. Tip still 1fa31d14. New since last stamp: #1293/#1275/#1282 merged (+ #1303 still awaiting tip).",
-    "updatedAt": "2026-09-14T11:03:39.963296Z",
+    "compareNote": "Morning board vs now: headline ~52\u219267%. Tip 5a5e939c picked up afternoon pack #1303/#1293/#1275/#1282.",
+    "updatedAt": "2026-09-14T11:23:17.349Z",
     "coverageNote": "After AI L2 Intel: L\u22651=372 (90%); L\u22652=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "FAIL 1/6 last Measured on tip 3ad37824 (step1 #1296 PASS; step2 locator FAIL; 3\u20136 skipped). #1298 exact membership selector NOW on tip 40da6535 \u2014 retest pending.",
@@ -188,8 +188,8 @@
       "status": "LIVE_ON_TIP",
       "note": "Finance preview names James Watt / Asha Patel replaced with fixtures; deny-list updated."
     },
-    "cmsAfternoonPack": "Await DO tip: #1303 b8e5a06d, #1293 419e8271, #1275 6fd1d6e0, #1282 5a5e939c (staging ahead_by 17 vs 1fa31d14).",
-    "triggerPr": "#1303/#1293/#1275/#1282 merged to staging; tip unchanged 1fa31d14 \u2014 await deploy",
+    "cmsAfternoonPack": "LIVE on tip 5a5e939c: #1303/#1293/#1275/#1282. Staging still ahead_by 13 (#1308/#1313/#1314/#1316).",
+    "triggerPr": "#1316 merge wake; tip already at 5a5e939c (afternoon pack) \u2014 refreshed Launch Hub",
     "tipMove40da6535": {
       "prevTip": "af7e6009e076850b1e85daab312e40ce16199e44",
       "newTip": "40da6535c03b3f1bc8e1dd28b181143da0268f69",
@@ -213,32 +213,42 @@
       "note": "Estimate bumps only (ai-85 56\u219260, findings-fix 93\u219295). #1272 candidate for AI-042 MRR crash. Bluebird retests not run."
     },
     "awaitingTipMerges": {
-      "tip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
-      "aheadBy": 17,
+      "tip": "5a5e939cc549bb1e102306561faa2c5149079f3a",
+      "aheadBy": 13,
       "prs": [
         {
-          "pr": 1303,
-          "sha": "b8e5a06d",
-          "title": "Fix Cluster C named booking-block diagnosis"
+          "pr": 1308,
+          "sha": "0ffd6819",
+          "title": "Fix Morning Dispatch database result unwrapping"
         },
         {
-          "pr": 1293,
-          "sha": "419e8271",
-          "title": "POS paid-order server counts and refund KPI filters"
+          "pr": 1314,
+          "sha": "3472030b",
+          "title": "restore exact Twin overview and isolate member explanations"
         },
         {
-          "pr": 1275,
-          "sha": "6fd1d6e0",
-          "title": "Open the list behind every CRM Hub figure"
+          "pr": 1313,
+          "sha": "daaeebc3",
+          "title": "Stage 6A: separate Studio support from agent governance"
         },
         {
-          "pr": 1282,
-          "sha": "5a5e939c",
-          "title": "FC-INTEL-05 warm empty states; hide Seed Demo"
+          "pr": 1316,
+          "sha": "ac461aa8",
+          "title": "recognise Astra as an honest builder identity"
         }
+      ]
+    },
+    "tipMove5a5e939c": {
+      "prevTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
+      "newTip": "5a5e939cc549bb1e102306561faa2c5149079f3a",
+      "prs": [
+        1303,
+        1293,
+        1275,
+        1282
       ],
-      "at": "2026-09-14T11:03:39.963296Z",
-      "note": "Estimate holds; no Measured bump until tip moves."
+      "at": "2026-09-14T11:23:17.349Z",
+      "note": "Estimate bumps only (CC 55\u219258, payments 68\u219272, findings-fix 95\u219296, ai-85 60\u219262). No new Measured. Astra pack still ahead of tip."
     }
   },
   "strands": [
@@ -249,7 +259,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "Dataset canary FAIL again on tip 6486be87: batchImport.upload Missing companyId HTTP 403; Import Batches empty; 0 members. Same as 232659cf. Engineering fix required. No rollback used.",
-      "progressNote": "Held 52% \u2014 tip 1fa31d14. Dataset canary still last FAIL (Missing companyId 403).",
+      "progressNote": "Held 52% \u2014 tip 5a5e939c. Dataset canary still last FAIL (Missing companyId 403).",
       "blockers": [
         "Canary upload FAIL: Missing companyId on batchImport.upload (403) \u2014 engineering",
         "12-month dataset not imported (0 members from canary)"
@@ -270,11 +280,11 @@
     {
       "id": "command-centre",
       "name": "Command Centre acceptance",
-      "percent": 55,
+      "percent": 58,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Tip 40da6535 now includes #1300 (campaign send guidance) and #1304 (Cluster C North timetable count). Estimate 48\u219255 pending Bluebird retest. Last Measured still Cluster A 24/24 + B\u2013F 4/30 on 6486be87 (Cluster A 22/24 narrative held from prior gates).",
-      "progressNote": "Estimate 55% on tip 1fa31d14. #1303 Cluster C booking-block diagnosis MERGED to staging \u2014 await tip before Measured.",
+      "plainSummary": "Tip 5a5e939c now includes #1303 (Cluster C named booking-block / C-BOOK-01) plus prior #1300/#1304. Estimate 55\u219258 pending Bluebird retest. Last Measured still Cluster A 24/24 + B\u2013F 4/30 on 6486be87.",
+      "progressNote": "Estimate 58% on tip 5a5e939c (#1303 booking-block now live). Bluebird Measured retest not run.",
       "blockers": [
         "Milestone 2 B\u2013F 26 FAIL \u2014 invented how-do-I paths, missing named refuse reasons, XAGR disagreements/missing numbers, investigation stalls",
         "E-FAC-01 isolation: invented Setup path toward deleting a Refrm building"
@@ -303,7 +313,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "ISO-29 re-sweep on tip 6486be87: same 26 PASS / 4 FAIL / 2 NOT_RUN as 232659cf. ISO-18/20/27/29 still FAIL (Refrm Helgo chooser Bluebird leak; cohorts identical; Staff Availability lists Bluebird teachers; CC ?c=150001 only offers Bluebird). Hold 86%.",
-      "progressNote": "Held 86% \u2014 tip 1fa31d14; ISO-18/20/27/29 last Measured FAILs not re-swept.",
+      "progressNote": "Held 86% \u2014 tip 5a5e939c; ISO-18/20/27/29 last Measured FAILs not re-swept.",
       "blockers": [
         "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (Measured on 6486be87)",
         "Weymouth #1245 and Luton #1242 extras NOT_RUN \u2014 no dedicated fixture/route"
@@ -324,11 +334,11 @@
     {
       "id": "ai-85",
       "name": "AI features check",
-      "percent": 60,
+      "percent": 62,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Tip 1fa31d14 lands #1272 (MRR crash\u2192honest unavailable + Cover Requests route). Estimate 56\u219260 pending Bluebird AI-042 / Admin2 re-score. Last Measured still 48/85 PASS on 6486be87 (AI-042 MRR crash, AI-025 Ask HelgoIQ, AI-037 Predictive Cash Flow, AI-021 What We\u2019ve Learned open).",
-      "progressNote": "Estimate 60% on tip 1fa31d14 (#1272 MRR candidate). #1282 FC-INTEL-05 on staging not tip yet.",
+      "plainSummary": "Tip 5a5e939c lands #1282 (FC-INTEL-05 warm empty + hide Seed Demo) plus prior #1272 MRR crash\u2192honest unavailable. Estimate 60\u219262 pending Bluebird AI-042 / Admin2 re-score. Last Measured still 48/85 PASS on 6486be87.",
+      "progressNote": "Estimate 62% on tip 5a5e939c (#1282 FC-INTEL-05 + #1272). Retests pending.",
       "blockers": [
         "23 UNCERTAIN remain (many empty AI / NEED_DECLAN)",
         "#1272 on tip \u2014 Bluebird retest pending for AI-042 MRR crash (was FAIL)",
@@ -353,7 +363,7 @@
       "basis": "measured",
       "status": "on-track",
       "plainSummary": "Stage 1B #1266 Pulse Explain PASS overnight on tip 3ad37824 (Owner seat). Morning Dispatch viewer PASS held from tip 6486be87. Tip now 40da6535 \u2014 no ambient-specific new PRs; held Measured.",
-      "progressNote": "Held 93% \u2014 tip 1fa31d14.",
+      "progressNote": "Held 93% \u2014 tip 5a5e939c. #1282 intel empty-state is findings/AI; ambient Measured unchanged.",
       "blockers": [
         "Event Bus Platform-Admin gated \u2014 Declan escalation not attempted",
         "Learning Engine still 0 active lessons (one-tap action works)"
@@ -376,7 +386,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "Members Directory/invitations/Inbox Feel (#1284/#1287/#1285) PASS overnight on tip 3ad37824. #1286 Overview Members count = directory still ON tip (ancestry) \u2014 retest pending. Tip now 40da6535 with payments/smoke/CC packs; Wave1 full re-run still open.",
-      "progressNote": "Held 73% \u2014 tip 1fa31d14; #1286 Overview retest still pending.",
+      "progressNote": "Held 73% \u2014 tip 5a5e939c; #1286 Overview retest still pending. CRM Hub #1275 is findings-side.",
       "blockers": [
         "#1286 Overview Members count \u2014 Bluebird retest still pending (tip ancestry)",
         "Fresh member invite create FAIL on a263c4ab (form closed; pending list unchanged)",
@@ -407,7 +417,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Overnight on tip 3ad37824: six-step FAIL 1/6 \u2014 step2 discounted-checkout locator FAIL; #1296 step1 PASS. #1298 (exact membership product selector) is NOW on tip 40da6535 \u2014 candidate fix for that locator FAIL. Estimate 66\u219272 pending retest; status stays at-risk until Measured.",
-      "progressNote": "Estimate 72 held \u2014 tip 1fa31d14; #1298 still awaiting six-step step2 retest.",
+      "progressNote": "Estimate 72 held \u2014 tip 5a5e939c; #1298 still awaiting six-step step2 retest.",
       "blockers": [
         "Six-step smoke last Measured FAIL 1/6 \u2014 step2 Playwright locator; #1298 now on tip \u2014 retest pending",
         "Join-and-pay job missing JOIN_PAY_PROOF_FIXTURES",
@@ -429,11 +439,11 @@
     {
       "id": "payments",
       "name": "Payments & Stripe",
-      "percent": 68,
+      "percent": 72,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "#1268 public QR checkout is NOW on tip 40da6535. Estimate 62\u219268 pending Bluebird retest. Admin2 Resume/unfreeze still FAIL; overnight smoke Stripe TEST path still last Measured payments proof.",
-      "progressNote": "Estimate 68% on tip 1fa31d14. #1293 POS paid-order / refund KPI filters MERGED to staging \u2014 await tip.",
+      "plainSummary": "Tip 5a5e939c lands #1293 (POS paid-order server counts + refund KPI filters) plus prior #1268 QR checkout. Estimate 68\u219272 pending Bluebird retest. Admin2 Resume/unfreeze still FAIL; overnight smoke Stripe TEST path still last Measured payments proof.",
+      "progressNote": "Estimate 72% on tip 5a5e939c (#1293 POS/refund KPIs live). Retest pending.",
       "blockers": [
         "#1268 public QR checkout on tip 40da6535 \u2014 Bluebird retest pending",
         "Admin2 Resume/unfreeze FAIL \u2014 payment provider; Smoke membership still paused",
@@ -453,21 +463,18 @@
     {
       "id": "findings-fix",
       "name": "Fixing known launch bugs",
-      "percent": 95,
+      "percent": 96,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Tip moved to 1fa31d14 with #1272 honest MRR + Cover Requests and #1306 MRR exact-head review. Estimate 93\u219295 pending Bluebird retest. Earlier +4 (#1304/#1300/#1268/#1298) still awaiting retest; #1286/#1274/#1279 Overview/Intel pack still open.",
-      "progressNote": "Estimate 95% on tip 1fa31d14. #1275 CRM Hub KPI lists + #1282 FC-INTEL-05 MERGED to staging \u2014 await tip.",
+      "plainSummary": "Tip moved to 5a5e939c with #1303/#1293/#1275/#1282 (CRM Hub KPI lists + FC-INTEL-05 warm empty / hide Seed Demo). Estimate 95\u219296 pending Bluebird retest. Earlier packs (#1272/#1306, +4, Overview/Intel) still awaiting retest.",
+      "progressNote": "Estimate 96% on tip 5a5e939c. Afternoon pack live \u2014 no new Measured yet.",
       "blockers": [
-        "#1272/#1306 on tip 1fa31d14 \u2014 Bluebird retest pending",
+        "#1303/#1293/#1275/#1282 on tip 5a5e939c \u2014 Bluebird retest pending",
+        "#1272/#1306 on tip ancestry \u2014 Bluebird retest pending",
         "#1304/#1300/#1268/#1298 on tip ancestry \u2014 Bluebird retest pending",
         "#1286/#1274/#1279 (prior tip pack) \u2014 Bluebird Overview/Intel retest still pending",
         "#1290 FINDING \u2014 LMS/rota still under admin dock (merged but broken); fix PR NEED_DECLAN Auto-review",
-        "#1270 privacy-name preview BLOCKED (not findable in Admin nav)",
-        "ISO-18/20/27/29 still FAIL",
-        "Dataset canary FAIL \u2014 Missing companyId on batchImport.upload (403); 0 members (engineering)",
-        "Admin2 unfreeze FAIL \u2014 payment provider; Smoke still paused",
-        "Fresh member invite create FAIL on a263c4ab"
+        "#1270 privacy-name preview BLOCKED (not findable in Admin nav)"
       ],
       "detailDropIds": [
         "2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr",
@@ -494,8 +501,8 @@
       "percent": 15,
       "basis": "estimate",
       "status": "blocked",
-      "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. Tip 40da6535 does not unblock this strand.",
-      "progressNote": "Held 15% blocked \u2014 tip 1fa31d14; five Resend/Agentmail secrets still missing for #1213.",
+      "plainSummary": "Automated communications (#1213) still blocked on five Resend/Agentmail repository secrets. Tip 5a5e939c does not unblock this strand.",
+      "progressNote": "Held 15% blocked \u2014 tip 5a5e939c; five Resend/Agentmail secrets still missing for #1213.",
       "blockers": [
         "Five Resend/Agentmail repository secrets missing for #1213"
       ],
@@ -507,14 +514,14 @@
     }
   ],
   "health": {
-    "overallLaunchPercent": 66,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 66% = round((52\u00d712 + 55\u00d710 + 86\u00d710 + 60\u00d715 + 93\u00d79 + 73\u00d710 + 72\u00d76 + 68\u00d78 + 95\u00d710 + 15\u00d710)/100) half-up.",
-    "readinessLabel": "Not ready to launch \u2014 tip 1fa31d14. Headline estimate ~66%. #1272/#1306 live but Bluebird retests not run; prior +4 still pending; smoke gate still last Measured FAIL 1/6.",
-    "plainSummary": "As of 2026-09-14T10:57:26.132Z (Europe/Athens 14 Sep 2026 ~13:55), live tip still 1fa31d14. #1303 Cluster C booking-block diagnosis merged to staging \u2014 awaiting tip. Headline estimate ~66%.",
+    "overallLaunchPercent": 67,
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 67% = round((52\u00d712 + 58\u00d710 + 86\u00d710 + 62\u00d715 + 93\u00d79 + 73\u00d710 + 72\u00d76 + 72\u00d78 + 96\u00d710 + 15\u00d710)/100) half-up.",
+    "readinessLabel": "Not ready to launch \u2014 tip 5a5e939c. Headline estimate ~67%. Afternoon pack live but Bluebird retests not run; prior tip packs still pending; smoke gate still last Measured FAIL 1/6.",
+    "plainSummary": "As of 2026-09-14T11:23:17.349Z (Europe/Athens 14 Sep 2026 ~14:23), live tip 5a5e939c. Afternoon pack #1303/#1293/#1275/#1282 is ON tip. Headline estimate ~67%. Astra-related merges #1308/#1313/#1314/#1316 still ahead of tip.",
     "strengths": [
-      "#1303 merged to staging (Cluster C named booking-block / C-BOOK-01) \u2014 not on tip yet",
-      "Tip 1fa31d14 live \u2014 #1272 honest MRR failure + Cover Requests, #1306 MRR exact-head review",
-      "Prior +4 still in ancestry \u2014 #1304 Cluster C North, #1300 CC send guidance, #1268 QR checkout, #1298 smoke selector",
+      "Tip 5a5e939c live \u2014 #1303 Cluster C booking-block, #1293 POS/refund KPIs, #1275 CRM Hub lists, #1282 FC-INTEL-05",
+      "Prior +2 in ancestry \u2014 #1272 honest MRR + Cover Requests, #1306 MRR exact-head review",
+      "Prior +4 in ancestry \u2014 #1304 Cluster C North, #1300 CC send guidance, #1268 QR checkout, #1298 smoke selector",
       "Prior Overview/Intel pack in ancestry \u2014 #1279/#1286/#1274",
       "Overnight Feel merged-fix PASS=14 on tip 3ad37824",
       "#1266 Pulse Explain PASS overnight (Owner)",
@@ -523,19 +530,19 @@
       "Rollback ban LIFTED (#1240 on tip) \u2014 do not use import.rollbackBatch"
     ],
     "risks": [
-      "#1303 on staging but tip still 1fa31d14 \u2014 DO deploy lag; no Measured yet",
-      "#1272/#1306 on tip 1fa31d14 \u2014 Bluebird Measured retests NOT run yet (estimate bumps only)",
-      "#1304/#1300/#1268/#1298 still pending Bluebird retest from earlier tip move",
+      "Afternoon pack on tip 5a5e939c \u2014 Bluebird Measured retests NOT run yet (estimate bumps only)",
+      "#1272/#1306 and +4 packs still pending Bluebird retest from earlier tip moves",
+      "Staging ahead_by 13 \u2014 #1308/#1313/#1314/#1316 (Astra) not on tip yet",
       "Smoke six-step last Measured FAIL 1/6 \u2014 step2 locator; #1298 on tip awaiting retest",
       "Comms strand blocked \u2014 five Resend/Agentmail repository secrets missing for #1213",
-      "AI-85 estimate 60 \u2014 last Measured still 56% with AI-042 open until retest confirms #1272"
+      "AI-85 estimate 62 \u2014 last Measured still 56% with AI-042 open until retest confirms #1272"
     ],
     "topPriorities": [
-      "Await tip deploy for #1303 Cluster C booking-block, then Bluebird retest",
-      "Retest #1272 honest MRR / Cover Requests on tip 1fa31d14 (AI-042 candidate)",
+      "Retest afternoon pack on tip 5a5e939c: #1303 booking-block, #1293 POS/refund, #1275 CRM Hub, #1282 FC-INTEL-05",
+      "Retest #1272 honest MRR / Cover Requests (AI-042 candidate)",
       "Retest #1304/#1300/#1268/#1298 (still open from prior tip)",
       "Retest smoke six-step step2 \u2014 #1298 IS on tip",
-      "Retest #1286/#1274/#1279 Overview/Intel Feel",
+      "Await tip for Astra pack #1308/#1313/#1314/#1316",
       "Approve #1290 dock fix Auto-review (NEED_DECLAN)"
     ],
     "visualBands": {
@@ -557,20 +564,166 @@
         "dataset"
       ]
     },
-    "refreshWarning": "Live tip unchanged since last strand rebuild \u2014 readiness may be stale relative to merged-but-undeployed PRs.",
+    "refreshWarning": null,
     "headlinePercent": 66,
     "status": "not-ready",
     "plain": "As of 2026-09-14T10:57:26.132Z (Europe/Athens 14 Sep 2026 ~13:55), live tip still 1fa31d14. #1303 Cluster C booking-block diagnosis merged to staging \u2014 awaiting tip. Headline estimate ~66%."
   },
   "actions": [
     {
-      "id": "await-tip-staging-1303",
-      "title": "Await tip deploy for staging #1303 Cluster C booking-block",
+      "id": "await-tip-astra-pack",
+      "title": "Await tip deploy for Astra pack #1308/#1313/#1314/#1316",
+      "owner": "bot",
+      "priority": "P1",
+      "status": "needed",
+      "plainWhy": "Staging ahead_by 13 vs tip 5a5e939c: #1308 Morning Dispatch unwrap, #1313 Studio support vs agent governance, #1314 Twin overview isolation, #1316 Astra builder identity. Trigger wake was #1316 merge \u2014 not on tip yet.",
+      "plain": "Wait for DigitalOcean to pick up tip past 5a5e939c for the Astra-related merges. Do not claim them live until tip moves.",
+      "strandIds": [
+        "ambient",
+        "findings-fix"
+      ],
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1316",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1316"
+        },
+        {
+          "label": "PR #1308",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1308"
+        },
+        {
+          "label": "PR #1313",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1313"
+        },
+        {
+          "label": "PR #1314",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1314"
+        }
+      ]
+    },
+    {
+      "id": "retest-1282-fc-intel-05",
+      "title": "Retest #1282 FC-INTEL-05 warm empty / hide Seed Demo on tip 5a5e939c",
+      "owner": "bot",
+      "priority": "P1",
+      "status": "needed",
+      "plainWhy": "#1282 FC-INTEL-05 warm empty states + hide Seed Demo is ON tip 5a5e939c. Measured retest pending.",
+      "plain": "On Intel pages, check warm empty states and that Seed Demo is hidden for normal seats.",
+      "strandIds": [
+        "ai-85",
+        "findings-fix"
+      ],
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1282",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1282"
+        }
+      ]
+    },
+    {
+      "id": "retest-1275-crm-hub-lists",
+      "title": "Retest #1275 CRM Hub KPI lists on tip 5a5e939c",
+      "owner": "bot",
+      "priority": "P1",
+      "status": "needed",
+      "plainWhy": "#1275 Open the list behind every CRM Hub figure is ON tip 5a5e939c. Measured retest pending.",
+      "plain": "On CRM Hub, tap each figure and confirm the list behind it opens with the right rows.",
+      "strandIds": [
+        "findings-fix",
+        "m1"
+      ],
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1275",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1275"
+        }
+      ]
+    },
+    {
+      "id": "retest-1293-pos-refunds",
+      "title": "Retest #1293 POS paid-order / refund KPIs on tip 5a5e939c",
+      "owner": "bot",
+      "priority": "P1",
+      "status": "needed",
+      "plainWhy": "#1293 POS paid-order server counts and refund KPI filters is ON tip 5a5e939c. Measured retest pending.",
+      "plain": "On Finance, check POS paid-order counts and refund KPI filters match the lists on Bluebird.",
+      "strandIds": [
+        "payments",
+        "findings-fix"
+      ],
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1293",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1293"
+        }
+      ]
+    },
+    {
+      "id": "retest-1303-booking-block",
+      "title": "Retest #1303 Cluster C booking-block on tip 5a5e939c",
       "owner": "bot",
       "priority": "P0",
       "status": "needed",
-      "plainWhy": "#1303 Fix Cluster C named booking-block diagnosis merged to staging (b8e5a06d) with sibling commit d256fd02 (name member booking blocks). Live /api/version tip still 1fa31d14 (#1272/#1306). Staging ahead_by 2.",
-      "plain": "Wait for DigitalOcean to pick up tip past 1fa31d14. Then open a Bluebird retest for named booking-block diagnosis (C-BOOK-01) \u2014 do not claim Measured until tip moves.",
+      "plainWhy": "#1303 Fix Cluster C named booking-block diagnosis is ON tip 5a5e939c. Measured retest pending.",
+      "plain": "Check named booking-block diagnosis (C-BOOK-01) looks right on Bluebird after #1303.",
+      "strandIds": [
+        "command-centre",
+        "findings-fix"
+      ],
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1303",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1303"
+        }
+      ]
+    },
+    {
+      "id": "retest-tip-5a5e939c-afternoon",
+      "title": "Retest tip 5a5e939c afternoon pack \u2014 #1303/#1293/#1275/#1282",
+      "owner": "bot",
+      "priority": "P0",
+      "status": "needed",
+      "plainWhy": "Tip moved to 5a5e939c with four fixes live but no Bluebird Measured yet: #1303 Cluster C booking-block, #1293 POS/refund KPIs, #1275 CRM Hub KPI lists, #1282 FC-INTEL-05.",
+      "plain": "New tip pack \u2014 re-check named booking-block diagnosis, Finance POS/refund KPIs, CRM Hub figure lists, and Intel warm empty / Seed Demo hide on Bluebird.",
+      "strandIds": [
+        "command-centre",
+        "payments",
+        "findings-fix",
+        "ai-85"
+      ],
+      "audience": "declan+bot",
+      "links": [
+        {
+          "label": "PR #1303",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1303"
+        },
+        {
+          "label": "PR #1293",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1293"
+        },
+        {
+          "label": "PR #1275",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1275"
+        },
+        {
+          "label": "PR #1282",
+          "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1282"
+        }
+      ]
+    },
+    {
+      "id": "await-tip-staging-1303",
+      "title": "Tip picked up staging afternoon pack (#1303/#1293/#1275/#1282) \u2014 DONE",
+      "owner": "bot",
+      "priority": "P0",
+      "status": "done",
+      "plainWhy": "Tip moved 1fa31d14 \u2192 5a5e939c. #1303 is live with #1293/#1275/#1282. Closed \u2014 replaced by concrete retest moves.",
+      "plain": "Afternoon pack is now on tip 5a5e939c. Open the retest moves instead.",
       "strandIds": [
         "command-centre",
         "findings-fix"
@@ -1058,10 +1211,11 @@
     }
   ],
   "notes": [
-    "#1303 merged to staging (b8e5a06d); LIVE tip still 1fa31d14 \u2014 await DO deploy (staging ahead_by 2).",
-    "Headline estimate holds ~66%. No tip move, no Measured invent. Prior +2 retests on tip still open (#1272/#1306).",
+    "Tip moved 1fa31d14 \u2192 5a5e939c: #1303/#1293/#1275/#1282 now live.",
+    "Headline estimate ~67% (CC 58, payments 72, findings-fix 96, ai-85 62). No Measured invent.",
+    "Staging still ahead_by 13: #1308/#1313/#1314/#1316 (Astra pack) \u2014 await next tip.",
     "HARD RULE: never instruct import.rollbackBatch (#1240 gate / prefer not to need rollback).",
-    "Your Moves: added await-tip-staging-1303; keep existing tip 1fa31d14 retests."
+    "Your Moves: closed await-tip-staging-1303; opened afternoon-pack retests; await Astra tip."
   ],
   "engineeringActions": [
     {
