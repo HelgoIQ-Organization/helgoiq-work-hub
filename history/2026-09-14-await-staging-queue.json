@@ -1,0 +1,43 @@
+{
+  "capturedAt": "2026-09-14T11:03:39.963296Z",
+  "kind": "await-tip",
+  "liveTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
+  "stagingAheadBy": 17,
+  "stagingMerges": [
+    {
+      "pr": 1303,
+      "sha": "b8e5a06d",
+      "title": "Fix Cluster C named booking-block diagnosis"
+    },
+    {
+      "pr": 1293,
+      "sha": "419e8271",
+      "title": "POS paid-order server counts and refund KPI filters"
+    },
+    {
+      "pr": 1275,
+      "sha": "6fd1d6e0",
+      "title": "Open the list behind every CRM Hub figure"
+    },
+    {
+      "pr": 1282,
+      "sha": "5a5e939c",
+      "title": "FC-INTEL-05 warm empty states; hide Seed Demo"
+    }
+  ],
+  "headlinePercent": 66,
+  "nowStrands": {
+    "dataset": 52,
+    "command-centre": 55,
+    "isolation": 86,
+    "ai-85": 60,
+    "ambient": 93,
+    "m1": 73,
+    "smoke": 72,
+    "payments": 68,
+    "findings-fix": 95,
+    "comms": 15
+  },
+  "plainEnglishDay": "Monday afternoon (14 Sep Europe/Athens ~14:02): staging is 17 commits ahead of LIVE tip 1fa31d14 (#1272/#1306). Awaiting DO tip deploy for merged #1303 (Cluster C booking-block), #1293 (POS/refund KPIs), #1275 (CRM Hub KPI lists), #1282 (FC-INTEL-05 warm empty / hide Seed Demo). Headline estimate holds ~66% \u2014 no new Measured on tip. Never import.rollbackBatch.",
+  "note": "Tip unchanged (1fa31d14); material staging merges #1303/#1293/#1275/#1282 since prior stamp \u2014 await tip; scores held (no new Measured)."
+}
