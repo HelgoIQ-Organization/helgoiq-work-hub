@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-15T10:34:42.065Z",
+  "updatedAt": "2026-09-15T11:13:55.674Z",
   "drops": [
+    {
+      "id": "2026-09-15-comms-score-ac845589",
+      "title": "Comms score ac845589",
+      "date": "2026-09-15",
+      "summary": "PARTIAL: PASS=2 PARTIAL=4 BLOCKED=4 N/A=1. Booking confirm + campaign Send Test Agentmail proofs.",
+      "plainEnglish": "PARTIAL: PASS=2 PARTIAL=4 BLOCKED=4 N/A=1. Booking confirm + campaign Send Test Agentmail proofs.",
+      "tags": [
+        "census",
+        "booking",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-15-comms-score-ac845589/RESULTS.md",
+        "drops/2026-09-15-comms-score-ac845589/CENSUS-3-7.md"
+      ],
+      "tip": "ac845589404b78c308cc30e5aee81eb9e648a220"
+    },
     {
       "id": "2026-09-15-astra-pass-a-pa-scan-2-occupancy-retention",
       "title": "Astra Pass A PA-SCAN-2 Occupancy/Retention",

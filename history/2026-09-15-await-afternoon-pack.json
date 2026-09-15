@@ -1,0 +1,29 @@
+{
+  "capturedAt": "2026-09-15T14:16:48.416185Z",
+  "kind": "await-afternoon-pack",
+  "liveTip": "51015ca21e960a2b79faa20647ec284c03588a7c",
+  "stagingHead": "aee3b690b2f895393adf2b636dfc0c202d5d43fc",
+  "aheadBy": 27,
+  "prs": [
+    1299,
+    1327,
+    1339,
+    1344,
+    1343
+  ],
+  "headlinePercent": 68,
+  "nowStrands": {
+    "dataset": 52,
+    "command-centre": 65,
+    "isolation": 86,
+    "ai-85": 65,
+    "ambient": 95,
+    "m1": 73,
+    "smoke": 72,
+    "payments": 72,
+    "findings-fix": 98,
+    "comms": 15
+  },
+  "plainEnglishDay": "Tuesday (15 Sep 2026 ~17:15 Europe/Athens): live tip STILL 51015ca2 (#1318). Afternoon merge pack landed on staging: #1299 Meta create refusals, #1327 forms-assign-before-booking, #1339 Pulse reader scope, #1344 journey proof inbox, #1343 cover-swap notifications. Staging ahead_by 27 (HEAD aee3b690). Headline estimate held ~68% \u2014 no Measured invent. Never import.rollbackBatch.",
+  "note": "Staging HEAD aee3b690 is ahead of live /api/version 51015ca2 by 27. Afternoon pack #1299/#1327/#1339/#1344/#1343 CI-green on staging \u2014 waiting for tip move. Measured retests still open on live tip (smoke 6-step, dataset canary #1310, comms secrets/E2E). Never import.rollbackBatch."
+}
