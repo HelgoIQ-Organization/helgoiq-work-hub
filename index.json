@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-15T06:52:50.597Z",
+  "updatedAt": "2026-09-15T08:16:24.294Z",
   "drops": [
+    {
+      "id": "2026-09-15-launch-hub-tip-e3ba86e8-1331-smoke-diagnostic-he",
+      "title": "Launch Hub tip e3ba86e8 — #1331 smoke diagnostic, headline held 68%",
+      "date": "2026-09-15",
+      "summary": "Staging tip 32e8f686→e3ba86e8 with #1331 checkout response diagnostic. Headline held ~68%.",
+      "plainEnglish": "Tuesday late morning: staging tip moved to e3ba86e8. #1331 smoke join-pay checkout diagnostic is live. Launch readiness still about 68% until Bluebird retests. Never import.rollbackBatch.",
+      "tags": [
+        "smoke",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-15-launch-hub-tip-e3ba86e8-1331-smoke-diagnostic-he/tip-e3ba86e8-status.md"
+      ],
+      "tip": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1331"
+    },
     {
       "id": "2026-09-15-cluster-a-tip-32e8f686-0-24-blocked-missing-comp",
       "title": "Cluster A tip 32e8f686 — 0/24 BLOCKED (missing computerUse)",
