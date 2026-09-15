@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-15T11:13:55.674Z",
+  "updatedAt": "2026-09-15T14:23:16.931Z",
   "drops": [
+    {
+      "id": "2026-09-15-tip-aee3b690-afternoon-pack-complete-1343",
+      "title": "Tip aee3b690 — afternoon pack complete (#1343)",
+      "date": "2026-09-15",
+      "summary": "Live tip aee3b690; #1343 cover-swap notifications live; headline estimate ~69%",
+      "plainEnglish": "Live tip aee3b690; #1343 cover-swap notifications live; headline estimate ~69%",
+      "tags": [
+        "status",
+        "command-centre",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-15-tip-aee3b690-afternoon-pack-complete-1343/2026-09-15-tip-aee3b690.md"
+      ],
+      "tip": "aee3b690b2f895393adf2b636dfc0c202d5d43fc"
+    },
     {
       "id": "2026-09-15-comms-score-ac845589",
       "title": "Comms score ac845589",
