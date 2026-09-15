@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-09-13T21:00:34Z",
-  "tip": "3ad3782443d147934342e08a27d7151133369f74",
+  "updatedAt": "2026-09-15T08:55:20Z",
+  "tip": "e3ba86e851ff268ad439041a193feb3f742c03ed",
   "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
   "rubric": {
     "joyful": "Warm, human, celebrates progress; list sells conversation not filenames; empty states inviting (0\u2013100 vs WhatsApp/Slack).",
@@ -13,7 +13,7 @@
     "obvious": 46,
     "frictionless": 44,
     "overall": 46,
-    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %. Website uses Census Content Feel 65\u219272 on tip 3ad37824."
+    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %. Website measured 75 on tip e3ba86e8 (2026-09-15)."
   },
   "honesty": {
     "measured": "Surfaces with live Admin2 Bluebird retest PASS on tip 3ad37824: members-crm (#1284/#1287), marketing (#1285/#1288), website (#1280/#1281/#1283), intelligence (#1276/#1277/#1278), home (Overview #1277 adjacency). Evidence under helgoiq-overnight-2026-09-13/retests/. Website Feel measured by Census Content overnight: 65\u219272 (J66/O79/F71).",
@@ -492,13 +492,13 @@
       "pathHint": "/admin/website",
       "basis": "measured",
       "confidence": "high",
-      "scoredAt": "2026-09-13",
-      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
-      "joyful": 66,
-      "obvious": 79,
-      "frictionless": 71,
-      "overall": 72,
-      "plainSummary": "Measured Sep 13 Admin2: strong draft/live governance on desktop; phone tab/CTA clipping and contradictory Health failure hurt frictionless/obvious. Overall 65 (was provisional 52).",
+      "scoredAt": "2026-09-15",
+      "tipAtScore": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "joyful": 70,
+      "obvious": 80,
+      "frictionless": 75,
+      "overall": 75,
+      "plainSummary": "Measured 2026-09-15 Admin2 tip e3ba86e8. Overall 75 (was 72). Draft/live governance strong; Health still fails without score/results. Identity named; Save Draft clean; phone dock holds.",
       "strengths": [
         "Draft vs live governance language",
         "Desktop named start cards and Blog draft badges",
