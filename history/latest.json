@@ -1,23 +1,29 @@
 {
-  "updatedAt": "2026-09-15T08:14:00.049Z",
+  "updatedAt": "2026-09-15T08:54:37.916Z",
   "meta": {
-    "dataAsOf": "2026-09-15T08:14:00.049Z",
-    "buildStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
-    "liveTip": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+    "dataAsOf": "2026-09-15T08:54:37.916Z",
+    "buildStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+    "liveTip": "ac845589404b78c308cc30e5aee81eb9e648a220",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 68% = round((52\u00d712 + 65\u00d710 + 86\u00d710 + 65\u00d715 + 95\u00d79 + 73\u00d710 + 72\u00d76 + 72\u00d78 + 98\u00d710 + 15\u00d710)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
-    "latestSnapshotPath": "history/2026-09-15-tip-e3ba86e8.json",
-    "lastRefreshNote": "Tip 32e8f686\u2192e3ba86e8: #1331 smoke join-pay checkout response diagnostic live. Headline held ~68% \u2014 no Bluebird Measured invent (same hold as eleven-PR wave). Never import.rollbackBatch.",
+    "latestSnapshotPath": "history/2026-09-15-tip-ac845589.json",
+    "lastRefreshNote": "Tip e3ba86e8\u2192ac845589: #1337 (smoke CI reconciliation), #1302 (Cluster B win-back location), #1321 (forms drawn/typed signatures) now live. Headline held ~68% \u2014 no Bluebird Measured invent. Never import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-15T08:14:00.049Z"
+      "checkedAt": "2026-09-15T08:54:37.916Z",
+      "pendingMerges": [],
+      "onTipMergesThisRefresh": [
+        "#1337",
+        "#1302",
+        "#1321"
+      ]
     },
-    "updatedAt": "2026-09-15T08:14:00.049Z",
-    "note": "Live tip e3ba86e8. #1331 test(smoke): report checkout response failures ON tip. Headline estimate ~68% (held). Never import.rollbackBatch.",
+    "updatedAt": "2026-09-15T08:54:37.916Z",
+    "note": "Live tip ac845589. #1337 (smoke CI reconciliation), #1302 (Cluster B win-back location), #1321 (forms drawn/typed signatures) ON tip after e3ba86e8. Headline estimate ~68% (held). Never import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 368/413 \u2248 89.1%.",
     "headlineVsCoverage": "Headline ~66% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
@@ -36,11 +42,11 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "Estimate 65% on tip 32e8f686 \u2014 #1297/#1322/#1338/#1326 CC guidance + brands scope now on tip; Astra #1312/#1320/#1323 Pulse/Dispatch also on tip. Last Measured still A 24/24 + B\u2013F 4/30 on 6486be87. Bluebird retest required before bump.",
-    "liveTipNote": "32e8f686 = merge #1323 (Archive saved Studio Pulse with executive reports). Same deploy wave: #1310 #1213 #1307 #1311 #1297 #1322 #1338 #1326 #1312 #1320. Staging tip matches releaseSha. Open Measured retests across CC/comms/smoke/payments/dataset.",
-    "checkedAt": "2026-09-15T06:34:35.261Z"
+    "commandCentreNote": "Estimate 65% on tip ac845589 \u2014 CC pack from e3ba86e8 still live; #1302 Cluster B win-back location NOW on tip. Last Measured still A 24/24 + B\u2013F 4/30 on 6486be87. Bluebird retest required before bump.",
+    "liveTipNote": "ac845589 = merge #1321 (forms signatures). Same deploy wave: #1337 smoke CI reconciliation + #1302 Cluster B win-back location follow-up. Prior tip e3ba86e8 had #1331 smoke diagnostic + eleven-PR wave.",
+    "checkedAt": "2026-09-15T08:54:37.916Z"
   },
-  "tip": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+  "tip": "ac845589404b78c308cc30e5aee81eb9e648a220",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 68,
@@ -81,10 +87,10 @@
       "comms": 15,
       "headline": 16
     },
-    "plainEnglishDay": "Tuesday (15 Sep 2026 ~11:14 Europe/Athens): tip moved 32e8f686\u2192e3ba86e8. #1331 smoke diagnostic live \u2014 reports checkout response failures on join-pay path. Earlier eleven-PR wave still on tip (#1213/#1310/#1307/#1311/#1297/#1322/#1338/#1326/#1312/#1320/#1323). Headline estimate held ~68% (code live, no Measured invent). Never import.rollbackBatch.",
+    "plainEnglishDay": "Tuesday (15 Sep 2026 ~14:54 Europe/Athens): tip moved e3ba86e8\u2192ac845589. #1337 (smoke CI reconciliation), #1302 (Cluster B win-back location), #1321 (forms drawn/typed signatures) live. Headline estimate held ~68% (code live, no Measured invent). Never import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning board vs now: headline ~52\u219268% (held at 68% this tip move \u2014 no Measured invent). Tip 32e8f686 picked up eleven merges after #1292 Invoicing naming on ed71129c.",
-    "updatedAt": "2026-09-15T06:34:35.261Z",
+    "compareNote": "Morning board vs now: headline ~52\u219268% (held at 68% this tip move \u2014 no Measured invent). Tip ac845589 picks up post-#1331 merges #1337/#1302/#1321.",
+    "updatedAt": "2026-09-15T08:54:37.916Z",
     "coverageNote": "After AI L2 Intel: L\u22651=372 (90%); L\u22652=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "FAIL 1/6 last Measured on tip 3ad37824 (step1 #1296 PASS; step2 locator FAIL; 3\u20136 skipped). #1298 exact membership selector NOW on tip 40da6535 \u2014 retest pending.",
@@ -330,8 +336,8 @@
       "percent": 65,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Tip e3ba86e8 lands CC pack: #1297 win-back drafts, #1322 guidance registry, #1338 F-FC016 selected-company overview, #1326 Pulse comparison/restricted disclosure, plus Astra #1312/#1320/#1323. Estimate 65% \u2014 Bluebird retest before bump.",
-      "progressNote": "Held 65% estimate \u2014 tip e3ba86e8 lands #1297/#1322/#1338/#1326 CC guidance + brands + Pulse scope. Last Measured A 24/24 + B\u2013F 4/30 still 6486be87.",
+      "plainSummary": "Tip ac845589 adds #1302 Cluster B win-back location on top of CC pack (#1297/#1322/#1338/#1326 + Astra). Estimate 65% \u2014 Bluebird retest before bump.",
+      "progressNote": "Held 65% estimate \u2014 tip ac845589 keeps #1297/#1322/#1338/#1326 CC pack; #1302 Cluster B follow-up now on tip. Last Measured A 24/24 + B\u2013F 4/30 still 6486be87.",
       "blockers": [
         "Milestone 2 B\u2013F 26 FAIL \u2014 invented how-do-I paths, missing named refuse reasons, XAGR disagreements/missing numbers, investigation stalls",
         "E-FAC-01 isolation: invented Setup path toward deleting a Refrm building"
@@ -384,8 +390,8 @@
       "percent": 65,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Astra Pulse stages on tip e3ba86e8 (#1312 one-tap saved Pulse, #1323 archive with executive reports). Estimate 65% \u2014 last Measured AI-85 still older tip; #1272 AI-042 candidate not confirmed.",
-      "progressNote": "Held 65% estimate \u2014 tip e3ba86e8. Astra Pulse #1312/#1323 on tip; AI-042/#1272 still open until Bluebird retest.",
+      "plainSummary": "#1302 Cluster B win-back draft location follow-up live on tip ac845589. Astra Pulse stages still on tip. Estimate 65% \u2014 last Measured AI-85 still older tip; #1272 AI-042 candidate not confirmed.",
+      "progressNote": "Held 65% estimate \u2014 tip ac845589. #1302 Cluster B win-back location ON tip; Astra Pulse #1312/#1323 still live. AI-042/#1272 still open until Bluebird retest.",
       "blockers": [
         "23 UNCERTAIN remain (many empty AI / NEED_DECLAN)",
         "#1272 on tip \u2014 Bluebird retest pending for AI-042 MRR crash (was FAIL)",
@@ -433,7 +439,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "Members Directory/invitations/Inbox Feel (#1284/#1287/#1285) PASS overnight on tip 3ad37824. #1286 Overview Members count = directory still ON tip (ancestry) \u2014 retest pending. Tip now 40da6535 with payments/smoke/CC packs; Wave1 full re-run still open.",
-      "progressNote": "Held 73% Measured \u2014 tip e3ba86e8. No new member-journey Measured this wave.",
+      "progressNote": "Held 73% \u2014 tip ac845589. #1321 forms drawn/typed signatures NOW ON tip. Bluebird retest before bump.",
       "blockers": [
         "#1286 Overview Members count \u2014 Bluebird retest still pending (tip ancestry)",
         "Fresh member invite create FAIL on a263c4ab (form closed; pending list unchanged)",
@@ -463,8 +469,8 @@
       "percent": 72,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "#1331 smoke diagnostic (checkout response failures) now on tip e3ba86e8. #1307 dismiss purchase overlays also live. Six-step last Measured FAIL 1/6 on 3ad37824; retest pending. Estimate 72%.",
-      "progressNote": "Held 72% estimate \u2014 tip e3ba86e8. #1331 join-pay response diagnostic + #1307 overlays ON tip. Six-step last Measured FAIL 1/6; retest pending.",
+      "plainSummary": "#1337 smoke CI reconciliation now on tip ac845589 with #1331 checkout response diagnostic and #1307 overlays. Six-step last Measured FAIL 1/6 on 3ad37824; retest pending. Estimate 72%.",
+      "progressNote": "Held 72% estimate \u2014 tip ac845589. #1337 smoke CI reconciliation + #1331 diagnostic + #1307 overlays ON tip. Six-step last Measured FAIL 1/6; retest pending.",
       "blockers": [
         "Six-step smoke last Measured FAIL 1/6 \u2014 step2 Playwright locator; #1298 now on tip \u2014 retest pending",
         "Join-and-pay job missing JOIN_PAY_PROOF_FIXTURES",
@@ -548,8 +554,8 @@
       "percent": 15,
       "basis": "estimate",
       "status": "blocked",
-      "plainSummary": "#1213 P0 unify automated communication delivery is LIVE on tip e3ba86e8 (ledger routing for booking/cancel/waitlist/reminders/newsletters/campaigns/forms). Strand stays ~15% estimate until Bluebird delivery proof + any remaining secrets/config are confirmed. Status remains blocked until Measured.",
-      "progressNote": "Held 15% estimate \u2014 tip e3ba86e8. #1213 unify automated communication delivery NOW ON TIP. Secrets/E2E still gate Measured; do not invent %.",
+      "plainSummary": "#1321 drawn/typed form signatures live on tip ac845589 alongside #1213 unified automated delivery. Strand stays ~15% estimate until Bluebird delivery proof + remaining secrets/config confirmed. Status remains blocked until Measured.",
+      "progressNote": "Held 15% estimate \u2014 tip ac845589. #1213 unify delivery ON tip; #1321 forms signatures NOW ON tip. Secrets/E2E still gate Measured; do not invent %.",
       "blockers": [
         "#1213 code live on tip 32e8f686 \u2014 Bluebird delivery-ledger E2E not run",
         "Confirm Resend/Agentmail secrets/config still complete for staging sends"
@@ -564,15 +570,15 @@
   "health": {
     "overallLaunchPercent": 68,
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 68% = round((52\u00d712 + 65\u00d710 + 86\u00d710 + 65\u00d715 + 95\u00d79 + 73\u00d710 + 72\u00d76 + 72\u00d78 + 98\u00d710 + 15\u00d710)/100) half-up.",
-    "readinessLabel": "Not ready to launch \u2014 tip e3ba86e8. Headline estimate ~68% (held). #1331 smoke diagnostic live; eleven-PR wave still awaiting Bluebird Measured; smoke gate last Measured FAIL 1/6.",
-    "plainSummary": "As of 2026-09-15T08:14:00.049Z (Europe/Athens 15 Sep 2026 ~11:14), live tip e3ba86e8. #1331 join-pay checkout response diagnostic ON tip after eleven-PR wave. Headline estimate ~68% (held \u2014 no Measured invent).",
+    "readinessLabel": "Not ready to launch \u2014 tip ac845589. Headline estimate ~68% (held). #1337 (smoke CI reconciliation), #1302 (Cluster B win-back location), #1321 (forms drawn/typed signatures) live; smoke gate last Measured FAIL 1/6.",
+    "plainSummary": "As of 2026-09-15T08:54:37.916Z (Europe/Athens 15 Sep 2026 ~14:54), live tip ac845589. #1337 (smoke CI reconciliation), #1302 (Cluster B win-back location), #1321 (forms drawn/typed signatures) ON tip. Headline estimate ~68% (held \u2014 no Measured invent).",
     "strengths": [
-      "Tip e3ba86e8 live \u2014 #1331 smoke diagnostic + earlier eleven-PR wave (#1213 automated comms P0, Astra/Pulse, CC, Stripe, import, overlays)",
+      "Tip ac845589 live \u2014 #1337 (smoke CI reconciliation), #1302 (Cluster B win-back location), #1321 (forms drawn/typed signatures) + earlier #1331/#eleven-PR wave still on tip",
       "Isolation strand still strongest Measured base (86%)",
       "Findings-fix ~98% estimate; Ambient ~95%"
     ],
     "risks": [
-      "No new Measured on tip e3ba86e8 \u2014 all strand bumps forbidden until Bluebird retest",
+      "New tip code live but Bluebird Measured not re-run \u2014 strand %s are estimate holds",
       "#1213 live but comms strand still blocked until delivery proof/secrets confirmed",
       "#1310 candidate for dataset companyId \u2014 canary still last FAIL until retested",
       "Smoke six-step last Measured FAIL 1/6 \u2014 #1307/#1298 retest pending",
@@ -1667,6 +1673,10 @@
     }
   ],
   "notes": [
+    {
+      "at": "2026-09-15T08:54:37.916Z",
+      "text": "Tip e3ba86e8\u2192ac845589: #1337 (smoke CI reconciliation), #1302 (Cluster B win-back location), #1321 (forms drawn/typed signatures) live. Headline held ~68%. Forms/Cluster B/smoke-CI tip \u2014 no strand invent. Staging ahead_by 0."
+    },
     {
       "at": "2026-09-15T08:14:00.049Z",
       "text": "Tip 32e8f686\u2192e3ba86e8: #1331 test(smoke) report checkout response failures live. Headline held ~68%. Smoke diagnostic tip \u2014 no strand invent. Staging ahead_by 0."
