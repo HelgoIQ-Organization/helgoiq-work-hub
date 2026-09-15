@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-09-14T12:18:03.673Z",
+  "updatedAt": "2026-09-15T06:36:32.071Z",
   "drops": [
+    {
+      "id": "2026-09-15-launch-hub-tip-32e8f686-eleven-pr-wave-headline-",
+      "title": "Launch Hub tip 32e8f686 — eleven-PR wave, headline held 68%",
+      "date": "2026-09-15",
+      "summary": "Staging tip ed71129c→32e8f686 with #1213/#1310/#1307/#1311/#1297/#1322/#1338/#1326/#1312/#1320/#1323. Headline held ~68%.",
+      "plainEnglish": "Tuesday morning: staging tip moved to 32e8f686. Eleven PRs live including automated comms P0 and Astra/Pulse. Launch readiness still about 68% until Bluebird retests. Never import.rollbackBatch.",
+      "tags": [
+        "status",
+        "command-centre",
+        "findings",
+        "dataset",
+        "smoke",
+        "payments",
+        "ambient",
+        "ai-85"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-15-launch-hub-tip-32e8f686-eleven-pr-wave-headline-/tip-32e8f686-status.md"
+      ],
+      "tip": "32e8f686f96e57e877d0bb2b3abc6b98dc6d0edf"
+    },
     {
       "id": "2026-09-14-occupancy-retention-scan-2-1265",
       "title": "Occupancy Retention scan 2 (#1265)",
