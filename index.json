@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-15T06:36:32.071Z",
+  "updatedAt": "2026-09-15T06:52:50.597Z",
   "drops": [
+    {
+      "id": "2026-09-15-cluster-a-tip-32e8f686-0-24-blocked-missing-comp",
+      "title": "Cluster A tip 32e8f686 — 0/24 BLOCKED (missing computerUse)",
+      "date": "2026-09-15",
+      "summary": "0/24 BLOCKED: nested executor missing Task/computerUse; B-F locked; tip live early-auth-response-finish-v1; Teacher2 not_run",
+      "plainEnglish": "0/24 BLOCKED: nested executor missing Task/computerUse; B-F locked; tip live early-auth-response-finish-v1; Teacher2 not_run",
+      "tags": [
+        "command-centre",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-15-cluster-a-tip-32e8f686-0-24-blocked-missing-comp/SUMMARY-A.md"
+      ],
+      "tip": "32e8f686f96e57e877d0bb2b3abc6b98dc6d0edf",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5676063799"
+    },
     {
       "id": "2026-09-15-launch-hub-tip-32e8f686-eleven-pr-wave-headline-",
       "title": "Launch Hub tip 32e8f686 — eleven-PR wave, headline held 68%",
