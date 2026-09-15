@@ -1,0 +1,39 @@
+{
+  "tip": "51015ca21e960a2b79faa20647ec284c03588a7c",
+  "companyId": 150002,
+  "seat": "Admin2 (HelgoIQ Bb Admin 2; helgoiq-bb-admin-2@agentmail.to)",
+  "occupancy": {
+    "stage": "Stage 2 Occupancy/Retention",
+    "mode": "Studio support shell only; Occupancy Agent card not present",
+    "run_review_enabled": false,
+    "run_ids": [],
+    "finding_ids": [],
+    "findings_count": 0,
+    "last_run": null,
+    "actions_taken": [
+      "Opened the Bluebird agents route with c=150002",
+      "Confirmed Bluebird Pilates — TEST DATA (fabricated)",
+      "Observed the existing occupancy-related prepared-work item for Slow Flow — 16 Sept 2026, 12:00",
+      "Refreshed the Studio support queue once",
+      "Did not trigger a producer because no authorised Occupancy run/review control was visible"
+    ]
+  },
+  "retention": {
+    "stage": "Stage 2 Occupancy/Retention",
+    "mode": "Studio support shell only; Retention Agent card not present",
+    "run_review_enabled": false,
+    "run_ids": [],
+    "finding_ids": [],
+    "findings_count": 0,
+    "last_run": null,
+    "actions_taken": [
+      "Observed the existing retention prepared-work items for BB Smoke Sep8-2 and Otto Othertenant",
+      "Refreshed the Studio support queue once",
+      "Did not trigger a producer because no authorised Retention run/review control was visible"
+    ]
+  },
+  "ui_notes": "Agents route rendered only the Studio support shell for Bluebird Pilates — TEST DATA (fabricated). Queue showed All · 3, Agent work · 3, Approvals · 0, Tasks · 0, Recommendations · 0; Daily Operations showed Verified outcomes 0, Ready for approval 0, New findings 3, Needs attention 0. Prepared work showed two retention items and one occupancy item (Slow Flow, 0% booked, capacity 10, Bluebird Central). No Occupancy/Retention cards, Run a review now, Start Observe, runId, reviewId, finding ID, recommendation ID, or last-run text was visible. Settings navigation was checked; it exposed personal Command Centre preferences and no Agents control. No Feature Controls were changed and no tenant switch was performed.",
+  "producer_ran": false,
+  "blocker": "Hard product-path blocker: no authorised Occupancy or Retention agent run/review control was present; only the Studio support shell and existing prepared-work queue were available.",
+  "capturedAt": "2026-09-15T10:33:09Z"
+}
