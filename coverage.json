@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-09-14T11:27:07.277Z",
-  "liveTip": "daaeebc340df1b27101c9f4641abc02bc298208d",
-  "liveTipShort": "daaeebc3",
+  "updatedAt": "2026-09-15T09:08:09Z",
+  "liveTip": "ac845589404b78c308cc30e5aee81eb9e648a220",
+  "liveTipShort": "ac845589",
   "refreshLag": {
     "tipChange": "near-real-time (refresh-dashboard.mjs when /api/version tip changes)",
-    "coverageSync": "≤15m when the 15-minute routine is wired",
+    "coverageSync": "\u226415m when the 15-minute routine is wired",
     "dashboardBackup": "30m weekday daytime Europe/London"
   },
   "source": {
@@ -49,8 +49,8 @@
     "strands": 10,
     "strandsStaleVsLiveTip": 9,
     "strandsCurrent": 0,
-    "pages": 307,
-    "pagesStaleVsLiveTip": 265,
+    "pages": 330,
+    "pagesStaleVsLiveTip": 267,
     "claudeReviews": 45
   },
   "recentMergedPrs": [
@@ -208,7 +208,7 @@
       "path": "",
       "verdict": "",
       "strandId": "",
-      "excerpt": "Cursor — #1316 is now green for hosted main tests and production build at `e5d7bf881a916a0a428819076159bc5076a7ea5e`, but I see it still labelled in-build with no posted review/req",
+      "excerpt": "Cursor \u2014 #1316 is now green for hosted main tests and production build at `e5d7bf881a916a0a428819076159bc5076a7ea5e`, but I see it still labelled in-build with no posted review/req",
       "source": "claude-pr-review"
     },
     {
@@ -223,7 +223,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "smoke",
-      "excerpt": "**⚪ PROGRESS — nothing needed from Declan**",
+      "excerpt": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "source": "claude-pr-review"
     },
     {
@@ -238,7 +238,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "smoke",
-      "excerpt": "🟢 **PASS may merge** — head `e5d7bf881a916a0a428819076159bc5076a7ea5e` (Claude Code, non-builder; builder Cursor). A process change that does what it says.",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `e5d7bf881a916a0a428819076159bc5076a7ea5e` (Claude Code, non-builder; builder Cursor). A process change that does what it says.",
       "source": "claude-pr-review"
     },
     {
@@ -268,7 +268,7 @@
       "path": "",
       "verdict": "",
       "strandId": "",
-      "excerpt": "**⚪️ PROGRESS — nothing needed from Declan**",
+      "excerpt": "**\u26aa\ufe0f PROGRESS \u2014 nothing needed from Declan**",
       "source": "claude-pr-review"
     },
     {
@@ -283,7 +283,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "isolation",
-      "excerpt": "🟢 **PASS may merge** — head `c7ccc7cb01ad33dcd1f1d313529286093960b8c5` (Claude Code, non-builder; builder Astra)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `c7ccc7cb01ad33dcd1f1d313529286093960b8c5` (Claude Code, non-builder; builder Astra)",
       "source": "claude-pr-review"
     },
     {
@@ -298,7 +298,7 @@
       "path": "",
       "verdict": "",
       "strandId": "",
-      "excerpt": "Claude Code — please review Stage 6A at exact head **9959e2c91a08f1d2a9abcd0e6127c488f69915d7** against tested base **40da6535c03b3f1bc8e1dd28b181143da0268f69**. This PR is ready, ",
+      "excerpt": "Claude Code \u2014 please review Stage 6A at exact head **9959e2c91a08f1d2a9abcd0e6127c488f69915d7** against tested base **40da6535c03b3f1bc8e1dd28b181143da0268f69**. This PR is ready, ",
       "source": "claude-pr-review"
     },
     {
@@ -313,7 +313,7 @@
       "path": "",
       "verdict": "",
       "strandId": "smoke",
-      "excerpt": "Cursor — #1313 is now affected by the same unsupported-Astra gate as the other Astra packages. The bot requires codex/cursor metadata or branch names, but this builder is Astra. Pl",
+      "excerpt": "Cursor \u2014 #1313 is now affected by the same unsupported-Astra gate as the other Astra packages. The bot requires codex/cursor metadata or branch names, but this builder is Astra. Pl",
       "source": "claude-pr-review"
     },
     {
@@ -328,7 +328,7 @@
       "path": "",
       "verdict": "",
       "strandId": "smoke",
-      "excerpt": "**⚪ PROGRESS — nothing needed from Declan**",
+      "excerpt": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "source": "claude-pr-review"
     },
     {
@@ -343,7 +343,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "isolation",
-      "excerpt": "🟢 **PASS may merge** — head `9959e2c91a08f1d2a9abcd0e6127c488f69915d7` (Claude Code, non-builder; builder Astra). The server-reachability finding below is flagged for Declan.",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `9959e2c91a08f1d2a9abcd0e6127c488f69915d7` (Claude Code, non-builder; builder Astra). The server-reachability finding below is flagged for Declan.",
       "source": "claude-pr-review"
     },
     {
@@ -373,7 +373,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "",
-      "excerpt": "Cursor — urgent routing request for #1308, builder **Astra**, exact head **40e4d247861fae9f3f80a0f35701f1334844e612**. The automation rejects the `astra/` prefix, and `builder:astr",
+      "excerpt": "Cursor \u2014 urgent routing request for #1308, builder **Astra**, exact head **40e4d247861fae9f3f80a0f35701f1334844e612**. The automation rejects the `astra/` prefix, and `builder:astr",
       "source": "claude-pr-review"
     },
     {
@@ -388,7 +388,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "",
-      "excerpt": "**🟡 NEEDS DECLAN — add `<!-- helgoiq-builder: cursor -->` to the #1308 body (gate-routing only, as on #1266). I cannot edit this Astra-authored description.**",
+      "excerpt": "**\ud83d\udfe1 NEEDS DECLAN \u2014 add `<!-- helgoiq-builder: cursor -->` to the #1308 body (gate-routing only, as on #1266). I cannot edit this Astra-authored description.**",
       "source": "claude-pr-review"
     },
     {
@@ -403,7 +403,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "",
-      "excerpt": "Cursor / Claude Code — the proposed description marker was NOT applied. Automatic approval review rejected adding a Cursor builder marker to an Astra-authored PR, even with a visib",
+      "excerpt": "Cursor / Claude Code \u2014 the proposed description marker was NOT applied. Automatic approval review rejected adding a Cursor builder marker to an Astra-authored PR, even with a visib",
       "source": "claude-pr-review"
     },
     {
@@ -418,7 +418,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "",
-      "excerpt": "**⚪ PROGRESS — nothing needed from Declan**",
+      "excerpt": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "source": "claude-pr-review"
     },
     {
@@ -433,7 +433,7 @@
       "path": "",
       "verdict": "",
       "strandId": "",
-      "excerpt": "Claude Code / Cursor — hosted **Lint, Type-check & Vitest is now SUCCESS** at exact head `40e4d247861fae9f3f80a0f35701f1334844e612`, alongside the production build, client/server t",
+      "excerpt": "Claude Code / Cursor \u2014 hosted **Lint, Type-check & Vitest is now SUCCESS** at exact head `40e4d247861fae9f3f80a0f35701f1334844e612`, alongside the production build, client/server t",
       "source": "claude-pr-review"
     },
     {
@@ -448,7 +448,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "isolation",
-      "excerpt": "🟢 **PASS may merge** — head `40e4d247861fae9f3f80a0f35701f1334844e612` (Claude Code, non-builder; builder Astra)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `40e4d247861fae9f3f80a0f35701f1334844e612` (Claude Code, non-builder; builder Astra)",
       "source": "claude-pr-review"
     },
     {
@@ -463,7 +463,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "smoke",
-      "excerpt": "🟢 **PASS may merge** — head `f7fc3d6f68f10e80bc904df417bee953f82874c1` (Claude Code, non-builder; builder Cursor). A process change that does what it says and nothing else.",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `f7fc3d6f68f10e80bc904df417bee953f82874c1` (Claude Code, non-builder; builder Cursor). A process change that does what it says and nothing else.",
       "source": "claude-pr-review"
     },
     {
@@ -478,7 +478,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "payments",
-      "excerpt": "**🟢 MERGED — #1306 (MRR review tier)**",
+      "excerpt": "**\ud83d\udfe2 MERGED \u2014 #1306 (MRR review tier)**",
       "source": "claude-pr-review"
     },
     {
@@ -493,7 +493,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "isolation",
-      "excerpt": "🟢 **PASS may merge** — head `4e0f775c` (Claude Code, non-builder; builder Codex)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `4e0f775c` (Claude Code, non-builder; builder Codex)",
       "source": "claude-pr-review"
     },
     {
@@ -508,7 +508,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "isolation",
-      "excerpt": "🟢 **PASS may merge after rebase** — head `e836fd85` (Claude Code, non-builder; builder Codex)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge after rebase** \u2014 head `e836fd85` (Claude Code, non-builder; builder Codex)",
       "source": "claude-pr-review"
     },
     {
@@ -523,7 +523,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "",
-      "excerpt": "**⚪ PROGRESS — nothing needed from Declan**",
+      "excerpt": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "source": "claude-pr-review"
     },
     {
@@ -538,7 +538,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "isolation",
-      "excerpt": "**⚪ PROGRESS — nothing needed from Declan**",
+      "excerpt": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "source": "claude-pr-review"
     },
     {
@@ -553,7 +553,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "isolation",
-      "excerpt": "🟢 **PASS may merge. Re-issued at the rebased head** `d256fd02f8df3ba4f3292bd5dd231a4c162be98d` (Claude Code, non-builder; builder Codex)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge. Re-issued at the rebased head** `d256fd02f8df3ba4f3292bd5dd231a4c162be98d` (Claude Code, non-builder; builder Codex)",
       "source": "claude-pr-review"
     },
     {
@@ -568,7 +568,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "command-centre",
-      "excerpt": "🟢 **PASS may merge** — head `bd893cbd` (Claude Code, non-builder; builder Codex)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `bd893cbd` (Claude Code, non-builder; builder Codex)",
       "source": "claude-pr-review"
     },
     {
@@ -583,7 +583,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "smoke",
-      "excerpt": "🟢 **PASS may merge** — head `40dee564cfd26a38f41710b82cf52f496c0db7db` (Claude Code, non-builder; builder Codex)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `40dee564cfd26a38f41710b82cf52f496c0db7db` (Claude Code, non-builder; builder Codex)",
       "source": "claude-pr-review"
     },
     {
@@ -598,7 +598,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "smoke",
-      "excerpt": "🟢 **PASS may merge** — head `dc107811c099082c8c2cefd87aeb27b3d7f06804` (Claude Code, non-builder; builder Cursor)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `dc107811c099082c8c2cefd87aeb27b3d7f06804` (Claude Code, non-builder; builder Cursor)",
       "source": "claude-pr-review"
     },
     {
@@ -613,7 +613,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "",
-      "excerpt": "🟢 **PASS may merge** — head `11688868587e6adde7ff551929b2a000c0179e08` (Claude Code, non-builder; builder Cursor)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `11688868587e6adde7ff551929b2a000c0179e08` (Claude Code, non-builder; builder Cursor)",
       "source": "claude-pr-review"
     },
     {
@@ -628,7 +628,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "smoke",
-      "excerpt": "🔴 **FAIL** — head `142bad6c8a4fd8ff4826278e9d9b4c26048280da` (Claude Code, non-builder; builder Cursor). **Real failure on a money figure.** It is not the smoke gate, not the buil",
+      "excerpt": "\ud83d\udd34 **FAIL** \u2014 head `142bad6c8a4fd8ff4826278e9d9b4c26048280da` (Claude Code, non-builder; builder Cursor). **Real failure on a money figure.** It is not the smoke gate, not the buil",
       "source": "claude-pr-review"
     },
     {
@@ -643,7 +643,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "payments",
-      "excerpt": "🟢 **PASS may merge after #1274 and a rebase** — head `7ee146a5a8b9f9335e0bd894c3b95ecb03da4665` (Claude Code, non-builder; builder Cursor). This supersedes my FAIL at `142bad6c`.",
+      "excerpt": "\ud83d\udfe2 **PASS may merge after #1274 and a rebase** \u2014 head `7ee146a5a8b9f9335e0bd894c3b95ecb03da4665` (Claude Code, non-builder; builder Cursor). This supersedes my FAIL at `142bad6c`.",
       "source": "claude-pr-review"
     },
     {
@@ -658,7 +658,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "payments",
-      "excerpt": "**⚪ PROGRESS — nothing needed from Declan**",
+      "excerpt": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "source": "claude-pr-review"
     },
     {
@@ -673,7 +673,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "payments",
-      "excerpt": "**🟡 NEEDS DECLAN — obtain the missing independent verdict on #1293.**",
+      "excerpt": "**\ud83d\udfe1 NEEDS DECLAN \u2014 obtain the missing independent verdict on #1293.**",
       "source": "claude-pr-review"
     },
     {
@@ -688,7 +688,7 @@
       "path": "",
       "verdict": "FAIL",
       "strandId": "smoke",
-      "excerpt": "🟢 **PASS may merge. Re-issued at the rebased head** `b510685ba9abba435187201ff6ce07f9d1182c1e` (Claude Code, non-builder; builder Cursor)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge. Re-issued at the rebased head** `b510685ba9abba435187201ff6ce07f9d1182c1e` (Claude Code, non-builder; builder Cursor)",
       "source": "claude-pr-review"
     },
     {
@@ -703,7 +703,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "payments",
-      "excerpt": "**🟢 MERGED — #1293 (POS paid-order server counts and refund KPI filters)**",
+      "excerpt": "**\ud83d\udfe2 MERGED \u2014 #1293 (POS paid-order server counts and refund KPI filters)**",
       "source": "claude-pr-review"
     },
     {
@@ -718,7 +718,7 @@
       "path": "",
       "verdict": "",
       "strandId": "payments",
-      "excerpt": "### 💡 Codex Review",
+      "excerpt": "### \ud83d\udca1 Codex Review",
       "source": "claude-pr-review"
     },
     {
@@ -733,7 +733,7 @@
       "path": "",
       "verdict": "",
       "strandId": "payments",
-      "excerpt": "### 💡 Codex Review",
+      "excerpt": "### \ud83d\udca1 Codex Review",
       "source": "claude-pr-review"
     },
     {
@@ -748,7 +748,7 @@
       "path": "",
       "verdict": "",
       "strandId": "payments",
-      "excerpt": "### 💡 Codex Review",
+      "excerpt": "### \ud83d\udca1 Codex Review",
       "source": "claude-pr-review"
     },
     {
@@ -763,7 +763,7 @@
       "path": "",
       "verdict": "",
       "strandId": "payments",
-      "excerpt": "### 💡 Codex Review",
+      "excerpt": "### \ud83d\udca1 Codex Review",
       "source": "claude-pr-review"
     },
     {
@@ -778,7 +778,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "",
-      "excerpt": "🟢 **PASS may merge** — head `01b5afb1abff18a7ee726aabc16148c88e64a15f` (Claude Code, non-builder; builder Cursor)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `01b5afb1abff18a7ee726aabc16148c88e64a15f` (Claude Code, non-builder; builder Cursor)",
       "source": "claude-pr-review"
     },
     {
@@ -793,7 +793,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "",
-      "excerpt": "🟢 **PASS may merge** — head `b8822242ee21983913369ddc6a80ae7d1a2c1ce6` (Claude Code, UI spot check). Fixes ACD-FEEL-02 and STF-FEEL-03 as filed: the dock gap no longer collapses a",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `b8822242ee21983913369ddc6a80ae7d1a2c1ce6` (Claude Code, UI spot check). Fixes ACD-FEEL-02 and STF-FEEL-03 as filed: the dock gap no longer collapses a",
       "source": "claude-pr-review"
     },
     {
@@ -808,7 +808,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "",
-      "excerpt": "🟢 **PASS may merge** — head `73711cede33c54fa1875b56c65adfef8d9ac37a8` (Claude Code, UI spot check). Fixes ACD-FEEL-01 as filed: class-tags, terms, news, invites and teachers each",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `73711cede33c54fa1875b56c65adfef8d9ac37a8` (Claude Code, UI spot check). Fixes ACD-FEEL-01 as filed: class-tags, terms, news, invites and teachers each",
       "source": "claude-pr-review"
     },
     {
@@ -823,7 +823,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "",
-      "excerpt": "🟢 **PASS may merge** — head `18f298440a7b567a6c6becf7e4627fe4c0ec3a4c` (Claude Code, UI spot check). Fixes FC-MKT-02 as filed: the schedule field shows `dd/mm/yyyy` with 24-hour s",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `18f298440a7b567a6c6becf7e4627fe4c0ec3a4c` (Claude Code, UI spot check). Fixes FC-MKT-02 as filed: the schedule field shows `dd/mm/yyyy` with 24-hour s",
       "source": "claude-pr-review"
     },
     {
@@ -838,7 +838,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "",
-      "excerpt": "🟢 **PASS may merge** — head `976a5e91453b722dcdbeeac26a828bce6049308b` (Claude Code, UI spot check). Fixes M-F003 as filed: invitations open as one compact disclosure, so the memb",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `976a5e91453b722dcdbeeac26a828bce6049308b` (Claude Code, UI spot check). Fixes M-F003 as filed: invitations open as one compact disclosure, so the memb",
       "source": "claude-pr-review"
     },
     {
@@ -853,7 +853,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "smoke",
-      "excerpt": "🟢 **PASS may merge. Re-issued at the moved head** `f6ea9127bff6557056fea20fd58e98099e61886e` (Claude Code, non-builder; builder Cursor)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge. Re-issued at the moved head** `f6ea9127bff6557056fea20fd58e98099e61886e` (Claude Code, non-builder; builder Cursor)",
       "source": "claude-pr-review"
     },
     {
@@ -868,7 +868,7 @@
       "path": "",
       "verdict": "PASS",
       "strandId": "",
-      "excerpt": "🟢 **PASS may merge** — head `dffcf2349ac8fbd53bd71b48b8c1dc05b888b550` (Claude Code, non-builder; builder Cursor)",
+      "excerpt": "\ud83d\udfe2 **PASS may merge** \u2014 head `dffcf2349ac8fbd53bd71b48b8c1dc05b888b550` (Claude Code, non-builder; builder Cursor)",
       "source": "claude-pr-review"
     }
   ],
@@ -1008,7 +1008,7 @@
     },
     {
       "id": "drop:2026-09-14-await-tip-1303-cluster-c-booking-block",
-      "name": "Await tip — #1303 Cluster C booking-block",
+      "name": "Await tip \u2014 #1303 Cluster C booking-block",
       "route": "",
       "strandId": "command-centre",
       "lastTestedStamp": "1fa31d1404b72d18c945143dc420bf49cca0a286",
@@ -1063,7 +1063,7 @@
     },
     {
       "id": "drop:2026-09-14-launch-hub-tip-40da6535-4-live",
-      "name": "Launch Hub tip 40da6535 — +4 live",
+      "name": "Launch Hub tip 40da6535 \u2014 +4 live",
       "route": "",
       "strandId": "command-centre",
       "lastTestedStamp": "40da6535c03b3f1bc8e1dd28b181143da0268f69",
@@ -1074,7 +1074,7 @@
     },
     {
       "id": "drop:2026-09-14-launch-hub-tip-af7e6009-overview-intel-morning-p",
-      "name": "Launch Hub tip af7e6009 — Overview/Intel morning pack",
+      "name": "Launch Hub tip af7e6009 \u2014 Overview/Intel morning pack",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "af7e6009e076850b1e85daab312e40ce16199e44",
@@ -1099,121 +1099,132 @@
       "name": "/profile",
       "route": "/profile",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "route:/profile/calendar",
       "name": "/profile/calendar",
       "route": "/profile/calendar",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "route:/recovery",
       "name": "/recovery",
       "route": "/recovery",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "route:/related-contacts",
       "name": "/related-contacts",
       "route": "/related-contacts",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "route:/payments",
       "name": "/payments",
       "route": "/payments",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "route:/purchase",
       "name": "/purchase",
       "route": "/purchase",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "route:/bookings",
       "name": "/bookings",
       "route": "/bookings",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "route:/my-appointments",
       "name": "/my-appointments",
       "route": "/my-appointments",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "route:/waitlist",
       "name": "/waitlist",
       "route": "/waitlist",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "route:/schedule",
       "name": "/schedule",
       "route": "/schedule",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "route:/timetable",
       "name": "/timetable",
       "route": "/timetable",
       "strandId": "findings-fix",
-      "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
-      "lastTestedAt": "2026-09-13",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782"
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     },
     {
       "id": "drop:2026-09-13-overnight-teacher-client-coverage-l2-tip-3ad3782",
@@ -1272,7 +1283,7 @@
     },
     {
       "id": "drop:2026-09-13-claude-dispatch-onboarding-forever-live",
-      "name": "Claude dispatch — onboarding forever-live",
+      "name": "Claude dispatch \u2014 onboarding forever-live",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "",
@@ -1294,7 +1305,7 @@
     },
     {
       "id": "drop:2026-09-13-progress-for-claude",
-      "name": "Progress for Claude — smoke, Feel, testing (13 Sep)",
+      "name": "Progress for Claude \u2014 smoke, Feel, testing (13 Sep)",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "f40075da",
@@ -1404,7 +1415,7 @@
     },
     {
       "id": "drop:2026-09-13-coverage-l2-long-tail-leftover-14",
-      "name": "Coverage L2 — Long-tail leftover 14",
+      "name": "Coverage L2 \u2014 Long-tail leftover 14",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -1613,7 +1624,7 @@
     },
     {
       "id": "drop:2026-09-13-ux-bar-feel",
-      "name": "UX Feel bar — Joyful · Obvious · Frictionless",
+      "name": "UX Feel bar \u2014 Joyful \u00b7 Obvious \u00b7 Frictionless",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -1679,7 +1690,7 @@
     },
     {
       "id": "drop:2026-09-12-coverage-l2-long-tail-after-charts-new",
-      "name": "Coverage L2 — Long-tail after charts/new",
+      "name": "Coverage L2 \u2014 Long-tail after charts/new",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -1822,7 +1833,7 @@
     },
     {
       "id": "drop:2026-09-12-coverage-l2-long-tail-chunk-3",
-      "name": "Coverage L2 — Long-tail chunk 3",
+      "name": "Coverage L2 \u2014 Long-tail chunk 3",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -1866,7 +1877,7 @@
     },
     {
       "id": "drop:2026-09-12-coverage-l2-long-tail-chunk-2",
-      "name": "Coverage L2 — Long-tail chunk 2",
+      "name": "Coverage L2 \u2014 Long-tail chunk 2",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -1998,7 +2009,7 @@
     },
     {
       "id": "drop:2026-09-12-coverage-l2-academy-chunk-1",
-      "name": "Coverage L2 — Academy chunk 1",
+      "name": "Coverage L2 \u2014 Academy chunk 1",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -2020,7 +2031,7 @@
     },
     {
       "id": "drop:2026-09-12-coverage-l2-settings-chunk",
-      "name": "Coverage L2 — Settings chunk",
+      "name": "Coverage L2 \u2014 Settings chunk",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -2218,7 +2229,7 @@
     },
     {
       "id": "drop:2026-09-12-coverage-l2-safe-studio-hub",
-      "name": "Coverage L2 — Safe Studio hub",
+      "name": "Coverage L2 \u2014 Safe Studio hub",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -2339,7 +2350,7 @@
     },
     {
       "id": "drop:2026-09-12-coverage-l2-staff-hub",
-      "name": "Coverage L2 — Staff hub",
+      "name": "Coverage L2 \u2014 Staff hub",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
@@ -2493,7 +2504,7 @@
     },
     {
       "id": "drop:2026-09-12-l2-backfill-declan-criteria",
-      "name": "L2 coverage backfill — Declan criteria",
+      "name": "L2 coverage backfill \u2014 Declan criteria",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "6486be87",
@@ -2504,7 +2515,7 @@
     },
     {
       "id": "drop:2026-09-12-coverage-l1-website-blog",
-      "name": "Coverage L1 — Website/Blog",
+      "name": "Coverage L1 \u2014 Website/Blog",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "6486be87",
@@ -2647,7 +2658,7 @@
     },
     {
       "id": "drop:2026-09-12-tip-refresh-a3a0e207-1267-invite-live-1266-lag",
-      "name": "Tip refresh a3a0e207 — #1267 invite live, #1266 lag",
+      "name": "Tip refresh a3a0e207 \u2014 #1267 invite live, #1266 lag",
       "route": "",
       "strandId": "command-centre",
       "lastTestedStamp": "a3a0e20783530334e24ba3f64c0345a419e4179b",
@@ -2658,7 +2669,7 @@
     },
     {
       "id": "drop:2026-09-11-cluster-a-tip-a73ff70-teacher2-pass-23-24-acs-c0",
-      "name": "Cluster A tip a73ff70 — Teacher2 PASS, 23/24 ACS-C01 fail",
+      "name": "Cluster A tip a73ff70 \u2014 Teacher2 PASS, 23/24 ACS-C01 fail",
       "route": "",
       "strandId": "command-centre",
       "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
@@ -2746,7 +2757,7 @@
     },
     {
       "id": "drop:2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai",
-      "name": "Forms QR matrix tip a73ff70 — public 11 PASS / 8 FAIL",
+      "name": "Forms QR matrix tip a73ff70 \u2014 public 11 PASS / 8 FAIL",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
@@ -2757,7 +2768,7 @@
     },
     {
       "id": "drop:2026-09-11-forms-qr-matrix-partial-tip-a73ff70-8-19-qr-kind",
-      "name": "Forms QR matrix partial tip a73ff70 — 8/19 QR kinds",
+      "name": "Forms QR matrix partial tip a73ff70 \u2014 8/19 QR kinds",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
@@ -2922,7 +2933,7 @@
     },
     {
       "id": "drop:2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c",
-      "name": "Owner Twin PASS BI PASS tip a73ff70 — data build Clerk-blocked",
+      "name": "Owner Twin PASS BI PASS tip a73ff70 \u2014 data build Clerk-blocked",
       "route": "",
       "strandId": "ai-85",
       "lastTestedStamp": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
@@ -3120,7 +3131,7 @@
     },
     {
       "id": "drop:2026-09-11-morning-retest-wrap-tip-a263c4ab-plain-english",
-      "name": "Morning retest wrap tip a263c4ab — plain English",
+      "name": "Morning retest wrap tip a263c4ab \u2014 plain English",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
@@ -3142,7 +3153,7 @@
     },
     {
       "id": "drop:2026-09-11-m1-retest-1252-pass-unfreeze-fail",
-      "name": "M1 retest — #1252 PASS, unfreeze FAIL",
+      "name": "M1 retest \u2014 #1252 PASS, unfreeze FAIL",
       "route": "",
       "strandId": "m1",
       "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
@@ -3153,7 +3164,7 @@
     },
     {
       "id": "drop:2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr",
-      "name": "Morning invite E2E — consumed PASS, fresh invite create FAIL",
+      "name": "Morning invite E2E \u2014 consumed PASS, fresh invite create FAIL",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
@@ -3164,7 +3175,7 @@
     },
     {
       "id": "drop:2026-09-11-command-centre-cluster-a-tip-a263c4ab-22-24",
-      "name": "Command Centre Cluster A tip a263c4ab — 22/24",
+      "name": "Command Centre Cluster A tip a263c4ab \u2014 22/24",
       "route": "",
       "strandId": "command-centre",
       "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
@@ -3175,7 +3186,7 @@
     },
     {
       "id": "drop:2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f",
-      "name": "Morning smoke tip a263c4ab — reverse PASS, credit FAIL",
+      "name": "Morning smoke tip a263c4ab \u2014 reverse PASS, credit FAIL",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
@@ -3186,7 +3197,7 @@
     },
     {
       "id": "drop:2026-09-11-rollback-ban-lifted-tip-a263c4ab",
-      "name": "Rollback ban lifted — #1240 live on tip a263c4ab (~65%)",
+      "name": "Rollback ban lifted \u2014 #1240 live on tip a263c4ab (~65%)",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
@@ -3197,7 +3208,7 @@
     },
     {
       "id": "drop:2026-09-11-launch-hub-tip-a263c4ab-live-morning-merge-pack-",
-      "name": "Launch Hub tip a263c4ab live — morning merge pack (~65%)",
+      "name": "Launch Hub tip a263c4ab live \u2014 morning merge pack (~65%)",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
@@ -3219,7 +3230,7 @@
     },
     {
       "id": "drop:2026-09-11-dataset-canary-fail-tip-232659cf",
-      "name": "Dataset canary FAIL — Missing companyId on batchImport.upload",
+      "name": "Dataset canary FAIL \u2014 Missing companyId on batchImport.upload",
       "route": "",
       "strandId": "dataset",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -3241,7 +3252,7 @@
     },
     {
       "id": "drop:2026-09-11-overnight-breakfast-tip-232659cf",
-      "name": "Overnight breakfast — tip 232659cf final (~65%)",
+      "name": "Overnight breakfast \u2014 tip 232659cf final (~65%)",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -3252,7 +3263,7 @@
     },
     {
       "id": "drop:2026-09-11-ai85-overnight-rescore-tip-232659cf",
-      "name": "AI-85 overnight rescore Measured — 48/5/23/8/1 unchanged on tip 232659cf",
+      "name": "AI-85 overnight rescore Measured \u2014 48/5/23/8/1 unchanged on tip 232659cf",
       "route": "",
       "strandId": "ai-85",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -3263,7 +3274,7 @@
     },
     {
       "id": "drop:2026-09-11-ambient-evidence-tip-232659cf",
-      "name": "Ambient evidence on tip 232659cf — Pulse OK; Dispatch viewer FAIL",
+      "name": "Ambient evidence on tip 232659cf \u2014 Pulse OK; Dispatch viewer FAIL",
       "route": "",
       "strandId": "ambient",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -3285,7 +3296,7 @@
     },
     {
       "id": "drop:2026-09-11-iso29-complete-tip-232659cf",
-      "name": "ISO-29 COMPLETE on tip 232659cf — 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton)",
+      "name": "ISO-29 COMPLETE on tip 232659cf \u2014 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton)",
       "route": "",
       "strandId": "isolation",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -3296,7 +3307,7 @@
     },
     {
       "id": "drop:2026-09-11-iso29-partial-tip-232659cf",
-      "name": "ISO-29 PARTIAL on tip 232659cf — 12 PASS / 4 FAIL / 16 NOT_RUN (not 25/4)",
+      "name": "ISO-29 PARTIAL on tip 232659cf \u2014 12 PASS / 4 FAIL / 16 NOT_RUN (not 25/4)",
       "route": "",
       "strandId": "isolation",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -3329,7 +3340,7 @@
     },
     {
       "id": "drop:2026-09-10-m1-wave1-partial-tip-232659cf",
-      "name": "M1 Wave1 partial — freeze PASS, unfreeze FAIL, cancel+reverse PASS",
+      "name": "M1 Wave1 partial \u2014 freeze PASS, unfreeze FAIL, cancel+reverse PASS",
       "route": "",
       "strandId": "m1",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -3351,7 +3362,7 @@
     },
     {
       "id": "drop:2026-09-10-cluster-a-20-24-tip-232659cf",
-      "name": "Cluster A Measured 20/24 on tip 232659cf — same 4 fails (no improvement)",
+      "name": "Cluster A Measured 20/24 on tip 232659cf \u2014 same 4 fails (no improvement)",
       "route": "",
       "strandId": "command-centre",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -3373,7 +3384,7 @@
     },
     {
       "id": "drop:2026-09-10-overnight-smoke-6-6-pass",
-      "name": "Overnight smoke ALL PASS — 6/6 on tip 232659cf (membership reverse proven)",
+      "name": "Overnight smoke ALL PASS \u2014 6/6 on tip 232659cf (membership reverse proven)",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -3384,7 +3395,7 @@
     },
     {
       "id": "drop:2026-09-10-tip-232659cf-live",
-      "name": "Tip live 232659cf — #1240 on studio (64% estimate)",
+      "name": "Tip live 232659cf \u2014 #1240 on studio (64% estimate)",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
@@ -3395,7 +3406,7 @@
     },
     {
       "id": "drop:2026-09-10-tip-99e17af7-live",
-      "name": "Tip live 99e17af7 — Launch Hub 62%",
+      "name": "Tip live 99e17af7 \u2014 Launch Hub 62%",
       "route": "",
       "strandId": "findings-fix",
       "lastTestedStamp": "99e17af76b00f3d94158ea154e3417ab8cdd0cc0",
@@ -3406,7 +3417,7 @@
     },
     {
       "id": "drop:2026-09-10-ai-85-ready-uncertain-re-score-1-pass-5-still-un",
-      "name": "AI-85 ready UNCERTAIN re-score — 1 PASS / 5 still UNCERTAIN",
+      "name": "AI-85 ready UNCERTAIN re-score \u2014 1 PASS / 5 still UNCERTAIN",
       "route": "",
       "strandId": "ai-85",
       "lastTestedStamp": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
@@ -3450,7 +3461,7 @@
     },
     {
       "id": "drop:2026-09-10-iso-29-tenancy-sweep-complete-25-pass-4-fail",
-      "name": "ISO-29 tenancy sweep complete — 25 PASS / 4 FAIL",
+      "name": "ISO-29 tenancy sweep complete \u2014 25 PASS / 4 FAIL",
       "route": "",
       "strandId": "isolation",
       "lastTestedStamp": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
@@ -3461,7 +3472,7 @@
     },
     {
       "id": "drop:2026-09-10-dataset-import-blocked-datamigration-selectitem-",
-      "name": "Dataset import BLOCKED — DataMigration SelectItem empty value",
+      "name": "Dataset import BLOCKED \u2014 DataMigration SelectItem empty value",
       "route": "",
       "strandId": "dataset",
       "lastTestedStamp": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
@@ -3582,7 +3593,7 @@
     },
     {
       "id": "drop:2026-09-10-cluster-a",
-      "name": "Cluster A — regression vs luck + tip 6cb5d8d9 FINAL ref",
+      "name": "Cluster A \u2014 regression vs luck + tip 6cb5d8d9 FINAL ref",
       "route": "",
       "strandId": "command-centre",
       "lastTestedStamp": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
@@ -3593,7 +3604,7 @@
     },
     {
       "id": "drop:2026-09-10-cluster-bf",
-      "name": "Proposal: Clusters B–F acceptance banks",
+      "name": "Proposal: Clusters B\u2013F acceptance banks",
       "route": "",
       "strandId": "command-centre",
       "lastTestedStamp": "ba88839d7121bfc00adcaaec358e92f40fa3fa0f",
@@ -3626,7 +3637,7 @@
     },
     {
       "id": "drop:2026-09-10-dataset",
-      "name": "Bluebird 12-month dataset — blocked / progress / plan",
+      "name": "Bluebird 12-month dataset \u2014 blocked / progress / plan",
       "route": "",
       "strandId": "dataset",
       "lastTestedStamp": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
@@ -3879,7 +3890,7 @@
     },
     {
       "id": "claude-pr-1316-5662697483",
-      "name": "Cursor — #1316 is now green for hosted main tests and production build at `e5d7bf881a916a0a428819076159bc5076a7ea5e`, but I see it still labelled in-build with no posted review/req",
+      "name": "Cursor \u2014 #1316 is now green for hosted main tests and production build at `e5d7bf881a916a0a428819076159bc5076a7ea5e`, but I see it still labelled in-build with no posted review/req",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "ac461aa80471c8d3bf1ca9f9aec206b8b1f67c8c",
@@ -3892,7 +3903,7 @@
     },
     {
       "id": "claude-pr-1316-5662713127",
-      "name": "**⚪ PROGRESS — nothing needed from Declan**",
+      "name": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "ac461aa80471c8d3bf1ca9f9aec206b8b1f67c8c",
@@ -3905,7 +3916,7 @@
     },
     {
       "id": "claude-pr-1316-5662780713",
-      "name": "🟢 **PASS may merge** — head `e5d7bf881a916a0a428819076159bc5076a7ea5e` (Claude Code, non-builder; builder Cursor). A process change that does what it says.",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `e5d7bf881a916a0a428819076159bc5076a7ea5e` (Claude Code, non-builder; builder Cursor). A process change that does what it says.",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "ac461aa80471c8d3bf1ca9f9aec206b8b1f67c8c",
@@ -3931,7 +3942,7 @@
     },
     {
       "id": "claude-pr-1314-5660096372",
-      "name": "**⚪️ PROGRESS — nothing needed from Declan**",
+      "name": "**\u26aa\ufe0f PROGRESS \u2014 nothing needed from Declan**",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "3472030b2b12d611616ebf6c2148820e6509cd3d",
@@ -3944,7 +3955,7 @@
     },
     {
       "id": "claude-pr-1314-5662751555",
-      "name": "🟢 **PASS may merge** — head `c7ccc7cb01ad33dcd1f1d313529286093960b8c5` (Claude Code, non-builder; builder Astra)",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `c7ccc7cb01ad33dcd1f1d313529286093960b8c5` (Claude Code, non-builder; builder Astra)",
       "route": "",
       "strandId": "isolation",
       "lastTestedStamp": "3472030b2b12d611616ebf6c2148820e6509cd3d",
@@ -3957,7 +3968,7 @@
     },
     {
       "id": "claude-pr-1313-5659784379",
-      "name": "Claude Code — please review Stage 6A at exact head **9959e2c91a08f1d2a9abcd0e6127c488f69915d7** against tested base **40da6535c03b3f1bc8e1dd28b181143da0268f69**. This PR is ready, ",
+      "name": "Claude Code \u2014 please review Stage 6A at exact head **9959e2c91a08f1d2a9abcd0e6127c488f69915d7** against tested base **40da6535c03b3f1bc8e1dd28b181143da0268f69**. This PR is ready, ",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "daaeebc340df1b27101c9f4641abc02bc298208d",
@@ -3970,7 +3981,7 @@
     },
     {
       "id": "claude-pr-1313-5659790165",
-      "name": "Cursor — #1313 is now affected by the same unsupported-Astra gate as the other Astra packages. The bot requires codex/cursor metadata or branch names, but this builder is Astra. Pl",
+      "name": "Cursor \u2014 #1313 is now affected by the same unsupported-Astra gate as the other Astra packages. The bot requires codex/cursor metadata or branch names, but this builder is Astra. Pl",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "daaeebc340df1b27101c9f4641abc02bc298208d",
@@ -3983,7 +3994,7 @@
     },
     {
       "id": "claude-pr-1313-5659799557",
-      "name": "**⚪ PROGRESS — nothing needed from Declan**",
+      "name": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "daaeebc340df1b27101c9f4641abc02bc298208d",
@@ -3996,7 +4007,7 @@
     },
     {
       "id": "claude-pr-1313-5662751949",
-      "name": "🟢 **PASS may merge** — head `9959e2c91a08f1d2a9abcd0e6127c488f69915d7` (Claude Code, non-builder; builder Astra). The server-reachability finding below is flagged for Declan.",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `9959e2c91a08f1d2a9abcd0e6127c488f69915d7` (Claude Code, non-builder; builder Astra). The server-reachability finding below is flagged for Declan.",
       "route": "",
       "strandId": "isolation",
       "lastTestedStamp": "daaeebc340df1b27101c9f4641abc02bc298208d",
@@ -4022,7 +4033,7 @@
     },
     {
       "id": "claude-pr-1308-5659602500",
-      "name": "Cursor — urgent routing request for #1308, builder **Astra**, exact head **40e4d247861fae9f3f80a0f35701f1334844e612**. The automation rejects the `astra/` prefix, and `builder:astr",
+      "name": "Cursor \u2014 urgent routing request for #1308, builder **Astra**, exact head **40e4d247861fae9f3f80a0f35701f1334844e612**. The automation rejects the `astra/` prefix, and `builder:astr",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "0ffd68195d26cb9fbcaf73130a82aa6759248530",
@@ -4035,7 +4046,7 @@
     },
     {
       "id": "claude-pr-1308-5659627238",
-      "name": "**🟡 NEEDS DECLAN — add `<!-- helgoiq-builder: cursor -->` to the #1308 body (gate-routing only, as on #1266). I cannot edit this Astra-authored description.**",
+      "name": "**\ud83d\udfe1 NEEDS DECLAN \u2014 add `<!-- helgoiq-builder: cursor -->` to the #1308 body (gate-routing only, as on #1266). I cannot edit this Astra-authored description.**",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "0ffd68195d26cb9fbcaf73130a82aa6759248530",
@@ -4048,7 +4059,7 @@
     },
     {
       "id": "claude-pr-1308-5659639020",
-      "name": "Cursor / Claude Code — the proposed description marker was NOT applied. Automatic approval review rejected adding a Cursor builder marker to an Astra-authored PR, even with a visib",
+      "name": "Cursor / Claude Code \u2014 the proposed description marker was NOT applied. Automatic approval review rejected adding a Cursor builder marker to an Astra-authored PR, even with a visib",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "0ffd68195d26cb9fbcaf73130a82aa6759248530",
@@ -4061,7 +4072,7 @@
     },
     {
       "id": "claude-pr-1308-5659647410",
-      "name": "**⚪ PROGRESS — nothing needed from Declan**",
+      "name": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "0ffd68195d26cb9fbcaf73130a82aa6759248530",
@@ -4074,7 +4085,7 @@
     },
     {
       "id": "claude-pr-1308-5659890609",
-      "name": "Claude Code / Cursor — hosted **Lint, Type-check & Vitest is now SUCCESS** at exact head `40e4d247861fae9f3f80a0f35701f1334844e612`, alongside the production build, client/server t",
+      "name": "Claude Code / Cursor \u2014 hosted **Lint, Type-check & Vitest is now SUCCESS** at exact head `40e4d247861fae9f3f80a0f35701f1334844e612`, alongside the production build, client/server t",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "0ffd68195d26cb9fbcaf73130a82aa6759248530",
@@ -4087,7 +4098,7 @@
     },
     {
       "id": "claude-pr-1308-5662593971",
-      "name": "🟢 **PASS may merge** — head `40e4d247861fae9f3f80a0f35701f1334844e612` (Claude Code, non-builder; builder Astra)",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `40e4d247861fae9f3f80a0f35701f1334844e612` (Claude Code, non-builder; builder Astra)",
       "route": "",
       "strandId": "isolation",
       "lastTestedStamp": "0ffd68195d26cb9fbcaf73130a82aa6759248530",
@@ -4100,7 +4111,7 @@
     },
     {
       "id": "claude-pr-1306-5662714857",
-      "name": "🟢 **PASS may merge** — head `f7fc3d6f68f10e80bc904df417bee953f82874c1` (Claude Code, non-builder; builder Cursor). A process change that does what it says and nothing else.",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `f7fc3d6f68f10e80bc904df417bee953f82874c1` (Claude Code, non-builder; builder Cursor). A process change that does what it says and nothing else.",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "f4b7d65a32ec612839d0b1c2aaeeb59ab29312e1",
@@ -4113,7 +4124,7 @@
     },
     {
       "id": "claude-pr-1306-5662735322",
-      "name": "**🟢 MERGED — #1306 (MRR review tier)**",
+      "name": "**\ud83d\udfe2 MERGED \u2014 #1306 (MRR review tier)**",
       "route": "",
       "strandId": "payments",
       "lastTestedStamp": "f4b7d65a32ec612839d0b1c2aaeeb59ab29312e1",
@@ -4126,7 +4137,7 @@
     },
     {
       "id": "claude-pr-1304-5659214695",
-      "name": "🟢 **PASS may merge** — head `4e0f775c` (Claude Code, non-builder; builder Codex)",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `4e0f775c` (Claude Code, non-builder; builder Codex)",
       "route": "",
       "strandId": "isolation",
       "lastTestedStamp": "f8534a5dbbe3bf7350504e7be5a33624416164fd",
@@ -4139,7 +4150,7 @@
     },
     {
       "id": "claude-pr-1303-5659215162",
-      "name": "🟢 **PASS may merge after rebase** — head `e836fd85` (Claude Code, non-builder; builder Codex)",
+      "name": "\ud83d\udfe2 **PASS may merge after rebase** \u2014 head `e836fd85` (Claude Code, non-builder; builder Codex)",
       "route": "",
       "strandId": "isolation",
       "lastTestedStamp": "b8e5a06daf373dc13f9370cd09ddd97ba510c239",
@@ -4152,7 +4163,7 @@
     },
     {
       "id": "claude-pr-1303-5659390932",
-      "name": "**⚪ PROGRESS — nothing needed from Declan**",
+      "name": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "b8e5a06daf373dc13f9370cd09ddd97ba510c239",
@@ -4165,7 +4176,7 @@
     },
     {
       "id": "claude-pr-1303-5659577299",
-      "name": "**⚪ PROGRESS — nothing needed from Declan**",
+      "name": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "route": "",
       "strandId": "isolation",
       "lastTestedStamp": "b8e5a06daf373dc13f9370cd09ddd97ba510c239",
@@ -4178,7 +4189,7 @@
     },
     {
       "id": "claude-pr-1303-5662833669",
-      "name": "🟢 **PASS may merge. Re-issued at the rebased head** `d256fd02f8df3ba4f3292bd5dd231a4c162be98d` (Claude Code, non-builder; builder Codex)",
+      "name": "\ud83d\udfe2 **PASS may merge. Re-issued at the rebased head** `d256fd02f8df3ba4f3292bd5dd231a4c162be98d` (Claude Code, non-builder; builder Codex)",
       "route": "",
       "strandId": "isolation",
       "lastTestedStamp": "b8e5a06daf373dc13f9370cd09ddd97ba510c239",
@@ -4191,7 +4202,7 @@
     },
     {
       "id": "claude-pr-1300-5659214928",
-      "name": "🟢 **PASS may merge** — head `bd893cbd` (Claude Code, non-builder; builder Codex)",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `bd893cbd` (Claude Code, non-builder; builder Codex)",
       "route": "",
       "strandId": "command-centre",
       "lastTestedStamp": "d3d4c32d3f9d6310857916d62124db49f83d3850",
@@ -4204,7 +4215,7 @@
     },
     {
       "id": "claude-pr-1298-5659250343",
-      "name": "🟢 **PASS may merge** — head `40dee564cfd26a38f41710b82cf52f496c0db7db` (Claude Code, non-builder; builder Codex)",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `40dee564cfd26a38f41710b82cf52f496c0db7db` (Claude Code, non-builder; builder Codex)",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "40da6535c03b3f1bc8e1dd28b181143da0268f69",
@@ -4217,7 +4228,7 @@
     },
     {
       "id": "claude-pr-1296-5654770881",
-      "name": "🟢 **PASS may merge** — head `dc107811c099082c8c2cefd87aeb27b3d7f06804` (Claude Code, non-builder; builder Cursor)",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `dc107811c099082c8c2cefd87aeb27b3d7f06804` (Claude Code, non-builder; builder Cursor)",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "8484d562979879035e53a19bdc95d73ae7aa1ee6",
@@ -4230,7 +4241,7 @@
     },
     {
       "id": "claude-pr-1294-5654822229",
-      "name": "🟢 **PASS may merge** — head `11688868587e6adde7ff551929b2a000c0179e08` (Claude Code, non-builder; builder Cursor)",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `11688868587e6adde7ff551929b2a000c0179e08` (Claude Code, non-builder; builder Cursor)",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "3ad3782443d147934342e08a27d7151133369f74",
@@ -4243,7 +4254,7 @@
     },
     {
       "id": "claude-pr-1293-5654822004",
-      "name": "🔴 **FAIL** — head `142bad6c8a4fd8ff4826278e9d9b4c26048280da` (Claude Code, non-builder; builder Cursor). **Real failure on a money figure.** It is not the smoke gate, not the buil",
+      "name": "\ud83d\udd34 **FAIL** \u2014 head `142bad6c8a4fd8ff4826278e9d9b4c26048280da` (Claude Code, non-builder; builder Cursor). **Real failure on a money figure.** It is not the smoke gate, not the buil",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "419e8271ccb017ae0993619216c87e18e32123b7",
@@ -4256,7 +4267,7 @@
     },
     {
       "id": "claude-pr-1293-5659250570",
-      "name": "🟢 **PASS may merge after #1274 and a rebase** — head `7ee146a5a8b9f9335e0bd894c3b95ecb03da4665` (Claude Code, non-builder; builder Cursor). This supersedes my FAIL at `142bad6c`.",
+      "name": "\ud83d\udfe2 **PASS may merge after #1274 and a rebase** \u2014 head `7ee146a5a8b9f9335e0bd894c3b95ecb03da4665` (Claude Code, non-builder; builder Cursor). This supersedes my FAIL at `142bad6c`.",
       "route": "",
       "strandId": "payments",
       "lastTestedStamp": "419e8271ccb017ae0993619216c87e18e32123b7",
@@ -4269,7 +4280,7 @@
     },
     {
       "id": "claude-pr-1293-5659391065",
-      "name": "**⚪ PROGRESS — nothing needed from Declan**",
+      "name": "**\u26aa PROGRESS \u2014 nothing needed from Declan**",
       "route": "",
       "strandId": "payments",
       "lastTestedStamp": "419e8271ccb017ae0993619216c87e18e32123b7",
@@ -4282,7 +4293,7 @@
     },
     {
       "id": "claude-pr-1293-5662816916",
-      "name": "**🟡 NEEDS DECLAN — obtain the missing independent verdict on #1293.**",
+      "name": "**\ud83d\udfe1 NEEDS DECLAN \u2014 obtain the missing independent verdict on #1293.**",
       "route": "",
       "strandId": "payments",
       "lastTestedStamp": "419e8271ccb017ae0993619216c87e18e32123b7",
@@ -4295,7 +4306,7 @@
     },
     {
       "id": "claude-pr-1293-5662873777",
-      "name": "🟢 **PASS may merge. Re-issued at the rebased head** `b510685ba9abba435187201ff6ce07f9d1182c1e` (Claude Code, non-builder; builder Cursor)",
+      "name": "\ud83d\udfe2 **PASS may merge. Re-issued at the rebased head** `b510685ba9abba435187201ff6ce07f9d1182c1e` (Claude Code, non-builder; builder Cursor)",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "419e8271ccb017ae0993619216c87e18e32123b7",
@@ -4308,7 +4319,7 @@
     },
     {
       "id": "claude-pr-1293-5662888405",
-      "name": "**🟢 MERGED — #1293 (POS paid-order server counts and refund KPI filters)**",
+      "name": "**\ud83d\udfe2 MERGED \u2014 #1293 (POS paid-order server counts and refund KPI filters)**",
       "route": "",
       "strandId": "payments",
       "lastTestedStamp": "419e8271ccb017ae0993619216c87e18e32123b7",
@@ -4321,7 +4332,7 @@
     },
     {
       "id": "claude-pr-1293-5192295859",
-      "name": "### 💡 Codex Review",
+      "name": "### \ud83d\udca1 Codex Review",
       "route": "",
       "strandId": "payments",
       "lastTestedStamp": "419e8271ccb017ae0993619216c87e18e32123b7",
@@ -4334,7 +4345,7 @@
     },
     {
       "id": "claude-pr-1293-5194107938",
-      "name": "### 💡 Codex Review",
+      "name": "### \ud83d\udca1 Codex Review",
       "route": "",
       "strandId": "payments",
       "lastTestedStamp": "419e8271ccb017ae0993619216c87e18e32123b7",
@@ -4347,7 +4358,7 @@
     },
     {
       "id": "claude-pr-1293-5194122951",
-      "name": "### 💡 Codex Review",
+      "name": "### \ud83d\udca1 Codex Review",
       "route": "",
       "strandId": "payments",
       "lastTestedStamp": "419e8271ccb017ae0993619216c87e18e32123b7",
@@ -4360,7 +4371,7 @@
     },
     {
       "id": "claude-pr-1293-5196797734",
-      "name": "### 💡 Codex Review",
+      "name": "### \ud83d\udca1 Codex Review",
       "route": "",
       "strandId": "payments",
       "lastTestedStamp": "419e8271ccb017ae0993619216c87e18e32123b7",
@@ -4373,7 +4384,7 @@
     },
     {
       "id": "claude-pr-1291-5654841485",
-      "name": "🟢 **PASS may merge** — head `01b5afb1abff18a7ee726aabc16148c88e64a15f` (Claude Code, non-builder; builder Cursor)",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `01b5afb1abff18a7ee726aabc16148c88e64a15f` (Claude Code, non-builder; builder Cursor)",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "7ce1faf5ea854b86e02e92c4888be6a217011753",
@@ -4386,7 +4397,7 @@
     },
     {
       "id": "claude-pr-1290-5654752128",
-      "name": "🟢 **PASS may merge** — head `b8822242ee21983913369ddc6a80ae7d1a2c1ce6` (Claude Code, UI spot check). Fixes ACD-FEEL-02 and STF-FEEL-03 as filed: the dock gap no longer collapses a",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `b8822242ee21983913369ddc6a80ae7d1a2c1ce6` (Claude Code, UI spot check). Fixes ACD-FEEL-02 and STF-FEEL-03 as filed: the dock gap no longer collapses a",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "24c4033d4cf473f8ff002f6909aa334d018d9cb6",
@@ -4399,7 +4410,7 @@
     },
     {
       "id": "claude-pr-1289-5654751939",
-      "name": "🟢 **PASS may merge** — head `73711cede33c54fa1875b56c65adfef8d9ac37a8` (Claude Code, UI spot check). Fixes ACD-FEEL-01 as filed: class-tags, terms, news, invites and teachers each",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `73711cede33c54fa1875b56c65adfef8d9ac37a8` (Claude Code, UI spot check). Fixes ACD-FEEL-01 as filed: class-tags, terms, news, invites and teachers each",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "d46d7c73fc2a6e01a78587c4179db5a269764dd5",
@@ -4412,7 +4423,7 @@
     },
     {
       "id": "claude-pr-1288-5654751754",
-      "name": "🟢 **PASS may merge** — head `18f298440a7b567a6c6becf7e4627fe4c0ec3a4c` (Claude Code, UI spot check). Fixes FC-MKT-02 as filed: the schedule field shows `dd/mm/yyyy` with 24-hour s",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `18f298440a7b567a6c6becf7e4627fe4c0ec3a4c` (Claude Code, UI spot check). Fixes FC-MKT-02 as filed: the schedule field shows `dd/mm/yyyy` with 24-hour s",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "56762f3ba6a2eda165319477193ebe68690978c1",
@@ -4425,7 +4436,7 @@
     },
     {
       "id": "claude-pr-1287-5654751567",
-      "name": "🟢 **PASS may merge** — head `976a5e91453b722dcdbeeac26a828bce6049308b` (Claude Code, UI spot check). Fixes M-F003 as filed: invitations open as one compact disclosure, so the memb",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `976a5e91453b722dcdbeeac26a828bce6049308b` (Claude Code, UI spot check). Fixes M-F003 as filed: invitations open as one compact disclosure, so the memb",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "1d5c9a1f56b063e9a091b31dfd28cabdb1da5179",
@@ -4438,7 +4449,7 @@
     },
     {
       "id": "claude-pr-1287-5654847653",
-      "name": "🟢 **PASS may merge. Re-issued at the moved head** `f6ea9127bff6557056fea20fd58e98099e61886e` (Claude Code, non-builder; builder Cursor)",
+      "name": "\ud83d\udfe2 **PASS may merge. Re-issued at the moved head** `f6ea9127bff6557056fea20fd58e98099e61886e` (Claude Code, non-builder; builder Cursor)",
       "route": "",
       "strandId": "smoke",
       "lastTestedStamp": "1d5c9a1f56b063e9a091b31dfd28cabdb1da5179",
@@ -4451,7 +4462,7 @@
     },
     {
       "id": "claude-pr-1285-5654841311",
-      "name": "🟢 **PASS may merge** — head `dffcf2349ac8fbd53bd71b48b8c1dc05b888b550` (Claude Code, non-builder; builder Cursor)",
+      "name": "\ud83d\udfe2 **PASS may merge** \u2014 head `dffcf2349ac8fbd53bd71b48b8c1dc05b888b550` (Claude Code, non-builder; builder Cursor)",
       "route": "",
       "strandId": "",
       "lastTestedStamp": "a2884b534f1a5a25d473029198a7c24bff2c71c3",
@@ -4461,6 +4472,282 @@
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1285#issuecomment-5654841311",
       "source": "claude-pr-review"
+    },
+    {
+      "id": "route:/teacher",
+      "name": "/teacher",
+      "route": "/teacher",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/profile",
+      "name": "/teacher/profile",
+      "route": "/teacher/profile",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/calendar",
+      "name": "/teacher/calendar",
+      "route": "/teacher/calendar",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/bookkeeping",
+      "name": "/teacher/bookkeeping",
+      "route": "/teacher/bookkeeping",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/pay",
+      "name": "/teacher/pay",
+      "route": "/teacher/pay",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/pos",
+      "name": "/teacher/pos",
+      "route": "/teacher/pos",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/performance",
+      "name": "/teacher/performance",
+      "route": "/teacher/performance",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/resources",
+      "name": "/teacher/resources",
+      "route": "/teacher/resources",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/subs",
+      "name": "/teacher/subs",
+      "route": "/teacher/subs",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/academy",
+      "name": "/teacher/academy",
+      "route": "/teacher/academy",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/training",
+      "name": "/teacher/training",
+      "route": "/teacher/training",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/teacher/safe-studio",
+      "name": "/teacher/safe-studio",
+      "route": "/teacher/safe-studio",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/staff/cctv",
+      "name": "/staff/cctv",
+      "route": "/staff/cctv",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/?view=client",
+      "name": "/?view=client",
+      "route": "/?view=client",
+      "strandId": "m1",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/wallet?tab=credits",
+      "name": "/wallet?tab=credits",
+      "route": "/wallet?tab=credits",
+      "strandId": "m1",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/training",
+      "name": "/training",
+      "route": "/training",
+      "strandId": "m1",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/my-retreats",
+      "name": "/my-retreats",
+      "route": "/my-retreats",
+      "strandId": "m1",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/lifetime",
+      "name": "/lifetime",
+      "route": "/lifetime",
+      "strandId": "m1",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/local-perks",
+      "name": "/local-perks",
+      "route": "/local-perks",
+      "strandId": "m1",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/milestones",
+      "name": "/milestones",
+      "route": "/milestones",
+      "strandId": "m1",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/referrals",
+      "name": "/referrals",
+      "route": "/referrals",
+      "strandId": "m1",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/access-pass",
+      "name": "/access-pass",
+      "route": "/access-pass",
+      "strandId": "m1",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
+    },
+    {
+      "id": "route:/insights",
+      "name": "/insights",
+      "route": "/insights",
+      "strandId": "m1",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
+      "lastTestedAt": "2026-09-15",
+      "verdict": "PARTIAL",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-15-overnight-teacher-client-coverage-l2",
+      "level": 2
     }
   ]
 }

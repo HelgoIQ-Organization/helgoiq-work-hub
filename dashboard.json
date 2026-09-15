@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-15T08:54:37.916Z",
+  "updatedAt": "2026-09-15T09:08:09.398Z",
   "meta": {
     "dataAsOf": "2026-09-15T08:54:37.916Z",
     "buildStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
@@ -93,7 +93,7 @@
     "updatedAt": "2026-09-15T08:54:37.916Z",
     "coverageNote": "After AI L2 Intel: L\u22651=372 (90%); L\u22652=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
-    "smokeSixStep": "FAIL 1/6 last Measured on tip 3ad37824 (step1 #1296 PASS; step2 locator FAIL; 3\u20136 skipped). #1298 exact membership selector NOW on tip 40da6535 \u2014 retest pending.",
+    "smokeSixStep": "FAIL tip ac845589 run 34950293524: step2 409 active/cancelling membership on helgoiq-bb-smoke (Declan skipped Stripe immediate-cancel); steps 3\u20136 did not run. Join-and-pay also FAIL. Not PASS.",
     "pulse1266": "PASS Owner seat overnight on tip 3ad37824",
     "censusCoreL1": "80/88 PASS tip 6486be87; Coverage merge done",
     "censusContentL1": "25/25 PASS Website/Blog tip 6486be87 MERGED",
@@ -302,7 +302,9 @@
       ],
       "at": "2026-09-15T06:34:35.261Z",
       "note": "Material product tip (comms P0 + Astra/Pulse + CC + Stripe + import bind + smoke overlays). Headline held ~68% \u2014 no strand invent without Bluebird Measured. #1310 may address dataset companyId bind \u2014 canary retest required before claiming. #1213 code live \u2014 secrets/E2E still gate Measured comms."
-    }
+    },
+    "censusTeacherClientL2": "Teacher 1P/10Part/2F tip e3ba86e8 \u00b7 Client 0P/21Part tip ac845589 \u00b7 client isolation I080\u2013I083 PASS",
+    "feelSafeStudioSettings": "Safe Studio measured 53 (J58/O48/F52); Settings measured 45 (J50/O34/F52); NOTE-1313 isolation FAIL"
   },
   "strands": [
     {
@@ -380,9 +382,10 @@
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
       "measuredNote": "Prior tip 232659cf ISO-29 complete: 26/4/2. #1250 on a263c4ab not yet re-measured.",
-      "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
       "lastTestedVerdict": "FAIL",
-      "coverageFreshness": "stale"
+      "coverageFreshness": "current",
+      "lastTestedAt": "2026-09-15"
     },
     {
       "id": "ai-85",
@@ -459,16 +462,17 @@
       "phaseId": "member-commerce",
       "projectWeightPercent": 10,
       "measuredNote": "Members Feel #1284/#1287/#1285 PASS overnight on 3ad37824. Wave1 held from 232659cf.",
-      "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
       "lastTestedVerdict": "FAIL",
-      "coverageFreshness": "stale"
+      "coverageFreshness": "current",
+      "lastTestedAt": "2026-09-15"
     },
     {
       "id": "smoke",
       "name": "Critical path smoke",
       "percent": 72,
       "basis": "estimate",
-      "status": "at-risk",
+      "status": "FAIL",
       "plainSummary": "#1337 smoke CI reconciliation now on tip ac845589 with #1331 checkout response diagnostic and #1307 overlays. Six-step last Measured FAIL 1/6 on 3ad37824; retest pending. Estimate 72%.",
       "progressNote": "Held 72% estimate \u2014 tip ac845589. #1337 smoke CI reconciliation + #1331 diagnostic + #1307 overlays ON tip. Six-step last Measured FAIL 1/6; retest pending.",
       "blockers": [
@@ -484,10 +488,11 @@
       "phaseId": "member-commerce",
       "projectWeightPercent": 6,
       "measuredNote": "#1296 step1 PASS; six-step FAIL 1/6 overnight on 3ad37824.",
-      "lastTestedStamp": "a263c4ab3e85e24d82f292268a2427907ae7eec4",
+      "lastTestedStamp": "ac845589404b78c308cc30e5aee81eb9e648a220",
       "lastTestedVerdict": "FAIL",
-      "coverageFreshness": "stale",
-      "lastNote": "Estimate 72% \u2014 #1331 diagnostic live on tip e3ba86e8; retest six-step before claiming Measured."
+      "coverageFreshness": "current",
+      "lastNote": "Estimate 72% \u2014 #1331 diagnostic live on tip e3ba86e8; retest six-step before claiming Measured.",
+      "lastTestedAt": "2026-09-15"
     },
     {
       "id": "payments",
@@ -544,9 +549,10 @@
       ],
       "phaseId": "launch-hardening",
       "projectWeightPercent": 10,
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
       "lastTestedVerdict": "FAIL",
-      "coverageFreshness": "stale"
+      "coverageFreshness": "stale",
+      "lastTestedAt": "2026-09-15"
     },
     {
       "id": "comms",
