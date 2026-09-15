@@ -1,12 +1,37 @@
 {
-  "updatedAt": "2026-09-15T19:14:40.855Z",
+  "updatedAt": "2026-09-15T20:57:58.844Z",
   "drops": [
+    {
+      "id": "2026-09-15-overnight-aee3b690-breakfast",
+      "title": "Overnight breakfast pack aee3b690",
+      "date": "2026-09-15",
+      "summary": "Overnight FINAL: dataset getById 403 blocks Confirm/12m; CC A 24/24 + B-F 15/30; Feel Forms+6 CC-7; ISO 25P/4EF; tip aee3b690 no drift.",
+      "plainEnglish": "Overnight pack done on tip aee3b690. Biggest blocker: company Admin gets 403 on dataset batch getById so Confirm never appears and the 12-month load is stuck. Command Centre Cluster A is 24/24; B–F finished 15 pass / 15 fail. Feel mostly up (Forms +6) but Command Centre dropped 7. Isolation 25 pass with 4 expected fails still open for #1309.",
+      "tags": [
+        "status",
+        "findings",
+        "dataset",
+        "smoke",
+        "command-centre",
+        "isolation",
+        "ai-85"
+      ],
+      "type": "pack",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-15-overnight-aee3b690-breakfast/BREAKFAST.md",
+        "drops/2026-09-15-overnight-aee3b690-breakfast/AFTER-SCORES.md",
+        "drops/2026-09-15-overnight-aee3b690-breakfast/RESULTS.md",
+        "drops/2026-09-15-overnight-aee3b690-breakfast/SECTION-LEDGER.md"
+      ],
+      "tip": "aee3b690b2f895393adf2b636dfc0c202d5d43fc"
+    },
     {
       "id": "2026-09-15-comms-retest-aee3b690",
       "title": "Comms retest PARTIAL tip aee3b690",
       "date": "2026-09-15",
-      "summary": "Measured PARTIAL on tip aee3b690: #1213 booking confirm PASS (Member A Agentmail + History); cancel PARTIAL; newsletter BLOCKED; reminder N/A. #1343 PARTIAL (no notify). #1344 BLOCKED (admin-2 only). Consent UNTESTED. Comms strand 18\u219225 measured.",
-      "plainEnglish": "Bluebird Your Moves \u00a73 comms retest on tip aee3b690 came back PARTIAL \u2014 one solid booking confirmation proof (mail + History Sent), but cancel notify, cover notify, journey proof-inbox recipient, newsletter, and consent still open.",
+      "summary": "Measured PARTIAL on tip aee3b690: #1213 booking confirm PASS (Member A Agentmail + History); cancel PARTIAL; newsletter BLOCKED; reminder N/A. #1343 PARTIAL (no notify). #1344 BLOCKED (admin-2 only). Consent UNTESTED. Comms strand 18→25 measured.",
+      "plainEnglish": "Bluebird Your Moves §3 comms retest on tip aee3b690 came back PARTIAL — one solid booking confirmation proof (mail + History Sent), but cancel notify, cover notify, journey proof-inbox recipient, newsletter, and consent still open.",
       "tags": [
         "census",
         "booking",
@@ -21,7 +46,7 @@
     },
     {
       "id": "2026-09-15-tip-aee3b690-afternoon-pack-complete-1343",
-      "title": "Tip aee3b690 \u2014 afternoon pack complete (#1343)",
+      "title": "Tip aee3b690 — afternoon pack complete (#1343)",
       "date": "2026-09-15",
       "summary": "Live tip aee3b690; #1343 cover-swap notifications live; headline estimate ~69%",
       "plainEnglish": "Live tip aee3b690; #1343 cover-swap notifications live; headline estimate ~69%",
@@ -80,7 +105,7 @@
       "id": "2026-09-15-overnight-teacher-client-coverage-l2",
       "title": "Overnight Teacher+Client Coverage L2 tip e3ba86e8/ac845589",
       "date": "2026-09-15",
-      "summary": "Teacher 1P/10Part/2F (tip e3ba86e8) + Client 0P/21Part (tip ac845589). Client isolation I080\u2013I083 PASS. Profile vs home figure disagree on Teacher.",
+      "summary": "Teacher 1P/10Part/2F (tip e3ba86e8) + Client 0P/21Part (tip ac845589). Client isolation I080–I083 PASS. Profile vs home figure disagree on Teacher.",
       "plainEnglish": "Teacher hub: 1 pass, 10 partial, 2 fail. Client hub: 21 partial, isolation pass. Biggest Teacher bug: profile numbers disagree with home.",
       "tags": [
         "census",
@@ -104,7 +129,7 @@
       "title": "Feel measured: Safe Studio 53 + Settings 45",
       "date": "2026-09-15",
       "summary": "Safe Studio overall 53 (J58/O48/F52) and Settings 45 (J50/O34/F52) measured on tip e3ba86e8; NOTE-1313 Refrm Academy on Bluebird isolation FAIL.",
-      "plainEnglish": "Safe Studio scored 53 and Settings 45 on today's walk. Settings still shows a Refrm-named feature on Bluebird \u2014 isolation trust hole.",
+      "plainEnglish": "Safe Studio scored 53 and Settings 45 on today's walk. Settings still shows a Refrm-named feature on Bluebird — isolation trust hole.",
       "tags": [
         "census",
         "status",
@@ -128,9 +153,9 @@
     },
     {
       "id": "2026-09-15-launch-hub-tip-e3ba86e8-1331-smoke-diagnostic-he",
-      "title": "Launch Hub tip e3ba86e8 \u2014 #1331 smoke diagnostic, headline held 68%",
+      "title": "Launch Hub tip e3ba86e8 — #1331 smoke diagnostic, headline held 68%",
       "date": "2026-09-15",
-      "summary": "Staging tip 32e8f686\u2192e3ba86e8 with #1331 checkout response diagnostic. Headline held ~68%.",
+      "summary": "Staging tip 32e8f686→e3ba86e8 with #1331 checkout response diagnostic. Headline held ~68%.",
       "plainEnglish": "Tuesday late morning: staging tip moved to e3ba86e8. #1331 smoke join-pay checkout diagnostic is live. Launch readiness still about 68% until Bluebird retests. Never import.rollbackBatch.",
       "tags": [
         "smoke",
@@ -146,7 +171,7 @@
     },
     {
       "id": "2026-09-15-cluster-a-tip-32e8f686-0-24-blocked-missing-comp",
-      "title": "Cluster A tip 32e8f686 \u2014 0/24 BLOCKED (missing computerUse)",
+      "title": "Cluster A tip 32e8f686 — 0/24 BLOCKED (missing computerUse)",
       "date": "2026-09-15",
       "summary": "0/24 BLOCKED: nested executor missing Task/computerUse; B-F locked; tip live early-auth-response-finish-v1; Teacher2 not_run",
       "plainEnglish": "0/24 BLOCKED: nested executor missing Task/computerUse; B-F locked; tip live early-auth-response-finish-v1; Teacher2 not_run",
@@ -164,9 +189,9 @@
     },
     {
       "id": "2026-09-15-launch-hub-tip-32e8f686-eleven-pr-wave-headline-",
-      "title": "Launch Hub tip 32e8f686 \u2014 eleven-PR wave, headline held 68%",
+      "title": "Launch Hub tip 32e8f686 — eleven-PR wave, headline held 68%",
       "date": "2026-09-15",
-      "summary": "Staging tip ed71129c\u219232e8f686 with #1213/#1310/#1307/#1311/#1297/#1322/#1338/#1326/#1312/#1320/#1323. Headline held ~68%.",
+      "summary": "Staging tip ed71129c→32e8f686 with #1213/#1310/#1307/#1311/#1297/#1322/#1338/#1326/#1312/#1320/#1323. Headline held ~68%.",
       "plainEnglish": "Tuesday morning: staging tip moved to 32e8f686. Eleven PRs live including automated comms P0 and Astra/Pulse. Launch readiness still about 68% until Bluebird retests. Never import.rollbackBatch.",
       "tags": [
         "status",
@@ -207,8 +232,8 @@
       "id": "2026-09-14-launch-hub-tip-daaeebc3-astra-pack-live",
       "title": "Launch Hub tip daaeebc3 Astra pack live",
       "date": "2026-09-14",
-      "summary": "Tip 5a5e939c\u2192daaeebc3; Astra pack #1308/#1313/#1314/#1316 live; headline ~68% estimate",
-      "plainEnglish": "Tip 5a5e939c\u2192daaeebc3; Astra pack #1308/#1313/#1314/#1316 live; headline ~68% estimate",
+      "summary": "Tip 5a5e939c→daaeebc3; Astra pack #1308/#1313/#1314/#1316 live; headline ~68% estimate",
+      "plainEnglish": "Tip 5a5e939c→daaeebc3; Astra pack #1308/#1313/#1314/#1316 live; headline ~68% estimate",
       "tags": [
         "status",
         "command-centre",
@@ -225,7 +250,7 @@
     },
     {
       "id": "2026-09-14-await-tip-1303-cluster-c-booking-block",
-      "title": "Await tip \u2014 #1303 Cluster C booking-block",
+      "title": "Await tip — #1303 Cluster C booking-block",
       "date": "2026-09-14",
       "summary": "\\#1303 merged to staging; live tip still 1fa31d14; headline ~66% held; await DO deploy",
       "plainEnglish": "\\#1303 merged to staging; live tip still 1fa31d14; headline ~66% held; await DO deploy",
@@ -245,7 +270,7 @@
       "id": "2026-09-14-ai-85-provisional-rescore-tip-40da6535-fc-21-21",
       "title": "AI-85 provisional rescore tip 40da6535 (FC 21/21)",
       "date": "2026-09-14",
-      "summary": "AI-85 provisional set re-scored after PA Feature Controls 21/21 on tip 40da6535; UNCERTAIN 23\u219221, UNREACHABLE 8\u219210 (AI-008/009 PA gate); no PASS upgrades; flags no longer the blocker.",
+      "summary": "AI-85 provisional set re-scored after PA Feature Controls 21/21 on tip 40da6535; UNCERTAIN 23→21, UNREACHABLE 8→10 (AI-008/009 PA gate); no PASS upgrades; flags no longer the blocker.",
       "plainEnglish": "Bluebird AI feature flags are on. We re-checked the uncertain AI pages: two need Platform Admin access, four still have no page, and the rest open but still lack useful studio data.",
       "tags": [
         "ai-85",
@@ -300,9 +325,9 @@
     },
     {
       "id": "2026-09-14-launch-hub-tip-40da6535-4-live",
-      "title": "Launch Hub tip 40da6535 \u2014 +4 live",
+      "title": "Launch Hub tip 40da6535 — +4 live",
       "date": "2026-09-14",
-      "summary": "Tip moved af7e6009\u219240da6535 with #1304/#1300/#1268/#1298 live. Headline estimate ~65%. Bluebird retests pending.",
+      "summary": "Tip moved af7e6009→40da6535 with #1304/#1300/#1268/#1298 live. Headline estimate ~65%. Bluebird retests pending.",
       "plainEnglish": "Staging tip just moved. Four fixes are live now (Cluster C North timetable, Command Centre send guidance, public QR checkout, and the smoke membership selector). Launch readiness estimate is about 65%. We still need Bluebird retests before calling any of those Measured PASS.",
       "tags": [
         "status",
@@ -319,10 +344,10 @@
     },
     {
       "id": "2026-09-14-launch-hub-tip-af7e6009-overview-intel-morning-p",
-      "title": "Launch Hub tip af7e6009 \u2014 Overview/Intel morning pack",
+      "title": "Launch Hub tip af7e6009 — Overview/Intel morning pack",
       "date": "2026-09-14",
-      "summary": "Tip 3ad37824\u2192af7e6009 (#1279/#1286/#1274). Headline ~63%. Overnight Feel/Pulse folded; new pack pending retest.",
-      "plainEnglish": "Tip 3ad37824\u2192af7e6009 (#1279/#1286/#1274). Headline ~63%. Overnight Feel/Pulse folded; new pack pending retest.",
+      "summary": "Tip 3ad37824→af7e6009 (#1279/#1286/#1274). Headline ~63%. Overnight Feel/Pulse folded; new pack pending retest.",
+      "plainEnglish": "Tip 3ad37824→af7e6009 (#1279/#1286/#1274). Headline ~63%. Overnight Feel/Pulse folded; new pack pending retest.",
       "tags": [
         "status",
         "findings"
@@ -383,7 +408,7 @@
       "id": "2026-09-13-overnight-breakfast-tip-3ad37824",
       "title": "Overnight breakfast tip 3ad37824",
       "date": "2026-09-13",
-      "summary": "Tip stable 3ad37824. Feel 42\u219246 Website 65\u219272. Smoke FAIL locator. #1290 NEED_DECLAN. ISO 18/20/27/29 FAIL. Stage1B PASS. #1265 agents paused.",
+      "summary": "Tip stable 3ad37824. Feel 42→46 Website 65→72. Smoke FAIL locator. #1290 NEED_DECLAN. ISO 18/20/27/29 FAIL. Stage1B PASS. #1265 agents paused.",
       "plainEnglish": true,
       "tags": [
         "overnight",
@@ -405,7 +430,7 @@
       "title": "Feel before / after gallery",
       "date": "2026-09-13",
       "summary": "15 merged Feel fixes with Before|After shots on tip 3ad37824.",
-      "plainEnglish": "The Feel tab Improvements strip shows 15 paired screenshots for the evening Feel pack. After shots are on the live tip \u2014 click a thumbnail for full size. After pending only appears if a file is missing.",
+      "plainEnglish": "The Feel tab Improvements strip shows 15 paired screenshots for the evening Feel pack. After shots are on the live tip — click a thumbnail for full size. After pending only appears if a file is missing.",
       "tags": [
         "status",
         "findings"
@@ -422,8 +447,8 @@
       "id": "2026-09-13-tip-3ad37824-evening-feel-pack-live",
       "title": "Tip 3ad37824 evening Feel pack live",
       "date": "2026-09-13",
-      "summary": "Staging tip moved fa78ec61\u21923ad37824; Feel/CMS/Academy pack live; headline ~63%",
-      "plainEnglish": "Staging tip moved fa78ec61\u21923ad37824; Feel/CMS/Academy pack live; headline ~63%",
+      "summary": "Staging tip moved fa78ec61→3ad37824; Feel/CMS/Academy pack live; headline ~63%",
+      "plainEnglish": "Staging tip moved fa78ec61→3ad37824; Feel/CMS/Academy pack live; headline ~63%",
       "tags": [
         "status",
         "findings"
@@ -439,7 +464,7 @@
       "id": "2026-09-13-launch-hub-tip-fa78ec61-1270-live-cms-1280-pack-",
       "title": "Launch Hub tip fa78ec61 (#1270 live; CMS #1280 pack ahead)",
       "date": "2026-09-13",
-      "summary": "Tip moved f40075da\u2192fa78ec61. #1270 live. #1280/#1281/#1283 merged ahead of tip. Headline held 63%.",
+      "summary": "Tip moved f40075da→fa78ec61. #1270 live. #1280/#1281/#1283 merged ahead of tip. Headline held 63%.",
       "plainEnglish": "Staging tip moved to the finance-name privacy fix. Phone Website/Blog hub fixes merged but not live on tip yet. Launch readiness still about 63%.",
       "tags": [
         "status",
@@ -455,7 +480,7 @@
     },
     {
       "id": "2026-09-13-claude-dispatch-onboarding-forever-live",
-      "title": "Claude dispatch \u2014 onboarding forever-live",
+      "title": "Claude dispatch — onboarding forever-live",
       "date": "2026-09-13",
       "summary": "Git auto-deploy for onboarding.helgoiq.com via HelgoIQ-Organization/helgoiq-onboarding",
       "plainEnglish": "Git auto-deploy for onboarding.helgoiq.com via HelgoIQ-Organization/helgoiq-onboarding",
@@ -470,9 +495,9 @@
     },
     {
       "id": "2026-09-13-progress-for-claude",
-      "title": "Progress for Claude \u2014 smoke, Feel, testing (13 Sep)",
+      "title": "Progress for Claude — smoke, Feel, testing (13 Sep)",
       "date": "2026-09-13",
-      "summary": "Live tip f40075da. Smoke 401 fixed (#1295) but invite replay still fails. Feel ~42% (9/15 measured), ~20 fix PRs open. Launch ~63\u201366%. CC A 24/24 \u00b7 M2 4/30. Pulse 0 CRITICAL = placeholder.",
+      "summary": "Live tip f40075da. Smoke 401 fixed (#1295) but invite replay still fails. Feel ~42% (9/15 measured), ~20 fix PRs open. Launch ~63–66%. CC A 24/24 · M2 4/30. Pulse 0 CRITICAL = placeholder.",
       "plainEnglish": "Staging tip moved to f40075da. Smoke Clerk 401 is fixed but the gate is still red on invitation replay. Feel board about 42% with nine surfaces measured and about twenty fix PRs waiting. Launch health still mid-60s. Pulse showing 0 Critical is likely a placeholder, not a real score.",
       "tags": [
         "status",
@@ -492,8 +517,8 @@
       "id": "2026-09-13-feel-measured-academy-staff",
       "title": "Feel measured: Academy + Staff",
       "date": "2026-09-13",
-      "summary": "Academy overall 33 (misroutes); Staff overall 43 (Unknown profile, clipped tabs, rota dock). Headline ~42 \u00b7 9/15 measured.",
-      "plainEnglish": "Academy Feel measured at 33% \u2014 named URLs still open the wrong job. Staff at 43% \u2014 warmer hub, but a known teacher shows as Unknown and tabs clip. Feel board overall about 42% with nine surfaces measured.",
+      "summary": "Academy overall 33 (misroutes); Staff overall 43 (Unknown profile, clipped tabs, rota dock). Headline ~42 · 9/15 measured.",
+      "plainEnglish": "Academy Feel measured at 33% — named URLs still open the wrong job. Staff at 43% — warmer hub, but a known teacher shows as Unknown and tabs clip. Feel board overall about 42% with nine surfaces measured.",
       "tags": [
         "census",
         "findings",
@@ -529,7 +554,7 @@
     },
     {
       "id": "2026-09-13-coverage-l2-long-tail-leftover-14",
-      "title": "Coverage L2 \u2014 Long-tail leftover 14",
+      "title": "Coverage L2 — Long-tail leftover 14",
       "date": "2026-09-13",
       "summary": "14 leftover L2 rows: 0 PASS / 14 PARTIAL. Wave-4 list 157/157 complete. Do not double-count recovered 5.",
       "plainEnglish": "14 leftover L2 rows: 0 PASS / 14 PARTIAL. Wave-4 list 157/157 complete. Do not double-count recovered 5.",
@@ -566,10 +591,10 @@
     },
     {
       "id": "2026-09-13-ux-bar-feel",
-      "title": "UX Feel bar \u2014 Joyful \u00b7 Obvious \u00b7 Frictionless",
+      "title": "UX Feel bar — Joyful · Obvious · Frictionless",
       "date": "2026-09-13",
       "summary": "Feel board: headline ~38% overall across 15 surfaces. Team chat measured (26%); others provisional from L2 fails/misroutes/known P0s.",
-      "plainEnglish": "New Feel tab scores joyful / obvious / frictionless vs WhatsApp & Slack. Only team chat is a real measured QA pass (~26%). Everything else is an honest provisional from Coverage L2 and known defects \u2014 not invented lab numbers.",
+      "plainEnglish": "New Feel tab scores joyful / obvious / frictionless vs WhatsApp & Slack. Only team chat is a real measured QA pass (~26%). Everything else is an honest provisional from Coverage L2 and known defects — not invented lab numbers.",
       "tags": [
         "status",
         "findings"
@@ -599,7 +624,7 @@
     },
     {
       "id": "2026-09-12-coverage-l2-long-tail-after-charts-new",
-      "title": "Coverage L2 \u2014 Long-tail after charts/new",
+      "title": "Coverage L2 — Long-tail after charts/new",
       "date": "2026-09-12",
       "summary": "15 new L2 rows after charts/new: 0 PASS / 15 PARTIAL / 0 FAIL. Aliases only. Do not double-count 4a.",
       "plainEnglish": "15 new L2 rows after charts/new: 0 PASS / 15 PARTIAL / 0 FAIL. Aliases only. Do not double-count 4a.",
@@ -638,8 +663,8 @@
       "id": "2026-09-13-helgoiq-progress",
       "title": "HelgoIQ progress 13 Sep (EEST)",
       "date": "2026-09-12",
-      "summary": "Launch health 63%. Coverage L\u22652 77%. CC Milestone 2 B\u2013F 4/30. Longtail L2 still walking.",
-      "plainEnglish": "Launch health is 63%. Coverage of exercised pages is at 77%. Command Centre scored Milestone 2 at only 4 of 30 \u2014 Cluster A is still perfect. Biggest unlocks: Codex on those fails, dataset companyId fix, and Comms secrets when you are back.",
+      "summary": "Launch health 63%. Coverage L≥2 77%. CC Milestone 2 B–F 4/30. Longtail L2 still walking.",
+      "plainEnglish": "Launch health is 63%. Coverage of exercised pages is at 77%. Command Centre scored Milestone 2 at only 4 of 30 — Cluster A is still perfect. Biggest unlocks: Codex on those fails, dataset companyId fix, and Comms secrets when you are back.",
       "tags": [
         "status",
         "findings",
@@ -655,7 +680,7 @@
     },
     {
       "id": "2026-09-12-coverage-l2-long-tail-chunk-3",
-      "title": "Coverage L2 \u2014 Long-tail chunk 3",
+      "title": "Coverage L2 — Long-tail chunk 3",
       "date": "2026-09-12",
       "summary": "Long-tail L2 chunk 3: 30 routes, 1 PASS / 29 PARTIAL / 0 FAIL. PASS audit-trail. Writes withheld. No defects.",
       "plainEnglish": "Long-tail L2 chunk 3: 30 routes, 1 PASS / 29 PARTIAL / 0 FAIL. PASS audit-trail. Writes withheld. No defects.",
@@ -674,10 +699,10 @@
     },
     {
       "id": "2026-09-12-coverage-l2-long-tail-chunk-2",
-      "title": "Coverage L2 \u2014 Long-tail chunk 2",
+      "title": "Coverage L2 — Long-tail chunk 2",
       "date": "2026-09-12",
-      "summary": "Long-tail L2 chunk 2: 30 routes, 3 PASS / 27 PARTIAL / 0 FAIL. Writes withheld. Gift cards 5 issued / \u00a3125 / \u00a3100 outstanding.",
-      "plainEnglish": "Long-tail L2 chunk 2: 30 routes, 3 PASS / 27 PARTIAL / 0 FAIL. Writes withheld. Gift cards 5 issued / \u00a3125 / \u00a3100 outstanding.",
+      "summary": "Long-tail L2 chunk 2: 30 routes, 3 PASS / 27 PARTIAL / 0 FAIL. Writes withheld. Gift cards 5 issued / £125 / £100 outstanding.",
+      "plainEnglish": "Long-tail L2 chunk 2: 30 routes, 3 PASS / 27 PARTIAL / 0 FAIL. Writes withheld. Gift cards 5 issued / £125 / £100 outstanding.",
       "tags": [
         "census",
         "findings",
@@ -695,8 +720,8 @@
       "id": "2026-09-12-milestone-2-bf-4-30",
       "title": "Milestone 2 Clusters B-F 4/30",
       "date": "2026-09-12",
-      "summary": "Milestone 2 B\u2013F frozen bank scored 4/30 on tip 6486be87. A still 24/24. CC strand 48%. 26 FAIL for Codex on #1180.",
-      "plainEnglish": "Command Centre passed only 4 of 30 Milestone 2 questions. Cluster A is still perfect (24/24). Failures are mostly invented how-to paths and missing named refuse reasons \u2014 engineering has the list on #1180.",
+      "summary": "Milestone 2 B–F frozen bank scored 4/30 on tip 6486be87. A still 24/24. CC strand 48%. 26 FAIL for Codex on #1180.",
+      "plainEnglish": "Command Centre passed only 4 of 30 Milestone 2 questions. Cluster A is still perfect (24/24). Failures are mostly invented how-to paths and missing named refuse reasons — engineering has the list on #1180.",
       "tags": [
         "command-centre",
         "findings",
@@ -730,7 +755,7 @@
     },
     {
       "id": "2026-09-12-coverage-l2-academy-chunk-1",
-      "title": "Coverage L2 \u2014 Academy chunk 1",
+      "title": "Coverage L2 — Academy chunk 1",
       "date": "2026-09-12",
       "summary": "Academy L2 chunk 1: 30 routes, 6 PASS / 16 PARTIAL / 8 FAIL. Eight Academy misroutes remain (tags/terms/news/invites/design/groups/recordings/exercises).",
       "plainEnglish": "Academy L2 chunk 1: 30 routes, 6 PASS / 16 PARTIAL / 8 FAIL. Eight Academy misroutes remain (tags/terms/news/invites/design/groups/recordings/exercises).",
@@ -749,10 +774,10 @@
     },
     {
       "id": "2026-09-12-coverage-l2-settings-chunk",
-      "title": "Coverage L2 \u2014 Settings chunk",
+      "title": "Coverage L2 — Settings chunk",
       "date": "2026-09-12",
-      "summary": "Settings L2: 18 routes, 3 PASS / 13 PARTIAL / 1 FAIL / 1 BLOCKED. Feature Management search Refrm shows Refrm Academy \u2014 Learning on Bluebird.",
-      "plainEnglish": "Settings L2: 18 routes, 3 PASS / 13 PARTIAL / 1 FAIL / 1 BLOCKED. Feature Management search Refrm shows Refrm Academy \u2014 Learning on Bluebird.",
+      "summary": "Settings L2: 18 routes, 3 PASS / 13 PARTIAL / 1 FAIL / 1 BLOCKED. Feature Management search Refrm shows Refrm Academy — Learning on Bluebird.",
+      "plainEnglish": "Settings L2: 18 routes, 3 PASS / 13 PARTIAL / 1 FAIL / 1 BLOCKED. Feature Management search Refrm shows Refrm Academy — Learning on Bluebird.",
       "tags": [
         "census",
         "findings",
@@ -791,7 +816,7 @@
     },
     {
       "id": "2026-09-12-coverage-l2-safe-studio-hub",
-      "title": "Coverage L2 \u2014 Safe Studio hub",
+      "title": "Coverage L2 — Safe Studio hub",
       "date": "2026-09-12",
       "summary": "Safe Studio L2: 26 routes, 2 PASS / 19 PARTIAL / 5 FAIL. Overview 1+1 agrees with named QA fault/incident; KPI tiles on overview, security, and door access do not drill.",
       "plainEnglish": "Safe Studio L2: 26 routes, 2 PASS / 19 PARTIAL / 5 FAIL. Overview 1+1 agrees with named QA fault/incident; KPI tiles on overview, security, and door access do not drill.",
@@ -810,7 +835,7 @@
     },
     {
       "id": "2026-09-12-coverage-l2-staff-hub",
-      "title": "Coverage L2 \u2014 Staff hub",
+      "title": "Coverage L2 — Staff hub",
       "date": "2026-09-12",
       "summary": "Staff L2: 27 routes, 0 PASS / 16 PARTIAL / 11 FAIL. Five unique defects (onboarding tiles, rota KPIs, Unknown profile, empty employment list, AI agent conversation counts).",
       "plainEnglish": "Staff L2: 27 routes, 0 PASS / 16 PARTIAL / 11 FAIL. Five unique defects (onboarding tiles, rota KPIs, Unknown profile, empty employment list, AI agent conversation counts).",
@@ -849,8 +874,8 @@
       "id": "2026-09-12-ambient-morning-dispatch-viewer-pass-tip-6486be8",
       "title": "Ambient Morning Dispatch viewer PASS tip 6486be87",
       "date": "2026-09-12",
-      "summary": "Dispatch viewer PASS on tip 6486be87 \u2014 honest not-ready; prior Something went wrong cleared. Ambient SCORE suggest 85\u219292.",
-      "plainEnglish": "Dispatch viewer PASS on tip 6486be87 \u2014 honest not-ready; prior Something went wrong cleared. Ambient SCORE suggest 85\u219292.",
+      "summary": "Dispatch viewer PASS on tip 6486be87 — honest not-ready; prior Something went wrong cleared. Ambient SCORE suggest 85→92.",
+      "plainEnglish": "Dispatch viewer PASS on tip 6486be87 — honest not-ready; prior Something went wrong cleared. Ambient SCORE suggest 85→92.",
       "tags": [
         "ambient",
         "findings",
@@ -865,9 +890,9 @@
     },
     {
       "id": "2026-09-12-l2-backfill-declan-criteria",
-      "title": "L2 coverage backfill \u2014 Declan criteria",
+      "title": "L2 coverage backfill — Declan criteria",
       "date": "2026-09-12",
-      "summary": "L2 49\u219251. PARTIAL labels; 3 PASS / 36 PARTIAL / 12 FAIL. anomaly-alerts+meta-hub upgraded. No invented greens; mrr crash preserved.",
+      "summary": "L2 49→51. PARTIAL labels; 3 PASS / 36 PARTIAL / 12 FAIL. anomaly-alerts+meta-hub upgraded. No invented greens; mrr crash preserved.",
       "plainEnglish": "Honest L2 backfill from existing strand evidence only (no new browser walks). Coverage tab now shows L2 partial vs works; daily-hub walks still next.",
       "tags": [
         "coverage",
@@ -886,7 +911,7 @@
     },
     {
       "id": "2026-09-12-coverage-l1-website-blog",
-      "title": "Coverage L1 \u2014 Website/Blog",
+      "title": "Coverage L1 — Website/Blog",
       "date": "2026-09-12",
       "summary": "25/25 Website+Blog routes L1 PASS on Admin2 tip 6486be87",
       "plainEnglish": "25/25 Website+Blog routes L1 PASS on Admin2 tip 6486be87",
@@ -906,8 +931,8 @@
       "id": "2026-09-12-coverage-backfill-4-4-to-30-3",
       "title": "Coverage backfill 4.4% to 30.3%",
       "date": "2026-09-12",
-      "summary": "Before 4.4% tested \u2192 after 30.3% (L1 55, L2 47). No invented greens.",
-      "plainEnglish": "Before 4.4% tested \u2192 after 30.3% (L1 55, L2 47). No invented greens.",
+      "summary": "Before 4.4% tested → after 30.3% (L1 55, L2 47). No invented greens.",
+      "plainEnglish": "Before 4.4% tested → after 30.3% (L1 55, L2 47). No invented greens.",
       "tags": [
         "status",
         "findings"
@@ -939,7 +964,7 @@
     },
     {
       "id": "2026-09-12-tip-refresh-a3a0e207-1267-invite-live-1266-lag",
-      "title": "Tip refresh a3a0e207 \u2014 #1267 invite live, #1266 lag",
+      "title": "Tip refresh a3a0e207 — #1267 invite live, #1266 lag",
       "date": "2026-09-12",
       "summary": "Live tip a3a0e207 (#1267). Headline hold 64%. #1266 Pulse still deploy-lagging.",
       "plainEnglish": "Live tip a3a0e207 (#1267). Headline hold 64%. #1266 Pulse still deploy-lagging.",
@@ -957,7 +982,7 @@
     },
     {
       "id": "2026-09-11-cluster-a-tip-a73ff70-teacher2-pass-23-24-acs-c0",
-      "title": "Cluster A tip a73ff70 \u2014 Teacher2 PASS, 23/24 ACS-C01 fail",
+      "title": "Cluster A tip a73ff70 — Teacher2 PASS, 23/24 ACS-C01 fail",
       "date": "2026-09-11",
       "summary": "Teacher2 MGR-10+ACS-X01 PASS; Cluster A 23/24 with ACS-C01 fail on tip a73ff70",
       "plainEnglish": "Teacher2 MGR-10+ACS-X01 PASS; Cluster A 23/24 with ACS-C01 fail on tip a73ff70",
@@ -978,7 +1003,7 @@
       "title": "Payment QR checkout FAIL + studio waiver NO tip a73ff70",
       "date": "2026-09-11",
       "summary": "Payment QR public PASS but Stripe TEST checkout FAIL; studio waiver NO (no signature field); assign BLOCKED; tip a73ff70.",
-      "plainEnglish": "Payment QR page loads for \u00a31 TEST but Buy now never reaches Stripe. Studio waiver is not a true waiver \u2014 no signature field, assign/require blocked. Tip a73ff70.",
+      "plainEnglish": "Payment QR page loads for £1 TEST but Buy now never reaches Stripe. Studio waiver is not a true waiver — no signature field, assign/require blocked. Tip a73ff70.",
       "tags": [
         "findings",
         "payments",
@@ -994,7 +1019,7 @@
     },
     {
       "id": "2026-09-11-forms-qr-matrix-tip-a73ff70-public-11-pass-8-fai",
-      "title": "Forms QR matrix tip a73ff70 \u2014 public 11 PASS / 8 FAIL",
+      "title": "Forms QR matrix tip a73ff70 — public 11 PASS / 8 FAIL",
       "date": "2026-09-11",
       "summary": "Forms+QR public verification on tip a73ff70: 11 PASS / 8 FAIL; payment skipped; phone scan NEED_DECLAN.",
       "plainEnglish": "Bluebird Forms and QR public pages were checked on today's tip. Eleven public QR destinations looked good; eight failed (blank or wrong content). Payment form was skipped. Physical phone scan still needs Declan.",
@@ -1012,7 +1037,7 @@
     },
     {
       "id": "2026-09-11-forms-qr-matrix-partial-tip-a73ff70-8-19-qr-kind",
-      "title": "Forms QR matrix partial tip a73ff70 \u2014 8/19 QR kinds",
+      "title": "Forms QR matrix partial tip a73ff70 — 8/19 QR kinds",
       "date": "2026-09-11",
       "summary": "Forms+QR matrix on tip a73ff70: 8/19 QR kinds created/PASS; 11 not completed; physical phone scan blocked NEED_DECLAN.",
       "plainEnglish": "Forms+QR matrix on tip a73ff70: 8/19 QR kinds created/PASS; 11 not completed; physical phone scan blocked NEED_DECLAN.",
@@ -1064,10 +1089,10 @@
     },
     {
       "id": "2026-09-11-owner-twin-pass-bi-pass-tip-a73ff70-data-build-c",
-      "title": "Owner Twin PASS BI PASS tip a73ff70 \u2014 data build Clerk-blocked",
+      "title": "Owner Twin PASS BI PASS tip a73ff70 — data build Clerk-blocked",
       "date": "2026-09-11",
-      "summary": "Owner Twin PASS BI PASS tip a73ff70 \u2014 data build Clerk-blocked",
-      "plainEnglish": "Owner Twin PASS BI PASS tip a73ff70 \u2014 data build Clerk-blocked",
+      "summary": "Owner Twin PASS BI PASS tip a73ff70 — data build Clerk-blocked",
+      "plainEnglish": "Owner Twin PASS BI PASS tip a73ff70 — data build Clerk-blocked",
       "tags": [
         "ai-85",
         "findings",
@@ -1084,8 +1109,8 @@
       "id": "2026-09-11-untested-16-surfaces-ranked-week-one-posted-1180",
       "title": "UNTESTED 16 surfaces ranked week-one (posted #1180)",
       "date": "2026-09-11",
-      "summary": "List built on tip a263c4ab; live tip now a73ff70b266057f226bb02c5f3112f72a92ad53d (curl /api/version). 16 UNTESTED of 407 \u2014 P0\u00d75 week-one member shells + P1\u00d711 admin/dynamic/Forms/QR. No surfaces tested this pass. Posted #1180.",
-      "plainEnglish": "Sixteen surfaces still untested for week-one. List was built on tip a263c4ab; staging tip has moved to a73ff70 \u2014 retest pending on the new tip. Top P0: guides, help, sign-in/out/up.",
+      "summary": "List built on tip a263c4ab; live tip now a73ff70b266057f226bb02c5f3112f72a92ad53d (curl /api/version). 16 UNTESTED of 407 — P0×5 week-one member shells + P1×11 admin/dynamic/Forms/QR. No surfaces tested this pass. Posted #1180.",
+      "plainEnglish": "Sixteen surfaces still untested for week-one. List was built on tip a263c4ab; staging tip has moved to a73ff70 — retest pending on the new tip. Top P0: guides, help, sign-in/out/up.",
       "tags": [
         "status",
         "findings"
@@ -1118,9 +1143,9 @@
     },
     {
       "id": "2026-09-11-morning-retest-wrap-tip-a263c4ab-plain-english",
-      "title": "Morning retest wrap tip a263c4ab \u2014 plain English",
+      "title": "Morning retest wrap tip a263c4ab — plain English",
       "date": "2026-09-11",
-      "summary": "Morning retest wrap tip a263c4ab \u2014 plain English",
+      "summary": "Morning retest wrap tip a263c4ab — plain English",
       "plainEnglish": "Morning retest on tip a263c4ab: smoke reverse works but credits wrong; invite consume OK, fresh create fails; M1 mixed (#1252 PASS, unfreeze FAIL); Cluster A 22/24; Twin/BI/Demo need Owner; forms PASS, QR destination FAIL.",
       "tags": [
         "status",
@@ -1155,7 +1180,7 @@
     },
     {
       "id": "2026-09-11-m1-retest-1252-pass-unfreeze-fail",
-      "title": "M1 retest \u2014 #1252 PASS, unfreeze FAIL",
+      "title": "M1 retest — #1252 PASS, unfreeze FAIL",
       "date": "2026-09-11",
       "summary": "M1 retest tip a263c4ab: #1252 signed-out booker return PASS; unfreeze FAIL (payment provider); waitlist/upgrade-downgrade BLOCKED; active member prep PASS. No passwords.",
       "plainEnglish": "Retested M1 on tip a263c4ab. Returning to a class after login works (#1252). Unfreezing a paused membership still fails at the payment provider. Waitlist and upgrade/downgrade could not be rechecked.",
@@ -1173,10 +1198,10 @@
     },
     {
       "id": "2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr",
-      "title": "Morning invite E2E \u2014 consumed PASS, fresh invite create FAIL",
+      "title": "Morning invite E2E — consumed PASS, fresh invite create FAIL",
       "date": "2026-09-11",
       "summary": "Invite E2E on tip a263c4ab: consumed invite #1258 PASS; fresh member invite create FAIL (pending list unchanged); staff route PASS screenshot-only.",
-      "plainEnglish": "Morning invite checks: already-used invite showed a clear message (good). Creating a new member invite failed \u2014 the form closed but nothing appeared in pending, so signup binding could not be tested. Staff invitations page opened fine.",
+      "plainEnglish": "Morning invite checks: already-used invite showed a clear message (good). Creating a new member invite failed — the form closed but nothing appeared in pending, so signup binding could not be tested. Staff invitations page opened fine.",
       "tags": [
         "findings",
         "smoke",
@@ -1191,7 +1216,7 @@
     },
     {
       "id": "2026-09-11-command-centre-cluster-a-tip-a263c4ab-22-24",
-      "title": "Command Centre Cluster A tip a263c4ab \u2014 22/24",
+      "title": "Command Centre Cluster A tip a263c4ab — 22/24",
       "date": "2026-09-11",
       "summary": "Cluster A 22/24 on tip a263c4ab; fails ACS-F01 ACS-C01; Teacher2 MGR-10+ACS-X01 PASS; B-F locked",
       "plainEnglish": "Cluster A 22/24 on tip a263c4ab; fails ACS-F01 ACS-C01; Teacher2 MGR-10+ACS-X01 PASS; B-F locked",
@@ -1210,7 +1235,7 @@
     },
     {
       "id": "2026-09-11-morning-smoke-tip-a263c4ab-reverse-pass-credit-f",
-      "title": "Morning smoke tip a263c4ab \u2014 reverse PASS, credit FAIL",
+      "title": "Morning smoke tip a263c4ab — reverse PASS, credit FAIL",
       "date": "2026-09-11",
       "summary": "Seat smoke-2 overall FAIL on a263c4ab: invite/book/reverse PASS; HELGOBIRD missed; late-cancel left 7 credits not 8.",
       "plainEnglish": "Morning smoke on the live tip failed overall: join and booking worked and membership reverse was proven, but the HELGOBIRD code was not used and a late cancel left 7 credits instead of returning to 8.",
@@ -1229,10 +1254,10 @@
     },
     {
       "id": "2026-09-11-rollback-ban-lifted-tip-a263c4ab",
-      "title": "Rollback ban lifted \u2014 #1240 live on tip a263c4ab (~65%)",
+      "title": "Rollback ban lifted — #1240 live on tip a263c4ab (~65%)",
       "date": "2026-09-11",
       "summary": "Declan cleared rollback ban on tip a263c4ab; #1240 live; Measured held from 232659cf; canary companyId 403 still FAIL (eng); headline ~65%",
-      "plainEnglish": "Rollback ban lifted on live tip a263c4ab. Overnight Measured scores kept from 232659cf; targeted retest pending. Dataset canary still FAIL (companyId 403) for engineering. Prefer not to need rollback \u2014 company-scoped batchId only.",
+      "plainEnglish": "Rollback ban lifted on live tip a263c4ab. Overnight Measured scores kept from 232659cf; targeted retest pending. Dataset canary still FAIL (companyId 403) for engineering. Prefer not to need rollback — company-scoped batchId only.",
       "tags": [
         "status",
         "findings",
@@ -1247,10 +1272,10 @@
     },
     {
       "id": "2026-09-11-launch-hub-tip-a263c4ab-live-morning-merge-pack-",
-      "title": "Launch Hub tip a263c4ab live \u2014 morning merge pack (~65%)",
+      "title": "Launch Hub tip a263c4ab live — morning merge pack (~65%)",
       "date": "2026-09-11",
-      "summary": "Staging tip moved 232659cf\u2192a263c4ab with invite/booking/Twin/Insights/isolation/CI packs; overnight Measured held; headline ~65%; rollback ban ACTIVE",
-      "plainEnglish": "Staging tip moved 232659cf\u2192a263c4ab with invite/booking/Twin/Insights/isolation/CI packs; overnight Measured held; headline ~65%; rollback ban ACTIVE",
+      "summary": "Staging tip moved 232659cf→a263c4ab with invite/booking/Twin/Insights/isolation/CI packs; overnight Measured held; headline ~65%; rollback ban ACTIVE",
+      "plainEnglish": "Staging tip moved 232659cf→a263c4ab with invite/booking/Twin/Insights/isolation/CI packs; overnight Measured held; headline ~65%; rollback ban ACTIVE",
       "tags": [
         "status",
         "findings",
@@ -1283,7 +1308,7 @@
     },
     {
       "id": "2026-09-11-dataset-canary-fail-tip-232659cf",
-      "title": "Dataset canary FAIL \u2014 Missing companyId on batchImport.upload",
+      "title": "Dataset canary FAIL — Missing companyId on batchImport.upload",
       "date": "2026-09-11",
       "summary": "Canary FAIL on tip 232659cf: Missing companyId on batchImport.upload 403; 0 members; no rollback; ban ACTIVE.",
       "plainEnglish": "A three-row CSV import test reached the mapping screen but failed on upload with a missing companyId error (403). No members were created and nothing was rolled back. The year of test data is still not loaded. Declan has not cleared the rollback ban.",
@@ -1301,10 +1326,10 @@
     },
     {
       "id": "2026-09-11-overnight-breakfast-tip-232659cf",
-      "title": "Overnight breakfast \u2014 tip 232659cf final (~65%)",
+      "title": "Overnight breakfast — tip 232659cf final (~65%)",
       "date": "2026-09-11",
       "summary": "Final overnight breakfast on tip 232659cf: hub ~65% Measured; dataset canary FAIL (Missing companyId 403); rollback ban ACTIVE.",
-      "plainEnglish": "Overnight finished on the live tip. Launch readiness is about 65% (was 52% this morning). Smoke, Cluster A, ISO, ambient, and AI-85 stayed Measured. The small CSV import test failed with a missing companyId error \u2014 zero members created, and we did not roll anything back. The rollback ban is still active until Declan clears it.",
+      "plainEnglish": "Overnight finished on the live tip. Launch readiness is about 65% (was 52% this morning). Smoke, Cluster A, ISO, ambient, and AI-85 stayed Measured. The small CSV import test failed with a missing companyId error — zero members created, and we did not roll anything back. The rollback ban is still active until Declan clears it.",
       "tags": [
         "status",
         "findings",
@@ -1321,10 +1346,10 @@
     },
     {
       "id": "2026-09-11-ai85-overnight-rescore-tip-232659cf",
-      "title": "AI-85 overnight rescore Measured \u2014 48/5/23/8/1 unchanged on tip 232659cf",
+      "title": "AI-85 overnight rescore Measured — 48/5/23/8/1 unchanged on tip 232659cf",
       "date": "2026-09-11",
-      "summary": "AI-85 Measured on tip 232659cf: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP \u2014 counts unchanged; seven refreshed UNCERTAINs stayed UNCERTAIN.",
-      "plainEnglish": "Overnight AI-85 recheck on the live tip finished with the same scorecard: 48 pass, 5 fail, 23 uncertain, 8 unreachable, 1 skip. Seven uncertain items were looked at again and every one stayed uncertain (mostly Platform Admin gates or empty AI panels). Launch readiness stays about 65%. Rollback ban is still active \u2014 do not undo imports.",
+      "summary": "AI-85 Measured on tip 232659cf: 48 PASS / 5 FAIL / 23 UNCERTAIN / 8 UNREACHABLE / 1 SKIP — counts unchanged; seven refreshed UNCERTAINs stayed UNCERTAIN.",
+      "plainEnglish": "Overnight AI-85 recheck on the live tip finished with the same scorecard: 48 pass, 5 fail, 23 uncertain, 8 unreachable, 1 skip. Seven uncertain items were looked at again and every one stayed uncertain (mostly Platform Admin gates or empty AI panels). Launch readiness stays about 65%. Rollback ban is still active — do not undo imports.",
       "tags": [
         "ai-85",
         "status",
@@ -1341,9 +1366,9 @@
     },
     {
       "id": "2026-09-11-ambient-evidence-tip-232659cf",
-      "title": "Ambient evidence on tip 232659cf \u2014 Pulse OK; Dispatch viewer FAIL",
+      "title": "Ambient evidence on tip 232659cf — Pulse OK; Dispatch viewer FAIL",
       "date": "2026-09-11",
-      "summary": "Measured ambient evidence on tip 232659cf: Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees with directory; LE one-tap works with 0 lessons; Event Bus Platform-Admin gated. Evidence only \u2014 not a bank score.",
+      "summary": "Measured ambient evidence on tip 232659cf: Pulse explainability OK; Dispatch viewer still FAIL; Twin Cancelling agrees with directory; LE one-tap works with 0 lessons; Event Bus Platform-Admin gated. Evidence only — not a bank score.",
       "plainEnglish": "On the live tip we re-checked ambient intelligence (evidence only). Pulse explainability works. Morning Dispatch viewer still fails. Twin agrees Member A is Cancelling. Learning one-tap works but there are still no lessons. Event Bus needs Platform Admin. Smoke 6/6, Cluster A 20/24, ISO 26/4, and M1 partial stay as before. Rollback ban still ACTIVE.",
       "tags": [
         "ambient",
@@ -1361,10 +1386,10 @@
     },
     {
       "id": "2026-09-11-iso29-complete-tip-232659cf",
-      "title": "ISO-29 COMPLETE on tip 232659cf \u2014 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton)",
+      "title": "ISO-29 COMPLETE on tip 232659cf — 26 PASS / 4 FAIL / 2 NOT_RUN (Weymouth/Luton)",
       "date": "2026-09-11",
-      "summary": "ISO-29 COMPLETE Measured tip 232659cf: 26 PASS / 4 FAIL (same ISO-18/20/27/29) / 2 NOT_RUN (Weymouth/Luton). Core 25/29 \u2192 ~86%. Smoke 6/6 + Cluster A 20/24 + M1 partial unchanged. Rollback ban ACTIVE. Supersedes prior partial 12/4/16 @ 61%.",
-      "plainEnglish": "Privacy checks on tonight's tip are now finished for the main bank: twenty-six surfaces passed, the same four studio-data leaks still fail, and only Weymouth and Luton extras were not run. Smoke stays six-of-six and Command Centre Cluster A stays twenty-of-twenty-four. Rollback ban still active \u2014 Declan has not cleared it.",
+      "summary": "ISO-29 COMPLETE Measured tip 232659cf: 26 PASS / 4 FAIL (same ISO-18/20/27/29) / 2 NOT_RUN (Weymouth/Luton). Core 25/29 → ~86%. Smoke 6/6 + Cluster A 20/24 + M1 partial unchanged. Rollback ban ACTIVE. Supersedes prior partial 12/4/16 @ 61%.",
+      "plainEnglish": "Privacy checks on tonight's tip are now finished for the main bank: twenty-six surfaces passed, the same four studio-data leaks still fail, and only Weymouth and Luton extras were not run. Smoke stays six-of-six and Command Centre Cluster A stays twenty-of-twenty-four. Rollback ban still active — Declan has not cleared it.",
       "tags": [
         "isolation",
         "findings",
@@ -1381,10 +1406,10 @@
     },
     {
       "id": "2026-09-11-iso29-partial-tip-232659cf",
-      "title": "ISO-29 PARTIAL on tip 232659cf \u2014 12 PASS / 4 FAIL / 16 NOT_RUN (not 25/4)",
+      "title": "ISO-29 PARTIAL on tip 232659cf — 12 PASS / 4 FAIL / 16 NOT_RUN (not 25/4)",
       "date": "2026-09-11",
       "summary": "ISO-29 partial Measured tip 232659cf: 12 PASS / 4 FAIL (same ISO-18/20/27/29) / 16 NOT_RUN. Do NOT claim prior 25/4. Smoke 6/6 + Cluster A 20/24 + M1 partial unchanged. Rollback ban ACTIVE.",
-      "plainEnglish": "Privacy checks on tonight's tip are only partly done: twelve surfaces passed, the same four studio-data leaks still fail, and sixteen checks were not re-run. Do not treat this as the old full 25-pass result. Smoke stays six-of-six and Command Centre Cluster A stays twenty-of-twenty-four. Rollback ban still active \u2014 Declan has not cleared it.",
+      "plainEnglish": "Privacy checks on tonight's tip are only partly done: twelve surfaces passed, the same four studio-data leaks still fail, and sixteen checks were not re-run. Do not treat this as the old full 25-pass result. Smoke stays six-of-six and Command Centre Cluster A stays twenty-of-twenty-four. Rollback ban still active — Declan has not cleared it.",
       "tags": [
         "isolation",
         "findings",
@@ -1401,10 +1426,10 @@
     },
     {
       "id": "2026-09-10-m1-wave1-partial-tip-232659cf",
-      "title": "M1 Wave1 partial \u2014 freeze PASS, unfreeze FAIL, cancel+reverse PASS",
+      "title": "M1 Wave1 partial — freeze PASS, unfreeze FAIL, cancel+reverse PASS",
       "date": "2026-09-10",
       "summary": "M1 wave1 tip 232659cf: Admin2 freeze PASS; unfreeze FAIL (provider; Smoke paused); cancel+reverse PASS (reverse fixed); upgrade/downgrade/MemberB/waitlist/Owner BLOCKED. Smoke 6/6 + Cluster A 20/24 unchanged. No import.rollbackBatch.",
-      "plainEnglish": "Admin2 freeze of BB Smoke passed, but resume failed at the payment provider so Smoke is still paused. Admin2 cancel then reverse for Member B both passed \u2014 reverse is fixed versus the earlier Keep-left-Cancelling bug. Upgrade, downgrade, Member B client, waitlist, and Owner paths were blocked this wave. Smoke stays 6/6 and Cluster A stays 20/24 on the same tip. Rollback ban still active \u2014 Declan has not cleared it.",
+      "plainEnglish": "Admin2 freeze of BB Smoke passed, but resume failed at the payment provider so Smoke is still paused. Admin2 cancel then reverse for Member B both passed — reverse is fixed versus the earlier Keep-left-Cancelling bug. Upgrade, downgrade, Member B client, waitlist, and Owner paths were blocked this wave. Smoke stays 6/6 and Cluster A stays 20/24 on the same tip. Rollback ban still active — Declan has not cleared it.",
       "tags": [
         "m1",
         "payments",
@@ -1421,10 +1446,10 @@
     },
     {
       "id": "2026-09-10-cluster-a-20-24-tip-232659cf",
-      "title": "Cluster A Measured 20/24 on tip 232659cf \u2014 same 4 fails (no improvement)",
+      "title": "Cluster A Measured 20/24 on tip 232659cf — same 4 fails (no improvement)",
       "date": "2026-09-10",
       "summary": "Cluster A Measured 20/24 on tip 232659cf; same fails MEM-X01 ACS-F01 TAG-C01 TAG-A01; teacher MGR-10/ACS-X01 PASS; headline ~66%; rollback ban still active.",
-      "plainEnglish": "Command Centre Cluster A was re-run on the live studio tonight: 20 of 24 checks passed \u2014 the same score as before, with the same four stubborn fails. Teacher safety checks (refund and pay-rate) passed. Launch readiness on the board eases to about 66% because the optimistic estimate for those final-four fixes did not hold. Smoke is still a clean 6/6. Declan has still not cleared the rollback ban.",
+      "plainEnglish": "Command Centre Cluster A was re-run on the live studio tonight: 20 of 24 checks passed — the same score as before, with the same four stubborn fails. Teacher safety checks (refund and pay-rate) passed. Launch readiness on the board eases to about 66% because the optimistic estimate for those final-four fixes did not hold. Smoke is still a clean 6/6. Declan has still not cleared the rollback ban.",
       "tags": [
         "command-centre",
         "status",
@@ -1439,10 +1464,10 @@
     },
     {
       "id": "2026-09-10-overnight-smoke-6-6-pass",
-      "title": "Overnight smoke ALL PASS \u2014 6/6 on tip 232659cf (membership reverse proven)",
+      "title": "Overnight smoke ALL PASS — 6/6 on tip 232659cf (membership reverse proven)",
       "date": "2026-09-10",
-      "summary": "Smoke 6/6 PASS on tip 232659cf including Cancelling\u2192Active reverse; account-not-found gone; headline 68%; rollback ban still active.",
-      "plainEnglish": "Overnight critical-path testing on the live studio finished clean: all six steps passed. Invite account-not-found is gone, and for the first time in this programme a membership cancel was reversed back to Active. Launch readiness on the board moves to about 68%. Other big checks (Command Centre Cluster A, privacy, AI, ambient) were not re-run tonight. Declan still has not cleared the rollback ban \u2014 helpers must not undo a data import.",
+      "summary": "Smoke 6/6 PASS on tip 232659cf including Cancelling→Active reverse; account-not-found gone; headline 68%; rollback ban still active.",
+      "plainEnglish": "Overnight critical-path testing on the live studio finished clean: all six steps passed. Invite account-not-found is gone, and for the first time in this programme a membership cancel was reversed back to Active. Launch readiness on the board moves to about 68%. Other big checks (Command Centre Cluster A, privacy, AI, ambient) were not re-run tonight. Declan still has not cleared the rollback ban — helpers must not undo a data import.",
       "tags": [
         "smoke",
         "status",
@@ -1458,10 +1483,10 @@
     },
     {
       "id": "2026-09-10-tip-232659cf-live",
-      "title": "Tip live 232659cf \u2014 #1240 on studio (64% estimate)",
+      "title": "Tip live 232659cf — #1240 on studio (64% estimate)",
       "date": "2026-09-10",
       "summary": "Staging tip 232659cf (#1240+#1245 live). Headline 64% estimate. Overnight smoke started. Rollback ban NOT cleared by Declan.",
-      "plainEnglish": "The test studio moved again tonight. Safe undo code for data import is now on the live tip, and overnight testing has just started. Launch readiness on paper is about 64%. Important: Declan has not cleared the rollback ban \u2014 helpers must not undo an import until he says so. A normal import try is only OK if Select works.",
+      "plainEnglish": "The test studio moved again tonight. Safe undo code for data import is now on the live tip, and overnight testing has just started. Launch readiness on paper is about 64%. Important: Declan has not cleared the rollback ban — helpers must not undo an import until he says so. A normal import try is only OK if Select works.",
       "tags": [
         "status",
         "findings",
@@ -1478,10 +1503,10 @@
     },
     {
       "id": "2026-09-10-tip-99e17af7-live",
-      "title": "Tip live 99e17af7 \u2014 Launch Hub 62%",
+      "title": "Tip live 99e17af7 — Launch Hub 62%",
       "date": "2026-09-10",
-      "summary": "Staging tip left 6cb5d8d9; afternoon+evening packs live. Headline 62% estimate. #1240 merged but not on tip \u2014 no import/rollback.",
-      "plainEnglish": "The test studio finally got today\u2019s big batch of fixes. Launch readiness on paper is about 62%. Safe undo for data import is merged on GitHub but not on the live studio yet \u2014 do not import or roll back until it is.",
+      "summary": "Staging tip left 6cb5d8d9; afternoon+evening packs live. Headline 62% estimate. #1240 merged but not on tip — no import/rollback.",
+      "plainEnglish": "The test studio finally got today’s big batch of fixes. Launch readiness on paper is about 62%. Safe undo for data import is merged on GitHub but not on the live studio yet — do not import or roll back until it is.",
       "tags": [
         "status",
         "findings",
@@ -1498,7 +1523,7 @@
     },
     {
       "id": "2026-09-10-ai-85-ready-uncertain-re-score-1-pass-5-still-un",
-      "title": "AI-85 ready UNCERTAIN re-score \u2014 1 PASS / 5 still UNCERTAIN",
+      "title": "AI-85 ready UNCERTAIN re-score — 1 PASS / 5 still UNCERTAIN",
       "date": "2026-09-10",
       "summary": "AI-017 PASS; 011/044/051/055/076 UNCERTAIN",
       "tags": [
@@ -1515,7 +1540,7 @@
     },
     {
       "id": "2026-09-10-iso-29-tenancy-sweep-complete-25-pass-4-fail",
-      "title": "ISO-29 tenancy sweep complete \u2014 25 PASS / 4 FAIL",
+      "title": "ISO-29 tenancy sweep complete — 25 PASS / 4 FAIL",
       "date": "2026-09-10",
       "summary": "Fails: ISO-18 branding, ISO-20 cohorts, ISO-27 staff availability, ISO-29 CC branding",
       "tags": [
@@ -1528,11 +1553,11 @@
         "drops/2026-09-10-iso-29-tenancy-sweep-complete-25-pass-4-fail/ISO29-NOTES.md"
       ],
       "tip": "6cb5d8d955c0cf4e4d651161c0dfb4471fe56961",
-      "plainEnglish": "We finished the full studio-privacy checklist. Twenty-five checks pass \u2014 studios mostly cannot see each other\u2019s data. Four still fail: branding, cohorts, staff availability, and Command Centre branding. Those four need an engineering fix before launch."
+      "plainEnglish": "We finished the full studio-privacy checklist. Twenty-five checks pass — studios mostly cannot see each other’s data. Four still fail: branding, cohorts, staff availability, and Command Centre branding. Those four need an engineering fix before launch."
     },
     {
       "id": "2026-09-10-dataset-import-blocked-datamigration-selectitem-",
-      "title": "Dataset import BLOCKED \u2014 DataMigration SelectItem empty value",
+      "title": "Dataset import BLOCKED — DataMigration SelectItem empty value",
       "date": "2026-09-10",
       "summary": "Radix SelectItem value=\"\" crashes member CSV upload; 0 rows",
       "tags": [
@@ -1568,7 +1593,7 @@
     },
     {
       "id": "2026-09-10-cluster-a",
-      "title": "Cluster A \u2014 regression vs luck + tip 6cb5d8d9 FINAL ref",
+      "title": "Cluster A — regression vs luck + tip 6cb5d8d9 FINAL ref",
       "date": "2026-09-10",
       "summary": "MEM-X01 / ACS-F01 / TAG-C01 / TAG-A01: lucky prior pass vs behavioral regression; FINAL.json pointer for tip 6cb5d8d9.",
       "tags": [
@@ -1583,13 +1608,13 @@
         "drops/2026-09-10-cluster-a/REGRESSION-VS-LUCK.md",
         "drops/2026-09-10-cluster-a/FINAL-6cb5d8d9-REF.md"
       ],
-      "plainEnglish": "Command Centre\u2019s first acceptance batch (Cluster A) was checked carefully. Some earlier \u201cpasses\u201d looked lucky rather than solid. This drop records what regressed versus what still holds on today\u2019s software build."
+      "plainEnglish": "Command Centre’s first acceptance batch (Cluster A) was checked carefully. Some earlier “passes” looked lucky rather than solid. This drop records what regressed versus what still holds on today’s software build."
     },
     {
       "id": "2026-09-10-cluster-bf",
-      "title": "Proposal: Clusters B\u2013F acceptance banks",
+      "title": "Proposal: Clusters B–F acceptance banks",
       "date": "2026-09-10",
-      "summary": "Locked until Cluster A is 24/24. Purpose, counts, launch-critical vs post-launch for B\u2013F banks.",
+      "summary": "Locked until Cluster A is 24/24. Purpose, counts, launch-critical vs post-launch for B–F banks.",
       "tags": [
         "command-centre",
         "findings"
@@ -1622,7 +1647,7 @@
     },
     {
       "id": "2026-09-10-dataset",
-      "title": "Bluebird 12-month dataset \u2014 blocked / progress / plan",
+      "title": "Bluebird 12-month dataset — blocked / progress / plan",
       "date": "2026-09-10",
       "summary": "CSV import commit 500 (companyId); 0 seed rows; CREATE-PLAN + BLOCKED + PROGRESS pack.",
       "tags": [
@@ -1657,7 +1682,7 @@
         "drops/2026-09-09-ambient/PACK-SUMMARY.md",
         "drops/2026-09-09-ambient/PLAIN-ENGLISH.md"
       ],
-      "plainEnglish": "A plain walkthrough of ambient intelligence features \u2014 Pulse, Dispatch, Twin, Learn, and Event Bus \u2014 including what works and what already looks broken for a studio owner."
+      "plainEnglish": "A plain walkthrough of ambient intelligence features — Pulse, Dispatch, Twin, Learn, and Event Bus — including what works and what already looks broken for a studio owner."
     },
     {
       "id": "2026-09-09-ai85",
