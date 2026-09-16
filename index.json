@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-16T09:38:13.166Z",
+  "updatedAt": "2026-09-16T11:56:01.515Z",
   "drops": [
+    {
+      "id": "2026-09-16-cc-chain-tip-retest-30474e53",
+      "title": "CC chain tip retest 30474e53 final",
+      "date": "2026-09-16",
+      "summary": "Ordered CC pack closed on tip 30474e53: D-PAYFAIL PASS (implied bank 15/30); ISO 27P/2EF; Cluster A 24/24; Astra PA-GRANTS PASS, PA-CC-1326 BLOCKED, PA-PULSE-MGR PARKED awaiting #1351.",
+      "plainEnglish": "Command Centre tip retest pack is done on the live build. Payment-failure diagnosis now names a real processor reason. Isolation and Cluster A stay as before. Manager Pulse is parked until the location-grants fix lands. Occupancy-vs-Pulse comparison is still blocked.",
+      "tags": [
+        "command-centre",
+        "isolation"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-16-cc-chain-tip-retest-30474e53/SUMMARY.md"
+      ],
+      "tip": "30474e531a285ff5c8bf90025f50f3acbef1b8b7",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5697014695"
+    },
     {
       "id": "2026-09-16-launch-hub-tip-443d54e3-1309-live-1354-undeploye",
       "title": "Launch Hub tip 443d54e3 — #1309 live, #1354 undeployed",
