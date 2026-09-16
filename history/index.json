@@ -1,6 +1,12 @@
 {
-  "generatedAt": "2026-09-16T09:42:47.977Z",
+  "generatedAt": "2026-09-16T11:59:28.664Z",
   "files": [
+    {
+      "path": "history/2026-09-16-tip-8226bb01.json",
+      "label": "2026-09-16-tip-8226bb01.json",
+      "tip": "8226bb01",
+      "headline": 69
+    },
     {
       "path": "history/2026-09-16-tip-59f2f8aa.json",
       "label": "2026-09-16-tip-59f2f8aa.json",
@@ -271,5 +277,6 @@
       "tip": "232659cf",
       "headline": 66
     }
-  ]
+  ],
+  "latest": "history/2026-09-16-tip-8226bb01.json"
 }
