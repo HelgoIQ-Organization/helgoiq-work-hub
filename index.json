@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-16T04:06:09.908Z",
+  "updatedAt": "2026-09-16T08:37:25.184Z",
   "drops": [
+    {
+      "id": "2026-09-16-midday-status",
+      "title": "Midday status 2026-09-16",
+      "date": "2026-09-16",
+      "summary": "Tip aee3b690 no drift; overnight breakfast+closeout already dropped; Feel→Cursor #1364–#1368 OPEN (+ standing signed-out client re-walk); #1363 purchase catalogue OPEN; blockers getById 403 / smoke Cloudflare+Stripe / PA-PULSE-MGR FAIL / PA-SCAN NEED PA; Cluster A 24/24 B–F 15/30 Feel~56.5 ISO 25P/4EF; primary next=fix batchImport.getById.",
+      "plainEnglish": "Midday: staging still aee3b690. Overnight pack already on the hub. Five Feel PRs (#1364–#1368) and purchase catalogue #1363 are open — review is not the same as a signed-out client walk. Biggest unlock remains fixing dataset getById 403 so Confirm/12m can run.",
+      "tags": [
+        "status",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-16-midday-status/PROGRESS.md",
+        "drops/2026-09-16-midday-status/FEEL-DEFECTS.md",
+        "drops/2026-09-16-midday-status/FEEL-AFTER-SCORES.md",
+        "drops/2026-09-16-midday-status/LINKS.md"
+      ],
+      "tip": "aee3b690b2f895393adf2b636dfc0c202d5d43fc"
+    },
     {
       "id": "2026-09-16-overnight-closeout",
       "title": "Overnight closeout 2026-09-16",
