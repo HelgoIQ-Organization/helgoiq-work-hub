@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-09-15T20:57:58.844Z",
+  "updatedAt": "2026-09-16T04:06:09.908Z",
   "drops": [
+    {
+      "id": "2026-09-16-overnight-closeout",
+      "title": "Overnight closeout 2026-09-16",
+      "date": "2026-09-16",
+      "summary": "Morning overnight close-out tip aee3b690: CC A 24/24, B–F 15P/15F, ISO 25P/4EF, Coverage 0P/32Partial/2F, Dataset BLOCKED getById 403, smoke NEED_DECLAN; finance continuity PASS=12 FAIL=5 PARTIAL=15 BLOCKED=2; #1175 MERGED.",
+      "plainEnglish": "Overnight pack sealed for 16 Sep. Dataset Confirm still blocked by a role gate. Smoke needs Declan Stripe cancel. Command Centre Cluster A clean; half of B–F failed. Finance numbers unchanged since 7 Sep.",
+      "tags": [
+        "status",
+        "findings",
+        "smoke",
+        "command-centre",
+        "isolation",
+        "dataset",
+        "finance"
+      ],
+      "type": "pack",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-16-overnight-closeout/SIGNAL.md",
+        "drops/2026-09-16-overnight-closeout/BREAKFAST.md"
+      ],
+      "tip": "aee3b690b2f895393adf2b636dfc0c202d5d43fc"
+    },
     {
       "id": "2026-09-15-overnight-aee3b690-breakfast",
       "title": "Overnight breakfast pack aee3b690",
