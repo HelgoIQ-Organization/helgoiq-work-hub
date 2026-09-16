@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-09-16T08:38:36.008Z",
+  "updatedAt": "2026-09-16T09:16:05.501Z",
   "meta": {
-    "dataAsOf": "2026-09-16T08:38:36.008Z",
-    "buildStamp": "aee3b690b2f895393adf2b636dfc0c202d5d43fc",
-    "liveTip": "aee3b690b2f895393adf2b636dfc0c202d5d43fc",
+    "dataAsOf": "2026-09-16T09:16:05.501Z",
+    "buildStamp": "2c5f6a8852e6134e021bf4020a3a83ff0f79d7ce",
+    "liveTip": "2c5f6a8852e6134e021bf4020a3a83ff0f79d7ce",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 69% = round((52×12 + 65×10 + 86×10 + 65×15 + 95×9 + 73×10 + 72×6 + 72×8 + 99×10 + 25×10)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
-    "latestSnapshotPath": "history/2026-09-16-midday-aee3b690.json",
-    "lastRefreshNote": "Midday 2026-09-16 Europe/Athens: tip aee3b690 no drift. Overnight breakfast+closeout already dropped. Folded factual notes only — Feel→Cursor #1364–#1368 OPEN; #1363 purchase catalogue OPEN (signed-out client re-walk standing rule); B–F Measured 15/30 on tip; ISO 25P/4EF; blockers getById 403 / smoke NEED_DECLAN / PA-PULSE-MGR FAIL / PA-SCAN NEED PA. Headline held — no invent.",
+    "latestSnapshotPath": "history/2026-09-16-tip-2c5f6a88.json",
+    "lastRefreshNote": "Midday tip-change 2026-09-16 Europe/Athens: aee3b690→2c5f6a88 via Launch Hub refresh cron. Stamped live tip; folded #1355/#1364 on tip + #1349 undeployed. Headline held 69% (no invent). Cluster A / AI-85 / B–F scores still Measured on prior tip — mark Estimated until re-walk.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-16T08:37:27.952Z"
+      "checkedAt": "2026-09-16T09:16:05.501Z"
     },
-    "updatedAt": "2026-09-16T08:38:36.008Z",
-    "note": "Live tip aee3b690 (no midday drift). Overnight Measured: Cluster A 24/24; B–F 15/30; ISO 25P/4EF; Feel flat ~56.5 (CC −7); Coverage L2 Teacher+Client done; Pulse/Twin LIMITED. Feel→Cursor PRs #1364–#1368 OPEN; #1363 OPEN. Primary unblock: batchImport.getById 403 for company Admin. Never import.rollbackBatch.",
+    "updatedAt": "2026-09-16T09:16:05.501Z",
+    "note": "Live tip 2c5f6a88. Tip change from aee3b690: Feel #1364 + #1301/#1342/#1352/#1355/#1356/#1358–#1360/#1362 on tip. #1349 merged undeployed. Cluster A 24/24 last Measured on aee3b690. #1355 batchImport.getById on tip — Estimated until canary. Never import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L≥1 = 383/413 ≈ 92.7%; L≥2 = 368/413 ≈ 89.1%.",
     "headlineVsCoverage": "Headline ~66% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
@@ -36,11 +36,11 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "Overnight Measured on tip aee3b690: Cluster A 24/24; Milestone 2 B–F 15 PASS / 15 FAIL of 30. Strand percent held (estimate) until Bot Commander rescores — do not invent.",
-    "liveTipNote": "Live /api/version aee3b690 — unchanged since overnight. Ahead_by 0 vs overnight stamp. Feel PRs #1364–#1368 and #1363 not yet on tip.",
-    "checkedAt": "2026-09-16T08:38:36.008Z"
+    "commandCentreNote": "Cluster A 24/24 last Measured on tip aee3b690; not re-run on 2c5f6a88. Milestone 2 B–F 15/30 last Measured on prior tip. Strand percents held — do not invent.",
+    "liveTipNote": "Live /api/version 2c5f6a88 — tip changed from aee3b690. Feel #1364 and batch on tip; #1349 not yet.",
+    "checkedAt": "2026-09-16T09:16:05.501Z"
   },
-  "tip": "aee3b690b2f895393adf2b636dfc0c202d5d43fc",
+  "tip": "2c5f6a8852e6134e021bf4020a3a83ff0f79d7ce",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 69,
@@ -81,10 +81,10 @@
       "comms": 25,
       "headline": 17
     },
-    "plainEnglishDay": "Wednesday (16 Sep 2026 late morning Europe/Athens): tip aee3b690 no drift. Overnight breakfast + closeout already on hub. Feel→Cursor #1364–#1368 OPEN (standing rule: signed-out client re-walk; #1363 lesson). #1363 purchase catalogue OPEN — review≠visual. Blockers: dataset getById 403; smoke-3 Cloudflare NEED_DECLAN; PA-PULSE-MGR FAIL on #1339 live; PA-SCAN-1/2 NEED Platform Admin; six-step Stripe Connect parked. Progress held: A 24/24; B–F 15/30; Feel ~56.5; ISO 25P/4EF; Coverage L2; LIMITED Pulse/Twin; Otto/#1333 clear to merge. Primary next: fix batchImport.getById. Headline held — no invent.",
+    "plainEnglishDay": "Wednesday (16 Sep 2026 midday Europe/Athens): tip drifted aee3b690→2c5f6a88 (Feel Safe Studio/Finance chrome #1364 + batch of waitlist/comms/coverage/batchImport fixes). On tip: #1355 batchImport.getById (was primary next) — Estimated not re-Measured. Merged undeployed: #1349 settle Clerk before join-pay. Still OPEN: Feel mobile #1368, #1363 purchase catalogue, CC recoverable #1366, timezone #1370, many Feel/CC PRs. Blockers hold: smoke Cloudflare NEED_DECLAN; PA-PULSE-MGR; PA-SCAN NEED PA; six-step Stripe Connect parked. Cluster A last Measured 24/24 on aee3b690 — not re-run on 2c5f6a88. Headline held 69% — no invent.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Tip unchanged aee3b690. Overnight Measured B–F moved 4/30→15/30 on tip (recorded in progressToday.clusterBF); strand percents not auto-bumped.",
-    "updatedAt": "2026-09-16T08:38:36.008Z",
+    "compareNote": "Tip CHANGED aee3b690→2c5f6a88. Staging carries Feel #1364 plus #1301/#1342/#1352/#1355/#1356/#1358–#1360/#1362. #1349 (Clerk join-pay) merged after tip — not on live tip yet. Strand percents held (Measured on prior tip; re-walk pending).",
+    "updatedAt": "2026-09-16T09:16:05.501Z",
     "coverageNote": "After AI L2 Intel: L≥1=372 (90%); L≥2=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED NEED_DECLAN — Stripe Connect TEST immediate cancel still parked; smoke-3 Cloudflare also NEED_DECLAN. Not PASS.",
@@ -111,9 +111,9 @@
     "scorePushStarted": "2026-09-12: Cluster A + ISO-29 + AI-85 reachable + Dispatch + dataset canary on 6486be87 (no Declan)",
     "censusMoneyL2Finance": "0 PASS / 1 PARTIAL (stripe-connect) / 6 FAIL — KPI drills + invoicing alias",
     "ambientDispatch": "PASS on 6486be87 — viewer honest empty, no crash",
-    "datasetCanary": "BLOCKED product — company Admin list/upload OK (canary batch id 10, 3/3 Valid) but batchImport.getById 403 Platform admin; Confirm unreachable; 12m gated. Hold dataset 52%.",
+    "datasetCanary": "Prior Measured FAIL (getById/upload 403). #1355 company-admin getById NOW on tip 2c5f6a88 — Estimated candidate, not re-canaried. Never import.rollbackBatch (#1240).",
     "ai85Rescore": "Hold 56% — 25 retested; AI-018 FAIL→PARTIAL only; 4 FAIL open",
-    "clusterA": "24/24 PASS on tip aee3b690 (overnight Measured; Teacher2 refuse, TAG refuse, BLK-01)",
+    "clusterA": "24/24 PASS last Measured on tip aee3b690 (not re-run on 2c5f6a88)",
     "iso29": "Overnight Measured on aee3b690: 25 PASS / 4 EXPECTED_FAIL / 0 unexpected FAIL — ISO-18/20/27/29 still open (#1309); hold isolation 86%",
     "scorePushWrap": "Done: tip refresh, Dispatch PASS (ambient 92), canary FAIL hold 52, AI-85 hold 56, Cluster A 24/24 (CC 80), ISO hold 86. Headline 66%. Need Declan: Comms secrets, smoke fixtures, PA seat.",
     "censusLongtailL2Staff": "0 PASS / 16 PARTIAL / 11 FAIL — onboarding tiles, rota KPIs, name/employment disagree",
@@ -375,7 +375,8 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
-      "note": "Measured hold 52% — #1310 company-bound upload is ON tip but canary not retested. NEVER import.rollbackBatch (#1240)."
+      "note": "Measured hold 52% — #1310 company-bound upload is ON tip but canary not retested. NEVER import.rollbackBatch (#1240).",
+      "freshnessNote": "Scores Measured on prior tip aee3b690; tip now 2c5f6a88 with #1355 — Estimated until canary."
     },
     {
       "id": "command-centre",
@@ -674,7 +675,7 @@
         "dataset"
       ]
     },
-    "refreshWarning": "Live tip unchanged (aee3b690) since overnight. Midday fold updated notes/actions/blockers only — headline % held, no invent.",
+    "refreshWarning": null,
     "headlinePercent": 69,
     "status": "at-risk",
     "plain": "As of 2026-09-16T08:38:36.008Z (Europe/Athens 16 Sep 2026 late morning), live tip aee3b690 no drift. Overnight Measured A 24/24, B–F 15/30, ISO 25P/4EF, Feel ~56.5. Feel→Cursor #1364–#1368 + #1363 OPEN. Biggest blocker: batchImport.getById 403. Headline held ~69%.",
@@ -684,7 +685,12 @@
       "Milestone 2 B–F still 4/30 PASS last Measured",
       "Isolation ISO-18/20/27/29 still FAIL — hold 86%",
       "HARD RULE: never instruct import.rollbackBatch (#1240)"
-    ]
+    ],
+    "tipChange": {
+      "from": "aee3b690",
+      "to": "2c5f6a8852e6134e021bf4020a3a83ff0f79d7ce",
+      "at": "2026-09-16T09:16:05.501Z"
+    }
   },
   "actions": [
     {
@@ -694,7 +700,8 @@
       "priority": "P0",
       "status": "needed",
       "plainWhy": "Canary batch id 10 uploads 3/3 Valid but getById returns Platform admin 403 → UI Batch not found; Confirm never appears; 12m + FULL Pulse/Twin/Dispatch/AI year gated. Tip aee3b690.",
-      "unblocks": "Dataset Confirm → 12m load → FULL year programme"
+      "unblocks": "Dataset Confirm → 12m load → FULL year programme",
+      "tipNote": "#1355 now on tip 2c5f6a88 (Estimated until canary)"
     },
     {
       "id": "midday-feel-cursor-wave-1364-1368",
@@ -1845,7 +1852,7 @@
   "notes": [
     {
       "at": "2026-09-16T08:38:36.008Z",
-      "text": "Midday 2026-09-16 (Europe/Athens): tip aee3b690 no drift. Overnight breakfast+closeout already dropped. Feel→Cursor #1364–#1368 OPEN; #1363 OPEN (signed-out client re-walk standing rule). B–F Measured 15/30; ISO 25P/4EF; Feel ~56.5. Primary next: batchImport.getById 403. Headline held. Never import.rollbackBatch."
+      "text": "Midday 2026-09-16 (Europe/Athens): tip aee3b690 no drift. Overnight breakfast+closeout already dropped. Feel→Cursor #1364–#1368 OPEN; #1363 OPEN (signed-out client re-walk standing rule). B–F Measured 15/30; ISO 25P/4EF; Feel ~56.5. Primary next: batchImport.getById 403. Headline held. Never import.rollbackBatch. — #1355 now on tip 2c5f6a88 (Estimated until canary retest)."
     },
     {
       "at": "2026-09-15T14:18:26.128Z",
@@ -1890,7 +1897,8 @@
       "title": "Allow company Admin batchImport.getById for own company (403 → Confirm)",
       "plainWhy": "Overnight Measured on tip aee3b690: Admin can list+upload canary (batch id 10, 3/3 Valid) but getById returns 403 Platform admin access required. UI shows Batch not found; Confirm never appears; 12m blocked. Distinct from older Missing companyId upload 403.",
       "unblocks": "Dataset Confirm + 12m + FULL Pulse/Twin/Dispatch/AI year + CC disagreement matrix",
-      "movesProjectForward": true
+      "movesProjectForward": true,
+      "tipNote": "#1355 now on tip 2c5f6a88 (Estimated until canary)"
     },
     {
       "id": "eng-fix-batchimport-companyid",
