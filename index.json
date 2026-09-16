@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-09-16T11:56:01.515Z",
+  "updatedAt": "2026-09-16T13:55:16.459Z",
   "drops": [
+    {
+      "id": "2026-09-16-progress-for-claude-2026-09-16",
+      "title": "Progress for Claude 2026-09-16",
+      "date": "2026-09-16",
+      "summary": "Today: ISO 4→2 EF, D-PAYFAIL PASS, #1355/#1364 on tip; blocked: Confirm retest, smoke, ISO-18/29, #1351, Observe, MEM-F01, Feel leftovers. Agent actions for Cursor/Codex/Astra/Bot/Declan.",
+      "plainEnglish": "Today: ISO 4→2 EF, D-PAYFAIL PASS, #1355/#1364 on tip; blocked: Confirm retest, smoke, ISO-18/29, #1351, Observe, MEM-F01, Feel leftovers. Agent actions for Cursor/Codex/Astra/Bot/Declan.",
+      "tags": [
+        "status",
+        "findings",
+        "command-centre",
+        "isolation",
+        "dataset",
+        "smoke"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-16-progress-for-claude-2026-09-16/HELGOIQ-PROGRESS-FOR-CLAUDE-2026-09-16.md"
+      ],
+      "tip": "8226bb01"
+    },
     {
       "id": "2026-09-16-cc-chain-tip-retest-30474e53",
       "title": "CC chain tip retest 30474e53 final",
