@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-09-16T09:27:38.935Z",
+  "updatedAt": "2026-09-16T09:38:06.406Z",
   "meta": {
-    "dataAsOf": "2026-09-16T09:27:38.935Z",
-    "buildStamp": "59f2f8aa67a651676a299dc30131dd6ab67bd3f3",
-    "liveTip": "59f2f8aa67a651676a299dc30131dd6ab67bd3f3",
+    "dataAsOf": "2026-09-16T09:38:06.406Z",
+    "buildStamp": "443d54e3c2573870e10ed6b4ae9cfb93d26148e4",
+    "liveTip": "443d54e3c2573870e10ed6b4ae9cfb93d26148e4",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 69% = round((52\u00d712 + 65\u00d710 + 86\u00d710 + 65\u00d715 + 95\u00d79 + 73\u00d710 + 72\u00d76 + 72\u00d78 + 99\u00d710 + 25\u00d710)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/2026-09-16-tip-2c5f6a88.json",
-    "lastRefreshNote": "Midday tip-change 2026-09-16 Europe/Athens: 2c5f6a88\u219259f2f8aa via Launch Hub tip-change refresh (wake: #1309 merged). Live tip is #1349 (Clerk settle before join-pay). Staging HEAD 443d54e3 (#1309 Refrm tenant bind) is ONE commit ahead \u2014 merged undeployed. Headline held 69% (no invent). Cluster A / AI-85 / B\u2013F / ISO still Estimated until re-walk on this tip.",
+    "lastRefreshNote": "Midday tip-change 2026-09-16 Europe/Athens: 59f2f8aa\u2192443d54e3 via Launch Hub tip-change refresh (wake: #1354 merged). Live tip is #1309 (isolation Refrm tenant bind ISO-18/20/27/29). Also still on tip: #1349 Clerk settle before join-pay. Staging HEAD 15426b8f (#1354 executive scope) is ONE commit ahead \u2014 merged undeployed. Headline held 69% (no invent). Cluster A / AI-85 / B\u2013F / ISO still Estimated until re-walk on this tip. Never import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-16T09:26:47.785Z"
+      "checkedAt": "2026-09-16T09:35:13.869Z"
     },
-    "updatedAt": "2026-09-16T09:27:38.935Z",
+    "updatedAt": "2026-09-16T09:38:06.406Z",
     "note": "Live tip 2c5f6a88. Tip change from aee3b690: Feel #1364 + #1301/#1342/#1352/#1355/#1356/#1358\u2013#1360/#1362 on tip. #1349 merged undeployed. Cluster A 24/24 last Measured on aee3b690. #1355 batchImport.getById on tip \u2014 Estimated until canary. Never import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 368/413 \u2248 89.1%.",
     "headlineVsCoverage": "Headline ~66% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
@@ -37,10 +37,10 @@
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
     "commandCentreNote": "Cluster A 24/24 last Measured on tip aee3b690; not re-run on 2c5f6a88. Milestone 2 B\u2013F 15/30 last Measured on prior tip. Strand percents held \u2014 do not invent.",
-    "liveTipNote": "Live /api/version releaseSha=59f2f8aa67a651676a299dc30131dd6ab67bd3f3. Staging branch tip 443d54e3 includes #1309 not yet on DO.",
-    "checkedAt": "2026-09-16T09:27:38.935Z"
+    "liveTipNote": "Live lobster tip 443d54e3 = #1309. Staging ahead_by 1 with #1354 undeployed.",
+    "checkedAt": "2026-09-16T09:38:06.406Z"
   },
-  "tip": "59f2f8aa67a651676a299dc30131dd6ab67bd3f3",
+  "tip": "443d54e3c2573870e10ed6b4ae9cfb93d26148e4",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 69,
@@ -81,10 +81,10 @@
       "comms": 25,
       "headline": 17
     },
-    "plainEnglishDay": "Wednesday (16 Sep 2026 midday Europe/Athens): tip moved 2c5f6a88\u219259f2f8aa. On tip now: #1349 settle Clerk before join-pay purchase redirect (was the undeployed merge from the prior stamp). Trigger wake was #1309 isolation Refrm bind \u2014 merged to staging (443d54e3) but NOT on live lobster tip yet. Still on tip from earlier: #1364 Feel Safe Studio/Finance chrome + waitlist/comms/coverage/batchImport pack incl. #1355 getById. OPEN: Feel mobile #1368, purchase catalogue #1363, CC recoverable #1366, timezone #1370, feature catalogue #1365, company query #1367, and more Feel/CC/comms PRs. Blockers hold: smoke Cloudflare NEED_DECLAN; PA-PULSE-MGR; PA-SCAN NEED PA; six-step Stripe Connect parked. NEVER import.rollbackBatch (#1240). Cluster A last Measured 24/24 on aee3b690 \u2014 Estimated on 59f2f8aa. Headline held 69% \u2014 no invent.",
+    "plainEnglishDay": "Wednesday (16 Sep 2026 midday Europe/Athens): tip moved 59f2f8aa\u2192443d54e3. On tip now: #1309 bind Refrm surfaces to selected tenant (ISO-18/20/27/29) \u2014 was the undeployed merge from the prior stamp. Still on tip: #1349 settle Clerk before join-pay. Trigger wake was #1354 executive report current-scope enforce \u2014 merged to staging (15426b8f) but NOT on live lobster tip yet. Headline held 69%. Isolation / Cluster A / AI-85 / B\u2013F stay Estimated until re-walk. Never import.rollbackBatch (#1240 gate).",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Tip CHANGED 2c5f6a88\u219259f2f8aa. #1349 ON tip. #1309 merged undeployed (staging ahead by 1). No new Measured strand rescored \u2014 hold headline 69%.",
-    "updatedAt": "2026-09-16T09:27:38.935Z",
+    "compareNote": "Morning was 52%; midday held 69% through tip moves 2c5f6a88\u219259f2f8aa\u2192443d54e3 with no new Measured strand bumps.",
+    "updatedAt": "2026-09-16T09:38:06.406Z",
     "coverageNote": "After AI L2 Intel: L\u22651=372 (90%); L\u22652=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": "BLOCKED NEED_DECLAN \u2014 Stripe Connect TEST immediate cancel still parked; smoke-3 Cloudflare also NEED_DECLAN. Not PASS.",
@@ -189,7 +189,14 @@
       "note": "Finance preview names James Watt / Asha Patel replaced with fixtures; deny-list updated."
     },
     "cmsAfternoonPack": "LIVE on tip aee3b690: #1299/#1327/#1339/#1344/#1343. Feel wave #1364\u2013#1368 + #1363 NOT on tip yet.",
-    "triggerPr": "#1323 merge deploy tip 32e8f686 (with #1213/#1310/#1307/#1311/#1297/#1322/#1338/#1326/#1312/#1320 same wave)",
+    "triggerPr": {
+      "number": 1354,
+      "title": "fix(intelligence): enforce current scope across executive reports",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1354",
+      "mergedAt": "2026-09-16T09:29:22Z",
+      "onLiveTip": false,
+      "note": "Wake PR; tip move itself is #1309 deploy catching up."
+    },
     "tipMove40da6535": {
       "prevTip": "af7e6009e076850b1e85daab312e40ce16199e44",
       "newTip": "40da6535c03b3f1bc8e1dd28b181143da0268f69",
@@ -213,17 +220,17 @@
       "note": "Estimate bumps only (ai-85 56\u219260, findings-fix 93\u219295). #1272 candidate for AI-042 MRR crash. Bluebird retests not run."
     },
     "awaitingTipMerges": {
-      "stagingHead": "443d54e3c2573870e10ed6b4ae9cfb93d26148e4",
-      "liveTip": "59f2f8aa67a651676a299dc30131dd6ab67bd3f3",
+      "stagingHead": "15426b8fa4112f7ae47fbdd592949c97822939c3",
+      "liveTip": "443d54e3c2573870e10ed6b4ae9cfb93d26148e4",
       "undeployed": [
         {
-          "pr": 1309,
-          "sha": "443d54e3",
-          "title": "fix(isolation): bind Refrm surfaces to selected tenant"
+          "pr": 1354,
+          "sha": "15426b8f",
+          "title": "fix(intelligence): enforce current scope across executive reports"
         }
       ],
-      "at": "2026-09-16T09:27:38.935Z",
-      "note": "Staging HEAD is #1309; lobster /api/version still #1349."
+      "at": "2026-09-16T09:38:06.406Z",
+      "note": "Staging HEAD is #1354; lobster /api/version still #1309 (443d54e3)."
     },
     "tipMove5a5e939c": {
       "prevTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
@@ -366,6 +373,24 @@
       "triggerPr": 1309,
       "at": "2026-09-16T09:27:38.935Z",
       "note": "Live tip advanced to #1349. Wake was #1309 merge; DO not yet on 443d54e3. Isolation ISO-18/20/27/29 fix is undeployed \u2014 do not claim Measured ISO improvement."
+    },
+    "tipMove443d54e3": {
+      "prevTip": "59f2f8aa67a651676a299dc30131dd6ab67bd3f3",
+      "newTip": "443d54e3c2573870e10ed6b4ae9cfb93d26148e4",
+      "prsOnTip": [
+        1309
+      ],
+      "prsStillOnTip": [
+        1349,
+        1355,
+        1364
+      ],
+      "prsMergedUndeployed": [
+        1354
+      ],
+      "triggerPr": 1354,
+      "at": "2026-09-16T09:38:06.406Z",
+      "note": "Live tip advanced to #1309. Wake was #1354 merge; DO not yet on 15426b8f. Isolation #1309 is ON tip but still Estimated until ISO re-walk \u2014 do not claim Measured bump."
     }
   },
   "strands": [
@@ -376,7 +401,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Dataset canary last FAIL on tip 6486be87: batchImport.upload Missing companyId HTTP 403. #1310 (bind batch uploads to active company) now live on tip e3ba86e8 \u2014 candidate fix, not Measured yet. Never import.rollbackBatch.",
-      "progressNote": "Estimate hold 52% on tip 59f2f8aa. #1355 batchImport.getById ON tip (from prior pack) \u2014 canary Confirm not retested. NEVER import.rollbackBatch (#1240).",
+      "progressNote": "Estimate hold 52% on tip 443d54e3 (tip move; no new Measured on this strand).",
       "blockers": [
         "Canary upload FAIL: Missing companyId on batchImport.upload (403) \u2014 engineering",
         "12-month dataset not imported (0 members from canary)"
@@ -403,7 +428,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Tip ac845589 adds #1302 Cluster B win-back location on top of CC pack (#1297/#1322/#1338/#1326 + Astra). Estimate 65% \u2014 Bluebird retest before bump.",
-      "progressNote": "Estimated on tip 59f2f8aa (was Measured/Estimate on prior tip). Held 65% estimate \u2014 tip ac845589 keeps #1297/#1322/#1338/#1326 CC pack; #1302 Cluster B follow-up now on tip. Last Measured A 24/24 + B\u2013F 4/30 still 6486be87.",
+      "progressNote": "Estimate hold 65% on tip 443d54e3. Tip moved for isolation #1309; no new CC Measured.",
       "blockers": [
         "Milestone 2 B\u2013F 26 FAIL \u2014 invented how-do-I paths, missing named refuse reasons, XAGR disagreements/missing numbers, investigation stalls",
         "E-FAC-01 isolation: invented Setup path toward deleting a Refrm building"
@@ -432,8 +457,8 @@
       "percent": 86,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "ISO-29 last Measured 26 PASS / 4 FAIL / 2 NOT_RUN on older tip. #1309 aims at Refrm client/cohort/availability/CC tenant bind but is not on live tip yet \u2014 hold 86% Estimated.",
-      "progressNote": "Estimate hold 86% on tip 59f2f8aa. #1309 (ISO-18/20/27/29 Refrm bind) MERGED undeployed (staging 443d54e3, not on live tip). Last Measured still 6486be87 / 232659cf matrix \u2014 no invent bump.",
+      "plainSummary": "ISO-29 last Measured 26 PASS / 4 FAIL / 2 NOT_RUN on older tip. #1309 Refrm client/cohort/availability/CC tenant bind is NOW on live tip 443d54e3 \u2014 hold 86% Estimated until Bluebird\u2194Refrm re-walk closes ISO-18/20/27/29.",
+      "progressNote": "Estimate hold 86% on tip 443d54e3. #1309 (ISO-18/20/27/29 Refrm bind) ON tip. Last Measured still 6486be87 / 232659cf matrix \u2014 no invent bump. Re-walk needed to claim Measured.",
       "blockers": [
         "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (Measured on 6486be87)",
         "Weymouth #1245 and Luton #1242 extras NOT_RUN \u2014 no dedicated fixture/route"
@@ -459,7 +484,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "#1302 Cluster B win-back draft location follow-up live on tip ac845589. Astra Pulse stages still on tip. Estimate 65% \u2014 last Measured AI-85 still older tip; #1272 AI-042 candidate not confirmed.",
-      "progressNote": "Estimated on tip 59f2f8aa (was Measured/Estimate on prior tip). Held 65% estimate \u2014 tip ac845589. #1302 Cluster B win-back location ON tip; Astra Pulse #1312/#1323 still live. AI-042/#1272 still open until Bluebird retest.",
+      "progressNote": "Estimate hold 65% on tip 443d54e3. #1354 executive scope merged undeployed \u2014 no invent bump.",
       "blockers": [
         "23 UNCERTAIN remain (many empty AI / NEED_DECLAN)",
         "#1272 on tip \u2014 Bluebird retest pending for AI-042 MRR crash (was FAIL)",
@@ -484,7 +509,7 @@
       "basis": "estimate",
       "status": "on-track",
       "plainSummary": "#1320 keeps saved Dispatch referral actions tied to exact briefing \u2014 now on tip e3ba86e8. Last Measured ambient PASS still 6486be87; estimate 95% pending Bluebird retest.",
-      "progressNote": "Estimated on tip 59f2f8aa (was Measured/Estimate on prior tip). Held 95% estimate \u2014 tip e3ba86e8. #1320 Dispatch referral exact briefing NOW on tip; last Measured Dispatch PASS still 6486be87.",
+      "progressNote": "Estimate hold 95% on tip 443d54e3 (tip move; no new Measured on this strand).",
       "blockers": [
         "Event Bus Platform-Admin gated \u2014 Declan escalation not attempted",
         "Learning Engine still 0 active lessons (one-tap action works)"
@@ -507,7 +532,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Members Directory/invitations/Inbox Feel (#1284/#1287/#1285) PASS overnight on tip 3ad37824. #1286 Overview Members count = directory still ON tip (ancestry) \u2014 retest pending. Tip now 40da6535 with payments/smoke/CC packs; Wave1 full re-run still open.",
-      "progressNote": "Estimated on tip 59f2f8aa (was Measured/Estimate on prior tip). Held 73% \u2014 tip ac845589. #1321 forms drawn/typed signatures NOW ON tip. Bluebird retest before bump.",
+      "progressNote": "Estimate hold 73% on tip 443d54e3 (tip move; no new Measured on this strand).",
       "blockers": [
         "#1286 Overview Members count \u2014 Bluebird retest still pending (tip ancestry)",
         "Fresh member invite create FAIL on a263c4ab (form closed; pending list unchanged)",
@@ -539,7 +564,7 @@
       "basis": "estimate",
       "status": "FAIL",
       "plainSummary": "#1337 smoke CI reconciliation now on tip ac845589 with #1331 checkout response diagnostic and #1307 overlays. Six-step last Measured FAIL 1/6 on 3ad37824; retest pending. Estimate 72%.",
-      "progressNote": "Estimated on tip 59f2f8aa (was Measured/Estimate on prior tip). Held 72% estimate \u2014 tip 51015ca2. #1318 join/pay redacted auth-state evidence ON tip (diagnostics). Last Measured smoke 6-step FAIL on tip ac845589 (step2 409). Bluebird retest not run.",
+      "progressNote": "Estimate hold 72% on tip 443d54e3 (tip move; no new Measured on this strand).",
       "blockers": [
         "Six-step smoke last Measured FAIL 1/6 \u2014 step2 Playwright locator; #1298 now on tip \u2014 retest pending",
         "Join-and-pay job missing JOIN_PAY_PROOF_FIXTURES",
@@ -567,7 +592,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "#1311 fix(stripe): resume billing after scheduled collection pause live on tip e3ba86e8. #1292 Invoicing naming still on ancestry. Estimate held 72 pending Bluebird retest.",
-      "progressNote": "Estimate hold 72% on tip 59f2f8aa. #1349 Clerk settle before join-pay ON tip \u2014 not re-Measured. Six-step Stripe Connect still parked. No invent.",
+      "progressNote": "Estimate hold 72% on tip 443d54e3 (tip move; no new Measured on this strand).",
       "blockers": [
         "#1268 public QR checkout on tip 40da6535 \u2014 Bluebird retest pending",
         "Admin2 Resume/unfreeze FAIL \u2014 payment provider; Smoke membership still paused",
@@ -580,9 +605,9 @@
       ],
       "phaseId": "member-commerce",
       "projectWeightPercent": 8,
-      "lastTestedStamp": "aee3b690b2f895393adf2b636dfc0c202d5d43fc",
+      "lastTestedStamp": "59f2f8aa67a651676a299dc30131dd6ab67bd3f3",
       "lastTestedVerdict": "FAIL",
-      "coverageFreshness": "current"
+      "coverageFreshness": "stale"
     },
     {
       "id": "findings-fix",
@@ -591,7 +616,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Estimate 99% on tip aee3b690. #1343 cover-swap notifications closed the last undeployed afternoon item. Bluebird Measured retests still required across tip waves.",
-      "progressNote": "Estimated on tip 59f2f8aa (was Measured/Estimate on prior tip). Held 98% estimate \u2014 tip e3ba86e8 eleven-PR wave. No Measured invent. Retest debt grows (comms/CC/Astra/smoke/payments/dataset).",
+      "progressNote": "Estimate hold 99% on tip 443d54e3 (tip move; no new Measured on this strand).",
       "blockers": [
         "#1303/#1293/#1275/#1282 on tip 5a5e939c \u2014 Bluebird retest pending",
         "#1272/#1306 on tip ancestry \u2014 Bluebird retest pending",
@@ -628,7 +653,7 @@
       "basis": "estimate",
       "status": "blocked",
       "plainSummary": "Measured 25% PARTIAL on tip aee3b690. #1213 booking confirm PASS (Member A Agentmail + History Sent); member cancel PARTIAL (no notify/mail/ledger); reminder N/A; newsletter BLOCKED. #1343 cover PARTIAL (no notify control / no proof mail). #1344 journey BLOCKED (admin-2 only recipient). Consent UNTESTED. Never import.rollbackBatch.",
-      "progressNote": "Estimate hold 25% PARTIAL on tip 59f2f8aa (last Measured PARTIAL on aee3b690). No new Measured.",
+      "progressNote": "Estimate hold 25% PARTIAL on tip 443d54e3 (last Measured PARTIAL on aee3b690). No new Measured.",
       "blockers": [
         "Member cancel: no notify control, no cancel History row, no cancel mail",
         "#1343 cover-swap: no notify control / no proof mail this retest",
@@ -643,7 +668,7 @@
       "phaseId": "communications",
       "projectWeightPercent": 10,
       "lastTestedStamp": "aee3b690b2f895393adf2b636dfc0c202d5d43fc",
-      "coverageFreshness": "current",
+      "coverageFreshness": "stale",
       "note": "Measured 25% PARTIAL on tip aee3b690. Booking confirm delivery proven; remaining blockers keep strand blocked. No CSV import.rollbackBatch.",
       "measuredNote": "Tip aee3b690 \u00a73 retest PARTIAL: booking confirm PASS (Agentmail + History); cancel PARTIAL; newsletter BLOCKED; reminder N/A; #1343 PARTIAL (no notify); #1344 BLOCKED (admin-2); Consent UNTESTED \u2192 25% measured (modest lift from estimate 18%).",
       "lastTestedAt": "2026-09-15"
@@ -706,26 +731,56 @@
       "from": "aee3b690",
       "to": "2c5f6a8852e6134e021bf4020a3a83ff0f79d7ce",
       "at": "2026-09-16T09:16:05.501Z"
-    }
+    },
+    "note": "Headline held 69% after tip move to 443d54e3. Strands remain Estimated until re-walk."
   },
   "actions": [
+    {
+      "id": "tip-move-443d54e3-1309",
+      "title": "Done tip 443d54e3 \u2014 #1309 isolation Refrm bind ON tip",
+      "owner": "bot",
+      "priority": "P0",
+      "status": "done",
+      "plainWhy": "Live tip 59f2f8aa\u2192443d54e3. #1309 deployed. Wake was #1354 merge; that SHA (15426b8f) is still undeployed on lobster.",
+      "updatedAt": "2026-09-16T09:38:06.406Z"
+    },
+    {
+      "id": "await-deploy-1354-executive-scope",
+      "title": "Await DO deploy of #1354 executive current-scope (staging HEAD)",
+      "owner": "declan",
+      "priority": "P1",
+      "status": "open",
+      "plainWhy": "#1354 merged to staging (15426b8f) but lobster /api/version still 443d54e3. AI-85 strand stays Estimated.",
+      "updatedAt": "2026-09-16T09:38:06.406Z",
+      "pr": 1354,
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1354"
+    },
+    {
+      "id": "retest-iso-1309-on-tip-443d54e3",
+      "title": "PRIMARY \u2014 Bluebird\u2194Refrm ISO re-walk on tip 443d54e3 (#1309)",
+      "owner": "bot",
+      "priority": "P0",
+      "status": "open",
+      "plainWhy": "#1309 is live. Re-test ISO-18/20/27/29 (and related Refrm surfaces) before claiming Measured isolation improvement. Closing gate remains Bluebird 150002 vs Refrm 150001.",
+      "updatedAt": "2026-09-16T09:38:06.406Z"
+    },
     {
       "id": "tip-move-59f2f8aa-1349",
       "title": "Done tip 59f2f8aa \u2014 #1349 Clerk settle before join-pay ON tip",
       "owner": "bot",
-      "priority": "P0",
+      "priority": "P2",
       "status": "done",
       "plainWhy": "Live tip 2c5f6a88\u219259f2f8aa. #1349 deployed. Wake was #1309 merge; that SHA (443d54e3) is still undeployed on lobster.",
       "updatedAt": "2026-09-16T09:27:38.935Z"
     },
     {
       "id": "await-deploy-1309-isolation-refrm",
-      "title": "Await DO deploy of #1309 isolation Refrm tenant bind (staging HEAD)",
+      "title": "Done \u2014 #1309 isolation Refrm tenant bind ON tip 443d54e3",
       "owner": "bot",
       "priority": "P0",
-      "status": "needed",
-      "plainWhy": "#1309 merged (ISO-18/20/27/29 Refrm bind). Staging HEAD 443d54e3 is 1 commit ahead of live tip 59f2f8aa. After deploy: Bluebird vs Refrm tenant-switch re-test before closing isolation findings.",
-      "updatedAt": "2026-09-16T09:27:38.935Z"
+      "status": "done",
+      "plainWhy": "Live tip advanced 59f2f8aa\u2192443d54e3. ISO still Estimated until re-walk.",
+      "updatedAt": "2026-09-16T09:38:06.406Z"
     },
     {
       "id": "midday-fix-batchimport-getbyid",
@@ -1585,6 +1640,11 @@
     }
   ],
   "notes": [
+    {
+      "id": "tip-443d54e3-2026-09-16",
+      "at": "2026-09-16T09:38:06.406Z",
+      "text": "Tip 59f2f8aa\u2192443d54e3: #1309 ON tip; #1354 merged undeployed. Headline 69% held. No CSV import.rollbackBatch."
+    },
     {
       "id": "tip-59f2f8aa-2026-09-16",
       "at": "2026-09-16T09:27:38.935Z",
