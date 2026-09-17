@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-09-17T09:07:05.120Z",
+  "updatedAt": "2026-09-17T09:13:25.644Z",
   "meta": {
-    "dataAsOf": "2026-09-17T09:07:05.120Z",
-    "buildStamp": "c68ce040952b90050779e44970628655b3f3c3b4",
-    "liveTip": "c68ce040952b90050779e44970628655b3f3c3b4",
+    "dataAsOf": "2026-09-17T09:13:25.644Z",
+    "buildStamp": "b1a15f4884555ba94df200a514086230b1e16fbe",
+    "liveTip": "b1a15f4884555ba94df200a514086230b1e16fbe",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 68% = round((52×12 + 60×10 + 86×10 + 65×15 + 95×9 + 73×10 + 55×6 + 72×8 + 99×10 + 28×10)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
-    "latestSnapshotPath": "history/2026-09-17-tip-c68ce040.json",
-    "lastRefreshNote": "Tip moved 33ca5d0c→c68ce040; #1333 is LIVE on the live tip (decoy Academy enrolment refuse). #1334 is merged to staging (b1a15f48) and awaits DO deploy. Strand percents HELD (no new Measured); headline held 68%. Never invent PASS. Never import.rollbackBatch.",
+    "latestSnapshotPath": "history/2026-09-17-tip-b1a15f48.json",
+    "lastRefreshNote": "Tip unchanged (b1a15f48); stamps refreshed only — do not look more confident without new measured facts.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-17T09:07:05.120Z"
+      "checkedAt": "2026-09-17T09:13:25.644Z"
     },
-    "updatedAt": "2026-09-17T09:07:05.120Z",
-    "note": "Live tip c68ce040 (#1333 LIVE: decoy Academy enrolment refuse). #1334 merged to staging (b1a15f48) and awaits DO deploy. Measured/Estimate scores held pending Bluebird retests; headline held 68%. Never import.rollbackBatch.",
+    "updatedAt": "2026-09-17T09:13:19.942Z",
+    "note": "Live tip b1a15f48 (#1334 LIVE: cross-tenant CMS publishing refuse; #1333 still on tip). Measured/Estimate scores held pending Bluebird retests; headline held 68%. Never import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L≥1 = 383/413 ≈ 92.7%; L≥2 = 368/413 ≈ 89.1%.",
     "headlineVsCoverage": "Headline ~66% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
@@ -36,24 +36,18 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "Cluster A Measured 19/24 hold from tip 5b1def5c. #1333 decoy Academy enrolment refuse is LIVE on c68ce040; #1334 CMS publishing refuse is merged to staging (b1a15f48) and awaits deploy. Command Centre strand remains 60% Estimate pending Bluebird vs Refrm retests. Never invent PASS. Never import.rollbackBatch.",
-    "liveTipNote": "Live lobster tip is c68ce040 (full c68ce040952b90050779e44970628655b3f3c3b4). #1333 decoy Academy enrolment refuse is ON tip. Staging HEAD b1a15f48 (b1a15f4884555ba94df200a514086230b1e16fbe) carries merged #1334 cross-tenant CMS publishing refuse and awaits DO deploy. Strand percents remain held; Cluster A 19/24 from 5b1def5c, smoke #1375 NEED_DECLAN, and Bluebird retests remain pending. Never import.rollbackBatch.",
-    "checkedAt": "2026-09-17T09:07:05.120Z",
+    "commandCentreNote": "Cluster A Measured 19/24 hold from tip 5b1def5c. #1334 cross-tenant CMS publishing refuse is LIVE on b1a15f48; #1333 decoy Academy enrolment refuse remains on tip. Command Centre strand remains 60% Estimate pending Bluebird vs Refrm retests. Never invent PASS. Never import.rollbackBatch.",
+    "liveTipNote": "Live lobster tip is b1a15f48 (full b1a15f4884555ba94df200a514086230b1e16fbe). #1334 cross-tenant CMS publishing refuse is ON tip (parent c68ce040 carried #1333). Staging HEAD identical. Strand percents remain held; Cluster A 19/24 from 5b1def5c, smoke #1375 NEED_DECLAN, and Bluebird retests remain pending. Never import.rollbackBatch.",
+    "checkedAt": "2026-09-17T09:13:19.942Z",
     "awaitingTipMerges": {
       "stagingHead": "b1a15f4884555ba94df200a514086230b1e16fbe",
-      "liveTip": "c68ce040952b90050779e44970628655b3f3c3b4",
-      "undeployed": [
-        {
-          "pr": 1334,
-          "title": "Command Centre: refuse cross-tenant CMS publishing",
-          "mergeSha": "b1a15f4884555ba94df200a514086230b1e16fbe"
-        }
-      ],
-      "at": "2026-09-17T09:07:05.120Z",
-      "note": "Live tip c68ce040 includes #1333. Staging HEAD b1a15f48 carries #1334, which is merged but not yet deployed."
+      "liveTip": "b1a15f4884555ba94df200a514086230b1e16fbe",
+      "undeployed": [],
+      "at": "2026-09-17T09:13:19.942Z",
+      "note": "Live tip b1a15f48 includes #1334 and #1333. Staging HEAD identical — no undeployed merges."
     }
   },
-  "tip": "c68ce040952b90050779e44970628655b3f3c3b4",
+  "tip": "b1a15f4884555ba94df200a514086230b1e16fbe",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 68,
@@ -94,19 +88,19 @@
       "comms": 28,
       "headline": 16
     },
-    "plainEnglishDay": "Tip moved 33ca5d0c→c68ce040 LIVE: #1333 decoy Academy enrolment refuse is ON tip. #1334 cross-tenant CMS publishing refuse is merged to staging (b1a15f48) and awaits DO deploy. Headline held 68% (morning 52%); strand percents HELD with no new Measured. Cluster A 19/24 remains held from 5b1def5c; smoke #1375 is NEED_DECLAN and Bluebird retests remain open. Never invent PASS.",
+    "plainEnglishDay": "Tip moved c68ce040→b1a15f48 LIVE: #1334 cross-tenant CMS publishing refuse is ON tip (with #1333). Headline held 68% (morning 52%); strand percents HELD with no new Measured. Cluster A 19/24 remains held from 5b1def5c; smoke #1375 is NEED_DECLAN and Bluebird retests remain open. Never invent PASS.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Live tip advanced 33ca5d0c→c68ce040; #1333 is LIVE and #1334 is merged to staging (b1a15f48) awaiting deploy. Strand percents remain held from Measured/Estimate evidence, including Cluster A 19/24 from 5b1def5c; no new Measured claim.",
-    "updatedAt": "2026-09-17T09:07:05.120Z",
+    "compareNote": "Live tip advanced c68ce040→b1a15f48; #1334 is LIVE (with #1333). Strand percents remain held from Measured/Estimate evidence, including Cluster A 19/24 from 5b1def5c; no new Measured claim.",
+    "updatedAt": "2026-09-17T09:13:19.942Z",
     "coverageNote": "After AI L2 Intel: L≥1=372 (90%); L≥2=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": {
-      "tip": "c68ce040952b90050779e44970628655b3f3c3b4",
+      "tip": "b1a15f4884555ba94df200a514086230b1e16fbe",
       "verdict": "FAIL",
       "basis": "measured-hold",
       "blocker": "#1375 Cancelling≠terminal checkout 409",
       "at": "2026-09-17T07:40:40.001Z",
-      "note": "Last Measured FAIL remains on tip 5b1def5c (#1375). Live tip is now c68ce040; no new six-step Measured yet — hold FAIL / NEED_DECLAN fixture. Never invent a smoke PASS."
+      "note": "Last Measured FAIL remains on tip 5b1def5c (#1375). Live tip is now b1a15f48; no new six-step Measured yet — hold FAIL / NEED_DECLAN fixture. Never invent PASS."
     },
     "pulse1266": "PASS Owner seat overnight on tip 3ad37824",
     "censusCoreL1": "80/88 PASS tip 6486be87; Coverage merge done",
@@ -131,7 +125,7 @@
     "scorePushStarted": "2026-09-12: Cluster A + ISO-29 + AI-85 reachable + Dispatch + dataset canary on 6486be87 (no Declan)",
     "censusMoneyL2Finance": "0 PASS / 1 PARTIAL (stripe-connect) / 6 FAIL — KPI drills + invoicing alias",
     "ambientDispatch": "PASS on 6486be87 — viewer honest empty, no crash",
-    "datasetCanary": "Measured FAIL hold from tip 5b1def5c: company Admin Approve requires Platform admin; 12m seed remains LIVE. No new canary Measured on c68ce040 yet. Never import.rollbackBatch.",
+    "datasetCanary": "Measured FAIL hold from tip 5b1def5c: company Admin Approve requires Platform admin; 12m seed remains LIVE. No new canary Measured on b1a15f48 yet. Never import.rollbackBatch.",
     "ai85Rescore": "Hold 65% Estimate — no new AI-85 measurement on tip b56bc994; #1351 Pulse grants LIVE pending PA-PULSE-MGR retest.",
     "clusterA": {
       "tip": "5b1def5c0951b33ec030289655ab057738226020",
@@ -146,7 +140,7 @@
       "basis": "measured",
       "drop": "2026-09-17-overnight-close-out-2026-09-17",
       "at": "2026-09-17T05:15:21.783Z",
-      "note": "Measured on tip 5b1def5c overnight. PASS=19 FAIL=5. Held pending re-walk on live tip c68ce040. MEM-F01 still FAIL; B–F locked. Never invent Cluster A PASS.",
+      "note": "Measured on tip 5b1def5c overnight. PASS=19 FAIL=5. Held pending re-walk on live tip b1a15f48. MEM-F01 still FAIL; B–F locked. Never invent Cluster A PASS.",
       "heldFromTip": "5b1def5c0951b33ec030289655ab057738226020",
       "liveTip": "c68ce040952b90050779e44970628655b3f3c3b4"
     },
@@ -257,16 +251,10 @@
     },
     "awaitingTipMerges": {
       "stagingHead": "b1a15f4884555ba94df200a514086230b1e16fbe",
-      "liveTip": "c68ce040952b90050779e44970628655b3f3c3b4",
-      "undeployed": [
-        {
-          "pr": 1334,
-          "title": "Command Centre: refuse cross-tenant CMS publishing",
-          "mergeSha": "b1a15f4884555ba94df200a514086230b1e16fbe"
-        }
-      ],
-      "note": "#1333 is LIVE on c68ce040; #1334 is on staging b1a15f48 and awaits DO deploy.",
-      "at": "2026-09-17T09:07:05.120Z"
+      "liveTip": "b1a15f4884555ba94df200a514086230b1e16fbe",
+      "undeployed": [],
+      "at": "2026-09-17T09:13:19.942Z",
+      "note": "Live tip b1a15f48 includes #1334 and #1333. Staging HEAD identical — no undeployed merges."
     },
     "tipMove5a5e939c": {
       "prevTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
@@ -496,8 +484,8 @@
       "percent": 52,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Dataset canary Measured FAIL hold from tip 5b1def5c (Approve Platform admin). Live tip c68ce040 has no new canary Measured; SEED:12M remains usable. Hold 52% pending retest. Never import.rollbackBatch.",
-      "progressNote": "Measured canary FAIL hold from 5b1def5c; live tip c68ce040 pending retest. Hold 52%. Never import.rollbackBatch.",
+      "plainSummary": "Dataset canary Measured FAIL hold from tip 5b1def5c (Approve Platform admin). Live tip b1a15f48 has no new canary Measured; SEED:12M remains usable. Hold 52% pending retest. Never import.rollbackBatch.",
+      "progressNote": "Measured canary FAIL hold from 5b1def5c; live tip b1a15f48 pending retest. Hold 52%. Never import.rollbackBatch.",
       "blockers": [
         "Dataset Confirm canary FAIL hold from tip 5b1def5c: Approve demands Platform admin — no new Measured on c68ce040 yet",
         "12-month SEED still LIVE (177 members / SEED:12M) — year-history usable; canary Approve blocked"
@@ -510,12 +498,12 @@
       ],
       "phaseId": "data-foundation",
       "projectWeightPercent": 12,
-      "measuredNote": "Overnight tip 5b1def5c canary FAIL held. Live tip c68ce040 — re-run canary before claiming #1355 clearance. Existing ban note retained.",
+      "measuredNote": "Overnight tip 5b1def5c canary FAIL held. Live tip b1a15f48 — re-run canary before claiming #1355 clearance. Existing ban note retained.",
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
-      "note": "Measured hold 52% from tip 5b1def5c canary FAIL (Approve Platform admin). Live tip c68ce040 — pending retest. Existing ban note retained.",
-      "freshnessNote": "Scores Measured on tip 5b1def5c; live tip now c68ce040 — retest pending.",
+      "note": "Measured hold 52% from tip 5b1def5c canary FAIL (Approve Platform admin). live tip is b1a15f48 — pending retest. Existing ban note retained.",
+      "freshnessNote": "Scores Measured on tip 5b1def5c; live tip now b1a15f48 — retest pending.",
       "lastTestedAt": "2026-09-17"
     },
     {
@@ -524,8 +512,8 @@
       "percent": 60,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Cluster A Measured 19/24 on tip 5b1def5c (MEM-F01 + stalls; B–F parked). #1333 decoy Academy enrolment refuse is LIVE on c68ce040; #1334 CMS publishing refuse is merged to staging (b1a15f48) and awaits deploy. Estimate hold 60%; Bluebird vs Refrm retests pending.",
-      "progressNote": "Measured Cluster A 19/24 hold from 5b1def5c; #1333 is LIVE on c68ce040; #1334 awaits DO deploy from staging b1a15f48. Strand 60% Estimate. No invent bump.",
+      "plainSummary": "Cluster A Measured 19/24 on tip 5b1def5c (MEM-F01 + stalls; B–F parked). #1333+#1334 are LIVE on tip b1a15f48. Estimate hold 60%; Bluebird vs Refrm retests pending.",
+      "progressNote": "Measured Cluster A 19/24 hold from 5b1def5c; #1333+#1334 are LIVE on b1a15f48; #1334 is LIVE on tip b1a15f48. Strand 60% Estimate. No invent bump.",
       "blockers": [
         "Cluster A Measured 19/24 hold from tip 5b1def5c — re-walk needed on c68ce040 (MEM-F01 + stalls)",
         "Milestone 2 B–F locked/parked — implied 15/30 estimate after D-PAYFAIL PASS on 30474e53",
@@ -542,13 +530,13 @@
       ],
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
-      "measuredNote": "Measured Cluster A 19/24 on tip 5b1def5c held. Live tip c68ce040 now includes #1333; re-walk Command Centre before claiming improvement. #1334 awaits deploy. Never invent PASS.",
+      "measuredNote": "Measured Cluster A 19/24 on tip 5b1def5c held. Live tip b1a15f48 includes #1333+#1334; re-walk Command Centre before claiming improvement. Never invent PASS.",
       "lastTestedStamp": "32e8f686f96e57e877d0bb2b3abc6b98dc6d0edf",
       "coverageFreshness": "stale",
       "lastTestedVerdict": "FAIL",
       "measured": 79.1666666667,
       "blocker": "Cluster A 19/24 (MEM-F01 + stalls); B–F locked/parked",
-      "note": "Estimate 60% hold. Cluster A Measured 19/24 from 5b1def5c; #1333 decoy Academy refusal is LIVE on c68ce040; #1334 CMS publishing refusal is merged to staging b1a15f48 awaiting deploy. Pending Cluster A, Feel, Otto and CMS acceptance retests.",
+      "note": "Cluster A Measured 19/24 hold from 5b1def5c; #1333+#1334 are LIVE on b1a15f48. Strand 60% Estimate until Bluebird vs Refrm retests. Never invent PASS.",
       "lastTestedAt": "2026-09-17"
     },
     {
@@ -557,8 +545,8 @@
       "percent": 86,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "ISO pack held Estimate 86%. Prior Measured evidence remains unchanged; live tip c68ce040 includes #1333, while #1334 awaits staging deploy from b1a15f48. ISO-18/20/27/29 still need Bluebird↔Refrm re-walk. No invent bump.",
-      "progressNote": "Estimate hold 86% on live tip c68ce040. #1333 is LIVE; #1334 awaits DO deploy. No new ISO Measured; privacy re-walk remains pending.",
+      "plainSummary": "ISO pack held Estimate 86%. Prior Measured evidence remains unchanged; live tip b1a15f48 includes #1333, and #1334 is LIVE. ISO-18/20/27/29 still need Bluebird↔Refrm re-walk. No invent bump.",
+      "progressNote": "Estimate hold 86% on live tip b1a15f48. #1333 is LIVE; #1334 is LIVE. No new ISO Measured; privacy re-walk remains pending.",
       "blockers": [
         "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (Measured on 6486be87)",
         "Weymouth #1245 and Luton #1242 extras NOT_RUN — no dedicated fixture/route"
@@ -584,7 +572,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Hold Estimate 65%. Prior Pulse 53 STEADY on 5b1def5c; #1351 Pulse location grants now LIVE on c68ce040 — PA-PULSE-MGR retest pending. AI24 UNTESTED.",
-      "progressNote": "Estimate hold 65% on tip c68ce040 — #1351 LIVE pending PA-PULSE-MGR; AI24 UNTESTED. No invent bump.",
+      "progressNote": "Estimate hold 65% on tip b1a15f48 — #1351 LIVE pending PA-PULSE-MGR; AI24 UNTESTED. No invent bump.",
       "blockers": [
         "AI 24 uncertain re-score UNTESTED on 12m SEED",
         "CC vs Pulse/Dispatch/Twin disagreement ledger empty (UNTESTED)",
@@ -610,7 +598,7 @@
       "basis": "estimate",
       "status": "on-track",
       "plainSummary": "#1350 Morning Dispatch location now LIVE on tip c68ce040. Last Measured ambient PASS still 6486be87; estimate hold 95% pending Bluebird retest.",
-      "progressNote": "Hold 95% Estimate on tip c68ce040 (#1350 LIVE pending retest; no Measured invent).",
+      "progressNote": "Hold 95% Estimate on tip b1a15f48 (#1350 LIVE pending retest; no Measured invent).",
       "blockers": [
         "Event Bus Platform-Admin gated — Declan escalation not attempted",
         "Learning Engine still 0 active lessons (one-tap action works)"
@@ -633,7 +621,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "#1363 purchase catalogue + #1370 timetable IANA tz now LIVE on tip c68ce040 — signed-out / booking retest pending. Estimate hold 73%. No invent bump.",
-      "progressNote": "Hold 73% Estimate on tip c68ce040 — #1363/#1370 LIVE pending retest. No Measured invent.",
+      "progressNote": "Hold 73% Estimate on tip b1a15f48 — #1363/#1370 LIVE pending retest. No Measured invent.",
       "blockers": [
         "#1286 Overview Members count — Bluebird retest still pending (tip ancestry)",
         "Fresh member invite create FAIL on a263c4ab (form closed; pending list unchanged)",
@@ -664,7 +652,7 @@
       "percent": 55,
       "basis": "measured",
       "status": "FAIL",
-      "plainSummary": "Staging critical-path smoke Measured FAIL hold from tip 5b1def5c (#1375 Cancelling≠terminal / checkout 409). Live tip now c68ce040 — no new Measured; NEED_DECLAN fixture. Strand 55%.",
+      "plainSummary": "Staging critical-path smoke Measured FAIL hold from tip 5b1def5c (#1375 Cancelling≠terminal / checkout 409). live tip now b1a15f48 — no new Measured; NEED_DECLAN fixture. Strand 55%.",
       "progressNote": "Measured FAIL #1375 hold from 5b1def5c. Tip c68ce040 — retest still NEED_DECLAN. Strand 55%.",
       "blockers": [
         "#1375 staging critical-path smoke FAIL — Grok fixture Cancelling (period end 30 Sep) ≠ terminal; checkout 409 membership remains active until end of billing period",
@@ -678,13 +666,13 @@
       ],
       "phaseId": "member-commerce",
       "projectWeightPercent": 6,
-      "measuredNote": "Overnight tip 5b1def5c: smoke fixture Cancelling≠terminal → checkout 409. Tracker #1375. Live tip c68ce040 — fixture still NEED_DECLAN.",
+      "measuredNote": "Overnight tip 5b1def5c: smoke fixture Cancelling≠terminal → checkout 409. Tracker #1375. Live tip b1a15f48 — fixture still NEED_DECLAN.",
       "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
       "lastNote": "Measured FAIL #1375 held from 5b1def5c; tip now c68ce040 — retest pending NEED_DECLAN.",
       "lastTestedAt": "2026-09-17",
-      "note": "Measured FAIL hold from tip 5b1def5c (#1375). Live tip c68ce040 — no new smoke Measured; still NEED_DECLAN."
+      "note": "Last Measured FAIL on tip 5b1def5c (#1375 Cancelling≠terminal checkout 409). Live tip b1a15f48; NEED_DECLAN fixture before six-step can PASS. Bluebird-only. Never invent PASS."
     },
     {
       "id": "payments",
@@ -717,7 +705,7 @@
       "basis": "estimate",
       "status": "at-risk",
       "plainSummary": "Estimate 99%. Merge train LIVE on tip c68ce040; Bluebird retests still required before claiming clearance. Open work includes #1373/#1374 and smoke #1375.",
-      "progressNote": "Hold 99% Estimate on tip c68ce040 — train live; retests pending. No Measured invent.",
+      "progressNote": "Hold 99% Estimate on tip b1a15f48 — train live; retests pending. No Measured invent.",
       "blockers": [
         "Merged staging train (#1351, #1363, #1366–#1368 and siblings) is awaiting DO deploy and Bluebird retest",
         "#1272/#1306 on tip ancestry — Bluebird retest pending",
@@ -777,21 +765,21 @@
   "health": {
     "overallLaunchPercent": 68,
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 68% = round((52×12 + 60×10 + 86×10 + 65×15 + 95×9 + 73×10 + 55×6 + 72×8 + 99×10 + 28×10)/100) half-up.",
-    "readinessLabel": "~68% — tip c68ce040 (#1333 LIVE); #1334 awaiting DO deploy; retests pending",
-    "plainSummary": "Live tip advanced 33ca5d0c→c68ce040. #1333 decoy Academy enrolment refuse is LIVE; #1334 CMS publishing refuse is merged to staging (b1a15f48) but awaits DO deploy. Headline held 68% with no new Measured: Cluster A 19/24 and smoke #1375 remain held from 5b1def5c; dataset Approve remains blocked.",
+    "readinessLabel": "~68% — tip b1a15f48 (#1334+#1333 LIVE); retests pending",
+    "plainSummary": "Tip moved c68ce040→b1a15f48 LIVE: #1334 cross-tenant CMS publishing refuse is ON tip (with #1333). Headline held 68% (morning 52%); strand percents HELD with no new Measured. Cluster A 19/24 remains held from 5b1def5c; smoke #1375 is NEED_DECLAN and Bluebird retests remain open. Never invent PASS.",
     "strengths": [
-      "#1333 LIVE on tip c68ce040 (decoy Academy enrolment refuse)",
-      "#1334 CMS publishing refuse is merged to staging (b1a15f48) and queued for deploy",
-      "Existing merge-train fixes remain available for Bluebird retests; Campaign Send Test PASS remains a prior measured hold"
+      "#1334 LIVE on tip b1a15f48 (cross-tenant CMS publishing refuse)",
+      "#1333 remains LIVE (decoy Academy enrolment refuse)",
+      "Staging HEAD identical to live tip; Campaign Send Test PASS remains a prior measured hold"
     ],
     "risks": [
-      "#1334 is not on the live tip yet (b1a15f48 staging vs c68ce040 live)",
-      "No new Measured on c68ce040; all strand percents and the 68% headline are held",
-      "Smoke #1375 remains NEED_DECLAN; Cluster A 19/24 and Dataset Approve FAIL remain retest blockers"
+      "No new Measured on b1a15f48; all strand percents and the 68% headline are held",
+      "Smoke #1375 remains NEED_DECLAN; Cluster A 19/24 and Dataset Approve FAIL remain retest blockers",
+      "Bluebird vs Refrm walkthrough for #1333/#1334 still pending before claiming Command Centre improvement"
     ],
     "topPriorities": [
-      "Await DO deploy of #1334 CMS publishing refuse from staging b1a15f48",
-      "Retest #1333 Academy enrolment refuse on c68ce040 across Bluebird 150002 vs Refrm 150001",
+      "Retest #1334 CMS publishing refuse on b1a15f48 across Bluebird 150002 vs Refrm 150001",
+      "Retest #1333 Academy enrolment refuse on b1a15f48 across Bluebird vs Refrm",
       "Continue open Bluebird retests; smoke #1375 remains NEED_DECLAN"
     ],
     "visualBands": {
@@ -815,10 +803,10 @@
         "m1"
       ]
     },
-    "refreshWarning": null,
+    "refreshWarning": "Live tip unchanged since last strand rebuild — readiness may be stale relative to merged-but-undeployed PRs.",
     "headlinePercent": 68,
     "status": "at-risk",
-    "plain": "Live tip advanced 33ca5d0c→c68ce040. #1333 decoy Academy enrolment refuse is LIVE; #1334 CMS publishing refuse is merged to staging (b1a15f48) but awaits DO deploy. Headline held 68% with no new Measured: Cluster A 19/24 and smoke #1375 remain held from 5b1def5c; dataset Approve remains blocked.",
+    "plain": "Tip moved c68ce040→b1a15f48 LIVE: #1334 cross-tenant CMS publishing refuse is ON tip (with #1333). Headline held 68% (morning 52%); strand percents HELD with no new Measured. Cluster A 19/24 remains held from 5b1def5c; smoke #1375 is NEED_DECLAN and Bluebird retests remain open.",
     "gaps": [
       "Bluebird vs Refrm retest of #1333 and #1334 still pending",
       "AI24 uncertain re-score and CC vs Pulse/Dispatch/Twin comparison remain untested",
@@ -826,13 +814,34 @@
     ],
     "tipChange": {
       "changed": true,
-      "from": "33ca5d0ce7b61497f074efabcea70f7f924bac76",
-      "to": "c68ce040952b90050779e44970628655b3f3c3b4",
-      "note": "#1333 is live; #1334 remains merged to staging awaiting deploy. Scores held pending retest — no invent."
+      "from": "c68ce040952b90050779e44970628655b3f3c3b4",
+      "to": "b1a15f4884555ba94df200a514086230b1e16fbe",
+      "note": "#1334 is live. Scores held pending retest — no invent."
     },
-    "note": "Tip LIVE c68ce040 (from 33ca5d0c) with #1333. #1334 awaits deploy from staging b1a15f48. Headline 68% held; retests remain open."
+    "note": "LIVE b1a15f48 (from c68ce040) with #1334. Headline 68% held; no new Measured. Never import.rollbackBatch.",
+    "label": "~68% — tip b1a15f48 (#1334+#1333 LIVE); retests pending"
   },
   "actions": [
+    {
+      "id": "retest-1334-cms-publish-refuse",
+      "title": "PRIMARY — Retest #1334 CMS publishing refuse on tip b1a15f48",
+      "status": "open",
+      "priority": "P0",
+      "owner": "bot",
+      "note": "Bluebird 150002 vs Refrm 150001. Never invent PASS. Never import.rollbackBatch.",
+      "pr": 1334,
+      "updatedAt": "2026-09-17T09:13:19.942Z"
+    },
+    {
+      "id": "tip-move-b1a15f48-1334",
+      "title": "Done tip b1a15f48 — #1334 cross-tenant CMS publishing refuse ON tip",
+      "status": "done",
+      "priority": "P0",
+      "owner": "bot",
+      "note": "Live /api/version confirmed b1a15f4884555ba94df200a514086230b1e16fbe at 2026-09-17T09:13:19.942Z.",
+      "pr": 1334,
+      "updatedAt": "2026-09-17T09:13:19.942Z"
+    },
     {
       "id": "tip-move-c68ce040-1333",
       "title": "Done tip c68ce040 — #1333 decoy Academy enrolment refuse ON tip",
@@ -852,17 +861,17 @@
     },
     {
       "id": "await-deploy-1334-cms-publish",
-      "title": "Await DO deploy — #1334 CMS publishing refuse (staging b1a15f48)",
-      "status": "open",
+      "title": "Done — #1334 CMS publishing refuse ON live tip b1a15f48",
+      "status": "done",
       "priority": "P0",
       "owner": "bot",
-      "note": "#1334 merged to staging at b1a15f4884555ba94df200a514086230b1e16fbe; live tip remains c68ce040.",
+      "note": "#1334 is LIVE on b1a15f4884555ba94df200a514086230b1e16fbe; follow-up Bluebird vs Refrm walkthrough remains open.",
       "pr": 1334,
-      "updatedAt": "2026-09-17T09:07:05.120Z"
+      "updatedAt": "2026-09-17T09:13:19.942Z"
     },
     {
       "id": "retest-1333-academy-enrolment-refuse",
-      "title": "PRIMARY — Retest #1333 Academy enrolment refuse on tip c68ce040",
+      "title": "PRIMARY — Retest #1333 Academy enrolment refuse on tip b1a15f48",
       "status": "open",
       "priority": "P0",
       "owner": "bot",
@@ -879,7 +888,7 @@
     },
     {
       "id": "retest-1332-facility-deletion-refuse",
-      "title": "PRIMARY — Retest #1332 cross-tenant facility deletion refuse on tip c68ce040",
+      "title": "PRIMARY — Retest #1332 cross-tenant facility deletion refuse on tip b1a15f48",
       "status": "open",
       "priority": "P0",
       "note": "Merged LIVE. Command Centre acceptance — Bluebird vs Refrm. Never import.rollbackBatch."
@@ -890,11 +899,11 @@
       "title": "Unblock staging smoke fixture (#1375)",
       "owner": "Declan",
       "status": "NEED_DECLAN",
-      "note": "Cancelling≠terminal → checkout 409. Last Measured on tip 5b1def5c; live tip is c68ce040 — NEED_DECLAN fixture before six-step can PASS. Bluebird-only (150002).",
+      "note": "Cancelling≠terminal → checkout 409. Last Measured on tip 5b1def5c; live tip is b1a15f48 — NEED_DECLAN fixture before six-step can PASS. Bluebird-only (150002).",
       "basis": "measured",
       "tip": "c68ce040952b90050779e44970628655b3f3c3b4",
       "updatedAt": "2026-09-17T09:07:05.120Z",
-      "plainWhy": "Fixture Cancelling≠terminal blocks checkout (409). Live tip c68ce040; fixture remains NEED_DECLAN. Bluebird 150002 only."
+      "plainWhy": "Fixture Cancelling≠terminal blocks checkout (409). Live tip b1a15f48; fixture remains NEED_DECLAN. Bluebird 150002 only."
     },
     {
       "id": "tip-move-443d54e3-1309",
@@ -927,7 +936,7 @@
     },
     {
       "id": "retest-1351-pa-pulse-mgr-b56bc994",
-      "title": "PRIMARY — Retest PA-PULSE-MGR / Pulse location grants (#1351) on tip c68ce040",
+      "title": "PRIMARY — Retest PA-PULSE-MGR / Pulse location grants (#1351) on tip b1a15f48",
       "owner": "bot",
       "priority": "P0",
       "status": "open",
@@ -938,7 +947,7 @@
     },
     {
       "id": "retest-1346-manager-newsletter-b56bc994",
-      "title": "PRIMARY — Retest manager newsletter (#1346) on tip c68ce040",
+      "title": "PRIMARY — Retest manager newsletter (#1346) on tip b1a15f48",
       "owner": "bot",
       "priority": "P0",
       "status": "open",
@@ -949,7 +958,7 @@
     },
     {
       "id": "retest-1370-timetable-iana-tz-b56bc994",
-      "title": "PRIMARY — Retest timetable IANA tz (#1370) on tip c68ce040",
+      "title": "PRIMARY — Retest timetable IANA tz (#1370) on tip b1a15f48",
       "owner": "bot",
       "priority": "P0",
       "status": "open",
@@ -960,24 +969,24 @@
     },
     {
       "id": "retest-cluster-a-b56bc994",
-      "title": "PRIMARY — Cluster A re-walk on tip c68ce040 (hold 19/24)",
+      "title": "PRIMARY — Cluster A re-walk on tip b1a15f48 (hold 19/24)",
       "owner": "bot",
       "priority": "P0",
       "status": "open",
-      "plainWhy": "Last Measured Cluster A 19/24 on tip 5b1def5c (MEM-F01 + stalls). Re-walk on live tip c68ce040 before any score change. Never invent PASS. Never import.rollbackBatch.",
+      "plainWhy": "Last Measured Cluster A 19/24 on tip 5b1def5c (MEM-F01 + stalls). Re-walk on live tip b1a15f48 before any score change. Never invent PASS. Never import.rollbackBatch.",
       "updatedAt": "2026-09-17T09:07:05.120Z"
     },
     {
       "id": "retest-smoke-1375-on-b56bc994",
-      "title": "PRIMARY — Smoke six-step on tip c68ce040 still NEED_DECLAN (#1375)",
+      "title": "PRIMARY — Smoke six-step on tip b1a15f48 still NEED_DECLAN (#1375)",
       "owner": "Declan",
       "priority": "P0",
       "status": "NEED_DECLAN",
-      "plainWhy": "Fixture Cancelling≠terminal blocks checkout (409). Live tip c68ce040; fixture remains NEED_DECLAN. Bluebird 150002 only.",
+      "plainWhy": "Fixture Cancelling≠terminal blocks checkout (409). Live tip b1a15f48; fixture remains NEED_DECLAN. Bluebird 150002 only.",
       "basis": "measured-hold",
       "tip": "c68ce040952b90050779e44970628655b3f3c3b4",
       "updatedAt": "2026-09-17T09:07:05.120Z",
-      "note": "Cancelling≠terminal → checkout 409. Last Measured on tip 5b1def5c; live tip is c68ce040 — NEED_DECLAN fixture before six-step can PASS. Bluebird-only (150002)."
+      "note": "Cancelling≠terminal → checkout 409. Last Measured on tip 5b1def5c; live tip is b1a15f48 — NEED_DECLAN fixture before six-step can PASS. Bluebird-only (150002)."
     },
     {
       "id": "retest-iso-1309-on-tip-443d54e3",
@@ -1008,16 +1017,16 @@
     },
     {
       "id": "midday-fix-batchimport-getbyid",
-      "title": "PRIMARY — Retest Dataset Approve / batchImport Confirm on tip c68ce040",
+      "title": "PRIMARY — Retest Dataset Approve / batchImport Confirm on tip b1a15f48",
       "owner": "bot",
       "priority": "P0",
       "status": "needed",
-      "plainWhy": "Canary Approve FAIL hold from tip 5b1def5c (Platform admin required). Retest on live tip c68ce040. NEVER DO-NOT-USE-import.DO-NOT-USE-rollbackBatch (#1240 gate).",
+      "plainWhy": "Canary Approve FAIL hold from tip 5b1def5c (Platform admin required). Retest on live tip b1a15f48. NEVER DO-NOT-USE-import.DO-NOT-USE-rollbackBatch (#1240 gate).",
       "updatedAt": "2026-09-17T08:09:19.288Z"
     },
     {
       "id": "midday-feel-cursor-wave-1364-1368",
-      "title": "PRIMARY — Retest Feel wave (#1366–#1368) + signed-out client on tip c68ce040",
+      "title": "PRIMARY — Retest Feel wave (#1366–#1368) + signed-out client on tip b1a15f48",
       "owner": "bot",
       "priority": "P0",
       "status": "open",
@@ -1026,7 +1035,7 @@
     },
     {
       "id": "midday-1363-purchase-catalogue-signedout",
-      "title": "PRIMARY — #1363 purchase catalogue signed-out re-walk on tip c68ce040",
+      "title": "PRIMARY — #1363 purchase catalogue signed-out re-walk on tip b1a15f48",
       "owner": "bot",
       "priority": "P0",
       "status": "open",
@@ -1819,7 +1828,7 @@
         "command-centre",
         "isolation"
       ],
-      "plainSummary": "Cluster A Measured 19/24 on tip 5b1def5c (MEM-F01 + extra stalls/couldnts); B–F parked. #1333 is LIVE on c68ce040; #1334 is merged to staging b1a15f48 and awaits deploy. Command Centre remains held pending retests.",
+      "plainSummary": "Cluster A Measured 19/24 on tip 5b1def5c (MEM-F01 + extra stalls/couldnts); B–F parked. #1333+#1334 are LIVE on tip b1a15f48. Command Centre remains held pending retests.",
       "percentComplete": 75
     },
     {
@@ -1868,9 +1877,14 @@
   ],
   "notes": [
     {
+      "id": "tip-b1a15f48-2026-09-17",
+      "at": "2026-09-17T09:13:19.942Z",
+      "text": "Tip moved c68ce040→b1a15f48 LIVE: #1334 cross-tenant CMS publishing refuse is ON tip (with #1333). Headline held 68% (morning 52%); strand percents HELD with no new Measured. Cluster A 19/24 remains held from 5b1def5c; smoke #1375 is NEED_DECLAN and Bluebird retests remain open. Never invent PASS."
+    },
+    {
       "id": "tip-c68ce040-2026-09-17",
       "at": "2026-09-17T08:35:01.155Z",
-      "text": "Tip 33ca5d0c→c68ce040 LIVE: #1333 decoy Academy enrolment refuse is ON tip. #1334 CMS publishing refuse is merged to staging (b1a15f48) and awaits DO deploy. Headline held 68%; Measured/Estimate strands held pending retest."
+      "text": "Tip 33ca5d0c→c68ce040 LIVE: #1333 decoy Academy enrolment refuse is ON tip. #1334 CMS publishing refuse is LIVE on tip b1a15f48. Headline held 68%; Measured/Estimate strands held pending retest."
     },
     {
       "id": "tip-b56bc994-2026-09-17",
