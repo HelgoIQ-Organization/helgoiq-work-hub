@@ -1,17 +1,22 @@
 {
-  "generatedAt": "2026-09-16T11:59:28.664Z",
+  "generatedAt": "2026-09-17T05:15:41.813Z",
   "files": [
     {
-      "path": "2026-09-16-tip-5b1def5c.json",
-      "tip": "5b1def5c0951b33ec030289655ab057738226020",
-      "dataAsOf": "2026-09-16T18:05:58.768Z",
-      "note": "Tip 5b1def5c = #1329; headline held 69%",
-      "headlinePercent": 69
+      "path": "history/2026-09-17-overnight-5b1def5c.json",
+      "label": "2026-09-17-overnight-5b1def5c.json",
+      "tip": "5b1def5c",
+      "headline": 68
     },
     {
       "path": "history/2026-09-16-tip-8226bb01.json",
       "label": "2026-09-16-tip-8226bb01.json",
       "tip": "8226bb01",
+      "headline": 69
+    },
+    {
+      "path": "history/2026-09-16-tip-5b1def5c.json",
+      "label": "2026-09-16-tip-5b1def5c.json",
+      "tip": "5b1def5c",
       "headline": 69
     },
     {
@@ -42,6 +47,12 @@
       "path": "history/2026-09-16-midday-aee3b690.json",
       "label": "2026-09-16-midday-aee3b690.json",
       "tip": "aee3b690",
+      "headline": 69
+    },
+    {
+      "path": "history/2026-09-16-cluster-a-8226bb01.json",
+      "label": "2026-09-16-cluster-a-8226bb01.json",
+      "tip": "8226bb01",
       "headline": 69
     },
     {
@@ -284,7 +295,5 @@
       "tip": "232659cf",
       "headline": 66
     }
-  ],
-  "latest": "history/2026-09-16-tip-8226bb01.json",
-  "updatedAt": "2026-09-16T18:05:58.768Z"
+  ]
 }
