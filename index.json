@@ -1,6 +1,44 @@
 {
-  "updatedAt": "2026-09-17T09:41:09.963Z",
+  "updatedAt": "2026-09-17T10:13:28.574Z",
   "drops": [
+    {
+      "id": "2026-09-17-tip-e663c1a0-live-1335-cms-guide",
+      "title": "Tip e663c1a0 LIVE — #1335 CMS publishing guide",
+      "date": "2026-09-17",
+      "summary": "Tip e663c1a0 LIVE (#1335 CMS publishing guide). Headline held 70%. No new Measured.",
+      "plainEnglish": "Staging moved to e663c1a0 with #1335 on tip. Launch readiness still ~70%. Cluster A / smoke / occupancy retests still open — no invent PASS.",
+      "tags": [
+        "status",
+        "command-centre",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-17-tip-e663c1a0-live-1335-cms-guide/tip-e663c1a0-live.md"
+      ],
+      "tip": "e663c1a0"
+    },
+    {
+      "id": "2026-09-17-breakfast-full-programme-17-sep",
+      "title": "Breakfast full programme 17 Sep",
+      "date": "2026-09-17",
+      "summary": "Hub 70%. Dispatch/Twin/1333/1334 PASS. Dataset Confirm FAIL. Feel scored. AI-24 11/24 BLOCKED mid-tip.",
+      "plainEnglish": "Hub 70%. Dispatch/Twin/1333/1334 PASS. Dataset Confirm FAIL. Feel scored. AI-24 11/24 BLOCKED mid-tip.",
+      "tags": [
+        "status",
+        "comms",
+        "feel",
+        "dataset",
+        "command-centre"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-17-breakfast-full-programme-17-sep/BREAKFAST-2026-09-17.md"
+      ],
+      "tip": "3692a342"
+    },
     {
       "id": "2026-09-17-tip-3692a342-live-1336-occupancy",
       "title": "Tip 3692a342 LIVE — #1336 occupancy reconcile",
