@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-09-17T11:34:02.876Z",
+  "updatedAt": "2026-09-17T12:22:14.623Z",
   "meta": {
-    "dataAsOf": "2026-09-17T11:34:02.876Z",
-    "buildStamp": "aa06928b1d1230dfb15c0a9d71c4fa7c8ca10f6a",
-    "liveTip": "aa06928b1d1230dfb15c0a9d71c4fa7c8ca10f6a",
+    "dataAsOf": "2026-09-17T12:22:14.623Z",
+    "buildStamp": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
+    "liveTip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 70% = round((52\u00d712 + 60\u00d710 + 86\u00d710 + 65\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 72\u00d78 + 99\u00d710 + 42\u00d710)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
-    "latestSnapshotPath": "history/2026-09-17-tip-aa06928b.json",
-    "lastRefreshNote": "Tip changed e663c1a0 \u2192 aa06928b (#1330 Command Centre Central revenue reconcile with Pulse scope LIVE). Strand percents HELD \u2014 no new Measured. Cluster A hold Measured 19/24 from 5b1def5c; Comms 42% from prior re-census; #1333/#1334 refuse Measured PASS on b1a15f48; #1335/#1336 retests still open. Headline 70%. Never import.rollbackBatch.",
+    "latestSnapshotPath": "history/2026-09-17-tip-f13a6dc2.json",
+    "lastRefreshNote": "Tip changed aa06928b \u2192 f13a6dc2 (#1328 Command Centre refuse injected cash-sale requests LIVE). Strand percents HELD \u2014 no new Measured. Cluster A hold Measured 19/24 from 5b1def5c; Comms 42%; #1330/#1335/#1336 retests still open; smoke #1375 NEED_DECLAN. Headline 70%. Never import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-17T11:34:02.876Z"
+      "checkedAt": "2026-09-17T12:21:08.816Z"
     },
-    "updatedAt": "2026-09-17T11:34:02.442Z",
-    "note": "Live tip aa06928b (#1330 Command Centre Central revenue reconcile with Pulse scope). Prior tip e663c1a0: #1335 CMS publishing guide LIVE (retest open). Cluster A still hold Measured 19/24 from 5b1def5c. Comms 42%. Headline 70%. Never import.rollbackBatch.",
+    "updatedAt": "2026-09-17T12:22:14.623Z",
+    "note": "Live tip f13a6dc2 (#1328 refuse injected cash-sale). Prior tip aa06928b: #1330 Central revenue/Pulse scope LIVE (retest open). Cluster A still hold Measured 19/24 from 5b1def5c. Comms 42%. Headline 70%. Never import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 368/413 \u2248 89.1%.",
     "headlineVsCoverage": "Headline ~66% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
     "coverageAfterBackfill": {
@@ -36,18 +36,18 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "Cluster A Measured 19/24 hold from tip 5b1def5c. #1330 Central revenue/Pulse scope now LIVE on tip aa06928b \u2014 retest open before claiming Command Centre improvement. #1333+#1334 refuse Measured PASS on tip b1a15f48. #1335/#1336 retests still open. Command Centre strand remains 60% Estimate pending full Cluster A re-walk + Bluebird vs Refrm. Never invent PASS. Never import.rollbackBatch.",
-    "liveTipNote": "Live lobster tip is aa06928b (full aa06928b1d1230dfb15c0a9d71c4fa7c8ca10f6a). #1330 Command Centre: reconcile Central revenue with Pulse scope ON tip (parent e663c1a0). Staging HEAD identical. Strand percents held. Cluster A 19/24 from 5b1def5c; smoke #1375 NEED_DECLAN. Never import.rollbackBatch.",
-    "checkedAt": "2026-09-17T11:34:02.442Z",
+    "commandCentreNote": "Cluster A Measured 19/24 hold from tip 5b1def5c. #1328 refuse injected cash-sale NOW LIVE on tip f13a6dc2 \u2014 retest open before claiming Command Centre improvement. #1330 Central revenue/Pulse scope also awaiting retest. #1333+#1334 refuse Measured PASS on tip b1a15f48. #1335/#1336 retests still open. Command Centre strand remains 60% Estimate pending full Cluster A re-walk + Bluebird vs Refrm. Never invent PASS. Never import.rollbackBatch.",
+    "liveTipNote": "Live lobster tip is f13a6dc2 (full f13a6dc229f42ff318d6ab746da645e2522dd9aa). #1328 Command Centre: refuse injected cash-sale requests ON tip (parent aa06928b/#1330). Staging HEAD identical. Strand percents held. Cluster A 19/24 from 5b1def5c; smoke #1375 NEED_DECLAN. Never import.rollbackBatch.",
+    "checkedAt": "2026-09-17T12:22:14.623Z",
     "awaitingTipMerges": {
-      "stagingHead": "aa06928b1d1230dfb15c0a9d71c4fa7c8ca10f6a",
-      "liveTip": "aa06928b1d1230dfb15c0a9d71c4fa7c8ca10f6a",
+      "stagingHead": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
+      "liveTip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
       "undeployed": [],
-      "at": "2026-09-17T11:34:02.442Z",
-      "note": "Live tip aa06928b includes #1330. Staging HEAD identical \u2014 no undeployed merges."
+      "at": "2026-09-17T12:22:14.623Z",
+      "note": "Live tip f13a6dc2 includes #1328. Staging HEAD identical \u2014 no undeployed merges."
     }
   },
-  "tip": "aa06928b1d1230dfb15c0a9d71c4fa7c8ca10f6a",
+  "tip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 70,
@@ -87,10 +87,10 @@
       "findings-fix": 59,
       "comms": 42
     },
-    "plainEnglishDay": "Tip moved e663c1a0\u2192aa06928b LIVE: #1330 Command Centre Central revenue reconcile with Pulse scope is ON tip. Headline held 70% (morning 52%); no strand invent. Cluster A 19/24 hold; smoke #1375 NEED_DECLAN; #1335/#1336 retests still open. Never invent PASS.",
+    "plainEnglishDay": "Tip moved aa06928b\u2192f13a6dc2 LIVE: #1328 Command Centre refuse injected cash-sale requests is ON tip. Headline held 70% (morning 52%); no strand invent. Cluster A 19/24 hold; smoke #1375 NEED_DECLAN; #1330/#1335/#1336 retests still open. Never invent PASS.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Live tip advanced e663c1a0\u2192aa06928b; #1330 is LIVE. Strand percents remain held from Measured/Estimate evidence; no new Measured claim on aa06928b.",
-    "updatedAt": "2026-09-17T11:34:02.442Z",
+    "compareNote": "Morning 52% \u2192 now 70% (+18). Latest tip move aa06928b\u2192f13a6dc2 (#1328) held strand percents \u2014 no Measured invent. Never import.rollbackBatch.",
+    "updatedAt": "2026-09-17T12:22:14.623Z",
     "coverageNote": "After AI L2 Intel: L\u22651=372 (90%); L\u22652=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": {
@@ -249,11 +249,11 @@
       "note": "Estimate bumps only (ai-85 56\u219260, findings-fix 93\u219295). #1272 candidate for AI-042 MRR crash. Bluebird retests not run."
     },
     "awaitingTipMerges": {
-      "stagingHead": "e663c1a05fc09f47ec2b3070e86fda59a3646c49",
-      "liveTip": "e663c1a05fc09f47ec2b3070e86fda59a3646c49",
+      "stagingHead": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
+      "liveTip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
       "undeployed": [],
-      "at": "2026-09-17T10:12:55.126Z",
-      "note": "Live tip e663c1a0 includes #1335. Staging HEAD identical \u2014 no undeployed merges in this tip delta."
+      "at": "2026-09-17T12:22:14.623Z",
+      "note": "Live tip f13a6dc2 includes #1328. Staging HEAD identical \u2014 no undeployed merges."
     },
     "tipMove5a5e939c": {
       "prevTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
@@ -484,6 +484,24 @@
       ],
       "at": "2026-09-17T10:12:55.126Z",
       "note": "Material Command Centre tip (#1335 guide CMS publishing from registry). Headline held 70% \u2014 no strand invent without Bluebird retest."
+    },
+    "tipMoveAa06928b": {
+      "prevTip": "e663c1a05fc09f47ec2b3070e86fda59a3646c49",
+      "newTip": "aa06928b1d1230dfb15c0a9d71c4fa7c8ca10f6a",
+      "prs": [
+        1330
+      ],
+      "at": "2026-09-17T11:34:02.442Z",
+      "note": "Material Command Centre tip (#1330 Central revenue reconcile with Pulse scope). Headline held 70% \u2014 no strand invent without Bluebird retest."
+    },
+    "tipMoveF13a6dc2": {
+      "prevTip": "aa06928b1d1230dfb15c0a9d71c4fa7c8ca10f6a",
+      "newTip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
+      "prs": [
+        1328
+      ],
+      "at": "2026-09-17T12:22:14.623Z",
+      "note": "Material Command Centre tip (#1328 refuse injected cash-sale requests). Headline held 70% \u2014 no strand invent without Bluebird D-INJ Measured."
     }
   },
   "strands": [
@@ -493,8 +511,8 @@
       "percent": 52,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Dataset canary Measured FAIL hold from tip 5b1def5c (Approve Platform admin). Live tip aa06928b has no new canary Measured; SEED:12M remains usable. Hold 52%. Never import.rollbackBatch.",
-      "progressNote": "Measured canary FAIL hold from 5b1def5c; live tip aa06928b pending retest. Hold 52%.",
+      "plainSummary": "Dataset canary Measured FAIL hold from tip 5b1def5c (Approve Platform admin). Live tip f13a6dc2 has no new canary Measured; SEED:12M remains usable. Hold 52%. Never import.rollbackBatch.",
+      "progressNote": "Measured canary FAIL hold from 5b1def5c; live tip f13a6dc2 pending retest. Hold 52%.",
       "blockers": [
         "Dataset Confirm canary FAIL hold from tip 5b1def5c: Approve demands Platform admin \u2014 no new Measured on 3692a342 yet",
         "12-month SEED still LIVE (177 members / SEED:12M) \u2014 year-history usable; canary Approve blocked"
@@ -521,10 +539,12 @@
       "percent": 60,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Cluster A Measured 19/24 hold from tip 5b1def5c. Live tip aa06928b adds #1330 Central revenue/Pulse scope (retest open). #1335/#1336 also awaiting retest. Hold 60% Estimate. Never invent PASS.",
-      "progressNote": "#1330 LIVE on aa06928b; Cluster A 19/24 hold. Hold 60% Estimate pending retest.",
+      "plainSummary": "Cluster A Measured 19/24 hold from tip 5b1def5c. Live tip f13a6dc2 adds #1328 refuse injected cash-sale (retest open); #1330/#1335/#1336 also awaiting retest. Hold 60% Estimate. Never invent PASS.",
+      "progressNote": "#1328 LIVE on f13a6dc2; Cluster A 19/24 hold. Hold 60% Estimate pending retest.",
       "blockers": [
-        "Cluster A Measured 19/24 hold from tip 5b1def5c \u2014 re-walk needed on e663c1a0 (prior tip_moved incomplete)",
+        "Cluster A Measured 19/24 hold from tip 5b1def5c \u2014 re-walk needed on f13a6dc2 ancestry",
+        "#1328 refuse injected cash-sale requests \u2014 Bluebird D-INJ retest pending on tip f13a6dc2",
+        "#1330 Central revenue reconcile with Pulse scope \u2014 retest open on tip ancestry",
         "#1336 live occupancy vs visual samples \u2014 retest open on tip ancestry",
         "#1335 CMS publishing guide from registry \u2014 Bluebird visual/flow retest pending",
         "Milestone 2 B\u2013F locked/parked \u2014 implied 15/30 estimate after D-PAYFAIL PASS on 30474e53",
@@ -556,8 +576,8 @@
       "percent": 86,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "ISO pack held Estimate 86%. Prior Measured evidence unchanged; live tip aa06928b includes #1330/#1335/#1336 ancestry. ISO-18/29 still open. Never invent PASS.",
-      "progressNote": "Estimate hold 86% on live tip 3692a342. No new ISO Measured; privacy re-walk remains pending.",
+      "plainSummary": "Isolation hold 86% Estimate (ISO-18/29 EXPECTED_FAIL watch). Live tip f13a6dc2 \u2014 no new ISO Measured this tip delta (#1328 is Command Centre). Bluebird vs Refrm re-walk still gates close.",
+      "progressNote": "Tip f13a6dc2 CC-only delta; ISO hold 86%.",
       "blockers": [
         "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (Measured on 6486be87)",
         "Weymouth #1245 and Luton #1242 extras NOT_RUN \u2014 no dedicated fixture/route"
@@ -583,8 +603,8 @@
       "percent": 65,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Hold Estimate 65%. Prior Pulse 53 STEADY on 5b1def5c; #1351 Pulse location grants now LIVE on c68ce040 \u2014 PA-PULSE-MGR retest pending. AI24 UNTESTED.",
-      "progressNote": "Estimate hold 65% on tip b1a15f48 \u2014 #1351 LIVE pending PA-PULSE-MGR; AI24 UNTESTED. No invent bump.",
+      "plainSummary": "AI-85 hold 65% Estimate. Live tip f13a6dc2 (#1328 CC refuse) \u2014 no new AI Measured this tip. Cluster A / MEM-F01 still gate Command Centre AI acceptance.",
+      "progressNote": "Tip f13a6dc2; AI-85 hold 65% \u2014 no invent.",
       "blockers": [
         "AI 24 uncertain re-score UNTESTED on 12m SEED",
         "CC vs Pulse/Dispatch/Twin disagreement ledger empty (UNTESTED)",
@@ -609,8 +629,8 @@
       "percent": 95,
       "basis": "estimate",
       "status": "on-track",
-      "plainSummary": "#1350 Morning Dispatch location now LIVE on tip c68ce040. Last Measured ambient PASS still 6486be87; estimate hold 95% pending Bluebird retest.",
-      "progressNote": "Hold 95% Estimate on tip b1a15f48 (#1350 LIVE pending retest; no Measured invent).",
+      "plainSummary": "Ambient hold 95% on-track. Live tip f13a6dc2 \u2014 no ambient delta this tip (#1328 CC).",
+      "progressNote": "Tip f13a6dc2; ambient hold 95%.",
       "blockers": [
         "Event Bus Platform-Admin gated \u2014 Declan escalation not attempted",
         "Learning Engine still 0 active lessons (one-tap action works)"
@@ -632,8 +652,8 @@
       "percent": 73,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "#1363 purchase catalogue + #1370 timetable IANA tz now LIVE on tip c68ce040 \u2014 signed-out / booking retest pending. Estimate hold 73%. No invent bump.",
-      "progressNote": "Hold 73% Estimate on tip b1a15f48 \u2014 #1363/#1370 LIVE pending retest. No Measured invent.",
+      "plainSummary": "M1 hold 73%. Live tip f13a6dc2 \u2014 no M1 Measured invent this tip.",
+      "progressNote": "Tip f13a6dc2; M1 hold 73%.",
       "blockers": [
         "#1286 Overview Members count \u2014 Bluebird retest still pending (tip ancestry)",
         "Fresh member invite create FAIL on a263c4ab (form closed; pending list unchanged)",
@@ -664,8 +684,8 @@
       "percent": 55,
       "basis": "measured",
       "status": "FAIL",
-      "plainSummary": "Staging critical-path smoke Measured FAIL hold from tip 5b1def5c (#1375 Cancelling\u2260terminal / checkout 409). Live tip aa06928b has no new six-step Measured \u2014 hold FAIL / NEED_DECLAN. Never invent PASS.",
-      "progressNote": "Measured FAIL #1375 hold from 5b1def5c. Tip e663c1a0 \u2014 retest still NEED_DECLAN. Strand 55%.",
+      "plainSummary": "Staging critical-path smoke Measured FAIL hold from tip 5b1def5c (#1375 Cancelling\u2260terminal / checkout 409). Live tip f13a6dc2 has no new six-step Measured \u2014 hold FAIL / NEED_DECLAN. Never invent PASS.",
+      "progressNote": "Smoke FAIL hold from 5b1def5c; tip f13a6dc2 no new Measured. NEED_DECLAN #1375.",
       "blockers": [
         "#1375 staging critical-path smoke FAIL \u2014 Grok fixture Cancelling (period end 30 Sep) \u2260 terminal; checkout 409 membership remains active until end of billing period",
         "Live tip e663c1a0 (#1335) \u2014 smoke retest still NEED_DECLAN fixture",
@@ -692,8 +712,8 @@
       "percent": 72,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "#1319 D-PAYFAIL named processor reason on tip ancestry; #1324 cash gift-card gate diagnosis on live tip 8226bb01. Estimate held 72 pending Bluebird retest beyond D-PAYFAIL slot.",
-      "progressNote": "Hold 72% Estimate on tip c68ce040 (no new Measured invent).",
+      "plainSummary": "Payments hold 72%. #1328 cash-sale injection refuse LIVE on f13a6dc2 \u2014 Bluebird D-INJ retest open before claiming Measured improvement. Never invent PASS.",
+      "progressNote": "#1328 LIVE on f13a6dc2; payments hold 72% until D-INJ Measured.",
       "blockers": [
         "#1268 public QR checkout on tip 40da6535 \u2014 Bluebird retest pending",
         "Admin2 Resume/unfreeze FAIL \u2014 payment provider; Smoke membership still paused",
@@ -716,8 +736,8 @@
       "percent": 99,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Estimate 99% \u2014 #1330 LIVE on aa06928b; #1335/#1336/#1334/#1333 ancestry LIVE. No Measured invent.",
-      "progressNote": "Hold 99% Estimate on tip e663c1a0 \u2014 train live; retests pending. No Measured invent.",
+      "plainSummary": "Estimate 99% \u2014 #1328 LIVE on f13a6dc2; #1330/#1335/#1336/#1334/#1333 ancestry LIVE. No Measured invent.",
+      "progressNote": "#1328 ON tip f13a6dc2; hold 99% Estimate \u2014 retests open.",
       "blockers": [
         "Merged staging train (#1351, #1363, #1366\u2013#1368 and siblings) is awaiting DO deploy and Bluebird retest",
         "#1272/#1306 on tip ancestry \u2014 Bluebird retest pending",
@@ -753,8 +773,8 @@
       "percent": 42,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "42% Estimate after Measured re-census on b1a15f48: Manager newsletter PASS; Segment Send Test PASS; cancel/cover/consent still open. Live tip aa06928b \u2014 no new Comms Measured. Keep automated comms strand.",
-      "progressNote": "Re-census Measured: newsletter + Segment Send Test PASS \u2192 42% Estimate. Journey still BLOCKED.",
+      "plainSummary": "42% Estimate after Measured re-census on b1a15f48: Manager newsletter PASS; Segment Send Test PASS; cancel/cover/consent still open. Live tip f13a6dc2 \u2014 no new Comms Measured. Keep automated comms strand.",
+      "progressNote": "Comms 42% hold; tip f13a6dc2 no new Measured. Automated comms strand kept.",
       "blockers": [
         "Journey BLOCKED \u2014 no journey proof in Agentmail (re-census tip b1a15f48)",
         "Member cancel / cover swap / consent PARTIAL \u2014 state/UI OK but ledger or negative-delivery proof incomplete",
@@ -777,8 +797,8 @@
   "health": {
     "overallLaunchPercent": 70,
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 70% = round((52\u00d712 + 60\u00d710 + 86\u00d710 + 65\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 72\u00d78 + 99\u00d710 + 42\u00d710)/100) half-up.",
-    "readinessLabel": "~70% \u2014 tip aa06928b (#1330 LIVE); retests pending",
-    "plainSummary": "Tip moved e663c1a0\u2192aa06928b LIVE: #1330 Command Centre Central revenue reconcile with Pulse scope is ON tip. Headline held 70% (morning 52%); no strand invent. Cluster A 19/24 hold; smoke #1375 NEED_DECLAN; #1335/#1336 retests still open. Never invent PASS.",
+    "readinessLabel": "~70% \u2014 tip f13a6dc2 (#1328 LIVE); retests pending",
+    "plainSummary": "Tip moved aa06928b\u2192f13a6dc2 LIVE: #1328 Command Centre refuse injected cash-sale requests is ON tip. Headline held 70% (morning 52%); no strand invent. Cluster A 19/24 hold; smoke #1375 NEED_DECLAN; #1330/#1335/#1336 retests still open. Never invent PASS.",
     "strengths": [
       "#1330 LIVE on tip aa06928b (Central revenue reconcile with Pulse scope)",
       "#1335 LIVE on tip e663c1a0 (CMS publishing guide from registry)",
@@ -815,7 +835,7 @@
         "m1"
       ]
     },
-    "refreshWarning": "Live tip unchanged since last strand rebuild \u2014 readiness may be stale relative to merged-but-undeployed PRs.",
+    "refreshWarning": null,
     "headlinePercent": 70,
     "status": "at-risk",
     "plain": "Tip moved e663c1a0\u2192aa06928b LIVE: #1330 Command Centre Central revenue reconcile with Pulse scope is ON tip. Headline held 70% (morning 52%); no strand invent. Cluster A 19/24 hold; smoke #1375 NEED_DECLAN; #1335/#1336 retests still open. Never invent PASS.",
@@ -839,10 +859,26 @@
   },
   "actions": [
     {
+      "id": "retest-1328-injected-cash-sale-refuse",
+      "status": "open",
+      "title": "PRIMARY \u2014 Retest #1328 refuse injected cash-sale (D-INJ) on tip f13a6dc2",
+      "priority": "P0",
+      "strandId": "command-centre",
+      "at": "2026-09-17T12:22:14.623Z"
+    },
+    {
+      "id": "tip-move-f13a6dc2-1328",
+      "status": "done",
+      "title": "Done tip f13a6dc2 \u2014 #1328 Command Centre refuse injected cash-sale ON tip",
+      "priority": "P2",
+      "strandId": "command-centre",
+      "at": "2026-09-17T12:22:14.623Z"
+    },
+    {
       "id": "retest-1330-central-revenue-pulse",
       "status": "open",
-      "title": "PRIMARY \u2014 Retest #1330 Central revenue reconcile with Pulse scope on tip aa06928b",
-      "priority": "P0",
+      "title": "Retest #1330 Central revenue reconcile with Pulse scope on tip ancestry (f13a6dc2)",
+      "priority": "P1",
       "strandId": "command-centre",
       "at": "2026-09-17T11:34:02.442Z"
     },
@@ -1505,6 +1541,11 @@
   ],
   "notes": [
     {
+      "id": "tip-f13a6dc2-2026-09-17",
+      "at": "2026-09-17T12:22:14.623Z",
+      "text": "Tip moved aa06928b\u2192f13a6dc2 LIVE: #1328 Command Centre refuse injected cash-sale requests is ON tip. Headline held 70% (morning 52%); no strand invent. Cluster A 19/24 hold; smoke #1375 NEED_DECLAN; #1330/#1335/#1336 retests still open. Never invent PASS."
+    },
+    {
       "id": "tip-aa06928b-2026-09-17",
       "at": "2026-09-17T11:34:02.442Z",
       "text": "Tip moved e663c1a0\u2192aa06928b LIVE: #1330 Command Centre Central revenue reconcile with Pulse scope is ON tip. Headline held 70% (morning 52%); no strand invent. Cluster A 19/24 hold; smoke #1375 NEED_DECLAN; #1335/#1336 retests still open. Never invent PASS."
@@ -1586,14 +1627,30 @@
       "at": "2026-09-14T12:20:05.516Z",
       "text": "Tip daaeebc3\u2192160fc539: #1315 C-FU open-spots live. Headline ~68%. Estimate bumps only."
     },
-    "HARD RULE: never instruct import.rollbackBatch (#1240 gate / prefer not to need rollback).",
+    {
+      "id": "legacy-note-18",
+      "at": "2026-09-17T12:22:14.623Z",
+      "text": "HARD RULE: never instruct import.rollbackBatch (#1240 gate / prefer not to need rollback)."
+    },
     {
       "at": "2026-09-14T11:29:18.193Z",
       "text": "Tip 5a5e939c\u2192daaeebc3: Astra pack live. Headline ~68%. Estimate bumps only."
     },
-    "Tip moved 1fa31d14 \u2192 5a5e939c: #1303/#1293/#1275/#1282 now live.",
-    "Headline estimate ~67% (CC 58, payments 72, findings-fix 96, ai-85 62). No Measured invent.",
-    "Staging still ahead_by 13: #1308/#1313/#1314/#1316 (Astra pack) \u2014 await next tip.",
+    {
+      "id": "legacy-note-20",
+      "at": "2026-09-17T12:22:14.623Z",
+      "text": "Tip moved 1fa31d14 \u2192 5a5e939c: #1303/#1293/#1275/#1282 now live."
+    },
+    {
+      "id": "legacy-note-21",
+      "at": "2026-09-17T12:22:14.623Z",
+      "text": "Headline estimate ~67% (CC 58, payments 72, findings-fix 96, ai-85 62). No Measured invent."
+    },
+    {
+      "id": "legacy-note-22",
+      "at": "2026-09-17T12:22:14.623Z",
+      "text": "Staging still ahead_by 13: #1308/#1313/#1314/#1316 (Astra pack) \u2014 await next tip."
+    },
     {
       "at": "2026-09-17T09:40:44.358Z",
       "text": "Tip b1a15f48\u21923692a342: #1336 live occupancy reconcile ON tip. Headline 70% (Comms 28\u219242 from Measured re-census: newsletter + Segment Send Test PASS). #1333/#1334 refuse Measured PASS on b1a15f48. Cluster A hold 19/24. Never import.rollbackBatch."
