@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-17T08:35:16.180Z",
+  "updatedAt": "2026-09-17T09:41:09.963Z",
   "drops": [
+    {
+      "id": "2026-09-17-tip-3692a342-live-1336-occupancy",
+      "title": "Tip 3692a342 LIVE — #1336 occupancy reconcile",
+      "date": "2026-09-17",
+      "summary": "Tip b1a15f48→3692a342; #1336 LIVE; Comms 28→42; headline 70%; #1333/#1334 refuse PASS on prior tip.",
+      "plainEnglish": "Staging tip moved. Command Centre occupancy reconcile is live. Comms score rose after newsletter and segment Send Test passed. Launch readiness about 70%. Cluster A still needs a full re-walk.",
+      "tags": [
+        "status",
+        "command-centre"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-17-tip-3692a342-live-1336-occupancy/tip-3692a342-live.md"
+      ],
+      "tip": "3692a34261d5cd83ab4057dc491ad168776f26ff",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1336"
+    },
     {
       "id": "2026-09-17-tip-33ca5d0c-live-1332-on-tip-1333-awaiting-depl",
       "title": "Tip 33ca5d0c LIVE — #1332 on tip; #1333 awaiting deploy",
