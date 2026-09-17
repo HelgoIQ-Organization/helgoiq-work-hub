@@ -1,0 +1,70 @@
+{
+  "tip": "buildToken=40da6535c03b3f1bc8e1dd28b181143da0268f69; releaseSha=40da6535c03b3f1bc8e1dd28b181143da0268f69",
+  "when_utc": "2026-09-14T09:07:00Z",
+  "seat": "Owner",
+  "studio": "Bluebird",
+  "c": "150002",
+  "agents": {
+    "Occupancy Agent": {
+      "stage": "Paused / Not opted in",
+      "run_review_enabled": false,
+      "findings_count": 0,
+      "finding_ids": [],
+      "recommendations_count": 0,
+      "recommendation_ids": [],
+      "last_run": "Not run yet",
+      "notes": "Run a review now disabled. Start Observe pilot confirmation did not persist after refresh; attempted under Admin2 (twice) and Owner (once). No findings or recommendation panel available."
+    },
+    "Retention Agent": {
+      "stage": "Paused / Not opted in",
+      "run_review_enabled": false,
+      "findings_count": 0,
+      "finding_ids": [],
+      "recommendations_count": 0,
+      "recommendation_ids": [],
+      "last_run": "Not run yet",
+      "notes": "Run a review now disabled. Start Observe pilot confirmation did not persist after refresh; attempted under Admin2 and Owner. No findings or recommendation panel available."
+    }
+  },
+  "opt_in_attempts": [
+    {
+      "agent": "Occupancy Agent",
+      "requested_stage": "Observe pilot",
+      "seat": "Admin2",
+      "attempts": 2,
+      "result": "did not persist after refresh",
+      "observed_stage": "Paused / Not opted in"
+    },
+    {
+      "agent": "Occupancy Agent",
+      "requested_stage": "Observe pilot",
+      "seat": "Owner",
+      "attempts": 1,
+      "result": "did not persist after refresh",
+      "observed_stage": "Paused / Not opted in"
+    },
+    {
+      "agent": "Retention Agent",
+      "requested_stage": "Observe pilot",
+      "seat": "Admin2",
+      "attempts": 1,
+      "result": "did not persist after refresh",
+      "observed_stage": "Paused / Not opted in"
+    },
+    {
+      "agent": "Retention Agent",
+      "requested_stage": "Observe pilot",
+      "seat": "Owner",
+      "attempts": 1,
+      "result": "did not persist after refresh",
+      "observed_stage": "Paused / Not opted in"
+    }
+  ],
+  "reviews_triggered": false,
+  "blocker": "Confirmed Start Observe pilot did not persist on refresh for either target agent; Run a review now remained disabled. Admin2 confirmation surfaced 'Platform admin access required' and Owner confirmation also left both agents Paused / Not opted in.",
+  "screenshots": [
+    "/workspace/helgoiq-bb-settings-2026-09-14/evidence/scan2-agents-full.png",
+    "/workspace/helgoiq-bb-settings-2026-09-14/evidence/scan2-retention-occupancy.webp",
+    "/workspace/helgoiq-bb-settings-2026-09-14/evidence/scan2-target-agents.webp"
+  ]
+}

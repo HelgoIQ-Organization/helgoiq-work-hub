@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-09-17T03:55:40.932Z",
+  "updatedAt": "2026-09-17T04:08:50.185Z",
   "drops": [
+    {
+      "id": "2026-09-17-overnight-close-out-2026-09-17",
+      "title": "Overnight close-out 2026-09-17",
+      "date": "2026-09-17",
+      "summary": "PARTIAL morning pack tip 5b1def5c: PASS=20 FAIL=7 PARTIAL=4 BLOCKED=1. Worst: #1375 smoke fixture blocks merge train; Dataset Approve FAIL; Cluster A 19/24. #1175 MERGED. Finance/Dispatch1 continuity only.",
+      "plainEnglish": "Overnight finished what it could on tip 5b1def5c. Smoke fixture still Cancelling so #1351 and friends cannot merge. Dataset Approve still wants Platform admin. Command Centre Cluster A is 19 of 24. Finance and classic Dispatch1 folders had nothing new.",
+      "tags": [
+        "status",
+        "smoke",
+        "command-centre",
+        "dataset",
+        "findings"
+      ],
+      "type": "pack",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-17-overnight-close-out-2026-09-17/SIGNAL.md",
+        "drops/2026-09-17-overnight-close-out-2026-09-17/PROGRESS-2026-09-17.md",
+        "drops/2026-09-17-overnight-close-out-2026-09-17/CLOSEOUT-README.md"
+      ],
+      "tip": "5b1def5c"
+    },
     {
       "id": "2026-09-17-helgoiq-progress-17-sep-2026",
       "title": "HelgoIQ progress 17 Sep 2026",

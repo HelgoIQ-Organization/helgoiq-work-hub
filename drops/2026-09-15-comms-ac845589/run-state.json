@@ -1,0 +1,34 @@
+{
+  "runId": "fresh-ac845589-manager",
+  "tip": "ac845589404b78c308cc30e5aee81eb9e648a220",
+  "seat": "helgoiq-bb-manager@agentmail.to",
+  "tenant": "c=150002",
+  "proofInbox": "helgoiq-comms-proof@agentmail.to",
+  "method": "computerUse-fresh-not-drive9290",
+  "status": "COMPLETE",
+  "overall": "PARTIAL",
+  "counts": {
+    "PASS": 2,
+    "PARTIAL": 4,
+    "BLOCKED": 4,
+    "N/A": 1,
+    "FAIL": 0
+  },
+  "agentmailProofs": [
+    {
+      "inbox": "helgoiq-bb-member-b@agentmail.to",
+      "subject": "Booking Confirmed - Class at Bluebird Central on Wed 16 Sept",
+      "at": "2026-09-15T10:37:46.000Z"
+    },
+    {
+      "inbox": "helgoiq-comms-proof@agentmail.to",
+      "subject": "[TEST] CENSUS37-CAMP-Sep15",
+      "at": "2026-09-15T11:05:19.000Z"
+    }
+  ],
+  "evidenceDir": "/workspace/helgoiq-overnight-pack-2026-09-15/comms/evidence/fresh-ac845589/",
+  "resultsPath": "/workspace/helgoiq-overnight-pack-2026-09-15/comms/RESULTS.md",
+  "censusPath": "/workspace/helgoiq-overnight-pack-2026-09-15/comms/CENSUS-3-7.md",
+  "completedAt": "2026-09-15T11:15:00Z",
+  "supersedes": "drive9290 BLOCKED matrix"
+}

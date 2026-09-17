@@ -1,0 +1,9 @@
+{
+  "studio": "Bluebird Pilates",
+  "c": "150002",
+  "agents": {
+    "Retention Agent": {"stage": "not_opted_in", "run_review_enabled": false, "findings_count": 0, "finding_ids": []},
+    "Occupancy Agent": {"stage": "not_opted_in", "run_review_enabled": false, "findings_count": 0, "finding_ids": []}
+  },
+  "note": "Observe-pilot confirmations were attempted repeatedly in the UI, but status remained Not opted in after refresh; no review could be run."
+}
