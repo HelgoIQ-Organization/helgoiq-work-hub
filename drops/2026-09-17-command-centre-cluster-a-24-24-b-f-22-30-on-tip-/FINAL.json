@@ -1,0 +1,15 @@
+{
+  "tip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
+  "n_pass": 24,
+  "n_total": 24,
+  "bf_status": "UNLOCKED",
+  "fails": [],
+  "teacher2_status": {
+    "seat": "helgoiq-bb-teacher-2@agentmail.to",
+    "MGR-10": "refused PASS (teacher_refuse)",
+    "ACS-X01": "refused PASS (teacher_refuse)"
+  },
+  "tag_x01_override": "refused PASS (Meta sync refuse harness override)",
+  "mem_f01_reask": "PASS on reask2 (Member A identified)",
+  "finishedAt": "2026-09-17T13:05:24.223916Z"
+}
