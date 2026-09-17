@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-17T08:12:33.764Z",
+  "updatedAt": "2026-09-17T08:35:16.180Z",
   "drops": [
+    {
+      "id": "2026-09-17-tip-33ca5d0c-live-1332-on-tip-1333-awaiting-depl",
+      "title": "Tip 33ca5d0c LIVE — #1332 on tip; #1333 awaiting deploy",
+      "date": "2026-09-17",
+      "summary": "Live tip moved to 33ca5d0c (#1332 facility deletion refuse). #1333 Academy decoy refuse merged to staging but not live. Headline held 68%.",
+      "plainEnglish": "Staging just got a new Command Centre fix live (#1332). Another related fix (#1333) is merged but still waiting to reach the live site. Launch score stays about 68% until we re-check on Bluebird.",
+      "tags": [
+        "command-centre",
+        "status",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-17-tip-33ca5d0c-live-1332-on-tip-1333-awaiting-depl/tip-33ca5d0c-live.md"
+      ],
+      "tip": "33ca5d0ce7b61497f074efabcea70f7f924bac76",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1332"
+    },
     {
       "id": "2026-09-17-tip-b56bc994-live-merge-train-deployed",
       "title": "Tip b56bc994 LIVE — merge train deployed",
