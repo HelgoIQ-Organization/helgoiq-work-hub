@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-17T14:26:58.895Z",
+  "updatedAt": "2026-09-17T19:40:46.023Z",
   "drops": [
+    {
+      "id": "2026-09-17-evening-progress-17-sep-hub-73-tip-f13a6dc2-four",
+      "title": "Evening progress 17 Sep — Hub 73%, tip f13a6dc2, four lanes evidenced",
+      "date": "2026-09-17",
+      "summary": "Live tip still f13a6dc2; Hub 73%. Feel Teacher/client/owner + embeds + CMS gaps filed on #1180. Evening Feel/intel merge pack undeployed (cace7a56). Restricted Pulse + Turnstile + smoke still Declan-gated.",
+      "plainEnglish": "Tonight: Hub still 73% because the live tip has not moved. We finished Feel walks for teacher, client and owner, checked embeds (no cross-studio leak) and CMS gaps (publish goes Live then 404s publicly). A small evening fix pack is merged but not on DigitalOcean yet. Restricted Manager Pulse and Turnstile still need Declan when he is at a laptop.",
+      "tags": [
+        "status",
+        "findings",
+        "command-centre",
+        "smoke"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-17-evening-progress-17-sep-hub-73-tip-f13a6dc2-four/progress.md"
+      ],
+      "tip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-17-command-centre-cluster-a-24-24-b-f-22-30-on-tip-",
       "title": "Command Centre Cluster A 24/24 + B–F 22/30 on tip f13a6dc2",
