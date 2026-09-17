@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-17T19:40:46.023Z",
+  "updatedAt": "2026-09-17T20:14:32.058Z",
   "drops": [
+    {
+      "id": "2026-09-17-feel-remeasure-tip-cace7a56-home-27-safe-studio-",
+      "title": "Feel remeasure tip cace7a56 — Home 27, Safe Studio 85, #1383/#1385 PASS",
+      "date": "2026-09-17",
+      "summary": "Measured on live tip cace7a56: signed-out 71, Admin Home 27 (unavailable), Members 74, Timetable 71, Safe Studio 85. Warm 404 + Safe Studio drill PASS; cookie chrome not observed.",
+      "plainEnglish": "Feel pack is live. Signed-out client and Safe Studio look good. Admin Home is broken for Admin 2 (page unavailable). Warm 404 and Safe Studio tile drill work; cookie banner still needs a clean-browser check.",
+      "tags": [
+        "findings",
+        "status",
+        "command-centre"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-17-feel-remeasure-tip-cace7a56-home-27-safe-studio-/SCORES.md",
+        "drops/2026-09-17-feel-remeasure-tip-cace7a56-home-27-safe-studio-/DEFECTS.md"
+      ],
+      "tip": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-17-evening-progress-17-sep-hub-73-tip-f13a6dc2-four",
       "title": "Evening progress 17 Sep — Hub 73%, tip f13a6dc2, four lanes evidenced",
