@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-16T13:55:16.459Z",
+  "updatedAt": "2026-09-17T03:55:40.932Z",
   "drops": [
+    {
+      "id": "2026-09-17-helgoiq-progress-17-sep-2026",
+      "title": "HelgoIQ progress 17 Sep 2026",
+      "date": "2026-09-17",
+      "summary": "Smoke NEED_DECLAN #1375; Dataset Approve FAIL; Cluster A 19/24; Pulse 53; Comms PARTIAL",
+      "plainEnglish": "Smoke NEED_DECLAN #1375; Dataset Approve FAIL; Cluster A 19/24; Pulse 53; Comms PARTIAL",
+      "tags": [
+        "status",
+        "smoke",
+        "dataset",
+        "command-centre",
+        "census"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-17-helgoiq-progress-17-sep-2026/HELGOIQ-PROGRESS-2026-09-17.md"
+      ],
+      "tip": "5b1def5c"
+    },
     {
       "id": "2026-09-16-progress-for-claude-2026-09-16",
       "title": "Progress for Claude 2026-09-16",
