@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-17T04:08:50.185Z",
+  "updatedAt": "2026-09-17T08:12:33.764Z",
   "drops": [
+    {
+      "id": "2026-09-17-tip-b56bc994-live-merge-train-deployed",
+      "title": "Tip b56bc994 LIVE — merge train deployed",
+      "date": "2026-09-17",
+      "summary": "Live tip moved 5b1def5c→b56bc994; 13-PR train LIVE; headline held 68% pending Bluebird retests.",
+      "plainEnglish": "Staging tip is now b56bc994 with the big morning merge train live. Readiness stays about 68% until we re-check Pulse, newsletter, catalogue, Feel, timetable, Cluster A, and smoke.",
+      "tags": [
+        "status",
+        "tip"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-17-tip-b56bc994-live-merge-train-deployed/tip-b56bc994-live.md"
+      ],
+      "tip": "b56bc9947c1e6dbf0c564f3b426de97085798db2"
+    },
     {
       "id": "2026-09-17-overnight-close-out-2026-09-17",
       "title": "Overnight close-out 2026-09-17",
