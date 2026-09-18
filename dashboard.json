@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-09-17T19:38:16.536Z",
+  "updatedAt": "2026-09-18T03:46:10.752Z",
   "meta": {
-    "dataAsOf": "2026-09-17T19:38:16.536Z",
-    "buildStamp": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
-    "liveTip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
+    "dataAsOf": "2026-09-18T03:46:33.286254Z",
+    "buildStamp": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
+    "liveTip": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 73% = round((52\u00d712 + 85\u00d710 + 86\u00d710 + 68\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 74\u00d78 + 99\u00d710 + 42\u00d710)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/2026-09-17-undeployed-cace7a56.json",
-    "lastRefreshNote": "Live tip still f13a6dc2; staging HEAD cace7a56 with evening merge pack (#1382+#1383+#1385+#1379) undeployed. Headline held 73%. Await DO deploy before Feel/CC retests. Never import.rollbackBatch.",
+    "lastRefreshNote": "Live tip cace7a56 (Feel evening pack on DO). Hub tip stamp refreshed 2026-09-18. Cluster A + B\u2013F rebank IN PROGRESS on cace7a56 (prior bank was f13a6dc2 24/24 + 22/30). #1376 ISO-18/29 and #1377 MEM-F01 both OPEN not merged \u2014 NOT in tip ancestry; ISO/MEM retests parked. Never import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-17T19:38:16.536Z"
+      "checkedAt": "2026-09-18T03:46:10.752Z"
     },
     "updatedAt": "2026-09-17T19:38:16.536Z",
     "note": "Live tip still f13a6dc2; staging HEAD cace7a56 with evening merge pack (#1382+#1383+#1385+#1379) undeployed. Headline held 73%. Await DO deploy before Feel/CC retests. Never import.rollbackBatch.",
@@ -68,7 +68,7 @@
       "note": "Staging ahead of live tip \u2014 evening Feel/safe-studio/intelligence pack awaiting DO deploy."
     }
   },
-  "tip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
+  "tip": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 73,
@@ -523,7 +523,10 @@
       ],
       "at": "2026-09-17T12:22:14.623Z",
       "note": "Material Command Centre tip (#1328 refuse injected cash-sale requests). Headline held 70% \u2014 no strand invent without Bluebird D-INJ Measured."
-    }
+    },
+    "tipBankNote": "Awaiting rebank on cace7a56; displayed Cluster A 24/24 and B\u2013F 22/30 are from tip f13a6dc2 until remeasure lands.",
+    "ancestry1376": "OPEN not merged \u2014 not on cace7a56",
+    "ancestry1377": "OPEN not merged \u2014 not on cace7a56"
   },
   "strands": [
     {
@@ -849,7 +852,7 @@
         "comms"
       ]
     },
-    "refreshWarning": "Live tip f13a6dc2; staging HEAD cace7a56 undeployed \u2014 do not treat Feel merges as live yet.",
+    "refreshWarning": null,
     "headlinePercent": 73,
     "status": "at-risk",
     "plain": "Same tip f13a6dc2 \u2014 material Measured progress: Cluster A 24/24 PASS and Milestone 2 B\u2013F 22/30 (was holding A 19/24). Command Centre strand 60\u219285 Measured; headline 52% morning \u2192 73% now. Eight B\u2013F FAILs + Dataset Confirm (#1388) + smoke #1375 still open. Never invent PASS. Never import.rollbackBatch.",
