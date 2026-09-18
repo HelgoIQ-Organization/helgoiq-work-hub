@@ -16,7 +16,7 @@
       "clusterA": null,
       "checkedAt": "2026-09-18T16:01:03.643Z"
     },
-    "updatedAt": "2026-09-18T16:01:34.653Z",
+    "updatedAt": "2026-09-18T16:03:36.000Z",
     "note": "Live tip 660c9038. Headline 70% (CC/staff/comms/CI pack ON tip; strands held pending retest). Prefer not to need import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 368/413 \u2248 89.1%.",
     "headlineVsCoverage": "Headline ~70% = weighted strand average. Coverage L1%=92.7 / L2%=89.1. Different units.",
@@ -38,7 +38,8 @@
     "coverageL2Pct": 89.1,
     "commandCentreNote": "Prior Measured bank tip 205d5bb8: Cluster A 24/24 + B\u2013F 23/30 (47/54). #1401 D-RI-01 ledger tool still on tip 660c9038 \u2014 retest pending (do not invent PASS). #1418 named run failure reasons ON tip \u2014 UX honesty, not a Measured score change. Remaining FAILs: B-HOW-01, D-RI-01, D-CASH-01, F-ISO-01, F-SEED-01, F-INJ-01, F-HOW-01.",
     "liveTipNote": "Live tip 660c9038 confirmed via /api/version (staging CI). Includes #1418+#1396+#1420+#1419+#1414+#1411 vs prior 56e66fbb (#1376+#1401).",
-    "checkedAt": "2026-09-18T16:01:34.653Z"
+    "checkedAt": "2026-09-18T16:01:34.653Z",
+    "tip": "660c9038ea12a2543db5f3049b0c098f4298ff5a"
   },
   "tip": "660c9038ea12a2543db5f3049b0c098f4298ff5a",
   "progressToday": {
@@ -619,10 +620,10 @@
       "id": "isolation",
       "name": "Studio privacy checks",
       "percent": 86,
-      "basis": "estimate",
+      "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Isolation hold 86% Estimate. #1376 ON tip 660c9038; #1377 MEM-F01 still OPEN. Bluebird vs Refrm re-walk still gates close. No invent PASS.",
-      "progressNote": "#1376 LIVE on 660c9038; #1377 still OPEN. ISO strand hold 86% Estimate until retest PASS.",
+      "plainSummary": "Isolation Measured 86% on tip 660c9038: #1376 MERGED+live but ISO-18 FAIL + ISO-29 FAIL (Admin2 helgoiq-bb-admin-2; Refrm deep links still expose Bluebird on Account chooser + CC studio prompt). #1377 MEM-F01 still OPEN. Findings not closed.",
+      "progressNote": "2026-09-18 ~19:02 EEST Measured: ISO-18 FAIL, ISO-29 FAIL after #1376 on tip 660c9038. Not clean.",
       "blockers": [
         "Same privacy fails ISO-18, ISO-20, ISO-27, ISO-29 (Measured on 6486be87)",
         "Weymouth #1245 and Luton #1242 extras NOT_RUN \u2014 no dedicated fixture/route"
@@ -851,20 +852,19 @@
     "overallLaunchPercent": 70,
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 70% = round((80\u00d712 + 87\u00d710 + 86\u00d710 + 25\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 74\u00d78 + 100\u00d710 + 42\u00d710)/100) half-up. Tip 660c9038 \u2014 pack #1418+#1396+#1420+#1419+#1414+#1411 ON tip (plus prior #1376+#1401). Strand % held (no new Measured retest). Dataset 80 / CC 87 / Isolation 86 Estimate / Comms 42 / AI-24 25 held.",
     "readinessLabel": "~70% \u2014 tip 660c9038; pack #1418+#1396+#1420 live; strands held pending retest",
-    "plainSummary": "Launch readiness about 70%. Live tip 660c9038. New on tip: #1418 CC failure reasons, #1396 Manager location grants, #1420 Comms receipt gate, #1419/#1414/#1411 CI/review-loop. AI-24 Measured bank still tip 205d5bb8 (ai-85 25%). Command Centre 87 Measured and Dataset 80 held. Still open: smoke NEED_DECLAN, CMS #1410, MEM-F01 #1377; ISO-18/29 and D-RI-01 retests owed on this tip. Prefer not to need import.rollbackBatch.",
+    "plainSummary": "Launch readiness about 70%. Live tip 660c9038. #1376 ISO chooser fix is on tip but ISO-18 + ISO-29 Measured FAIL (Admin2) \u2014 Isolation not closed. Prefer not to need import.rollbackBatch.",
     "strengths": [
       "CC rebank tip 205d5bb8: A 24/24 + B\u2013F 23/30 (47/54) \u2192 strand 87 Measured held",
       "Dataset Confirm canary PASS tip 205d5bb8 \u2014 company Admin Approve (#1388) held at 80",
       "AI-24 Measured honest: 3 usable PASS + 17 BLOCKED empties (not invented FAIL/PASS); Pulse 30/100 Critical explicit"
     ],
     "risks": [
+      "#1376 live on tip 660c9038 but ISO-18+ISO-29 Measured FAIL (Admin2) \u2014 not clean",
       "Tip 660c9038 just landed \u2014 Isolation 86% still Estimate until Bluebird\u2194Refrm ISO-18/29 retest PASS",
       "D-RI-01 FAIL held until Measured retest on #1401 (ledger tool on tip; no invent PASS)",
       "#1377 MEM-F01 still OPEN; Cluster A MEM-F01 gate unchanged",
       "#1410 CMS Live Approval Hub pages still OPEN",
-      "#1420 Comms receipt gate ON tip \u2014 re-census owed before raising Comms 42%",
-      "AI-24 17/24 BLOCKED \u2014 empty opportunity/task/recommendation surfaces despite live 12m",
-      "Disagreement ledger 6 rows (CC vs Pulse/Dispatch/Twin non-comparable/omission)"
+      "#1420 Comms receipt gate ON tip \u2014 re-census owed before raising Comms 42%"
     ],
     "topPriorities": [
       "Populate / unblock AI opportunity surfaces so BLOCKED items can be re-measured (not invent PASS)",
@@ -895,11 +895,11 @@
     "refreshWarning": "Live tip unchanged since last strand rebuild \u2014 readiness may be stale relative to merged-but-undeployed PRs.",
     "headlinePercent": 70,
     "status": "at-risk",
-    "plain": "Launch readiness about 70%. Live tip 205d5bb8. AI-24 Measured: 3 PASS / 17 BLOCKED / 4 SKIP \u2192 ai-85 25%. Command Centre 87 Measured and Dataset 80 held. BLOCKED density on empty AI opportunity surfaces; disagreement ledger 6 rows. Still open: smoke NEED_DECLAN, CMS #1410, ISO #1376/#1377. Prefer not to need import.rollbackBatch.",
+    "plain": "Launch readiness about 70%. Live tip 660c9038. #1376 ISO chooser fix is on tip but ISO-18 + ISO-29 Measured FAIL (Admin2) \u2014 Isolation not closed. Prefer not to need import.rollbackBatch.",
     "gaps": [
+      "ISO-18 + ISO-29 Measured FAIL after #1376 on tip 660c9038 (chooser still leaks Bluebird on Refrm deep links)",
       "AI-24 17 BLOCKED + 4 SKIP on tip 205d5bb8",
-      "B\u2013F 7 FAILs remain on tip 205d5bb8",
-      "Smoke NEED_DECLAN + CMS #1410 + ISO #1376/#1377"
+      "B\u2013F 7 FAILs remain on tip 205d5bb8"
     ],
     "tipChange": {
       "changed": true,
@@ -909,19 +909,19 @@
     },
     "note": "AI-24 Measured tip 205d5bb8 \u2192 ai-85 25; headline 70%. Never invent PASS. Prefer not to need import.rollbackBatch.",
     "label": "~70% \u2014 tip 205d5bb8; AI-24 Measured 3/24 \u2192 ai-85 25%; CC 87 / Dataset 80 held",
-    "dataAsOf": "2026-09-18T09:54:50.734Z",
-    "buildStamp": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
-    "tip": "56e66fbbc4eca8149a8f7e115d72abfb8d58a02d",
+    "dataAsOf": "2026-09-18T16:03:36.000Z",
+    "buildStamp": "660c9038ea12a2543db5f3049b0c098f4298ff5a",
+    "tip": "660c9038ea12a2543db5f3049b0c098f4298ff5a",
     "plainHeadline": "~70% ready \u2014 tip 205d5bb8; AI-24 Measured 25% (3/24 PASS)",
     "blockers": [
+      "ISO-18 + ISO-29 Measured FAIL after #1376 on tip 660c9038 (chooser still leaks Bluebird on Refrm deep links)",
       "AI-24 Measured 3/24 \u2014 17 BLOCKED empty opportunity surfaces; ledger 6 rows",
       "B\u2013F 7 FAILs still open on tip 205d5bb8",
       "Smoke #1375 NEED_DECLAN",
-      "CMS public Live 404 (#1410 OPEN)",
-      "#1376 ISO-18/29 + #1377 MEM-F01 still OPEN (not on tip)"
+      "CMS public Live 404 (#1410 OPEN)"
     ],
-    "updatedAt": "2026-09-18T15:40:37.454Z",
-    "summary": "Tip 56e66fbb live. Headline 70%. Material: #1376+#1401. Retests pending for ISO-18/29 and D-RI-01. Prefer not to need import.rollbackBatch."
+    "updatedAt": "2026-09-18T16:03:36.000Z",
+    "summary": "Tip 660c9038. #1376 live; ISO-18/29 Measured FAIL (not clean). Isolation Measured hold. Prefer not to need import.rollbackBatch."
   },
   "actions": [
     {

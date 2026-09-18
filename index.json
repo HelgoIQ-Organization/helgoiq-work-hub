@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-18T16:01:03.214Z",
+  "updatedAt": "2026-09-18T16:03:36.173Z",
   "drops": [
+    {
+      "id": "2026-09-18-iso-1376-chooser-sweep-tip-660c9038",
+      "title": "ISO-1376 chooser sweep — ISO-18/29 Measured FAIL",
+      "date": "2026-09-18",
+      "summary": "Tip 660c9038: #1376 live but ISO-18 + ISO-29 Measured FAIL on Admin2 — not clean",
+      "plainEnglish": "Tip 660c9038: #1376 live but ISO-18 + ISO-29 Measured FAIL on Admin2 — not clean",
+      "tags": [
+        "isolation",
+        "findings",
+        "status"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-iso-1376-chooser-sweep-tip-660c9038/SUMMARY.md"
+      ],
+      "tip": "660c9038ea12a2543db5f3049b0c098f4298ff5a"
+    },
     {
       "id": "2026-09-18-launch-hub-tip-660c9038-live-1418-1396-1420-pack",
       "title": "Launch Hub tip 660c9038 live — #1418+#1396+#1420 pack",
