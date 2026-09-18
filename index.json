@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-18T09:54:55.497Z",
+  "updatedAt": "2026-09-18T10:11:37.830Z",
   "drops": [
+    {
+      "id": "2026-09-18-connections-feel-walk-tip-205d5bb8",
+      "title": "Connections Feel walk tip 205d5bb8",
+      "date": "2026-09-18",
+      "summary": "Bluebird Connections Feel walk on tip 205d5bb8: vault+Google handoffs OK; Stripe/Gmail Disconnect no-ops; Meta dead end; GTM Container ID + refm.co.uk cross-tenant; Mailchimp/Zoom/Xero/QB not exposed. No Hub % claimed.",
+      "plainEnglish": "Owner Connect walk on Bluebird (tip 205d5bb8). Google Reviews and Ads reach Google sign-in. Stripe and Gmail look connected but Disconnect does nothing. Meta Facebook button goes nowhere. GTM asks for a technical Container ID and shows a Reformer URL. Mailchimp, Zoom, Xero and QuickBooks are missing from owner search. Proposed Coverage states are in the drop; no Hub percentage invented.",
+      "tags": [
+        "feel",
+        "coverage",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-connections-feel-walk-tip-205d5bb8/RESULTS.md",
+        "drops/2026-09-18-connections-feel-walk-tip-205d5bb8/DEFECTS.md"
+      ],
+      "tip": "205d5bb8",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-18-ai24-rescore-tip-205d5bb8",
       "title": "AI-24 Measured re-score tip 205d5bb8 — 3/24 PASS → ai-85 25%",
