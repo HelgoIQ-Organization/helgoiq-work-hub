@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-18T14:53:47.115Z",
+  "updatedAt": "2026-09-18T15:40:48.106Z",
   "drops": [
+    {
+      "id": "2026-09-18-launch-hub-tip-56e66fbb-live-1376-iso-1401-d-ri",
+      "title": "Launch Hub tip 56e66fbb live — #1376 ISO + #1401 D-RI",
+      "date": "2026-09-18",
+      "summary": "Tip 205d5bb8→56e66fbb; #1376+#1401 LIVE; headline 70% held; ISO/D-RI retests pending",
+      "plainEnglish": "Tip 205d5bb8→56e66fbb; #1376+#1401 LIVE; headline 70% held; ISO/D-RI retests pending",
+      "tags": [
+        "status",
+        "isolation",
+        "command-centre",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-launch-hub-tip-56e66fbb-live-1376-iso-1401-d-ri/tip-56e66fbb.md"
+      ],
+      "tip": "56e66fbbc4eca8149a8f7e115d72abfb8d58a02d"
+    },
     {
       "id": "2026-09-18-feel-fix-candidates-for-codex-cursor-down",
       "title": "Feel FIX_CANDIDATEs for Codex (Cursor down)",
