@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-17T20:14:32.058Z",
+  "updatedAt": "2026-09-18T03:24:59.003Z",
   "drops": [
+    {
+      "id": "2026-09-18-claude-progress-brief-18-sep-tip-cace7a56-hub-73",
+      "title": "Claude progress brief 18 Sep — tip cace7a56 Hub ~73% four lanes",
+      "date": "2026-09-18",
+      "summary": "Morning brief for Claude: live tip cace7a56; Hub meta still ~73% on prior stamp; Feel remeasure + #1400 Admin Home alias; B-F 22/30; Declan gates listed.",
+      "plainEnglish": "For Claude: staging tip moved to cace7a56 with Feel pack live. Admin Home is broken but PR 1400 fixes it. Hub still shows about 73% until regenerated. Next: merge 1400, refresh Hub, fix B-F and CMS publish 404.",
+      "tags": [
+        "status",
+        "findings",
+        "command-centre",
+        "smoke"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-claude-progress-brief-18-sep-tip-cace7a56-hub-73/CLAUDE-PROGRESS-BRIEF-2026-09-18.md"
+      ],
+      "tip": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-17-feel-remeasure-tip-cace7a56-home-27-safe-studio-",
       "title": "Feel remeasure tip cace7a56 — Home 27, Safe Studio 85, #1383/#1385 PASS",
