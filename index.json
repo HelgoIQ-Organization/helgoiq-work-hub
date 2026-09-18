@@ -1,6 +1,27 @@
 {
-  "updatedAt": "2026-09-18T03:24:59.003Z",
+  "updatedAt": "2026-09-18T04:16:47.199Z",
   "drops": [
+    {
+      "id": "2026-09-18-overnight-close-out-2026-09-18",
+      "title": "Overnight close-out 2026-09-18",
+      "date": "2026-09-18",
+      "summary": "PARTIAL morning ZIP: live tip cace7a56; banked CC A 24/24 + B-F 22/30 on f13a6dc2; Feel Admin Home P0; CMS publish 404; Finance/Dispatch1 continuity. New rollup PASS=50 FAIL=16 PARTIAL=4 BLOCKED=2. #1175 MERGED.",
+      "plainEnglish": "PARTIAL morning ZIP: live tip cace7a56; banked CC A 24/24 + B-F 22/30 on f13a6dc2; Feel Admin Home P0; CMS publish 404; Finance/Dispatch1 continuity. New rollup PASS=50 FAIL=16 PARTIAL=4 BLOCKED=2. #1175 MERGED.",
+      "tags": [
+        "status",
+        "command-centre",
+        "finance",
+        "findings"
+      ],
+      "type": "pack",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-overnight-close-out-2026-09-18/SIGNAL.md",
+        "drops/2026-09-18-overnight-close-out-2026-09-18/CLOSEOUT-README.md",
+        "drops/2026-09-18-overnight-close-out-2026-09-18/ADDENDUM-overnight-closeout-2026-09-18.md"
+      ],
+      "tip": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5"
+    },
     {
       "id": "2026-09-18-claude-progress-brief-18-sep-tip-cace7a56-hub-73",
       "title": "Claude progress brief 18 Sep — tip cace7a56 Hub ~73% four lanes",
