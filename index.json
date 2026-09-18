@@ -1,6 +1,26 @@
 {
-  "updatedAt": "2026-09-18T09:39:18.923Z",
+  "updatedAt": "2026-09-18T09:54:55.497Z",
   "drops": [
+    {
+      "id": "2026-09-18-ai24-rescore-tip-205d5bb8",
+      "title": "AI-24 Measured re-score tip 205d5bb8 — 3/24 PASS → ai-85 25%",
+      "date": "2026-09-18",
+      "summary": "AI-24 Measured tip 205d5bb8: 3 PASS / 0 FAIL / 17 BLOCKED / 4 SKIP. Strand ai-85 68→25 Measured. Ledger 6 rows (LED-01..06). Headline 70% (Dataset 80, CC 87, Comms 42 held). Do not invent.",
+      "plainEnglish": "AI features re-checked on tip 205d5bb8 with live 12-month data. Only 3 of 24 checks produced usable PASS results; 17 were BLOCKED because opportunity surfaces were empty (not treated as FAIL); 4 routes were missing (SKIP). AI strand moved from about 68% estimate to 25% measured. Disagreement ledger now has 6 rows.",
+      "tags": [
+        "ai-85",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-ai24-rescore-tip-205d5bb8/SUMMARY.md",
+        "drops/2026-09-18-ai24-rescore-tip-205d5bb8/RESULTS.md",
+        "drops/2026-09-18-ai24-rescore-tip-205d5bb8/DISAGREEMENT-LEDGER.md"
+      ],
+      "tip": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-18-comms-recensus-tip-205d5bb8",
       "title": "Comms re-census Measured PARTIAL tip 205d5bb8",
