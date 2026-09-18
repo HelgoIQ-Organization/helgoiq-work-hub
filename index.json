@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-18T07:16:31.380Z",
+  "updatedAt": "2026-09-18T08:01:16.783Z",
   "drops": [
+    {
+      "id": "2026-09-18-launch-hub-tip-205d5bb8-live-1388-dataset-approv",
+      "title": "Launch Hub tip 205d5bb8 LIVE — #1388 Dataset Approve pack",
+      "date": "2026-09-18",
+      "summary": "Tip 0507113f→205d5bb8 LIVE with #1388+#1403+#1409+#1371+#1374+#1378+#1365. Headline held 73%. Canary + E-FAC rebank owed.",
+      "plainEnglish": "New staging build is live. Biggest unlock: studio admins can Approve their own dataset drafts again (#1388) — we still need to run the canary test. Command Centre got an E-FAC fix too — retest owed. Launch readiness still about 73%.",
+      "tags": [
+        "status",
+        "dataset",
+        "command-centre",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-launch-hub-tip-205d5bb8-live-1388-dataset-approv/README.md"
+      ],
+      "tip": "205d5bb897fa84c76f2af92b2cad16b568f1cca2"
+    },
     {
       "id": "2026-09-18-cc-rebank-tip-0507113f-a-24-24-b-f-22-30-home-fe",
       "title": "CC rebank tip 0507113f — A 24/24 · B–F 22/30 · Home Feel 90",
