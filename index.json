@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-18T10:11:37.830Z",
+  "updatedAt": "2026-09-18T11:46:05.242Z",
   "drops": [
+    {
+      "id": "2026-09-18-claude-progress-brief-18-sep-afternoon-why-hub-7",
+      "title": "Claude progress brief 18 Sep afternoon — why Hub 76→70",
+      "date": "2026-09-18",
+      "summary": "Headline 76→70 because AI-24 Measured re-score moved ai-85 68→25 (15% weight). Dataset 80 / CC 87 / Comms 42 held. Not a tip regression.",
+      "plainEnglish": "Headline 76→70 because AI-24 Measured re-score moved ai-85 68→25 (15% weight). Dataset 80 / CC 87 / Comms 42 held. Not a tip regression.",
+      "tags": [
+        "status",
+        "ai-85",
+        "dataset",
+        "command-centre"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-claude-progress-brief-18-sep-afternoon-why-hub-7/CLAUDE-PROGRESS-BRIEF-2026-09-18-AFTERNOON.md"
+      ],
+      "tip": "205d5bb8"
+    },
     {
       "id": "2026-09-18-connections-feel-walk-tip-205d5bb8",
       "title": "Connections Feel walk tip 205d5bb8",
