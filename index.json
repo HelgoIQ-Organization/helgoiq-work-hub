@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-18T05:25:25.859Z",
+  "updatedAt": "2026-09-18T07:16:31.380Z",
   "drops": [
+    {
+      "id": "2026-09-18-cc-rebank-tip-0507113f-a-24-24-b-f-22-30-home-fe",
+      "title": "CC rebank tip 0507113f — A 24/24 · B–F 22/30 · Home Feel 90",
+      "date": "2026-09-18",
+      "summary": "Measured on live tip 0507113f: Cluster A 24/24, B–F 22/30 (8 FAIL same set). Admin Home Feel 90 with #1400 visible. Hub tip bank updated; headline not invented.",
+      "plainEnglish": "Command Centre retested on the new tip: Cluster A still perfect 24/24, B–F still 22 of 30 with the same eight fails. Admin Home Feel is now 90 after the home redirect fix.",
+      "tags": [
+        "status",
+        "findings",
+        "command-centre"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-cc-rebank-tip-0507113f-a-24-24-b-f-22-30-home-fe/REBANK-SUMMARY.md"
+      ],
+      "tip": "0507113fbce0040bbf796c621c1a2d873e1fd5a9",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-18-feel-tip-remeasure-0507113f",
       "title": "Feel tip remeasure 0507113f",
