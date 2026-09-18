@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-18T16:03:36.173Z",
+  "updatedAt": "2026-09-18T16:35:15.273Z",
   "drops": [
+    {
+      "id": "2026-09-18-launch-hub-tip-d5b7d47-1404-f-iso-01-live-70-hel",
+      "title": "Launch Hub tip d5b7d47 — #1404 F-ISO-01 live (70% held)",
+      "date": "2026-09-18",
+      "summary": "Staging tip d5b7d47 live with #1404 F-ISO-01; headline held 70% pending Measured retest",
+      "plainEnglish": "Staging tip d5b7d47 live with #1404 F-ISO-01; headline held 70% pending Measured retest",
+      "tags": [
+        "status",
+        "command-centre",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-launch",
+      "paths": [
+        "drops/2026-09-18-launch-hub-tip-d5b7d47-1404-f-iso-01-live-70-hel/tip-d5b7d47.md"
+      ],
+      "tip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463"
+    },
     {
       "id": "2026-09-18-iso-1376-chooser-sweep-tip-660c9038",
       "title": "ISO-1376 chooser sweep — ISO-18/29 Measured FAIL",
