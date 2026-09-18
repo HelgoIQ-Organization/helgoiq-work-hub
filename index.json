@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-18T04:41:46.521Z",
+  "updatedAt": "2026-09-18T04:46:47.068Z",
   "drops": [
+    {
+      "id": "2026-09-18-launch-hub-staging-0507113f-undeployed-live-tip-",
+      "title": "Launch Hub staging 0507113f undeployed (live tip 6adaf8e2)",
+      "date": "2026-09-18",
+      "summary": "Live tip still 6adaf8e2; staging HEAD 0507113f with #1407+#1390+#1397+#1393+#1380+#1399 undeployed. Headline held 73%.",
+      "plainEnglish": "Staging is six commits ahead of live. Headline still 73% until DigitalOcean deploys. Feel empty-states, update strip, and two Command Centre fixes are waiting.",
+      "tags": [
+        "status",
+        "findings",
+        "command-centre"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-launch-hub-staging-0507113f-undeployed-live-tip-/hub-drop-undeployed-0507113f.md"
+      ],
+      "tip": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa"
+    },
     {
       "id": "2026-09-18-launch-hub-tip-6adaf8e2-live-1400-admin-home-139",
       "title": "Launch Hub tip 6adaf8e2 live — #1400 Admin Home + #1398 CI gate",
