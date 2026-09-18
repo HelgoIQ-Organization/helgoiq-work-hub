@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-09-18T08:09:51.029Z",
+  "updatedAt": "2026-09-18T09:24:24.651Z",
   "meta": {
-    "dataAsOf": "2026-09-18T08:09:51.029Z",
+    "dataAsOf": "2026-09-18T09:24:24.651Z",
     "buildStamp": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
     "liveTip": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 76% = round((80×12 + 85×10 + 86×10 + 68×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 42×10)/100) half-up. Tip 205d5bb8 — Dataset canary PASS raised strand 52→80.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 76% = round((80×12 + 87×10 + 86×10 + 68×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 42×10)/100) half-up. Tip 205d5bb8 — CC rebank A24/BF23 raised strand 85→87 Measured.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
     "latestSnapshotPath": "history/2026-09-18-tip-0507113f.json",
-    "lastRefreshNote": "Dataset Confirm canary PASS tip 205d5bb8 (#1388): Admin2 approved members-canary3-clean.csv → Approved; Import/Activate not run. Members 177 / SEED 165 / Member A. Dataset strand 52→80 Measured; headline 76% (was 73%). Import/Activate company-admin path still unproven. CC E-FAC/#1403 rebank still owed. Never invent other strands. Prefer not to need import.rollbackBatch.",
+    "lastRefreshNote": "CC rebank Measured on tip 205d5bb8: Cluster A 24/24 PASS, B–F 23/30 PASS (was 22/30 on 0507113f), combined 47/54 → Command Centre strand 85→87 Measured (round(47/54×100)=87). New PASS: E-FAC-01, E-FU-01 (#1403), C-XAGR-01. Still FAIL: B-HOW-01, D-RI-01, D-CASH-01, F-ISO-01, F-SEED-01, F-INJ-01, F-HOW-01 (F-SEED soft-recovered once, still stall). Headline 76% (weighted half-up; Dataset held 80). Bluebird c=150002 only. Prefer not to need import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
       "checkedAt": "2026-09-18T08:00:08.798Z"
     },
-    "updatedAt": "2026-09-18T08:09:51.029Z",
-    "note": "Live tip 0507113f. Pack #1407+#1390+#1397+#1393+#1380+#1399 LIVE. Headline 73% (no strand invent). CC rebank owed. Prefer not to need import.rollbackBatch.",
+    "updatedAt": "2026-09-18T09:24:24.651Z",
+    "note": "Live tip 205d5bb8. Headline 76% (CC 87 Measured; Dataset 80 held). Prefer not to need import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L≥1 = 383/413 ≈ 92.7%; L≥2 = 368/413 ≈ 89.1%.",
-    "headlineVsCoverage": "Headline ~73% = weighted strand average. Coverage L1%=92.7 / L2%=89.1. Different units.",
+    "headlineVsCoverage": "Headline ~76% = weighted strand average. Coverage L1%=92.7 / L2%=89.1. Different units.",
     "coverageAfterBackfill": {
       "pctTestedAny": 98.8,
       "pctL1Plus": 88.4,
@@ -36,9 +36,9 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "Measured bank on tip f13a6dc2: Cluster A 24/24 PASS + B–F 22/30 (46/54). Live tip now 0507113f — rebank INCOMPLETE/owed (includes #1399 C-XAGR-01 + #1397 B-HOW-01 on tip). Strand 85% Measured hold. Eight FAILs remain for builder. Never invent PASS.",
-    "liveTipNote": "Live tip 205d5bb8 confirmed via /api/version after staging CI success.",
-    "checkedAt": "2026-09-18T08:09:51.029Z"
+    "commandCentreNote": "Measured bank on tip 205d5bb8: Cluster A 24/24 PASS + B–F 23/30 (47/54). Strand 87% Measured. Seven FAILs remain for builder. E-FAC/E-FU/C-XAGR cleared. Never invent PASS.",
+    "liveTipNote": "Live tip 205d5bb8 confirmed; CC rebank Measured on same tip.",
+    "checkedAt": "2026-09-18T09:24:24.651Z"
   },
   "tip": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
   "progressToday": {
@@ -58,7 +58,7 @@
     },
     "nowStrands": {
       "dataset": 80,
-      "command-centre": 85,
+      "command-centre": 87,
       "isolation": 86,
       "ai-85": 68,
       "ambient": 95,
@@ -70,7 +70,7 @@
     },
     "deltas": {
       "dataset": 55,
-      "command-centre": 30,
+      "command-centre": 32,
       "isolation": 0,
       "ai-85": 12,
       "ambient": 25,
@@ -80,10 +80,10 @@
       "findings-fix": 60,
       "comms": 42
     },
-    "plainEnglishDay": "Dataset Confirm canary PASS on tip 205d5bb8 (#1388): Admin2 company Admin approved members-canary3-clean.csv → Approved; Import/Activate not run. Members 177 / SEED:12M search 165 / Member A present. Dataset strand 52→80 Measured; headline 76% (was 73%). Import/Activate company-admin path still unproven. CC E-FAC/#1403 rebank still owed. Prefer not to need import.rollbackBatch.",
+    "plainEnglishDay": "CC rebank Measured on tip 205d5bb8: Cluster A 24/24 PASS, B–F 23/30 PASS (was 22/30 on 0507113f), combined 47/54 → Command Centre strand 85→87 Measured (round(47/54×100)=87). New PASS: E-FAC-01, E-FU-01 (#1403), C-XAGR-01. Still FAIL: B-HOW-01, D-RI-01, D-CASH-01, F-ISO-01, F-SEED-01, F-INJ-01, F-HOW-01 (F-SEED soft-recovered once, still stall). Headline 76% (weighted half-up; Dataset held 80). Bluebird c=150002 only. Prefer not to need import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning 52% → now 76% after Dataset canary PASS (52→80). Other strand percents held.",
-    "updatedAt": "2026-09-18T08:09:51.029Z",
+    "compareNote": "Morning 52% → now 76% after CC rebank 85→87 Measured on tip 205d5bb8. Dataset held 80.",
+    "updatedAt": "2026-09-18T09:24:24.651Z",
     "coverageNote": "After AI L2 Intel: L≥1=372 (90%); L≥2=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": {
@@ -550,17 +550,18 @@
     {
       "id": "command-centre",
       "name": "Command Centre acceptance",
-      "percent": 85,
+      "percent": 87,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Command Centre about 85% Measured (banked on tip 0507113f: A 24/24, B–F 22/30). Live tip 205d5bb8 adds #1403 E-FAC-01 shared-brand refuse — E-FAC rebank owed. Do not invent PASS.",
-      "progressNote": "Cluster A 24/24 + B–F 22/30 Measured tip 0507113f; #1403 ON tip 205d5bb8 — rebank E-FAC/B–F owed.",
+      "plainSummary": "Command Centre about 87% Measured (rebank tip 205d5bb8: A 24/24, B–F 23/30 = 47/54; round(47/54×100)=87). E-FAC-01 / E-FU-01 / C-XAGR-01 cleared on this tip. Seven B–F FAILs remain. Do not invent PASS.",
+      "progressNote": "Rebank tip 205d5bb8: Cluster A 24/24 + B–F 23/30 (47/54) Measured; was A24/BF22 on 0507113f. Strand 85→87. E-FAC/E-FU/C-XAGR now PASS; 7 FAILs remain.",
       "blockers": [
-        "B–F Measured 22/30 on 0507113f — 8 FAILs (B-HOW, C-XAGR, D-RI, D-CASH, E-FAC, F-ISO, F-INJ, F-HOW); #1403 targets E-FAC — remeasure",
-        "Dataset Confirm canary PASS tip 205d5bb8 (#1388) — CC E-FAC/#1403 rebank still owed",
+        "B–F Measured 23/30 on 205d5bb8 — 7 FAILs: B-HOW-01, D-RI-01, D-CASH-01, F-ISO-01, F-SEED-01, F-INJ-01, F-HOW-01 (E-FAC/E-FU/C-XAGR cleared on this tip)",
+        "F-SEED-01 soft-recovered once after stall — still stall/couldnt (not PASS)",
         "Smoke fixture NEED_DECLAN (checkout 409 Cancelling≠terminal)"
       ],
       "detailDropIds": [
+        "2026-09-18-cc-rebank-tip-205d5bb8-a24-bf23-30",
         "2026-09-16-cluster-a-8226bb01",
         "2026-09-12-cluster-a-24-24",
         "2026-09-12-milestone-2-bf-4-30",
@@ -571,17 +572,17 @@
       ],
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
-      "measuredNote": "Measured on tip f13a6dc2: Cluster A 24/24 PASS + Milestone 2 B–F 22/30 (46/54 combined). FAILs: B-HOW-01, C-XAGR-01, D-RI-01, D-CASH-01, E-FAC-01, F-ISO-01, F-INJ-01, F-HOW-01. Never invent PASS.",
-      "lastTestedStamp": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
-      "coverageFreshness": "stale",
+      "measuredNote": "Measured on tip 205d5bb897fa84c76f2af92b2cad16b568f1cca2: Cluster A 24/24 PASS + Milestone 2 B–F 23/30 (47/54 combined). New PASS vs 0507113f: E-FAC-01, E-FU-01, C-XAGR-01. FAILs: B-HOW-01, D-RI-01, D-CASH-01, F-ISO-01, F-SEED-01, F-INJ-01, F-HOW-01. Never invent PASS.",
+      "lastTestedStamp": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
+      "coverageFreshness": "fresh",
       "lastTestedVerdict": "FAIL",
       "measured": 100,
       "blocker": "Cluster A 19/24 (MEM-F01 + stalls); B–F locked/parked",
-      "note": "Measured on tip f13a6dc2: Cluster A 24/24 PASS + Milestone 2 B–F 22/30 (46/54 combined). Live tip 6adaf8e2 — rebank owed. FAILs: B-HOW-01, C-XAGR-01, D-RI-01, D-CASH-01, E-FAC-01, F-ISO-01, F-INJ-01, F-HOW-01. Never invent PASS.",
-      "lastTestedAt": "2026-09-17T14:26:32.246Z",
-      "freshnessNote": "Bank tip f13a6dc2; live tip 6adaf8e2 — scores held pending rebank.",
+      "note": "Measured on tip 205d5bb897fa84c76f2af92b2cad16b568f1cca2: Cluster A 24/24 PASS + Milestone 2 B–F 23/30 (47/54 combined). New PASS vs 0507113f: E-FAC-01, E-FU-01, C-XAGR-01. FAILs: B-HOW-01, D-RI-01, D-CASH-01, F-ISO-01, F-SEED-01, F-INJ-01, F-HOW-01. Never invent PASS.",
+      "lastTestedAt": "2026-09-18",
+      "freshnessNote": "Bank tip 205d5bb8 matches live tip — fresh Measured rebank.",
       "tipNote": {},
-      "lastRefreshNote": "Bank still f13a6dc2; live tip 0507113f — rebank owed (#1399/#1397 on tip). Never invent PASS."
+      "lastRefreshNote": "Rebank 205d5bb8: A24/BF23 → strand 87 Measured. Never invent PASS."
     },
     {
       "id": "isolation",
@@ -806,17 +807,17 @@
   ],
   "health": {
     "overallLaunchPercent": 76,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 76% = round((80×12 + 85×10 + 86×10 + 68×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 42×10)/100) half-up. Tip 205d5bb8 — Dataset canary PASS raised strand 52→80.",
-    "readinessLabel": "~76% — tip 205d5bb8; Dataset Confirm canary PASS (#1388); Import/Activate unproven; CC rebank owed",
-    "plainSummary": "Launch readiness about 76%. Live tip 205d5bb8. Dataset Confirm canary PASS (#1388): company Admin Approve proven; strand 52→80. Import/Activate/goLive still unproven as company admin. Command Centre banked on 0507113f (A 24/24, B–F 22/30); #1403 E-FAC rebank still owed. Still open: smoke NEED_DECLAN, CMS #1410, ISO #1376/#1377. Prefer not to need import.rollbackBatch.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 76% = round((80×12 + 87×10 + 86×10 + 68×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 42×10)/100) half-up. Tip 205d5bb8 — CC rebank A24/BF23 raised strand 85→87 Measured.",
+    "readinessLabel": "~76% — tip 205d5bb8; CC rebank A24/BF23 (87 Measured); Dataset Confirm canary PASS held; 7 BF fails remain",
+    "plainSummary": "Launch readiness about 76%. Live tip 205d5bb8. Command Centre rebank Measured: A 24/24, B–F 23/30 (47/54) → strand 87%. E-FAC/E-FU/C-XAGR cleared; seven B–F FAILs remain. Dataset Confirm canary PASS held at 80. Still open: smoke NEED_DECLAN, CMS #1410, ISO #1376/#1377. Prefer not to need import.rollbackBatch.",
     "strengths": [
-      "Dataset Confirm canary PASS tip 205d5bb8 — company Admin Approve (#1388)",
-      "12-month SEED live (177 members / SEED:12M → 165 / Member A present)",
-      "Cluster A banked 24/24 + B–F 22/30 on tip 0507113f (E-FAC rebank owed for #1403)"
+      "CC rebank tip 205d5bb8: A 24/24 + B–F 23/30 (47/54) → strand 87 Measured",
+      "E-FAC-01 / E-FU-01 (#1403) / C-XAGR-01 now PASS on this tip",
+      "Dataset Confirm canary PASS tip 205d5bb8 — company Admin Approve (#1388) held at 80"
     ],
     "risks": [
+      "Seven B–F FAILs remain: B-HOW-01, D-RI-01, D-CASH-01, F-ISO-01, F-SEED-01, F-INJ-01, F-HOW-01",
       "Import/Activate/goLive still unproven as company Admin (may still need platformAdmin)",
-      "Eight B–F FAILs banked on 0507113f; #1403 may clear E-FAC — remeasure required",
       "Smoke NEED_DECLAN + CMS #1410 + #1376/#1377 still open"
     ],
     "topPriorities": [

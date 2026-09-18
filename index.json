@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-18T08:09:54.838Z",
+  "updatedAt": "2026-09-18T09:24:28.104Z",
   "drops": [
+    {
+      "id": "2026-09-18-cc-rebank-tip-205d5bb8-a24-bf23-30",
+      "title": "CC rebank tip 205d5bb8 A24 BF23/30",
+      "date": "2026-09-18",
+      "summary": "Measured CC rebank tip 205d5bb8: Cluster A 24/24, B–F 23/30 (47/54). Strand 85→87. New PASS E-FAC/E-FU/C-XAGR; 7 FAILs remain. Headline 76% weighted half-up.",
+      "plainEnglish": "Command Centre retested on tip 205d5bb8: Cluster A still perfect 24/24; B–F improved to 23 of 30 (was 22). E-FAC, E-FU and C-XAGR now pass. Seven fails remain including F-SEED which soft-recovered once but still stalled.",
+      "tags": [
+        "command-centre",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-cc-rebank-tip-205d5bb8-a24-bf23-30/REBANK-SUMMARY.md"
+      ],
+      "tip": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-18-dataset-confirm-canary-pass-tip-205d5bb8",
       "title": "Dataset Confirm canary PASS tip 205d5bb8",
