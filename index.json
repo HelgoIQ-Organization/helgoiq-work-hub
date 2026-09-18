@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-18T09:24:28.104Z",
+  "updatedAt": "2026-09-18T09:39:18.923Z",
   "drops": [
+    {
+      "id": "2026-09-18-comms-recensus-tip-205d5bb8",
+      "title": "Comms re-census Measured PARTIAL tip 205d5bb8",
+      "date": "2026-09-18",
+      "summary": "Measured re-census tip 205d5bb8 Bluebird c=150002: 1 PASS (Consent), 5 PARTIAL (cancel/cover/journey/segment/Manager newsletter — UI ok, history/inbox proof missing). Comms strand HOLD 42%. No Turnstile/NEED_DECLAN; no live blast.",
+      "plainEnglish": "Comms re-census on tip 205d5bb8: Consent prefs save PASS. Member cancel, cover swap, journey, Segment Send Test, and Manager newsletter all PARTIAL — UI/toast worked but matching history or inbox proof was missing. Strand held at 42%. No live campaign send.",
+      "tags": [
+        "comms",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-comms-recensus-tip-205d5bb8/RESULTS.md",
+        "drops/2026-09-18-comms-recensus-tip-205d5bb8/comms-205d5bb8-evidence-note.md"
+      ],
+      "tip": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-18-cc-rebank-tip-205d5bb8-a24-bf23-30",
       "title": "CC rebank tip 205d5bb8 A24 BF23/30",
