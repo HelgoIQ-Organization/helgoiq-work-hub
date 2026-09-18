@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-18T04:16:47.199Z",
+  "updatedAt": "2026-09-18T04:41:46.521Z",
   "drops": [
+    {
+      "id": "2026-09-18-launch-hub-tip-6adaf8e2-live-1400-admin-home-139",
+      "title": "Launch Hub tip 6adaf8e2 live — #1400 Admin Home + #1398 CI gate",
+      "date": "2026-09-18",
+      "summary": "Tip cace7a56→6adaf8e2 LIVE (#1400 Admin Home + #1398 CI). Hub held ~73% (findings-fix 99→100). CC bank still f13a6dc2 24/24+22/30; rebank owed. await-do-cace7a56 done.",
+      "plainEnglish": "Staging moved to a new build that restores Admin Home and tightens a CI gate. Launch readiness still about 73%. Next: fix the eight Command Centre fails, Dataset Confirm, smoke (needs Declan), and CMS public 404.",
+      "tags": [
+        "status",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-launch-hub-tip-6adaf8e2-live-1400-admin-home-139/hub-drop-tip-6adaf8e2.md"
+      ],
+      "tip": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-18-overnight-close-out-2026-09-18",
       "title": "Overnight close-out 2026-09-18",

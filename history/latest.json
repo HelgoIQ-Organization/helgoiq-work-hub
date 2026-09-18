@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-09-18T03:46:10.752Z",
+  "updatedAt": "2026-09-18T04:41:28.308Z",
   "meta": {
-    "dataAsOf": "2026-09-18T03:46:10.752Z",
-    "buildStamp": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
-    "liveTip": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 73% = round((52×12 + 85×10 + 86×10 + 68×15 + 95×9 + 73×10 + 55×6 + 74×8 + 99×10 + 42×10)/100) half-up.",
+    "dataAsOf": "2026-09-18T04:41:28.308Z",
+    "buildStamp": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa",
+    "liveTip": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 73% = round((52×12 + 85×10 + 86×10 + 68×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 42×10)/100) half-up.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-10-morning.json",
-    "latestSnapshotPath": "history/2026-09-17-undeployed-cace7a56.json",
-    "lastRefreshNote": "Tip changed f13a6dc2 → cace7a56; Bot Commander should rescore strands.",
+    "latestSnapshotPath": "history/2026-09-18-tip-6adaf8e2.json",
+    "lastRefreshNote": "Live tip 6adaf8e2 (#1400 Admin Home + #1398 CI). Prior tip cace7a56 Feel pack still on tip. Cluster A + B–F banked on f13a6dc2 (24/24 + 22/30); rebank still owed on 6adaf8e2. #1376 ISO-18/29 and #1377 MEM-F01 both OPEN — NOT in tip ancestry. await-do-cace7a56 CLOSED (pack + #1400+#1398 deployed). Prefer not to need import.rollbackBatch; never wipe without batchId company scope.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-18T03:46:10.752Z"
+      "checkedAt": "2026-09-18T04:41:28.308Z"
     },
-    "updatedAt": "2026-09-17T19:38:16.536Z",
-    "note": "Live tip still f13a6dc2; staging HEAD cace7a56 with evening merge pack (#1382+#1383+#1385+#1379) undeployed. Headline held 73%. Await DO deploy before Feel/CC retests. Never import.rollbackBatch.",
+    "updatedAt": "2026-09-18T04:41:28.308Z",
+    "note": "Live tip 6adaf8e2. #1400 Admin Home P0 LIVE; #1398 CI LIVE. Headline 73% (findings-fix +1 for Admin Home; no Cluster invent). CC rebank still owed on 6adaf8e2. Prefer not to need import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L≥1 = 383/413 ≈ 92.7%; L≥2 = 368/413 ≈ 89.1%.",
-    "headlineVsCoverage": "Headline ~66% = weighted strand average. Coverage L1%=91.0 / L2%=70.0. Different units.",
+    "headlineVsCoverage": "Headline ~73% = weighted strand average. Coverage L1%=92.7 / L2%=89.1. Different units.",
     "coverageAfterBackfill": {
       "pctTestedAny": 98.8,
       "pctL1Plus": 88.4,
@@ -36,39 +36,18 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "Measured on tip f13a6dc2: Cluster A 24/24 PASS (MEM-F01 reask2 PASS; Teacher2 MGR-10/ACS-X01 PASS) + B–F 22/30. Strand 85% Measured (46/54). Eight FAILs remain for builder. Never invent PASS. Never import.rollbackBatch.",
-    "liveTipNote": "Live lobster tip still f13a6dc2 (full f13a6dc229f42ff318d6ab746da645e2522dd9aa). Staging HEAD cace7a56 contains #1382 cookie chrome, #1383 warm 404, #1385 overview drill, #1379 concern registry — not on DO yet. Never import.rollbackBatch.",
-    "checkedAt": "2026-09-17T19:38:16.536Z",
+    "commandCentreNote": "Measured bank on tip f13a6dc2: Cluster A 24/24 PASS + B–F 22/30 (46/54). Live tip now 6adaf8e2 — rebank INCOMPLETE/owed. Strand 85% Measured hold. Eight FAILs remain for builder. Never invent PASS.",
+    "liveTipNote": "Live lobster tip 6adaf8e2 (full 6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa). Since cace7a56: #1400 restore /admin/home alias + #1398 close presentation self-merge policy holes. Feel evening pack (#1382/#1383/#1385/#1379) remains on tip. Prefer not to need import.rollbackBatch.",
+    "checkedAt": "2026-09-18T04:41:28.308Z",
     "awaitingTipMerges": {
-      "stagingHead": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
-      "liveTip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
-      "undeployed": [
-        {
-          "pr": 1382,
-          "sha": "e932744cc474cabe595ef19aadf2d263a63e604d",
-          "title": "fix(feel): compact non-blocking cookie chrome on first paint (F-SO-03)"
-        },
-        {
-          "pr": 1383,
-          "sha": "3b49ade081fe35d6625b7ccf10d9d1a297f7a071",
-          "title": "fix(feel): warm 404 chrome with studio next steps (F-SO-04)"
-        },
-        {
-          "pr": 1385,
-          "sha": "b1663b9484785ba22ade8772b851f9028362a4a8",
-          "title": "fix(safe-studio): F-AD-03 overview tile drill to scoped operations records"
-        },
-        {
-          "pr": 1379,
-          "sha": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
-          "title": "feat(intelligence): add forward-only concern registry foundation"
-        }
-      ],
-      "at": "2026-09-17T19:38:16.536Z",
-      "note": "Staging ahead of live tip — evening Feel/safe-studio/intelligence pack awaiting DO deploy."
+      "stagingHead": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa",
+      "liveTip": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa",
+      "undeployed": [],
+      "at": "2026-09-18T04:41:28.308Z",
+      "note": "Live tip matches staging HEAD 6adaf8e2 — no undeployed pack. #1376/#1377/#1388 still OPEN (not merged)."
     }
   },
-  "tip": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
+  "tip": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa",
   "progressToday": {
     "morningHeadlinePercent": 52,
     "nowHeadlinePercent": 73,
@@ -93,7 +72,7 @@
       "m1": 73,
       "smoke": 55,
       "payments": 74,
-      "findings-fix": 99,
+      "findings-fix": 100,
       "comms": 42
     },
     "deltas": {
@@ -105,13 +84,13 @@
       "m1": 13,
       "smoke": 35,
       "payments": 29,
-      "findings-fix": 59,
+      "findings-fix": 60,
       "comms": 42
     },
-    "plainEnglishDay": "Same tip f13a6dc2 — material Measured progress: Cluster A 24/24 PASS and Milestone 2 B–F 22/30 (was holding A 19/24). Command Centre strand 60→85 Measured; headline 52% morning → 73% now. Eight B–F FAILs + Dataset Confirm (#1388) + smoke #1375 still open. Never invent PASS. Never import.rollbackBatch. Evening Feel/safe-studio pack (#1382+#1383+#1385+#1379) is on staging HEAD cace7a56 but live tip is still f13a6dc2 — waiting on DigitalOcean before retests. Headline held at 73%.",
+    "plainEnglishDay": "Tip moved cace7a56→6adaf8e2 LIVE: #1400 Admin Home alias (/admin/home→Workspace Launcher) + #1398 CI presentation self-merge gate ON tip. Headline held 73% (findings-fix 99→100 for Admin Home P0 shipped; no Cluster invent). Banked CC still from f13a6dc2: A 24/24 + B–F 22/30 — rebank owed on 6adaf8e2. Primary blockers unchanged: B–F 8 FAILs, Dataset Confirm #1388 OPEN, smoke #1375 NEED_DECLAN, CMS publish→404, Feel FIX_CANDIDATEs, #1376/#1377 OPEN (not on tip). Never invent PASS. Prefer not to need import.rollbackBatch; never wipe without batchId company scope.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning 52% → now 73% (+21). Same tip f13a6dc2; CC Measured 60→85 from A 24/24 + B–F 22/30. Never import.rollbackBatch. Tip unchanged f13a6dc2 vs morning; score move earlier today was Measured banks. Now staging ahead (undeployed).",
-    "updatedAt": "2026-09-17T19:38:36.472Z",
+    "compareNote": "Morning 52% → now 73% (+21). Tip moved cace7a56→6adaf8e2 (#1400+#1398). findings-fix 99→100 (Admin Home P0). CC bank still f13a6dc2. Prefer not to need import.rollbackBatch.",
+    "updatedAt": "2026-09-18T04:41:28.308Z",
     "coverageNote": "After AI L2 Intel: L≥1=372 (90%); L≥2=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": {
@@ -523,7 +502,13 @@
       ],
       "at": "2026-09-17T12:22:14.623Z",
       "note": "Material Command Centre tip (#1328 refuse injected cash-sale requests). Headline held 70% — no strand invent without Bluebird D-INJ Measured."
-    }
+    },
+    "tipBankNote": "Displayed Cluster A 24/24 and B–F 22/30 are from tip f13a6dc2; rebank on 6adaf8e2 (and prior cace7a56) still owed / incomplete.",
+    "ancestry1376": "OPEN not merged — not on 6adaf8e2",
+    "ancestry1377": "OPEN not merged — not on 6adaf8e2",
+    "ancestry1400": "MERGED + LIVE on tip 6adaf8e2 — Admin Home /admin/home alias",
+    "ancestry1398": "MERGED + LIVE on tip 6adaf8e2 — CI presentation self-merge gate",
+    "adminHome1400": "DONE LIVE — Feel Admin Home P0 closed on tip 6adaf8e2"
   },
   "strands": [
     {
@@ -550,7 +535,7 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
-      "note": "Dataset canary Measured FAIL hold from tip 5b1def5c (Approve Platform admin). Live tip aa06928b has no new canary Measured; SEED:12M remains usable. Hold 52%. Never import.rollbackBatch.",
+      "note": "Dataset canary Measured FAIL hold from tip 5b1def5c (Approve Platform admin). Live tip 6adaf8e2; #1388 OPEN not merged. Prefer not to need import.rollbackBatch.",
       "freshnessNote": "Scores Measured on tip 5b1def5c; live tip now 3692a342 — retest pending.",
       "lastTestedAt": "2026-09-17"
     },
@@ -560,8 +545,8 @@
       "percent": 85,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "Command Centre Measured 85% on tip f13a6dc2: Cluster A 24/24 PASS and B–F 22/30. Eight B–F FAILs remain (how-to paths, Pulse occupancy cite, revenue contamination, cash gift gate, cross-tenant facility refuse, isolation/inject refuse, intelligence handoff). Never invent PASS.",
-      "progressNote": "Material Measured bump 60→85 on same tip f13a6dc2: A 24/24 + B–F 22/30.",
+      "plainSummary": "Command Centre about 85% Measured (banked on f13a6dc2). Live tip moved to 6adaf8e2; re-walk still owed. Eight B–F fails remain.",
+      "progressNote": "Measured on tip f13a6dc2: Cluster A 24/24 PASS + Milestone 2 B–F 22/30 (46/54 combined). Live tip 6adaf8e2 — rebank owed. FAILs: B-HOW-01, C-XAGR-01, D-RI-01, D-CASH-01, E-FAC-01, F-ISO-01, F-INJ-01, F-HOW-01. Never invent PASS.",
       "blockers": [
         "B–F Measured 22/30 — 8 FAILs: B-HOW-01 invented_click_path; C-XAGR-01 no Pulse cite; D-RI-01 no contamination flag; D-CASH-01 cash gift gate; E-FAC-01 cross-tenant facility refuse; F-ISO-01/F-INJ-01 no_refuse; F-HOW-01 intelligence handoff",
         "Dataset Confirm still FAIL (Platform admin required) — product defect #1388 open",
@@ -579,13 +564,14 @@
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
       "measuredNote": "Measured on tip f13a6dc2: Cluster A 24/24 PASS + Milestone 2 B–F 22/30 (46/54 combined). FAILs: B-HOW-01, C-XAGR-01, D-RI-01, D-CASH-01, E-FAC-01, F-ISO-01, F-INJ-01, F-HOW-01. Never invent PASS.",
-      "lastTestedStamp": "32e8f686f96e57e877d0bb2b3abc6b98dc6d0edf",
+      "lastTestedStamp": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
       "coverageFreshness": "stale",
       "lastTestedVerdict": "FAIL",
       "measured": 100,
       "blocker": "Cluster A 19/24 (MEM-F01 + stalls); B–F locked/parked",
-      "note": "Measured on tip f13a6dc2: Cluster A 24/24 PASS + Milestone 2 B–F 22/30 (46/54 combined). FAILs: B-HOW-01, C-XAGR-01, D-RI-01, D-CASH-01, E-FAC-01, F-ISO-01, F-INJ-01, F-HOW-01. Never invent PASS.",
-      "lastTestedAt": "2026-09-17T14:26:32.246Z"
+      "note": "Measured on tip f13a6dc2: Cluster A 24/24 PASS + Milestone 2 B–F 22/30 (46/54 combined). Live tip 6adaf8e2 — rebank owed. FAILs: B-HOW-01, C-XAGR-01, D-RI-01, D-CASH-01, E-FAC-01, F-ISO-01, F-INJ-01, F-HOW-01. Never invent PASS.",
+      "lastTestedAt": "2026-09-17T14:26:32.246Z",
+      "freshnessNote": "Bank tip f13a6dc2; live tip 6adaf8e2 — scores held pending rebank."
     },
     {
       "id": "isolation",
@@ -612,7 +598,7 @@
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
       "lastTestedAt": "2026-09-15",
-      "note": "ISO pack held Estimate 86%. Prior Measured evidence unchanged; live tip aa06928b includes #1330/#1335/#1336 ancestry. ISO-18/29 still open. Never invent PASS."
+      "note": "ISO pack held Estimate 86%. #1376 ISO-18/29 OPEN not on tip 6adaf8e2. Prior Measured evidence unchanged."
     },
     {
       "id": "ai-85",
@@ -719,7 +705,7 @@
       "coverageFreshness": "stale",
       "lastNote": "Measured FAIL #1375 held from 5b1def5c; tip now c68ce040 — retest pending NEED_DECLAN.",
       "lastTestedAt": "2026-09-17",
-      "note": "Staging critical-path smoke Measured FAIL hold from tip 5b1def5c (#1375 Cancelling≠terminal / checkout 409). Live tip aa06928b has no new six-step Measured — hold FAIL / NEED_DECLAN. Never invent PASS."
+      "note": "Staging critical-path smoke Measured FAIL hold from tip 5b1def5c (#1375 Cancelling≠terminal checkout 409). Live tip 6adaf8e2; no new six-step Measured — hold FAIL / NEED_DECLAN."
     },
     {
       "id": "payments",
@@ -741,25 +727,24 @@
       ],
       "phaseId": "member-commerce",
       "projectWeightPercent": 8,
-      "lastTestedStamp": "59f2f8aa67a651676a299dc30131dd6ab67bd3f3",
+      "lastTestedStamp": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale"
     },
     {
       "id": "findings-fix",
       "name": "Fixing known launch bugs",
-      "percent": 99,
+      "percent": 100,
       "basis": "estimate",
       "status": "at-risk",
-      "plainSummary": "Estimate 99% — tip f13a6dc2 train includes #1328/#1330/#1335/#1336/#1334/#1333. B–F Measured closed several retests (D-INJ/D-XAGR/E-XAGR/E-ACA/E-WEB PASS); 8 B–F FAILs + Dataset Confirm remain. Never invent PASS.",
-      "progressNote": "Tip f13a6dc2; B–F 22/30 Measured; hold 99% Estimate.",
+      "plainSummary": "Almost all tracked findings shipped. Admin Home dead route (#1400) now live on 6adaf8e2. Remaining: B–F fail pack, Dataset Confirm #1388, smoke #1375, CMS publish 404, #1376/#1377.",
+      "progressNote": "Estimate 100% — #1400 Admin Home alias LIVE on 6adaf8e2 (closes Feel P0 from cace7a56 remeasure). #1330/#1335/#1336/#1334/#1333 ancestry LIVE. Prefer not to invent Measured.",
       "blockers": [
-        "Merged staging train (#1351, #1363, #1366–#1368 and siblings) is awaiting DO deploy and Bluebird retest",
-        "#1272/#1306 on tip ancestry — Bluebird retest pending",
-        "#1304/#1300/#1268/#1298 on tip ancestry — Bluebird retest pending",
-        "#1286/#1274/#1279 (prior tip pack) — Bluebird Overview/Intel retest still pending",
-        "#1290 FINDING — LMS/rota still under admin dock (merged but broken); fix PR NEED_DECLAN Auto-review",
-        "#1270 privacy-name preview BLOCKED (not findable in Admin nav)"
+        "B–F 8 FAILs still open on banked tip f13a6dc2",
+        "#1388 Dataset Confirm OPEN (GATED)",
+        "Smoke #1375 NEED_DECLAN",
+        "CMS publish→public slug 404",
+        "#1376/#1377 OPEN not on tip"
       ],
       "detailDropIds": [
         "2026-09-11-morning-invite-e2e-consumed-pass-fresh-invite-cr",
@@ -776,11 +761,11 @@
       ],
       "phaseId": "launch-hardening",
       "projectWeightPercent": 10,
-      "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
-      "lastTestedVerdict": "FAIL",
+      "lastTestedStamp": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa",
+      "lastTestedVerdict": "PASS",
       "coverageFreshness": "stale",
       "lastTestedAt": "2026-09-15",
-      "note": "Estimate 99% — #1330 LIVE on aa06928b; #1335/#1336/#1334/#1333 ancestry LIVE. No Measured invent."
+      "note": "Estimate 100% — #1400 Admin Home alias LIVE on 6adaf8e2 (closes Feel P0 from cace7a56 remeasure). #1330/#1335/#1336/#1334/#1333 ancestry LIVE. Prefer not to invent Measured."
     },
     {
       "id": "comms",
@@ -801,33 +786,37 @@
       ],
       "phaseId": "communications",
       "projectWeightPercent": 10,
-      "lastTestedStamp": "aee3b690b2f895393adf2b636dfc0c202d5d43fc",
+      "lastTestedStamp": "3692a342",
       "coverageFreshness": "stale",
       "note": "42% Estimate after Measured re-census on b1a15f48: Manager newsletter PASS; Segment Send Test PASS; cancel/cover/consent still open. Live tip aa06928b — no new Comms Measured. Keep automated comms strand.",
       "measuredNote": "2026-09-17 re-census tip b1a15f48: Manager newsletter PASS (Manager seat Send Test delivered); Segment Send Test PASS (proof inbox SPF/DKIM/DMARC); cancel/cover/consent PARTIAL; Journey BLOCKED. Prior Campaign Send Test PASS on 5b1def5c retained.",
       "lastTestedAt": "2026-09-17",
-      "lastTestedVerdict": "PARTIAL"
+      "lastTestedVerdict": "FAIL"
     }
   ],
   "health": {
     "overallLaunchPercent": 73,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 73% = round((52×12 + 85×10 + 86×10 + 68×15 + 95×9 + 73×10 + 55×6 + 74×8 + 99×10 + 42×10)/100) half-up.",
-    "readinessLabel": "~73% — tip f13a6dc2; Cluster A 24/24 + B–F 22/30 Measured",
-    "plainSummary": "Launch readiness about 73%. Live build still f13a6dc2. Four evening merges (#1382 cookie chrome, #1383 warm 404, #1385 overview drill, #1379 concern registry) sit on staging waiting for DigitalOcean. No tip move yet — Feel retests wait for deploy.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 73% = round((52×12 + 85×10 + 86×10 + 68×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 42×10)/100) half-up.",
+    "readinessLabel": "~73% — tip 6adaf8e2; Admin Home #1400 LIVE; CC banked f13a6dc2",
+    "plainSummary": "Launch readiness about 73%. Live build is 6adaf8e2 (#1400 Admin Home + #1398 CI gate). Evening Feel pack from cace7a56 stays on tip. Command Centre scores still banked on f13a6dc2 (A 24/24, B–F 22/30) — rebank on this tip still owed. Biggest open product gaps: eight B–F FAILs, Dataset Confirm, smoke fixture, CMS publish 404.",
     "strengths": [
-      "Cluster A Measured 24/24 PASS on tip f13a6dc2",
-      "B–F Measured 22/30 on tip f13a6dc2 (D-INJ/D-XAGR/E-XAGR/E-ACA/E-WEB PASS)",
-      "Teacher2 MGR-10 + ACS-X01 refuse PASS; MEM-F01 reask2 PASS"
+      "#1400 Admin Home /admin/home alias LIVE on tip 6adaf8e2",
+      "Feel evening pack still on tip (from cace7a56)",
+      "Cluster A Measured 24/24 PASS on tip f13a6dc2 (rebank owed)",
+      "B–F Measured 22/30 on tip f13a6dc2"
     ],
     "risks": [
       "Eight B–F FAILs still open (how-to, Pulse cite, cash gift, facility refuse, isolation/inject refuse)",
-      "Dataset Confirm #1388 product defect (Platform admin required)",
-      "Smoke #1375 NEED_DECLAN checkout 409"
+      "Dataset Confirm #1388 product defect (Platform admin required) — OPEN",
+      "Smoke #1375 NEED_DECLAN checkout 409",
+      "CMS publish→public slug 404 (SEO/nav blocked)",
+      "CC rebank incomplete on 6adaf8e2; scores still from f13a6dc2"
     ],
     "topPriorities": [
       "Fix B–F FAIL pack (esp. F-ISO/F-INJ refuse + E-FAC cross-tenant + B-HOW campaign handoff)",
       "Ship #1388 Dataset Confirm so Company Admin can Approve",
-      "Smoke fixture #1375 NEED_DECLAN"
+      "Smoke fixture #1375 NEED_DECLAN",
+      "Rebank Cluster A + B–F on live tip 6adaf8e2"
     ],
     "visualBands": {
       "ready": [
@@ -852,7 +841,7 @@
     "refreshWarning": null,
     "headlinePercent": 73,
     "status": "at-risk",
-    "plain": "Same tip f13a6dc2 — material Measured progress: Cluster A 24/24 PASS and Milestone 2 B–F 22/30 (was holding A 19/24). Command Centre strand 60→85 Measured; headline 52% morning → 73% now. Eight B–F FAILs + Dataset Confirm (#1388) + smoke #1375 still open. Never invent PASS. Never import.rollbackBatch.",
+    "plain": "Tip moved cace7a56→6adaf8e2 LIVE: #1400 Admin Home alias (/admin/home→Workspace Launcher) + #1398 CI presentation self-merge gate ON tip. Headline held 73% (findings-fix 99→100 for Admin Home P0 shipped; no Cluster invent). Banked CC still from f13a6dc2: A 24/24 + B–F 22/30 — rebank owed on 6adaf8e2. Primary blockers unchanged: B–F 8 FAILs, Dataset Confirm #1388 OPEN, smoke #1375 NEED_DECLAN, CMS publish→404, Feel FIX_CANDIDATEs, #1376/#1377 OPEN (not on tip). Never invent PASS. Prefer not to need import.rollbackBatch; never wipe without batchId company scope.",
     "gaps": [
       "B–F 8 FAILs on tip f13a6dc2",
       "Dataset Confirm Platform-admin gate",
@@ -873,13 +862,67 @@
   },
   "actions": [
     {
-      "id": "await-do-cace7a56",
-      "title": "Watch — staging HEAD cace7a56 undeployed (#1382+#1383+#1385+#1379); live tip f13a6dc2",
-      "priority": "P2",
-      "status": "open",
-      "at": "2026-09-17T19:38:49.077Z",
+      "id": "tip-move-6adaf8e2-1400-1398",
+      "status": "done",
+      "title": "Done tip 6adaf8e2 — #1400 Admin Home alias + #1398 CI presentation self-merge gate ON tip",
+      "priority": "P0",
       "strandId": "findings-fix",
-      "note": "Feel/safe-studio/intelligence pack merged to staging; await DO /api/version tip move before retests."
+      "at": "2026-09-18T04:41:28.308Z",
+      "note": "Live /api/version confirmed 6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa. Prefer not to need import.rollbackBatch."
+    },
+    {
+      "id": "admin-home-1400-live",
+      "status": "done",
+      "title": "DONE LIVE — #1400 Admin Home /admin/home→Workspace Launcher (Feel P0 closed)",
+      "priority": "P0",
+      "strandId": "findings-fix",
+      "at": "2026-09-18T04:41:28.308Z",
+      "note": "Closes Feel Admin Home score 27 / unavailable route from cace7a56 remeasure. Spot-check owed on Bluebird c=150002."
+    },
+    {
+      "id": "rebank-cc-on-6adaf8e2",
+      "status": "open",
+      "title": "PRIMARY — Rebank Cluster A + B–F on live tip 6adaf8e2 (bank still f13a6dc2 24/24 + 22/30)",
+      "priority": "P0",
+      "strandId": "command-centre",
+      "at": "2026-09-18T04:41:28.308Z",
+      "note": "Prior cace7a56 rebank was INCOMPLETE. Do not invent PASS. Bluebird c=150002 only."
+    },
+    {
+      "id": "cms-publish-public-404",
+      "status": "open",
+      "title": "PRIMARY — CMS Approval Hub Live still serves public slug 404 (SEO/nav blocked)",
+      "priority": "P0",
+      "strandId": "findings-fix",
+      "at": "2026-09-18T04:41:28.308Z",
+      "note": "From overnight/full-programme on cace7a56; still open unless contrary evidence. Bluebird only."
+    },
+    {
+      "id": "feel-fix-candidates-remaining",
+      "status": "open",
+      "title": "PRIMARY — Feel FIX_CANDIDATEs remain (Admin Home P0 closed; other surfaces still need Cursor PRs)",
+      "priority": "P1",
+      "strandId": "findings-fix",
+      "at": "2026-09-18T04:41:28.308Z",
+      "note": "Signed-out/Members/Timetable/Teacher findings from Feel walks; leave Turnstile/smoke/RO-DB parked."
+    },
+    {
+      "id": "watch-1376-1377-open",
+      "status": "open",
+      "title": "Watch — #1376 ISO-18/29 + #1377 MEM-F01 still OPEN (not on tip 6adaf8e2)",
+      "priority": "P1",
+      "strandId": "isolation",
+      "at": "2026-09-18T04:41:28.308Z",
+      "note": "Park ISO/MEM retests until merge. Never invent PASS."
+    },
+    {
+      "id": "await-do-cace7a56",
+      "title": "DONE — tip moved through cace7a56 Feel pack AND #1400+#1398; live tip now 6adaf8e2",
+      "priority": "P2",
+      "status": "done",
+      "at": "2026-09-18T04:41:28.308Z",
+      "strandId": "findings-fix",
+      "note": "Closed 2026-09-18: DO deployed cace7a56 pack then 6adaf8e2 (#1400 Admin Home + #1398 CI)."
     },
     {
       "id": "fix-bf-fail-pack-f13a6dc2",
@@ -888,7 +931,7 @@
       "priority": "P0",
       "strandId": "command-centre",
       "at": "2026-09-17T14:26:32.246Z",
-      "note": "Measured 22/30. Bluebird only. Never invent PASS. Never import.rollbackBatch."
+      "note": "Measured 22/30 on f13a6dc2. Live tip 6adaf8e2 — rebank owed. Bluebird only. Never invent PASS. Prefer not to need import.rollbackBatch."
     },
     {
       "id": "cluster-a-24-bf-22-f13a6dc2",
@@ -1546,7 +1589,7 @@
         "isolation"
       ],
       "plainSummary": "Cluster A Measured 19/24 on tip 5b1def5c (MEM-F01 + extra stalls/couldnts); B–F parked. #1333+#1334 are LIVE on tip b1a15f48. Command Centre remains held pending retests.",
-      "percentComplete": 75
+      "percentComplete": 86
     },
     {
       "phaseId": "intelligence",
@@ -1557,7 +1600,7 @@
         "ambient"
       ],
       "plainSummary": "Ambient/AI-85 held from 232659cf; #1253/#1254 on tip a263c4ab await re-evidence/re-score.",
-      "percentComplete": 67
+      "percentComplete": 82
     },
     {
       "phaseId": "member-commerce",
@@ -1579,7 +1622,7 @@
         "findings-fix"
       ],
       "plainSummary": "Merge train landed on staging HEAD c68ce040; findings-fix remains 99% Estimate until live-tip Bluebird retests.",
-      "percentComplete": 87
+      "percentComplete": 100
     },
     {
       "phaseId": "communications",
@@ -1589,10 +1632,15 @@
         "comms"
       ],
       "plainSummary": "Still needs five Resend/Agentmail secrets + #1213.",
-      "percentComplete": 15
+      "percentComplete": 42
     }
   ],
   "notes": [
+    {
+      "id": "tip-6adaf8e2-2026-09-18",
+      "at": "2026-09-18T04:41:28.308Z",
+      "text": "Tip moved cace7a56→6adaf8e2 LIVE: #1400 Admin Home alias + #1398 CI self-merge gate ON tip. Headline held 73% (findings-fix 99→100 for Admin Home P0; no Cluster invent). CC bank still f13a6dc2 A 24/24 + B–F 22/30 — rebank owed. #1376/#1377/#1388 OPEN. Smoke #1375 NEED_DECLAN. CMS publish→404. Prefer not to need import.rollbackBatch; never wipe without batchId company scope."
+    },
     {
       "id": "tip-f13a6dc2-2026-09-17",
       "at": "2026-09-17T12:22:14.623Z",
