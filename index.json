@@ -1,6 +1,28 @@
 {
-  "updatedAt": "2026-09-18T11:46:05.242Z",
+  "updatedAt": "2026-09-18T14:53:47.115Z",
   "drops": [
+    {
+      "id": "2026-09-18-feel-fix-candidates-for-codex-cursor-down",
+      "title": "Feel FIX_CANDIDATEs for Codex (Cursor down)",
+      "date": "2026-09-18",
+      "summary": "Four Feel FIX_CANDIDATEs on tip 205d5bb8 for Codex; Claude Code coordinates. Posted #1180.",
+      "plainEnglish": "Four Feel FIX_CANDIDATEs on tip 205d5bb8 for Codex; Claude Code coordinates. Posted #1180.",
+      "tags": [
+        "findings",
+        "status"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-feel-fix-candidates-for-codex-cursor-down/README.md",
+        "drops/2026-09-18-feel-fix-candidates-for-codex-cursor-down/FIX_CANDIDATE-T-PERF-ROUTE.md",
+        "drops/2026-09-18-feel-fix-candidates-for-codex-cursor-down/FIX_CANDIDATE-CONN-DISCONNECT-NOOP.md",
+        "drops/2026-09-18-feel-fix-candidates-for-codex-cursor-down/FIX_CANDIDATE-CONN-GTM-REFRM.md",
+        "drops/2026-09-18-feel-fix-candidates-for-codex-cursor-down/FIX_CANDIDATE-CONN-META-DEADEND.md"
+      ],
+      "tip": "205d5bb8",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5731793535"
+    },
     {
       "id": "2026-09-18-claude-progress-brief-18-sep-afternoon-why-hub-7",
       "title": "Claude progress brief 18 Sep afternoon — why Hub 76→70",
