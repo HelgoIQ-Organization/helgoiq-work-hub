@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-18T05:13:09.960Z",
+  "updatedAt": "2026-09-18T05:25:25.859Z",
   "drops": [
+    {
+      "id": "2026-09-18-feel-tip-remeasure-0507113f",
+      "title": "Feel tip remeasure 0507113f",
+      "date": "2026-09-18",
+      "summary": "Bluebird Feel remeasure overall 84; #1380 #1393 #1390 VISIBLE/PASS",
+      "plainEnglish": "Bluebird Feel remeasure overall 84; #1380 #1393 #1390 VISIBLE/PASS",
+      "tags": [
+        "findings",
+        "status"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-feel-tip-remeasure-0507113f/SCORES.md",
+        "drops/2026-09-18-feel-tip-remeasure-0507113f/DEFECTS.md"
+      ],
+      "tip": "0507113fbce0040bbf796c621c1a2d873e1fd5a9",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5725589395"
+    },
     {
       "id": "2026-09-18-launch-hub-tip-0507113f-live-feel-cc-pack",
       "title": "Launch Hub tip 0507113f LIVE — Feel/CC pack",
