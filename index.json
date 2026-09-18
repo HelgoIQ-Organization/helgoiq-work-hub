@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-18T04:46:47.068Z",
+  "updatedAt": "2026-09-18T05:13:09.960Z",
   "drops": [
+    {
+      "id": "2026-09-18-launch-hub-tip-0507113f-live-feel-cc-pack",
+      "title": "Launch Hub tip 0507113f LIVE — Feel/CC pack",
+      "date": "2026-09-18",
+      "summary": "Tip 0507113f LIVE; headline 73% held; rebank owed",
+      "plainEnglish": "Tip 0507113f LIVE; headline 73% held; rebank owed",
+      "tags": [
+        "findings",
+        "command-centre",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-18-launch-hub-tip-0507113f-live-feel-cc-pack/README.md"
+      ],
+      "tip": "0507113f"
+    },
     {
       "id": "2026-09-18-launch-hub-staging-0507113f-undeployed-live-tip-",
       "title": "Launch Hub staging 0507113f undeployed (live tip 6adaf8e2)",
