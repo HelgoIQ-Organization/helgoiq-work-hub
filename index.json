@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-19T16:31:57.583Z",
+  "updatedAt": "2026-09-19T16:32:36.321Z",
   "drops": [
+    {
+      "id": "2026-09-19-ai-24-full-measured-re-score-tip-b87f71f3-0-ai-0",
+      "title": "AI-24 full Measured re-score tip b87f71f3 — 0% + AI-014 isolation FAIL",
+      "date": "2026-09-19",
+      "summary": "0P/1F/19B/4S. AI-014 FAIL Otto Othertenant leak on Bluebird CC Agents. Strand 0%. Hub AI 4→0.",
+      "plainEnglish": "0P/1F/19B/4S. AI-014 FAIL Otto Othertenant leak on Bluebird CC Agents. Strand 0%. Hub AI 4→0.",
+      "tags": [
+        "ai-85",
+        "findings",
+        "status",
+        "census"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-ai-24-full-measured-re-score-tip-b87f71f3-0-ai-0/RESULTS-AI24.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
     {
       "id": "2026-09-19-meta-1430-connection-honest-why-not-pass-tip-b87",
       "title": "Meta #1430 Connection honest why-not PASS tip b87f71f3",
