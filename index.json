@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-19T16:40:48.121Z",
+  "updatedAt": "2026-09-19T16:58:16.204Z",
   "drops": [
+    {
+      "id": "2026-09-19-evening-measurement-window-closed-tip-b87f71f3-i",
+      "title": "Evening measurement window CLOSED tip b87f71f3 — ISO/GTM clean",
+      "date": "2026-09-19",
+      "summary": "A 8/24 · BF 11/30 · Unseen 0/30 (timeouts). ISO-18 PASS · ISO-29 PASS · GTM PASS. Overall ISO/GTM clean yes.",
+      "plainEnglish": "A 8/24 · BF 11/30 · Unseen 0/30 (timeouts). ISO-18 PASS · ISO-29 PASS · GTM PASS. Overall ISO/GTM clean yes.",
+      "tags": [
+        "command-centre",
+        "isolation",
+        "status"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-evening-measurement-window-closed-tip-b87f71f3-i/WINDOW-STATUS.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
     {
       "id": "2026-09-19-census-money-measured-re-spot-tip-b87f71f3-4p-2p",
       "title": "Census Money Measured re-spot tip b87f71f3 — 4P/2Part/1F/1B",

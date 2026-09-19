@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-19T16:32:36.361576+00:00",
+  "updatedAt": "2026-09-19T16:58:16.234567+00:00",
   "meta": {
     "dataAsOf": "2026-09-19T16:28:54.418Z",
     "buildStamp": "b87f71f3ca13261731b4e6237195d5cee655db06",
@@ -797,7 +797,7 @@
       "basis": "measured",
       "status": "at-risk",
       "plainSummary": "Command Centre ~87% Measured hold. Tip 157f881f adds #1434 CCTV empty-states F-AD-07 LIVE \u2014 Feel/Measured retest owed (no invent PASS). #1424 nine CC prompt-line PRs still on ancestry. #1438 CC cross-tenant fact-refusal name merged to staging, not live yet.",
-      "progressNote": "2026-09-19 tip b1ffa5d7: #1424 LIVE (#1402 gift-card, #1405 F-INJ-01, #1406 F-HOW-01, #1377 MEM-F01, #1415 B-HOW-01, #1417 expired starts, #1416 30s deadline, #1412 E-FU-01, #1413 honest empties). Cluster A + B\u2013F retests UNLOCKED for this tip. Prefer not to need import.rollbackBatch.",
+      "progressNote": "2026-09-19 tip b87f71f3 window banks: Cluster A 8/24 (timeout epidemic), B\u2013F 11/30, Unseen-30 0/30 all stalled_or_timeout \u2014 rates logged; strand % held pending timeout-vs-product split. ISO/GTM clean separately on isolation strand.",
       "blockers": [
         "Cluster A + B\u2013F retests OWED on tip b1ffa5d7 (#1424 live) \u2014 prior Measured bank was tip d5b7d47; close only on Measured PASS",
         "Prior B\u2013F FAILs to re-check: B-HOW-01/#1415, F-INJ-01/#1405, F-HOW-01/#1406, E-FU-01/#1412, MEM-F01/#1377, plus gift-card/#1402 and empties/#1413",
@@ -817,7 +817,7 @@
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
       "measuredNote": "Last full Measured bank tip d5b7d47d (Cluster A 24/24; B\u2013F FAIL bank held). Tip moved to b1ffa5d7 with #1424 \u2014 % held until re-measure.",
-      "lastTestedStamp": "cdbff449160992af2edc3a5c1ef5db9c8f3f26a6",
+      "lastTestedStamp": "2026-09-19T19:57:00+03:00",
       "coverageFreshness": "stale",
       "lastTestedVerdict": "PASS",
       "measured": 100,
@@ -836,15 +836,12 @@
     {
       "id": "isolation",
       "name": "Studio privacy checks",
-      "percent": 86,
+      "percent": 95,
       "basis": "measured",
-      "status": "at-risk",
-      "plainSummary": "Isolation ~86% Measured FAIL hold. #1376 still on tip ancestry of b1ffa5d7. ISO-18+ISO-29 Bluebird\u2194Refrm Measured FAIL hold. #1425/#1428 still OPEN (not merged).",
-      "progressNote": "2026-09-19 tip b1ffa5d7: #1376 still ancestor. #1425+#1428 open \u2014 not on tip. Hold FAIL until Measured re-PASS.",
-      "blockers": [
-        "ISO-18 / ISO-29 Measured FAIL hold (Bluebird\u2194Refrm) \u2014 #1376 on tip; #1425/#1428 still OPEN",
-        "Close only after Bluebird (150002) vs Refrm (150001) retest PASS"
-      ],
+      "status": "on-track",
+      "plainSummary": "Isolation ~95% Measured. Tip b87f71f3 (#1425/#1428 live): ISO-18 PASS, ISO-29 PASS, GTM CONN-GTM-REFRM PASS. FAIL hold lifted.",
+      "progressNote": "2026-09-19 window: ISO-18/29 refused foreign ?c= with no chooser leak; Bluebird GTM has no refm.co.uk/Refrm.",
+      "blockers": [],
       "detailDropIds": [
         "2026-09-18-iso-1376-chooser-sweep-tip-660c9038",
         "2026-09-11-iso29-complete-tip-232659cf",
@@ -855,7 +852,7 @@
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
       "measuredNote": "Prior tip 232659cf ISO-29 complete: 26/4/2. #1250 on a263c4ab not yet re-measured.",
-      "lastTestedStamp": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
+      "lastTestedStamp": "2026-09-19T19:57:00+03:00",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
       "lastTestedAt": "2026-09-15",
@@ -1095,7 +1092,7 @@
   ],
   "health": {
     "overallLaunchPercent": 72,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 68% = round((80\u00d712 + 87\u00d710 + 86\u00d710 + 0\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 74\u00d78 + 100\u00d710 + 65\u00d710)/100) half-up. Tip b87f71f3 \u2014 Census AI full AI-24: 0% (AI-014 FAIL isolation leak). Headline drag 69\u219268. Not a path to 80 tonight.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 69% = round((80\u00d712 + 87\u00d710 + 95\u00d710 + 0\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 74\u00d78 + 100\u00d710 + 65\u00d710)/100) half-up. Tip b87f71f3 window CLOSED: Isolation 86\u219295 (ISO-18/29+GTM PASS). AI 0%. A 8/24 \u00b7 BF 11/30 \u00b7 Unseen 0/30 timeouts. Headline ~68\u219269. Still short of 80.",
     "readinessLabel": "~72%",
     "plainSummary": "Launch readiness about 72% \u2014 not 80%. Live tip 8ad00312 = #1430 Meta CONN-META-DEADEND. Dataset strand 80% Measured; weighted headline held. #1423 Astra accept Measured PASS on ancestry; #1433 door-access Feel still Measured FAIL. Prefer not to need import.rollbackBatch.",
     "strengths": [
