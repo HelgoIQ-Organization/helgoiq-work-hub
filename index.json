@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-19T16:25:39.740Z",
+  "updatedAt": "2026-09-19T16:27:56.980Z",
   "drops": [
+    {
+      "id": "2026-09-19-comms-meta-gtm-empty-state-audit-tip-b87f71f3-pa",
+      "title": "Comms Meta/GTM empty-state audit tip b87f71f3 PARTIAL",
+      "date": "2026-09-19",
+      "summary": "PASS 3 / PARTIAL 2 / FAIL 1 / BLOCKED 1. Social Hub Meta Ads £0 with no disconnected empty state. GTM Tag Manager honest PASS.",
+      "plainEnglish": "PASS 3 / PARTIAL 2 / FAIL 1 / BLOCKED 1. Social Hub Meta Ads £0 with no disconnected empty state. GTM Tag Manager honest PASS.",
+      "tags": [
+        "census",
+        "status"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-comms-meta-gtm-empty-state-audit-tip-b87f71f3-pa/comms-meta-gtm-b87f71f3.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
     {
       "id": "2026-09-19-feel-spot-check-academy-retreats-safe-studio-set",
       "title": "Feel spot-check Academy/Retreats/Safe Studio/Settings tip b87f71f3",
