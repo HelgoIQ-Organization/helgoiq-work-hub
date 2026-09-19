@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-19T14:43:36.629Z",
+  "updatedAt": "2026-09-19T16:20:47.606Z",
   "drops": [
+    {
+      "id": "2026-09-19-census-core-measured-spot-check-tip-b87f71f3",
+      "title": "Census Core Measured spot-check tip b87f71f3",
+      "date": "2026-09-19",
+      "summary": "Admin2 Bluebird: 9 PASS / 1 PARTIAL (staff-hub roster mix) / 0 FAIL. Members/CRM/timetable/appointments/substitutions PASS. Tip confirmed start+end.",
+      "plainEnglish": "Admin2 Bluebird: 9 PASS / 1 PARTIAL (staff-hub roster mix) / 0 FAIL. Members/CRM/timetable/appointments/substitutions PASS. Tip confirmed start+end.",
+      "tags": [
+        "census",
+        "status"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-census-core-measured-spot-check-tip-b87f71f3/RESULTS.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
     {
       "id": "2026-09-19-launch-hub-tip-8ad00312-1430-meta-live-headline-",
       "title": "Launch Hub tip 8ad00312 — #1430 Meta live; headline 72% held",
