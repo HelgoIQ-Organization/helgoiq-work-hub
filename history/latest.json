@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-09-19T07:04:02.967Z",
+  "updatedAt": "2026-09-19T07:20:00.000Z",
   "meta": {
-    "dataAsOf": "2026-09-19T07:04:02.967Z",
-    "buildStamp": "b1ffa5d732c5af2955b1a1cfdc317f27eb1cf86e",
-    "liveTip": "b1ffa5d732c5af2955b1a1cfdc317f27eb1cf86e",
+    "dataAsOf": "2026-09-19T07:20:00.000Z",
+    "buildStamp": "3ca3046dfd7100e44f7dfc1f6a381bc6e02a8a35",
+    "liveTip": "3ca3046dfd7100e44f7dfc1f6a381bc6e02a8a35",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80\u00d712 + 87\u00d710 + 86\u00d710 + 25\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 74\u00d78 + 100\u00d710 + 65\u00d710)/100) half-up. Tip df08d3cf \u2014 #1408 Teacher POS cash refuse ON tip; #1424 undeployed. Strand % held (no new Measured retest on df08d3cf). Dataset 80 / CC 87 / Isolation 86 Measured FAIL hold / Comms 65 / AI-24 25 held.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-18-morning.json",
     "latestSnapshotPath": "history/2026-09-18-tip-d5b7d47d-cluster-a.json",
-    "lastRefreshNote": "Tip changed df08d3cf \u2192 b1ffa5d7: #1424 nine-PR Command Centre batch LIVE on DigitalOcean. #1423 Astra stage4b saved contracts merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
+    "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-19T07:02:10.351Z"
+      "checkedAt": "2026-09-19T07:16:53.868Z"
     },
-    "updatedAt": "2026-09-19T07:04:02.967Z",
+    "updatedAt": "2026-09-19T07:20:00.000Z",
     "note": "Live tip df08d3cf (#1408 ON tip). Staging HEAD ahead with #1424 undeployed. Headline 72% held. Prefer not to need import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 368/413 \u2248 89.1%.",
     "headlineVsCoverage": "Headline ~72% = weighted strand average. Coverage L1%=92.7 / L2%=89.1. Different units.",
@@ -37,13 +37,13 @@
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
     "commandCentreNote": "Measured bank still tip d5b7d47d: Cluster A 24/24 + B\u2013F FAIL bank (do not invent PASS on new tip). #1424 nine-PR CC batch (incl #1377 MEM-F01, #1405 F-INJ-01, #1406 F-HOW-01, #1415 B-HOW-01, #1412 E-FU-01, #1402 gift-card, #1417/#1416 tool/status, #1413 honest empties) is ON staging HEAD b1ffa5d7 but NOT live \u2014 Cluster A + B\u2013F retest LOCKED until DO deploys. Prior #1404 F-ISO-01 is ancestor of live tip. Prefer not to need import.rollbackBatch.",
-    "liveTipNote": "Live staging tip b1ffa5d7 = merge of #1424 (nine prompt-line CC PRs). Previous live tip df08d3cf was #1408 Teacher POS cash refuse (now ancestor). #1423 (Astra/stage4b) merge SHA 3ca3046d is ahead of tip \u2014 not live yet.",
-    "checkedAt": "2026-09-19T07:04:02.967Z",
-    "tip": "b1ffa5d732c5af2955b1a1cfdc317f27eb1cf86e",
+    "liveTipNote": "Live staging tip 3ca3046d = merge of #1423 (Astra/stage4b saved contracts). Previous live tip b1ffa5d7 was #1424 nine-PR Command Centre batch (now ancestor). #1433 (door-access F-AD-06) merge SHA cdbff449 is ahead of tip \u2014 not live yet.",
+    "checkedAt": "2026-09-19T07:20:00.000Z",
+    "tip": "3ca3046dfd7100e44f7dfc1f6a381bc6e02a8a35",
     "morningHeadlinePercent": 73,
     "compareNote": "Saturday Progress today: morning baseline kept at 73% from history/2026-09-18-morning.json (no separate Sat morning board). Now headline held at 72% \u2014 tip move alone does not invent strand lifts."
   },
-  "tip": "b1ffa5d732c5af2955b1a1cfdc317f27eb1cf86e",
+  "tip": "3ca3046dfd7100e44f7dfc1f6a381bc6e02a8a35",
   "progressToday": {
     "morningHeadlinePercent": 73,
     "nowHeadlinePercent": 72,
@@ -84,11 +84,11 @@
       "comms": 23,
       "headline": -1
     },
-    "plainEnglishDay": "Live staging moved to tip b1ffa5d7 (#1424 Command Centre nine-PR batch). Overall launch still about 72%. Cluster A + B\u2013F retests are now unlocked on DigitalOcean \u2014 no invented PASS. #1423 Astra stage4b is merged on GitHub but not live yet. Prefer not to need import.rollbackBatch.",
+    "plainEnglishDay": "Live staging moved to tip 3ca3046d (#1423 Astra stage4b saved contracts). Overall launch still about 72%. Cluster A + B\u2013F retests remain unlocked on this tip ancestry \u2014 no invented PASS. #1423 formal accept owed now that it is live. #1433 door-access F-AD-06 is merged on GitHub but not live yet. Prefer not to need import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-18-morning.json",
     "compareNote": "Saturday Progress today: morning baseline kept at 73% from history/2026-09-18-morning.json (no separate Sat morning board). Now headline held at 72% \u2014 tip move alone does not invent strand lifts.",
-    "updatedAt": "2026-09-19T07:04:02.967Z",
-    "coverageNote": "Coverage synced to live tip b1ffa5d7. Measured strand % unchanged until Cluster A / B\u2013F / POS / ISO retests land.",
+    "updatedAt": "2026-09-19T07:20:00.000Z",
+    "coverageNote": "Coverage synced to live tip 3ca3046d. Measured strand % unchanged until Cluster A / B\u2013F / POS / #1423 accept / ISO retests land.",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": {
       "tip": "b1a15f4884555ba94df200a514086230b1e16fbe",
@@ -663,10 +663,10 @@
       "lastTestedVerdict": "PASS",
       "coverageFreshness": "stale",
       "note": "Dataset Confirm canary PASS tip 205d5bb8 (#1388). Approve path proven for company Admin; Import/Activate/goLive still unproven. Live tip df08d3cf. Prefer not to need import.rollbackBatch.",
-      "freshnessNote": "Confirm canary PASS bank tip 205d5bb8; live tip d5b7d47d \u2014 hold 80.",
+      "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip.",
       "lastTestedAt": "2026-09-18",
-      "tipNote": "Tip b1ffa5d7 (#1424 live). Dataset Confirm still Measured PASS tip 205d5bb8 (#1388). Tip move alone \u2014 no invent.",
-      "lastRefreshNote": "Tip changed df08d3cf \u2192 b1ffa5d7: #1424 nine-PR Command Centre batch LIVE on DigitalOcean. #1423 Astra stage4b saved contracts merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F retests owed; no invented PASS. Prefer not to need import.rollbackBatch."
+      "tipNote": "Dataset Confirm canary PASS still tip 205d5bb8 era \u2014 hold 80. Prefer not to need import.rollbackBatch.",
+      "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch."
     },
     {
       "id": "command-centre",
@@ -702,9 +702,9 @@
       "blocker": "Cluster A 19/24 (MEM-F01 + stalls); B\u2013F locked/parked",
       "note": "Command Centre ~87% Measured hold. #1424 (nine CC prompt-line PRs) is LIVE on tip b1ffa5d7. Prior bank: Cluster A 24/24 + B\u2013F FAIL bank on tip d5b7d47 \u2014 retest owed on this tip; do not invent PASS.",
       "lastTestedAt": "2026-09-18",
-      "freshnessNote": "Coverage stamp refreshed; Measured % held pending Cluster A + B\u2013F on new tip.",
-      "tipNote": "#1424 ON tip b1ffa5d7. Retest bank unlocked. No invent PASS.",
-      "lastRefreshNote": "Tip changed df08d3cf \u2192 b1ffa5d7: #1424 nine-PR Command Centre batch LIVE on DigitalOcean. #1423 Astra stage4b saved contracts merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
+      "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip.",
+      "tipNote": "Live tip 3ca3046d includes #1424 ancestry (#1423 is Astra, not a CC rebank). Cluster A + B\u2013F Measured retests still owed \u2014 hold 87.",
+      "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
       "clusterALastTestedStamp": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
       "clusterALastTestedVerdict": "PASS",
       "clusterALastTestedAt": "2026-09-18"
@@ -736,8 +736,9 @@
       "coverageFreshness": "stale",
       "lastTestedAt": "2026-09-15",
       "note": "Isolation ~86% Measured FAIL hold. #1376 still on tip ancestry of b1ffa5d7. ISO-18+ISO-29 Bluebird\u2194Refrm Measured FAIL hold. #1425/#1428 still OPEN (not merged).",
-      "freshnessNote": "Tip d5b7d47d; last ISO-18/29 Measured FAIL on 660c9038.",
-      "tipNote": "#1376 ON tip ancestry of b1ffa5d7. #1425/#1428 open undeployed."
+      "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip.",
+      "tipNote": "ISO-18/29 Measured FAIL hold (#1376). #1425+#1428 still OPEN. Tip move to 3ca3046d does not close Isolation \u2014 hold 86.",
+      "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch."
     },
     {
       "id": "ai-85",
@@ -766,10 +767,10 @@
       "coverageFreshness": "stale",
       "measuredNote": "Measured 2026-09-18 tip 205d5bb8 Bluebird c=150002 Admin2: AI-24 = 3 PASS (AI-014 CC Agents, AI-039 Studio Intelligence honest Pulse 30/100 Critical, AI-044 Monthly Intelligence Review) / 0 FAIL / 17 BLOCKED / 4 SKIP. Evidence /workspace/helgoiq-full-programme-2026-09-17/ai24/205d5bb8/. Drop 2026-09-18-ai24-rescore-tip-205d5bb8. Never invent PASS. Prefer not to need import.rollbackBatch.",
       "lastTestedAt": "2026-09-18",
-      "freshnessNote": "AI-24 Measured bank tip 205d5bb8; live tip d5b7d47d \u2014 no invent re-score.",
+      "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip.",
       "note": "AI-24 Measured tip 205d5bb8: 3/24 PASS \u2192 25%. 17 BLOCKED empty surfaces; 4 SKIP; ledger 6 rows. Live tip df08d3cf. Do not invent.",
-      "tipNote": "Tip b1ffa5d7 (#1424 live). AI-24 Measured 25% tip 205d5bb8 hold. Tip move alone \u2014 no invent.",
-      "lastRefreshNote": "Tip changed df08d3cf \u2192 b1ffa5d7: #1424 nine-PR Command Centre batch LIVE on DigitalOcean. #1423 Astra stage4b saved contracts merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F retests owed; no invented PASS. Prefer not to need import.rollbackBatch."
+      "tipNote": "Live tip 3ca3046d = #1423 Astra stage4b saved contracts ON tip. ai-85 still 25 Measured (AI-24 empties) until formal accept / AI remeasure \u2014 no invent lift.",
+      "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch."
     },
     {
       "id": "ambient",
@@ -793,8 +794,9 @@
       "lastTestedStamp": "6486be87a68821e383d36d5246f9da08a802ee59",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
-      "tipNote": "Tip b1ffa5d7 (#1424 live). Ambient estimate hold. Tip move alone \u2014 no invent.",
-      "lastRefreshNote": "Tip changed df08d3cf \u2192 b1ffa5d7: #1424 nine-PR Command Centre batch LIVE on DigitalOcean. #1423 Astra stage4b saved contracts merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F retests owed; no invented PASS. Prefer not to need import.rollbackBatch."
+      "tipNote": "Ambient hold 95 estimate \u2014 tip stamp only.",
+      "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
+      "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip."
     },
     {
       "id": "m1",
@@ -827,8 +829,9 @@
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
       "lastTestedAt": "2026-09-15",
-      "tipNote": "Tip b1ffa5d7 (#1424 live). M1 estimate hold. Tip move alone \u2014 no invent.",
-      "lastRefreshNote": "Tip changed df08d3cf \u2192 b1ffa5d7: #1424 nine-PR Command Centre batch LIVE on DigitalOcean. #1423 Astra stage4b saved contracts merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F retests owed; no invented PASS. Prefer not to need import.rollbackBatch."
+      "tipNote": "M1 hold 73 estimate \u2014 tip stamp only.",
+      "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
+      "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip."
     },
     {
       "id": "smoke",
@@ -857,8 +860,9 @@
       "lastNote": "Measured FAIL #1375 held from 5b1def5c; tip now c68ce040 \u2014 retest pending NEED_DECLAN.",
       "lastTestedAt": "2026-09-17",
       "note": "Staging critical-path smoke Measured FAIL hold from tip 5b1def5c (#1375 Cancelling\u2260terminal checkout 409). Live tip df08d3cf; no new six-step Measured \u2014 hold FAIL.",
-      "tipNote": "Tip b1ffa5d7 (#1424 live). Smoke Measured FAIL hold (#1375 history). Tip move alone \u2014 no invent.",
-      "lastRefreshNote": "Tip changed df08d3cf \u2192 b1ffa5d7: #1424 nine-PR Command Centre batch LIVE on DigitalOcean. #1423 Astra stage4b saved contracts merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F retests owed; no invented PASS. Prefer not to need import.rollbackBatch."
+      "tipNote": "Last six-step Measured FAIL hold \u2014 no new smoke on tip 3ca3046d; hold 55.",
+      "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
+      "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip."
     },
     {
       "id": "payments",
@@ -878,11 +882,13 @@
       ],
       "phaseId": "member-commerce",
       "projectWeightPercent": 8,
-      "lastTestedStamp": "b1ffa5d732c5af2955b1a1cfdc317f27eb1cf86e",
+      "lastTestedStamp": "df08d3cf38c4105358fb6ae826d6fe01f59e4116",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
       "note": "Payments ~74% estimate. #1408 Teacher POS cash refuse still on tip ancestry (live via df08d3cf\u2192b1ffa5d7). Retest still owed \u2014 no invent PASS.",
-      "tipNote": "#1408 ON tip ancestry of b1ffa5d7. Retest owed."
+      "tipNote": "#1408 teacher POS cash refuse still on ancestry of 3ca3046d \u2014 retest owed; hold 74.",
+      "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
+      "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip."
     },
     {
       "id": "findings-fix",
@@ -919,7 +925,9 @@
       "coverageFreshness": "stale",
       "lastTestedAt": "2026-09-15",
       "note": "Findings\u2192fix estimate 100%. Tip moved df08d3cf\u2192b1ffa5d7 with #1424 live; #1423 merged undeployed. Prefer not to need import.rollbackBatch.",
-      "tipNote": "#1424 ON tip b1ffa5d7; #1423 undeployed."
+      "tipNote": "Findings-fix hold 100 estimate \u2014 tip stamp only.",
+      "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
+      "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip."
     },
     {
       "id": "comms",
@@ -948,26 +956,27 @@
       "measuredNote": "2026-09-19 re-census tip d5b7d47 Bluebird c=150002: 3 PASS / 3 PARTIAL (1B+2C). Evidence /workspace/helgoiq-full-programme-2026-09-17/comms/d5b7d47-recensus/. Drop 2026-09-19-comms-recensus-d5b7d47. Scoring (PASS=100, PARTIAL=30)/6 \u2192 65%.",
       "lastTestedAt": "2026-09-19",
       "lastTestedVerdict": "FAIL",
-      "freshnessNote": "Measured live on tip d5b7d47 with proof-inbox Agentmail MCP.",
-      "tipNote": "Tip b1ffa5d7 is CC-heavy (#1424); Comms Measured stamp still prior tip."
+      "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip.",
+      "tipNote": "Comms strand held 65 Measured; tip 3ca3046d does not invent a Comms lift.",
+      "lastRefreshNote": "Tip changed b1ffa5d7 \u2192 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held \u2014 Cluster A + B\u2013F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch."
     }
   ],
   "health": {
     "overallLaunchPercent": 72,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80\u00d712 + 87\u00d710 + 86\u00d710 + 25\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 74\u00d78 + 100\u00d710 + 65\u00d710)/100) half-up. Tip b1ffa5d7 \u2014 #1424 ON tip; #1423 undeployed. Strand % held (no invented Measured). Prefer not to need import.rollbackBatch.",
-    "readinessLabel": "~72% \u2014 tip b1ffa5d7 (#1424 live; #1423 waiting on DO)",
-    "plainSummary": "Launch readiness about 72%. Live tip b1ffa5d7 = #1424 nine-PR Command Centre batch now on DigitalOcean. Cluster A and B\u2013F retests are unlocked on this tip \u2014 close only on Measured PASS, never invent. #1423 Astra stage4b saved contracts is merged on GitHub but not live yet. Isolation still Measured FAIL hold. Prefer not to need import.rollbackBatch.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80\u00d712 + 87\u00d710 + 86\u00d710 + 25\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 74\u00d78 + 100\u00d710 + 65\u00d710)/100) half-up. Tip 3ca3046d \u2014 #1423 ON tip; #1433 undeployed. Strand % held (no invented Measured). Prefer not to need import.rollbackBatch.",
+    "readinessLabel": "~72% \u2014 tip 3ca3046d (#1423 live; #1433 waiting on DO)",
+    "plainSummary": "Launch readiness about 72%. Live tip 3ca3046d = #1423 Astra stage4b saved contracts now on DigitalOcean. Formal accept for #1423 is owed. Cluster A and B\u2013F retests stay unlocked on tip ancestry \u2014 close only on Measured PASS, never invent. #1433 door-access F-AD-06 is merged on GitHub but not live yet. Isolation still Measured FAIL hold. Prefer not to need import.rollbackBatch.",
     "strengths": [
       "CC rebank tip 205d5bb8: A 24/24 + B\u2013F 23/30 (47/54) \u2192 strand 87 Measured held",
       "Dataset Confirm canary PASS tip 205d5bb8 \u2014 company Admin Approve (#1388) held at 80",
       "AI-24 Measured honest: 3 usable PASS + 17 BLOCKED empties (not invented FAIL/PASS); Pulse 30/100 Critical explicit"
     ],
     "risks": [
-      "#1424 nine-PR CC batch MERGED on staging HEAD but NOT live \u2014 Cluster A/B\u2013F retest locked",
-      "#1408 ON tip df08d3cf \u2014 teacher POS cash refuse retest owed (no invent PASS)",
-      "ISO-18+ISO-29 Measured FAIL hold (#1376) \u2014 Isolation 86%",
-      "Measured CC bank still tip d5b7d47d; do not invent PASS on new tip",
-      "Smoke #1375 NEED_DECLAN"
+      "#1423 just went live \u2014 formal accept + live observation still owed (no invent PASS)",
+      "#1424 on ancestry \u2014 Cluster A/B\u2013F retest still owed on tip 3ca3046d",
+      "#1408 ON ancestry \u2014 teacher POS cash refuse retest owed (no invent PASS)",
+      "ISO-18+ISO-29 Measured FAIL hold (#1376) \u2014 Isolation 86%; #1425+#1428 still OPEN",
+      "#1433 door-access F-AD-06 merged on staging HEAD but NOT live yet"
     ],
     "topPriorities": [
       "Wait for DO to deploy staging HEAD b1ffa5d7 (#1424) then retest Cluster A + B\u2013F fails \u2014 close only on Measured PASS",
@@ -1024,44 +1033,65 @@
     {
       "id": "retest-cc-cluster-a-bf-1424-live",
       "status": "open",
-      "title": "PRIMARY \u2014 Retest Cluster A + B\u2013F on live tip b1ffa5d7 (#1424) \u2014 close only on Measured PASS (MEM-F01/#1377, F-INJ-01/#1405, F-HOW-01/#1406, B-HOW-01/#1415, E-FU-01/#1412, gift-card/#1402, empties/#1413, \u2026)",
-      "plain": "#1424 is live on DigitalOcean. Re-run Cluster A and the B\u2013F fails on this tip. Close each only on Measured PASS \u2014 never invent.",
-      "updatedAt": "2026-09-19T07:04:02.967Z"
+      "title": "PRIMARY \u2014 Retest Cluster A + B\u2013F on live tip 3ca3046d (#1424 on ancestry) \u2014 close only on Measured PASS",
+      "plain": "#1424 is on tip ancestry of 3ca3046d. Re-run Cluster A and the B\u2013F fails on this tip. Close each only on Measured PASS \u2014 never invent.",
+      "updatedAt": "2026-09-19T07:20:00.000Z"
+    },
+    {
+      "id": "accept-1423-astra-stage4b-live",
+      "status": "open",
+      "title": "PRIMARY \u2014 Live observation + formal accept for #1423 Astra stage4b saved contracts (NOW on tip 3ca3046d)",
+      "plain": "#1423 is live on DigitalOcean. Do Grok live read-only observation on second staging studio, then formal accept. No invent PASS.",
+      "updatedAt": "2026-09-19T07:20:00.000Z"
     },
     {
       "id": "retest-teacher-pos-cash-1408",
       "status": "open",
-      "title": "PRIMARY \u2014 Retest teacher POS cash refuse on live tip (#1408 still on ancestry of b1ffa5d7)",
+      "title": "PRIMARY \u2014 Retest teacher POS cash refuse on live tip (#1408 still on ancestry of 3ca3046d)",
       "plain": "Teacher POS visible cash refusal / Confirm disabled is on tip ancestry. Retest owed \u2014 no invent PASS.",
-      "updatedAt": "2026-09-19T07:04:02.967Z"
+      "updatedAt": "2026-09-19T07:20:00.000Z"
     },
     {
-      "id": "wait-do-deploy-1423-astra-stage4b",
+      "id": "wait-do-deploy-1433-door-access",
       "status": "open",
-      "title": "SECONDARY \u2014 Wait for DO to deploy #1423 Astra stage4b saved contracts (merge 3ca3046d ahead of tip) then Grok live observation + formal accept",
-      "plain": "#1423 merged on GitHub but not on live tip yet. After DO catches up: live read-only observation on second staging studio, then formal accept. Prefer not to need import.rollbackBatch.",
-      "updatedAt": "2026-09-19T07:04:02.967Z"
+      "title": "SECONDARY \u2014 Wait for DO to deploy #1433 door-access F-AD-06 (merge cdbff449 ahead of tip) then retest",
+      "plain": "#1433 merged on GitHub but not on live tip yet. After DO catches up: door-access Feel retest (no reassuring defaults). Prefer not to need import.rollbackBatch.",
+      "updatedAt": "2026-09-19T07:20:00.000Z"
     },
     {
       "id": "iso-18-29-fail-hold",
       "status": "open",
       "title": "SECONDARY \u2014 ISO-18/29 Bluebird\u2194Refrm still Measured FAIL hold (#1376 on tip; #1425+#1428 still OPEN)",
       "plain": "Isolation finding stays open until Bluebird vs Refrm retest PASSes. #1425/#1428 not merged yet.",
-      "updatedAt": "2026-09-19T07:04:02.967Z"
+      "updatedAt": "2026-09-19T07:20:00.000Z"
     },
     {
       "id": "no-rollback-batch",
       "status": "open",
       "title": "SECONDARY \u2014 Prefer not to need import.rollbackBatch",
       "plain": "Do not instruct import.rollbackBatch. Prefer not to need it.",
-      "updatedAt": "2026-09-19T07:04:02.967Z"
+      "updatedAt": "2026-09-19T07:20:00.000Z"
+    },
+    {
+      "id": "done-tip-3ca3046d-1423-live",
+      "status": "done",
+      "title": "DONE \u2014 tip 3ca3046d LIVE: #1423 Astra stage4b ON tip (headline 72% held; #1433 undeployed)",
+      "plain": "DigitalOcean caught up to #1423. Headline held at 72% \u2014 formal accept + CC/POS retests owed, no invent PASS.",
+      "updatedAt": "2026-09-19T07:20:00.000Z"
+    },
+    {
+      "id": "wait-do-deploy-1423-astra-stage4b",
+      "status": "done",
+      "title": "DONE \u2014 DO deployed tip 3ca3046d (#1423); accept action supersedes wait",
+      "plain": "GitHub merge 3ca3046d is now live. Formal accept action replaces the wait.",
+      "updatedAt": "2026-09-19T07:20:00.000Z"
     },
     {
       "id": "done-tip-b1ffa5d7-1424-live",
       "status": "done",
-      "title": "DONE \u2014 tip b1ffa5d7 LIVE: #1424 nine-PR Command Centre batch ON tip (headline 72% held; #1423 undeployed)",
-      "plain": "DigitalOcean caught up to #1424. Headline held at 72% \u2014 retests unlocked, no invent PASS.",
-      "updatedAt": "2026-09-19T07:04:02.967Z"
+      "title": "DONE \u2014 tip b1ffa5d7 was LIVE with #1424; superseded by tip 3ca3046d",
+      "plain": "Prior tip stamp kept for audit. #1424 remains on ancestry \u2014 retest still open.",
+      "updatedAt": "2026-09-19T07:20:00.000Z"
     },
     {
       "id": "wait-do-deploy-1424-then-retest-cc",
@@ -1069,27 +1099,6 @@
       "title": "DONE \u2014 DO deployed tip b1ffa5d7 (#1424); retest action supersedes wait",
       "plain": "GitHub staging has #1424 but DigitalOcean live is still #1408. When DO catches up, re-run Cluster A and the B\u2013F fails. Close each only on Measured PASS \u2014 never invent.",
       "updatedAt": "2026-09-19T07:04:02.967Z"
-    },
-    {
-      "id": "retest-teacher-pos-cash-refuse-1408",
-      "status": "open",
-      "title": "HISTORICAL (pre-b1ffa5d7) \u2014 PRIMARY \u2014 Retest teacher POS cash refuse on live tip df08d3cf (#1408)",
-      "plain": "#1408 is live: teacher POS should show visible cash refusal with Confirm disabled. Retest on Bluebird \u2014 do not invent PASS.",
-      "updatedAt": "2026-09-19T06:53:51.959Z"
-    },
-    {
-      "id": "iso-18-29-fail-hold-1376",
-      "status": "open",
-      "title": "HISTORICAL (pre-b1ffa5d7) \u2014 SECONDARY \u2014 ISO-18/29 Bluebird\u2194Refrm still Measured FAIL hold (#1376)",
-      "plain": "Isolation strand stays 86% Measured FAIL hold until Bluebird\u2194Refrm chooser retest PASSes.",
-      "updatedAt": "2026-09-19T06:53:51.959Z"
-    },
-    {
-      "id": "prefer-not-rollback-batch-df08d3cf",
-      "status": "open",
-      "title": "HISTORICAL (pre-b1ffa5d7) \u2014 SECONDARY \u2014 Prefer not to need import.rollbackBatch",
-      "plain": "Standing rule: prefer not to need import.rollbackBatch. Never wipe without batchId company scope.",
-      "updatedAt": "2026-09-19T06:53:51.959Z"
     },
     {
       "id": "tip-move-df08d3cf-1408-live",
@@ -1104,114 +1113,6 @@
       "title": "HISTORICAL (tip d5b7d47) \u2014 DONE \u2014 Cluster A Measured 24/24 on tip d5b7d47d (B\u2013F unlocked)",
       "plain": "Admin2 + Teacher2 Cluster A 24/24 PASS on live tip. MEM-F01 cleared this run. B\u2013F unlocked.",
       "updatedAt": "2026-09-19T06:53:51.959Z"
-    },
-    {
-      "id": "cluster-bf-running-tip-d5b7d47d",
-      "status": "done",
-      "title": "HISTORICAL (tip d5b7d47) \u2014 PRIMARY \u2014 Finish B\u2013F on tip d5b7d47d (mid-run 9/30; hold 23/30 bank)",
-      "plain": "Do not invent mid-run score. After complete, remasure F-ISO-01 / D-RI-01 and refresh CC strand. Superseded when live tip moved to df08d3cf (#1408); #1424 undeployed retest queue takes over.",
-      "updatedAt": "2026-09-19T06:53:51.959Z"
-    },
-    {
-      "id": "tip-move-d5b7d47d-1404",
-      "title": "HISTORICAL (tip d5b7d47) \u2014 DONE \u2014 tip d5b7d47d LIVE: #1404 F-ISO-01 fact withholding ON tip (headline 70% held)",
-      "priority": "done",
-      "status": "done",
-      "owner": "Bot Commander",
-      "at": "2026-09-18T16:35:15.127Z",
-      "updatedAt": "2026-09-19T06:53:51.959Z"
-    },
-    {
-      "id": "retest-f-iso-01-on-d5b7d47d",
-      "title": "HISTORICAL (tip d5b7d47) \u2014 PRIMARY \u2014 Retest F-ISO-01 on tip d5b7d47d (#1404 live); do not invent PASS",
-      "priority": "primary",
-      "status": "done",
-      "owner": "Bot Commander",
-      "at": "2026-09-18T16:35:15.127Z",
-      "plain": "Superseded when live tip moved to df08d3cf (#1408); #1424 undeployed retest queue takes over.",
-      "updatedAt": "2026-09-19T06:53:51.959Z"
-    },
-    {
-      "id": "retest-iso-18-29-after-d5b7d47d",
-      "title": "HISTORICAL (tip d5b7d47) \u2014 PRIMARY \u2014 Bluebird\u2194Refrm retest ISO-18/29 still owed (Measured FAIL on 660c9038; tip now d5b7d47d)",
-      "priority": "primary",
-      "status": "done",
-      "owner": "Bot Commander",
-      "at": "2026-09-18T16:35:15.127Z",
-      "plain": "Superseded when live tip moved to df08d3cf (#1408); #1424 undeployed retest queue takes over.",
-      "updatedAt": "2026-09-19T06:53:51.959Z"
-    },
-    {
-      "id": "tip-move-660c9038-1418-1396-1420",
-      "status": "done",
-      "title": "DONE \u2014 tip 660c9038 LIVE: #1418+#1396+#1420+#1419+#1414+#1411 ON tip (headline 70% held)",
-      "priority": "P0",
-      "strandId": "findings-fix",
-      "at": "2026-09-18T16:00:48.891Z",
-      "note": "From 56e66fbb. Prefer not to need import.rollbackBatch."
-    },
-    {
-      "id": "retest-comms-1420-on-660c9038",
-      "status": "done",
-      "title": "HISTORICAL \u2014 PRIMARY \u2014 Re-census Comms on tip 660c9038 after #1420 receipt gate; hold 42% until Measured (Comms re-census Measured 65 on tip d5b7d47 2026-09-19)",
-      "priority": "P1",
-      "strandId": "comms",
-      "plainSummary": "Campaign Send Test must show provider receipt. Do not invent raise from toast-only.",
-      "at": "2026-09-18T16:00:48.891Z",
-      "updatedAt": "2026-09-19T06:53:51.959Z"
-    },
-    {
-      "id": "retest-mgr-location-grants-1396",
-      "status": "open",
-      "title": "HISTORICAL (pre-b1ffa5d7) \u2014 SECONDARY \u2014 Prove Manager location grant editing on tip 660c9038 (#1396 GATED)",
-      "priority": "P1",
-      "strandId": "command-centre",
-      "plainSummary": "Staff Hub location editor for Manager via user_company_access.locationIds. Bluebird-only.",
-      "at": "2026-09-18T16:00:48.891Z"
-    },
-    {
-      "id": "tip-move-56e66fbb-1376-1401",
-      "status": "done",
-      "title": "DONE \u2014 tip 56e66fbb LIVE: #1376 ISO-18/29 + #1401 D-RI-01 ON tip (headline 70% held)",
-      "priority": "P0",
-      "strandId": "findings-fix",
-      "at": "2026-09-18T15:40:37.454Z",
-      "note": "From 205d5bb8. Prefer not to need import.rollbackBatch."
-    },
-    {
-      "id": "retest-iso-18-29-on-660c9038",
-      "status": "done",
-      "title": "HISTORICAL (tip d5b7d47) \u2014 DONE/FAIL \u2014 ISO-18+ISO-29 Measured FAIL on tip 660c9038 (Admin2); still open for fix+retest on d5b7d47d",
-      "priority": "primary",
-      "strandId": "isolation",
-      "plainSummary": "Chooser fix is live. Re-run tenant switch comparison; finding closes only when that retest PASSes.",
-      "at": "2026-09-18T16:00:48.891Z",
-      "plain": "Superseded when live tip moved to df08d3cf (#1408); #1424 undeployed retest queue takes over.",
-      "updatedAt": "2026-09-19T06:53:51.959Z"
-    },
-    {
-      "id": "retest-d-ri-01-on-660c9038",
-      "status": "open",
-      "title": "HISTORICAL (pre-b1ffa5d7) \u2014 PRIMARY \u2014 Retest D-RI-01 on tip 660c9038 (#1401 ledger truth live); do not invent PASS",
-      "priority": "P0",
-      "strandId": "command-centre",
-      "plainSummary": "Scoped two-studio ledger tool is live. Re-run D-RI-01 before clearing the FAIL.",
-      "at": "2026-09-18T16:00:48.891Z"
-    },
-    {
-      "id": "ai24-rescore-205d5bb8",
-      "status": "done",
-      "title": "DONE \u2014 AI-24 Measured tip 205d5bb8: 3/24 PASS \u2192 ai-85 25%; headline 70%",
-      "priority": "P0",
-      "strandId": "ai-85",
-      "at": "2026-09-18T09:54:50.734Z",
-      "note": "Rollup 3 PASS / 0 FAIL / 17 BLOCKED / 4 SKIP. Ledger 6 rows. Drop 2026-09-18-ai24-rescore-tip-205d5bb8. Prefer not to need import.rollbackBatch."
-    },
-    {
-      "id": "dataset-import-activate-company-admin",
-      "title": "HISTORICAL (pre-b1ffa5d7) \u2014 PRIMARY \u2014 Prove Import/Activate/goLive as company Admin (may still need platformAdmin; #1388 out-of-scope)",
-      "status": "open",
-      "plainSummary": "Approve path PASS on tip 205d5bb8. Import/Activate/goLive still unproven as company Admin. Prefer not to need import.rollbackBatch."
     }
   ],
   "phases": [

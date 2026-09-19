@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-19T07:04:18.062Z",
+  "updatedAt": "2026-09-19T07:17:54.112Z",
   "drops": [
+    {
+      "id": "2026-09-19-launch-hub-tip-3ca3046d-live-1423-1433-undeploye",
+      "title": "Launch Hub tip 3ca3046d live (#1423; #1433 undeployed)",
+      "date": "2026-09-19",
+      "summary": "Staging tip moved b1ffa5d7→3ca3046d: #1423 Astra stage4b LIVE; headline held 72%; #1433 door-access F-AD-06 undeployed; Cluster A/B–F + #1423 accept + #1408 POS retests owed",
+      "plainEnglish": "Staging tip moved b1ffa5d7→3ca3046d: #1423 Astra stage4b LIVE; headline held 72%; #1433 door-access F-AD-06 undeployed; Cluster A/B–F + #1423 accept + #1408 POS retests owed",
+      "tags": [
+        "status",
+        "command-centre",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-launch-hub-tip-3ca3046d-live-1423-1433-undeploye/tip-3ca3046d.md"
+      ],
+      "tip": "3ca3046dfd7100e44f7dfc1f6a381bc6e02a8a35"
+    },
     {
       "id": "2026-09-19-launch-hub-tip-b1ffa5d7-live-1424-1423-undeploye",
       "title": "Launch Hub tip b1ffa5d7 live (#1424; #1423 undeployed)",
