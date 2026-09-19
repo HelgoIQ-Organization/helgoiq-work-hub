@@ -1,6 +1,60 @@
 {
-  "updatedAt": "2026-09-19T16:27:56.980Z",
+  "updatedAt": "2026-09-19T16:28:53.972Z",
   "drops": [
+    {
+      "id": "2026-09-19-p7-manager-pulse-measured-pass-tip-b87f71f3-loca",
+      "title": "P7 Manager Pulse MEASURED_PASS tip b87f71f3 (location restriction)",
+      "date": "2026-09-19",
+      "summary": "P7 Manager Pulse MEASURED_PASS tip b87f71f3 (location restriction). Honest Measured; no invented PASS.",
+      "plainEnglish": "P7 Manager Pulse MEASURED_PASS tip b87f71f3 (location restriction). Honest Measured; no invented PASS.",
+      "tags": [
+        "ai-85",
+        "status",
+        "census"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-p7-manager-pulse-measured-pass-tip-b87f71f3-loca/SUMMARY.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
+    {
+      "id": "2026-09-19-ai-24-partial-re-score-tip-b87f71f3-1-24-pass-4",
+      "title": "AI-24 partial re-score tip b87f71f3 — 1/24 PASS (~4%)",
+      "date": "2026-09-19",
+      "summary": "AI-24 partial re-score tip b87f71f3 — 1/24 PASS (~4%). Honest Measured; no invented PASS.",
+      "plainEnglish": "AI-24 partial re-score tip b87f71f3 — 1/24 PASS (~4%). Honest Measured; no invented PASS.",
+      "tags": [
+        "ai-85",
+        "status",
+        "census"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-ai-24-partial-re-score-tip-b87f71f3-1-24-pass-4/SUMMARY.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
+    {
+      "id": "2026-09-19-observe-scan2-fired-tip-b87f71f3-occ-ret-810-808",
+      "title": "Observe scan2 FIRED tip b87f71f3 (occ/ret 810/808 + T12)",
+      "date": "2026-09-19",
+      "summary": "Observe scan2 FIRED tip b87f71f3 (occ/ret 810/808 + T12). Honest Measured; no invented PASS.",
+      "plainEnglish": "Observe scan2 FIRED tip b87f71f3 (occ/ret 810/808 + T12). Honest Measured; no invented PASS.",
+      "tags": [
+        "ai-85",
+        "status",
+        "census"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-observe-scan2-fired-tip-b87f71f3-occ-ret-810-808/SUMMARY.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
     {
       "id": "2026-09-19-comms-meta-gtm-empty-state-audit-tip-b87f71f3-pa",
       "title": "Comms Meta/GTM empty-state audit tip b87f71f3 PARTIAL",
