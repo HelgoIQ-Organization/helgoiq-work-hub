@@ -41,23 +41,23 @@
     "checkedAt": "2026-09-18T17:23:18.523Z",
     "tip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
     "morningHeadlinePercent": 73,
-    "compareNote": "FIXED 2026-09-19: Progress today morning baseline was stale (2026-09-10 \u2192 52%). Now uses history/2026-09-18-morning.json (73%). Real 18 Sep path: 73\u219276 (Dataset)\u219270 (AI-24). Now 70%."
+    "compareNote": "Morning 73% (18 Sep tip cace7a56) \u2192 now 70%. Mid-day peak 76% after Dataset Confirm, then AI-24 68\u219225 drove \u22126 to 70%. Not +18 from 52 \u2014 that was a stale 10 Sep baseline bug (fixed)."
   },
   "tip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
   "progressToday": {
     "morningHeadlinePercent": 73,
     "nowHeadlinePercent": 70,
     "morningStrands": {
-      "dataset": 25,
-      "command-centre": 55,
+      "dataset": 52,
+      "command-centre": 85,
       "isolation": 86,
-      "ai-85": 56,
-      "ambient": 70,
-      "m1": 60,
-      "smoke": 20,
-      "payments": 45,
-      "findings-fix": 40,
-      "comms": 0
+      "ai-85": 68,
+      "ambient": 95,
+      "m1": 73,
+      "smoke": 55,
+      "payments": 74,
+      "findings-fix": 99,
+      "comms": 42
     },
     "nowStrands": {
       "dataset": 80,
@@ -72,21 +72,21 @@
       "comms": 42
     },
     "deltas": {
-      "comms": 42,
-      "command-centre": 32,
+      "dataset": 28,
+      "command-centre": 2,
       "isolation": 0,
-      "ai-85": -31,
-      "smoke": 35,
-      "payments": 29,
-      "ambient": 25,
-      "m1": 13,
-      "findings-fix": 60,
-      "dataset": 55
+      "ai-85": -43,
+      "ambient": 0,
+      "m1": 0,
+      "smoke": 0,
+      "payments": 0,
+      "findings-fix": 1,
+      "comms": 0
     },
-    "plainEnglishDay": "Cluster A Measured 24/24 on live tip d5b7d47d \u2014 B\u2013F unlocked and mid-run (9/30 so far; hold prior 23/30 bank). Headline still 70%. Tip unchanged since #1404. Isolation still FAIL hold from tip 660c9038 (ISO-18/29). No invent PASS on F-ISO-01 / D-RI-01 until B\u2013F completes.",
+    "plainEnglishDay": "18 Sep true path: morning ~73% \u2192 Dataset Confirm lift to 76% \u2192 AI-24 honest re-score to 70% (\u22126). Hub UI previously compared to 10 Sep morning (52%) and falsely showed +18. Now 70% on tip d5b7d47; Cluster A 24/24; Isolation FAIL hold ISO-18/29.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning 73% (18 Sep tip cace7a56) \u2192 now 70%. Same-day path: ~73% open \u2192 Dataset Confirm lift to 76% \u2192 AI-24 re-score to 70% (\u22126). Prior UI wrongly used 10 Sep morning (52%). Tip now d5b7d47; no invent PASS.",
-    "updatedAt": "2026-09-19T05:13:20.559095Z",
+    "compareNote": "Morning 73% (18 Sep tip cace7a56) \u2192 now 70%. Mid-day peak 76% after Dataset Confirm, then AI-24 68\u219225 drove \u22126 to 70%. Not +18 from 52 \u2014 that was a stale 10 Sep baseline bug (fixed).",
+    "updatedAt": "2026-09-19T05:13:45.328076Z",
     "coverageNote": "After AI L2 Intel: L\u22651=372 (90%); L\u22652=212 (51%)",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": {
