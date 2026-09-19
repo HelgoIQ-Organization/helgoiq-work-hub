@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-19T11:20:36.140Z",
-  "liveTip": "157f881fb6ddb7986b9c9ef4ead1ee46faf940fc",
-  "liveTipShort": "157f881f",
+  "updatedAt": "2026-09-19T11:58:52.057Z",
+  "liveTip": "fc65b5d0d6684019f8b6538728e07919b466f0bd",
+  "liveTipShort": "fc65b5d0",
   "refreshLag": {
     "tipChange": "near-real-time (refresh-dashboard.mjs when /api/version tip changes)",
     "coverageSync": "≤15m when the 15-minute routine is wired",
@@ -12,11 +12,11 @@
     "versionError": null,
     "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
     "mergedPrsError": null,
-    "dropsScanned": 163,
+    "dropsScanned": 166,
     "issue1180Error": null,
     "issue1180Comments": 50,
     "claudeReviewError": null,
-    "claudeReviews": 37,
+    "claudeReviews": 41,
     "sources": [
       {
         "id": 1,
@@ -33,7 +33,7 @@
         "id": 3,
         "name": "#1180 + hub drops",
         "ok": true,
-        "dropsScanned": 163,
+        "dropsScanned": 166,
         "issue1180": 50
       },
       {
@@ -41,17 +41,17 @@
         "name": "Claude Code PR review comments",
         "ok": true,
         "skipped": false,
-        "count": 37
+        "count": 41
       }
     ]
   },
   "counts": {
     "strands": 10,
-    "strandsStaleVsLiveTip": 10,
-    "strandsCurrent": 0,
-    "pages": 403,
-    "pagesStaleVsLiveTip": 358,
-    "claudeReviews": 37
+    "strandsStaleVsLiveTip": 9,
+    "strandsCurrent": 1,
+    "pages": 410,
+    "pagesStaleVsLiveTip": 363,
+    "claudeReviews": 41
   },
   "recentMergedPrs": [
     {
@@ -132,6 +132,13 @@
       "mergeSha": "0ad8468aed5e1df5e1f79078ef656755f7cc1280"
     },
     {
+      "number": 1410,
+      "title": "fix(cms): Live Approval Hub pages must resolve on the public CMS route",
+      "mergedAt": "2026-09-19T11:57:18Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410",
+      "mergeSha": "57424ace8564ccbcd6bd891b30710536853ba1e6"
+    },
+    {
       "number": 1409,
       "title": "fix(embed): studio content on /embed, buy, and retreat widgets",
       "mergedAt": "2026-09-18T07:52:21Z",
@@ -186,13 +193,6 @@
       "mergedAt": "2026-09-18T04:45:39Z",
       "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1399",
       "mergeSha": "0507113fbce0040bbf796c621c1a2d873e1fd5a9"
-    },
-    {
-      "number": 1398,
-      "title": "fix(ci): close four presentation self-merge policy evasion holes",
-      "mergedAt": "2026-09-18T04:29:57Z",
-      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1398",
-      "mergeSha": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa"
     }
   ],
   "claudeReviews": [
@@ -359,6 +359,81 @@
       "verdict": "PASS",
       "strandId": "",
       "excerpt": "## Claude Code verdict: **PASS** at `db86de0a`",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1410-5725253657",
+      "pr": 1410,
+      "prTitle": "fix(cms): Live Approval Hub pages must resolve on the public CMS route",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#issuecomment-5725253657",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-18T04:41:12Z",
+      "mergeSha": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "path": "",
+      "verdict": "FAIL",
+      "strandId": "",
+      "excerpt": "## Claude Code verdict: **FAIL** at `2c4bf7b294e94e91f7452cbd620159fefabe970c`",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1410-5732467294",
+      "pr": 1410,
+      "prTitle": "fix(cms): Live Approval Hub pages must resolve on the public CMS route",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#issuecomment-5732467294",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-18T15:46:29Z",
+      "mergeSha": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "path": "",
+      "verdict": "FAIL",
+      "strandId": "",
+      "excerpt": "## Claude Code verdict: **PASS** at `2e811bd0`",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1410-5741483047",
+      "pr": 1410,
+      "prTitle": "fix(cms): Live Approval Hub pages must resolve on the public CMS route",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#issuecomment-5741483047",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-19T11:31:43Z",
+      "mergeSha": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "",
+      "excerpt": "## Claude Code verdict: **PASS** at `b657f079`",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1410-5245822811",
+      "pr": 1410,
+      "prTitle": "fix(cms): Live Approval Hub pages must resolve on the public CMS route",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#pullrequestreview-5245822811",
+      "author": "chatgpt-codex-connector[bot]",
+      "createdAt": "2026-09-18T08:32:39Z",
+      "mergeSha": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "path": "",
+      "verdict": "",
+      "strandId": "",
+      "excerpt": "### 💡 Codex Review",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1410-5245875641",
+      "pr": 1410,
+      "prTitle": "fix(cms): Live Approval Hub pages must resolve on the public CMS route",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#pullrequestreview-5245875641",
+      "author": "chatgpt-codex-connector[bot]",
+      "createdAt": "2026-09-18T08:39:17Z",
+      "mergeSha": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "path": "",
+      "verdict": "",
+      "strandId": "",
+      "excerpt": "### 💡 Codex Review",
       "source": "claude-pr-review"
     },
     {
@@ -735,21 +810,6 @@
       "strandId": "",
       "excerpt": "## Claude Code verdict: **PASS** at `242c953c2bde04bca05e3fa2e5afe5833fa79199`",
       "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1398-5725132397",
-      "pr": 1398,
-      "prTitle": "fix(ci): close four presentation self-merge policy evasion holes",
-      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1398",
-      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1398#issuecomment-5725132397",
-      "author": "declaneryan71",
-      "createdAt": "2026-09-18T04:24:47Z",
-      "mergeSha": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa",
-      "path": "",
-      "verdict": "FAIL",
-      "strandId": "",
-      "excerpt": "## Claude Code verdict: **PASS** at `230b0012bdbbf9b9dd2a3faea5b2886f6ebb9167`",
-      "source": "claude-pr-review"
     }
   ],
   "strands": [
@@ -828,11 +888,11 @@
     {
       "id": "smoke",
       "name": "Critical path smoke",
-      "lastTestedStamp": "e3ba86e851ff268ad439041a193feb3f742c03ed",
-      "lastTestedAt": "2026-09-15",
+      "lastTestedStamp": "fc65b5d0d6684019f8b6538728e07919b466f0bd",
+      "lastTestedAt": "2026-09-19",
       "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "2026-09-15-launch-hub-tip-e3ba86e8-1331-smoke-diagnostic-he",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-19-smoke-demoted-not-a-merge-gate",
       "claudeReviewCount": 1,
       "basis": "measured",
       "percent": 55
@@ -875,6 +935,28 @@
     }
   ],
   "pages": [
+    {
+      "id": "drop:2026-09-19-smoke-demoted-not-a-merge-gate",
+      "name": "Smoke demoted: not a merge gate",
+      "route": "",
+      "strandId": "smoke",
+      "lastTestedStamp": "fc65b5d0d6684019f8b6538728e07919b466f0bd",
+      "lastTestedAt": "2026-09-19",
+      "verdict": "",
+      "freshness": "current",
+      "evidenceDropId": "2026-09-19-smoke-demoted-not-a-merge-gate"
+    },
+    {
+      "id": "drop:2026-09-19-tip-157f881f-1434-cctv-f-ad-07-live",
+      "name": "Tip 157f881f — #1434 CCTV F-AD-07 live",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "157f881fb6ddb7986b9c9ef4ead1ee46faf940fc",
+      "lastTestedAt": "2026-09-19",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-19-tip-157f881f-1434-cctv-f-ad-07-live"
+    },
     {
       "id": "route:/api/version",
       "name": "/api/version",
@@ -4891,6 +4973,17 @@
       "evidenceDropId": "2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72"
     },
     {
+      "id": "drop:2026-09-19-smoke-not-merge-gate",
+      "name": "2026-09-19-smoke-not-merge-gate",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "",
+      "lastTestedAt": "2026-09-19",
+      "verdict": "",
+      "freshness": "untested",
+      "evidenceDropId": "2026-09-19-smoke-not-merge-gate"
+    },
+    {
       "id": "drop:tmp-tip-a3a0e207",
       "name": "tmp-tip-a3a0e207",
       "route": "",
@@ -4909,7 +5002,7 @@
       "lastTestedStamp": "fc65b5d0d6684019f8b6538728e07919b466f0bd",
       "lastTestedAt": "2026-09-19T11:18:39Z",
       "verdict": "PASS",
-      "freshness": "stale",
+      "freshness": "current",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1438#issuecomment-5741391127",
       "source": "claude-pr-review"
@@ -4922,7 +5015,7 @@
       "lastTestedStamp": "157f881fb6ddb7986b9c9ef4ead1ee46faf940fc",
       "lastTestedAt": "2026-09-19T06:52:19Z",
       "verdict": "",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1434#issuecomment-5740047671",
       "source": "claude-pr-review"
@@ -5042,6 +5135,71 @@
       "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1411#issuecomment-5732463661",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1410-5725253657",
+      "name": "## Claude Code verdict: **FAIL** at `2c4bf7b294e94e91f7452cbd620159fefabe970c`",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "lastTestedAt": "2026-09-18T04:41:12Z",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#issuecomment-5725253657",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1410-5732467294",
+      "name": "## Claude Code verdict: **PASS** at `2e811bd0`",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "lastTestedAt": "2026-09-18T15:46:29Z",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#issuecomment-5732467294",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1410-5741483047",
+      "name": "## Claude Code verdict: **PASS** at `b657f079`",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "lastTestedAt": "2026-09-19T11:31:43Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#issuecomment-5741483047",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1410-5245822811",
+      "name": "### 💡 Codex Review",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "lastTestedAt": "2026-09-18T08:32:39Z",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#pullrequestreview-5245822811",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1410-5245875641",
+      "name": "### 💡 Codex Review",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "lastTestedAt": "2026-09-18T08:39:17Z",
+      "verdict": "",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#pullrequestreview-5245875641",
       "source": "claude-pr-review"
     },
     {
@@ -5367,19 +5525,6 @@
       "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1399#issuecomment-5725247122",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1398-5725132397",
-      "name": "## Claude Code verdict: **PASS** at `230b0012bdbbf9b9dd2a3faea5b2886f6ebb9167`",
-      "route": "",
-      "strandId": "",
-      "lastTestedStamp": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa",
-      "lastTestedAt": "2026-09-18T04:24:47Z",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "",
-      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1398#issuecomment-5725132397",
       "source": "claude-pr-review"
     }
   ]

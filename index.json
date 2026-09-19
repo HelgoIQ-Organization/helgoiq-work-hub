@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-19T11:47:03.815Z",
+  "updatedAt": "2026-09-19T11:59:45.625Z",
   "drops": [
+    {
+      "id": "2026-09-19-tip-fc65b5d0-1438-live-1410-waiting",
+      "title": "Tip fc65b5d0 — #1438 live; #1410 waiting",
+      "date": "2026-09-19",
+      "summary": "DO tip moved to #1438 named F-ISO-01 refuse; headline held 72%; #1410 undeployed",
+      "plainEnglish": "DO tip moved to #1438 named F-ISO-01 refuse; headline held 72%; #1410 undeployed",
+      "tags": [
+        "status",
+        "command-centre",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-tip-fc65b5d0-1438-live-1410-waiting/2026-09-19-tip-fc65b5d0.md"
+      ],
+      "tip": "fc65b5d0d6684019f8b6538728e07919b466f0bd"
+    },
     {
       "id": "2026-09-19-smoke-demoted-not-a-merge-gate",
       "title": "Smoke demoted: not a merge gate",
