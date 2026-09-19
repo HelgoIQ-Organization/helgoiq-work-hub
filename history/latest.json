@@ -1,25 +1,25 @@
 {
-  "updatedAt": "2026-09-18T17:23:25.569Z",
+  "updatedAt": "2026-09-19T06:53:51.959Z",
   "meta": {
-    "dataAsOf": "2026-09-18T17:23:25.569Z",
-    "buildStamp": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
-    "liveTip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 70% = round((80×12 + 87×10 + 86×10 + 25×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 42×10)/100) half-up. Tip d5b7d47d — #1404 F-ISO-01 fact withholding ON tip (plus prior #1418+#1396+#1420+#1419+#1414+#1411+#1376+#1401). Strand % held (no new Measured retest). Dataset 80 / CC 87 / Isolation 86 Measured FAIL hold / Comms 42 / AI-24 25 held.",
+    "dataAsOf": "2026-09-19T06:53:51.959Z",
+    "buildStamp": "df08d3cf38c4105358fb6ae826d6fe01f59e4116",
+    "liveTip": "df08d3cf38c4105358fb6ae826d6fe01f59e4116",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80×12 + 87×10 + 86×10 + 25×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 65×10)/100) half-up. Tip df08d3cf — #1408 Teacher POS cash refuse ON tip; #1424 undeployed. Strand % held (no new Measured retest on df08d3cf). Dataset 80 / CC 87 / Isolation 86 Measured FAIL hold / Comms 65 / AI-24 25 held.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
-    "morningSnapshotPath": "history/2026-09-10-morning.json",
+    "morningSnapshotPath": "history/2026-09-18-morning.json",
     "latestSnapshotPath": "history/2026-09-18-tip-d5b7d47d-cluster-a.json",
-    "lastRefreshNote": "2026-09-18 Launch Hub refresh: tip UNCHANGED d5b7d47d; material Cluster A Measured 24/24 on live tip; B–F RUNNING 9/30 — headline held 70%. Prefer not to need import.rollbackBatch.",
+    "lastRefreshNote": "2026-09-19 Launch Hub tip refresh: live=/api/version df08d3cf = #1408 Teacher POS visible cash refusal (Confirm disabled). Staging HEAD b1ffa5d7 = #1424 nine-PR CC batch MERGED ~06:50Z but NOT yet on DigitalOcean live. Trigger was #1424 merge; live tip change vs prior dashboard d5b7d47d is #1408. Headline held 72% — no invented strand lifts. Prefer not to need import.rollbackBatch.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-18T17:23:25.569Z"
+      "checkedAt": "2026-09-19T06:53:51.959Z"
     },
-    "updatedAt": "2026-09-18T17:23:18.523Z",
-    "note": "Live tip d5b7d47d. Headline 70% (#1404 F-ISO-01 ON tip; strands held pending retest). Prefer not to need import.rollbackBatch.",
+    "updatedAt": "2026-09-19T06:53:51.959Z",
+    "note": "Live tip df08d3cf (#1408 ON tip). Staging HEAD ahead with #1424 undeployed. Headline 72% held. Prefer not to need import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L≥1 = 383/413 ≈ 92.7%; L≥2 = 368/413 ≈ 89.1%.",
-    "headlineVsCoverage": "Headline ~70% = weighted strand average. Coverage L1%=92.7 / L2%=89.1. Different units.",
+    "headlineVsCoverage": "Headline ~72% = weighted strand average. Coverage L1%=92.7 / L2%=89.1. Different units.",
     "coverageAfterBackfill": {
       "pctTestedAny": 98.8,
       "pctL1Plus": 88.4,
@@ -36,26 +36,28 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "Prior Measured bank tip 205d5bb8: Cluster A 24/24 + B–F 23/30 (47/54). #1404 F-ISO-01 fact withholding ON tip d5b7d47d — retest pending (do not invent PASS). #1401 D-RI-01 ledger + #1418 named run failures still on tip — retest pending. Remaining FAILs: B-HOW-01, D-RI-01, D-CASH-01, F-ISO-01, F-SEED-01, F-INJ-01, F-HOW-01.",
-    "liveTipNote": "Live tip d5b7d47d confirmed via /api/version; Cluster A remasured 24/24.",
-    "checkedAt": "2026-09-18T17:23:18.523Z",
-    "tip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463"
+    "commandCentreNote": "Measured bank still tip d5b7d47d: Cluster A 24/24 + B–F FAIL bank (do not invent PASS on new tip). #1424 nine-PR CC batch (incl #1377 MEM-F01, #1405 F-INJ-01, #1406 F-HOW-01, #1415 B-HOW-01, #1412 E-FU-01, #1402 gift-card, #1417/#1416 tool/status, #1413 honest empties) is ON staging HEAD b1ffa5d7 but NOT live — Cluster A + B–F retest LOCKED until DO deploys. Prior #1404 F-ISO-01 is ancestor of live tip. Prefer not to need import.rollbackBatch.",
+    "liveTipNote": "Live tip df08d3cf confirmed via /api/version = #1408. Staging HEAD b1ffa5d7 (#1424) undeployed lag.",
+    "checkedAt": "2026-09-19T06:53:51.959Z",
+    "tip": "df08d3cf38c4105358fb6ae826d6fe01f59e4116",
+    "morningHeadlinePercent": 73,
+    "compareNote": "Morning 73% (same-day baseline; Saturday snapshot path history/2026-09-18-morning.json — no 2026-09-19-morning yet; never 10 Sep) → now 72% held. Tip moved d5b7d47d→df08d3cf (#1408 live; #1424 waiting on DO). No invented strand lifts."
   },
-  "tip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
+  "tip": "df08d3cf38c4105358fb6ae826d6fe01f59e4116",
   "progressToday": {
-    "morningHeadlinePercent": 52,
-    "nowHeadlinePercent": 70,
+    "morningHeadlinePercent": 73,
+    "nowHeadlinePercent": 72,
     "morningStrands": {
-      "dataset": 25,
-      "command-centre": 55,
+      "dataset": 52,
+      "command-centre": 85,
       "isolation": 86,
-      "ai-85": 56,
-      "ambient": 70,
-      "m1": 60,
-      "smoke": 20,
-      "payments": 45,
-      "findings-fix": 40,
-      "comms": 0
+      "ai-85": 68,
+      "ambient": 95,
+      "m1": 73,
+      "smoke": 55,
+      "payments": 74,
+      "findings-fix": 99,
+      "comms": 42
     },
     "nowStrands": {
       "dataset": 80,
@@ -67,25 +69,26 @@
       "smoke": 55,
       "payments": 74,
       "findings-fix": 100,
-      "comms": 42
+      "comms": 65
     },
     "deltas": {
-      "comms": 42,
-      "command-centre": 32,
+      "dataset": 28,
+      "command-centre": 2,
       "isolation": 0,
-      "ai-85": -31,
-      "smoke": 35,
-      "payments": 29,
-      "ambient": 25,
-      "m1": 13,
-      "findings-fix": 60,
-      "dataset": 55
+      "ai-85": -43,
+      "ambient": 0,
+      "m1": 0,
+      "smoke": 0,
+      "payments": 0,
+      "findings-fix": 1,
+      "comms": 23,
+      "headline": -1
     },
-    "plainEnglishDay": "Cluster A Measured 24/24 on live tip d5b7d47d — B–F unlocked and mid-run (9/30 so far; hold prior 23/30 bank). Headline still 70%. Tip unchanged since #1404. Isolation still FAIL hold from tip 660c9038 (ISO-18/29). No invent PASS on F-ISO-01 / D-RI-01 until B–F completes.",
-    "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning 52% → now 70%. Tip held d5b7d47d. Cluster A remasured 24/24 on live tip; CC 87 hold (B–F in progress); Isolation 86 FAIL hold; Comms 42 hold.",
-    "updatedAt": "2026-09-18T17:23:18.523Z",
-    "coverageNote": "After AI L2 Intel: L≥1=372 (90%); L≥2=212 (51%)",
+    "plainEnglishDay": "Live staging moved to tip df08d3cf (#1408 teacher POS cash refuse). Overall launch still about 72%. A bigger Command Centre fix pack (#1424) is merged on GitHub but not live on DigitalOcean yet — retests wait for that deploy. No invented PASS. Prefer not to need import.rollbackBatch.",
+    "keptMorningSnapshotPath": "history/2026-09-18-morning.json",
+    "compareNote": "Morning 73% → now 72% held. Tip moved to df08d3cf (#1408 Teacher POS cash refuse live). #1424 nine-PR CC batch on staging HEAD b1ffa5d7 not yet on DO — no invented strand lifts; CC/payments retests owed after deploy. Comms Measured 65 from earlier today on prior tip d5b7d47d held. Same-day rule: morning baseline 73 kept; Saturday — morning snapshot path is history/2026-09-18-morning.json (no 2026-09-19 morning yet; never 10 Sep). Prefer not to need import.rollbackBatch.",
+    "updatedAt": "2026-09-19T06:53:51.959Z",
+    "coverageNote": "Tip stamp df08d3cf (#1408 live). Strand board held from morning/Comms re-census path. #1424 undeployed — Cluster A/B–F retest locked until live. Prefer not to invent Measured on new tip.",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": {
       "tip": "b1a15f4884555ba94df200a514086230b1e16fbe",
@@ -243,11 +246,28 @@
       "note": "Estimate bumps only (ai-85 56→60, findings-fix 93→95). #1272 candidate for AI-042 MRR crash. Bluebird retests not run."
     },
     "awaitingTipMerges": {
-      "stagingHead": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
-      "liveTip": "f13a6dc229f42ff318d6ab746da645e2522dd9aa",
-      "undeployed": [],
-      "at": "2026-09-17T12:22:14.623Z",
-      "note": "Live tip f13a6dc2 includes #1328. Staging HEAD identical — no undeployed merges."
+      "stagingHead": "b1ffa5d732c5af2955b1a1cfdc317f27eb1cf86e",
+      "liveTip": "df08d3cf38c4105358fb6ae826d6fe01f59e4116",
+      "undeployed": [
+        {
+          "sha": "b1ffa5d732c5af2955b1a1cfdc317f27eb1cf86e",
+          "pr": 1424,
+          "title": "batch merge — nine-PR CC pack",
+          "constituents": [
+            1402,
+            1405,
+            1406,
+            1377,
+            1415,
+            1417,
+            1416,
+            1412,
+            1413
+          ]
+        }
+      ],
+      "at": "2026-09-19T06:53:51.959Z",
+      "note": "Live tip df08d3cf (#1408). Staging HEAD b1ffa5d7 (#1424) ahead — wait for DO deploy before Cluster A/B–F retest."
     },
     "tipMove5a5e939c": {
       "prevTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
@@ -498,8 +518,8 @@
       "note": "Material Command Centre tip (#1328 refuse injected cash-sale requests). Headline held 70% — no strand invent without Bluebird D-INJ Measured."
     },
     "tipBankNote": "Measured CC bank on 0507113f; prior f13a6dc2 bank superseded.",
-    "ancestry1376": "MERGED; still on tip d5b7d47d. ISO-18+ISO-29 Measured FAIL on tip 660c9038 (Admin2) — not closed.",
-    "ancestry1377": "OPEN not merged — not on 6adaf8e2",
+    "ancestry1376": "MERGED; still on tip ancestry of df08d3cf. ISO-18+ISO-29 Measured FAIL hold (#1376) — not closed.",
+    "ancestry1377": "ON staging HEAD via #1424 — NOT live yet. MEM-F01 retest locked until DO deploys #1424.",
     "ancestry1400": "MERGED + LIVE on tip 6adaf8e2 — Admin Home /admin/home alias",
     "ancestry1398": "MERGED + LIVE on tip 6adaf8e2 — CI presentation self-merge gate",
     "adminHome1400": "DONE LIVE — Feel Admin Home P0 closed on tip 6adaf8e2",
@@ -594,7 +614,28 @@
       "status": "RUNNING",
       "at": "2026-09-18T17:23:18.523Z",
       "note": "B–F mid-run on tip d5b7d47d after Cluster A unlock. Hold prior Measured bank 23/30 (tip 205d5bb8) until complete — never invent mid-run score."
-    }
+    },
+    "deltaPoints": -3,
+    "tipMoveDf08d3cf": {
+      "at": "2026-09-19T06:53:51.959Z",
+      "from": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
+      "to": "df08d3cf38c4105358fb6ae826d6fe01f59e4116",
+      "prsOnLiveTip": [
+        "1408"
+      ],
+      "stagingHead": "b1ffa5d732c5af2955b1a1cfdc317f27eb1cf86e",
+      "prsMergedUndeployed": [
+        "1424"
+      ],
+      "trigger": {
+        "event": "pr-merged",
+        "pr": 1424,
+        "note": "Wake was #1424 merge; live /api/version already at #1408 (df08d3cf); #1424 still undeployed on staging HEAD b1ffa5d7."
+      },
+      "note": "Headline held 72%. #1408 ON tip — teacher POS cash refuse retest owed (no invent PASS). #1424 pack undeployed — Cluster A + B–F retest locked. Prefer not to need import.rollbackBatch."
+    },
+    "ancestry1404": "MERGED + ancestor of live tip df08d3cf — F-ISO-01 withholding ON prior tip d5b7d47d; retest still owed (no invent PASS).",
+    "ancestry1408": "MERGED + LIVE on tip df08d3cf — Teacher POS visible cash refusal, Confirm disabled. Retest owed; do not invent PASS."
   },
   "strands": [
     {
@@ -621,7 +662,7 @@
       "lastTestedStamp": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
       "lastTestedVerdict": "PASS",
       "coverageFreshness": "stale",
-      "note": "Dataset Confirm canary PASS tip 205d5bb8 (#1388). Approve path proven for company Admin; Import/Activate/goLive still unproven. Prefer not to need import.rollbackBatch.",
+      "note": "Dataset Confirm canary PASS tip 205d5bb8 (#1388). Approve path proven for company Admin; Import/Activate/goLive still unproven. Live tip df08d3cf. Prefer not to need import.rollbackBatch.",
       "freshnessNote": "Confirm canary PASS bank tip 205d5bb8; live tip d5b7d47d — hold 80.",
       "lastTestedAt": "2026-09-18"
     },
@@ -657,7 +698,7 @@
       "lastTestedVerdict": "FAIL",
       "measured": 100,
       "blocker": "Cluster A 19/24 (MEM-F01 + stalls); B–F locked/parked",
-      "note": "Cluster A Measured 24/24 on tip d5b7d47d. Combined bank still A24 + BF23/30 until B–F finishes. Never invent PASS on F-ISO-01 / D-RI-01 / remaining B–F fails.",
+      "note": "Measured bank tip d5b7d47d: Cluster A 24/24 + B–F FAIL bank (held). Live tip now df08d3cf (#1408). #1424 nine-PR CC batch undeployed on staging HEAD b1ffa5d7 — Cluster A + B–F retest LOCKED until live. Never invent PASS on MEM-F01 / F-INJ-01 / F-HOW-01 / B-HOW-01 / E-FU-01 / F-ISO-01.",
       "lastTestedAt": "2026-09-18",
       "freshnessNote": "Cluster A Measured live on d5b7d47d; B–F bank still 205d5bb8 until run completes.",
       "tipNote": "Live 660c9038 includes #1418 (safe named run failure reasons) + prior #1401.",
@@ -688,11 +729,11 @@
       "phaseId": "studio-ops",
       "projectWeightPercent": 10,
       "measuredNote": "Prior tip 232659cf ISO-29 complete: 26/4/2. #1250 on a263c4ab not yet re-measured.",
-      "lastTestedStamp": "232659cf05d22e5de920ee547925b37581cfb6d4",
+      "lastTestedStamp": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
       "lastTestedAt": "2026-09-15",
-      "note": "#1376 still ON tip d5b7d47d. ISO-18+ISO-29 Measured FAIL on tip 660c9038 (Admin2) — Isolation 86% Measured FAIL hold until Bluebird (150002)↔Refrm (150001) retest PASS. No invent PASS.",
+      "note": "#1376 still on tip ancestry of df08d3cf. ISO-18+ISO-29 Measured FAIL hold (Bluebird 150002 ↔ Refrm 150001) — Isolation 86% Measured FAIL hold until retest PASS. No invent PASS.",
       "freshnessNote": "Tip d5b7d47d; last ISO-18/29 Measured FAIL on 660c9038."
     },
     {
@@ -723,7 +764,7 @@
       "measuredNote": "Measured 2026-09-18 tip 205d5bb8 Bluebird c=150002 Admin2: AI-24 = 3 PASS (AI-014 CC Agents, AI-039 Studio Intelligence honest Pulse 30/100 Critical, AI-044 Monthly Intelligence Review) / 0 FAIL / 17 BLOCKED / 4 SKIP. Evidence /workspace/helgoiq-full-programme-2026-09-17/ai24/205d5bb8/. Drop 2026-09-18-ai24-rescore-tip-205d5bb8. Never invent PASS. Prefer not to need import.rollbackBatch.",
       "lastTestedAt": "2026-09-18",
       "freshnessNote": "AI-24 Measured bank tip 205d5bb8; live tip d5b7d47d — no invent re-score.",
-      "note": "AI-24 Measured tip 205d5bb8: 3/24 PASS → 25%. 17 BLOCKED empty surfaces; 4 SKIP; ledger 6 rows. Do not invent."
+      "note": "AI-24 Measured tip 205d5bb8: 3/24 PASS → 25%. 17 BLOCKED empty surfaces; 4 SKIP; ledger 6 rows. Live tip df08d3cf. Do not invent."
     },
     {
       "id": "ambient",
@@ -806,7 +847,7 @@
       "coverageFreshness": "stale",
       "lastNote": "Measured FAIL #1375 held from 5b1def5c; tip now c68ce040 — retest pending NEED_DECLAN.",
       "lastTestedAt": "2026-09-17",
-      "note": "Staging critical-path smoke Measured FAIL hold from tip 5b1def5c (#1375 Cancelling≠terminal checkout 409). Live tip d5b7d47d; no new six-step Measured — hold FAIL."
+      "note": "Staging critical-path smoke Measured FAIL hold from tip 5b1def5c (#1375 Cancelling≠terminal checkout 409). Live tip df08d3cf; no new six-step Measured — hold FAIL."
     },
     {
       "id": "payments",
@@ -830,7 +871,8 @@
       "projectWeightPercent": 8,
       "lastTestedStamp": "cace7a56b6912c3ddfc95cda8749d4a71ef20ee5",
       "lastTestedVerdict": "FAIL",
-      "coverageFreshness": "stale"
+      "coverageFreshness": "stale",
+      "note": "#1408 Teacher POS visible cash refusal (Confirm disabled) ON live tip df08d3cf. Retest owed — do not invent PASS. Prefer not to need import.rollbackBatch."
     },
     {
       "id": "findings-fix",
@@ -866,24 +908,23 @@
       "lastTestedVerdict": "PASS",
       "coverageFreshness": "stale",
       "lastTestedAt": "2026-09-15",
-      "note": "Estimate 100% — tip moved 660c9038→d5b7d47d with #1404 F-ISO-01. Prefer not to invent Measured."
+      "note": "Estimate 100% — tip moved d5b7d47d→df08d3cf with #1408 live; #1424 undeployed. Prefer not to invent Measured."
     },
     {
       "id": "comms",
       "name": "Automated communications",
-      "percent": 42,
+      "percent": 65,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "42% hold after Measured re-census on tip 205d5bb8 (Bluebird c=150002). Consent PASS (Member B prefs save). Five PARTIAL: member cancel (UI scheduled, no history row); cover swap (UI confirm, no mail/history); journey (tag ok, in-app fail, Admin2 not proof inbox); Segment Send Test + Manager newsletter (toast ok, Message Logs empty). Inbox/history proof still missing on 5/6 — no invent raise. No Turnstile/NEED_DECLAN; no live blast.",
-      "progressNote": "Comms hold 42%. #1420 ON tip 660c9038; no invent raise.",
+      "plainSummary": "65% Measured after tip d5b7d47 re-census with recreated proof inbox helgoiq-comms-proof@agentmail.to. 3 PASS (Consent; Segment Send Test + Manager newsletter with Agentmail arrival proof). 3 PARTIAL: Journey B (Admin2 inbox readable, no journey mail); member cancel C (fixture already cancelled); cover swap C (swap ok, no UI history / recipient pinned). No invent PASS on cancel/cover.",
+      "progressNote": "Comms 42→65 Measured 2026-09-19 tip d5b7d47. Segment+Manager delivery proven in proof inbox. Journey still B. Cancel/cover still C.",
       "blockers": [
-        "Member cancel PARTIAL — UI scheduled cancellation; no matching history row / delivery proof",
-        "Cover swap PARTIAL — UI confirm only; no mail or message-history row",
-        "Journey PARTIAL — tag step ok, in-app fail; targeted Admin2 not proof inbox",
-        "Segment Send Test PARTIAL — toast ok; Message Logs empty (no history proof)",
-        "Manager newsletter Send Test PARTIAL — as Manager, toast ok; Message Logs empty"
+        "Journey PARTIAL-B — Admin2 inbox readable; no journey/product mail in re-census window; runner in-app step failed",
+        "Member cancel PARTIAL-C — fixture already cancelled; no fresh independent cancel",
+        "Cover swap PARTIAL-C — swap confirmed; no UI history; recipient mailbox not pinned"
       ],
       "detailDropIds": [
+        "2026-09-19-comms-recensus-d5b7d47",
         "2026-09-18-comms-recensus-tip-205d5bb8",
         "2026-09-15-comms-retest-aee3b690",
         "2026-09-15-comms-score-ac845589"
@@ -892,37 +933,35 @@
       "projectWeightPercent": 10,
       "lastTestedStamp": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
       "coverageFreshness": "stale",
-      "note": "42% HOLD after Measured re-census tip 205d5bb8. #1420 campaign-test provider-receipt gate ON tip d5b7d47d — re-census owed before any raise. Keep automated comms strand. Prefer not to invent raise.",
-      "measuredNote": "2026-09-18 re-census tip 205d5bb8 Bluebird c=150002: 1 PASS (Consent), 5 PARTIAL (cancel/cover/journey/segment/Manager newsletter). Evidence under /workspace/helgoiq-full-programme-2026-09-17/comms/205d5bb8-recensus/. Drop 2026-09-18-comms-recensus-tip-205d5bb8.",
-      "lastTestedAt": "2026-09-18",
+      "note": "65% Measured (proof-inbox re-census earlier today on prior tip d5b7d47d). Live tip now df08d3cf; hold 65 — no invent raise. Journey B; cancel/cover C.",
+      "measuredNote": "2026-09-19 re-census tip d5b7d47 Bluebird c=150002: 3 PASS / 3 PARTIAL (1B+2C). Evidence /workspace/helgoiq-full-programme-2026-09-17/comms/d5b7d47-recensus/. Drop 2026-09-19-comms-recensus-d5b7d47. Scoring (PASS=100, PARTIAL=30)/6 → 65%.",
+      "lastTestedAt": "2026-09-19",
       "lastTestedVerdict": "FAIL",
-      "freshnessNote": "Last Measured tip 205d5bb8; live d5b7d47d has #1420 — re-census owed."
+      "freshnessNote": "Measured live on tip d5b7d47 with proof-inbox Agentmail MCP."
     }
   ],
   "health": {
-    "overallLaunchPercent": 70,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 70% = round((80×12 + 87×10 + 86×10 + 25×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 42×10)/100) half-up. Tip d5b7d47d — #1404 F-ISO-01 fact withholding ON tip (plus prior #1418+#1396+#1420+#1419+#1414+#1411+#1376+#1401). Strand % held (no new Measured retest). Dataset 80 / CC 87 / Isolation 86 Measured FAIL hold / Comms 42 / AI-24 25 held.",
-    "readinessLabel": "~70% — tip d5b7d47d; #1404 F-ISO-01 live; strands held pending retest",
-    "plainSummary": "Launch readiness about 70%. Live tip d5b7d47d — Cluster A Measured 24/24 (B–F unlocked, mid-run). ISO-18 + ISO-29 still Measured FAIL from tip 660c9038. Prefer not to need import.rollbackBatch.",
+    "overallLaunchPercent": 72,
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80×12 + 87×10 + 86×10 + 25×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 65×10)/100) half-up. Tip df08d3cf — #1408 ON tip; #1424 undeployed. Strand % held (no invented Measured). Prefer not to need import.rollbackBatch.",
+    "readinessLabel": "~72% — tip df08d3cf (#1408 live; #1424 waiting on DO)",
+    "plainSummary": "Launch readiness about 72%. Live tip df08d3cf = #1408 teacher POS cash refuse. Bigger Command Centre pack #1424 is on GitHub staging HEAD but not live on DigitalOcean yet — Cluster A and B–F retests wait for that deploy. Isolation still Measured FAIL hold. Prefer not to need import.rollbackBatch.",
     "strengths": [
       "CC rebank tip 205d5bb8: A 24/24 + B–F 23/30 (47/54) → strand 87 Measured held",
       "Dataset Confirm canary PASS tip 205d5bb8 — company Admin Approve (#1388) held at 80",
       "AI-24 Measured honest: 3 usable PASS + 17 BLOCKED empties (not invented FAIL/PASS); Pulse 30/100 Critical explicit"
     ],
     "risks": [
-      "#1376 still on tip d5b7d47d but ISO-18+ISO-29 Measured FAIL (Admin2 tip 660c9038) — not clean",
-      "#1404 F-ISO-01 ON tip d5b7d47d — retest pending (do not invent PASS)",
-      "D-RI-01 FAIL held until Measured retest on #1401 (ledger tool on tip; no invent PASS)",
-      "#1377 MEM-F01 still OPEN; Cluster A MEM-F01 gate unchanged",
-      "#1410 CMS Live Approval Hub pages still OPEN",
-      "#1420 Comms receipt gate ON tip d5b7d47d — re-census owed before raising Comms 42%"
+      "#1424 nine-PR CC batch MERGED on staging HEAD but NOT live — Cluster A/B–F retest locked",
+      "#1408 ON tip df08d3cf — teacher POS cash refuse retest owed (no invent PASS)",
+      "ISO-18+ISO-29 Measured FAIL hold (#1376) — Isolation 86%",
+      "Measured CC bank still tip d5b7d47d; do not invent PASS on new tip",
+      "Smoke #1375 NEED_DECLAN"
     ],
     "topPriorities": [
-      "Retest F-ISO-01 on tip d5b7d47d after #1404 (no invent PASS)",
-      "Retest / fix ISO-18+ISO-29 tenant chooser (Measured FAIL on 660c9038)",
-      "Retest D-RI-01 on tip after #1401",
-      "Populate / unblock AI opportunity surfaces so BLOCKED items can be re-measured",
-      "Smoke fixture #1375 NEED_DECLAN"
+      "Wait for DO to deploy staging HEAD b1ffa5d7 (#1424) then retest Cluster A + B–F fails — close only on Measured PASS",
+      "Retest teacher POS cash refuse on live tip df08d3cf (#1408) — no invent PASS",
+      "ISO-18/29 Bluebird↔Refrm still Measured FAIL hold (#1376)",
+      "Prefer not to need import.rollbackBatch"
     ],
     "visualBands": {
       "ready": [
@@ -934,80 +973,119 @@
         "command-centre",
         "m1",
         "payments",
-        "isolation"
+        "isolation",
+        "comms"
       ],
       "blocked": [
         "smoke",
         "ai-85"
       ],
-      "retest": [
-        "comms"
-      ]
+      "retest": []
     },
-    "refreshWarning": "Live tip unchanged since last strand rebuild — readiness may be stale relative to merged-but-undeployed PRs.",
-    "headlinePercent": 70,
+    "refreshWarning": "Staging HEAD b1ffa5d7 (#1424) is ahead of live tip df08d3cf — readiness may look stale until DO deploys; do not invent Cluster A/B–F PASS.",
+    "headlinePercent": 72,
     "status": "at-risk",
-    "plain": "Launch readiness about 70%. Live tip d5b7d47d — Cluster A Measured 24/24 (B–F unlocked, mid-run). ISO-18 + ISO-29 still Measured FAIL from tip 660c9038. Prefer not to need import.rollbackBatch.",
+    "plain": "Launch readiness about 72%. Live tip df08d3cf = #1408 teacher POS cash refuse. Bigger Command Centre pack #1424 is on GitHub staging HEAD but not live on DigitalOcean yet — Cluster A and B–F retests wait for that deploy. Isolation still Measured FAIL hold. Prefer not to need import.rollbackBatch.",
     "gaps": [
-      "ISO-18 + ISO-29 Measured FAIL after #1376 on tip 660c9038 (chooser still leaks Bluebird on Refrm deep links)",
-      "AI-24 17 BLOCKED + 4 SKIP on tip 205d5bb8",
-      "B–F 7 FAILs remain on tip 205d5bb8"
+      "Staging HEAD ahead of live (#1424 undeployed)",
+      "ISO-18 + ISO-29 Measured FAIL hold",
+      "AI-24 17 BLOCKED + 4 SKIP on tip 205d5bb8 bank",
+      "B–F FAIL bank on tip d5b7d47d — retest locked until #1424 live"
     ],
-    "tipChange": false,
-    "note": "Tip unchanged d5b7d47d. Material: Cluster A remasured 24/24 on live tip; B–F in progress. Headline held 70%.",
-    "label": "~70% — tip 205d5bb8; AI-24 Measured 3/24 → ai-85 25%; CC 87 / Dataset 80 held",
-    "dataAsOf": "2026-09-18T17:23:18.523Z",
-    "buildStamp": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
-    "tip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
-    "plainHeadline": "70% — Cluster A 24/24 on live tip; B–F running; Isolation FAIL hold",
+    "tipChange": true,
+    "note": "Tip changed d5b7d47d→df08d3cf (#1408). Staging HEAD b1ffa5d7 (#1424) undeployed. Headline held 72%. Prefer not to need import.rollbackBatch.",
+    "label": "~72% — tip df08d3cf (#1408 live; #1424 waiting on DO)",
+    "dataAsOf": "2026-09-19T06:53:51.959Z",
+    "buildStamp": "df08d3cf38c4105358fb6ae826d6fe01f59e4116",
+    "tip": "df08d3cf38c4105358fb6ae826d6fe01f59e4116",
+    "plainHeadline": "72% held — tip df08d3cf (#1408 live / #1424 undeployed)",
     "blockers": [
-      "ISO-18 + ISO-29 Measured FAIL after #1376 on tip 660c9038 (chooser still leaks Bluebird on Refrm deep links)",
-      "AI-24 Measured 3/24 — 17 BLOCKED empty opportunity surfaces; ledger 6 rows",
-      "B–F 7 FAILs still open on tip 205d5bb8",
-      "Smoke #1375 NEED_DECLAN",
-      "CMS public Live 404 (#1410 OPEN)"
+      "#1424 undeployed on DO — blocks honest Cluster A + B–F retest of MEM-F01/#1377, F-INJ-01/#1405, F-HOW-01/#1406, B-HOW-01/#1415, E-FU-01/#1412, etc.",
+      "ISO-18 + ISO-29 Measured FAIL hold after #1376",
+      "AI-24 Measured 3/24 — 17 BLOCKED empty opportunity surfaces",
+      "Smoke #1375 NEED_DECLAN"
     ],
-    "updatedAt": "2026-09-18T17:23:18.523Z",
-    "summary": "Launch readiness about 70%. Live tip d5b7d47d — Cluster A Measured 24/24 (B–F unlocked, mid-run). ISO-18 + ISO-29 still Measured FAIL from tip 660c9038. Prefer not to need import.rollbackBatch."
+    "updatedAt": "2026-09-19T06:53:51.959Z",
+    "summary": "Launch readiness about 72%. Live tip df08d3cf = #1408 teacher POS cash refuse. Bigger Command Centre pack #1424 is on GitHub staging HEAD but not live on DigitalOcean yet — Cluster A and B–F retests wait for that deploy. Isolation still Measured FAIL hold. Prefer not to need import.rollbackBatch."
   },
   "actions": [
     {
+      "id": "wait-do-deploy-1424-then-retest-cc",
+      "status": "open",
+      "title": "PRIMARY — Wait for DO to deploy staging HEAD b1ffa5d7 (#1424 nine-PR CC batch) then retest Cluster A + B–F fails (MEM-F01/#1377, F-INJ-01/#1405, F-HOW-01/#1406, B-HOW-01/#1415, E-FU-01/#1412, etc.) — close only on Measured PASS",
+      "plain": "GitHub staging has #1424 but DigitalOcean live is still #1408. When DO catches up, re-run Cluster A and the B–F fails. Close each only on Measured PASS — never invent.",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
+    },
+    {
+      "id": "retest-teacher-pos-cash-refuse-1408",
+      "status": "open",
+      "title": "PRIMARY — Retest teacher POS cash refuse on live tip df08d3cf (#1408)",
+      "plain": "#1408 is live: teacher POS should show visible cash refusal with Confirm disabled. Retest on Bluebird — do not invent PASS.",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
+    },
+    {
+      "id": "iso-18-29-fail-hold-1376",
+      "status": "open",
+      "title": "SECONDARY — ISO-18/29 Bluebird↔Refrm still Measured FAIL hold (#1376)",
+      "plain": "Isolation strand stays 86% Measured FAIL hold until Bluebird↔Refrm chooser retest PASSes.",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
+    },
+    {
+      "id": "prefer-not-rollback-batch-df08d3cf",
+      "status": "open",
+      "title": "SECONDARY — Prefer not to need import.rollbackBatch",
+      "plain": "Standing rule: prefer not to need import.rollbackBatch. Never wipe without batchId company scope.",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
+    },
+    {
+      "id": "tip-move-df08d3cf-1408-live",
+      "status": "done",
+      "title": "DONE — tip df08d3cf LIVE: #1408 Teacher POS cash refuse ON tip (headline 72% held; #1424 undeployed)",
+      "plain": "Live /api/version = df08d3cf (#1408). Staging HEAD b1ffa5d7 (#1424) still ahead of DO.",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
+    },
+    {
       "id": "cluster-a-24-24-tip-d5b7d47d",
       "status": "done",
-      "title": "DONE — Cluster A Measured 24/24 on tip d5b7d47d (B–F unlocked)",
+      "title": "HISTORICAL (tip d5b7d47) — DONE — Cluster A Measured 24/24 on tip d5b7d47d (B–F unlocked)",
       "plain": "Admin2 + Teacher2 Cluster A 24/24 PASS on live tip. MEM-F01 cleared this run. B–F unlocked.",
-      "updatedAt": "2026-09-18T17:23:18.523Z"
+      "updatedAt": "2026-09-19T06:53:51.959Z"
     },
     {
       "id": "cluster-bf-running-tip-d5b7d47d",
-      "status": "open",
-      "title": "PRIMARY — Finish B–F on tip d5b7d47d (mid-run 9/30; hold 23/30 bank)",
-      "plain": "Do not invent mid-run score. After complete, remasure F-ISO-01 / D-RI-01 and refresh CC strand.",
-      "updatedAt": "2026-09-18T17:23:18.523Z"
+      "status": "done",
+      "title": "HISTORICAL (tip d5b7d47) — PRIMARY — Finish B–F on tip d5b7d47d (mid-run 9/30; hold 23/30 bank)",
+      "plain": "Do not invent mid-run score. After complete, remasure F-ISO-01 / D-RI-01 and refresh CC strand. Superseded when live tip moved to df08d3cf (#1408); #1424 undeployed retest queue takes over.",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
     },
     {
       "id": "tip-move-d5b7d47d-1404",
-      "title": "DONE — tip d5b7d47d LIVE: #1404 F-ISO-01 fact withholding ON tip (headline 70% held)",
+      "title": "HISTORICAL (tip d5b7d47) — DONE — tip d5b7d47d LIVE: #1404 F-ISO-01 fact withholding ON tip (headline 70% held)",
       "priority": "done",
       "status": "done",
       "owner": "Bot Commander",
-      "at": "2026-09-18T16:35:15.127Z"
+      "at": "2026-09-18T16:35:15.127Z",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
     },
     {
       "id": "retest-f-iso-01-on-d5b7d47d",
-      "title": "PRIMARY — Retest F-ISO-01 on tip d5b7d47d (#1404 live); do not invent PASS",
+      "title": "HISTORICAL (tip d5b7d47) — PRIMARY — Retest F-ISO-01 on tip d5b7d47d (#1404 live); do not invent PASS",
       "priority": "primary",
-      "status": "open",
+      "status": "done",
       "owner": "Bot Commander",
-      "at": "2026-09-18T16:35:15.127Z"
+      "at": "2026-09-18T16:35:15.127Z",
+      "plain": "Superseded when live tip moved to df08d3cf (#1408); #1424 undeployed retest queue takes over.",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
     },
     {
       "id": "retest-iso-18-29-after-d5b7d47d",
-      "title": "PRIMARY — Bluebird↔Refrm retest ISO-18/29 still owed (Measured FAIL on 660c9038; tip now d5b7d47d)",
+      "title": "HISTORICAL (tip d5b7d47) — PRIMARY — Bluebird↔Refrm retest ISO-18/29 still owed (Measured FAIL on 660c9038; tip now d5b7d47d)",
       "priority": "primary",
-      "status": "open",
+      "status": "done",
       "owner": "Bot Commander",
-      "at": "2026-09-18T16:35:15.127Z"
+      "at": "2026-09-18T16:35:15.127Z",
+      "plain": "Superseded when live tip moved to df08d3cf (#1408); #1424 undeployed retest queue takes over.",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
     },
     {
       "id": "tip-move-660c9038-1418-1396-1420",
@@ -1020,12 +1098,13 @@
     },
     {
       "id": "retest-comms-1420-on-660c9038",
-      "status": "open",
-      "title": "PRIMARY — Re-census Comms on tip 660c9038 after #1420 receipt gate; hold 42% until Measured",
+      "status": "done",
+      "title": "HISTORICAL — PRIMARY — Re-census Comms on tip 660c9038 after #1420 receipt gate; hold 42% until Measured (Comms re-census Measured 65 on tip d5b7d47 2026-09-19)",
       "priority": "P1",
       "strandId": "comms",
       "plainSummary": "Campaign Send Test must show provider receipt. Do not invent raise from toast-only.",
-      "at": "2026-09-18T16:00:48.891Z"
+      "at": "2026-09-18T16:00:48.891Z",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
     },
     {
       "id": "retest-mgr-location-grants-1396",
@@ -1047,12 +1126,14 @@
     },
     {
       "id": "retest-iso-18-29-on-660c9038",
-      "status": "open",
-      "title": "DONE/FAIL — ISO-18+ISO-29 Measured FAIL on tip 660c9038 (Admin2); still open for fix+retest on d5b7d47d",
+      "status": "done",
+      "title": "HISTORICAL (tip d5b7d47) — DONE/FAIL — ISO-18+ISO-29 Measured FAIL on tip 660c9038 (Admin2); still open for fix+retest on d5b7d47d",
       "priority": "primary",
       "strandId": "isolation",
       "plainSummary": "Chooser fix is live. Re-run tenant switch comparison; finding closes only when that retest PASSes.",
-      "at": "2026-09-18T16:00:48.891Z"
+      "at": "2026-09-18T16:00:48.891Z",
+      "plain": "Superseded when live tip moved to df08d3cf (#1408); #1424 undeployed retest queue takes over.",
+      "updatedAt": "2026-09-19T06:53:51.959Z"
     },
     {
       "id": "retest-d-ri-01-on-660c9038",

@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-19T05:34:23.316Z",
+  "updatedAt": "2026-09-19T06:54:13.742Z",
   "drops": [
+    {
+      "id": "2026-09-19-launch-hub-tip-df08d3cf-1408-live-1424-undeployed",
+      "title": "Launch Hub tip df08d3cf (#1408 live; #1424 undeployed) — headline 72% held",
+      "date": "2026-09-19",
+      "summary": "Live tip df08d3cf = #1408 Teacher POS cash refuse. Staging HEAD b1ffa5d7 = #1424 nine-PR CC batch undeployed. Headline 72% held. Prefer not to need import.rollbackBatch.",
+      "plainEnglish": "New live build is #1408 (teacher till cash refuse). A bigger Command Centre pack (#1424) is merged on GitHub but not live on DigitalOcean yet. Launch still about 72%.",
+      "tags": [
+        "status",
+        "command-centre",
+        "payments",
+        "isolation"
+      ],
+      "type": "status",
+      "project": "helgoiq",
+      "paths": [
+        "drops/2026-09-19-launch-hub-tip-df08d3cf-1408-live-1424-undeployed/tip-df08d3cf.md"
+      ],
+      "tip": "df08d3cf38c4105358fb6ae826d6fe01f59e4116"
+    },
     {
       "id": "2026-09-19-iso-1376-miss-d5b7d47",
       "title": "ISO-18/29 #1376 miss evidence tip d5b7d47",
