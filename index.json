@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-18T16:35:15.273Z",
+  "updatedAt": "2026-09-19T04:46:24.931Z",
   "drops": [
+    {
+      "id": "2026-09-19-claude-progress-brief-19-sep-morning",
+      "title": "Claude progress brief 19 Sep morning",
+      "date": "2026-09-19",
+      "summary": "Morning Claude brief: Hub 70% tip d5b7d47d; Observe blocked on PA Agentmail seat; CC A 24/24 B-F 24/30; Feel 84; ISO-18/29 FAIL hold.",
+      "plainEnglish": "Morning Claude brief: Hub 70% tip d5b7d47d; Observe blocked on PA Agentmail seat; CC A 24/24 B-F 24/30; Feel 84; ISO-18/29 FAIL hold.",
+      "tags": [
+        "status",
+        "findings"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-claude-progress-brief-19-sep-morning/CLAUDE-PROGRESS-BRIEF-2026-09-19-MORNING.md"
+      ],
+      "tip": "d5b7d47d",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180"
+    },
     {
       "id": "2026-09-18-launch-hub-tip-d5b7d47-1404-f-iso-01-live-70-hel",
       "title": "Launch Hub tip d5b7d47 — #1404 F-ISO-01 live (70% held)",
