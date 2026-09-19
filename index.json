@@ -1,6 +1,41 @@
 {
-  "updatedAt": "2026-09-19T16:28:53.972Z",
+  "updatedAt": "2026-09-19T16:31:57.583Z",
   "drops": [
+    {
+      "id": "2026-09-19-meta-1430-connection-honest-why-not-pass-tip-b87",
+      "title": "Meta #1430 Connection honest why-not PASS tip b87f71f3",
+      "date": "2026-09-19",
+      "summary": "Meta Hub Connection PASS clear why-not. Social Hub Ads empty-state still FAIL elsewhere.",
+      "plainEnglish": "Meta Hub Connection PASS clear why-not. Social Hub Ads empty-state still FAIL elsewhere.",
+      "tags": [
+        "status",
+        "findings"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-meta-1430-connection-honest-why-not-pass-tip-b87/SUMMARY.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
+    {
+      "id": "2026-09-19-comms-partials-retry-tip-b87f71f3-0p-3b-never-ar",
+      "title": "Comms PARTIALs retry tip b87f71f3 — 0P/3B never-arrived",
+      "date": "2026-09-19",
+      "summary": "Journey/cancel/cover all PARTIAL class B never arrived. Comms strand hold 65%.",
+      "plainEnglish": "Journey/cancel/cover all PARTIAL class B never arrived. Comms strand hold 65%.",
+      "tags": [
+        "comms",
+        "status",
+        "census"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-comms-partials-retry-tip-b87f71f3-0p-3b-never-ar/SUMMARY.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
     {
       "id": "2026-09-19-p7-manager-pulse-measured-pass-tip-b87f71f3-loca",
       "title": "P7 Manager Pulse MEASURED_PASS tip b87f71f3 (location restriction)",
