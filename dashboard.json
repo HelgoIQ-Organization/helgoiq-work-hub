@@ -1,23 +1,23 @@
 {
-  "updatedAt": "2026-09-19T13:19:36.667Z",
+  "updatedAt": "2026-09-19T14:43:35.000Z",
   "meta": {
-    "dataAsOf": "2026-09-19T13:19:36.667Z",
-    "buildStamp": "31951d3a33edd1f478e5ceef1e12187851064e0f",
-    "liveTip": "31951d3a33edd1f478e5ceef1e12187851064e0f",
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80×12 + 87×10 + 86×10 + 25×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 65×10)/100) half-up. Tip 31951d3a — #1445 finance forecast saved-months ON tip; #1430 undeployed. Strand % held (no new Measured retest on 31951d3a). Dataset 80 / CC 87 / Isolation 86 Measured FAIL hold / Comms 65 / AI-24 25 held.",
+    "dataAsOf": "2026-09-19T14:43:35.000Z",
+    "buildStamp": "8ad003122ee076587e1d01bbd65048152c59ac07",
+    "liveTip": "8ad003122ee076587e1d01bbd65048152c59ac07",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80×12 + 87×10 + 86×10 + 25×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 65×10)/100) half-up. Tip 8ad00312 — #1430 Meta CONN-META-DEADEND ON tip (was waiting on DO). Strand % held (no new Measured retest from #1430 alone). Dataset 80 / CC 87 / Isolation 86 Measured FAIL hold / Comms 65 / AI-24 25 held.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-18-morning.json",
-    "latestSnapshotPath": "history/2026-09-19-tip-31951d3a.json",
-    "lastRefreshNote": "Tip changed 8e842c06 → 31951d3a; newly live #1445 (finance forecast saved-months bind); #1430 Meta CONN-META-DEADEND undeployed on staging HEAD; headline held 72%; no strand invent.",
+    "latestSnapshotPath": "history/2026-09-19-tip-8ad00312.json",
+    "lastRefreshNote": "Tip changed 31951d3a → 8ad00312; newly live #1430 (Meta handoff CONN-META-DEADEND); headline held 72%; no strand invent. Evening progress drop posted.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-19T13:19:36.667Z"
+      "checkedAt": "2026-09-19T14:42:49.379Z"
     },
-    "updatedAt": "2026-09-19T13:19:36.667Z",
-    "note": "Live tip 31951d3a (#1445 ON tip). Staging HEAD ahead with #1430 undeployed. Headline 72% held. Prefer not to need import.rollbackBatch.",
+    "updatedAt": "2026-09-19T14:43:35.000Z",
+    "note": "Live tip 8ad00312 (#1430 ON tip). Headline 72% held. Prefer not to need import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L≥1 = 383/413 ≈ 92.7%; L≥2 = 368/413 ≈ 89.1%.",
     "headlineVsCoverage": "Headline ~72% = weighted strand average. Coverage L1%=92.7 / L2%=89.1. Different units.",
     "coverageAfterBackfill": {
@@ -36,14 +36,14 @@
     },
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
-    "commandCentreNote": "Measured bank still tip d5b7d47d: Cluster A 24/24 + B–F FAIL bank (do not invent PASS on new tip). #1424 nine-PR CC batch (incl #1377 MEM-F01, #1405 F-INJ-01, #1406 F-HOW-01, #1415 B-HOW-01, #1412 E-FU-01, #1402 gift-card, #1417/#1416 tool/status, #1413 honest empties) is ON staging HEAD b1ffa5d7 but NOT live — Cluster A + B–F retest LOCKED until DO deploys. Prior #1404 F-ISO-01 is ancestor of live tip. Prefer not to need import.rollbackBatch.",
-    "liveTipNote": "Live tip 31951d3a includes #1445 (bind/explain financial forecast comparisons to their saved months). Ancestry still carries #1436 CC structured-intent outage harden + #1428 GTM CONN-GTM-REFRM. Wake/staging HEAD #1430 (CONN-META-DEADEND Meta handoff) not yet on DigitalOcean.",
-    "checkedAt": "2026-09-19T13:19:36.667Z",
-    "tip": "31951d3a33edd1f478e5ceef1e12187851064e0f",
+    "commandCentreNote": "Measured bank still tip d5b7d47d: Cluster A 24/24 + B–F FAIL bank (do not invent PASS on tip-churn timeouts). #1424 nine-PR CC batch on ancestry. Today's tip-churn A/B–F/unseen runs are not a strand move. Prefer not to need import.rollbackBatch.",
+    "liveTipNote": "Live tip 8ad00312 includes #1430 (hand off to Facebook or say why not — CONN-META-DEADEND). Ancestry still carries #1445 forecast saved-months, #1436 CC structured-intent outage harden, #1428 GTM CONN-GTM-REFRM, #1410 CMS, #1438 F-ISO named refuse, #1434 CCTV.",
+    "checkedAt": "2026-09-19T14:43:35.000Z",
+    "tip": "8ad003122ee076587e1d01bbd65048152c59ac07",
     "morningHeadlinePercent": 73,
-    "compareNote": "Saturday Progress today: morning baseline kept at 73% from history/2026-09-18-morning.json. Now headline held at 72% — tip move 8e842c06→31951d3a (#1445 live; #1430 undeployed) recorded without inventing strand lifts."
+    "compareNote": "Saturday Progress today: morning baseline kept at 73% from history/2026-09-18-morning.json. Now headline held at 72% — tip move 31951d3a→8ad00312 (#1430 live) recorded without inventing strand lifts."
   },
-  "tip": "31951d3a33edd1f478e5ceef1e12187851064e0f",
+  "tip": "8ad003122ee076587e1d01bbd65048152c59ac07",
   "progressToday": {
     "morningHeadlinePercent": 73,
     "nowHeadlinePercent": 72,
@@ -84,11 +84,11 @@
       "comms": 23,
       "headline": -1
     },
-    "plainEnglishDay": "Live staging tip 31951d3a (#1445 financial forecast comparisons bound to their saved months). Overall launch still about 72%. Ancestry still includes #1436 Command Centre structured-intent outage harden and #1428 GTM CONN-GTM-REFRM. #1430 Meta handoff (CONN-META-DEADEND) is on staging HEAD but not on DigitalOcean yet. #1423 Astra accept still Measured PASS on ancestry; #1433 door-access Feel still Measured FAIL; #1438 F-ISO-01 named refuse + #1410 CMS public route on ancestry — Measured retests still owed. Cluster A + B–F retests still owed — no invented PASS. Prefer not to need import.rollbackBatch.",
+    "plainEnglishDay": "Live staging tip 8ad00312 (#1430 Meta CONN-META-DEADEND now live). Overall launch still about 72% — not 80%. Dataset strand is 80% Measured; AI-24 at 25% (weight 15) and Smoke at 55% keep the weighted headline at 72%. Ancestry includes #1445 forecast saved-months, #1436 CC outage harden, #1428 GTM, #1410 CMS, #1438 F-ISO, #1434 CCTV, #1423 Astra PASS, #1433 door Feel FAIL. Command Centre tip-churn banks today do not change the CC strand — hold 87% on last clean Measured. Observe first scans posted; second scan waiting. PA Refrm grant still missing. Prefer not to need import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-18-morning.json",
-    "compareNote": "Saturday Progress today: morning baseline kept at 73% from history/2026-09-18-morning.json. Now headline held at 72% — tip move 8e842c06→31951d3a (#1445 live; #1430 undeployed) recorded without inventing strand lifts.",
+    "compareNote": "Saturday Progress today: morning baseline kept at 73% from history/2026-09-18-morning.json. Now headline held at 72% — tip move 31951d3a→8ad00312 (#1430 live) recorded without inventing strand lifts.",
     "updatedAt": "2026-09-19T13:19:36.667Z",
-    "coverageNote": "Coverage synced to live tip 31951d3a. Newly live: #1445 finance forecast saved-months. Undeployed: #1430 Meta CONN-META-DEADEND. No invent PASS — Feel/Measured retests owed.",
+    "coverageNote": "Coverage synced to live tip 8ad00312. Newly live: #1430 Meta CONN-META-DEADEND. No invent PASS — Meta/Comms Feel+Measured retest owed.",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": {
       "tip": "b1a15f4884555ba94df200a514086230b1e16fbe",
@@ -247,7 +247,7 @@
     },
     "awaitingTipMerges": {
       "stagingHead": "31951d3a33edd1f478e5ceef1e12187851064e0f",
-      "liveTip": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "liveTip": "8ad003122ee076587e1d01bbd65048152c59ac07",
       "undeployed": [
         {
           "sha": "31951d3a33edd1f478e5ceef1e12187851064e0f",
@@ -256,7 +256,7 @@
         }
       ],
       "at": "2026-09-19T12:40:44.618Z",
-      "note": "Live tip 8e842c06 (#1436; includes #1428). Staging HEAD 31951d3a (#1445) ahead — finance forecast Feel/Measured retest locked until DO deploys."
+      "note": "Live tip 8ad00312 (#1430). Staging HEAD matched live tip at stamp time — Meta Feel/Measured retest unlocked."
     },
     "tipMove5a5e939c": {
       "prevTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
@@ -747,7 +747,14 @@
       "note": "DO deployed #1428+#1436; wake was #1445 merge (ahead of live tip). Headline held 72%. Prefer not to need import.rollbackBatch."
     },
     "ancestry1436": "MERGED + LIVE on tip 8e842c06 — CC survive structured-intent model outage (deterministic intent families + 8s extraction race). Cluster A / CC Measured retest owed — do not invent PASS. Not a claim to fix #1439 client-cache regression.",
-    "ancestry1445": "#1445 merge 31951d3a on staging — NOT on live tip 8e842c06 yet. Financial forecast comparisons bound to saved months."
+    "ancestry1445": "#1445 merge 31951d3a on staging — NOT on live tip 8e842c06 yet. Financial forecast comparisons bound to saved months.",
+    "tipMove8ad00312": {
+      "prevTip": "31951d3a33edd1f478e5ceef1e12187851064e0f",
+      "newTip": "8ad003122ee076587e1d01bbd65048152c59ac07",
+      "headlineHeld": 72,
+      "when": "2026-09-19T14:43:35.000Z",
+      "note": "DO deployed #1430; wake was tip move from 31951d3a. Headline held 72%. Comms/Meta retest owed — no invent PASS. Prefer not to need import.rollbackBatch."
+    }
   },
   "strands": [
     {
@@ -777,7 +784,7 @@
       "note": "Dataset Confirm canary PASS tip 205d5bb8 (#1388). Approve path proven for company Admin; Import/Activate/goLive still unproven. Live tip 31951d3a. Prefer not to need import.rollbackBatch.",
       "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip.",
       "lastTestedAt": "2026-09-18",
-      "tipNote": "Dataset Confirm canary PASS still tip 205d5bb8 era — hold 80. Prefer not to need import.rollbackBatch.",
+      "tipNote": "Dataset Confirm canary PASS still tip 205d5bb8 era — hold 80. Live tip 8ad00312. Prefer not to need import.rollbackBatch.",
       "lastRefreshNote": "Tip changed b1ffa5d7 → 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held — Cluster A + B–F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
       "updatedAt": "2026-09-19T11:20:59.180Z"
     },
@@ -813,7 +820,7 @@
       "lastTestedVerdict": "PASS",
       "measured": 100,
       "blocker": "Cluster A 19/24 (MEM-F01 + stalls); B–F locked/parked",
-      "note": "Command Centre ~87% Measured hold. #1436 structured-intent outage harden + #1438 named F-ISO-01 refuse still on tip ancestry of 31951d3a; #1424 still on ancestry. F-ISO-01 Measured retest owed — no invent PASS.",
+      "note": "Command Centre ~87% Measured hold. Tip-churn A/B–F/unseen runs on 19 Sep are not a strand move. Last clean Measured bank tip d5b7d47d. Live tip 8ad00312.",
       "lastTestedAt": "2026-09-18",
       "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip.",
       "tipNote": "Live tip 3ca3046d includes #1424 ancestry (#1423 is Astra, not a CC rebank). Cluster A + B–F Measured retests still owed — hold 87.",
@@ -1002,7 +1009,7 @@
       ],
       "phaseId": "member-commerce",
       "projectWeightPercent": 8,
-      "lastTestedStamp": "df08d3cf38c4105358fb6ae826d6fe01f59e4116",
+      "lastTestedStamp": "31951d3a33edd1f478e5ceef1e12187851064e0f",
       "lastTestedVerdict": "FAIL",
       "coverageFreshness": "stale",
       "note": "Payments ~74% estimate. #1408 Teacher POS cash refuse still on tip ancestry of 31951d3a. #1445 finance forecast saved-months now ON live tip — Feel/Measured finance forecast retest owed. No invent PASS.",
@@ -1045,7 +1052,7 @@
       "lastTestedVerdict": "PASS",
       "coverageFreshness": "stale",
       "lastTestedAt": "2026-09-15",
-      "note": "Findings→Fix estimate 100%. Tip 31951d3a: #1445 live; #1436+#1428+#1410+#1438+#1434+#1426+#1423 on ancestry; #1433 Measured FAIL hold; #1430 undeployed (Meta). No invent PASS from tip move.",
+      "note": "Findings→Fix estimate 100%. Tip 8ad00312: #1430 live; ancestry #1445+#1436+#1428+#1410+#1438+#1434+#1423.",
       "tipNote": "Findings-fix hold 100 estimate — tip stamp only.",
       "lastRefreshNote": "Tip changed b1ffa5d7 → 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held — Cluster A + B–F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
       "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip.",
@@ -1074,21 +1081,21 @@
       "projectWeightPercent": 10,
       "lastTestedStamp": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
       "coverageFreshness": "stale",
-      "note": "65% Measured (proof-inbox re-census earlier on prior tip). Live tip now 31951d3a; hold 65 — no invent PASS. #1430 Meta CONN-META-DEADEND merged to staging but not on DigitalOcean — Meta/comms retest locked until DO deploy.",
+      "note": "65% Measured hold (proof-inbox re-census). Live tip 8ad00312 now includes #1430 Meta CONN-META-DEADEND — Feel/Measured retest owed; do not invent PASS.",
       "measuredNote": "2026-09-19 re-census tip d5b7d47 Bluebird c=150002: 3 PASS / 3 PARTIAL (1B+2C). Evidence /workspace/helgoiq-full-programme-2026-09-17/comms/d5b7d47-recensus/. Drop 2026-09-19-comms-recensus-d5b7d47. Scoring (PASS=100, PARTIAL=30)/6 → 65%.",
       "lastTestedAt": "2026-09-19",
       "lastTestedVerdict": "FAIL",
       "freshnessNote": "Coverage tip 3ca3046d; measured % held until retest on this tip.",
-      "tipNote": "Comms strand held 65 Measured; tip 3ca3046d does not invent a Comms lift.",
+      "tipNote": "#1430 live on 8ad00312; Comms % held at 65 until Measured retest.",
       "lastRefreshNote": "Tip changed b1ffa5d7 → 3ca3046d: #1423 Astra stage4b saved contracts LIVE on DigitalOcean. #1433 door-access F-AD-06 merged on GitHub but not on tip yet. Strand % held — Cluster A + B–F + #1423 formal accept + #1408 POS retests owed; no invented PASS. Prefer not to need import.rollbackBatch.",
       "updatedAt": "2026-09-19T11:20:59.180Z"
     }
   ],
   "health": {
     "overallLaunchPercent": 72,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80×12 + 87×10 + 86×10 + 25×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 65×10)/100) half-up. Tip 31951d3a — #1445 finance forecast saved-months ON tip; #1430 undeployed. Strand % held (no new Measured retest on 31951d3a). Dataset 80 / CC 87 / Isolation 86 Measured FAIL hold / Comms 65 / AI-24 25 held.",
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80×12 + 87×10 + 86×10 + 25×15 + 95×9 + 73×10 + 55×6 + 74×8 + 100×10 + 65×10)/100) half-up. Tip 8ad00312 — #1430 Meta CONN-META-DEADEND ON tip (was waiting on DO). Strand % held (no new Measured retest from #1430 alone). Dataset 80 / CC 87 / Isolation 86 Measured FAIL hold / Comms 65 / AI-24 25 held.",
     "readinessLabel": "~72%",
-    "plainSummary": "Launch readiness about 72%. Live tip 57424ace = #1410 CMS Live Approval Hub public route. #1428 GTM CONN-GTM-REFRM on staging only. #1423 Astra accept Measured PASS on ancestry. #1433 door-access Feel Measured FAIL. #1438 F-ISO-01 retest owed. Prefer not to need import.rollbackBatch.",
+    "plainSummary": "Launch readiness about 72% — not 80%. Live tip 8ad00312 = #1430 Meta CONN-META-DEADEND. Dataset strand 80% Measured; weighted headline held. #1423 Astra accept Measured PASS on ancestry; #1433 door-access Feel still Measured FAIL. Prefer not to need import.rollbackBatch.",
     "strengths": [
       "CC rebank tip 205d5bb8: A 24/24 + B–F 23/30 (47/54) → strand 87 Measured held",
       "Dataset Confirm canary PASS tip 205d5bb8 — company Admin Approve (#1388) held at 80",
@@ -1129,7 +1136,7 @@
     "refreshWarning": null,
     "headlinePercent": 72,
     "status": "at-risk",
-    "plain": "Launch readiness about 72%. Live tip 57424ace = #1410 CMS Live Approval Hub public route. #1428 GTM CONN-GTM-REFRM on staging only. #1423 Astra accept Measured PASS on ancestry. #1433 door-access Feel Measured FAIL. #1438 F-ISO-01 retest owed. Prefer not to need import.rollbackBatch.",
+    "plain": "Launch readiness about 72% — not 80%. Live tip 8ad00312 = #1430 Meta CONN-META-DEADEND. Dataset strand 80% Measured; weighted headline held. #1423 Astra accept Measured PASS on ancestry; #1433 door-access Feel still Measured FAIL. Prefer not to need import.rollbackBatch.",
     "gaps": [
       "Staging HEAD ahead of live (#1428 undeployed)",
       "ISO-18 + ISO-29 Measured FAIL hold",
@@ -1137,12 +1144,12 @@
       "#1410 Feel/Measured public CMS route retest owed"
     ],
     "tipChange": true,
-    "note": "Headline held 72% on tip 31951d3a. Newly live #1445; undeployed #1430. No strand invent.",
+    "note": "Headline held 72% on tip 8ad00312. Newly live #1430. No strand invent. Evening progress answered: not 80%.",
     "label": "~72% — tip 57424ace (#1410 live; #1428 waiting)",
-    "dataAsOf": "2026-09-19T12:05:21.347Z",
-    "buildStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
-    "tip": "31951d3a33edd1f478e5ceef1e12187851064e0f",
-    "plainHeadline": "72% held — tip 57424ace (#1410 live / #1428 undeployed)",
+    "dataAsOf": "2026-09-19T14:43:35.000Z",
+    "buildStamp": "8ad003122ee076587e1d01bbd65048152c59ac07",
+    "tip": "8ad003122ee076587e1d01bbd65048152c59ac07",
+    "plainHeadline": "72% held — tip 8ad00312 (#1430 live); not 80% overall",
     "blockers": [
       "#1428 undeployed on DO — blocks GTM CONN-GTM-REFRM Measured retest",
       "ISO-18 + ISO-29 Measured FAIL hold after #1376",
@@ -1151,7 +1158,7 @@
     ],
     "updatedAt": "2026-09-19T13:19:36.667Z",
     "summary": "Launch readiness about 72%. Live tip 57424ace = #1410 CMS Live Approval Hub public route. #1428 GTM CONN-GTM-REFRM on staging only. #1423 Astra accept Measured PASS on ancestry. #1433 door-access Feel Measured FAIL. #1438 F-ISO-01 retest owed. Prefer not to need import.rollbackBatch.",
-    "liveTip": "57424ace8564ccbcd6bd891b30710536853ba1e6"
+    "liveTip": "8ad003122ee076587e1d01bbd65048152c59ac07"
   },
   "actions": [
     {

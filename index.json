@@ -1,6 +1,40 @@
 {
-  "updatedAt": "2026-09-19T13:19:47.103Z",
+  "updatedAt": "2026-09-19T14:43:36.629Z",
   "drops": [
+    {
+      "id": "2026-09-19-launch-hub-tip-8ad00312-1430-meta-live-headline-",
+      "title": "Launch Hub tip 8ad00312 — #1430 Meta live; headline 72% held",
+      "date": "2026-09-19",
+      "summary": "Tip moved to 8ad00312 with #1430 Meta CONN-META-DEADEND live. Headline held 72%. No strand invent.",
+      "plainEnglish": "Staging tip moved. Meta handoff #1430 is live. Overall launch number stayed at 72% until we re-measure.",
+      "tags": [
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-launch-hub-tip-8ad00312-1430-meta-live-headline-/tip-8ad00312.md"
+      ],
+      "tip": "8ad003122ee076587e1d01bbd65048152c59ac07"
+    },
+    {
+      "id": "2026-09-19-evening-progress-19-sep-headline-72-not-80-tip-8",
+      "title": "Evening progress 19 Sep — headline 72% (not 80%); tip 8ad00312 #1430 live",
+      "date": "2026-09-19",
+      "summary": "Overall launch still 72%, not 80%. Dataset strand is 80% Measured; AI-24 at 25% keeps the weighted headline down. #1430 Meta now live; strands held.",
+      "plainEnglish": "We are not at 80% yet. Overall readiness is still about 72%. The Dataset piece alone is at 80%, but AI and a few other strands keep the weighted total at 72%. Meta handoff #1430 just went live on staging.",
+      "tags": [
+        "status",
+        "findings",
+        "command-centre"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-evening-progress-19-sep-headline-72-not-80-tip-8/EVENING-PROGRESS.md"
+      ],
+      "tip": "8ad003122ee076587e1d01bbd65048152c59ac07"
+    },
     {
       "id": "2026-09-19-launch-hub-tip-31951d3a-1445-live-1430-wait",
       "title": "Launch Hub tip 31951d3a — #1445 live, #1430 waiting",
