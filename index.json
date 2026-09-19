@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-19T11:59:45.625Z",
+  "updatedAt": "2026-09-19T12:40:54.452Z",
   "drops": [
+    {
+      "id": "2026-09-19-launch-hub-tip-8e842c06-1428-1436-live-1445-wait",
+      "title": "Launch Hub tip 8e842c06 (#1428+#1436 live, #1445 waiting)",
+      "date": "2026-09-19",
+      "summary": "Tip 57424ace→8e842c06: #1428 GTM + #1436 CC outage harden live; #1445 undeployed; headline held 72%",
+      "plainEnglish": "Tip 57424ace→8e842c06: #1428 GTM + #1436 CC outage harden live; #1445 undeployed; headline held 72%",
+      "tags": [
+        "status",
+        "command-centre",
+        "isolation",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-launch-hub-tip-8e842c06-1428-1436-live-1445-wait/tip-8e842c06.md"
+      ],
+      "tip": "8e842c0678b324fa957000f7ba382b35f489b8ca"
+    },
     {
       "id": "2026-09-19-tip-fc65b5d0-1438-live-1410-waiting",
       "title": "Tip fc65b5d0 — #1438 live; #1410 waiting",

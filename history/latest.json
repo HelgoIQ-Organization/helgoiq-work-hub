@@ -1,22 +1,22 @@
 {
-  "updatedAt": "2026-09-19T12:05:21.347Z",
+  "updatedAt": "2026-09-19T12:40:44.618Z",
   "meta": {
-    "dataAsOf": "2026-09-19T12:05:21.347Z",
-    "buildStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
-    "liveTip": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+    "dataAsOf": "2026-09-19T12:40:44.618Z",
+    "buildStamp": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+    "liveTip": "8e842c0678b324fa957000f7ba382b35f489b8ca",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80\u00d712 + 87\u00d710 + 86\u00d710 + 25\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 74\u00d78 + 100\u00d710 + 65\u00d710)/100) half-up. Tip fc65b5d0 \u2014 #1438 F-ISO-01 named refuse ON tip; #1410 undeployed. Strand % held (no new Measured retest on fc65b5d0). Dataset 80 / CC 87 / Isolation 86 Measured FAIL hold / Comms 65 / AI-24 25 held.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness \u2014 never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-18-morning.json",
     "latestSnapshotPath": "history/2026-09-18-tip-d5b7d47d-cluster-a.json",
-    "lastRefreshNote": "Tip changed fc65b5d0 \u2192 57424ace (#1410 CMS Live Approval Hub public route NOW LIVE). #1428 GTM CONN-GTM-REFRM merged on staging HEAD f6460971 but not on DigitalOcean yet. Headline held 72%. No invented Measured PASS.",
+    "lastRefreshNote": "Tip changed 57424ace \u2192 8e842c06; newly live #1428+#1436; #1445 undeployed; headline held 72%; no strand invent.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-19T12:03:57.770Z"
+      "checkedAt": "2026-09-19T12:39:44.266Z"
     },
-    "updatedAt": "2026-09-19T12:05:21.347Z",
+    "updatedAt": "2026-09-19T12:40:44.618Z",
     "note": "Live tip fc65b5d0 (#1438 ON tip). Staging HEAD ahead with #1410 undeployed. Headline 72% held. Prefer not to need import.rollbackBatch.",
     "coveragePercentFormula": "Coverage tab: L\u22651 = 383/413 \u2248 92.7%; L\u22652 = 368/413 \u2248 89.1%.",
     "headlineVsCoverage": "Headline ~72% = weighted strand average. Coverage L1%=92.7 / L2%=89.1. Different units.",
@@ -37,13 +37,13 @@
     "coverageL1Pct": 92.7,
     "coverageL2Pct": 89.1,
     "commandCentreNote": "Measured bank still tip d5b7d47d: Cluster A 24/24 + B\u2013F FAIL bank (do not invent PASS on new tip). #1424 nine-PR CC batch (incl #1377 MEM-F01, #1405 F-INJ-01, #1406 F-HOW-01, #1415 B-HOW-01, #1412 E-FU-01, #1402 gift-card, #1417/#1416 tool/status, #1413 honest empties) is ON staging HEAD b1ffa5d7 but NOT live \u2014 Cluster A + B\u2013F retest LOCKED until DO deploys. Prior #1404 F-ISO-01 is ancestor of live tip. Prefer not to need import.rollbackBatch.",
-    "liveTipNote": "Live tip 57424ace = #1410 CMS Live Approval Hub pages resolve on public CMS route. Staging HEAD f6460971 = #1428 GTM shared-brand website fix \u2014 undeployed.",
-    "checkedAt": "2026-09-19T12:05:21.347Z",
-    "tip": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+    "liveTipNote": "Live tip 8e842c06 includes #1436 (CC structured-intent outage harden) and ancestry #1428 (GTM CONN-GTM-REFRM). Wake PR #1445 still on staging HEAD only.",
+    "checkedAt": "2026-09-19T12:40:44.618Z",
+    "tip": "8e842c0678b324fa957000f7ba382b35f489b8ca",
     "morningHeadlinePercent": 73,
-    "compareNote": "Saturday Progress today: morning baseline kept at 73% from history/2026-09-18-morning.json. Now headline held at 72% \u2014 tip move fc65b5d0\u219257424ace (#1410 live) recorded without inventing strand lifts."
+    "compareNote": "Saturday Progress today: morning baseline kept at 73% from history/2026-09-18-morning.json. Now headline held at 72% \u2014 tip move 57424ace\u21928e842c06 (#1428+#1436 live) recorded without inventing strand lifts."
   },
-  "tip": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+  "tip": "8e842c0678b324fa957000f7ba382b35f489b8ca",
   "progressToday": {
     "morningHeadlinePercent": 73,
     "nowHeadlinePercent": 72,
@@ -84,11 +84,11 @@
       "comms": 23,
       "headline": -1
     },
-    "plainEnglishDay": "Live staging tip 57424ace (#1410 CMS Live Approval Hub public route). Overall launch still about 72%. #1428 GTM never show/verify against another studio website (CONN-GTM-REFRM) merged to staging but not on DigitalOcean yet. #1423 Astra accept still Measured PASS on ancestry; #1433 door-access Feel still Measured FAIL; #1438 F-ISO-01 named refuse on ancestry \u2014 Measured retest still owed. Cluster A + B\u2013F retests still owed \u2014 no invented PASS. Prefer not to need import.rollbackBatch.",
+    "plainEnglishDay": "Live staging tip 8e842c06 (#1436 Command Centre survive structured-intent model outage; includes #1428 GTM CONN-GTM-REFRM). Overall launch still about 72%. #1445 financial forecast saved-months bind merged to staging but not on DigitalOcean yet. #1423 Astra accept still Measured PASS on ancestry; #1433 door-access Feel still Measured FAIL; #1438 F-ISO-01 named refuse + #1410 CMS public route on ancestry \u2014 Measured retests still owed. Cluster A + B\u2013F retests still owed \u2014 no invented PASS. Prefer not to need import.rollbackBatch.",
     "keptMorningSnapshotPath": "history/2026-09-18-morning.json",
-    "compareNote": "Saturday Progress today: morning baseline kept at 73% from history/2026-09-18-morning.json. Now headline held at 72% \u2014 tip move fc65b5d0\u219257424ace (#1410 live) recorded without inventing strand lifts.",
-    "updatedAt": "2026-09-19T12:05:21.347Z",
-    "coverageNote": "Coverage synced to live tip 57424ace. #1410 newly live; Feel/Measured CMS public-route retest owed \u2014 no invent PASS. Prior #1423 PASS / #1433 FAIL / #1438 F-ISO-01 retest-owed / #1434 on ancestry holds. #1428 undeployed.",
+    "compareNote": "Saturday Progress today: morning baseline kept at 73% from history/2026-09-18-morning.json. Now headline held at 72% \u2014 tip move 57424ace\u21928e842c06 (#1428+#1436 live) recorded without inventing strand lifts.",
+    "updatedAt": "2026-09-19T12:40:44.618Z",
+    "coverageNote": "Coverage synced to live tip 8e842c06. Newly live: #1428 GTM never show/verify against another studio website; #1436 CC survive structured-intent model outage. #1445 undeployed. No invent PASS \u2014 Feel/Measured retests owed.",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": {
       "tip": "b1a15f4884555ba94df200a514086230b1e16fbe",
@@ -246,17 +246,17 @@
       "note": "Estimate bumps only (ai-85 56\u219260, findings-fix 93\u219295). #1272 candidate for AI-042 MRR crash. Bluebird retests not run."
     },
     "awaitingTipMerges": {
-      "stagingHead": "f6460971820a2e2158a1562a478f6a7f43979421",
-      "liveTip": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "stagingHead": "31951d3a33edd1f478e5ceef1e12187851064e0f",
+      "liveTip": "8e842c0678b324fa957000f7ba382b35f489b8ca",
       "undeployed": [
         {
-          "sha": "f6460971820a2e2158a1562a478f6a7f43979421",
-          "pr": 1428,
-          "title": "fix(gtm): never show or verify against another studio's website (CONN-GTM-REFRM)"
+          "sha": "31951d3a33edd1f478e5ceef1e12187851064e0f",
+          "pr": 1445,
+          "title": "fix: bind financial forecast comparisons to their saved months"
         }
       ],
-      "at": "2026-09-19T12:05:21.347Z",
-      "note": "Live tip 57424ace (#1410). Staging HEAD f6460971 (#1428) ahead \u2014 GTM shared-brand Feel/isolation retest locked until DO deploys."
+      "at": "2026-09-19T12:40:44.618Z",
+      "note": "Live tip 8e842c06 (#1436; includes #1428). Staging HEAD 31951d3a (#1445) ahead \u2014 finance forecast Feel/Measured retest locked until DO deploys."
     },
     "tipMove5a5e939c": {
       "prevTip": "1fa31d1404b72d18c945143dc420bf49cca0a286",
@@ -707,7 +707,7 @@
       },
       "note": "DO deployed #1438; wake was #1410 merge (ahead of live tip). Prefer not to need import.rollbackBatch."
     },
-    "ancestry1410": "MERGED + LIVE on tip 57424ace \u2014 CMS Live Approval Hub public route resolve. Feel/Measured retest owed \u2014 do not invent PASS.",
+    "ancestry1410": "MERGED + LIVE on tip ancestry of 8e842c06 (was tip 57424ace) \u2014 CMS Live Approval Hub public route resolve. Feel/Measured retest owed \u2014 do not invent PASS.",
     "tipMove57424ace": {
       "from": "fc65b5d0d6684019f8b6538728e07919b466f0bd",
       "to": "57424ace8564ccbcd6bd891b30710536853ba1e6",
@@ -726,7 +726,28 @@
       },
       "note": "DO deployed #1410; wake was #1428 merge (ahead of live tip). Headline held 72%. Prefer not to need import.rollbackBatch."
     },
-    "ancestry1428": "#1428 merge f6460971 on staging \u2014 NOT on live tip 57424ace yet. CONN-GTM-REFRM: never show/verify against another studio website."
+    "ancestry1428": "MERGED + LIVE on tip ancestry of 8e842c06 (commit f6460971) \u2014 CONN-GTM-REFRM: never show/verify against another studio website. Feel/isolation retest owed \u2014 do not invent PASS.",
+    "tipMove8e842c06": {
+      "from": "57424ace8564ccbcd6bd891b30710536853ba1e6",
+      "to": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "at": "2026-09-19T12:40:44.618Z",
+      "newlyLive": [
+        "#1428 GTM CONN-GTM-REFRM never show/verify against another studio website",
+        "#1436 Command Centre survive structured-intent model outage"
+      ],
+      "mergedNotLive": [
+        "#1445 bind financial forecast comparisons to their saved months"
+      ],
+      "headlineHeld": 72,
+      "trigger": {
+        "event": "pr-merged",
+        "pr": 1445,
+        "note": "Wake was #1445 merge; live /api/version already at #1436 (8e842c06); #1445 still undeployed on staging HEAD 31951d3a."
+      },
+      "note": "DO deployed #1428+#1436; wake was #1445 merge (ahead of live tip). Headline held 72%. Prefer not to need import.rollbackBatch."
+    },
+    "ancestry1436": "MERGED + LIVE on tip 8e842c06 \u2014 CC survive structured-intent model outage (deterministic intent families + 8s extraction race). Cluster A / CC Measured retest owed \u2014 do not invent PASS. Not a claim to fix #1439 client-cache regression.",
+    "ancestry1445": "#1445 merge 31951d3a on staging \u2014 NOT on live tip 8e842c06 yet. Financial forecast comparisons bound to saved months."
   },
   "strands": [
     {
@@ -1135,52 +1156,42 @@
   "actions": [
     {
       "priority": "PRIMARY",
-      "title": "PRIMARY \u2014 Feel/Measured retest #1410 CMS Live Approval Hub public route on live tip 57424ace \u2014 close only on Measured PASS (real HTML, not SPA 200)",
+      "title": "PRIMARY \u2014 Feel/isolation retest #1428 GTM CONN-GTM-REFRM on live tip 8e842c06 \u2014 never show/verify against another studio website; close only on Measured PASS",
       "status": "open"
     },
     {
       "priority": "PRIMARY",
-      "title": "PRIMARY \u2014 Retest F-ISO-01 on tip ancestry of 57424ace (#1438 named cross_tenant_refuse) \u2014 close only on Measured PASS",
+      "title": "PRIMARY \u2014 Retest Cluster A + Command Centre bank on tip 8e842c06 (#1436 structured-intent outage harden live) \u2014 close only on Measured PASS (no invent)",
       "status": "open"
     },
     {
       "priority": "PRIMARY",
-      "title": "PRIMARY \u2014 Retest Cluster A + B\u2013F on tip ancestry of 57424ace (#1424 on ancestry) \u2014 close only on Measured PASS",
+      "title": "PRIMARY \u2014 Retest F-ISO-01 on tip ancestry of 8e842c06 (#1438 named cross_tenant_refuse) \u2014 close only on Measured PASS",
       "status": "open"
     },
     {
       "priority": "PRIMARY",
-      "title": "PRIMARY \u2014 Fix #1433 door-access Feel FAIL: Status still shows green Normal/Enabled on empty telemetry",
+      "title": "PRIMARY \u2014 Feel/Measured retest #1410 CMS Live Approval Hub public route on ancestry of 8e842c06 \u2014 close only on Measured PASS (real HTML, not SPA 200)",
       "status": "open"
     },
     {
-      "priority": "PRIMARY",
-      "title": "PRIMARY \u2014 Feel/Measured retest #1434 CCTV F-AD-07 empty states (on ancestry of 57424ace) \u2014 no invent PASS",
+      "priority": "NEXT",
+      "title": "NEXT \u2014 Fix #1433 door-access Feel FAIL (green Normal/Enabled on empty Status) then retest",
       "status": "open"
     },
     {
-      "priority": "PRIMARY",
-      "title": "PRIMARY \u2014 Retest teacher POS cash refuse on tip ancestry of 57424ace (#1408)",
+      "priority": "NEXT",
+      "title": "NEXT \u2014 Feel retest #1434 CCTV F-AD-07 empty states on ancestry",
       "status": "open"
     },
     {
-      "priority": "PRIMARY",
-      "title": "PRIMARY \u2014 Teacher My Performance route Feel retest for #1426 T-PERF-ROUTE (on ancestry of 57424ace) \u2014 no invent PASS",
+      "priority": "NEXT",
+      "title": "NEXT \u2014 Wait for DO deploy of #1445 (31951d3a) then finance forecast saved-months retest",
       "status": "open"
     },
     {
-      "priority": "SECONDARY",
-      "title": "SECONDARY \u2014 Wait for DO to deploy #1428 GTM CONN-GTM-REFRM (staging f6460971; not live yet)",
-      "status": "open"
-    },
-    {
-      "priority": "SECONDARY",
-      "title": "SECONDARY \u2014 ISO-18/29 Bluebird\u2194Refrm still Measured FAIL hold (#1376 on tip; #1425+#1428 still OPEN)",
-      "status": "open"
-    },
-    {
-      "priority": "SECONDARY",
-      "title": "SECONDARY \u2014 Prefer not to need import.rollbackBatch",
+      "priority": "HOLD",
+      "title": "HOLD \u2014 Prefer not to need import.rollbackBatch",
       "status": "open"
     }
   ],
@@ -1251,16 +1262,21 @@
     }
   ],
   "notes": [
+    {
+      "at": "2026-09-19T12:40:44.618Z",
+      "text": "Tip move 57424ace\u21928e842c06: #1428+#1436 live; #1445 waiting on DO. Headline held 72%."
+    },
     "Tip refresh fc65b5d0\u219257424ace at ~15:04 Europe/Athens \u2014 #1410 live. Headline held 72%.",
     "Wake was #1428 merge; that PR is staging-only until DO deploys.",
     "No invented Measured PASS from tip move alone."
   ],
   "engineeringActions": [
-    "Feel/Measured retest #1410 CMS Live Approval Hub on tip 57424ace (Measured only)",
-    "Retest F-ISO-01 / Cluster A + B\u2013F on ancestry of 57424ace (Measured only)",
+    "Feel/isolation retest #1428 GTM CONN-GTM-REFRM on tip 8e842c06 (Measured only)",
+    "Retest Cluster A / CC bank on tip 8e842c06 after #1436 (Measured only)",
+    "Retest F-ISO-01 / #1410 CMS on ancestry of 8e842c06 (Measured only)",
     "Fix #1433 door-access Feel FAIL (green Normal/Enabled on empty Status)",
-    "Feel retest #1434 CCTV F-AD-07 on ancestry of 57424ace",
-    "Wait for DO deploy of #1428 (f6460971) then GTM shared-brand retest",
+    "Feel retest #1434 CCTV F-AD-07 on ancestry",
+    "Wait for DO deploy of #1445 then finance forecast retest",
     "Prefer not to need import.rollbackBatch"
   ]
 }

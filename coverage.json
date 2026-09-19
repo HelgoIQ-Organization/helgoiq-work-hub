@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-19T12:04:29.365Z",
-  "liveTip": "57424ace8564ccbcd6bd891b30710536853ba1e6",
-  "liveTipShort": "57424ace",
+  "updatedAt": "2026-09-19T12:40:15.867Z",
+  "liveTip": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+  "liveTipShort": "8e842c06",
   "refreshLag": {
     "tipChange": "near-real-time (refresh-dashboard.mjs when /api/version tip changes)",
     "coverageSync": "≤15m when the 15-minute routine is wired",
@@ -16,7 +16,7 @@
     "issue1180Error": null,
     "issue1180Comments": 50,
     "claudeReviewError": null,
-    "claudeReviews": 39,
+    "claudeReviews": 40,
     "sources": [
       {
         "id": 1,
@@ -41,7 +41,7 @@
         "name": "Claude Code PR review comments",
         "ok": true,
         "skipped": false,
-        "count": 39
+        "count": 40
       }
     ]
   },
@@ -49,17 +49,31 @@
     "strands": 10,
     "strandsStaleVsLiveTip": 10,
     "strandsCurrent": 0,
-    "pages": 409,
+    "pages": 410,
     "pagesStaleVsLiveTip": 359,
-    "claudeReviews": 39
+    "claudeReviews": 40
   },
   "recentMergedPrs": [
+    {
+      "number": 1445,
+      "title": "fix: explain saved financial forecast months consistently",
+      "mergedAt": "2026-09-19T12:38:32Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1445",
+      "mergeSha": "31951d3a33edd1f478e5ceef1e12187851064e0f"
+    },
     {
       "number": 1438,
       "title": "fix(command-centre): name cross-tenant fact refusal",
       "mergedAt": "2026-09-19T11:19:20Z",
       "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1438",
       "mergeSha": "fc65b5d0d6684019f8b6538728e07919b466f0bd"
+    },
+    {
+      "number": 1436,
+      "title": "fix(command-centre): survive structured-intent model outage",
+      "mergedAt": "2026-09-19T12:08:04Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436",
+      "mergeSha": "8e842c0678b324fa957000f7ba382b35f489b8ca"
     },
     {
       "number": 1434,
@@ -179,23 +193,24 @@
       "mergedAt": "2026-09-18T07:51:44Z",
       "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1403",
       "mergeSha": "e4b3f719129c004523b05bc9b288a264fa7b2a7b"
-    },
-    {
-      "number": 1401,
-      "title": "Command Centre: scoped two-studio ledger truth for D-RI-01",
-      "mergedAt": "2026-09-18T15:31:53Z",
-      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401",
-      "mergeSha": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817"
-    },
-    {
-      "number": 1400,
-      "title": "fix(admin): restore /admin/home as alias to Workspace Launcher",
-      "mergedAt": "2026-09-18T04:29:41Z",
-      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1400",
-      "mergeSha": "718c8c9cda33b0dadd36aa56f4ef2236b482a96d"
     }
   ],
   "claudeReviews": [
+    {
+      "id": "claude-pr-1445-5741730867",
+      "pr": 1445,
+      "prTitle": "fix: explain saved financial forecast months consistently",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1445",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1445#issuecomment-5741730867",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-19T12:09:28Z",
+      "mergeSha": "31951d3a33edd1f478e5ceef1e12187851064e0f",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "isolation",
+      "excerpt": "## Claude Code verdict: **PASS** at `3ba74555`",
+      "source": "claude-pr-review"
+    },
     {
       "id": "claude-pr-1438-5741391127",
       "pr": 1438,
@@ -209,6 +224,96 @@
       "verdict": "PASS",
       "strandId": "command-centre",
       "excerpt": "## Claude Code verdict: **PASS** at `f286b1aa`",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5740548937",
+      "pr": 1436,
+      "prTitle": "fix(command-centre): survive structured-intent model outage",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5740548937",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-19T08:41:34Z",
+      "mergeSha": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "command-centre",
+      "excerpt": "Claude Code: please review #1436 at exact head 0a126ad591919b55dbf70d55ff92cc0767c27dac. Live post-#1424 cdbff449 is honest A1/24 and B–F1/30; pre-evidence refusals complete while ",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5740677608",
+      "pr": 1436,
+      "prTitle": "fix(command-centre): survive structured-intent model outage",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5740677608",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-19T09:09:17Z",
+      "mergeSha": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "path": "",
+      "verdict": "",
+      "strandId": "command-centre",
+      "excerpt": "Claude Code: please re-verify the new exact head 830f5c70b4f629e63cc1188ee23ca41ae106a80a. The added commit gives JSON-only structured extraction a hard two-second settlement bound",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5740693573",
+      "pr": 1436,
+      "prTitle": "fix(command-centre): survive structured-intent model outage",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5740693573",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-19T09:12:47Z",
+      "mergeSha": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "path": "",
+      "verdict": "",
+      "strandId": "command-centre",
+      "excerpt": "Claude Code: please re-verify exact head 0bf4cce0b6210c6a42c1321afcf92db4b6819766. This adds the missing end-to-end control: a provider promise that never settles is exercised thro",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5740752507",
+      "pr": 1436,
+      "prTitle": "fix(command-centre): survive structured-intent model outage",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5740752507",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-19T09:25:39Z",
+      "mergeSha": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "path": "",
+      "verdict": "FAIL",
+      "strandId": "command-centre",
+      "excerpt": "@claude Review PR #1436 at exact head 0bf4cce0b6210c6a42c1321afcf92db4b6819766; verdict only, do not change or merge it.",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5741391266",
+      "pr": 1436,
+      "prTitle": "fix(command-centre): survive structured-intent model outage",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5741391266",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-19T11:18:41Z",
+      "mergeSha": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "path": "",
+      "verdict": "FAIL",
+      "strandId": "command-centre",
+      "excerpt": "## Claude Code verdict: **FAIL** at `0bf4cce0` — one targeted correction; the rest is good",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5741712673",
+      "pr": 1436,
+      "prTitle": "fix(command-centre): survive structured-intent model outage",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5741712673",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-19T12:06:36Z",
+      "mergeSha": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "path": "",
+      "verdict": "FAIL",
+      "strandId": "command-centre",
+      "excerpt": "## Claude Code verdict: **PASS** at `a2341cc4`",
       "source": "claude-pr-review"
     },
     {
@@ -690,96 +795,6 @@
       "strandId": "isolation",
       "excerpt": "## Claude Code verdict: **PASS** at `c18c1ba11f92759f2e8fdb1344329b63c2f2d14a`",
       "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1401-5721003786",
-      "pr": 1401,
-      "prTitle": "Command Centre: scoped two-studio ledger truth for D-RI-01",
-      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401",
-      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401#issuecomment-5721003786",
-      "author": "declaneryan71",
-      "createdAt": "2026-09-17T20:46:48Z",
-      "mergeSha": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817",
-      "path": "",
-      "verdict": "",
-      "strandId": "",
-      "excerpt": "Claude Code: verify exact head 881652ea02de1294ff82979556cac3bfede2b28e after hosted CI is green. New D-RI-01 direct tool regression failed before implementation and passed before ",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1401-5725247362",
-      "pr": 1401,
-      "prTitle": "Command Centre: scoped two-studio ledger truth for D-RI-01",
-      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401",
-      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401#issuecomment-5725247362",
-      "author": "declaneryan71",
-      "createdAt": "2026-09-18T04:40:44Z",
-      "mergeSha": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817",
-      "path": "",
-      "verdict": "PASS",
-      "strandId": "payments",
-      "excerpt": "## Claude Code verdict: **PASS** at `881652ea02de1294ff82979556cac3bfede2b28e`",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1401-5725354304",
-      "pr": 1401,
-      "prTitle": "Command Centre: scoped two-studio ledger truth for D-RI-01",
-      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401",
-      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401#issuecomment-5725354304",
-      "author": "declaneryan71",
-      "createdAt": "2026-09-18T04:53:57Z",
-      "mergeSha": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817",
-      "path": "",
-      "verdict": "PASS",
-      "strandId": "",
-      "excerpt": "Rebased onto staging 0507113fb. New head: 4f600db90fed89b8b15681f11ccda8610374fb03. Claude Code: please re-verify at this exact head; the PASS at 881652ea is not authority for conf",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1401-5731938402",
-      "pr": 1401,
-      "prTitle": "Command Centre: scoped two-studio ledger truth for D-RI-01",
-      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401",
-      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401#issuecomment-5731938402",
-      "author": "declaneryan71",
-      "createdAt": "2026-09-18T15:05:02Z",
-      "mergeSha": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817",
-      "path": "",
-      "verdict": "PASS",
-      "strandId": "",
-      "excerpt": "Claude Code: #1401's remote head changed to 5cb401f1eefa057f5703a69048c88012d8c9252c (parent is current staging205d5bb897fa84c76f2af92b2cad16b568f1cca2). Please verify this NEW exa",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1401-5732265907",
-      "pr": 1401,
-      "prTitle": "Command Centre: scoped two-studio ledger truth for D-RI-01",
-      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401",
-      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401#issuecomment-5732265907",
-      "author": "declaneryan71",
-      "createdAt": "2026-09-18T15:31:22Z",
-      "mergeSha": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817",
-      "path": "",
-      "verdict": "PASS",
-      "strandId": "",
-      "excerpt": "## Claude Code verdict: **PASS** at `5cb401f1`",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1400-5725132148",
-      "pr": 1400,
-      "prTitle": "fix(admin): restore /admin/home as alias to Workspace Launcher",
-      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1400",
-      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1400#issuecomment-5725132148",
-      "author": "declaneryan71",
-      "createdAt": "2026-09-18T04:24:46Z",
-      "mergeSha": "718c8c9cda33b0dadd36aa56f4ef2236b482a96d",
-      "path": "",
-      "verdict": "PASS",
-      "strandId": "",
-      "excerpt": "## Claude Code verdict: **PASS** at `431cb9d64db515064036a95cd2bd3d89dbe5030e`",
-      "source": "claude-pr-review"
     }
   ],
   "strands": [
@@ -803,7 +818,7 @@
       "verdict": "PASS",
       "freshness": "stale",
       "evidenceDropId": "2026-09-19-cc-watch-1424-retest-tip-cdbff449-a-1-24-bf-1-30",
-      "claudeReviewCount": 5,
+      "claudeReviewCount": 11,
       "basis": "measured",
       "percent": 87
     },
@@ -815,7 +830,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-19-iso-1376-miss-d5b7d47",
-      "claudeReviewCount": 5,
+      "claudeReviewCount": 6,
       "basis": "measured",
       "percent": 86
     },
@@ -875,7 +890,7 @@
       "verdict": "FAIL",
       "freshness": "stale",
       "evidenceDropId": "2026-09-19-launch-hub-tip-df08d3cf-1408-live-1424-undeployed",
-      "claudeReviewCount": 1,
+      "claudeReviewCount": 0,
       "basis": "estimate",
       "percent": 74
     },
@@ -4976,6 +4991,19 @@
       "evidenceDropId": "tmp-tip-a3a0e207"
     },
     {
+      "id": "claude-pr-1445-5741730867",
+      "name": "## Claude Code verdict: **PASS** at `3ba74555`",
+      "route": "",
+      "strandId": "isolation",
+      "lastTestedStamp": "31951d3a33edd1f478e5ceef1e12187851064e0f",
+      "lastTestedAt": "2026-09-19T12:09:28Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1445#issuecomment-5741730867",
+      "source": "claude-pr-review"
+    },
+    {
       "id": "claude-pr-1438-5741391127",
       "name": "## Claude Code verdict: **PASS** at `f286b1aa`",
       "route": "",
@@ -4986,6 +5014,84 @@
       "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1438#issuecomment-5741391127",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5740548937",
+      "name": "Claude Code: please review #1436 at exact head 0a126ad591919b55dbf70d55ff92cc0767c27dac. Live post-#1424 cdbff449 is honest A1/24 and B–F1/30; pre-evidence refusals complete while ",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "lastTestedAt": "2026-09-19T08:41:34Z",
+      "verdict": "PASS",
+      "freshness": "current",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5740548937",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5740677608",
+      "name": "Claude Code: please re-verify the new exact head 830f5c70b4f629e63cc1188ee23ca41ae106a80a. The added commit gives JSON-only structured extraction a hard two-second settlement bound",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "lastTestedAt": "2026-09-19T09:09:17Z",
+      "verdict": "",
+      "freshness": "current",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5740677608",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5740693573",
+      "name": "Claude Code: please re-verify exact head 0bf4cce0b6210c6a42c1321afcf92db4b6819766. This adds the missing end-to-end control: a provider promise that never settles is exercised thro",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "lastTestedAt": "2026-09-19T09:12:47Z",
+      "verdict": "",
+      "freshness": "current",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5740693573",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5740752507",
+      "name": "@claude Review PR #1436 at exact head 0bf4cce0b6210c6a42c1321afcf92db4b6819766; verdict only, do not change or merge it.",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "lastTestedAt": "2026-09-19T09:25:39Z",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5740752507",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5741391266",
+      "name": "## Claude Code verdict: **FAIL** at `0bf4cce0` — one targeted correction; the rest is good",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "lastTestedAt": "2026-09-19T11:18:41Z",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5741391266",
+      "source": "claude-pr-review"
+    },
+    {
+      "id": "claude-pr-1436-5741712673",
+      "name": "## Claude Code verdict: **PASS** at `a2341cc4`",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "8e842c0678b324fa957000f7ba382b35f489b8ca",
+      "lastTestedAt": "2026-09-19T12:06:36Z",
+      "verdict": "FAIL",
+      "freshness": "current",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1436#issuecomment-5741712673",
       "source": "claude-pr-review"
     },
     {
@@ -5126,7 +5232,7 @@
       "lastTestedStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
       "lastTestedAt": "2026-09-18T04:41:12Z",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#issuecomment-5725253657",
       "source": "claude-pr-review"
@@ -5139,7 +5245,7 @@
       "lastTestedStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
       "lastTestedAt": "2026-09-18T15:46:29Z",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#issuecomment-5732467294",
       "source": "claude-pr-review"
@@ -5152,7 +5258,7 @@
       "lastTestedStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
       "lastTestedAt": "2026-09-19T11:31:43Z",
       "verdict": "PASS",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#issuecomment-5741483047",
       "source": "claude-pr-review"
@@ -5165,7 +5271,7 @@
       "lastTestedStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
       "lastTestedAt": "2026-09-18T08:32:39Z",
       "verdict": "",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#pullrequestreview-5245822811",
       "source": "claude-pr-review"
@@ -5178,7 +5284,7 @@
       "lastTestedStamp": "57424ace8564ccbcd6bd891b30710536853ba1e6",
       "lastTestedAt": "2026-09-18T08:39:17Z",
       "verdict": "",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1410#pullrequestreview-5245875641",
       "source": "claude-pr-review"
@@ -5402,84 +5508,6 @@
       "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1403#issuecomment-5725245984",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1401-5721003786",
-      "name": "Claude Code: verify exact head 881652ea02de1294ff82979556cac3bfede2b28e after hosted CI is green. New D-RI-01 direct tool regression failed before implementation and passed before ",
-      "route": "",
-      "strandId": "",
-      "lastTestedStamp": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817",
-      "lastTestedAt": "2026-09-17T20:46:48Z",
-      "verdict": "",
-      "freshness": "stale",
-      "evidenceDropId": "",
-      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401#issuecomment-5721003786",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1401-5725247362",
-      "name": "## Claude Code verdict: **PASS** at `881652ea02de1294ff82979556cac3bfede2b28e`",
-      "route": "",
-      "strandId": "payments",
-      "lastTestedStamp": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817",
-      "lastTestedAt": "2026-09-18T04:40:44Z",
-      "verdict": "PASS",
-      "freshness": "stale",
-      "evidenceDropId": "",
-      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401#issuecomment-5725247362",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1401-5725354304",
-      "name": "Rebased onto staging 0507113fb. New head: 4f600db90fed89b8b15681f11ccda8610374fb03. Claude Code: please re-verify at this exact head; the PASS at 881652ea is not authority for conf",
-      "route": "",
-      "strandId": "",
-      "lastTestedStamp": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817",
-      "lastTestedAt": "2026-09-18T04:53:57Z",
-      "verdict": "PASS",
-      "freshness": "stale",
-      "evidenceDropId": "",
-      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401#issuecomment-5725354304",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1401-5731938402",
-      "name": "Claude Code: #1401's remote head changed to 5cb401f1eefa057f5703a69048c88012d8c9252c (parent is current staging205d5bb897fa84c76f2af92b2cad16b568f1cca2). Please verify this NEW exa",
-      "route": "",
-      "strandId": "",
-      "lastTestedStamp": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817",
-      "lastTestedAt": "2026-09-18T15:05:02Z",
-      "verdict": "PASS",
-      "freshness": "stale",
-      "evidenceDropId": "",
-      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401#issuecomment-5731938402",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1401-5732265907",
-      "name": "## Claude Code verdict: **PASS** at `5cb401f1`",
-      "route": "",
-      "strandId": "",
-      "lastTestedStamp": "092cb6ca78e21ffe88aecae1c5f252cbe8bf4817",
-      "lastTestedAt": "2026-09-18T15:31:22Z",
-      "verdict": "PASS",
-      "freshness": "stale",
-      "evidenceDropId": "",
-      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1401#issuecomment-5732265907",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1400-5725132148",
-      "name": "## Claude Code verdict: **PASS** at `431cb9d64db515064036a95cd2bd3d89dbe5030e`",
-      "route": "",
-      "strandId": "",
-      "lastTestedStamp": "718c8c9cda33b0dadd36aa56f4ef2236b482a96d",
-      "lastTestedAt": "2026-09-18T04:24:46Z",
-      "verdict": "PASS",
-      "freshness": "stale",
-      "evidenceDropId": "",
-      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1400#issuecomment-5725132148",
       "source": "claude-pr-review"
     }
   ]
