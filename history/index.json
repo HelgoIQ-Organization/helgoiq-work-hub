@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-19T13:19:36.815Z",
+  "generatedAt": "2026-09-19T17:28:05.294Z",
   "files": [
     {
       "path": "history/2026-09-19-tip-fc65b5d0.json",
@@ -35,6 +35,12 @@
       "path": "history/2026-09-19-tip-8e842c06.json",
       "label": "2026-09-19-tip-8e842c06.json",
       "tip": "8e842c06",
+      "headline": 72
+    },
+    {
+      "path": "history/2026-09-19-tip-8ad00312.json",
+      "label": "2026-09-19-tip-8ad00312.json",
+      "tip": "8ad00312",
       "headline": 72
     },
     {
@@ -481,16 +487,5 @@
       "tip": "232659cf",
       "headline": 66
     }
-  ],
-  "snapshots": [
-    {
-      "id": "2026-09-19-tip-8ad00312",
-      "path": "history/2026-09-19-tip-8ad00312.json",
-      "tip": "8ad003122ee076587e1d01bbd65048152c59ac07",
-      "headlinePercent": 72,
-      "dataAsOf": "2026-09-19T14:43:35.000Z",
-      "note": "#1430 Meta CONN-META-DEADEND live; headline 72% held; evening progress (not 80%)"
-    }
-  ],
-  "latest": "history/2026-09-19-tip-8ad00312.json"
+  ]
 }

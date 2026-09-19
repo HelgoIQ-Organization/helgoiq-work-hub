@@ -1,6 +1,40 @@
 {
-  "updatedAt": "2026-09-19T16:58:16.204Z",
+  "updatedAt": "2026-09-19T17:28:04.678Z",
   "drops": [
+    {
+      "id": "2026-09-19-muse-pa-refrm-grant-proved-read-only",
+      "title": "Muse PA Refrm grant proved (read-only)",
+      "date": "2026-09-19",
+      "summary": "Refrm c=150001 visible on PA; not platform_admin",
+      "plainEnglish": "Muse PA switcher now shows Bluebird and Refrm. Refrm admin home loads. Read-only — no Refrm writes. Still not platform_admin, so Dataset Import stays blocked.",
+      "tags": [
+        "isolation",
+        "status"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-muse-pa-refrm-grant-proved-read-only/SUMMARY.md"
+      ],
+      "tip": "b87f71f3"
+    },
+    {
+      "id": "2026-09-19-dataset-import-activate-as-pa-blocked-platform-a",
+      "title": "Dataset Import+Activate as PA BLOCKED — platform_admin required",
+      "date": "2026-09-19",
+      "summary": "batchImport.execute 403 on tip b87f71f3; need Declan platform_admin grant",
+      "plainEnglish": "Muse PA can open Bluebird Dataset and see approved canary batch 14, but Import returns 403 Platform admin access required. Refrm on the switcher is proved; that studio grant is not platform_admin. Activate not reached. No rollback.",
+      "tags": [
+        "dataset",
+        "status"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-dataset-import-activate-as-pa-blocked-platform-a/SUMMARY.md"
+      ],
+      "tip": "b87f71f3"
+    },
     {
       "id": "2026-09-19-evening-measurement-window-closed-tip-b87f71f3-i",
       "title": "Evening measurement window CLOSED tip b87f71f3 — ISO/GTM clean",
