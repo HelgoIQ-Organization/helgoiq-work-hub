@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-19T11:13:19.383Z",
+  "updatedAt": "2026-09-19T11:21:05.103Z",
   "drops": [
+    {
+      "id": "2026-09-19-tip-157f881f-1434-cctv-f-ad-07-live",
+      "title": "Tip 157f881f — #1434 CCTV F-AD-07 live",
+      "date": "2026-09-19",
+      "summary": "DO tip moved to 157f881f (#1434 live); #1438 merged undeployed; headline 72%",
+      "plainEnglish": "DO tip moved to 157f881f (#1434 live); #1438 merged undeployed; headline 72%",
+      "tags": [
+        "status",
+        "command-centre"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-tip-157f881f-1434-cctv-f-ad-07-live/tip-157f881f.md"
+      ],
+      "tip": "157f881fb6ddb7986b9c9ef4ead1ee46faf940fc"
+    },
     {
       "id": "2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72-he",
       "title": "Launch Hub tip 93a48b17 (#1426 live) — headline 72% held",

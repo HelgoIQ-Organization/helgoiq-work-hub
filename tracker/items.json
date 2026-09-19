@@ -27,13 +27,16 @@
       ]
     }
   },
-  "updatedAt": "2026-09-11T15:00:00.000Z",
+  "updatedAt": "2026-09-19T11:20:36.269Z",
   "source": "seed-example",
   "live": false,
   "blocked": {
     "reason": "GitHub Projects needs read:project; in-app findings agent token rotate outstanding since 3 Sep (Declan).",
     "since": "2026-09-03",
-    "needs": ["read:project", "findings-agent-token-rotate"]
+    "needs": [
+      "read:project",
+      "findings-agent-token-rotate"
+    ]
   },
   "banner": "Live tracker blocked — GitHub Projects needs read:project; in-app findings agent token rotate outstanding since 3 Sep (Declan).",
   "itemsNote": "Small seed/example set only. Rows are labelled seed:true and rest on already-published hub drops. scripts/sync-tracker.mjs will replace this when TRACKER_EXPORT.json or labelled issues are available — it does not invent live Projects cards or credentials.",

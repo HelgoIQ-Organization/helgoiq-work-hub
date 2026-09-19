@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-19T11:11:15.252Z",
-  "liveTip": "93a48b176a31d22d90b9701cf3d4d9026541dd11",
-  "liveTipShort": "93a48b17",
+  "updatedAt": "2026-09-19T11:20:36.140Z",
+  "liveTip": "157f881fb6ddb7986b9c9ef4ead1ee46faf940fc",
+  "liveTipShort": "157f881f",
   "refreshLag": {
     "tipChange": "near-real-time (refresh-dashboard.mjs when /api/version tip changes)",
     "coverageSync": "≤15m when the 15-minute routine is wired",
@@ -12,11 +12,11 @@
     "versionError": null,
     "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
     "mergedPrsError": null,
-    "dropsScanned": 161,
+    "dropsScanned": 163,
     "issue1180Error": null,
     "issue1180Comments": 50,
     "claudeReviewError": null,
-    "claudeReviews": 38,
+    "claudeReviews": 37,
     "sources": [
       {
         "id": 1,
@@ -33,7 +33,7 @@
         "id": 3,
         "name": "#1180 + hub drops",
         "ok": true,
-        "dropsScanned": 161,
+        "dropsScanned": 163,
         "issue1180": 50
       },
       {
@@ -41,19 +41,26 @@
         "name": "Claude Code PR review comments",
         "ok": true,
         "skipped": false,
-        "count": 38
+        "count": 37
       }
     ]
   },
   "counts": {
     "strands": 10,
-    "strandsStaleVsLiveTip": 9,
-    "strandsCurrent": 1,
-    "pages": 400,
-    "pagesStaleVsLiveTip": 354,
-    "claudeReviews": 38
+    "strandsStaleVsLiveTip": 10,
+    "strandsCurrent": 0,
+    "pages": 403,
+    "pagesStaleVsLiveTip": 358,
+    "claudeReviews": 37
   },
   "recentMergedPrs": [
+    {
+      "number": 1438,
+      "title": "fix(command-centre): name cross-tenant fact refusal",
+      "mergedAt": "2026-09-19T11:19:20Z",
+      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1438",
+      "mergeSha": "fc65b5d0d6684019f8b6538728e07919b466f0bd"
+    },
     {
       "number": 1434,
       "title": "fix(cctv): empty states with working primary actions (F-AD-07, supersedes #1381)",
@@ -186,16 +193,24 @@
       "mergedAt": "2026-09-18T04:29:57Z",
       "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1398",
       "mergeSha": "6adaf8e2c7d2dbf710ca555ed271b3a5f00261fa"
-    },
-    {
-      "number": 1397,
-      "title": "Command Centre: verify B-HOW-01 campaign save handoff",
-      "mergedAt": "2026-09-18T04:43:08Z",
-      "url": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1397",
-      "mergeSha": "13685413b5fd2bdad09cca0135baa94f85f108ef"
     }
   ],
   "claudeReviews": [
+    {
+      "id": "claude-pr-1438-5741391127",
+      "pr": 1438,
+      "prTitle": "fix(command-centre): name cross-tenant fact refusal",
+      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1438",
+      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1438#issuecomment-5741391127",
+      "author": "declaneryan71",
+      "createdAt": "2026-09-19T11:18:39Z",
+      "mergeSha": "fc65b5d0d6684019f8b6538728e07919b466f0bd",
+      "path": "",
+      "verdict": "PASS",
+      "strandId": "command-centre",
+      "excerpt": "## Claude Code verdict: **PASS** at `f286b1aa`",
+      "source": "claude-pr-review"
+    },
     {
       "id": "claude-pr-1434-5740047671",
       "pr": 1434,
@@ -735,36 +750,6 @@
       "strandId": "",
       "excerpt": "## Claude Code verdict: **PASS** at `230b0012bdbbf9b9dd2a3faea5b2886f6ebb9167`",
       "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1397-5719173897",
-      "pr": 1397,
-      "prTitle": "Command Centre: verify B-HOW-01 campaign save handoff",
-      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1397",
-      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1397#issuecomment-5719173897",
-      "author": "declaneryan71",
-      "createdAt": "2026-09-17T18:17:42Z",
-      "mergeSha": "13685413b5fd2bdad09cca0135baa94f85f108ef",
-      "path": "",
-      "verdict": "FAIL",
-      "strandId": "",
-      "excerpt": "Claude Code: please review exact head 20d27f554e14f128c46f23b8c9d6906124d3092e. Hosted main CI, Server Type Check and the real-database Bluebird runner are now green. Presentation ",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1397-5725246397",
-      "pr": 1397,
-      "prTitle": "Command Centre: verify B-HOW-01 campaign save handoff",
-      "prUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1397",
-      "commentUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1397#issuecomment-5725246397",
-      "author": "declaneryan71",
-      "createdAt": "2026-09-18T04:40:38Z",
-      "mergeSha": "13685413b5fd2bdad09cca0135baa94f85f108ef",
-      "path": "",
-      "verdict": "PASS",
-      "strandId": "",
-      "excerpt": "## Claude Code verdict: **PASS** at `20d27f554e14f128c46f23b8c9d6906124d3092e`",
-      "source": "claude-pr-review"
     }
   ],
   "strands": [
@@ -788,7 +773,7 @@
       "verdict": "PASS",
       "freshness": "stale",
       "evidenceDropId": "2026-09-19-cc-watch-1424-retest-tip-cdbff449-a-1-24-bf-1-30",
-      "claudeReviewCount": 4,
+      "claudeReviewCount": 5,
       "basis": "measured",
       "percent": 87
     },
@@ -870,7 +855,7 @@
       "lastTestedStamp": "93a48b176a31d22d90b9701cf3d4d9026541dd11",
       "lastTestedAt": "2026-09-19",
       "verdict": "PASS",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-19-astra-1423-stage4b-accept-pass-tip-93a48b17",
       "claudeReviewCount": 0,
       "basis": "estimate",
@@ -897,9 +882,42 @@
       "strandId": "findings-fix",
       "lastTestedStamp": "93a48b176a31d22d90b9701cf3d4d9026541dd11",
       "lastTestedAt": "2026-09-19",
-      "verdict": "PASS",
-      "freshness": "current",
-      "evidenceDropId": "2026-09-19-astra-1423-stage4b-accept-pass-tip-93a48b17"
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72-he"
+    },
+    {
+      "id": "route:/my-performance",
+      "name": "/my-performance",
+      "route": "/my-performance",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "93a48b176a31d22d90b9701cf3d4d9026541dd11",
+      "lastTestedAt": "2026-09-19",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72-he"
+    },
+    {
+      "id": "route:/performance",
+      "name": "/performance",
+      "route": "/performance",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "93a48b176a31d22d90b9701cf3d4d9026541dd11",
+      "lastTestedAt": "2026-09-19",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72-he"
+    },
+    {
+      "id": "drop:2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72-he",
+      "name": "Launch Hub tip 93a48b17 (#1426 live) — headline 72% held",
+      "route": "",
+      "strandId": "findings-fix",
+      "lastTestedStamp": "93a48b176a31d22d90b9701cf3d4d9026541dd11",
+      "lastTestedAt": "2026-09-19",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72-he"
     },
     {
       "id": "drop:2026-09-19-astra-1423-stage4b-accept-pass-tip-93a48b17",
@@ -909,7 +927,7 @@
       "lastTestedStamp": "93a48b176a31d22d90b9701cf3d4d9026541dd11",
       "lastTestedAt": "2026-09-19",
       "verdict": "PASS",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-19-astra-1423-stage4b-accept-pass-tip-93a48b17"
     },
     {
@@ -920,7 +938,7 @@
       "lastTestedStamp": "93a48b176a31d22d90b9701cf3d4d9026541dd11",
       "lastTestedAt": "2026-09-19",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "2026-09-19-door-access-feel-1433-fail-tip-93a48b17"
     },
     {
@@ -4862,6 +4880,17 @@
       "evidenceDropId": "2026-09-19-door-access-1433-fail"
     },
     {
+      "id": "drop:2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72",
+      "name": "2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72",
+      "route": "",
+      "strandId": "",
+      "lastTestedStamp": "",
+      "lastTestedAt": "2026-09-19",
+      "verdict": "FAIL",
+      "freshness": "untested",
+      "evidenceDropId": "2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72"
+    },
+    {
       "id": "drop:tmp-tip-a3a0e207",
       "name": "tmp-tip-a3a0e207",
       "route": "",
@@ -4873,6 +4902,19 @@
       "evidenceDropId": "tmp-tip-a3a0e207"
     },
     {
+      "id": "claude-pr-1438-5741391127",
+      "name": "## Claude Code verdict: **PASS** at `f286b1aa`",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "fc65b5d0d6684019f8b6538728e07919b466f0bd",
+      "lastTestedAt": "2026-09-19T11:18:39Z",
+      "verdict": "PASS",
+      "freshness": "stale",
+      "evidenceDropId": "",
+      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1438#issuecomment-5741391127",
+      "source": "claude-pr-review"
+    },
+    {
       "id": "claude-pr-1434-5740047671",
       "name": "## Grok mechanical check — #1434 CCTV / Camio (F-AD-07) after Claude Code corrections",
       "route": "",
@@ -4880,7 +4922,7 @@
       "lastTestedStamp": "157f881fb6ddb7986b9c9ef4ead1ee46faf940fc",
       "lastTestedAt": "2026-09-19T06:52:19Z",
       "verdict": "",
-      "freshness": "stale",
+      "freshness": "current",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1434#issuecomment-5740047671",
       "source": "claude-pr-review"
@@ -5338,32 +5380,6 @@
       "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1398#issuecomment-5725132397",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1397-5719173897",
-      "name": "Claude Code: please review exact head 20d27f554e14f128c46f23b8c9d6906124d3092e. Hosted main CI, Server Type Check and the real-database Bluebird runner are now green. Presentation ",
-      "route": "",
-      "strandId": "",
-      "lastTestedStamp": "13685413b5fd2bdad09cca0135baa94f85f108ef",
-      "lastTestedAt": "2026-09-17T18:17:42Z",
-      "verdict": "FAIL",
-      "freshness": "stale",
-      "evidenceDropId": "",
-      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1397#issuecomment-5719173897",
-      "source": "claude-pr-review"
-    },
-    {
-      "id": "claude-pr-1397-5725246397",
-      "name": "## Claude Code verdict: **PASS** at `20d27f554e14f128c46f23b8c9d6906124d3092e`",
-      "route": "",
-      "strandId": "",
-      "lastTestedStamp": "13685413b5fd2bdad09cca0135baa94f85f108ef",
-      "lastTestedAt": "2026-09-18T04:40:38Z",
-      "verdict": "PASS",
-      "freshness": "stale",
-      "evidenceDropId": "",
-      "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1397#issuecomment-5725246397",
       "source": "claude-pr-review"
     }
   ]
