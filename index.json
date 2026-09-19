@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-19T06:54:13.742Z",
+  "updatedAt": "2026-09-19T07:04:18.062Z",
   "drops": [
+    {
+      "id": "2026-09-19-launch-hub-tip-b1ffa5d7-live-1424-1423-undeploye",
+      "title": "Launch Hub tip b1ffa5d7 live (#1424; #1423 undeployed)",
+      "date": "2026-09-19",
+      "summary": "Staging tip moved to b1ffa5d7 (#1424 CC batch LIVE). Headline held 72%. Cluster A+B–F retests unlocked. #1423 undeployed.",
+      "plainEnglish": "Staging tip moved to b1ffa5d7 (#1424 CC batch LIVE). Headline held 72%. Cluster A+B–F retests unlocked. #1423 undeployed.",
+      "tags": [
+        "status",
+        "command-centre",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-launch-hub-tip-b1ffa5d7-live-1424-1423-undeploye/tip-b1ffa5d7.md"
+      ],
+      "tip": "b1ffa5d732c5af2955b1a1cfdc317f27eb1cf86e"
+    },
     {
       "id": "2026-09-19-launch-hub-tip-df08d3cf-1408-live-1424-undeployed",
       "title": "Launch Hub tip df08d3cf (#1408 live; #1424 undeployed) — headline 72% held",
