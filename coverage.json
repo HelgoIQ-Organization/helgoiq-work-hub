@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-19T07:17:25.282Z",
-  "liveTip": "3ca3046dfd7100e44f7dfc1f6a381bc6e02a8a35",
-  "liveTipShort": "3ca3046d",
+  "updatedAt": "2026-09-19T07:54:14.919Z",
+  "liveTip": "cdbff449160992af2edc3a5c1ef5db9c8f3f26a6",
+  "liveTipShort": "cdbff449",
   "refreshLag": {
     "tipChange": "near-real-time (refresh-dashboard.mjs when /api/version tip changes)",
     "coverageSync": "≤15m when the 15-minute routine is wired",
@@ -12,7 +12,7 @@
     "versionError": null,
     "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
     "mergedPrsError": null,
-    "dropsScanned": 154,
+    "dropsScanned": 155,
     "issue1180Error": null,
     "issue1180Comments": 50,
     "claudeReviewError": null,
@@ -33,7 +33,7 @@
         "id": 3,
         "name": "#1180 + hub drops",
         "ok": true,
-        "dropsScanned": 154,
+        "dropsScanned": 155,
         "issue1180": 50
       },
       {
@@ -49,8 +49,8 @@
     "strands": 10,
     "strandsStaleVsLiveTip": 10,
     "strandsCurrent": 0,
-    "pages": 399,
-    "pagesStaleVsLiveTip": 356,
+    "pages": 400,
+    "pagesStaleVsLiveTip": 358,
     "claudeReviews": 45
   },
   "recentMergedPrs": [
@@ -995,6 +995,17 @@
     }
   ],
   "pages": [
+    {
+      "id": "drop:2026-09-19-launch-hub-tip-3ca3046d-live-1423-1433-undeploye",
+      "name": "Launch Hub tip 3ca3046d live (#1423; #1433 undeployed)",
+      "route": "",
+      "strandId": "command-centre",
+      "lastTestedStamp": "3ca3046dfd7100e44f7dfc1f6a381bc6e02a8a35",
+      "lastTestedAt": "2026-09-19",
+      "verdict": "FAIL",
+      "freshness": "stale",
+      "evidenceDropId": "2026-09-19-launch-hub-tip-3ca3046d-live-1423-1433-undeploye"
+    },
     {
       "id": "drop:2026-09-19-launch-hub-tip-b1ffa5d7-live-1424-1423-undeploye",
       "name": "Launch Hub tip b1ffa5d7 live (#1424; #1423 undeployed)",
@@ -4897,7 +4908,7 @@
       "lastTestedStamp": "cdbff449160992af2edc3a5c1ef5db9c8f3f26a6",
       "lastTestedAt": "2026-09-19T06:52:18Z",
       "verdict": "",
-      "freshness": "stale",
+      "freshness": "current",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1433#issuecomment-5740047587",
       "source": "claude-pr-review"
@@ -4923,7 +4934,7 @@
       "lastTestedStamp": "3ca3046dfd7100e44f7dfc1f6a381bc6e02a8a35",
       "lastTestedAt": "2026-09-18T16:28:36Z",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1423#issuecomment-5732987878",
       "source": "claude-pr-review"
@@ -4936,7 +4947,7 @@
       "lastTestedStamp": "3ca3046dfd7100e44f7dfc1f6a381bc6e02a8a35",
       "lastTestedAt": "2026-09-19T06:51:24Z",
       "verdict": "FAIL",
-      "freshness": "current",
+      "freshness": "stale",
       "evidenceDropId": "",
       "evidenceUrl": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/pull/1423#issuecomment-5740043555",
       "source": "claude-pr-review"

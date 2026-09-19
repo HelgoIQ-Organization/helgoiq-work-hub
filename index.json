@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-19T07:17:54.112Z",
+  "updatedAt": "2026-09-19T07:54:39.508Z",
   "drops": [
+    {
+      "id": "2026-09-19-launch-hub-tip-cdbff449-1433-live-headline-72-he",
+      "title": "Launch Hub tip cdbff449 (#1433 live) — headline 72% held",
+      "date": "2026-09-19",
+      "summary": "Tip 3ca3046d→cdbff449: #1433 door-access F-AD-06 LIVE. Headline 72% held. Cluster A/B–F + #1423 accept + #1408 POS + #1433 door retests owed.",
+      "plainEnglish": "Tip 3ca3046d→cdbff449: #1433 door-access F-AD-06 LIVE. Headline 72% held. Cluster A/B–F + #1423 accept + #1408 POS + #1433 door retests owed.",
+      "tags": [
+        "status",
+        "command-centre",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-launch-hub-tip-cdbff449-1433-live-headline-72-he/tip-cdbff449.md"
+      ],
+      "tip": "cdbff449160992af2edc3a5c1ef5db9c8f3f26a6"
+    },
     {
       "id": "2026-09-19-launch-hub-tip-3ca3046d-live-1423-1433-undeploye",
       "title": "Launch Hub tip 3ca3046d live (#1423; #1433 undeployed)",
