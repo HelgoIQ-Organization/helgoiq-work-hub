@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-19T16:32:36.321Z",
+  "updatedAt": "2026-09-19T16:40:48.121Z",
   "drops": [
+    {
+      "id": "2026-09-19-census-money-measured-re-spot-tip-b87f71f3-4p-2p",
+      "title": "Census Money Measured re-spot tip b87f71f3 — 4P/2Part/1F/1B",
+      "date": "2026-09-19",
+      "summary": "PASS 4 · PARTIAL 2 (POS KPI mismatch, Stripe observe) · FAIL 1 (Invoicing Finance Hub tab alias) · BLOCKED 1 (cash gift gate). 0 charges.",
+      "plainEnglish": "PASS 4 · PARTIAL 2 (POS KPI mismatch, Stripe observe) · FAIL 1 (Invoicing Finance Hub tab alias) · BLOCKED 1 (cash gift gate). 0 charges.",
+      "tags": [
+        "payments",
+        "census",
+        "status"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-census-money-measured-re-spot-tip-b87f71f3-4p-2p/RESULTS.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
     {
       "id": "2026-09-19-ai-24-full-measured-re-score-tip-b87f71f3-0-ai-0",
       "title": "AI-24 full Measured re-score tip b87f71f3 — 0% + AI-014 isolation FAIL",
