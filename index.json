@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-19T11:21:05.103Z",
+  "updatedAt": "2026-09-19T11:47:03.815Z",
   "drops": [
+    {
+      "id": "2026-09-19-smoke-demoted-not-a-merge-gate",
+      "title": "Smoke demoted: not a merge gate",
+      "date": "2026-09-19",
+      "summary": "Declan: staging smoke off merge gate; Hub strand only; fixture leisure",
+      "plainEnglish": "Declan: staging smoke off merge gate; Hub strand only; fixture leisure",
+      "tags": [
+        "smoke",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-smoke-demoted-not-a-merge-gate/NOTE.md"
+      ],
+      "tip": "fc65b5d0d6684019f8b6538728e07919b466f0bd"
+    },
     {
       "id": "2026-09-19-tip-157f881f-1434-cctv-f-ad-07-live",
       "title": "Tip 157f881f — #1434 CCTV F-AD-07 live",
