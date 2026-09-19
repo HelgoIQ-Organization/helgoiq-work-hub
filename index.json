@@ -1,6 +1,23 @@
 {
-  "updatedAt": "2026-09-19T10:56:33.960Z",
+  "updatedAt": "2026-09-19T11:13:19.383Z",
   "drops": [
+    {
+      "id": "2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72-he",
+      "title": "Launch Hub tip 93a48b17 (#1426 live) — headline 72% held",
+      "date": "2026-09-19",
+      "summary": "Tip moved cdbff449→93a48b17 (#1426 live; #1434 undeployed); headline 72%; #1423 PASS + #1433 FAIL already measured",
+      "plainEnglish": "Tip moved cdbff449→93a48b17 (#1426 live; #1434 undeployed); headline 72%; #1423 PASS + #1433 FAIL already measured",
+      "tags": [
+        "status",
+        "findings"
+      ],
+      "type": "status",
+      "project": "helgoiq-launch-hub",
+      "paths": [
+        "drops/2026-09-19-launch-hub-tip-93a48b17-1426-live-headline-72-he/SUMMARY.md"
+      ],
+      "tip": "93a48b176a31d22d90b9701cf3d4d9026541dd11"
+    },
     {
       "id": "2026-09-19-astra-1423-stage4b-accept-pass-tip-93a48b17",
       "title": "Astra #1423 stage4b accept PASS tip 93a48b17",
