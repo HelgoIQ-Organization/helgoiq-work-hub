@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-19T04:46:24.931Z",
+  "updatedAt": "2026-09-19T05:30:59.851Z",
   "drops": [
+    {
+      "id": "2026-09-19-comms-recensus-d5b7d47",
+      "title": "Comms re-census MEASURED tip d5b7d47",
+      "date": "2026-09-19",
+      "summary": "3 PASS (Consent, Segment, Manager newsletter with proof-inbox arrival). 3 PARTIAL (Journey B; cancel C; cover C). Prior 42% hold lifted on Segment/Manager delivery.",
+      "plainEnglish": "3 PASS (Consent, Segment, Manager newsletter with proof-inbox arrival). 3 PARTIAL (Journey B; cancel C; cover C). Prior 42% hold lifted on Segment/Manager delivery.",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-comms-recensus-d5b7d47/RESULTS-MEASURED.md",
+        "drops/2026-09-19-comms-recensus-d5b7d47/PARTIAL-SPLIT-MEASURED.md"
+      ],
+      "tip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463"
+    },
     {
       "id": "2026-09-19-claude-progress-brief-19-sep-morning",
       "title": "Claude progress brief 19 Sep morning",

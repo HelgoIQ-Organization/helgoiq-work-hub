@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-18T17:23:25.569Z",
+  "updatedAt": "2026-09-19T05:30:59.878143+00:00",
   "meta": {
     "dataAsOf": "2026-09-18T17:23:25.569Z",
     "buildStamp": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
@@ -46,7 +46,7 @@
   "tip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
   "progressToday": {
     "morningHeadlinePercent": 73,
-    "nowHeadlinePercent": 70,
+    "nowHeadlinePercent": 72,
     "morningStrands": {
       "dataset": 52,
       "command-centre": 85,
@@ -69,7 +69,7 @@
       "smoke": 55,
       "payments": 74,
       "findings-fix": 100,
-      "comms": 42
+      "comms": 65
     },
     "deltas": {
       "dataset": 28,
@@ -81,13 +81,14 @@
       "smoke": 0,
       "payments": 0,
       "findings-fix": 1,
-      "comms": 0
+      "comms": 23,
+      "headline": -1
     },
-    "plainEnglishDay": "18 Sep true path: morning ~73% \u2192 Dataset Confirm lift to 76% \u2192 AI-24 honest re-score to 70% (\u22126). Hub UI previously compared to 10 Sep morning (52%) and falsely showed +18. Now 70% on tip d5b7d47; Cluster A 24/24; Isolation FAIL hold ISO-18/29.",
+    "plainEnglishDay": "Comms moved from 42% to 65% with real inbox proof that Segment and Manager test emails arrive. Journey still never reaches Admin2. Cancel and cover still inconclusive. Overall launch about 72%.",
     "keptMorningSnapshotPath": "history/2026-09-10-morning.json",
-    "compareNote": "Morning 73% (18 Sep tip cace7a56) \u2192 now 70%. Mid-day peak 76% after Dataset Confirm, then AI-24 68\u219225 drove \u22126 to 70%. Not +18 from 52 \u2014 that was a stale 10 Sep baseline bug (fixed).",
-    "updatedAt": "2026-09-19T05:13:45.328076Z",
-    "coverageNote": "After AI L2 Intel: L\u22651=372 (90%); L\u22652=212 (51%)",
+    "compareNote": "Morning 73% \u2192 now 72%. Comms Measured 42\u219265 today (+23) after proof-inbox re-census on tip d5b7d47 (Segment + Manager newsletter arrived). Headline 73\u219272. Same-day rule: morning baseline held; not the stale 10 Sep 52% path.",
+    "updatedAt": "2026-09-19T05:31:21.404007+00:00",
+    "coverageNote": "Comms re-measured live tip d5b7d47 with Agentmail proof inbox 2026-09-19.",
     "invite1267": "PASS on tip 6486be87 Admin2 fresh invite",
     "smokeSixStep": {
       "tip": "b1a15f4884555ba94df200a514086230b1e16fbe",
@@ -874,51 +875,50 @@
     {
       "id": "comms",
       "name": "Automated communications",
-      "percent": 42,
+      "percent": 65,
       "basis": "measured",
       "status": "at-risk",
-      "plainSummary": "42% hold after Measured re-census on tip 205d5bb8 (Bluebird c=150002). Consent PASS (Member B prefs save). Five PARTIAL: member cancel (UI scheduled, no history row); cover swap (UI confirm, no mail/history); journey (tag ok, in-app fail, Admin2 not proof inbox); Segment Send Test + Manager newsletter (toast ok, Message Logs empty). Inbox/history proof still missing on 5/6 \u2014 no invent raise. No Turnstile/NEED_DECLAN; no live blast.",
-      "progressNote": "Comms hold 42%. #1420 ON tip 660c9038; no invent raise.",
+      "plainSummary": "65% Measured after tip d5b7d47 re-census with recreated proof inbox helgoiq-comms-proof@agentmail.to. 3 PASS (Consent; Segment Send Test + Manager newsletter with Agentmail arrival proof). 3 PARTIAL: Journey B (Admin2 inbox readable, no journey mail); member cancel C (fixture already cancelled); cover swap C (swap ok, no UI history / recipient pinned). No invent PASS on cancel/cover.",
+      "progressNote": "Comms 42\u219265 Measured 2026-09-19 tip d5b7d47. Segment+Manager delivery proven in proof inbox. Journey still B. Cancel/cover still C.",
       "blockers": [
-        "Member cancel PARTIAL \u2014 UI scheduled cancellation; no matching history row / delivery proof",
-        "Cover swap PARTIAL \u2014 UI confirm only; no mail or message-history row",
-        "Journey PARTIAL \u2014 tag step ok, in-app fail; targeted Admin2 not proof inbox",
-        "Segment Send Test PARTIAL \u2014 toast ok; Message Logs empty (no history proof)",
-        "Manager newsletter Send Test PARTIAL \u2014 as Manager, toast ok; Message Logs empty"
+        "Journey PARTIAL-B \u2014 Admin2 inbox readable; no journey/product mail in re-census window; runner in-app step failed",
+        "Member cancel PARTIAL-C \u2014 fixture already cancelled; no fresh independent cancel",
+        "Cover swap PARTIAL-C \u2014 swap confirmed; no UI history; recipient mailbox not pinned"
       ],
       "detailDropIds": [
+        "2026-09-19-comms-recensus-d5b7d47",
         "2026-09-18-comms-recensus-tip-205d5bb8",
         "2026-09-15-comms-retest-aee3b690",
         "2026-09-15-comms-score-ac845589"
       ],
       "phaseId": "communications",
       "projectWeightPercent": 10,
-      "lastTestedStamp": "205d5bb897fa84c76f2af92b2cad16b568f1cca2",
-      "coverageFreshness": "stale",
-      "note": "42% HOLD after Measured re-census tip 205d5bb8. #1420 campaign-test provider-receipt gate ON tip d5b7d47d \u2014 re-census owed before any raise. Keep automated comms strand. Prefer not to invent raise.",
-      "measuredNote": "2026-09-18 re-census tip 205d5bb8 Bluebird c=150002: 1 PASS (Consent), 5 PARTIAL (cancel/cover/journey/segment/Manager newsletter). Evidence under /workspace/helgoiq-full-programme-2026-09-17/comms/205d5bb8-recensus/. Drop 2026-09-18-comms-recensus-tip-205d5bb8.",
-      "lastTestedAt": "2026-09-18",
-      "lastTestedVerdict": "FAIL",
-      "freshnessNote": "Last Measured tip 205d5bb8; live d5b7d47d has #1420 \u2014 re-census owed."
+      "lastTestedStamp": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
+      "coverageFreshness": "fresh",
+      "note": "65% Measured. Proof inbox recreated; Segment+Manager delivery PASS. Journey B; cancel/cover C. Prefer not to invent raise on C rows.",
+      "measuredNote": "2026-09-19 re-census tip d5b7d47 Bluebird c=150002: 3 PASS / 3 PARTIAL (1B+2C). Evidence /workspace/helgoiq-full-programme-2026-09-17/comms/d5b7d47-recensus/. Drop 2026-09-19-comms-recensus-d5b7d47. Scoring (PASS=100, PARTIAL=30)/6 \u2192 65%.",
+      "lastTestedAt": "2026-09-19",
+      "lastTestedVerdict": "PARTIAL",
+      "freshnessNote": "Measured live on tip d5b7d47 with proof-inbox Agentmail MCP."
     }
   ],
   "health": {
-    "overallLaunchPercent": 70,
-    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 70% = round((80\u00d712 + 87\u00d710 + 86\u00d710 + 25\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 74\u00d78 + 100\u00d710 + 42\u00d710)/100) half-up. Tip d5b7d47d \u2014 #1404 F-ISO-01 fact withholding ON tip (plus prior #1418+#1396+#1420+#1419+#1414+#1411+#1376+#1401). Strand % held (no new Measured retest). Dataset 80 / CC 87 / Isolation 86 Measured FAIL hold / Comms 42 / AI-24 25 held.",
-    "readinessLabel": "~70% \u2014 tip d5b7d47d; #1404 F-ISO-01 live; strands held pending retest",
-    "plainSummary": "Launch readiness about 70%. Live tip d5b7d47d \u2014 Cluster A Measured 24/24 (B\u2013F unlocked, mid-run). ISO-18 + ISO-29 still Measured FAIL from tip 660c9038. Prefer not to need import.rollbackBatch.",
+    "overallLaunchPercent": 72,
+    "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 72% = round((80\u00d712 + 87\u00d710 + 86\u00d710 + 25\u00d715 + 95\u00d79 + 73\u00d710 + 55\u00d76 + 74\u00d78 + 100\u00d710 + 65\u00d710)/100) half-up. Tip d5b7d47 \u2014 Comms re-census Measured 3 PASS / 3 PARTIAL \u2192 Comms 42\u219265 (+23). Prefer not to invent PASS on Journey B / cancel C / cover C.",
+    "readinessLabel": "~72% \u2014 tip d5b7d47; Comms Measured 65 after proof-inbox re-census",
+    "plainSummary": "Launch readiness about 72%. Live tip d5b7d47. Comms lifted 42\u219265 after Measured re-census with proof inbox (Segment + Manager newsletter delivery proven). Journey still B; cancel/cover still C. ISO-18/29 evidence pack in flight for Codex.",
     "strengths": [
       "CC rebank tip 205d5bb8: A 24/24 + B\u2013F 23/30 (47/54) \u2192 strand 87 Measured held",
       "Dataset Confirm canary PASS tip 205d5bb8 \u2014 company Admin Approve (#1388) held at 80",
       "AI-24 Measured honest: 3 usable PASS + 17 BLOCKED empties (not invented FAIL/PASS); Pulse 30/100 Critical explicit"
     ],
     "risks": [
+      "Comms Journey PARTIAL-B + cancel/cover PARTIAL-C remain after 2026-09-19 Measured re-census",
       "#1376 still on tip d5b7d47d but ISO-18+ISO-29 Measured FAIL (Admin2 tip 660c9038) \u2014 not clean",
       "#1404 F-ISO-01 ON tip d5b7d47d \u2014 retest pending (do not invent PASS)",
       "D-RI-01 FAIL held until Measured retest on #1401 (ledger tool on tip; no invent PASS)",
       "#1377 MEM-F01 still OPEN; Cluster A MEM-F01 gate unchanged",
-      "#1410 CMS Live Approval Hub pages still OPEN",
-      "#1420 Comms receipt gate ON tip d5b7d47d \u2014 re-census owed before raising Comms 42%"
+      "#1410 CMS Live Approval Hub pages still OPEN"
     ],
     "topPriorities": [
       "Retest F-ISO-01 on tip d5b7d47d after #1404 (no invent PASS)",
@@ -937,20 +937,19 @@
         "command-centre",
         "m1",
         "payments",
-        "isolation"
+        "isolation",
+        "comms"
       ],
       "blocked": [
         "smoke",
         "ai-85"
       ],
-      "retest": [
-        "comms"
-      ]
+      "retest": []
     },
     "refreshWarning": "Live tip unchanged since last strand rebuild \u2014 readiness may be stale relative to merged-but-undeployed PRs.",
-    "headlinePercent": 70,
+    "headlinePercent": 72,
     "status": "at-risk",
-    "plain": "Launch readiness about 70%. Live tip d5b7d47d \u2014 Cluster A Measured 24/24 (B\u2013F unlocked, mid-run). ISO-18 + ISO-29 still Measured FAIL from tip 660c9038. Prefer not to need import.rollbackBatch.",
+    "plain": "Launch readiness about 72%. Live tip d5b7d47. Comms lifted 42\u219265 after Measured re-census with proof inbox (Segment + Manager newsletter delivery proven). Journey still B; cancel/cover still C. ISO-18/29 evidence pack in flight for Codex.",
     "gaps": [
       "ISO-18 + ISO-29 Measured FAIL after #1376 on tip 660c9038 (chooser still leaks Bluebird on Refrm deep links)",
       "AI-24 17 BLOCKED + 4 SKIP on tip 205d5bb8",
@@ -959,10 +958,10 @@
     "tipChange": false,
     "note": "Tip unchanged d5b7d47d. Material: Cluster A remasured 24/24 on live tip; B\u2013F in progress. Headline held 70%.",
     "label": "~70% \u2014 tip 205d5bb8; AI-24 Measured 3/24 \u2192 ai-85 25%; CC 87 / Dataset 80 held",
-    "dataAsOf": "2026-09-18T17:23:18.523Z",
+    "dataAsOf": "2026-09-19T05:31:21.404007+00:00",
     "buildStamp": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
     "tip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463",
-    "plainHeadline": "70% \u2014 Cluster A 24/24 on live tip; B\u2013F running; Isolation FAIL hold",
+    "plainHeadline": "72% \u2014 Comms 65 Measured (proof inbox); Isolation FAIL hold",
     "blockers": [
       "ISO-18 + ISO-29 Measured FAIL after #1376 on tip 660c9038 (chooser still leaks Bluebird on Refrm deep links)",
       "AI-24 Measured 3/24 \u2014 17 BLOCKED empty opportunity surfaces; ledger 6 rows",
@@ -970,8 +969,8 @@
       "Smoke #1375 NEED_DECLAN",
       "CMS public Live 404 (#1410 OPEN)"
     ],
-    "updatedAt": "2026-09-18T17:23:18.523Z",
-    "summary": "Launch readiness about 70%. Live tip d5b7d47d \u2014 Cluster A Measured 24/24 (B\u2013F unlocked, mid-run). ISO-18 + ISO-29 still Measured FAIL from tip 660c9038. Prefer not to need import.rollbackBatch."
+    "updatedAt": "2026-09-19T05:31:21.404007+00:00",
+    "summary": "Launch readiness about 72%. Live tip d5b7d47. Comms lifted 42\u219265 after Measured re-census with proof inbox (Segment + Manager newsletter delivery proven). Journey still B; cancel/cover still C. ISO-18/29 evidence pack in flight for Codex."
   },
   "actions": [
     {
