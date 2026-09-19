@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-19T05:30:59.851Z",
+  "updatedAt": "2026-09-19T05:34:23.316Z",
   "drops": [
+    {
+      "id": "2026-09-19-iso-1376-miss-d5b7d47",
+      "title": "ISO-18/29 #1376 miss evidence tip d5b7d47",
+      "date": "2026-09-19",
+      "summary": "ISO-18 FAIL + ISO-29 FAIL on tip d5b7d47 after #1376. Exact Reformer URLs, Admin2 seat, screenshots for Codex.",
+      "plainEnglish": "ISO-18 FAIL + ISO-29 FAIL on tip d5b7d47 after #1376. Exact Reformer URLs, Admin2 seat, screenshots for Codex.",
+      "tags": [
+        "isolation",
+        "findings",
+        "census"
+      ],
+      "type": "evidence",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-iso-1376-miss-d5b7d47/RESULTS.md"
+      ],
+      "tip": "d5b7d47de4cd96afbb95ec3a14d53e7be40bc463"
+    },
     {
       "id": "2026-09-19-comms-recensus-d5b7d47",
       "title": "Comms re-census MEASURED tip d5b7d47",
