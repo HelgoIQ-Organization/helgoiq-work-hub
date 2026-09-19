@@ -1,6 +1,42 @@
 {
-  "updatedAt": "2026-09-19T07:54:39.508Z",
+  "updatedAt": "2026-09-19T10:50:41.772Z",
   "drops": [
+    {
+      "id": "2026-09-19-door-access-feel-1433-fail-tip-93a48b17",
+      "title": "Door-access Feel #1433 FAIL tip 93a48b17",
+      "date": "2026-09-19",
+      "summary": "Empty Door Access Status still green Enabled/Normal with 0 readers; Measured FAIL after #1433.",
+      "plainEnglish": "Empty Door Access Status still green Enabled/Normal with 0 readers; Measured FAIL after #1433.",
+      "tags": [
+        "findings",
+        "status"
+      ],
+      "type": "finding",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-door-access-feel-1433-fail-tip-93a48b17/SUMMARY.md"
+      ],
+      "tip": "93a48b176a31d22d90b9701cf3d4d9026541dd11",
+      "githubIssue": "https://github.com/HelgoIQ-Organization/HelgoIQ-Platform/issues/1180#issuecomment-5741200107"
+    },
+    {
+      "id": "2026-09-19-cc-watch-1424-retest-tip-cdbff449-a-1-24-bf-1-30",
+      "title": "CC watch #1424 retest tip cdbff449 — A 1/24 BF 1/30 (run_timeout mass)",
+      "date": "2026-09-19",
+      "summary": "Honest measured: Cluster A 1/24, bank 1/30 on tip cdbff449; mass command_centre_get_run run_timeout; #1424 ancestor yes; tip_moved no",
+      "plainEnglish": "Honest measured: Cluster A 1/24, bank 1/30 on tip cdbff449; mass command_centre_get_run run_timeout; #1424 ancestor yes; tip_moved no",
+      "tags": [
+        "command-centre",
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-cc-watch-1424-retest-tip-cdbff449-a-1-24-bf-1-30/HUB-DROP-CC-1424-cdbff449.md"
+      ],
+      "tip": "cdbff449160992af2edc3a5c1ef5db9c8f3f26a6",
+      "githubIssue": "1180"
+    },
     {
       "id": "2026-09-19-launch-hub-tip-cdbff449-1433-live-headline-72-he",
       "title": "Launch Hub tip cdbff449 (#1433 live) — headline 72% held",
