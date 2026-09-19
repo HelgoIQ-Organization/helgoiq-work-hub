@@ -1,6 +1,24 @@
 {
-  "updatedAt": "2026-09-19T12:40:54.452Z",
+  "updatedAt": "2026-09-19T13:19:47.103Z",
   "drops": [
+    {
+      "id": "2026-09-19-launch-hub-tip-31951d3a-1445-live-1430-wait",
+      "title": "Launch Hub tip 31951d3a — #1445 live, #1430 waiting",
+      "date": "2026-09-19",
+      "summary": "Tip 8e842c06→31951d3a; #1445 finance forecast saved-months live; #1430 Meta undeployed; headline held 72%.",
+      "plainEnglish": "New staging build stamp 31951d3a is live. Finance forecast saved-months fix (#1445) is on. Meta Facebook handoff fix (#1430) is merged but not on DigitalOcean yet. Launch readiness still about 72% — no new measured retests claimed.",
+      "tags": [
+        "status",
+        "command-centre",
+        "finance"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-launch-hub-tip-31951d3a-1445-live-1430-wait/tip-31951d3a.md"
+      ],
+      "tip": "31951d3a33edd1f478e5ceef1e12187851064e0f"
+    },
     {
       "id": "2026-09-19-launch-hub-tip-8e842c06-1428-1436-live-1445-wait",
       "title": "Launch Hub tip 8e842c06 (#1428+#1436 live, #1445 waiting)",
