@@ -1,6 +1,38 @@
 {
-  "updatedAt": "2026-09-19T17:28:04.678Z",
+  "updatedAt": "2026-09-19T18:02:37.249Z",
   "drops": [
+    {
+      "id": "2026-09-19-launch-hub-tip-41451e93-live-1444-pulse-forecast",
+      "title": "Launch Hub tip 41451e93 live — #1444 pulse forecast",
+      "date": "2026-09-19",
+      "summary": "tip 41451e93 #1444; headline 69",
+      "plainEnglish": "Tip 41451e93 briefly live with #1444 pulse forecast using measured history on real dates. Readiness about 69%. Superseded the same evening by e82ebc8d.",
+      "tags": [
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-launch-hub-tip-41451e93-live-1444-pulse-forecast/SUMMARY.md"
+      ],
+      "tip": "41451e93"
+    },
+    {
+      "id": "2026-09-19-launch-hub-tip-e82ebc8d-live-1429-conn-disconnec",
+      "title": "Launch Hub tip e82ebc8d live — #1429 CONN-DISCONNECT",
+      "date": "2026-09-19",
+      "summary": "tip e82ebc8d live; headline hold 69; banks tip_moved",
+      "plainEnglish": "Staging tip is now e82ebc8d (#1429). Readiness still about 69%. Tip change alone does not create Measured passes. Command Centre banks on the previous tip were abandoned mid-run when the tip moved.",
+      "tags": [
+        "status"
+      ],
+      "type": "status",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-launch-hub-tip-e82ebc8d-live-1429-conn-disconnec/SUMMARY.md"
+      ],
+      "tip": "e82ebc8d"
+    },
     {
       "id": "2026-09-19-muse-pa-refrm-grant-proved-read-only",
       "title": "Muse PA Refrm grant proved (read-only)",
