@@ -1,6 +1,25 @@
 {
-  "updatedAt": "2026-09-19T16:20:47.606Z",
+  "updatedAt": "2026-09-19T16:25:39.740Z",
   "drops": [
+    {
+      "id": "2026-09-19-feel-spot-check-academy-retreats-safe-studio-set",
+      "title": "Feel spot-check Academy/Retreats/Safe Studio/Settings tip b87f71f3",
+      "date": "2026-09-19",
+      "summary": "Spot-check tip b87f71f3: Academy named URLs OK; Safe Studio fault drill OK; dock clip FIX_CANDIDATE cross-hub; Feature Management blocked Admin2 (Refrm not rechecked). Scores ~62/63/62/58.",
+      "plainEnglish": "Spot-check tip b87f71f3: Academy named URLs OK; Safe Studio fault drill OK; dock clip FIX_CANDIDATE cross-hub; Feature Management blocked Admin2 (Refrm not rechecked). Scores ~62/63/62/58.",
+      "tags": [
+        "census",
+        "findings",
+        "status"
+      ],
+      "type": "pack",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-19-feel-spot-check-academy-retreats-safe-studio-set/REVIEW.md",
+        "drops/2026-09-19-feel-spot-check-academy-retreats-safe-studio-set/FIX_CANDIDATE.md"
+      ],
+      "tip": "b87f71f3ca13261731b4e6237195d5cee655db06"
+    },
     {
       "id": "2026-09-19-census-core-measured-spot-check-tip-b87f71f3",
       "title": "Census Core Measured spot-check tip b87f71f3",
