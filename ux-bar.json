@@ -1,0 +1,872 @@
+{
+  "updatedAt": "2026-09-15T09:02:14Z",
+  "tip": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+  "bar": "joyful / obvious / frictionless vs WhatsApp & Slack",
+  "rubric": {
+    "joyful": "Warm, human, celebrates progress; list sells conversation not filenames; empty states inviting (0–100 vs WhatsApp/Slack).",
+    "obvious": "Know where you are, who's here, what to do next; labels not mystery icons; links land where names promise — no misroutes (0–100).",
+    "frictionless": "No full-page splash for in-app moves; phone works; one path to common actions; no dead ends (0–100).",
+    "overall": "round((joyful + obvious + frictionless) / 3)"
+  },
+  "headline": {
+    "joyful": 48,
+    "obvious": 46,
+    "frictionless": 44,
+    "overall": 46,
+    "note": "Equal-weight average across all scored surfaces (measured + provisional). Not launch readiness %. Website measured 75 on tip e3ba86e8 (2026-09-15)."
+  },
+  "honesty": {
+    "measured": "Surfaces with live Admin2 Bluebird retest PASS on tip 3ad37824: members-crm (#1284/#1287), marketing (#1285/#1288), website (#1280/#1281/#1283), intelligence (#1276/#1277/#1278), home (Overview #1277 adjacency). Evidence under helgoiq-overnight-2026-09-13/retests/. Website Feel measured by Census Content overnight: 65→72 (J66/O79/F71).",
+    "provisional_from_evidence": "academy/staff/finance/command-centre small bumps from tip-included PRs or screens without full RESULTS; team-chat/timetable/safe-studio/settings/forms/ambient held.",
+    "unscored": "Prefer provisional with low confidence over blank if L2 touched the hub.",
+    "note": "Prior Feel walks on tip 6486be87; overnight rescore synthesises retest PASSes on 3ad37824. Headline equal-weight not launch health."
+  },
+  "surfaces": [
+    {
+      "id": "team-chat",
+      "name": "Team chat",
+      "pathHint": "/admin/team-comms-hub",
+      "basis": "measured",
+      "confidence": "high",
+      "scoredAt": "2026-09-01",
+      "tipAtScore": "pre-6486be87-chat-qa-2026-09-01",
+      "joyful": 28,
+      "obvious": 32,
+      "frictionless": 18,
+      "overall": 26,
+      "plainSummary": "Measured Sep 1 Instructor Circle QA vs WhatsApp/Slack. Good bones (channel groups, warm reactions, Catch me up idea) but Refrm leak under Bluebird, phone thread unusable, no DMs/@mentions, and full-page splash on every open. Not yet a joyful or frictionless team chat.",
+      "strengths": [
+        "GENERAL / LOCATIONS / ROLES grouping matches how studios think",
+        "Warm reaction strip; poll results visible without voting",
+        "In-chat search is instant and correctly scoped",
+        "Catch me up concept is delightful — just unlabeled"
+      ],
+      "findings": [
+        {
+          "id": "F001",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Tenant isolation — Refrm chat under Bluebird",
+          "detail": "Bluebird shell still shows Refrm channels, staff names, polls and files. Teacher/client ignore ?c= for chat.",
+          "suggestion": "Scope channel/message/poll/file queries by company id server-side; reject unauthorized ?c=; fix document title/branding."
+        },
+        {
+          "id": "F002",
+          "axis": "obvious",
+          "severity": "confusing",
+          "title": "Who's here / Catch me up hidden",
+          "detail": "No avatar stack or member count in header; sparkle icon unlabeled so Catch me up looks like decoration.",
+          "suggestion": "Avatar stack + count in header; label Catch me up as a real button."
+        },
+        {
+          "id": "F003",
+          "axis": "frictionless",
+          "severity": "confusing",
+          "title": "No @mention, no composer emoji, no link previews",
+          "detail": "Typing @ does nothing; emoji only as reactions; Mentions-only notifications are dead.",
+          "suggestion": "Add @mention picker, composer emoji, and basic link previews."
+        },
+        {
+          "id": "F004",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Locked channel writable; Groups empty",
+          "detail": "Padlock icon on a channel that still accepts typing; Groups shows skeletons then zero with no create affordance.",
+          "suggestion": "Enforce lock or drop the icon; empty Groups state with next action."
+        },
+        {
+          "id": "F005",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Polls tab empty while live poll exists",
+          "detail": "Named Polls home shows No polls yet while a live poll sits in-channel.",
+          "suggestion": "Aggregate channel polls into the Polls tab."
+        },
+        {
+          "id": "F006",
+          "axis": "frictionless",
+          "severity": "confusing",
+          "title": "People search blank; no DMs",
+          "detail": "Search channels or people returns blank for people; no 1:1 path — private talk stays on WhatsApp.",
+          "suggestion": "People results + DM / New message path."
+        },
+        {
+          "id": "F007",
+          "axis": "obvious",
+          "severity": "confusing",
+          "title": "Unread / presence / Priority unclear",
+          "detail": "Priority only undefined; presence has no visible payoff; unread counts disagree across surfaces.",
+          "suggestion": "Define Priority; show presence dots; reconcile unread badges."
+        },
+        {
+          "id": "F008",
+          "axis": "frictionless",
+          "severity": "confusing",
+          "title": "Full-screen splash; filter chips sticky",
+          "detail": "HelgoIQ splash + Loading messages for in-app channel opens; filter chips can both look active.",
+          "suggestion": "In-place skeleton; never leave chat shell; reliable chip state."
+        },
+        {
+          "id": "F009",
+          "axis": "frictionless",
+          "severity": "broken",
+          "title": "Phone thread unscrolled; list clipped; no studio switcher",
+          "detail": "At 390×844 message column ~2440px with overflow hidden — composer off-screen. Timestamps/unread clipped. No company switcher on phone.",
+          "suggestion": "min-h-0 + overflow-y:auto on scroller; mobile-first list; studio switcher in phone chrome."
+        }
+      ],
+      "suggestions": [
+        "Make channel list WhatsApp-like: avatar + last message + bold unread",
+        "Header answers who's here (avatar stack + count)",
+        "Kill full-page splash for in-chat moves — skeleton in place",
+        "Ship DMs and a working @mention picker",
+        "Fix phone thread scroll (min-h-0) before any polish",
+        "Close F001 tenant scope before any write testing"
+      ],
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/team-chat.md",
+      "sourceReport": "/workspace/helgoiq-chat-qa/report/CHAT-QA-REPORT.md",
+      "previous": {
+        "tip": "pre-6486be87-chat-qa-2026-09-01",
+        "joyful": 28,
+        "obvious": 32,
+        "frictionless": 18,
+        "overall": 26
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight — held prior scores; tip stamp updated for honesty only where unchanged."
+    },
+    {
+      "id": "home",
+      "name": "Admin Home / overview",
+      "pathHint": "/admin/overview",
+      "basis": "measured",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 42,
+      "obvious": 30,
+      "frictionless": 40,
+      "overall": 37,
+      "plainSummary": "Measured Admin2 Bluebird walk tip 6486be87. /admin Home has warmth (date greeting, honest Pulse empty) but /admin/overview still shows Refrm tab+badge under Bluebird, Members (aggregated) is — while Members lists 11, and in-app moves flash a full-page FITNESS BUSINESS PLATFORM splash. Reachable and partly human — not yet obvious or trustworthy.",
+      "strengths": [
+        "/admin greets with weekday date + honest Studio Pulse INSUFFICIENT DATA",
+        "Empty Today's classes points to Timetable; location pills clear",
+        "Bluebird + TEST DATA badges make staging context obvious",
+        "Customise Home affordance present"
+      ],
+      "findings": [
+        {
+          "id": "H-F001",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Refrm tab + badge on Bluebird Overview",
+          "detail": "/admin/overview?c=150002 shows tablist All Companies | Refrm and a Refrm pill on the Bluebird company card.",
+          "suggestion": "When companyId=150002 never render other-tenant tabs/badges; scope overview server-side."
+        },
+        {
+          "id": "H-F002",
+          "axis": "frictionless",
+          "severity": "confusing",
+          "title": "Full-page splash for in-app Home moves",
+          "detail": "Members→/admin and KPI clicks flash Helgo FITNESS BUSINESS PLATFORM full-page splash.",
+          "suggestion": "Keep chrome; skeleton/pulse in content pane only."
+        },
+        {
+          "id": "H-F003",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Members (aggregated) — while Members has 11",
+          "detail": "Overview KPI Members (aggregated) is a dash; /admin/members reports 11 total / 9 active same tip.",
+          "suggestion": "Wire aggregate to same member query or hide until real; tile drills to /admin/members."
+        }
+      ],
+      "suggestions": [
+        "Kill Refrm tab/badge under Bluebird before other Home polish (H-F001)",
+        "Replace full-page splash with in-shell skeleton (H-F002)",
+        "Fix or hide Members (aggregated) until it matches Members (H-F003)",
+        "One clear next action on quiet days; fix Good morning, there",
+        "Make KPI tiles drill + return"
+      ],
+      "evidenceNote": "Measured 2026-09-13. Refrm still on Overview. Low obvious from aggregate/misroute pain.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/home.md",
+      "sourceReport": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/home/REVIEW.md",
+      "rescoreNote": "Overview Refrm hide (#1277 PASS) removes trust-breaker on Home/Overview adjacency; Pulse Stage 1B still pending.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 40,
+        "obvious": 22,
+        "frictionless": 38,
+        "overall": 33
+      }
+    },
+    {
+      "id": "members-crm",
+      "name": "Members & CRM",
+      "pathHint": "/admin/crm-hub",
+      "basis": "measured",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 52,
+      "obvious": 46,
+      "frictionless": 46,
+      "overall": 48,
+      "plainSummary": "Measured Admin2 Bluebird walk tip 6486be87. CRM Pipeline 10 human lead cards + loud Add Lead/search; Members 11 with Add Member and invitations. Trust cracks: Directory dead-ends unavailable; Overview — vs Members 11; people list buried under invitations/KPIs. Stronger bones than Home — not WhatsApp-member-finder yet.",
+      "strengths": [
+        "Pipeline lead cards feel human (avatar + source + timestamp)",
+        "+ Add Lead / + Add Member high-contrast on primary hubs",
+        "Lead detail Convert + timeline + back works",
+        "Member rows show status and home studio"
+      ],
+      "findings": [
+        {
+          "id": "M-F001",
+          "axis": "frictionless",
+          "severity": "broken",
+          "title": "Sidebar Directory → unavailable page",
+          "detail": "Members → Directory and /admin/directory show This admin page is unavailable with duplicate Home CTAs.",
+          "suggestion": "Point Directory at /admin/members or remove pin if route missing."
+        },
+        {
+          "id": "M-F002",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Overview — vs Members 11 count disagree",
+          "detail": "Same seat/tenant/tip: Overview Members (aggregated)=—; Members header 11 total / 9 active.",
+          "suggestion": "One source of truth for member counts; drill from Overview tile."
+        },
+        {
+          "id": "M-F003",
+          "axis": "joyful",
+          "severity": "confusing",
+          "title": "Invitations + KPIs bury the people list",
+          "detail": "First paint is invitations + four KPI cards; human rows below the fold.",
+          "suggestion": "People list first (avatar + last activity); collapse invitations; KPIs secondary."
+        }
+      ],
+      "suggestions": [
+        "Fix Directory route or retarget to Members (M-F001)",
+        "Align Overview member aggregate with Members counts (M-F002)",
+        "Promote human member rows above invitations chrome (M-F003)",
+        "Keep AI Performance KPI↔list contract; clarify Insights naming",
+        "One-path Add Member from every Members entry"
+      ],
+      "evidenceNote": "Measured 2026-09-13. Directory unavailable / count disagree / list buried.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/members-crm.md",
+      "sourceReport": "/workspace/helgoiq-afternoon-2026-09-13/feel-measured/members-crm/REVIEW.md",
+      "rescoreNote": "Retest PASS #1284 Directory list + #1287 invitations compact on tip 3ad37824 — obvious/friction up vs Directory dead-end + buried list on 6486be87.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 48,
+        "obvious": 36,
+        "frictionless": 40,
+        "overall": 41
+      }
+    },
+    {
+      "id": "timetable",
+      "name": "Timetable & bookings",
+      "pathHint": "/admin/timetable",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 45,
+      "obvious": 48,
+      "frictionless": 42,
+      "overall": 45,
+      "plainSummary": "Provisional from daily hubs L2 (merged) plus booking/smoke history. Timetable is more navigable than chat/finance but phone and multi-step booking still add friction; no dedicated joyful polish pass.",
+      "strengths": [
+        "Daily hubs L2 wave included timetable",
+        "Booking smoke steps have passed on recent tips"
+      ],
+      "findings": [],
+      "suggestions": [
+        "One-tap from timetable cell to class roster / waitlist",
+        "Honest empty days with 'Add class' CTA",
+        "Phone: day/week switch without losing scroll position",
+        "Label mystery icons (capacity, waitlist, cover)",
+        "After booking actions, stay in context — no full splash"
+      ],
+      "evidenceNote": "Daily hubs L2 merged (Members/Timetable/Inbox/Finance/Home/Staff/Safe Studio). Specific timetable FAIL detail sparse — scores conservative.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/timetable.md",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 45,
+        "obvious": 48,
+        "frictionless": 42,
+        "overall": 45
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight — held prior scores; tip stamp updated for honesty only where unchanged."
+    },
+    {
+      "id": "finance",
+      "name": "Finance / payments UI",
+      "pathHint": "/admin/finance",
+      "basis": "provisional_from_evidence",
+      "confidence": "low",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 58,
+      "obvious": 49,
+      "frictionless": 49,
+      "overall": 52,
+      "plainSummary": "Measured live tip 6486be87 Admin2 Bluebird. Calm UI + strong Stripe Connect sandbox language, but invoicing→Payroll misroute, POS Overview vs Orders disagreement, and non-drilling KPI tiles keep money ops below a WhatsApp/Slack bar. Cashflow y-axis readable live; empty payroll/BI history states still cold.",
+      "strengths": [
+        "Stripe Connect Connected and ready / Safe Studio sandbox copy",
+        "Billing cards open Stripe TEST hosted sessions (observe-only)",
+        "Gift Cards and Products usable once found",
+        "Cashflow forecast y-axis readable on this tip"
+      ],
+      "findings": [
+        {
+          "id": "F-FIN-02",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "Invoicing URL shows Payroll",
+          "detail": "/admin/invoicing renders Payroll chrome and Approve Payrun."
+        },
+        {
+          "id": "F-FIN-03",
+          "axis": "obvious",
+          "severity": "broken",
+          "title": "POS Overview vs Orders disagreement",
+          "detail": "Overview Paid orders 0 / £0 while Orders lists three paid £20 rows."
+        },
+        {
+          "id": "F-FIN-01",
+          "axis": "frictionless",
+          "severity": "confusing",
+          "title": "Payroll KPIs do not drill",
+          "detail": "KPI tiles look clickable; August empty is bare zeros."
+        },
+        {
+          "id": "F-FIN-05",
+          "axis": "joyful",
+          "severity": "confusing",
+          "title": "BI history looks like failure",
+          "detail": "Red X / em-dash targets / internal totalRevenue keys when baseline missing."
+        }
+      ],
+      "suggestions": [
+        "Make every finance KPI a labeled filter with return, or remove click affordance",
+        "Fix invoicing alias so route name matches the page",
+        "One paid-order query + period across POS Overview and Orders",
+        "Neutral not-enough-history BI state (no red failure chrome)",
+        "Finance hub Money actions row for Gift Cards / Products / Refunds / Invoices",
+        "Empty payroll month CTA: No run yet — Run Payroll"
+      ],
+      "evidenceNote": "Measured REVIEW + FIX_CANDIDATE + 25 screenshots under helgoiq-afternoon-2026-09-13/feel-measured/finance/. L2 Finance (0P/1Part/6F) informed but scores from live feel walk.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/finance.md",
+      "rescoreNote": "#1294 BI scorecard on tip; #1292/#1293 still open — tiny obvious bump only, no clear measured walk tonight.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 58,
+        "obvious": 47,
+        "frictionless": 49,
+        "overall": 51
+      }
+    },
+    {
+      "id": "staff",
+      "name": "Staff hub",
+      "pathHint": "/admin/staff-hub",
+      "basis": "provisional_from_evidence",
+      "confidence": "low",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 50,
+      "obvious": 48,
+      "frictionless": 40,
+      "overall": 46,
+      "plainSummary": "Measured lab: Staff hub is warmer and clearer than the L2 FAIL list (checklist, Invite staff, 14-member table). Friction is chrome — Unknown profile name, clipped “Ob” tabs, rota grid under the dock.",
+      "strengths": [
+        "Onboarding checklist names expired invites and incomplete setups",
+        "Invite Staff is obvious on Team and Invitations",
+        "14-member table with search/role/status",
+        "Role copy explains Owner/Admin/Manager"
+      ],
+      "findings": [
+        {
+          "id": "STF-FEEL-01",
+          "axis": "joyful",
+          "severity": "high",
+          "title": "Known teacher shown as Unknown",
+          "detail": "/admin/staff/2160660 heading is Unknown for helgoiq-bb-teacher-2@agentmail.to.",
+          "suggestion": "Resolve display name from the staff record."
+        },
+        {
+          "id": "STF-FEEL-02",
+          "axis": "frictionless",
+          "severity": "medium",
+          "title": "Profile tabs clip to Ob",
+          "detail": "Horizontal tab row is cut mid-label.",
+          "suggestion": "Wrap or visibly scroll tabs."
+        },
+        {
+          "id": "STF-FEEL-03",
+          "axis": "frictionless",
+          "severity": "medium",
+          "title": "Rota grid under the dock",
+          "detail": "Bottom dock covers the lower week grid.",
+          "suggestion": "Pad rota canvas above the dock."
+        },
+        {
+          "id": "STF-FEEL-04",
+          "axis": "obvious",
+          "severity": "low",
+          "title": "Invite/roles URLs are aliases",
+          "detail": "/invite-staff and /roles rewrite to staff-hub tabs.",
+          "suggestion": "Keep aliases; land invite-staff on a composer."
+        }
+      ],
+      "suggestions": [
+        "Never show Unknown when email and role exist",
+        "Make profile tabs fully readable",
+        "Lift rota content above the dock",
+        "Land /invite-staff on an invite composer"
+      ],
+      "evidenceNote": "Measured 2026-09-13 Admin 2 Bluebird c=150002. Shots in feel-measured/staff/. FIX_CANDIDATE.md in staff-measured/.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/staff.md",
+      "rescoreNote": "Tip includes #1291 Staff Unknown + wrap tabs + #1290 dock; longtail screens present, RESULTS pending — small provisional bump.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 48,
+        "obvious": 44,
+        "frictionless": 36,
+        "overall": 43
+      }
+    },
+    {
+      "id": "marketing",
+      "name": "Marketing / campaigns",
+      "pathHint": "/admin/marketing",
+      "basis": "measured",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 70,
+      "obvious": 76,
+      "frictionless": 66,
+      "overall": 71,
+      "plainSummary": "Measured Admin 2 walk on tip 6486be87. Warmth and clarity beat the mid provisional; friction is Inbox density (clipped rails, status contradiction, 1850% Active Members), splash hops, and en-GB vs mm/dd/yyyy — not Meta/send secrets.",
+      "strengths": [
+        "Verdant editorial system and clear hub tabs",
+        "Newsletter 10-minute journey + AI CTA",
+        "Warm Banners empty state; Social connection honesty",
+        "Campaigns / Audience with real counts and next actions"
+      ],
+      "findings": [
+        "Inbox rails clip; Browser ON vs setup needed",
+        "Inbox Reporting % Active Members shows 1850%",
+        "Campaign schedule hint mm/dd/yyyy under en-GB",
+        "Full-page splash on in-app Marketing hops"
+      ],
+      "suggestions": [
+        "Fix Inbox clipped rails + Browser status contradiction",
+        "Fix % Active Members 1850% card",
+        "Locale-aware schedule date for en-GB",
+        "Skeleton in shell instead of full splash",
+        "One why-blocked / what-next pattern for disconnected channels"
+      ],
+      "evidenceNote": "Measured Feel walk 2026-09-13 tip 6486be87 — lightened vs provisional. See REVIEW + FIX_CANDIDATE.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/marketing.md",
+      "rescoreNote": "Retest PASS #1285 inbox rails + honest 36/2 share (no 1850%); #1288 en-GB 24h schedule — friction/obvious lift.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 68,
+        "obvious": 72,
+        "frictionless": 58,
+        "overall": 66
+      }
+    },
+    {
+      "id": "website",
+      "name": "Website / CMS",
+      "pathHint": "/admin/website",
+      "basis": "measured",
+      "confidence": "high",
+      "scoredAt": "2026-09-15",
+      "tipAtScore": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "joyful": 70,
+      "obvious": 80,
+      "frictionless": 75,
+      "overall": 75,
+      "plainSummary": "Measured 2026-09-15 Admin2 tip e3ba86e8. Overall 75 (was 72). Draft/live governance strong; Health still fails without score/results. Identity named; Save Draft clean; phone dock holds.",
+      "strengths": [
+        "Draft vs live governance language",
+        "Desktop named start cards and Blog draft badges",
+        "Sticky phone dock remains usable"
+      ],
+      "findings": [
+        "Health failure contradicts “not checked yet”",
+        "Phone Website Hub tabs clip to lone “I”",
+        "Blog phone CTA truncates to “New Pos”",
+        "Unsaved badge after Save Draft"
+      ],
+      "suggestions": [
+        "Honest Health failure + Retry",
+        "Fix phone tab/CTA overflow",
+        "Clear Unsaved on draft save",
+        "Fix Unknown display name",
+        "Guided first-page win above readiness backlog"
+      ],
+      "evidenceNote": "Measured Feel walk 2026-09-13 tip 6486be87. See REVIEW + FIX_CANDIDATE (Health contradiction, phone tab clip, Blog CTA).",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/website.md",
+      "rescoreNote": "Census Content Feel Website live rescore on tip 3ad37824: 65→72 (J66/O79/F71). Aligns with #1280/#1281/#1283 PASS retests.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 64,
+        "obvious": 72,
+        "frictionless": 60,
+        "overall": 65
+      }
+    },
+    {
+      "id": "academy",
+      "name": "Academy / LMS",
+      "pathHint": "/admin/academy",
+      "basis": "provisional_from_evidence",
+      "confidence": "low",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 44,
+      "obvious": 30,
+      "frictionless": 38,
+      "overall": 37,
+      "plainSummary": "Measured lab: overview is warmer than L2 implied (green hero, Create a course), but named URLs still lie — tags/terms→LMS roles, news→libraries, invites/teachers→0 Reflections. Obviousness stays crushed.",
+      "strengths": [
+        "Editorial green hero and Create a course on overview",
+        "Libraries empty state is calm and actionable",
+        "Learners search/assign is readable",
+        "Certificates cards feel finished",
+        "No Refrm on these pages"
+      ],
+      "findings": [
+        {
+          "id": "ACD-FEEL-01",
+          "axis": "obvious",
+          "severity": "high",
+          "title": "Named Academy URLs misroute",
+          "detail": "class-tags/terms land LMS roles; news lands libraries; invites/teachers land Teacher tools with 0 Reflections.",
+          "suggestion": "Route each path to the named job or its own empty state."
+        },
+        {
+          "id": "ACD-FEEL-02",
+          "axis": "frictionless",
+          "severity": "medium",
+          "title": "Bottom dock clips LMS cards",
+          "detail": "Fixed dock overlaps overview/library lower cards.",
+          "suggestion": "Pad content above dock height."
+        },
+        {
+          "id": "ACD-FEEL-03",
+          "axis": "obvious",
+          "severity": "high",
+          "title": "Invites/teachers empty of the job",
+          "detail": "Teacher tools shows only a 0 Reflections tile.",
+          "suggestion": "Invite list on /invites; roster on /teachers."
+        }
+      ],
+      "suggestions": [
+        "Fix the five Academy misroutes so URL matches the job",
+        "Put an invite list on /invites and a roster on /teachers",
+        "Open a design editor on /certificate-design",
+        "Lift LMS content above the bottom dock"
+      ],
+      "evidenceNote": "Measured 2026-09-13 Admin 2 Bluebird c=150002. Shots in feel-measured/academy/. FIX_CANDIDATE.md in academy-measured/.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/academy.md",
+      "rescoreNote": "Tip includes #1289 named Academy routes + #1290 dock clearance (screens in longtail/; RESULTS pending). Provisional bump on obvious from named routes evidence screens.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 42,
+        "obvious": 22,
+        "frictionless": 34,
+        "overall": 33
+      }
+    },
+    {
+      "id": "safe-studio",
+      "name": "Safe Studio",
+      "pathHint": "/admin/safe-studio",
+      "basis": "measured",
+      "confidence": "high",
+      "scoredAt": "2026-09-15",
+      "tipAtScore": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "joyful": 58,
+      "obvious": 48,
+      "frictionless": 52,
+      "overall": 53,
+      "plainSummary": "Measured lab: warmer purple Safe Studio desk with honest Camio/CCTV empties. Overview Open faults/incidents still do not drill; location gate and dense door UI add hops.",
+      "strengths": [
+        "Branded purple shell and clear hero",
+        "Location Accountability Attention/Clear badges",
+        "Camio / CCTV honest empty copy",
+        "Named QA fault visible on Operations"
+      ],
+      "findings": [
+        {
+          "id": "SS-FEEL-01",
+          "axis": "obvious",
+          "severity": "medium",
+          "title": "Overview fault/incident tiles do not drill",
+          "detail": "Tiles show 1/1 but click did not open the named Operations row.",
+          "suggestion": "Tile opens location + named record."
+        },
+        {
+          "id": "SS-FEEL-02",
+          "axis": "frictionless",
+          "severity": "low",
+          "title": "Location gate before records",
+          "detail": "Must choose a location before operational records.",
+          "suggestion": "Preview owning location on the tile."
+        },
+        {
+          "id": "SS-FEEL-03",
+          "axis": "frictionless",
+          "severity": "low",
+          "title": "Door Access is dense",
+          "detail": "Config fields run below the fold.",
+          "suggestion": "Sectioned layout with sticky save."
+        }
+      ],
+      "suggestions": [
+        "Drill overview Open faults/incidents into Operations",
+        "Keep location gate; show owning location on tiles",
+        "Soften Door Access density",
+        "CCTV empty: CTA to assign viewing rights"
+      ],
+      "evidenceNote": "Measured 2026-09-15 Admin 2 Bluebird. Shots in helgoiq-overnight-pack-2026-09-15/feel/safe-studio/screenshots/. Tip e3ba86e851ff268ad439041a193feb3f742c03ed.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/safe-studio.md",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 40,
+        "obvious": 35,
+        "frictionless": 42,
+        "overall": 39
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight — held prior scores; tip stamp updated for honesty only where unchanged."
+    },
+    {
+      "id": "settings",
+      "name": "Settings / setup / feature mgmt",
+      "pathHint": "/admin/feature-management",
+      "basis": "measured",
+      "confidence": "high",
+      "scoredAt": "2026-09-15",
+      "tipAtScore": "e3ba86e851ff268ad439041a193feb3f742c03ed",
+      "joyful": 50,
+      "obvious": 34,
+      "frictionless": 52,
+      "overall": 45,
+      "plainSummary": "Measured lab: Setup/Integrations/Migration feel clearer. Refrm Academy — Learning still appears on Bluebird Feature Management search — isolation trust hole. PA gate correct.",
+      "strengths": [
+        "Setup Hub category cards",
+        "Platform Sales PA gate is honest",
+        "Data Migration steps readable",
+        "Meta connection empty state clear"
+      ],
+      "findings": [
+        {
+          "id": "SET-FEEL-01",
+          "axis": "obvious",
+          "severity": "high",
+          "title": "Refrm-named feature on Bluebird",
+          "detail": "Search Refrm returns Refrm Academy — Learning (academy.learning) on c=150002.",
+          "suggestion": "Scope feature catalogue by tenant/brand."
+        },
+        {
+          "id": "SET-FEEL-02",
+          "axis": "frictionless",
+          "severity": "medium",
+          "title": "Feature Control density",
+          "detail": "Large toggle table without clear first-glance risk framing.",
+          "suggestion": "Confirm dialog + plain risk copy."
+        }
+      ],
+      "suggestions": [
+        "Hide Refrm-named features from Bluebird Feature Management",
+        "Confirm before any Feature Control toggle",
+        "Group settings by job-to-be-done",
+        "Keep PA gate pattern"
+      ],
+      "evidenceNote": "Measured 2026-09-15 Admin 2 Bluebird. Shots in helgoiq-overnight-pack-2026-09-15/feel/settings/screenshots/. Tip e3ba86e851ff268ad439041a193feb3f742c03ed. Also NOTE-1313 Otto Othertenant queue leak.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/settings.md",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 38,
+        "obvious": 28,
+        "frictionless": 40,
+        "overall": 35
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight — held prior scores; tip stamp updated for honesty only where unchanged."
+    },
+    {
+      "id": "intelligence",
+      "name": "Intelligence & reports",
+      "pathHint": "/admin/reports-hub",
+      "basis": "measured",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 48,
+      "obvious": 57,
+      "frictionless": 39,
+      "overall": 48,
+      "plainSummary": "Measured hub pass on tip 6486be87. Titles/cards orient well; Daily Focus and Performance Intelligence show craft. Still fails WhatsApp/Slack on flow and trust: full-page splashes, MRR crash, Refrm on Bluebird Heat Map/Overview.",
+      "strengths": [
+        "Clear titles/tabs within ~10 seconds on most surfaces",
+        "Studio Intelligence executive framing; Performance Intelligence trust-labelled insights",
+        "Daily Focus empty state warm and actionable"
+      ],
+      "findings": [
+        "MRR crash (undefined.length) on /admin/intelligence/mrr",
+        "Refrm studios still listed on Bluebird Geographic Heat Map filters and Overview tab",
+        "Full HelgoIQ splash on every in-hub Intelligence/Reports move",
+        "Fragmented IA — many polished rooms, no single start-here",
+        "Reporting KPIs lack obvious drill; Centre/Impact empty push Seed Demo"
+      ],
+      "suggestions": [
+        "Fix /admin/intelligence/mrr crash",
+        "Strip Refrm studios from Bluebird heat map + Overview tabs",
+        "In-shell skeletons instead of full-page splash for in-admin moves",
+        "One Intelligence home; KPI drill + return on Reporting tiles",
+        "Empty AI cards: why empty + how to enable (hide Seed Demo day-to-day)"
+      ],
+      "evidenceNote": "Measured Feel walk 2026-09-13 tip 6486be87 — see REVIEW.md + 9 screenshots. Top pains: MRR crash, Refrm on Heat Map/Overview, full-page splash, fragmented IA, no KPI drill.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/intelligence.md",
+      "rescoreNote": "Retest PASS #1276 Bluebird-only heat filters, #1277 no Refrm on Overview, #1278 MRR loads without crash — friction/obvious large lift vs prior Refrm/MRR fails.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 44,
+        "obvious": 47,
+        "frictionless": 27,
+        "overall": 39
+      }
+    },
+    {
+      "id": "forms",
+      "name": "Forms / QR / waivers",
+      "pathHint": "/admin/forms",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 42,
+      "obvious": 38,
+      "frictionless": 35,
+      "overall": 38,
+      "plainSummary": "Provisional from Forms+QR E2E: contact builder PASS; QR generation PASS; public QR destination FAIL (Loading payment… then blank). Waiver type not present. Physical phone scan blocked. Destination mismatch tanks obvious+frictionless.",
+      "strengths": [
+        "Admin create/edit/preview/submit contact form PASS",
+        "QR create under Bluebird PASS"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Fix public /q/… destination — must open the linked form, not payment loader",
+        "Offer waiver form type in builder",
+        "Empty forms list: start from template (contact / waiver / intake)",
+        "After QR create, show scan preview that matches public URL",
+        "Phone: form fill without chrome covering submit"
+      ],
+      "evidenceNote": "forms-pass-qr-dest-fail tip a263c4ab; later matrices on a73ff70 still show QR kind / public fails. Tip at score uses hub live tip for board currency; evidence spans a263c4ab–a73ff70.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/forms.md",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 42,
+        "obvious": 38,
+        "frictionless": 35,
+        "overall": 38
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight — held prior scores; tip stamp updated for honesty only where unchanged."
+    },
+    {
+      "id": "ambient",
+      "name": "Studio Pulse / Morning Dispatch / Twin",
+      "pathHint": "/admin/morning-dispatch",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "6486be87a68821e383d36d5246f9da08a802ee59",
+      "joyful": 55,
+      "obvious": 58,
+      "frictionless": 52,
+      "overall": 55,
+      "plainSummary": "Provisional from Ambient measured strand (92%) + Dispatch viewer PASS on tip 6486be87 (honest empty, no crash). Best feel candidate: honest not-ready copy, role tabs, Generate present. Twin/BI historically blocked for some seats — kept conservative.",
+      "strengths": [
+        "Dispatch viewer FAIL→PASS with inviting empty state",
+        "Pulse shell loads",
+        "Role tabs Owner/Manager/Marketing/Sales"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Keep honest empty pattern — export it to other hubs",
+        "After Generate, celebrate with clear preview link",
+        "Pulse: explain numbers in one sentence (why this matters today)",
+        "Twin: reachable for Admin2 without seed dead-ends",
+        "Phone: dispatch viewer readable without zoom"
+      ],
+      "evidenceNote": "Ambient dispatch viewer PASS tip 6486be87; ambient strand 92%. Twin/BI Admin2 reachability historically uneven — confidence medium.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/ambient.md",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 55,
+        "obvious": 58,
+        "frictionless": 52,
+        "overall": 55
+      },
+      "rescoreNote": "No tip-delta retest evidence tonight — held prior scores; tip stamp updated for honesty only where unchanged."
+    },
+    {
+      "id": "command-centre",
+      "name": "Command Centre chat UX",
+      "pathHint": "/admin/command-centre",
+      "basis": "provisional_from_evidence",
+      "confidence": "medium",
+      "scoredAt": "2026-09-13",
+      "tipAtScore": "3ad3782443d147934342e08a27d7151133369f74",
+      "joyful": 35,
+      "obvious": 30,
+      "frictionless": 40,
+      "overall": 35,
+      "plainSummary": "Provisional from answer quality (not acceptance % as a feel score). Milestone 2 B–F 4/30: invented how-do-I paths, missing named refuse reasons, XAGR numbers missing vs Pulse/Dispatch/Twin, investigation stalls. Chat shell may load; answers are not yet obvious or joyful.",
+      "strengths": [
+        "Cluster A 24/24 PASS on tip",
+        "Four B–F slots PASS (B-MSG-01, C-TODAY-01, E-FU-01, F-FU-01)"
+      ],
+      "findings": [],
+      "suggestions": [
+        "Stop inventing navigation paths — only cite real Admin routes",
+        "When refusing, use named refuse reasons Declan approved",
+        "Align XAGR / headcount numbers with Pulse/Dispatch/Twin",
+        "Investigation stalls: always offer next step or escalate",
+        "Celebrate correct answers briefly; don't dump walls of text",
+        "Isolation scare (E-FAC-01) must never appear for Bluebird-only asks"
+      ],
+      "evidenceNote": "CC Milestone 2 frozen bank 4/30 PASS on 6486be87; fail themes posted #1180. This surface scores answer UX feel, not the 48% strand acceptance meter.",
+      "detailDropId": "2026-09-13-ux-bar-feel",
+      "detailPath": "drops/2026-09-13-ux-bar-feel/surfaces/command-centre.md",
+      "rescoreNote": "#1265/#1271 on tip but agents Paused/Not opted in — cannot claim finding-identity feel win; tiny provisional only.",
+      "previous": {
+        "tip": "6486be87a68821e383d36d5246f9da08a802ee59",
+        "joyful": 35,
+        "obvious": 28,
+        "frictionless": 40,
+        "overall": 34
+      }
+    }
+  ]
+}

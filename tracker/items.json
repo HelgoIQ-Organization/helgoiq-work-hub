@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 2,
+  "schema": {
+    "description": "HelgoIQ Work Hub tracker board. tracker/items.json is the Hub-first source of truth for the Tracker tab; this file includes a reviewed live Platform mirror. Platform and GitHub Projects imports are never invented.",
+    "sourcePriority": [
+      "platform-live-pull-2026-09-24 (reviewed Platform mirror; preserve platformStatus, launchBlocking, and External\u2192external builder mapping)",
+      "direct upsert or reviewed agent PR to tracker/items.json (Hub-first)",
+      "TRACKER_EXPORT.json (optional local export; reviewed before publish)",
+      "gh issues labeled tracker and/or findings (optional secondary feed)",
+      "the seven seeded example rows (retained alongside live rows)"
+    ],
+    "itemFields": {
+      "id": "stable string id (trk-\u2026 or issue-N or HIQ-\u2026)",
+      "title": "Platform title / short board title",
+      "state": "open | in-progress | blocked | done | wontfix (derived Hub state)",
+      "platformStatus": "exact Platform status: Not started | In progress | Partially complete | Fixed \u2014 awaiting confirmation | Verified by agent (plus Confirmed complete / Wont fix if present); primary Tracker filter",
+      "launchBlocking": "Platform boolean; Tracker badge only, never Dashboard launch readiness or hero %",
+      "area": "Hub area; Platform Backend/Infrastructure/Platform/Admin/Teacher/Client rows map to sensible Hub areas (default ops)",
+      "builder": "claude | codex | cursor | grok | bot-commander | declan | engineering | external | unassigned; Platform owner mapping includes External\u2192external",
+      "openedAt": "ISO-8601 when first seen / filed",
+      "updatedAt": "ISO-8601 last movement",
+      "summary": "plain-English one-liner for Declan",
+      "seed": "true for the seven retained examples; false for live Platform rows",
+      "githubIssue": "optional issue/PR URL",
+      "evidence": "optional array of {label, url? or note?, kind: drop | github | staging | note}",
+      "claimedBy": "optional builder enum value who claimed the card",
+      "claimedAt": "optional ISO-8601 claim time",
+      "agentNotes": "optional coordination, waitingOn, severity, or evidence note"
+    }
+  },
+  "updatedAt": "2026-09-24T11:00:38Z",
+  "source": "public-scrub-2026-09-24",
+  "live": true,
+  "blocked": null,
+  "banner": "Sensitive tracker detail is private. Public Hub shows a count of hidden items only until Declan approves a private Hub design. Full cards are not in this public file.",
+  "itemsNote": "Public scrub 24 Sep 2026: security, tenant isolation, personal data, payment defects, and commercial matters removed from the public board. Aggregates only. Agents: Platform live board or /workspace/private-tracker-backup-2026-09-24/items.full.json until private host approved.",
+  "publicPolicy": "plain-status-only",
+  "privateItemCount": 277,
+  "privateByPlatformStatus": {
+    "Fixed \u2014 awaiting confirmation": 33,
+    "In progress": 20,
+    "Not started": 193,
+    "Partially complete": 19,
+    "Verified by agent": 5,
+    "blocked": 2,
+    "open": 5
+  },
+  "privateByState": {
+    "blocked": 35,
+    "in-progress": 44,
+    "open": 198
+  },
+  "privateByArea": {
+    "ambient": 24,
+    "command-centre": 24,
+    "comms": 1,
+    "dataset": 1,
+    "isolation": 1,
+    "m1": 5,
+    "ops": 220,
+    "smoke": 1
+  },
+  "items": []
+}

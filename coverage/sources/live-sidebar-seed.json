@@ -1,0 +1,340 @@
+{
+  "version": 2,
+  "source": {
+    "repo": "HelgoIQ-Organization/HelgoIQ-Platform",
+    "ref": "staging",
+    "files": [
+      "client/src/lib/workspaceLauncherRedesign/sidebarRules.ts",
+      "client/src/lib/liveAdminNavigation.ts"
+    ],
+    "rule": "Max two sidebar levels: root \u2192 hub. Below hub = page/secondary tabs. Studio tree separate from Platform owner tree."
+  },
+  "studioRoots": [
+    {
+      "id": "home",
+      "label": "Home",
+      "summary": "Dashboard. One hub: AI Command Centre."
+    },
+    {
+      "id": "studio",
+      "label": "Studio",
+      "summary": "Timetable, access, POS, Safe Studio, security, reports."
+    },
+    {
+      "id": "members",
+      "label": "Members",
+      "summary": "Directory, Training, CRM, Journeys, Retention."
+    },
+    {
+      "id": "marketing",
+      "label": "Marketing",
+      "summary": "Inbox, campaigns, ads, social, on-site, website."
+    },
+    {
+      "id": "team",
+      "label": "Team",
+      "summary": "Staff and learning."
+    },
+    {
+      "id": "academy",
+      "label": "Academy",
+      "summary": "LMS hubs."
+    },
+    {
+      "id": "finance",
+      "label": "Finance",
+      "summary": "Payments, Products, Bookkeeping, Open banking, Gift cards, Revenue."
+    },
+    {
+      "id": "experiences",
+      "label": "Experiences",
+      "summary": "Loyalty and retreats."
+    },
+    {
+      "id": "settings",
+      "label": "Settings",
+      "summary": "Setup, connections, data, guides, compliance."
+    }
+  ],
+  "studioHubs": [
+    {
+      "id": "ai-command-centre",
+      "rootId": "home",
+      "label": "AI Command Centre"
+    },
+    {
+      "id": "timetable",
+      "rootId": "studio",
+      "label": "Timetable"
+    },
+    {
+      "id": "access",
+      "rootId": "studio",
+      "label": "Access"
+    },
+    {
+      "id": "pos",
+      "rootId": "studio",
+      "label": "POS & kiosks"
+    },
+    {
+      "id": "safe-studio",
+      "rootId": "studio",
+      "label": "Safe Studio"
+    },
+    {
+      "id": "security",
+      "rootId": "studio",
+      "label": "Security"
+    },
+    {
+      "id": "reports",
+      "rootId": "studio",
+      "label": "Reports"
+    },
+    {
+      "id": "members",
+      "rootId": "members",
+      "label": "Directory"
+    },
+    {
+      "id": "training",
+      "rootId": "members",
+      "label": "Training"
+    },
+    {
+      "id": "crm",
+      "rootId": "members",
+      "label": "CRM"
+    },
+    {
+      "id": "journeys",
+      "rootId": "members",
+      "label": "Journeys"
+    },
+    {
+      "id": "retention",
+      "rootId": "members",
+      "label": "Retention"
+    },
+    {
+      "id": "inbox",
+      "rootId": "marketing",
+      "label": "Inbox"
+    },
+    {
+      "id": "campaigns",
+      "rootId": "marketing",
+      "label": "Campaigns"
+    },
+    {
+      "id": "advertising",
+      "rootId": "marketing",
+      "label": "Advertising"
+    },
+    {
+      "id": "social",
+      "rootId": "marketing",
+      "label": "Social"
+    },
+    {
+      "id": "onsite",
+      "rootId": "marketing",
+      "label": "On-site"
+    },
+    {
+      "id": "website",
+      "rootId": "marketing",
+      "label": "Website"
+    },
+    {
+      "id": "staff",
+      "rootId": "team",
+      "label": "Staff"
+    },
+    {
+      "id": "learning",
+      "rootId": "team",
+      "label": "Learning"
+    },
+    {
+      "id": "lms-overview",
+      "rootId": "academy",
+      "label": "Overview"
+    },
+    {
+      "id": "courses",
+      "rootId": "academy",
+      "label": "Courses"
+    },
+    {
+      "id": "learners",
+      "rootId": "academy",
+      "label": "Learners"
+    },
+    {
+      "id": "certificates",
+      "rootId": "academy",
+      "label": "Certificates"
+    },
+    {
+      "id": "lms-community",
+      "rootId": "academy",
+      "label": "Community"
+    },
+    {
+      "id": "commerce",
+      "rootId": "academy",
+      "label": "Commerce"
+    },
+    {
+      "id": "payments",
+      "rootId": "finance",
+      "label": "Payments"
+    },
+    {
+      "id": "products",
+      "rootId": "finance",
+      "label": "Products"
+    },
+    {
+      "id": "bookkeeping",
+      "rootId": "finance",
+      "label": "Bookkeeping"
+    },
+    {
+      "id": "open-banking",
+      "rootId": "finance",
+      "label": "Open banking"
+    },
+    {
+      "id": "gift-cards",
+      "rootId": "finance",
+      "label": "Gift cards"
+    },
+    {
+      "id": "revenue",
+      "rootId": "finance",
+      "label": "Revenue"
+    },
+    {
+      "id": "loyalty",
+      "rootId": "experiences",
+      "label": "Loyalty"
+    },
+    {
+      "id": "retreats",
+      "rootId": "experiences",
+      "label": "Retreats"
+    },
+    {
+      "id": "setup",
+      "rootId": "settings",
+      "label": "Setup"
+    },
+    {
+      "id": "connections",
+      "rootId": "settings",
+      "label": "Connections"
+    },
+    {
+      "id": "data",
+      "rootId": "settings",
+      "label": "Data"
+    },
+    {
+      "id": "guides",
+      "rootId": "settings",
+      "label": "Guides"
+    },
+    {
+      "id": "compliance",
+      "rootId": "settings",
+      "label": "Compliance"
+    }
+  ],
+  "platformRoot": {
+    "id": "platform",
+    "label": "Platform",
+    "summary": "Platform owner only \u2014 Studio/Platform toggle.",
+    "hubs": [
+      {
+        "id": "platform-overview",
+        "label": "Overview",
+        "keys": [
+          "platform-dashboard",
+          "platform-connections",
+          "platform-training-hub",
+          "tenant-management",
+          "platform-plans",
+          "platform-videos",
+          "platform-knowledge",
+          "platform-issues"
+        ]
+      },
+      {
+        "id": "product",
+        "label": "Product",
+        "keys": [
+          "feature-management",
+          "feature-flags",
+          "stripe-connect"
+        ]
+      },
+      {
+        "id": "operations",
+        "label": "Operations",
+        "keys": [
+          "system-health",
+          "system-blueprint",
+          "platform-scaling",
+          "seed-data",
+          "sentry",
+          "event-bus",
+          "visual-intelligence-showcase"
+        ]
+      },
+      {
+        "id": "governance",
+        "label": "Governance",
+        "keys": [
+          "ai-decision-audit",
+          "implementation-checklist",
+          "roadmap",
+          "changelog",
+          "breach-process"
+        ]
+      }
+    ]
+  },
+  "bottomBar": [
+    {
+      "id": "command",
+      "label": "Command"
+    },
+    {
+      "id": "members",
+      "label": "Members"
+    },
+    {
+      "id": "inbox",
+      "label": "Inbox"
+    },
+    {
+      "id": "timetable",
+      "label": "Timetable"
+    },
+    {
+      "id": "automation",
+      "label": "Automation"
+    },
+    {
+      "id": "setup",
+      "label": "Setup"
+    },
+    {
+      "id": "campaigns",
+      "label": "Campaigns"
+    }
+  ]
+}

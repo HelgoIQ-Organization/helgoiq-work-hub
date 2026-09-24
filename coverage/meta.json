@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-09-21T07:42:39.194Z",
+  "liveTip": "8680d02db9af0cded31cebea0928bd4eb9a2fb38",
+  "liveTipPlaceholder": false,
+  "liveTipShort": "8680d02d",
+  "audience": "admin",
+  "platformRepo": "HelgoIQ-Organization/HelgoIQ-Platform",
+  "platformMenuTip": "a73ff70b266057f226bb02c5f3112f72a92ad53d",
+  "bundle407": {
+    "present": true,
+    "source": "coverage/sources/_routes_from_bundle.txt",
+    "adminRouteCount": 407,
+    "expectedBundleCount": 407
+  },
+  "counts": {
+    "total": 413,
+    "menu": 233,
+    "matched": 232,
+    "hubOnly": 1,
+    "orphaned": 180,
+    "fullyTested": 0,
+    "partiallyTested": 0,
+    "blocked": 1,
+    "failed": 100,
+    "notTested": 312,
+    "stale": 110
+  },
+  "completenessStatement": "How we verified completeness: intersection of the product sidebar map (HelgoIQ-Platform client/src/lib/adminMenuCatalog.ts + AdminNav adminMenuItems — 233 menu paths) vs the 407-route orphan audit admin subset (407 /admin paths from coverage/sources/_routes_from_bundle.txt). Counts: 232 matched (in sidebar and in the router/407 side), 1 hub-only (sidebar/menu path with no matching 407/router row), 180 orphaned (407/router path with no menu breadcrumb). SURFACES.md / full-census inventory was not in this hub repo; breadcrumbs use workspace › folder › title from the live AdminNav folder map. Most pages are not_tested — we do not invent PASS rates. Known FAIL/BLOCKED rows are stamped only when a hub drop already named that route.",
+  "sourcesUsed": {
+    "adminMenu": "coverage/sources/admin-menu.json",
+    "folders": "coverage/sources/folders.json",
+    "workspaces": "coverage/sources/workspaces.json",
+    "routerExtras": true,
+    "routes407": "coverage/sources/_routes_from_bundle.txt",
+    "coverageJson": true
+  },
+  "notes": [
+    "Admin ships first. Platform owner / Teacher / Client are placeholders.",
+    "Feed coverage/sources/_routes_from_bundle.txt to reconcile against the Cursor 407 orphan list.",
+    "Never invent greens. Prefer not_tested over a guessed PASS."
+  ]
+}

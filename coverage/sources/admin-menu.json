@@ -1,0 +1,1167 @@
+[
+  {
+    "key": "dashboard",
+    "label": "Home",
+    "path": "/admin"
+  },
+  {
+    "key": "command-centre",
+    "label": "AI Command Centre",
+    "path": "/admin/command-centre"
+  },
+  {
+    "key": "members",
+    "label": "Members",
+    "path": "/admin/members"
+  },
+  {
+    "key": "timetable",
+    "label": "Timetable",
+    "path": "/admin/timetable"
+  },
+  {
+    "key": "appointments-hub",
+    "label": "Appointment Setup",
+    "path": "/admin/appointments-hub"
+  },
+  {
+    "key": "crm-hub",
+    "label": "CRM & Acquisition",
+    "path": "/admin/crm-hub"
+  },
+  {
+    "key": "inbox",
+    "label": "Inbox",
+    "path": "/admin/inbox"
+  },
+  {
+    "key": "tasks",
+    "label": "Tasks",
+    "path": "/admin/tasks"
+  },
+  {
+    "key": "documents",
+    "label": "Document Vault",
+    "path": "/admin/documents"
+  },
+  {
+    "key": "automation",
+    "label": "Automation Journeys",
+    "path": "/admin/automation"
+  },
+  {
+    "key": "tag-hub",
+    "label": "Tag Hub",
+    "path": "/admin/tag-hub"
+  },
+  {
+    "key": "audience-hub",
+    "label": "Audience Hub",
+    "path": "/admin/audience-hub"
+  },
+  {
+    "key": "retention-hub",
+    "label": "Retention & Loyalty",
+    "path": "/admin/retention-hub"
+  },
+  {
+    "key": "revenue-intelligence",
+    "label": "AI Revenue Intelligence",
+    "path": "/admin/revenue-intelligence"
+  },
+  {
+    "key": "comm-management",
+    "label": "Communication Management",
+    "path": "/admin/comm-management"
+  },
+  {
+    "key": "comms-messaging-numbers",
+    "label": "Messaging Numbers",
+    "path": "/admin/comms/messaging-numbers"
+  },
+  {
+    "key": "comms-opt-outs",
+    "label": "Opt-Out Management",
+    "path": "/admin/comms/opt-outs"
+  },
+  {
+    "key": "comms-message-logs",
+    "label": "Message Logs",
+    "path": "/admin/comms/message-logs"
+  },
+  {
+    "key": "comms-wallet",
+    "label": "Comms Wallet",
+    "path": "/admin/comms/wallet"
+  },
+  {
+    "key": "comms-intelligence",
+    "label": "Comms Intelligence",
+    "path": "/admin/comms/intelligence"
+  },
+  {
+    "key": "comms-learning-registry",
+    "label": "Learning Registry",
+    "path": "/admin/comms/learning-registry"
+  },
+  {
+    "key": "financial-forecasting",
+    "label": "AI Financial Forecasting",
+    "path": "/admin/financial-forecasting"
+  },
+  {
+    "key": "predictive-cash-flow",
+    "label": "AI Predictive Cash Flow",
+    "path": "/admin/predictive-cash-flow"
+  },
+  {
+    "key": "anomaly-alerts",
+    "label": "AI Anomaly Detection",
+    "path": "/admin/anomaly-alerts"
+  },
+  {
+    "key": "finance-hub",
+    "label": "Finance & Payments",
+    "path": "/admin/finance-hub"
+  },
+  {
+    "key": "bookkeeping",
+    "label": "Bookkeeping Inbox",
+    "path": "/admin/bookkeeping"
+  },
+  {
+    "key": "open-banking",
+    "label": "Open Banking",
+    "path": "/admin/open-banking"
+  },
+  {
+    "key": "view-as-member",
+    "label": "View as Member",
+    "path": "/admin/view-as-member"
+  },
+  {
+    "key": "products",
+    "label": "Products & Pricing",
+    "path": "/admin/products"
+  },
+  {
+    "key": "pt-packages",
+    "label": "PT Packages & Courses",
+    "path": "/admin/pt-packages"
+  },
+  {
+    "key": "reports-hub",
+    "label": "Reporting & Analytics",
+    "path": "/admin/reports-hub"
+  },
+  {
+    "key": "custom-dashboards",
+    "label": "Custom Dashboards",
+    "path": "/admin/custom-dashboards"
+  },
+  {
+    "key": "recap-recordings",
+    "label": "Recordings",
+    "path": "/admin/recordings"
+  },
+  {
+    "key": "overview",
+    "label": "Overview",
+    "path": "/admin/overview"
+  },
+  {
+    "key": "data-migration",
+    "label": "Data Migration",
+    "path": "/admin/data-migration"
+  },
+  {
+    "key": "seed-data",
+    "label": "Seed Data",
+    "path": "/admin/seed-data"
+  },
+  {
+    "key": "staff-hub",
+    "label": "Staff Hub",
+    "path": "/admin/staff-hub"
+  },
+  {
+    "key": "roles",
+    "label": "Roles & Access",
+    "path": "/admin/staff-hub?tab=roles"
+  },
+  {
+    "key": "invite-staff",
+    "label": "Invite Staff",
+    "path": "/admin/staff-hub?tab=invitations"
+  },
+  {
+    "key": "team",
+    "label": "Team Report",
+    "path": "/admin/team"
+  },
+  {
+    "key": "team-holidays",
+    "label": "Team Holidays",
+    "path": "/admin/team-holidays"
+  },
+  {
+    "key": "staff-milestones",
+    "label": "Staff Milestones",
+    "path": "/admin/staff-milestones"
+  },
+  {
+    "key": "post-class-intelligence",
+    "label": "Post-Class Intelligence",
+    "path": "/admin/post-class-intelligence"
+  },
+  {
+    "key": "devices",
+    "label": "Linked Devices",
+    "path": "/admin/devices"
+  },
+  {
+    "key": "checkins",
+    "label": "Check-Ins",
+    "path": "/admin/checkins"
+  },
+  {
+    "key": "kiosk-config",
+    "label": "Kiosk Config",
+    "path": "/admin/kiosk-config"
+  },
+  {
+    "key": "pos-hub",
+    "label": "POS Kiosk Hub",
+    "path": "/admin/pos-hub"
+  },
+  {
+    "key": "door-access",
+    "label": "Door Access Control",
+    "path": "/admin/door-access"
+  },
+  {
+    "key": "safe-studio",
+    "label": "Safe Studio",
+    "path": "/admin/safe-studio"
+  },
+  {
+    "key": "wallet-passes",
+    "label": "Wallet Passes",
+    "path": "/admin/wallet-passes"
+  },
+  {
+    "key": "setup",
+    "label": "Setup",
+    "path": "/admin/setup"
+  },
+  {
+    "key": "setup-wizard",
+    "label": "Setup Wizard",
+    "path": "/admin/setup/wizard"
+  },
+  {
+    "key": "onboarding",
+    "label": "Onboarding Wizard",
+    "path": "/admin/onboarding"
+  },
+  {
+    "key": "booking-messages",
+    "label": "Booking Messages",
+    "path": "/admin/booking-messages"
+  },
+  {
+    "key": "splash-screens",
+    "label": "Splash Screens",
+    "path": "/admin/splash-screens"
+  },
+  {
+    "key": "personal-messages",
+    "label": "Personal Messages",
+    "path": "/admin/personal-messages"
+  },
+  {
+    "key": "member-feedback",
+    "label": "Member Feedback",
+    "path": "/admin/member-feedback"
+  },
+  {
+    "key": "segments",
+    "label": "Customer Segments",
+    "path": "/admin/segments"
+  },
+  {
+    "key": "campaigns",
+    "label": "Campaigns",
+    "path": "/admin/campaigns"
+  },
+  {
+    "key": "marketing",
+    "label": "Acquisition",
+    "path": "/admin/marketing"
+  },
+  {
+    "key": "news",
+    "label": "News",
+    "path": "/admin/news"
+  },
+  {
+    "key": "newsletter-hub",
+    "label": "Newsletter",
+    "path": "/admin/newsletter-hub"
+  },
+  {
+    "key": "newsletter-creator",
+    "label": "Newsletter Creator",
+    "path": "/admin/newsletter-hub?tab=create"
+  },
+  {
+    "key": "weekly-growth-brief",
+    "label": "AI Weekly Growth Brief",
+    "path": "/admin/weekly-growth-brief"
+  },
+  {
+    "key": "meta-hub",
+    "label": "Meta Hub",
+    "path": "/admin/meta-hub"
+  },
+  {
+    "key": "social-hub",
+    "label": "Social & Reviews",
+    "path": "/admin/social-hub"
+  },
+  {
+    "key": "social",
+    "label": "Social Media Hub",
+    "path": "/admin/social"
+  },
+  {
+    "key": "advocacy-queue",
+    "label": "Review Identity Queue",
+    "path": "/admin/social/advocacy-queue"
+  },
+  {
+    "key": "landing-pages",
+    "label": "Landing Pages",
+    "path": "/admin/marketing?tab=landing-pages"
+  },
+  {
+    "key": "qr-generator",
+    "label": "QR Code Generator",
+    "path": "/admin/qr-generator"
+  },
+  {
+    "key": "google-ads",
+    "label": "Google Ads",
+    "path": "/admin/social/google-ads"
+  },
+  {
+    "key": "integrations",
+    "label": "Integrations",
+    "path": "/admin/social/integrations"
+  },
+  {
+    "key": "visual-intelligence-showcase",
+    "label": "Visual Intelligence",
+    "path": "/admin/visual-intelligence-showcase"
+  },
+  {
+    "key": "audience-intelligence",
+    "label": "AI Audience Intelligence",
+    "path": "/admin/audience-intelligence"
+  },
+  {
+    "key": "business-insights",
+    "label": "AI Business Insights",
+    "path": "/admin/business-insights"
+  },
+  {
+    "key": "performance-intelligence",
+    "label": "AI Performance Intelligence",
+    "path": "/admin/performance-intelligence"
+  },
+  {
+    "key": "retreats",
+    "label": "Retreats",
+    "path": "/admin/retreats-hub"
+  },
+  {
+    "key": "recovery-hub",
+    "label": "Recovery",
+    "path": "/admin/recovery-hub"
+  },
+  {
+    "key": "training-hub",
+    "label": "Training Hub",
+    "path": "/admin/training-hub"
+  },
+  {
+    "key": "community",
+    "label": "Community",
+    "path": "/admin/community-hub"
+  },
+  {
+    "key": "gift-cards",
+    "label": "Gift Cards",
+    "path": "/admin/gift-cards"
+  },
+  {
+    "key": "discount-codes",
+    "label": "Discount Codes",
+    "path": "/admin/discount-codes"
+  },
+  {
+    "key": "birthdays",
+    "label": "Birthdays",
+    "path": "/admin/birthdays"
+  },
+  {
+    "key": "milestones",
+    "label": "Milestones",
+    "path": "/admin/milestones-hub"
+  },
+  {
+    "key": "challenges",
+    "label": "Challenges",
+    "path": "/admin/challenges"
+  },
+  {
+    "key": "badges",
+    "label": "Badges",
+    "path": "/admin/badges"
+  },
+  {
+    "key": "referral-hub",
+    "label": "Referral Programme",
+    "path": "/admin/referral-hub"
+  },
+  {
+    "key": "assets",
+    "label": "Asset Library",
+    "path": "/admin/assets"
+  },
+  {
+    "key": "website-hub",
+    "label": "Website Hub",
+    "path": "/admin/website-hub"
+  },
+  {
+    "key": "website-health",
+    "label": "Website Health",
+    "path": "/admin/website/health"
+  },
+  {
+    "key": "website",
+    "label": "Website Management",
+    "path": "/admin/website"
+  },
+  {
+    "key": "site-import",
+    "label": "Bring my site",
+    "path": "/admin/website/import"
+  },
+  {
+    "key": "ai-page-builder",
+    "label": "AI Page Builder",
+    "path": "/admin/website/ai-builder"
+  },
+  {
+    "key": "global-styles",
+    "label": "Global Styles",
+    "path": "/admin/website/styles"
+  },
+  {
+    "key": "navigation",
+    "label": "Navigation",
+    "path": "/admin/website/navigation"
+  },
+  {
+    "key": "blog-hub",
+    "label": "Blog",
+    "path": "/admin/blog-hub"
+  },
+  {
+    "key": "forms",
+    "label": "Forms & Leads",
+    "path": "/admin/forms"
+  },
+  {
+    "key": "popups",
+    "label": "Pop-ups",
+    "path": "/admin/popups"
+  },
+  {
+    "key": "banners",
+    "label": "Banners",
+    "path": "/admin/banners"
+  },
+  {
+    "key": "seo",
+    "label": "SEO Controls",
+    "path": "/admin/seo"
+  },
+  {
+    "key": "analytics",
+    "label": "Website Analytics",
+    "path": "/admin/analytics"
+  },
+  {
+    "key": "migration",
+    "label": "Website Migration",
+    "path": "/admin/migration"
+  },
+  {
+    "key": "roadmap",
+    "label": "Product Roadmap",
+    "path": "/admin/roadmap"
+  },
+  {
+    "key": "gdpr",
+    "label": "GDPR Compliance",
+    "path": "/admin/gdpr"
+  },
+  {
+    "key": "platform-plans",
+    "label": "Platform Plans",
+    "path": "/admin/platform-plans"
+  },
+  {
+    "key": "feature-management",
+    "label": "Feature Management",
+    "path": "/admin/feature-management"
+  },
+  {
+    "key": "feature-flags",
+    "label": "Feature Flags",
+    "path": "/admin/feature-flags"
+  },
+  {
+    "key": "tenant-management",
+    "label": "Tenant Management",
+    "path": "/admin/tenant-management"
+  },
+  {
+    "key": "live-support",
+    "label": "Live Support",
+    "path": "/admin/live-support"
+  },
+  {
+    "key": "platform-videos",
+    "label": "Platform Videos",
+    "path": "/admin/platform-videos"
+  },
+  {
+    "key": "platform-knowledge",
+    "label": "Knowledge Library",
+    "path": "/admin/platform-knowledge"
+  },
+  {
+    "key": "platform-issues",
+    "label": "Live Issue Tracker",
+    "path": "/admin/platform-issues"
+  },
+  {
+    "key": "video-guides",
+    "label": "Platform Videos",
+    "path": "/admin/video-guides"
+  },
+  {
+    "key": "sentry",
+    "label": "Sentry Management",
+    "path": "/admin/sentry"
+  },
+  {
+    "key": "tag-management",
+    "label": "Tag Management",
+    "path": "/admin/tag-management"
+  },
+  {
+    "key": "tag-intelligence",
+    "label": "AI Tag Intelligence",
+    "path": "/admin/tag-intelligence"
+  },
+  {
+    "key": "journey-orchestrator",
+    "label": "AI Journey Orchestrator",
+    "path": "/admin/journey-orchestrator"
+  },
+  {
+    "key": "sentiment-analysis",
+    "label": "AI Sentiment Analysis",
+    "path": "/admin/sentiment-analysis"
+  },
+  {
+    "key": "campaign-composer",
+    "label": "AI Campaign Composer",
+    "path": "/admin/campaign-composer"
+  },
+  {
+    "key": "event-bus",
+    "label": "Event Bus",
+    "path": "/admin/event-bus"
+  },
+  {
+    "key": "member-digital-twin",
+    "label": "AI Member Digital Twin",
+    "path": "/admin/member-digital-twin"
+  },
+  {
+    "key": "ai-management-hub",
+    "label": "AI Management",
+    "path": "/admin/ai-management-hub"
+  },
+  {
+    "key": "ai-operations-health",
+    "label": "AI Operations Health",
+    "path": "/admin/ai-operations/health"
+  },
+  {
+    "key": "ai-usage",
+    "label": "AI Usage",
+    "path": "/admin/ai-usage"
+  },
+  {
+    "key": "ai-governance",
+    "label": "AI Governance",
+    "path": "/admin/ai-governance"
+  },
+  {
+    "key": "ai-decision-audit",
+    "label": "AI Decision Audit",
+    "path": "/admin/ai-decision-audit"
+  },
+  {
+    "key": "member-health-score",
+    "label": "Member Health Score",
+    "path": "/admin/member-health-score"
+  },
+  {
+    "key": "customer-voice-synthesis",
+    "label": "AI Customer Voice Synthesis",
+    "path": "/admin/customer-voice-synthesis"
+  },
+  {
+    "key": "instructor-ai-agents",
+    "label": "Instructor AI Agents",
+    "path": "/admin/instructor-ai-agents"
+  },
+  {
+    "key": "studio-intelligence",
+    "label": "Studio Intelligence",
+    "path": "/admin/studio-intelligence"
+  },
+  {
+    "key": "morning-dispatch",
+    "label": "Morning Dispatch",
+    "path": "/admin/morning-dispatch"
+  },
+  {
+    "key": "studio-pulse",
+    "label": "Studio Pulse",
+    "path": "/admin/studio-pulse"
+  },
+  {
+    "key": "org-intelligence",
+    "label": "Org Intelligence",
+    "path": "/admin/org-intelligence"
+  },
+  {
+    "key": "workforce-intelligence",
+    "label": "Workforce Intelligence",
+    "path": "/admin/workforce-intelligence"
+  },
+  {
+    "key": "manager-intelligence",
+    "label": "Manager Intelligence",
+    "path": "/admin/intelligence/manager"
+  },
+  {
+    "key": "executive-briefing",
+    "label": "Executive Briefing",
+    "path": "/admin/intelligence/executive-briefing"
+  },
+  {
+    "key": "mrr-intelligence",
+    "label": "MRR Intelligence",
+    "path": "/admin/intelligence/mrr"
+  },
+  {
+    "key": "subscription-cohorts",
+    "label": "Subscription Cohorts",
+    "path": "/admin/intelligence/cohorts"
+  },
+  {
+    "key": "studio-state",
+    "label": "Studio State Inspector",
+    "path": "/admin/studio-state"
+  },
+  {
+    "key": "intelligence-centre",
+    "label": "Intelligence Centre",
+    "path": "/admin/intelligence-centre"
+  },
+  {
+    "key": "intelligence-impact",
+    "label": "Intelligence Impact Centre",
+    "path": "/admin/intelligence-impact"
+  },
+  {
+    "key": "action-effectiveness",
+    "label": "Action Effectiveness Library",
+    "path": "/admin/action-effectiveness"
+  },
+  {
+    "key": "decision-engine",
+    "label": "Decision Engine",
+    "path": "/admin/decision-engine"
+  },
+  {
+    "key": "daily-focus",
+    "label": "Daily Focus",
+    "path": "/admin/daily-focus"
+  },
+  {
+    "key": "decision-weights",
+    "label": "Decision Engine Config",
+    "path": "/admin/decision-weights"
+  },
+  {
+    "key": "growth-rewards",
+    "label": "Growth Rewards Engine",
+    "path": "/admin/growth-rewards"
+  },
+  {
+    "key": "learning-engine",
+    "label": "Learning Engine",
+    "path": "/admin/learning-engine"
+  },
+  {
+    "key": "academy",
+    "label": "Learning Management System",
+    "path": "/admin/academy"
+  },
+  {
+    "key": "academy-courses",
+    "label": "Courses & Content",
+    "path": "/admin/academy/courses"
+  },
+  {
+    "key": "academy-libraries",
+    "label": "Content Libraries",
+    "path": "/admin/academy/libraries"
+  },
+  {
+    "key": "academy-exercises",
+    "label": "Exercises",
+    "path": "/admin/academy/exercises"
+  },
+  {
+    "key": "academy-quizzes",
+    "label": "Quizzes",
+    "path": "/admin/academy/quizzes"
+  },
+  {
+    "key": "academy-resources",
+    "label": "Resources",
+    "path": "/admin/academy/resources"
+  },
+  {
+    "key": "academy-news",
+    "label": "News",
+    "path": "/admin/academy/news"
+  },
+  {
+    "key": "academy-course-groups",
+    "label": "Course Groups",
+    "path": "/admin/academy/course-groups"
+  },
+  {
+    "key": "academy-learners",
+    "label": "Learners & Progress",
+    "path": "/admin/academy/learners"
+  },
+  {
+    "key": "academy-users",
+    "label": "Users",
+    "path": "/admin/academy/users"
+  },
+  {
+    "key": "academy-invites",
+    "label": "Invites",
+    "path": "/admin/academy/invites"
+  },
+  {
+    "key": "academy-reflections",
+    "label": "Reflections",
+    "path": "/admin/academy/reflections"
+  },
+  {
+    "key": "academy-teachers",
+    "label": "Teacher Tools",
+    "path": "/admin/academy/teachers"
+  },
+  {
+    "key": "academy-assessments",
+    "label": "Assessments",
+    "path": "/admin/academy/assessments"
+  },
+  {
+    "key": "academy-certificates",
+    "label": "Certificates",
+    "path": "/admin/academy/certificates"
+  },
+  {
+    "key": "academy-community",
+    "label": "Community",
+    "path": "/admin/academy/community"
+  },
+  {
+    "key": "academy-communications",
+    "label": "Communications",
+    "path": "/admin/academy/communications"
+  },
+  {
+    "key": "academy-commerce",
+    "label": "Commerce",
+    "path": "/admin/academy/commerce"
+  },
+  {
+    "key": "academy-financials",
+    "label": "Financials",
+    "path": "/admin/academy/financials"
+  },
+  {
+    "key": "academy-pricing",
+    "label": "Pricing",
+    "path": "/admin/academy/pricing"
+  },
+  {
+    "key": "academy-discount-codes",
+    "label": "Discount Codes",
+    "path": "/admin/academy/discount-codes"
+  },
+  {
+    "key": "academy-contracts",
+    "label": "Contracts",
+    "path": "/admin/academy/contracts"
+  },
+  {
+    "key": "academy-terms",
+    "label": "Terms & Conditions",
+    "path": "/admin/academy/terms"
+  },
+  {
+    "key": "academy-automations",
+    "label": "Automations",
+    "path": "/admin/academy/automations"
+  },
+  {
+    "key": "academy-settings",
+    "label": "Settings",
+    "path": "/admin/academy/settings"
+  },
+  {
+    "key": "academy-ai-personality",
+    "label": "AI Tutor Personality",
+    "path": "/admin/academy/ai-tutor-personality"
+  },
+  {
+    "key": "academy-ai-analytics",
+    "label": "AI Tutor Analytics",
+    "path": "/admin/academy/ai-tutor-analytics"
+  },
+  {
+    "key": "academy-ai-settings",
+    "label": "AI Feature Settings",
+    "path": "/admin/academy/ai-settings"
+  },
+  {
+    "key": "academy-certificate-design",
+    "label": "Certificate Design",
+    "path": "/admin/academy/certificate-design"
+  },
+  {
+    "key": "academy-class-tags",
+    "label": "Class Tags",
+    "path": "/admin/academy/class-tags"
+  },
+  {
+    "key": "academy-cohort-tags",
+    "label": "Cohort Tags",
+    "path": "/admin/academy/cohort-tags"
+  },
+  {
+    "key": "academy-course-recordings",
+    "label": "Course Recordings",
+    "path": "/admin/academy/course-recordings"
+  },
+  {
+    "key": "academy-import",
+    "label": "Import & Reconciliation",
+    "path": "/admin/academy/import"
+  },
+  {
+    "key": "academy-import-content",
+    "label": "Import Content",
+    "path": "/admin/academy/import-content"
+  },
+  {
+    "key": "academy-import-students",
+    "label": "Import Learners",
+    "path": "/admin/academy/import-students"
+  },
+  {
+    "key": "academy-reports",
+    "label": "Reports",
+    "path": "/admin/academy/reports"
+  },
+  {
+    "key": "academy-insights",
+    "label": "LMS Insights",
+    "path": "/admin/academy/insights"
+  },
+  {
+    "key": "what-we-learned",
+    "label": "What We've Learned",
+    "path": "/admin/what-we-learned"
+  },
+  {
+    "key": "location-intelligence",
+    "label": "Location Intelligence",
+    "path": "/admin/location-intelligence"
+  },
+  {
+    "key": "weekly-digest",
+    "label": "Weekly Learning Digest",
+    "path": "/admin/weekly-digest"
+  },
+  {
+    "key": "monthly-review",
+    "label": "Monthly Intelligence Review",
+    "path": "/admin/monthly-review"
+  },
+  {
+    "key": "quarterly-review",
+    "label": "Quarterly Business Review",
+    "path": "/admin/quarterly-review"
+  },
+  {
+    "key": "progress-guides",
+    "label": "Progress Guides",
+    "path": "/admin/progress-guides"
+  },
+  {
+    "key": "resources",
+    "label": "Resources",
+    "path": "/admin/resources"
+  },
+  {
+    "key": "related-contacts",
+    "label": "Related Contacts",
+    "path": "/admin/related-contacts"
+  },
+  {
+    "key": "smart-folder-reports",
+    "label": "Smart Folder Reports",
+    "path": "/admin/smart-folder-reports"
+  },
+  {
+    "key": "instructor-roi",
+    "label": "Instructor ROI Report",
+    "path": "/admin/instructor-roi"
+  },
+  {
+    "key": "new-vs-returning",
+    "label": "New vs Returning Clients",
+    "path": "/admin/new-vs-returning"
+  },
+  {
+    "key": "instructor-teaching-insights",
+    "label": "Instructor Teaching Insights",
+    "path": "/admin/instructor-teaching-insights"
+  },
+  {
+    "key": "acquisition-intelligence",
+    "label": "Acquisition Intelligence",
+    "path": "/admin/acquisition-intelligence"
+  },
+  {
+    "key": "at-risk-revenue",
+    "label": "At-Risk Revenue",
+    "path": "/admin/at-risk-revenue"
+  },
+  {
+    "key": "security-hub",
+    "label": "Security & Surveillance",
+    "path": "/admin/security-hub"
+  },
+  {
+    "key": "cctv-hub",
+    "label": "CCTV Hub",
+    "path": "/admin/cctv-hub"
+  },
+  {
+    "key": "camio-live",
+    "label": "Camio Live View",
+    "path": "/admin/camio-live"
+  },
+  {
+    "key": "camio-settings",
+    "label": "Camio Settings",
+    "path": "/admin/camio-settings"
+  },
+  {
+    "key": "screens",
+    "label": "Digital Signage",
+    "path": "/admin/screens-hub"
+  },
+  {
+    "key": "screen-content",
+    "label": "Screen Content",
+    "path": "/admin/screen-content"
+  },
+  {
+    "key": "screen-playlists",
+    "label": "Screen Playlists",
+    "path": "/admin/screen-playlists"
+  },
+  {
+    "key": "screen-health",
+    "label": "Screen Health",
+    "path": "/admin/screen-health"
+  },
+  {
+    "key": "webhooks",
+    "label": "Outbound Webhooks",
+    "path": "/admin/webhooks"
+  },
+  {
+    "key": "white-label",
+    "label": "White-Label & Domains",
+    "path": "/admin/white-label"
+  },
+  {
+    "key": "stripe-connect",
+    "label": "Stripe Connect",
+    "path": "/admin/stripe-connect"
+  },
+  {
+    "key": "platform-billing",
+    "label": "Platform Billing",
+    "path": "/admin/billing"
+  },
+  {
+    "key": "dispute-hub",
+    "label": "Disputes",
+    "path": "/admin/dispute-hub"
+  },
+  {
+    "key": "system-health",
+    "label": "System Health",
+    "path": "/admin/system-health"
+  },
+  {
+    "key": "checkin-compliance",
+    "label": "Check-In Compliance",
+    "path": "/admin/checkin-compliance"
+  },
+  {
+    "key": "escalation-settings",
+    "label": "Escalation Settings",
+    "path": "/admin/escalation-settings"
+  },
+  {
+    "key": "system-blueprint",
+    "label": "System Blueprint",
+    "path": "/admin/system-blueprint"
+  },
+  {
+    "key": "software-guides",
+    "label": "Software Guides",
+    "path": "/admin/software-guides"
+  },
+  {
+    "key": "walkthrough-manager",
+    "label": "Walkthrough Manager",
+    "path": "/admin/walkthrough-manager"
+  },
+  {
+    "key": "whats-new-tours",
+    "label": "What's New Tours",
+    "path": "/admin/whats-new-tours"
+  },
+  {
+    "key": "platform-dashboard",
+    "label": "Platform Dashboard",
+    "path": "/admin/platform-dashboard"
+  },
+  {
+    "key": "platform-training-hub",
+    "label": "Training Hub Adoption",
+    "path": "/admin/platform-training-hub"
+  },
+  {
+    "key": "platform-scaling",
+    "label": "Platform Scaling",
+    "path": "/admin/platform-scaling"
+  },
+  {
+    "key": "studio-connections",
+    "label": "Connections",
+    "path": "/admin/connections"
+  },
+  {
+    "key": "platform-connections",
+    "label": "Connections",
+    "path": "/admin/platform-connections"
+  },
+  {
+    "key": "changelog",
+    "label": "Platform Updates",
+    "path": "/admin/changelog"
+  },
+  {
+    "key": "breach-process",
+    "label": "Breach Process",
+    "path": "/admin/breach-process"
+  },
+  {
+    "key": "implementation-checklist",
+    "label": "Implementation Checklist",
+    "path": "/admin/implementation-checklist"
+  },
+  {
+    "key": "team-comms-hub",
+    "label": "Team Comms",
+    "path": "/admin/team-comms-hub"
+  },
+  {
+    "key": "rota-builder",
+    "label": "Rota Builder",
+    "path": "/admin/rota-builder"
+  },
+  {
+    "key": "staff-employment",
+    "label": "Staff Employment",
+    "path": "/admin/staff-employment"
+  },
+  {
+    "key": "holiday-calendar",
+    "label": "Holiday Calendar",
+    "path": "/admin/holiday-calendar"
+  },
+  {
+    "key": "rota-hub",
+    "label": "Rota & Scheduling",
+    "path": "/admin/staff-hub?tab=rota"
+  },
+  {
+    "key": "staff-substitutions",
+    "label": "Cover Requests",
+    "path": "/admin/staff/substitutions"
+  },
+  {
+    "key": "export-templates",
+    "label": "Export Templates",
+    "path": "/admin/export-templates"
+  }
+]
