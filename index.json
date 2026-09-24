@@ -1,27 +1,5 @@
 {
-  "updatedAt": "2026-09-24T22:50:11.108Z",
-  "drops": [
-    {
-      "id": "2026-09-24-end-now-then-join-pay-walk-24-sept",
-      "title": "End now then join-pay walk 24 Sep",
-      "date": "2026-09-24",
-      "summary": "End now PASS (already ended / prior beside Reinstate). Join-pay FAIL: app Total \u00a3112/mo + HELGOBIRD, Stripe showed \u00a319.21, charge not completed.",
-      "plainEnglish": "End now is fixed. Join and pay still fails because the member is not shown the exact first charge before paying.",
-      "tags": [
-        "payments",
-        "smoke",
-        "findings",
-        "status"
-      ],
-      "type": "report",
-      "project": "helgoiq-platform",
-      "paths": [
-        "drops/2026-09-24-end-now-then-join-pay-walk-24-sept/FOR-DECLAN.md",
-        "drops/2026-09-24-end-now-then-join-pay-walk-24-sept/FOR-CLAUDE.md",
-        "drops/2026-09-24-end-now-then-join-pay-walk-24-sept/RESULT.md"
-      ],
-      "tip": "009d31f9f4e27baebb1bd63325c5387d8c5ca2f8"
-    }
-  ],
+  "updatedAt": "2026-09-24T12:00:00Z",
+  "drops": [],
   "note": "Public history cut 2026-09-24: drop catalogue cleared. Sensitive drops are on the private Hub."
 }
