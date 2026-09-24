@@ -1,20 +1,20 @@
 {
-  "updatedAt": "2026-09-23T11:28:01.327Z",
+  "updatedAt": "2026-09-24T22:50:55.801Z",
   "meta": {
-    "dataAsOf": "2026-09-23T11:28:01.327Z",
-    "buildStamp": "263fe93ada77a6cbc9ff6a1241d215dc15b46f44",
-    "liveTip": "263fe93ada77a6cbc9ff6a1241d215dc15b46f44",
+    "dataAsOf": "2026-09-24T22:50:55.801Z",
+    "buildStamp": "009d31f9f4e27baebb1bd63325c5387d8c5ca2f8",
+    "liveTip": "009d31f9f4e27baebb1bd63325c5387d8c5ca2f8",
     "headlineFormula": "Weighted average of strand percents by projectWeightPercent. Now: 81% held (round((80×12 + 90×10 + 95×10 + 71×15 + 95×9 + 77×10 + 55×6 + 55×8 + 100×10 + 74×10)/100) half-up = 80.1 → 80 raw; headline held from morning board — tip move alone invents nothing). Tip 8680d02d — #1471 LIVE (update strip / studio name wrap). Ancestry: #1470 phone-width, #1474 harness, #1473 Stripe notice. Overnight CC on prior tip ancestry: A 24/24 · B–F 28/30 · unseen 21/30. Smoke 55 FAIL Hub-only (checkout leave timeout on prior tip); payments 55 P0 HOLD join-and-pay. #1487 revert of #1471 awaits DO deploy (git 793976d5, not live). SPA unexpected-error before login noted on this tip (AI-019 / feature-proof) — Measured seat walks blocked until fixed or tip moves. Prefer not to need import.rollbackBatch.",
     "refreshMechanism": "Primary: regenerate dashboard when live staging /api/version tip changes. Backup: weekday every 30 minutes during daytime (Europe/London). Sources: live /api/version, gh merged/open PRs, MASTER.csv, Cluster A FINAL, #1180 themes. Always show dataAsOf + buildStamp beside readiness — never look confident when stale.",
     "timezoneNote": "Europe/London; timestamps stored as UTC ISO",
     "morningSnapshotPath": "history/2026-09-18-morning.json",
     "latestSnapshotPath": "history/2026-09-21-tip-8680d02d.json",
-    "lastRefreshNote": "Tip changed e32bf8c1 → 263fe93a; Bot Commander should rescore strands.",
+    "lastRefreshNote": "Tip changed 263fe93a → 009d31f9; Bot Commander should rescore strands.",
     "sourceHints": {
       "versionUrl": "https://lobster-app-662c7.ondigitalocean.app/api/version",
       "masterCsv": null,
       "clusterA": null,
-      "checkedAt": "2026-09-23T11:28:01.327Z"
+      "checkedAt": "2026-09-24T22:50:55.801Z"
     },
     "updatedAt": "2026-09-21T07:49:25.577Z",
     "note": "Tip content catch-up 0e72d5c2 → 8680d02d at 2026-09-21T10:43:57+03:00 (Europe/Athens). Newly live #1471 (+ phone/Feel/smoke companions on ancestry). Wake #1475 undeployed; #1487 revert also undeployed — DO may drop #1471 when it redeploys. Strand % held pending Measured. Headline held 81%. Prefer not to need import.rollbackBatch.",
@@ -142,7 +142,7 @@
       "note": "Tip move alone invents no PASS. #1471 presentation fix off tip; M390-STUDIO-HEADER-TITLE remains open to re-land safely. SPA blank-page from #1471 TDZ should be cleared by #1487."
     }
   },
-  "tip": "263fe93ada77a6cbc9ff6a1241d215dc15b46f44",
+  "tip": "009d31f9f4e27baebb1bd63325c5387d8c5ca2f8",
   "progressToday": {
     "morningHeadlinePercent": 81,
     "nowHeadlinePercent": 81,
