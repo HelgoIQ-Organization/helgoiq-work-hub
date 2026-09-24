@@ -1,0 +1,7 @@
+{
+  "briefExpected": "dc20442b0b9b2af3c84bb55aa7b7cdae57ee73a9",
+  "walkAPreflight": "009d31f9f4e27baebb1bd63325c5387d8c5ca2f8",
+  "note": "Tip drifted overnight from dc20442 (#1606) \u2192 3ec26e2d (#1679) \u2192 009d31f9 (#1662). #1565 End now fix still ancestor (ahead).",
+  "buildToken": "009d31f9f4e27baebb1bd63325c5387d8c5ca2f8",
+  "releaseSha": "009d31f9f4e27baebb1bd63325c5387d8c5ca2f8"
+}
