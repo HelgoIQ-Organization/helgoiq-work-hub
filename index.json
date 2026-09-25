@@ -1,5 +1,29 @@
 {
-  "updatedAt": "2026-09-24T12:00:00Z",
-  "drops": [],
+  "updatedAt": "2026-09-25T06:37:27.772Z",
+  "drops": [
+    {
+      "id": "2026-09-25-daily-money-smoke-ai-24-tip-77dc68f4",
+      "title": "Daily money smoke and AI score 25 Sept",
+      "date": "2026-09-25",
+      "summary": "Bluebird morning smoke: money PASS3/FAIL2/BLOCKED1; HELGOBIRD display still FAIL; AI-24 79% with Agents wrong-tenant FAIL",
+      "plainEnglish": "Morning Bluebird money check: discount checkout still shows the wrong Total before pay; AI score 79%. Full plain write-up in the drop.",
+      "tags": [
+        "smoke",
+        "payments",
+        "ai-85",
+        "status"
+      ],
+      "type": "report",
+      "project": "helgoiq-platform",
+      "paths": [
+        "drops/2026-09-25-daily-money-smoke-ai-24-tip-77dc68f4/FOR-DECLAN.md",
+        "drops/2026-09-25-daily-money-smoke-ai-24-tip-77dc68f4/FOR-CLAUDE.md",
+        "drops/2026-09-25-daily-money-smoke-ai-24-tip-77dc68f4/MORNING.md",
+        "drops/2026-09-25-daily-money-smoke-ai-24-tip-77dc68f4/RESULT.md",
+        "drops/2026-09-25-daily-money-smoke-ai-24-tip-77dc68f4/RESULTS-AI24.md"
+      ],
+      "tip": "77dc68f47e98aed2d0890efe51bed3dd1909f036"
+    }
+  ],
   "note": "Public history cut 2026-09-24: drop catalogue cleared. Sensitive drops are on the private Hub."
 }
