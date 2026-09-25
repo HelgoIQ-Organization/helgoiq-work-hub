@@ -7,6 +7,10 @@ Plain-English **launch dashboard**, coverage, and feel for Declan.
 Live (GitHub Pages): https://helgoiq-organization.github.io/helgoiq-work-hub/
 
 
+## Latest status
+
+- 25 Sep overnight: combined private report ready (smoke env blocked by Clerk user quota; product walks on private Hub).
+
 ## Latest money walk
 
 - 2026-09-24: Till payment-link create **BLOCKED** (server error). Details on private Hub.
